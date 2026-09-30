@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { BookOpen, Headphones, Menu, Sparkles, X } from "lucide-react";
+import { BookOpen, Headphones, Menu, Search, Sparkles, X } from "lucide-react";
 
 export default function AppHeader(){
   const [open,setOpen]=useState(false);
@@ -22,6 +22,7 @@ export default function AppHeader(){
       <nav className="hidden items-center gap-6 text-sm text-zinc-400 md:flex">
         <Link href="/stories" className="hover:text-white">Stories</Link>
         <Link href="/library" className="hover:text-white">Library</Link>
+        <Link href="/search" className="inline-flex items-center gap-1.5 hover:text-white"><Search className="h-3.5 w-3.5"/>Search</Link>
         <Link href="/places" className="hover:text-white">Places</Link>
         <Link href="/ai" className="hover:text-white">Ask AI</Link>
         <Link href="/tts" className="hover:text-white">Narration</Link>
@@ -43,7 +44,7 @@ export default function AppHeader(){
 
     {open && <div className="border-t border-white/5 px-5 py-4 md:hidden">
       <div className="grid gap-2">
-        {[["Stories","/stories"],["Library","/library"],["Places","/places"],["Ask AI","/ai"],["Narration","/tts"]].map(([label,href])=><Link key={href} href={href} onClick={()=>setOpen(false)} className="rounded-xl bg-white/[0.03] px-4 py-3 text-sm text-zinc-300">{label}</Link>)}
+        {[["Stories","/stories"],["Library","/library"],["Search","/search"],["Places","/places"],["Ask AI","/ai"],["Narration","/tts"]].map(([label,href])=><Link key={href} href={href} onClick={()=>setOpen(false)} className="rounded-xl bg-white/[0.03] px-4 py-3 text-sm text-zinc-300">{label}</Link>)}
         {user ? <><Link href="/account" onClick={()=>setOpen(false)} className="rounded-xl bg-white px-4 py-3 text-center text-sm font-semibold text-black">Account</Link>{(user.role==="ADMIN" || user.role==="EDITOR")&&<Link href="/admin" onClick={()=>setOpen(false)} className="rounded-xl border border-white/10 px-4 py-3 text-center text-sm text-zinc-300">Editorial Studio</Link>}</> :
           <div className="grid grid-cols-2 gap-2 pt-2"><Link href="/login" onClick={()=>setOpen(false)} className="rounded-xl border border-white/10 px-4 py-3 text-center text-sm text-zinc-300">Log in</Link><Link href="/signup" onClick={()=>setOpen(false)} className="rounded-xl bg-white px-4 py-3 text-center text-sm font-semibold text-black">Sign up</Link></div>}
       </div>
