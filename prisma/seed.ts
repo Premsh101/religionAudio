@@ -143,8 +143,8 @@ async function seedStoriesAndPlaces(){
   for(const place of placeSeed){
     await prisma.place.upsert({
       where:{slug:place.slug},
-      update:{name:place.name,country:place.region},
-      create:{name:place.name,slug:place.slug,country:place.region,placeType:place.place_type,uncertaintyNotes:place.evidence_note}
+      update:{name:place.name,country:place.country,region:place.region,placeType:place.place_type,uncertaintyNotes:place.evidence_note},
+      create:{name:place.name,slug:place.slug,country:place.country,region:place.region,placeType:place.place_type,uncertaintyNotes:place.evidence_note}
     });
   }
 }
