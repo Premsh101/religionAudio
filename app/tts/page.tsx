@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Headphones, Pause, Play, Sparkles } from "lucide-react";
+import AppHeader from "../../components/AppHeader";
 
 const profiles=[
   {id:"scripture",name:"Scripture",description:"Calm, deliberate, respectful",engine:"Kokoro"},
@@ -52,7 +53,7 @@ export default function TTSStudio(){
  }
 
  return <main className="min-h-screen bg-zinc-950">
-  <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5"><Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link><span className="text-xs text-zinc-600">Narration studio</span></header>
+    <AppHeader/>
   <section className="mx-auto max-w-6xl px-5 pb-20 pt-8">
    <div className="max-w-3xl"><p className="text-sm text-amber-300">Free / self-hosted narration</p><h1 className="mt-2 font-display text-5xl">Give every kind of story its own voice.</h1><p className="mt-4 text-zinc-400">Voice identity and narration style are separate. That lets one licensed narrator speak differently for scripture, mythology, folklore, ghost stories and children.</p></div>
    <div className="mt-10 grid gap-5 lg:grid-cols-[1fr_360px]">
