@@ -1,0 +1,18 @@
+{
+  "religions":[
+    {"id":"hindu","name":"Hindu traditions","slug":"hindu-traditions"},
+    {"id":"buddhist","name":"Buddhism","slug":"buddhism"},
+    {"id":"jain","name":"Jainism","slug":"jainism"},
+    {"id":"sikh","name":"Sikhism","slug":"sikhism"},
+    {"id":"islam","name":"Islam","slug":"islam"},
+    {"id":"christian","name":"Christianity","slug":"christianity"},
+    {"id":"jewish","name":"Judaism","slug":"judaism"}
+  ],
+  "contentTypes":[
+    "scripture","translation","commentary","story","mythology","folklore","ghost-story",
+    "moral-tale","biography","festival","ritual","sacred-place","historical-account"
+  ],
+  "audiences":["kids","family","teens","adults","research"],
+  "evidenceLenses":["text","tradition","scholarship","science"],
+  "rightsStatuses":["unknown","research-only","permission-required","commercial-cleared"]
+}
