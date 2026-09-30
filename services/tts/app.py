@@ -1,10 +1,10 @@
+import hashlib
 import json
 import os
 import re
 import shutil
 import subprocess
 import tempfile
-import uuid
 from pathlib import Path
 
 import numpy as np
@@ -14,6 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 _KOKORO_PIPELINES = {}
+_CHATTERBOX_MODELS = {}
 
 BASE = Path(__file__).parent
 AUDIO_DIR = Path(os.getenv("AUDIO_DIR", "/data/audio"))
@@ -133,11 +134,15 @@ def chatterbox_generate(text: str, language: str, reference_audio: str | None, e
         raise RuntimeError("Chatterbox is not installed") from exc
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    model = ChatterboxMultilingualTTS.from_pretrained(device=device)
+    cache_key = f"{device}:{language}"
+    model = _CHATTERBOX_MODELS.get(cache_key)
+    if model is None:
+        model = ChatterboxMultilingualTTS.from_pretrained(device=device)
+        _CHATTERBOX_MODELS[cache_key] = model
     kwargs = {"language_id":language,"exaggeration":exaggeration,"cfg_weight":cfg_weight}
     if reference_audio:
         kwargs["audio_prompt_path"] = reference_audio
-    wav = model.generate(text[:300], **kwargs)
+    wav = model.generate(text, **kwargs)
     ta.save(str(output), wav, model.sr)
 
 
@@ -157,6 +162,16 @@ def add_silence(files: list[tuple[Path,int]], output: Path) -> None:
 @app.get("/health")
 def health():
     return {"ok": True, "engines": ["kokoro","piper","chatterbox"], "profiles": list(PROFILES)}
+
+
+def cache_key(req: TTSRequest, profile: dict, resolved_engine: str) -> str:
+    reference = req.reference_audio or ""
+    raw = "\n".join([
+        req.text, req.language, req.profile, req.voice or "", reference,
+        resolved_engine, str(profile.get("speed")), str(profile.get("exaggeration")),
+        str(profile.get("cfg_weight")), str(profile.get("pause_ms"))
+    ])
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 
 @app.post("/synthesize")
@@ -192,10 +207,9 @@ def synthesize(req: TTSRequest):
                 piper_generate(part, req.language, req.voice, profile["speed"], output)
             generated.append((output, pause_after(part, profile)))
 
-        name = f"{uuid.uuid4().hex}.wav"
-        destination = AUDIO_DIR / name
+        destination = AUDIO_DIR / f"{key}.wav"
         add_silence(generated, destination)
-        return {"audio_url":f"/audio/{name}","profile":req.profile,"engine":profile["engine"],"parts":len(generated),"pause_profile_ms":profile["pause_ms"]}
+        return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":preferred_engine,"parts":len(generated),"pause_profile_ms":profile["pause_ms"],"cached":False}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
     finally:
