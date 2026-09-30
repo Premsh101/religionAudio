@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Baby, BookOpen, ChevronRight, Ghost, Heart, MapPin, Sparkles } from "lucide-react";
+import AppHeader from "../../components/AppHeader";
 
 const categories=[
   {id:"kids",title:"Little Wonderers",body:"Short, warm stories with simple language and a gentle question at the end.",icon:<Baby className="h-5 w-5"/>,tone:"from-emerald-500/25 to-teal-500/5"},
@@ -17,7 +18,7 @@ export default function StoriesPage(){
  const [active,setActive]=useState("all");
  const shown=useMemo(()=>active==="all"?categories:categories.filter(c=>c.id===active),[active]);
  return <main className="min-h-screen bg-zinc-950">
-  <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5"><Link href="/" className="text-sm text-zinc-500 hover:text-white">← Sacred Stories</Link><span className="text-xs text-zinc-600">Story universe</span></header>
+    <AppHeader/>
   <section className="mx-auto max-w-6xl px-5 pb-20 pt-8">
    <p className="text-sm text-amber-300">Choose your mood</p>
    <h1 className="mt-2 max-w-3xl font-display text-5xl">Some nights need a scripture. Some need a story.</h1>
