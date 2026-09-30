@@ -39,6 +39,18 @@ npm run db:seed
 
 The seed is intentionally not part of every application startup. This prevents a redeploy from unexpectedly modifying editorial data beyond the idempotent seed definitions.
 
+## Create the first administrator
+
+Create a normal account through the simple signup page first. Then, from the Coolify terminal for the web service, promote that existing account:
+
+```bash
+npm run db:make-admin -- your-email@example.com
+```
+
+For a phone-based account, pass the normalized phone number instead.
+
+Only administrators/editors can use `/admin`; normal users remain USER accounts.
+
 ## Data persistence
 
 Keep these volumes persistent:
