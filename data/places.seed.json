@@ -1,0 +1,10 @@
+[
+  {"name":"Bodh Gaya","slug":"bodh-gaya","region":"Bihar, India","place_type":"pilgrimage","status":"editorial-seed","evidence_note":"Source-backed place profile to be completed."},
+  {"name":"Sarnath","slug":"sarnath","region":"Uttar Pradesh, India","place_type":"historic-religious-site","status":"editorial-seed","evidence_note":"Source-backed place profile to be completed."},
+  {"name":"Varanasi","slug":"varanasi","region":"Uttar Pradesh, India","place_type":"sacred-city","status":"editorial-seed","evidence_note":"Source-backed place profile to be completed."},
+  {"name":"Amritsar","slug":"amritsar","region":"Punjab, India","place_type":"pilgrimage-city","status":"editorial-seed","evidence_note":"Source-backed place profile to be completed."},
+  {"name":"Lumbini","slug":"lumbini","region":"Lumbini Province, Nepal","place_type":"pilgrimage","status":"editorial-seed","evidence_note":"Source-backed place profile to be completed."},
+  {"name":"Jerusalem","slug":"jerusalem","region":"Israel / Palestine","place_type":"sacred-city","status":"editorial-seed","evidence_note":"Multiple traditions; historical and religious claims require source separation."},
+  {"name":"Vatican City","slug":"vatican-city","region":"Vatican City","place_type":"religious-city","status":"editorial-seed","evidence_note":"Source-backed place profile to be completed."},
+  {"name":"Mecca","slug":"mecca","region":"Makkah, Saudi Arabia","place_type":"pilgrimage-city","status":"editorial-seed","evidence_note":"Source-backed place profile to be completed."}
+]
