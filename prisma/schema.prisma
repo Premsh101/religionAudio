@@ -45,6 +45,23 @@ enum RightsStatus {
   COMMERCIAL_CLEARED
 }
 
+enum NarrationProfile {
+  DEFAULT
+  SCRIPTURE
+  MYTHOLOGY
+  FOLKLORE
+  GHOST
+  KIDS
+  MORAL_TALE
+}
+
+enum StoryIntensity {
+  GENTLE
+  ADVENTUROUS
+  SPOOKY
+  DARK
+}
+
 model Religion {
   id          String       @id @default(cuid())
   name        String       @unique
@@ -170,6 +187,10 @@ model Story {
   sourceId       String?
   source         Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
   audioAssets    AudioAsset[]
+  scenes         StoryScene[]
+  intensity      StoryIntensity @default(GENTLE)
+  narrationProfile NarrationProfile @default(DEFAULT)
+  contentWarnings String[]
   places         PlaceOnStory[]
   createdAt      DateTime      @default(now())
   updatedAt      DateTime      @updatedAt
@@ -242,18 +263,34 @@ model AudioAsset {
   @@index([language, narrationProfile])
 }
 
+model StoryScene {
+  id              String           @id @default(cuid())
+  sequence        Int
+  title           String?
+  text            String
+  mood            String?
+  narrationProfile NarrationProfile?
+  storyId         String
+  story            Story            @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  audioSegments   AudioSegment[]
+  @@unique([storyId, sequence])
+}
+
 model AudioSegment {
-  id          String      @id @default(cuid())
-  sequence    Int
-  startMs     Int
-  endMs       Int
-  storageKey  String?
-  transcript  String?
-  passageId   String?
-  passage     Passage?    @relation(fields: [passageId], references: [id], onDelete: SetNull)
+  id           String      @id @default(cuid())
+  sequence     Int
+  startMs      Int
+  endMs        Int
+  storageKey   String?
+  transcript   String?
+  passageId    String?
+  passage      Passage?   @relation(fields: [passageId], references: [id], onDelete: SetNull)
+  storySceneId String?
+  storyScene   StoryScene? @relation(fields: [storySceneId], references: [id], onDelete: SetNull)
   audioAssetId String
-  audioAsset  AudioAsset @relation(fields: [audioAssetId], references: [id], onDelete: Cascade)
+  audioAsset   AudioAsset @relation(fields: [audioAssetId], references: [id], onDelete: Cascade)
   @@unique([audioAssetId, sequence])
+  @@index([storySceneId])
 }
 
 model AICitation {
