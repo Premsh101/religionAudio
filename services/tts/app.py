@@ -12,6 +12,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+_KOKORO_PIPELINES = {}
+
 BASE = Path(__file__).parent
 AUDIO_DIR = Path(os.getenv("AUDIO_DIR", "/data/audio"))
 MODEL_DIR = Path(os.getenv("PIPER_MODEL_DIR", "/models"))
@@ -74,6 +76,34 @@ def piper_generate(text: str, language: str, voice: str | None, speed: float, ou
         raise RuntimeError(proc.stderr.decode("utf-8", errors="ignore"))
 
 
+def kokoro_generate(text: str, language: str, voice: str | None, speed: float, output: Path) -> None:
+    try:
+        import soundfile as sf_local
+        from kokoro import KPipeline
+    except Exception as exc:
+        raise RuntimeError("Kokoro is not installed") from exc
+
+    lang_code = {"en":"a","en-us":"a","en-gb":"b","hi":"h","fr":"f","es":"e","it":"i","pt":"p","ja":"j","zh":"z"}.get(language.lower())
+    if not lang_code:
+        raise RuntimeError(f"Kokoro language is not configured for {language}")
+    selected_voice = voice or os.getenv(f"KOKORO_VOICE_{language.upper()}")
+    if not selected_voice:
+        selected_voice = {"a":"af_heart","b":"bf_emma","h":"hf_alpha","f":"ff_siwis","e":"ef_dora","i":"if_sara","p":"pf_dora","j":"jf_alpha","z":"zf_xiaobei"}.get(lang_code)
+    if not selected_voice:
+        raise RuntimeError(f"No Kokoro voice configured for {language}")
+    pipeline = _KOKORO_PIPELINES.get(lang_code)
+    if pipeline is None:
+        pipeline = KPipeline(lang_code=lang_code)
+        _KOKORO_PIPELINES[lang_code] = pipeline
+    audio_parts = []
+    for _, _, audio in pipeline(text, voice=selected_voice, speed=speed, split_pattern=r"\n+"):
+        if audio is not None:
+            audio_parts.append(audio.numpy())
+    if not audio_parts:
+        raise RuntimeError("Kokoro produced no audio")
+    sf_local.write(str(output), np.concatenate(audio_parts), 24000)
+
+
 def chatterbox_generate(text: str, language: str, reference_audio: str | None, exaggeration: float, cfg_weight: float, output: Path) -> None:
     try:
         import torch
@@ -106,7 +136,7 @@ def add_silence(files: list[Path], pause_ms: int, output: Path) -> None:
 
 @app.get("/health")
 def health():
-    return {"ok": True, "engines": ["piper","chatterbox"], "profiles": list(PROFILES)}
+    return {"ok": True, "engines": ["kokoro","piper","chatterbox"], "profiles": list(PROFILES)}
 
 
 @app.post("/synthesize")
@@ -123,6 +153,16 @@ def synthesize(req: TTSRequest):
                     chatterbox_generate(part, req.language, req.reference_audio, profile["exaggeration"], profile["cfg_weight"], output)
                 except Exception:
                     if engine == "chatterbox":
+                        raise
+                    try:
+                        kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                    except Exception:
+                        piper_generate(part, req.language, req.voice, profile["speed"], output)
+            elif engine in ("auto","kokoro"):
+                try:
+                    kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                except Exception:
+                    if engine == "kokoro":
                         raise
                     piper_generate(part, req.language, req.voice, profile["speed"], output)
             else:
