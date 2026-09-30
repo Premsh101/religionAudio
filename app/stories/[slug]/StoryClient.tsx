@@ -5,7 +5,7 @@ import { ArrowLeft, Bookmark, Headphones, Pause, Play, Sparkles, Volume2 } from 
 import Link from "next/link";
 import AppHeader from "../../../components/AppHeader";
 
-type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string};
+type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
 
 const labels:Record<string,string>={
   ghost:"After-dark / atmospheric",
@@ -138,6 +138,7 @@ export default function StoryClient({story}:{story:Story}){
         <div className="text-xs uppercase tracking-[0.18em] text-zinc-600">Story</div>
         <div className="mt-5 whitespace-pre-wrap font-display text-lg leading-9 text-zinc-200">{story.body}</div>
       </article>}
+      {story.source&&<div className="mt-5 rounded-3xl border border-emerald-300/10 bg-emerald-300/[0.03] p-6"><div className="text-xs uppercase tracking-[0.18em] text-emerald-300">Source & rights</div><div className="mt-3 font-display text-lg">{story.source.name}</div><div className="mt-1 text-xs text-zinc-500">{story.source.license||story.source.rightsStatus}</div><a href={story.source.url} target="_blank" rel="noreferrer" className="mt-4 inline-flex text-xs text-zinc-300 hover:text-white">Open source record →</a></div>}
       <div className="mt-5 grid gap-5 md:grid-cols-2">
         <div className="glass rounded-3xl p-7"><div className="flex items-center gap-2 text-sm"><Sparkles className="h-4 w-4 text-violet-300"/> Story notes</div><p className="mt-4 text-sm leading-7 text-zinc-400">Published stories will carry their source, tradition, rights status and evidence labels alongside the narrative.</p></div>
         <div className="glass rounded-3xl p-7"><div className="flex items-center gap-2 text-sm"><Headphones className="h-4 w-4 text-amber-300"/> Narration</div><p className="mt-4 text-sm leading-7 text-zinc-400">Narration style follows the story profile: atmospheric for ghost folklore, warm for mythology and clearer, playful pacing for children.</p></div>
