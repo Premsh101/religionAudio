@@ -34,7 +34,7 @@ export default function DhammapadaReader(){
 
   async function speak(){
     if(!current || busy) return;
-    if(playing){setPlaying(false);return;}
+    if(playing){window.speechSynthesis.cancel();setPlaying(false);return;}
     setBusy(true);
     try{
       const res=await fetch("/api/tts",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
@@ -51,7 +51,13 @@ export default function DhammapadaReader(){
       setPlaying(true);
     }catch(err){
       console.error(err);
-      alert("Local TTS is not configured yet. Start services/tts and add a licensed voice model.");
+      const utterance=new SpeechSynthesisUtterance(current.text);
+      utterance.rate=0.88;
+      utterance.pitch=0.92;
+      utterance.onend=()=>setPlaying(false);
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+      setPlaying(true);
     }finally{setBusy(false)}
   }
 
