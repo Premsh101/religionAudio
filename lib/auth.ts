@@ -3,7 +3,13 @@ import { SignJWT, jwtVerify } from "jose";
 const secret=process.env.AUTH_SECRET || "development-only-change-this-secret";
 const key=new TextEncoder().encode(secret);
 
-export type SessionUser={id:string;displayName:string|null;email:string|null;phone:string|null};
+export type SessionUser={
+  id:string;
+  displayName:string|null;
+  email:string|null;
+  phone:string|null;
+  role:"USER"|"EDITOR"|"ADMIN";
+};
 
 export async function createSessionToken(user:SessionUser){
   return new SignJWT({user})
@@ -25,8 +31,8 @@ export async function readSessionToken(token:string){
 export function normalizeIdentifier(identifier:string){
   const value=identifier.trim();
   if(value.includes("@")) return {type:"email" as const,value:value.toLowerCase()};
-  const phone=value.replace(/[\s().-]/g,"");
-  if(/^\d{10}$/.test(phone)) return {type:"phone" as const,value:phone};
+  const phone=value.replace(/[s().-]/g,"");
+  if(/^d{10}$/.test(phone)) return {type:"phone" as const,value:phone};
   return {type:"phone" as const,value};
 }
 
