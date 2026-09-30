@@ -1,0 +1,40 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      TTS_SERVICE_URL: http://tts:8010
+      AI_BASE_URL: ${AI_BASE_URL:-}
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_MODEL: ${AI_MODEL:-gpt-4o-mini}
+    depends_on:
+      tts:
+        condition: service_healthy
+
+  tts:
+    build:
+      context: ./services/tts
+      dockerfile: Dockerfile
+    ports:
+      - "8010:8010"
+    environment:
+      AUDIO_DIR: /data/audio
+      PIPER_MODEL_DIR: /models
+      KOKORO_VOICE_EN: ${KOKORO_VOICE_EN:-af_heart}
+      KOKORO_VOICE_HI: ${KOKORO_VOICE_HI:-hf_alpha}
+    volumes:
+      - religion_audio:/data/audio
+      - religion_tts_models:/models
+    healthcheck:
+      test: ["CMD","python","-c","import urllib.request; urllib.request.urlopen('http://localhost:8010/health', timeout=3)"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  religion_audio:
+  religion_tts_models:
