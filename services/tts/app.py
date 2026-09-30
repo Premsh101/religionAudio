@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -34,18 +35,37 @@ class TTSRequest(BaseModel):
     speed: float | None = Field(default=None, ge=0.5, le=1.5)
 
 
-def chunks(text: str, limit: int = 1800) -> list[str]:
-    words = text.split()
-    out, current, size = [], [], 0
-    for word in words:
-        if current and size + len(word) + 1 > limit:
-            out.append(" ".join(current))
+def narration_segments(text: str, limit: int = 1800) -> list[str]:
+    paragraphs = [part.strip() for part in re.split(r"\\n\\s*\\n", text) if part.strip()]
+    segments: list[str] = []
+    for paragraph in paragraphs:
+        sentences = [part.strip() for part in re.split(r"(?<=[.!?।؟])\\s+", paragraph) if part.strip()]
+        for sentence in sentences:
+            if len(sentence) <= limit:
+                segments.append(sentence)
+                continue
+            words = sentence.split()
             current, size = [], 0
-        current.append(word)
-        size += len(word) + 1
-    if current:
-        out.append(" ".join(current))
-    return out
+            for word in words:
+                if current and size + len(word) + 1 > limit:
+                    segments.append(" ".join(current))
+                    current, size = [], 0
+                current.append(word)
+                size += len(word) + 1
+            if current:
+                segments.append(" ".join(current))
+    return segments
+
+
+def pause_after(text: str, profile: dict) -> int:
+    base = int(profile["pause_ms"])
+    if text.rstrip().endswith(("!", "?","।","؟")):
+        return int(base * 1.35)
+    if text.rstrip().endswith((".", "…")):
+        return int(base)
+    if text.rstrip().endswith(","):
+        return int(base * 0.45)
+    return int(base * 0.75)
 
 
 def resolve_profile(req: TTSRequest) -> dict:
@@ -121,9 +141,9 @@ def chatterbox_generate(text: str, language: str, reference_audio: str | None, e
     ta.save(str(output), wav, model.sr)
 
 
-def add_silence(files: list[Path], pause_ms: int, output: Path) -> None:
+def add_silence(files: list[tuple[Path,int]], output: Path) -> None:
     waves, sample_rate = [], None
-    for index, path in enumerate(files):
+    for index, (path, pause_ms) in enumerate(files):
         data, rate = sf.read(path, dtype="float32")
         if data.ndim > 1:
             data = data.mean(axis=1)
@@ -143,9 +163,10 @@ def health():
 def synthesize(req: TTSRequest):
     profile = resolve_profile(req)
     work = Path(tempfile.mkdtemp(prefix="religion-tts-"))
-    generated = []
+    generated: list[tuple[Path,int]] = []
     try:
-        for index, part in enumerate(chunks(req.text)):
+        segments = narration_segments(req.text)
+        for index, part in enumerate(segments):
             output = work / f"{index:04d}.wav"
             engine = profile["engine"]
             if engine in ("chatterbox","auto") and (engine == "chatterbox" or req.reference_audio):
@@ -169,12 +190,12 @@ def synthesize(req: TTSRequest):
                     piper_generate(part, req.language, req.voice, profile["speed"], output)
             else:
                 piper_generate(part, req.language, req.voice, profile["speed"], output)
-            generated.append(output)
+            generated.append((output, pause_after(part, profile)))
 
         name = f"{uuid.uuid4().hex}.wav"
         destination = AUDIO_DIR / name
-        add_silence(generated, int(profile["pause_ms"]), destination)
-        return {"audio_url":f"/audio/{name}","profile":req.profile,"engine":profile["engine"],"parts":len(generated)}
+        add_silence(generated, destination)
+        return {"audio_url":f"/audio/{name}","profile":req.profile,"engine":profile["engine"],"parts":len(generated),"pause_profile_ms":profile["pause_ms"]}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
     finally:
