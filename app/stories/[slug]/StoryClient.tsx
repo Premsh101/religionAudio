@@ -5,7 +5,7 @@ import { ArrowLeft, Bookmark, Headphones, Pause, Play, Sparkles, Volume2 } from 
 import Link from "next/link";
 import AppHeader from "../../../components/AppHeader";
 
-type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;status:string};
+type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string};
 
 const labels:Record<string,string>={
   ghost:"After-dark / atmospheric",
@@ -134,8 +134,12 @@ export default function StoryClient({story}:{story:Story}){
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/5"><div className="h-full rounded-full bg-amber-300" style={{width:String(Math.max(2,progress))+"%"}}/></div>
         </div>
       </div>
+      {story.body && <article className="mt-5 glass rounded-3xl p-7 md:p-10">
+        <div className="text-xs uppercase tracking-[0.18em] text-zinc-600">Story</div>
+        <div className="mt-5 whitespace-pre-wrap font-display text-lg leading-9 text-zinc-200">{story.body}</div>
+      </article>}
       <div className="mt-5 grid gap-5 md:grid-cols-2">
-        <div className="glass rounded-3xl p-7"><div className="flex items-center gap-2 text-sm"><Sparkles className="h-4 w-4 text-violet-300"/> Story notes</div><p className="mt-4 text-sm leading-7 text-zinc-400">This story is currently an editorial draft. The finished version will carry its source, tradition, rights status and evidence labels.</p></div>
+        <div className="glass rounded-3xl p-7"><div className="flex items-center gap-2 text-sm"><Sparkles className="h-4 w-4 text-violet-300"/> Story notes</div><p className="mt-4 text-sm leading-7 text-zinc-400">Published stories will carry their source, tradition, rights status and evidence labels alongside the narrative.</p></div>
         <div className="glass rounded-3xl p-7"><div className="flex items-center gap-2 text-sm"><Headphones className="h-4 w-4 text-amber-300"/> Narration</div><p className="mt-4 text-sm leading-7 text-zinc-400">Narration style follows the story profile: atmospheric for ghost folklore, warm for mythology and clearer, playful pacing for children.</p></div>
       </div>
     </section>
