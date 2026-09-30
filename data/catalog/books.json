@@ -38,5 +38,18 @@
     "local_path": "data/library/christianity/ruth-web.txt",
     "ingest_script": "scripts/ingest/project_gutenberg_web.py",
     "type": "sacred-text"
+  },
+  {
+    "id": "exodus-jps1917",
+    "title": "Exodus",
+    "tradition": "Judaism",
+    "collection": "Tanakh / Torah",
+    "language": "English",
+    "edition": "The Holy Scriptures: A New Translation (JPS 1917)",
+    "license": "Public Domain",
+    "source": "Sefaria Export",
+    "source_url": "https://github.com/Sefaria/Sefaria-Export",
+    "local_path": "data/library/judaism/exodus-jps-1917.json",
+    "type": "sacred-text"
   }
 ]
