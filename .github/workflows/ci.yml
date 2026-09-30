@@ -21,6 +21,11 @@ jobs:
       - run: npx prisma validate
       - run: npx prisma generate
       - run: npm run build
+      - name: Validate Coolify compose
+        env:
+          POSTGRES_PASSWORD: ci-db-password
+          AUTH_SECRET: ci-auth-secret
+        run: docker compose config
 
   tts:
     runs-on: ubuntu-latest
