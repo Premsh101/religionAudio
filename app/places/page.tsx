@@ -1,0 +1,30 @@
+"use client";
+
+import Link from "next/link";
+import { useMemo, useState } from "react";
+import { ArrowLeft, MapPin, Search, Sparkles } from "lucide-react";
+import places from "../../data/places.seed.json";
+
+type Place={name:string;slug:string;region:string;place_type:string;status:string;evidence_note:string};
+
+export default function PlacesPage(){
+  const [query,setQuery]=useState("");
+  const [type,setType]=useState("all");
+  const types=["all",...Array.from(new Set((places as Place[]).map(p=>p.place_type)))];
+  const visible=useMemo(()=> (places as Place[]).filter(p=>
+    (type==="all"||p.place_type===type) &&
+    (!query.trim()||`${p.name} ${p.region}`.toLowerCase().includes(query.toLowerCase()))
+  ),[query,type]);
+
+  return <main className="min-h-screen bg-zinc-950">
+    <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5"><Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link><span className="text-xs text-zinc-600">Sacred atlas</span></header>
+    <section className="mx-auto max-w-6xl px-5 pb-20 pt-8">
+      <p className="text-sm text-cyan-300">Explore the world behind the stories</p>
+      <h1 className="mt-2 max-w-3xl font-display text-5xl">Places people travel to, remember, worship and tell stories about.</h1>
+      <p className="mt-4 max-w-2xl text-zinc-400">Each final place profile will separate traditional significance from historical evidence and clearly label uncertainty.</p>
+      <div className="mt-8 flex items-center gap-2 rounded-2xl border border-white/10 bg-black/20 p-2"><Search className="ml-3 h-5 w-5 text-zinc-600"/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search a city, shrine or pilgrimage site..." className="w-full bg-transparent px-2 py-3 text-sm outline-none placeholder:text-zinc-700"/></div>
+      <div className="scrollbar-hide mt-4 flex gap-2 overflow-x-auto pb-2">{types.map(t=><button key={t} onClick={()=>setType(t)} className={`whitespace-nowrap rounded-full border px-4 py-2 text-xs capitalize ${type===t?"border-white/20 bg-white text-black":"border-white/10 bg-white/5 text-zinc-500"}`}>{t.replaceAll("-"," ")}</button>)}</div>
+      <div className="mt-8 grid gap-5 md:grid-cols-2">{visible.map(p=><Link href={`/places/${p.slug}`} key={p.slug} className="glass rounded-3xl p-6 transition hover:-translate-y-1"><div className="flex items-center justify-between"><div className="rounded-2xl bg-cyan-300/10 p-3"><MapPin className="h-5 w-5 text-cyan-300"/></div><Sparkles className="h-4 w-4 text-zinc-700"/></div><h2 className="mt-8 font-display text-2xl">{p.name}</h2><p className="mt-1 text-sm text-zinc-500">{p.region}</p><div className="mt-5 rounded-2xl bg-black/20 p-4 text-xs leading-5 text-zinc-600">Editorial seed · {p.evidence_note}</div></Link>)}</div>
+    </section>
+  </main>
+}
