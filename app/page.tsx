@@ -10,11 +10,22 @@ const stories:Story[]=[
 {title:"The First Sermon",subtitle:"A story-led introduction to Buddha's first teaching at Sarnath.",tag:"Sacred Story",audience:"All ages",duration:"15 min",accent:"from-cyan-500/25 to-sky-500/10",icon:<BookOpen className="h-5 w-5"/>},
 {title:"The Honest Woodcutter",subtitle:"A classic moral tale with a choice at the end for children.",tag:"Moral Tale",audience:"Kids 7-12",duration:"6 min",accent:"from-emerald-500/25 to-teal-500/10",icon:<Baby className="h-5 w-5"/>}
 ];
-const filters=["All","Hindu traditions","Buddhism","Jainism","Sikhism","Islam","Christianity","Judaism"];
+const filters=["All","Kids","Mythology","Folklore","Ghost Stories","Moral Tales"];
 
 export default function HomePage(){
 const [filter,setFilter]=useState("All"); const [query,setQuery]=useState("");
-const visible=useMemo(()=>{if(!query.trim())return stories;const q=query.toLowerCase();return stories.filter(s=>(s.title+" "+s.subtitle+" "+s.tag).toLowerCase().includes(q))},[query]);
+const visible=useMemo(()=>{
+  let list=stories;
+  if(filter!=="All"){
+    const normalized=filter.toLowerCase();
+    list=list.filter(s=>s.tag.toLowerCase().includes(normalized) || s.audience.toLowerCase().includes(normalized.replace("kids","kid")));
+  }
+  if(query.trim()){
+    const q=query.toLowerCase();
+    list=list.filter(s=>(s.title+" "+s.subtitle+" "+s.tag).toLowerCase().includes(q));
+  }
+  return list;
+},[filter,query]);
 return <main className="min-h-screen">
 <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8"><div><div className="font-display text-xl font-semibold">Sacred Stories</div><div className="text-xs text-zinc-500">Read · Listen · Explore · Question</div></div><div className="hidden gap-6 text-sm text-zinc-400 md:flex"><a href="#stories">Stories</a><a href="#library">Library</a><a href="#places">Sacred Places</a><a href="#ai">Ask AI</a></div></nav>
 <section className="mx-auto max-w-7xl px-5 pb-16 pt-8 md:px-8 md:pt-14"><div className="glass overflow-hidden rounded-[32px] p-7 md:p-12"><div className="max-w-4xl"><div className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-300/15 bg-amber-300/5 px-3 py-1 text-xs text-amber-200"><Sparkles className="h-3.5 w-3.5"/>A story-first sacred knowledge experience</div><h1 className="font-display text-4xl leading-tight md:text-6xl">Ancient words. Living stories. <span className="text-amber-300">Curious questions.</span></h1><p className="mt-5 max-w-2xl text-base leading-7 text-zinc-400 md:text-lg">Explore scripture, mythology, folklore, ghost stories, sacred places and timeless lessons — with separate views for children, families, learners and adults.</p><div className="mt-7 flex max-w-2xl items-center gap-2 rounded-2xl border border-white/10 bg-black/20 p-2"><Search className="ml-3 h-5 w-5 text-zinc-500"/><input aria-label="Search stories" value={query} onChange={e=>setQuery(e.target.value)} placeholder='Try "Krishna", "ghost stories", "Sarnath", "Ramayana"...' className="w-full bg-transparent px-2 py-3 text-sm outline-none placeholder:text-zinc-600"/><button className="rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-black">Explore</button></div></div></div></section>
