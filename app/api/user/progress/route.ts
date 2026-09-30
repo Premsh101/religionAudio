@@ -43,32 +43,38 @@ export async function POST(request:NextRequest){
 
   const kind=body?.kind;
   const targetId=typeof body?.targetId==="string"?body.targetId.trim():"";
+  const targetSlug=typeof body?.targetSlug==="string"?body.targetSlug.trim():"";
   const sequence=Math.max(1,Math.round(Number(body?.sequence)||1));
   const progressPercent=clampPercent(Number(body?.progressPercent)||0);
   const positionMs=Math.max(0,Math.round(Number(body?.positionMs)||0));
   const completed=Boolean(body?.completed);
 
-  if(!targetId || (kind!=="work" && kind!=="story")){
-    return NextResponse.json({error:"kind and targetId are required."},{status:400});
-  }
+  if(!targetId && !targetSlug) return NextResponse.json({error:"targetId or targetSlug is required."},{status:400});
+  if(kind!=="work" && kind!=="story") return NextResponse.json({error:"kind must be work or story."},{status:400});
 
   if(kind==="work"){
-    const work=await prisma.work.findUnique({where:{id:targetId},select:{id:true}});
+    const work=targetId
+      ? await prisma.work.findUnique({where:{id:targetId},select:{id:true}})
+      : await prisma.work.findUnique({where:{slug:targetSlug},select:{id:true}});
     if(!work) return NextResponse.json({error:"Work not found."},{status:404});
+
     const progress=await prisma.workProgress.upsert({
-      where:{userId_workId:{userId:user.id,workId:targetId}},
+      where:{userId_workId:{userId:user.id,workId:work.id}},
       update:{currentSequence:sequence,progressPercent,positionMs,completedAt:completed?new Date():null},
-      create:{userId:user.id,workId:targetId,currentSequence:sequence,progressPercent,positionMs,completedAt:completed?new Date():null}
+      create:{userId:user.id,workId:work.id,currentSequence:sequence,progressPercent,positionMs,completedAt:completed?new Date():null}
     });
     return NextResponse.json({progress});
   }
 
-  const story=await prisma.story.findUnique({where:{id:targetId},select:{id:true}});
+  const story=targetId
+    ? await prisma.story.findUnique({where:{id:targetId},select:{id:true}})
+    : await prisma.story.findUnique({where:{slug:targetSlug},select:{id:true}});
   if(!story) return NextResponse.json({error:"Story not found."},{status:404});
+
   const progress=await prisma.storyProgress.upsert({
-    where:{userId_storyId:{userId:user.id,storyId:targetId}},
+    where:{userId_storyId:{userId:user.id,storyId:story.id}},
     update:{currentScene:sequence,progressPercent,positionMs,completedAt:completed?new Date():null},
-    create:{userId:user.id,storyId:targetId,currentScene:sequence,progressPercent,positionMs,completedAt:completed?new Date():null}
+    create:{userId:user.id,storyId:story.id,currentScene:sequence,progressPercent,positionMs,completedAt:completed?new Date():null}
   });
   return NextResponse.json({progress});
 }
