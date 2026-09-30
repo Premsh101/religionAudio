@@ -6,7 +6,7 @@ import { ArrowLeft, Bookmark, Pause, Play, Sparkles, Volume2 } from "lucide-reac
 import AppHeader from "../../../components/AppHeader";
 
 type Passage={id:string;reference:string;sequence:number;text:string};
-type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[]};
+type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number};
 
 export default function WorkReader({work}:{work:Work}){
   const [active,setActive]=useState(work.passages[0]?.sequence||1);
@@ -15,6 +15,9 @@ export default function WorkReader({work}:{work:Work}){
   const [bookmarked,setBookmarked]=useState(false);
   const current=work.passages.find(p=>p.sequence===active)||work.passages[0];
   const total=work.passages.length;
+  const currentChapterIndex=work.chapters.indexOf(work.currentChapter);
+  const previousChapter=currentChapterIndex>0?work.chapters[currentChapterIndex-1]:null;
+  const nextChapter=currentChapterIndex>=0&&currentChapterIndex<work.chapters.length-1?work.chapters[currentChapterIndex+1]:null;
 
   useEffect(()=>{
     async function load(){
@@ -92,12 +95,21 @@ export default function WorkReader({work}:{work:Work}){
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-amber-300">{work.language} · {work.rightsStatus}</p>
             <h1 className="mt-2 font-display text-4xl">{work.title}</h1>
+            <div className="mt-4 flex flex-wrap items-center gap-2">
+              <Link href={"/read/"+work.slug} className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-xs text-zinc-300">Chapters</Link>
+              <span className="text-xs text-zinc-600">Chapter {work.currentChapter}</span>
+            </div>
             <p className="mt-2 text-sm text-zinc-500">{work.edition||work.translator||"Primary text"}</p>
           </div>
           <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save book"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
         </div>
 
-        <div className="mt-8 space-y-4">
+        <div className="mt-8 flex items-center justify-between gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-4">
+          <Link href={previousChapter?"/read/"+work.slug+"?chapter="+previousChapter:"#"} className={"rounded-xl border border-white/10 px-3 py-2 text-xs "+(previousChapter?"text-zinc-300 hover:bg-white/5":"pointer-events-none text-zinc-700")}>← Previous</Link>
+          <div className="flex max-w-[60%] gap-1 overflow-x-auto">{work.chapters.map(ch=><Link key={ch} href={"/read/"+work.slug+"?chapter="+ch} className={"min-w-9 rounded-lg px-2.5 py-2 text-center text-xs "+(ch===work.currentChapter?"bg-white text-black":"border border-white/10 text-zinc-500 hover:text-white")}>{ch}</Link>)}</div>
+          <Link href={nextChapter?"/read/"+work.slug+"?chapter="+nextChapter:"#"} className={"rounded-xl border border-white/10 px-3 py-2 text-xs "+(nextChapter?"text-zinc-300 hover:bg-white/5":"pointer-events-none text-zinc-700")}>Next →</Link>
+        </div>
+        <div className="mt-4 space-y-4">
           {work.passages.map(p=><button key={p.id} onClick={()=>{setActive(p.sequence);setPlaying(false);saveProgress(p.sequence)}} className={"w-full rounded-2xl border p-5 text-left transition "+(active===p.sequence?"border-amber-300/30 bg-amber-300/[0.06]":"border-white/5 bg-white/[0.02] hover:border-white/10")}>
             <div className="mb-2 text-xs text-zinc-600">{p.reference}</div>
             <div className="font-display text-lg leading-8 text-zinc-100">{p.text}</div>
