@@ -7,7 +7,7 @@ export async function POST(request:NextRequest){
     return Response.json({error:"Question is required."},{status:400});
   }
 
-  const retrieved=formatRetrievedContext(question);
+  const retrieved=await formatRetrievedContext(question);
   const endpoint=process.env.AI_BASE_URL;
   const apiKey=process.env.AI_API_KEY;
   const model=process.env.AI_MODEL || "gpt-4o-mini";
