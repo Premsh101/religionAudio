@@ -18,5 +18,6 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/prisma7.config.ts ./prisma7.config.ts
+COPY docker/start-prod.sh ./docker/start-prod.sh
 EXPOSE 3000
-CMD ["npm","start"]
+CMD ["sh","./docker/start-prod.sh"]
