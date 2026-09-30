@@ -2,8 +2,9 @@ import Link from "next/link";
 import { ArrowLeft, BookOpen, MapPin, Sparkles } from "lucide-react";
 import places from "../../../data/places.seed.json";
 
-export default function PlacePage({params}:{params:{slug:string}}){
- const place=places.find(p=>p.slug===params.slug) || places[0];
+export default async function PlacePage({params}:{params:Promise<{slug:string}>}){
+ const {slug}=await params;
+ const place=places.find(p=>p.slug===slug) || places[0];
  return <main className="min-h-screen bg-zinc-950">
   <header className="mx-auto max-w-5xl px-5 py-5"><Link href="/places" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Sacred atlas</Link></header>
   <section className="mx-auto max-w-5xl px-5 pb-20 pt-8">
