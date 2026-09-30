@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Sparkles } from "lucide-react";
+import AppHeader from "../../components/AppHeader";
 
 export default function AIPage(){
   const [question,setQuestion]=useState("");
@@ -22,7 +23,7 @@ export default function AIPage(){
   }
 
   return <main className="min-h-screen bg-zinc-950">
-    <header className="mx-auto max-w-5xl px-5 py-5"><Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link></header>
+      <AppHeader/>
     <section className="mx-auto max-w-5xl px-5 pb-20 pt-10">
       <div className="glass rounded-[32px] p-7 md:p-10">
         <p className="text-sm text-violet-300">Evidence-aware AI</p>
