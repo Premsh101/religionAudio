@@ -63,12 +63,26 @@ enum StoryIntensity {
   DARK
 }
 
+enum UserRole {
+  USER
+  EDITOR
+  ADMIN
+}
+
+enum StoryStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
 model User {
   id           String   @id @default(cuid())
   displayName  String?
   email        String?  @unique
   phone        String?  @unique
   passwordHash String
+  role         UserRole @default(USER)
   isActive     Boolean  @default(true)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
@@ -212,6 +226,8 @@ model Story {
   bookmarks      Bookmark[]
   intensity      StoryIntensity @default(GENTLE)
   narrationProfile NarrationProfile @default(DEFAULT)
+  status         StoryStatus @default(DRAFT)
+  publishedAt    DateTime?
   contentWarnings String[]
   places         PlaceOnStory[]
   createdAt      DateTime      @default(now())
