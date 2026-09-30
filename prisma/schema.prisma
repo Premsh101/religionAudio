@@ -138,6 +138,8 @@ model Work {
   passages        Passage[]
   contentItems    ContentItem[]
   audioAssets     AudioAsset[]
+  progress        WorkProgress[]
+  bookmarks       Bookmark[]
   createdAt       DateTime     @default(now())
   updatedAt       DateTime     @updatedAt
 }
@@ -155,6 +157,7 @@ model Passage {
   source         Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
   audioSegments  AudioSegment[]
   contentItems   ContentItem[]
+  bookmarks      Bookmark[]
   createdAt      DateTime      @default(now())
   @@unique([workId, reference])
   @@index([workId, sequence])
@@ -205,6 +208,8 @@ model Story {
   source         Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
   audioAssets    AudioAsset[]
   scenes         StoryScene[]
+  progress       StoryProgress[]
+  bookmarks      Bookmark[]
   intensity      StoryIntensity @default(GENTLE)
   narrationProfile NarrationProfile @default(DEFAULT)
   contentWarnings String[]
