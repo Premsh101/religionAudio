@@ -83,6 +83,7 @@ model Source {
   audioAssets     AudioAsset[]
   places          Place[]
   stories         Story[]
+  works           Work[]
 }
 
 model Work {
