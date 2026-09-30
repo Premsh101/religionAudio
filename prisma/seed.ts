@@ -101,25 +101,17 @@ async function seedGenesis(){
   const data=JSON.parse(fs.readFileSync(path.join(process.cwd(),"data/library/judaism/genesis-jps-1917.json"),"utf8"));
   const chapters=data.content.text as string[][];
   let sequence=0;
-  chapters.forEach((chapter,index)=>{
-    chapter.forEach((text,indexInChapter)=>{
+  for(const [chapterIndex,chapter] of chapters.entries()){
+    for(const [verseIndex,text] of chapter.entries()){
       sequence+=1;
-      const reference=`Genesis ${index+1}:${indexInChapter+1}`;
-      return prisma.passage.upsert({
+      const reference=`Genesis ${chapterIndex+1}:${verseIndex+1}`;
+      await prisma.passage.upsert({
         where:{workId_reference:{workId:work.id,reference}},
         update:{sequence,text,language:"English",sourceId:source.id},
         create:{reference,sequence,text,language:"English",workId:work.id,sourceId:source.id}
       });
-    });
-  });
-  await Promise.all(chapters.flatMap((chapter,chapterIndex)=>chapter.map((text,indexInChapter)=>{
-    const reference=`Genesis ${chapterIndex+1}:${indexInChapter+1}`;
-    return prisma.passage.upsert({
-      where:{workId_reference:{workId:work.id,reference}},
-      update:{text},
-      create:{reference,sequence:0,text,language:"English",workId:work.id,sourceId:source.id}
-    });
-  })));
+    }
+  }
   console.log("Seeded Genesis chapters:",chapters.length);
 }
 
