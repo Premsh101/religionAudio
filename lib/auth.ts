@@ -1,7 +1,12 @@
 import { SignJWT, jwtVerify } from "jose";
 
-const secret=process.env.AUTH_SECRET || "development-only-change-this-secret";
-const key=new TextEncoder().encode(secret);
+function getAuthKey(){
+  const secret=process.env.AUTH_SECRET;
+  if(!secret && process.env.NODE_ENV==="production"){
+    throw new Error("AUTH_SECRET must be configured in production.");
+  }
+  return new TextEncoder().encode(secret||"development-only-change-this-secret");
+}
 
 export type SessionUser={
   id:string;
@@ -16,12 +21,12 @@ export async function createSessionToken(user:SessionUser){
     .setProtectedHeader({alg:"HS256"})
     .setIssuedAt()
     .setExpirationTime("30d")
-    .sign(key);
+    .sign(getAuthKey());
 }
 
 export async function readSessionToken(token:string){
   try{
-    const {payload}=await jwtVerify(token,key);
+    const {payload}=await jwtVerify(token,getAuthKey());
     return (payload.user || null) as SessionUser|null;
   }catch{
     return null;
