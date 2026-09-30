@@ -1,4 +1,19 @@
 services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-religion_audio}
+      POSTGRES_USER: ${POSTGRES_USER:-religion_audio}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in Coolify}
+    volumes:
+      - religion_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-religion_audio} -d ${POSTGRES_DB:-religion_audio}"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
   web:
     build:
       context: .
@@ -6,21 +21,24 @@ services:
     ports:
       - "3000:3000"
     environment:
-      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://${POSTGRES_USER:-religion_audio}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-religion_audio}}
       TTS_SERVICE_URL: http://tts:8010
       AI_BASE_URL: ${AI_BASE_URL:-}
       AI_API_KEY: ${AI_API_KEY:-}
       AI_MODEL: ${AI_MODEL:-gpt-4o-mini}
+      AUTH_SECRET: ${AUTH_SECRET:?Set AUTH_SECRET in Coolify}
+      NODE_ENV: production
     depends_on:
+      db:
+        condition: service_healthy
       tts:
         condition: service_healthy
+    restart: unless-stopped
 
   tts:
     build:
       context: ./services/tts
       dockerfile: Dockerfile
-    ports:
-      - "8010:8010"
     environment:
       AUDIO_DIR: /data/audio
       PIPER_MODEL_DIR: /models
@@ -34,7 +52,9 @@ services:
       interval: 20s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
 
 volumes:
+  religion_postgres:
   religion_audio:
   religion_tts_models:
