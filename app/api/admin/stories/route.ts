@@ -25,7 +25,11 @@ export async function GET(){
       source:{select:{id:true,name:true,url:true,rightsStatus:true}}
     }
   });
-  return NextResponse.json({stories});
+  const sources=await prisma.source.findMany({
+    orderBy:{name:"asc"},
+    select:{id:true,name:true,url:true,license:true,rightsStatus:true}
+  });
+  return NextResponse.json({stories,sources});
 }
 
 export async function POST(request:NextRequest){
@@ -53,6 +57,14 @@ export async function POST(request:NextRequest){
   const narrationProfile=allowedProfiles.includes(body?.narrationProfile)?body.narrationProfile:"DEFAULT";
   const intensity=allowedIntensity.includes(body?.intensity)?body.intensity:"GENTLE";
   const requestedStatus=["DRAFT","REVIEW","PUBLISHED","ARCHIVED"].includes(body?.status)?body.status:"DRAFT";
+  const sourceId=typeof body?.sourceId==="string"&&body.sourceId.trim()?body.sourceId.trim():null;
+  if(requestedStatus==="PUBLISHED" && !sourceId){
+    return NextResponse.json({error:"A published story needs a source/rights record."},{status:400});
+  }
+  if(sourceId){
+    const source=await prisma.source.findUnique({where:{id:sourceId},select:{id:true}});
+    if(!source) return NextResponse.json({error:"Selected source not found."},{status:404});
+  }
 
   const existing=await prisma.story.findUnique({where:{slug},select:{id:true}});
   if(existing) return NextResponse.json({error:"A story with this slug already exists."},{status:409});
@@ -67,6 +79,7 @@ export async function POST(request:NextRequest){
       body:storyBody,
       narrationProfile,
       intensity,
+      sourceId,
       status:requestedStatus,
       publishedAt:requestedStatus==="PUBLISHED"?new Date():null,
       contentWarnings:Array.isArray(body?.contentWarnings)?body.contentWarnings.filter((v:unknown)=>typeof v==="string").slice(0,20):[]
