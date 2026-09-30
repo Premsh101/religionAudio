@@ -72,7 +72,7 @@ async function seedDhammapada(){
   console.log("Seeded Dhammapada passages:",sequence);
 }
 
-async function seedGenesis(){
+async function seedJpsBooks(){
   const religion=await prisma.religion.upsert({
     where:{slug:"judaism"},
     update:{name:"Judaism"},
@@ -84,35 +84,64 @@ async function seedGenesis(){
     create:{name:"Jewish Scriptures",slug:"jewish-scriptures",religionId:religion.id}
   });
   const source=await upsertSource({
-    externalId:"sefaria-genesis-jps1917",
+    externalId:"sefaria-jps1917",
     name:"Sefaria Export — JPS 1917",
     url:"https://github.com/Sefaria/Sefaria-Export",
     license:"Public Domain",
     rightsStatus:"COMMERCIAL_CLEARED",
     commercialUse:true,
     attribution:"JPS 1917 via Sefaria/Open Siddur Project",
-    notes:"Use the exact edition metadata stored in data/library/judaism/genesis-jps-1917.json."
+    notes:"Exact edition metadata is stored with each imported work."
   });
-  const work=await prisma.work.upsert({
-    where:{externalId:"genesis-jps1917"},
-    update:{title:"Genesis",language:"English",edition:"The Holy Scriptures: A New Translation (JPS 1917)",rightsStatus:"COMMERCIAL_CLEARED",religionId:religion.id,traditionId:tradition.id,sourceId:source.id},
-    create:{externalId:"genesis-jps1917",title:"Genesis",slug:"genesis-jps1917",language:"English",edition:"The Holy Scriptures: A New Translation (JPS 1917)",rightsStatus:"COMMERCIAL_CLEARED",religionId:religion.id,traditionId:tradition.id,sourceId:source.id}
-  });
-  const data=JSON.parse(fs.readFileSync(path.join(process.cwd(),"data/library/judaism/genesis-jps-1917.json"),"utf8"));
-  const chapters=data.content.text as string[][];
-  let sequence=0;
-  for(const [chapterIndex,chapter] of chapters.entries()){
-    for(const [verseIndex,text] of chapter.entries()){
-      sequence+=1;
-      const reference=`Genesis ${chapterIndex+1}:${verseIndex+1}`;
-      await prisma.passage.upsert({
-        where:{workId_reference:{workId:work.id,reference}},
-        update:{sequence,text,language:"English",sourceId:source.id},
-        create:{reference,sequence,text,language:"English",workId:work.id,sourceId:source.id}
-      });
+  const dir=path.join(process.cwd(),"data/library/judaism");
+  const files=fs.readdirSync(dir).filter(name=>name.endsWith(".json") && name!=="genesis-jps-1917.json");
+  files.unshift("genesis-jps-1917.json");
+  for(const file of files){
+    const data=JSON.parse(fs.readFileSync(path.join(dir,file),"utf8"));
+    const content=data.content;
+    if(!content?.text || !Array.isArray(content.text)) continue;
+    const title=content.title || file.replace("-jps-1917.json","");
+    const externalId=file.replace(".json","");
+    const slug=externalId;
+    const work=await prisma.work.upsert({
+      where:{externalId},
+      update:{
+        title,
+        language:"English",
+        edition:content.versionTitle || "JPS 1917",
+        rightsStatus:"COMMERCIAL_CLEARED",
+        religionId:religion.id,
+        traditionId:tradition.id,
+        sourceId:source.id
+      },
+      create:{
+        externalId,
+        title,
+        slug,
+        language:"English",
+        edition:content.versionTitle || "JPS 1917",
+        rightsStatus:"COMMERCIAL_CLEARED",
+        religionId:religion.id,
+        traditionId:tradition.id,
+        sourceId:source.id
+      }
+    });
+    let sequence=0;
+    for(const [chapterIndex,chapter] of content.text.entries()){
+      if(!Array.isArray(chapter)) continue;
+      for(const [verseIndex,text] of chapter.entries()){
+        if(!text) continue;
+        sequence+=1;
+        const reference=`${title} ${chapterIndex+1}:${verseIndex+1}`;
+        await prisma.passage.upsert({
+          where:{workId_reference:{workId:work.id,reference}},
+          update:{sequence,text,language:"English",sourceId:source.id},
+          create:{reference,sequence,text,language:"English",workId:work.id,sourceId:source.id}
+        });
+      }
     }
+    console.log("Seeded",title,sequence,"passages");
   }
-  console.log("Seeded Genesis chapters:",chapters.length);
 }
 
 async function seedStoriesAndPlaces(){
@@ -151,7 +180,7 @@ async function seedStoriesAndPlaces(){
 
 async function main(){
   await seedDhammapada();
-  await seedGenesis();
+  await seedJpsBooks();
   await seedStoriesAndPlaces();
   console.log("ReligionAudio seed complete.");
 }
