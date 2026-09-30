@@ -116,5 +116,15 @@
     "status": "approved-open",
     "license": "Public Domain in USA; jurisdiction review before global commercial launch",
     "ingest_policy": "Use the World English Bible edition; preserve source metadata and attribution. Verify target-country rights before commercial redistribution."
+  },
+  {
+    "id": "project-gutenberg-web-ruth",
+    "tradition": "Christianity",
+    "source": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/ebooks/8235",
+    "status": "approved-open",
+    "license": "Public Domain in USA; jurisdiction review before global commercial launch",
+    "work": "The World English Bible (WEB): Ruth",
+    "ingest_policy": "Download the source file without modification. Preserve Project Gutenberg/source metadata and verify target-country copyright status before commercial distribution."
   }
 ]
