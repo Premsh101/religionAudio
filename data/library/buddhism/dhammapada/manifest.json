@@ -1,0 +1,15 @@
+{
+  "id":"dhp-sujato-en",
+  "title":"Dhammapada",
+  "tradition":"Buddhism",
+  "collection":"Khuddaka Nikaya",
+  "language":"English",
+  "translator":"Bhikkhu Sujato",
+  "license":"CC0",
+  "source_url":"https://github.com/suttacentral/bilara-data/tree/published/translation/en/sujato/sutta/kn/dhp",
+  "segment_count":26,
+  "passage_range":"1-423",
+  "files":[
+    "dhp1-20_translation-en-sujato.json","dhp21-32_translation-en-sujato.json","dhp33-43_translation-en-sujato.json","dhp44-59_translation-en-sujato.json","dhp60-75_translation-en-sujato.json","dhp76-89_translation-en-sujato.json","dhp90-99_translation-en-sujato.json","dhp100-115_translation-en-sujato.json","dhp116-128_translation-en-sujato.json","dhp129-145_translation-en-sujato.json","dhp146-156_translation-en-sujato.json","dhp157-166_translation-en-sujato.json","dhp167-178_translation-en-sujato.json","dhp179-196_translation-en-sujato.json","dhp197-208_translation-en-sujato.json","dhp209-220_translation-en-sujato.json","dhp221-234_translation-en-sujato.json","dhp235-255_translation-en-sujato.json","dhp256-272_translation-en-sujato.json","dhp273-289_translation-en-sujato.json","dhp290-305_translation-en-sujato.json","dhp306-319_translation-en-sujato.json","dhp320-333_translation-en-sujato.json","dhp334-359_translation-en-sujato.json","dhp360-382_translation-en-sujato.json","dhp383-423_translation-en-sujato.json"
+  ]
+}
