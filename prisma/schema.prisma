@@ -88,6 +88,7 @@ model Tradition {
 
 model Source {
   id              String       @id @default(cuid())
+  externalId      String?      @unique
   name            String
   url             String
   license         String?
@@ -106,6 +107,7 @@ model Source {
 
 model Work {
   id              String       @id @default(cuid())
+  externalId      String?      @unique
   title           String
   slug            String       @unique
   language        String
