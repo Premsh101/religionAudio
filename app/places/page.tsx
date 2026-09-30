@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ArrowLeft, MapPin, Search, Sparkles } from "lucide-react";
 import places from "../../data/places.seed.json";
+import AppHeader from "../../components/AppHeader";
 
 type Place={name:string;slug:string;region:string;place_type:string;status:string;evidence_note:string};
 
@@ -17,7 +18,7 @@ export default function PlacesPage(){
   ),[query,type]);
 
   return <main className="min-h-screen bg-zinc-950">
-    <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5"><Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link><span className="text-xs text-zinc-600">Sacred atlas</span></header>
+      <AppHeader/>
     <section className="mx-auto max-w-6xl px-5 pb-20 pt-8">
       <p className="text-sm text-cyan-300">Explore the world behind the stories</p>
       <h1 className="mt-2 max-w-3xl font-display text-5xl">Places people travel to, remember, worship and tell stories about.</h1>
