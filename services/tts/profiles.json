@@ -1,9 +1,9 @@
 {
   "default":{"engine":"auto","speed":1.0,"exaggeration":0.5,"cfg_weight":0.5,"pause_ms":250},
-  "scripture":{"engine":"auto","speed":0.88,"exaggeration":0.35,"cfg_weight":0.58,"pause_ms":500,"description":"Calm, deliberate and respectful. Never theatrical."},
-  "mythology":{"engine":"auto","speed":0.98,"exaggeration":0.70,"cfg_weight":0.38,"pause_ms":360,"description":"Cinematic and warm, with controlled drama."},
-  "folklore":{"engine":"auto","speed":0.92,"exaggeration":0.72,"cfg_weight":0.34,"pause_ms":460,"description":"Intimate oral-storytelling tone with suspense."},
-  "ghost":{"engine":"auto","speed":0.82,"exaggeration":0.90,"cfg_weight":0.28,"pause_ms":720,"description":"Slow, tense and atmospheric. Avoid jump-scare narration."},
-  "kids":{"engine":"auto","speed":1.05,"exaggeration":0.58,"cfg_weight":0.48,"pause_ms":260,"description":"Warm, friendly, clear and playful without being cartoonish."},
-  "moral-tale":{"engine":"auto","speed":1.02,"exaggeration":0.50,"cfg_weight":0.50,"pause_ms":280,"description":"Bright storytelling with a clear lesson."}
+  "scripture":{"engine":"kokoro","speed":0.88,"exaggeration":0.35,"cfg_weight":0.58,"pause_ms":500,"description":"Calm, deliberate and respectful. Never theatrical."},
+  "mythology":{"engine":"chatterbox","speed":0.98,"exaggeration":0.70,"cfg_weight":0.38,"pause_ms":360,"description":"Cinematic and warm, with controlled drama."},
+  "folklore":{"engine":"chatterbox","speed":0.92,"exaggeration":0.72,"cfg_weight":0.34,"pause_ms":460,"description":"Intimate oral-storytelling tone with suspense."},
+  "ghost":{"engine":"chatterbox","speed":0.82,"exaggeration":0.90,"cfg_weight":0.28,"pause_ms":720,"description":"Slow, tense and atmospheric. Avoid jump-scare narration."},
+  "kids":{"engine":"kokoro","speed":1.05,"exaggeration":0.58,"cfg_weight":0.48,"pause_ms":260,"description":"Warm, friendly, clear and playful without being cartoonish."},
+  "moral-tale":{"engine":"kokoro","speed":1.02,"exaggeration":0.50,"cfg_weight":0.50,"pause_ms":280,"description":"Bright storytelling with a clear lesson."}
 }
