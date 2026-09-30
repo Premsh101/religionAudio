@@ -24,10 +24,14 @@ export async function PATCH(request:NextRequest,{params}:{params:Promise<{slug:s
   if(!current) return NextResponse.json({error:"Story not found."},{status:404});
 
   const nextStatus=allowedStatuses.includes(body?.status)?body.status:current.status;
+  const nextBody=typeof body?.body==="string"?body.body.trim().slice(0,100000):current.body;
+  if(nextStatus==="PUBLISHED" && (!nextBody || nextBody==="Editorial draft — source and full narrative pending.")){
+    return NextResponse.json({error:"A published story needs real narrative content; the seed placeholder cannot be published."},{status:400});
+  }
   const data:any={
     title:typeof body?.title==="string"?body.title.trim().slice(0,160):current.title,
     summary:typeof body?.summary==="string"?body.summary.trim().slice(0,1000)||null:current.summary,
-    body:typeof body?.body==="string"?body.body.trim().slice(0,100000):current.body,
+    body:nextBody,
     narrationProfile:allowedProfiles.includes(body?.narrationProfile)?body.narrationProfile:current.narrationProfile,
     intensity:allowedIntensity.includes(body?.intensity)?body.intensity:current.intensity,
     status:nextStatus,
