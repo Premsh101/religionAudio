@@ -1,6 +1,50 @@
 [
-  {"title":"The Night the Banyan Whispered","slug":"night-the-banyan-whispered","content_type":"ghost-story","audience":"teens","tag":"Local Folklore","status":"draft"},
-  {"title":"Ganesha and the Moon","slug":"ganesha-and-the-moon","content_type":"mythology","audience":"kids","tag":"Mythology","status":"draft"},
-  {"title":"The First Sermon","slug":"the-first-sermon","content_type":"story","audience":"family","tag":"Sacred Story","status":"draft"},
-  {"title":"The Honest Woodcutter","slug":"the-honest-woodcutter","content_type":"moral-tale","audience":"kids","tag":"Moral Tale","status":"draft"}
+  {
+    "title":"The Night the Banyan Whispered",
+    "slug":"night-the-banyan-whispered",
+    "content_type":"ghost-story",
+    "audience":"teens",
+    "age_min":13,
+    "age_max":99,
+    "tag":"Local Folklore",
+    "narration_profile":"ghost",
+    "status":"draft",
+    "style_notes":"Slow, atmospheric village storytelling with deliberate silences. Present as folklore, not verified paranormal fact."
+  },
+  {
+    "title":"Ganesha and the Moon",
+    "slug":"ganesha-and-the-moon",
+    "content_type":"mythology",
+    "audience":"kids",
+    "age_min":6,
+    "age_max":12,
+    "tag":"Mythology",
+    "narration_profile":"kids",
+    "status":"draft",
+    "style_notes":"Warm, playful and easy to follow. Keep sacred characters respectful; avoid cartoon caricature."
+  },
+  {
+    "title":"The First Sermon",
+    "slug":"the-first-sermon",
+    "content_type":"story",
+    "audience":"family",
+    "age_min":10,
+    "age_max":99,
+    "tag":"Sacred Story",
+    "narration_profile":"mythology",
+    "status":"draft",
+    "style_notes":"Warm cinematic narrative leading into the historical/traditional account. Keep interpretation labelled."
+  },
+  {
+    "title":"The Honest Woodcutter",
+    "slug":"the-honest-woodcutter",
+    "content_type":"moral-tale",
+    "audience":"kids",
+    "age_min":7,
+    "age_max":12,
+    "tag":"Moral Tale",
+    "narration_profile":"moral-tale",
+    "status":"draft",
+    "style_notes":"Bright, clear and friendly with a pause before the lesson."
+  }
 ]
