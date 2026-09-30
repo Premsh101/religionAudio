@@ -6,7 +6,7 @@ import { BookOpen, Headphones, Menu, Sparkles, X } from "lucide-react";
 
 export default function AppHeader(){
   const [open,setOpen]=useState(false);
-  const [user,setUser]=useState<{displayName:string|null}|null>(null);
+  const [user,setUser]=useState<{displayName:string|null;role:"USER"|"EDITOR"|"ADMIN"}|null>(null);
 
   useEffect(()=>{
     fetch("/api/auth/me").then(r=>r.json()).then(data=>setUser(data.user)).catch(()=>{});
@@ -25,6 +25,7 @@ export default function AppHeader(){
         <Link href="/places" className="hover:text-white">Places</Link>
         <Link href="/ai" className="hover:text-white">Ask AI</Link>
         <Link href="/tts" className="hover:text-white">Narration</Link>
+        {user && (user.role==="ADMIN" || user.role==="EDITOR") && <Link href="/admin" className="hover:text-white">Studio</Link>}
       </nav>
 
       <div className="hidden items-center gap-2 md:flex">
@@ -43,7 +44,7 @@ export default function AppHeader(){
     {open && <div className="border-t border-white/5 px-5 py-4 md:hidden">
       <div className="grid gap-2">
         {[["Stories","/stories"],["Library","/library"],["Places","/places"],["Ask AI","/ai"],["Narration","/tts"]].map(([label,href])=><Link key={href} href={href} onClick={()=>setOpen(false)} className="rounded-xl bg-white/[0.03] px-4 py-3 text-sm text-zinc-300">{label}</Link>)}
-        {user ? <Link href="/account" onClick={()=>setOpen(false)} className="rounded-xl bg-white px-4 py-3 text-center text-sm font-semibold text-black">Account</Link> :
+        {user ? <><Link href="/account" onClick={()=>setOpen(false)} className="rounded-xl bg-white px-4 py-3 text-center text-sm font-semibold text-black">Account</Link>{(user.role==="ADMIN" || user.role==="EDITOR")&&<Link href="/admin" onClick={()=>setOpen(false)} className="rounded-xl border border-white/10 px-4 py-3 text-center text-sm text-zinc-300">Editorial Studio</Link>}</> :
           <div className="grid grid-cols-2 gap-2 pt-2"><Link href="/login" onClick={()=>setOpen(false)} className="rounded-xl border border-white/10 px-4 py-3 text-center text-sm text-zinc-300">Log in</Link><Link href="/signup" onClick={()=>setOpen(false)} className="rounded-xl bg-white px-4 py-3 text-center text-sm font-semibold text-black">Sign up</Link></div>}
       </div>
     </div>}
