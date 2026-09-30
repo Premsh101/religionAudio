@@ -1,0 +1,27 @@
+{
+  "kokoro": {
+    "license": "Apache-2.0",
+    "model": "hexgrad/Kokoro-82M",
+    "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "voices": {
+      "en": ["af_heart","af_bella","am_michael","bf_emma"],
+      "hi": ["hf_alpha","hf_beta","hm_omega","hm_psi"]
+    },
+    "default_by_language": {
+      "en":"af_heart",
+      "hi":"hf_alpha"
+    },
+    "note":"Voice metadata and model licence are separate from any third-party reference voice recordings."
+  },
+  "piper": {
+    "license": "MIT software; individual voice-model licences vary",
+    "source_url": "https://github.com/rhasspy/piper",
+    "voices": {},
+    "note":"Populate only with voice models whose model cards permit the intended commercial use."
+  },
+  "chatterbox": {
+    "license": "MIT",
+    "source_url": "https://github.com/resemble-ai/chatterbox",
+    "reference_voice_policy":"Only use reference audio with documented permission/licence. Reference audio controls speaker characteristics and style."
+  }
+}
