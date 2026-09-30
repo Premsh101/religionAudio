@@ -9,7 +9,9 @@ type AdminUser={displayName:string|null;role:"USER"|"EDITOR"|"ADMIN"};
 type Story={
   id:string;title:string;slug:string;type:string;audience:string;status:"DRAFT"|"REVIEW"|"PUBLISHED"|"ARCHIVED";
   language:string;summary:string|null;body:string;narrationProfile:string;intensity:string;publishedAt:string|null;
+  source:{id:string;name:string;rightsStatus:string}|null;
 };
+type Source={id:string;name:string;license:string|null;rightsStatus:string};
 
 const statuses=["DRAFT","REVIEW","PUBLISHED","ARCHIVED"];
 const types=["STORY","MYTHOLOGY","FOLKLORE","GHOST_STORY","MORAL_TALE"];
@@ -19,8 +21,9 @@ const profiles=["DEFAULT","SCRIPTURE","MYTHOLOGY","FOLKLORE","GHOST","KIDS","MOR
 export default function AdminPage(){
   const [user,setUser]=useState<AdminUser|null>(null);
   const [stories,setStories]=useState<Story[]>([]);
+  const [sources,setSources]=useState<Source[]>([]);
   const [selected,setSelected]=useState<Story|null>(null);
-  const [form,setForm]=useState({title:"",slug:"",type:"STORY",audience:"FAMILY",summary:"",body:"",narrationProfile:"DEFAULT",intensity:"GENTLE",status:"DRAFT"});
+  const [form,setForm]=useState({title:"",slug:"",type:"STORY",audience:"FAMILY",summary:"",body:"",narrationProfile:"DEFAULT",intensity:"GENTLE",status:"DRAFT",sourceId:""});
   const [loading,setLoading]=useState(true);
   const [message,setMessage]=useState("");
 
@@ -29,7 +32,7 @@ export default function AdminPage(){
     setUser(me.user);
     if(!me.user || (me.user.role!=="ADMIN" && me.user.role!=="EDITOR")) return;
     const res=await fetch("/api/admin/stories");
-    if(res.ok){const data=await res.json();setStories(data.stories||[]);}
+    if(res.ok){const data=await res.json();setStories(data.stories||[]);setSources(data.sources||[]);}
   }
 
   useEffect(()=>{load().finally(()=>setLoading(false));},[]);
@@ -38,14 +41,15 @@ export default function AdminPage(){
     setSelected(story);
     setForm({
       title:story.title,slug:story.slug,type:story.type,audience:story.audience,
-      summary:story.summary||"",body:story.body,narrationProfile:story.narrationProfile,intensity:story.intensity,status:story.status
+      summary:story.summary||"",body:story.body,narrationProfile:story.narrationProfile,intensity:story.intensity,status:story.status,
+      sourceId:story.source?.id||""
     });
     setMessage("");
   }
 
   function newStory(){
     setSelected(null);
-    setForm({title:"",slug:"",type:"STORY",audience:"FAMILY",summary:"",body:"",narrationProfile:"DEFAULT",intensity:"GENTLE",status:"DRAFT"});
+    setForm({title:"",slug:"",type:"STORY",audience:"FAMILY",summary:"",body:"",narrationProfile:"DEFAULT",intensity:"GENTLE",status:"DRAFT",sourceId:""});
     setMessage("");
   }
 
@@ -98,6 +102,7 @@ export default function AdminPage(){
               <label className="text-xs text-zinc-500">Intensity<select value={form.intensity} onChange={e=>setForm({...form,intensity:e.target.value})} className="mt-2 w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none">{["GENTLE","ADVENTUROUS","SPOOKY","DARK"].map(v=><option key={v}>{v}</option>)}</select></label>
               <label className="text-xs text-zinc-500 sm:col-span-2">Status<select value={form.status} onChange={e=>setForm({...form,status:e.target.value})} className="mt-2 w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none">{statuses.map(v=><option key={v}>{v}</option>)}</select></label>
             </div>
+            <label className="block text-xs text-zinc-500">Source / rights record<select value={form.sourceId} onChange={e=>setForm({...form,sourceId:e.target.value})} className="mt-2 w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none"><option value="">Select a source…</option>{sources.map(source=><option key={source.id} value={source.id}>{source.name} · {source.rightsStatus}</option>)}</select></label>
             <label className="block text-xs text-zinc-500">Summary<textarea value={form.summary} onChange={e=>setForm({...form,summary:e.target.value})} rows={3} className="mt-2 w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none"/></label>
             <label className="block text-xs text-zinc-500">Story body<textarea value={form.body} onChange={e=>setForm({...form,body:e.target.value})} rows={14} className="mt-2 w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm leading-6 text-white outline-none"/></label>
             <button className="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-black"><Save className="h-4 w-4"/>{selected?"Save changes":"Create draft"}</button>
