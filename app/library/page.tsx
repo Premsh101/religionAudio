@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { BookOpen, Sparkles, Headphones, ArrowRight } from "lucide-react";
 import books from "../../data/catalog/books.json";
+import AppHeader from "../../components/AppHeader";
 
 export default function LibraryPage(){
   return <main className="min-h-screen bg-zinc-950">
-    <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-      <Link href="/" className="text-sm text-zinc-500 hover:text-white">← Sacred Stories</Link>
-      <div className="text-xs text-zinc-600">Rights-aware library</div>
-    </header>
+      <AppHeader/>
     <section className="mx-auto max-w-6xl px-5 pb-20 pt-8">
       <p className="text-sm text-amber-300">Your sacred library</p>
       <h1 className="mt-2 font-display text-5xl">Read something that stays with you.</h1>
