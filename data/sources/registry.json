@@ -1,111 +1,120 @@
 [
   {
-    "id":"suttacentral-bilara",
-    "tradition":"Buddhism",
-    "source":"SuttaCentral Bilara Data",
-    "url":"https://github.com/suttacentral/bilara-data",
-    "status":"approved-open",
-    "license":"CC0",
-    "ingest_policy":"May ingest supported published translations; preserve attribution/context and re-check source metadata before production release."
+    "id": "suttacentral-bilara",
+    "tradition": "Buddhism",
+    "source": "SuttaCentral Bilara Data",
+    "url": "https://github.com/suttacentral/bilara-data",
+    "status": "approved-open",
+    "license": "CC0",
+    "ingest_policy": "May ingest supported published translations; preserve attribution/context and re-check source metadata before production release."
   },
   {
-    "id":"sefaria",
-    "tradition":"Judaism",
-    "source":"Sefaria",
-    "url":"https://www.sefaria.org/",
-    "status":"version-by-version",
-    "license":"varies-by-version",
-    "ingest_policy":"Check the exact Version record. Public Domain, CC0 and other compatible versions can be considered; CC-BY-NC and unverified versions are excluded from commercial corpus."
+    "id": "sefaria",
+    "tradition": "Judaism",
+    "source": "Sefaria",
+    "url": "https://www.sefaria.org/",
+    "status": "version-by-version",
+    "license": "varies-by-version",
+    "ingest_policy": "Check the exact Version record. Public Domain, CC0 and other compatible versions can be considered; CC-BY-NC and unverified versions are excluded from commercial corpus."
   },
   {
-    "id":"sefaria-genesis-jps1917",
-    "tradition":"Judaism",
-    "source":"Sefaria Export",
-    "url":"https://github.com/Sefaria/Sefaria-Export",
-    "status":"approved-open",
-    "license":"Public Domain",
-    "work":"Genesis / The Holy Scriptures: A New Translation (JPS 1917)",
-    "ingest_policy":"Imported edition is marked Public Domain in source metadata."
+    "id": "sefaria-genesis-jps1917",
+    "tradition": "Judaism",
+    "source": "Sefaria Export",
+    "url": "https://github.com/Sefaria/Sefaria-Export",
+    "status": "approved-open",
+    "license": "Public Domain",
+    "work": "Genesis / The Holy Scriptures: A New Translation (JPS 1917)",
+    "ingest_policy": "Imported edition is marked Public Domain in source metadata."
   },
   {
-    "id":"tanzil-quran",
-    "tradition":"Islam",
-    "source":"Tanzil Project",
-    "url":"https://tanzil.net/",
-    "status":"approved-with-attribution",
-    "license":"CC BY 3.0",
-    "ingest_policy":"Keep the text verbatim, preserve Tanzil copyright/licence block and link to Tanzil; do not alter the text."
+    "id": "tanzil-quran",
+    "tradition": "Islam",
+    "source": "Tanzil Project",
+    "url": "https://tanzil.net/",
+    "status": "approved-with-attribution",
+    "license": "CC BY 3.0",
+    "ingest_policy": "Keep the text verbatim, preserve Tanzil copyright/licence block and link to Tanzil; do not alter the text."
   },
   {
-    "id":"quranic-arabic-corpus",
-    "tradition":"Islam",
-    "source":"Quranic Arabic Corpus",
-    "url":"https://corpus.quran.com/",
-    "status":"research-conditional",
-    "license":"GPL-3.0",
-    "ingest_policy":"Treat linguistic annotations as a separately licensed corpus. Preserve licence/notice requirements and do not casually merge it into a commercial non-GPL dataset."
+    "id": "quranic-arabic-corpus",
+    "tradition": "Islam",
+    "source": "Quranic Arabic Corpus",
+    "url": "https://corpus.quran.com/",
+    "status": "research-conditional",
+    "license": "GPL-3.0",
+    "ingest_policy": "Treat linguistic annotations as a separately licensed corpus. Preserve licence/notice requirements and do not casually merge it into a commercial non-GPL dataset."
   },
   {
-    "id":"gretil",
-    "tradition":"Indian traditions",
-    "source":"GRETIL",
-    "url":"https://gretil.sub.uni-goettingen.de/",
-    "status":"research-only",
-    "license":"often-CC-BY-NC-SA-4.0",
-    "ingest_policy":"Useful for discovery and scholarly verification, but current corpus entries may be non-commercial; obtain permission or use a separately licensed edition before commercial redistribution."
+    "id": "gretil",
+    "tradition": "Indian traditions",
+    "source": "GRETIL",
+    "url": "https://gretil.sub.uni-goettingen.de/",
+    "status": "research-only",
+    "license": "often-CC-BY-NC-SA-4.0",
+    "ingest_policy": "Useful for discovery and scholarly verification, but current corpus entries may be non-commercial; obtain permission or use a separately licensed edition before commercial redistribution."
   },
   {
-    "id":"bdrc",
-    "tradition":"Buddhism",
-    "source":"Buddhist Digital Resource Center",
-    "url":"https://www.bdrc.io/",
-    "status":"mixed",
-    "license":"varies-by-work",
-    "ingest_policy":"Use only works explicitly identified as open/public-domain for redistribution. Restricted-access/copyright works are not production corpus sources."
+    "id": "bdrc",
+    "tradition": "Buddhism",
+    "source": "Buddhist Digital Resource Center",
+    "url": "https://www.bdrc.io/",
+    "status": "mixed",
+    "license": "varies-by-work",
+    "ingest_policy": "Use only works explicitly identified as open/public-domain for redistribution. Restricted-access/copyright works are not production corpus sources."
   },
   {
-    "id":"gita-supersite",
-    "tradition":"Hindu traditions",
-    "source":"Gita Supersite / IIT Kanpur",
-    "url":"https://www.gitasupersite.iitk.ac.in/",
-    "status":"permission-review",
-    "license":"edition-specific",
-    "ingest_policy":"Use for discovery/reference until the exact edition, translation and commentary rights are verified."
+    "id": "gita-supersite",
+    "tradition": "Hindu traditions",
+    "source": "Gita Supersite / IIT Kanpur",
+    "url": "https://www.gitasupersite.iitk.ac.in/",
+    "status": "permission-review",
+    "license": "edition-specific",
+    "ingest_policy": "Use for discovery/reference until the exact edition, translation and commentary rights are verified."
   },
   {
-    "id":"muktabodha",
-    "tradition":"Indian traditions",
-    "source":"Muktabodha",
-    "url":"https://muktabodha.org/",
-    "status":"permission-review",
-    "license":"edition-specific",
-    "ingest_policy":"Use as a scholarly discovery source; verify rights for every text before commercial ingestion."
+    "id": "muktabodha",
+    "tradition": "Indian traditions",
+    "source": "Muktabodha",
+    "url": "https://muktabodha.org/",
+    "status": "permission-review",
+    "license": "edition-specific",
+    "ingest_policy": "Use as a scholarly discovery source; verify rights for every text before commercial ingestion."
   },
   {
-    "id":"jain-elibrary",
-    "tradition":"Jainism",
-    "source":"Jain eLibrary",
-    "url":"https://jainelibrary.org/",
-    "status":"permission-review",
-    "license":"edition-specific",
-    "ingest_policy":"Verify edition-level copyright and redistribution permissions before ingestion."
+    "id": "jain-elibrary",
+    "tradition": "Jainism",
+    "source": "Jain eLibrary",
+    "url": "https://jainelibrary.org/",
+    "status": "permission-review",
+    "license": "edition-specific",
+    "ingest_policy": "Verify edition-level copyright and redistribution permissions before ingestion."
   },
   {
-    "id":"sgpc",
-    "tradition":"Sikhism",
-    "source":"SGPC",
-    "url":"https://sgpc.net/",
-    "status":"permission-review",
-    "license":"edition-specific",
-    "ingest_policy":"Use authoritative site for reference and institutional facts; do not copy/repackage site text or audio until rights are confirmed."
+    "id": "sgpc",
+    "tradition": "Sikhism",
+    "source": "SGPC",
+    "url": "https://sgpc.net/",
+    "status": "permission-review",
+    "license": "edition-specific",
+    "ingest_policy": "Use authoritative site for reference and institutional facts; do not copy/repackage site text or audio until rights are confirmed."
   },
   {
-    "id":"avesta-org",
-    "tradition":"Zoroastrianism",
-    "source":"Avesta -- Zoroastrian Archives",
-    "url":"https://avesta.org/",
-    "status":"do-not-commercial-ingest",
-    "license":"restricted",
-    "ingest_policy":"Reference/discovery only unless written permission is obtained."
+    "id": "avesta-org",
+    "tradition": "Zoroastrianism",
+    "source": "Avesta -- Zoroastrian Archives",
+    "url": "https://avesta.org/",
+    "status": "do-not-commercial-ingest",
+    "license": "restricted",
+    "ingest_policy": "Reference/discovery only unless written permission is obtained."
+  },
+  {
+    "id": "project-gutenberg-web",
+    "tradition": "Christianity",
+    "source": "Project Gutenberg / World English Bible",
+    "url": "https://www.gutenberg.org/ebooks/8294",
+    "status": "approved-open",
+    "license": "Public Domain in USA; jurisdiction review before global commercial launch",
+    "ingest_policy": "Use the World English Bible edition; preserve source metadata and attribution. Verify target-country rights before commercial redistribution."
   }
 ]
