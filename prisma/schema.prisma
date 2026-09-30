@@ -72,6 +72,9 @@ model User {
   isActive     Boolean  @default(true)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  workProgress WorkProgress[]
+  storyProgress StoryProgress[]
+  bookmarks    Bookmark[]
 }
 
 model Religion {
@@ -315,4 +318,56 @@ model AICitation {
   quote       String?
   note        String?
   createdAt   DateTime     @default(now())
+}
+
+
+model WorkProgress {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  workId          String
+  work            Work      @relation(fields: [workId], references: [id], onDelete: Cascade)
+  currentSequence Int       @default(1)
+  progressPercent Int       @default(0)
+  positionMs      Int       @default(0)
+  completedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  @@unique([userId, workId])
+  @@index([userId, updatedAt])
+}
+
+model StoryProgress {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  storyId         String
+  story           Story     @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  currentScene    Int       @default(1)
+  progressPercent Int       @default(0)
+  positionMs      Int       @default(0)
+  completedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  @@unique([userId, storyId])
+  @@index([userId, updatedAt])
+}
+
+model Bookmark {
+  id        String        @id @default(cuid())
+  userId    String
+  user      User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  workId    String?
+  work      Work?         @relation(fields: [workId], references: [id], onDelete: Cascade)
+  passageId String?
+  passage   Passage?      @relation(fields: [passageId], references: [id], onDelete: Cascade)
+  storyId   String?
+  story     Story?        @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  note      String?
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  @@index([userId, createdAt])
+  @@index([workId])
+  @@index([passageId])
+  @@index([storyId])
 }
