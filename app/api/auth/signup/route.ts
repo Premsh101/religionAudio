@@ -27,7 +27,7 @@ export async function POST(request:NextRequest){
       phone:normalized.type==="phone"?normalized.value:null,
       passwordHash:await bcrypt.hash(password,12)
     },
-    select:{id:true,displayName:true,email:true,phone:true}
+    select:{id:true,displayName:true,email:true,phone:true,role:true}
   });
 
   const token=await createSessionToken(user);
