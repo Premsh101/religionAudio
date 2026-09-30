@@ -4,31 +4,47 @@ import AppHeader from "../../../components/AppHeader";
 import WorkReader from "./WorkReader";
 import { getPrisma } from "../../../lib/server/prisma";
 
-export const dynamic = "force-dynamic";
+export const dynamic="force-dynamic";
 
-export default async function WorkReaderPage({params}:{params:Promise<{slug:string}>}){
+function chapterFromReference(reference:string){
+  const match=reference.match(/(?:^dhp|\s)(\d+):\d+$/);
+  return match ? Number(match[1]) : null;
+}
+
+function prefixForChapter(workTitle:string,chapter:number){
+  return workTitle==="Dhammapada" ? "dhp"+chapter+":" : workTitle+" "+chapter+":";
+}
+
+export default async function WorkReaderPage({params,searchParams}:{params:Promise<{slug:string}>;searchParams:Promise<{chapter?:string}>}){
   const {slug}=await params;
+  const query=await searchParams;
   const prisma=getPrisma();
-  if(!prisma){
-    return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="Library database is offline." /></main>;
-  }
+  if(!prisma) return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="Library database is offline." /></main>;
 
   const work=await prisma.work.findUnique({
     where:{slug},
     select:{
       id:true,title:true,language:true,translator:true,edition:true,rightsStatus:true,
       source:{select:{name:true,url:true,license:true}},
-      passages:{orderBy:{sequence:"asc"},take:800,select:{id:true,reference:true,sequence:true,text:true}}
+      passages:{orderBy:{sequence:"asc"},select:{id:true,reference:true,sequence:true}}
     }
   });
 
-  if(!work){
-    return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="Book not found." /></main>;
-  }
+  if(!work) return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="Book not found." /></main>;
+
+  const chapters=[...new Set(work.passages.map(p=>chapterFromReference(p.reference)).filter((value):value is number=>value!==null))];
+  const requested=Number(query.chapter);
+  const chapter=chapters.includes(requested)?requested:(chapters[0]||1);
+  const prefix=prefixForChapter(work.title,chapter);
+  const passages=await prisma.passage.findMany({
+    where:{workId:work.id,reference:{startsWith:prefix}},
+    orderBy:{sequence:"asc"},
+    select:{id:true,reference:true,sequence:true,text:true}
+  });
 
   return <WorkReader work={{
     id:work.id,title:work.title,slug,language:work.language,translator:work.translator,edition:work.edition,
-    rightsStatus:work.rightsStatus,source:work.source,passages:work.passages
+    rightsStatus:work.rightsStatus,source:work.source,passages,chapters,currentChapter:chapter
   }}/>;
 }
 
