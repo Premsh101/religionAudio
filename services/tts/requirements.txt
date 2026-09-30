@@ -3,6 +3,7 @@ uvicorn[standard]==0.34.0
 numpy>=1.26
 soundfile>=0.12
 piper-tts>=1.2.0
+kokoro>=0.9.4
 # Optional expressive engine:
 # chatterbox-tts
 # Install torch/torchaudio using the CPU or CUDA build appropriate to the host.
