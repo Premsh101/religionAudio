@@ -148,22 +148,24 @@ def synthesize(req: TTSRequest):
         for index, part in enumerate(chunks(req.text)):
             output = work / f"{index:04d}.wav"
             engine = profile["engine"]
-            if engine in ("auto","chatterbox") and req.reference_audio:
+            if engine in ("chatterbox","auto") and (engine == "chatterbox" or req.reference_audio):
                 try:
                     chatterbox_generate(part, req.language, req.reference_audio, profile["exaggeration"], profile["cfg_weight"], output)
                 except Exception:
                     if engine == "chatterbox":
-                        raise
-                    try:
-                        kokoro_generate(part, req.language, req.voice, profile["speed"], output)
-                    except Exception:
-                        piper_generate(part, req.language, req.voice, profile["speed"], output)
+                        try:
+                            kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                        except Exception:
+                            piper_generate(part, req.language, req.voice, profile["speed"], output)
+                    else:
+                        try:
+                            kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                        except Exception:
+                            piper_generate(part, req.language, req.voice, profile["speed"], output)
             elif engine in ("auto","kokoro"):
                 try:
                     kokoro_generate(part, req.language, req.voice, profile["speed"], output)
                 except Exception:
-                    if engine == "kokoro":
-                        raise
                     piper_generate(part, req.language, req.voice, profile["speed"], output)
             else:
                 piper_generate(part, req.language, req.voice, profile["speed"], output)
