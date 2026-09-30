@@ -312,5 +312,3 @@ ALTER TABLE "AudioSegment" ADD CONSTRAINT "AudioSegment_storySceneId_fkey"
 ALTER TABLE "AudioSegment" ADD CONSTRAINT "AudioSegment_audioAssetId_fkey"
   FOREIGN KEY ("audioAssetId") REFERENCES "AudioAsset"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
-INSERT INTO "_prisma_migrations" ("id","checksum","finished_at","migration_name","logs","rolled_back_at","started_at","applied_steps_count")
-VALUES (gen_random_uuid()::text, '', NOW(), '20260930120000_init', NULL, NULL, NOW(), 1);
