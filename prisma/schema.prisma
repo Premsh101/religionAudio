@@ -1,0 +1,266 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ContentType {
+  SCRIPTURE
+  TRANSLATION
+  COMMENTARY
+  STORY
+  MYTHOLOGY
+  FOLKLORE
+  GHOST_STORY
+  MORAL_TALE
+  BIOGRAPHY
+  FESTIVAL
+  RITUAL
+  HISTORICAL_ACCOUNT
+  SACRED_PLACE
+}
+
+enum Audience {
+  KIDS
+  FAMILY
+  TEENS
+  ADULTS
+  RESEARCH
+}
+
+enum EvidenceLens {
+  TEXT
+  TRADITION
+  SCHOLARSHIP
+  SCIENCE
+}
+
+enum RightsStatus {
+  UNKNOWN
+  RESEARCH_ONLY
+  PERMISSION_REQUIRED
+  COMMERCIAL_CLEARED
+}
+
+model Religion {
+  id          String       @id @default(cuid())
+  name        String       @unique
+  slug        String       @unique
+  traditions  Tradition[]
+  works       Work[]
+  stories     Story[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Tradition {
+  id          String       @id @default(cuid())
+  name        String
+  slug        String
+  religionId  String
+  religion    Religion     @relation(fields: [religionId], references: [id], onDelete: Cascade)
+  works       Work[]
+  stories     Story[]
+  places      Place[]
+  @@unique([religionId, slug])
+}
+
+model Source {
+  id              String       @id @default(cuid())
+  name            String
+  url             String
+  license         String?
+  rightsStatus    RightsStatus @default(UNKNOWN)
+  commercialUse   Boolean      @default(false)
+  attribution     String?
+  notes           String?
+  verifiedAt      DateTime?
+  contentItems    ContentItem[]
+  passages        Passage[]
+  audioAssets     AudioAsset[]
+  places          Place[]
+  stories         Story[]
+}
+
+model Work {
+  id              String       @id @default(cuid())
+  title           String
+  slug            String       @unique
+  language        String
+  originalLanguage String?
+  edition         String?
+  translator      String?
+  rightsStatus    RightsStatus @default(UNKNOWN)
+  religionId      String?
+  religion        Religion?    @relation(fields: [religionId], references: [id], onDelete: SetNull)
+  traditionId     String?
+  tradition       Tradition?   @relation(fields: [traditionId], references: [id], onDelete: SetNull)
+  sourceId        String?
+  source          Source?      @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  passages        Passage[]
+  contentItems    ContentItem[]
+  audioAssets     AudioAsset[]
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+}
+
+model Passage {
+  id             String        @id @default(cuid())
+  reference      String
+  sequence       Int
+  text           String
+  originalText   String?
+  language       String
+  workId         String
+  work           Work          @relation(fields: [workId], references: [id], onDelete: Cascade)
+  sourceId       String?
+  source         Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  audioSegments  AudioSegment[]
+  contentItems   ContentItem[]
+  createdAt      DateTime      @default(now())
+  @@unique([workId, reference])
+  @@index([workId, sequence])
+}
+
+model ContentItem {
+  id             String        @id @default(cuid())
+  title          String
+  slug           String        @unique
+  type           ContentType
+  audience       Audience
+  ageMin         Int?
+  ageMax         Int?
+  language       String
+  summary        String?
+  body           String
+  evidenceLens   EvidenceLens?
+  rightsStatus   RightsStatus  @default(UNKNOWN)
+  workId         String?
+  work           Work?         @relation(fields: [workId], references: [id], onDelete: SetNull)
+  passageId      String?
+  passage        Passage?      @relation(fields: [passageId], references: [id], onDelete: SetNull)
+  sourceId       String?
+  source         Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  audioAssets    AudioAsset[]
+  places         PlaceOnContent[]
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  @@index([type, audience])
+}
+
+model Story {
+  id             String        @id @default(cuid())
+  title          String
+  slug           String        @unique
+  type           ContentType
+  audience       Audience
+  ageMin         Int?
+  ageMax         Int?
+  language       String        @default("en")
+  summary        String?
+  body           String
+  traditionId    String?
+  tradition      Tradition?    @relation(fields: [traditionId], references: [id], onDelete: SetNull)
+  religionId     String?
+  religion       Religion?     @relation(fields: [religionId], references: [id], onDelete: SetNull)
+  sourceId       String?
+  source         Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  audioAssets    AudioAsset[]
+  places         PlaceOnStory[]
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  @@index([type, audience])
+}
+
+model Place {
+  id                    String           @id @default(cuid())
+  name                  String
+  slug                  String           @unique
+  country               String
+  region                String?
+  latitude              Float?
+  longitude             Float?
+  placeType             String?
+  traditionalSignificance String?
+  historicalSignificance String?
+  archaeologicalEvidence String?
+  uncertaintyNotes      String?
+  sourceId              String?
+  source                Source?          @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  traditionId           String?
+  tradition             Tradition?       @relation(fields: [traditionId], references: [id], onDelete: SetNull)
+  contentLinks          PlaceOnContent[]
+  storyLinks            PlaceOnStory[]
+  audioAssets           AudioAsset[]
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @updatedAt
+  @@index([country, region])
+}
+
+model PlaceOnContent {
+  placeId    String
+  contentId  String
+  place      Place       @relation(fields: [placeId], references: [id], onDelete: Cascade)
+  content    ContentItem @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  @@id([placeId, contentId])
+}
+
+model PlaceOnStory {
+  placeId    String
+  storyId    String
+  place      Place @relation(fields: [placeId], references: [id], onDelete: Cascade)
+  story      Story @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  @@id([placeId, storyId])
+}
+
+model AudioAsset {
+  id              String        @id @default(cuid())
+  title           String?
+  language        String
+  voiceId         String?
+  narrationProfile String?
+  engine          String?
+  storageKey      String
+  durationMs      Int?
+  rightsStatus    RightsStatus  @default(UNKNOWN)
+  sourceId        String?
+  source          Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  workId          String?
+  work            Work?         @relation(fields: [workId], references: [id], onDelete: SetNull)
+  contentId       String?
+  content         ContentItem?  @relation(fields: [contentId], references: [id], onDelete: SetNull)
+  storyId         String?
+  story           Story?        @relation(fields: [storyId], references: [id], onDelete: SetNull)
+  placeId         String?
+  place           Place?        @relation(fields: [placeId], references: [id], onDelete: SetNull)
+  segments        AudioSegment[]
+  createdAt       DateTime      @default(now())
+  @@index([language, narrationProfile])
+}
+
+model AudioSegment {
+  id          String      @id @default(cuid())
+  sequence    Int
+  startMs     Int
+  endMs       Int
+  storageKey  String?
+  transcript  String?
+  passageId   String?
+  passage     Passage?    @relation(fields: [passageId], references: [id], onDelete: SetNull)
+  audioAssetId String
+  audioAsset  AudioAsset @relation(fields: [audioAssetId], references: [id], onDelete: Cascade)
+  @@unique([audioAssetId, sequence])
+}
+
+model AICitation {
+  id          String       @id @default(cuid())
+  lens        EvidenceLens
+  sourceName  String
+  sourceUrl   String?
+  quote       String?
+  note        String?
+  createdAt   DateTime     @default(now())
+}
