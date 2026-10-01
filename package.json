@@ -10,6 +10,7 @@
     "db:generate": "prisma generate",
     "db:validate": "prisma validate",
     "db:seed": "prisma generate && prisma db seed",
+    "db:check": "tsx scripts/check-schema.mjs",
     "db:make-admin": "tsx scripts/promote-admin.ts"
   },
   "dependencies": {
