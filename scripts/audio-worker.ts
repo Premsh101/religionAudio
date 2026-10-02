@@ -2,6 +2,7 @@ import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
 import { buildSegmentRequests } from "../lib/audio-pipeline";
+import { resolveAudioSource } from "../lib/audio-source";
 
 const dbUrl=process.env.DATABASE_URL;
 if(!dbUrl) throw new Error("DATABASE_URL is required");
@@ -19,12 +20,12 @@ async function claimJob(){
 }
 
 async function processJob(job:any){
- const asset=job.audioAsset;let sequence=job.segmentSequence||1;
- const sourceText=asset.title||"";
- if(!sourceText){throw new Error("AudioAsset title must contain source text until content-specific worker input is wired.")}
- const requests=buildSegmentRequests(sourceText,asset.narrationProfile||"folklore",asset.language||"en");
- const segment=requests.find(s=>s.sequence===sequence)||requests[0];
- if(!segment)throw new Error("No narration segment found");
+ const asset=job.audioAsset;
+ const source=await resolveAudioSource(prisma,asset);
+ const requests=buildSegmentRequests(source.text,asset.narrationProfile||source.profile,asset.language||source.language);
+ const sequence=job.segmentSequence||1;
+ const segment=requests.find(s=>s.sequence===sequence);
+ if(!segment)throw new Error(`Narration segment ${sequence} not found`);
  const response=await fetch(`${TTS}/synthesize`,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({...segment.request,text:segment.text})});
  if(!response.ok)throw new Error(`TTS service returned ${response.status}`);
  const result=await response.json() as {audio_url:string;engine?:string;duration_seconds?:number};
@@ -32,10 +33,6 @@ async function processJob(job:any){
  await prisma.audioJob.update({where:{id:job.id},data:{status:"COMPLETED",lockedAt:null,errorMessage:null}});
 }
 
-async function failJob(job:any,error:unknown){
- const attempts=job.attempts as number;const final=attempts>=job.maxAttempts;
- await prisma.audioJob.update({where:{id:job.id},data:{status:final?"FAILED":"QUEUED",lockedAt:null,errorMessage:String(error),nextRunAt:new Date(Date.now()+Math.min(3600000,Math.pow(2,attempts)*10000))}});
-}
-
+async function failJob(job:any,error:unknown){const attempts=job.attempts as number;const final=attempts>=job.maxAttempts;await prisma.audioJob.update({where:{id:job.id},data:{status:final?"FAILED":"QUEUED",lockedAt:null,errorMessage:String(error),nextRunAt:new Date(Date.now()+Math.min(3600000,Math.pow(2,attempts)*10000))}})}
 async function main(){console.log(`Audio worker listening on ${TTS}`);while(true){const job=await claimJob();if(!job){await sleep(5000);continue}try{await processJob(job)}catch(error){console.error("Audio job failed",job.id,error);await failJob(job,error)}}}
 main().catch(async e=>{console.error(e);await prisma.$disconnect();process.exit(1)});
