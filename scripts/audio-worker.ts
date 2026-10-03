@@ -28,23 +28,26 @@ async function claimJob(){
 
 async function processJob(job:any){
  const asset=job.audioAsset;
+ await prisma.audioAsset.update({where:{id:asset.id},data:{status:"PROCESSING"}});
+
  const source=await resolveAudioSource(prisma,asset);
- const requests=buildSegmentRequests(source.text,asset.narrationProfile||source.profile,asset.language||source.language);
+ const profile=asset.narrationProfile||source.profile;
+ const requests=buildSegmentRequests(source.text,profile,asset.language||source.language);
  const sequence=job.segmentSequence||1;
  const segment=requests.find(s=>s.sequence===sequence);
- if(!segment)throw new Error(`Narration segment ${sequence} not found`);
+ if(!segment)throw new Error("Narration segment "+sequence+" not found");
 
- const response=await fetch(`${TTS}/synthesize`,{
+ const response=await fetch(TTS+"/synthesize",{
    method:"POST",headers:{"content-type":"application/json"},
    body:JSON.stringify({...segment.request,text:segment.text})
  });
- if(!response.ok)throw new Error(`TTS service returned ${response.status}`);
+ if(!response.ok)throw new Error("TTS service returned "+response.status);
 
  const result=await response.json() as {audio_url:string;engine?:string;duration_seconds?:number};
  if(!result.audio_url)throw new Error("TTS response did not include audio_url");
 
- const generated=await fetch(`${TTS}${result.audio_url}`);
- if(!generated.ok)throw new Error(`Unable to download generated audio: ${generated.status}`);
+ const generated=await fetch(TTS+result.audio_url);
+ if(!generated.ok)throw new Error("Unable to download generated audio: "+generated.status);
  const buffer=Buffer.from(await generated.arrayBuffer());
  const stored=await storeAudio(buffer,"wav");
 
@@ -56,16 +59,24 @@ async function processJob(job:any){
 
  await prisma.audioAsset.update({
    where:{id:asset.id},
-   data:{engine:result.engine||asset.engine||"local",durationMs:result.duration_seconds?Math.round(result.duration_seconds*1000):asset.durationMs}
+   data:{engine:result.engine||asset.engine||"local"}
  });
 
- const remaining=await prisma.audioJob.count({
+ await prisma.audioJob.update({where:{id:job.id},data:{status:"COMPLETED",lockedAt:null,errorMessage:null}});
+
+ const openJobs=await prisma.audioJob.count({
    where:{audioAssetId:asset.id,status:{in:["QUEUED","PROCESSING","FAILED"]}}
  });
- if(remaining===0){
-   await prisma.audioAsset.update({where:{id:asset.id},data:{storageKey:stored.storageKey}});
+ if(openJobs===0){
+   const finished=await prisma.audioSegment.count({where:{audioAssetId:asset.id}});
+   await prisma.audioAsset.update({
+     where:{id:asset.id},
+     data:{
+       status:finished>=asset.totalSegments?"READY":"FAILED",
+       storageKey:finished>=asset.totalSegments?"audiobooks/"+asset.id+"/manifest":asset.storageKey
+     }
+   });
  }
- await prisma.audioJob.update({where:{id:job.id},data:{status:"COMPLETED",lockedAt:null,errorMessage:null}});
 }
 
 async function failJob(job:any,error:unknown){
@@ -80,10 +91,13 @@ async function failJob(job:any,error:unknown){
      nextRunAt:new Date(Date.now()+Math.min(3600000,Math.pow(2,attempts)*10000))
    }
  });
+ if(final){
+  await prisma.audioAsset.update({where:{id:job.audioAssetId},data:{status:"FAILED"}});
+ }
 }
 
 async function main(){
- console.log(`Audio worker listening on ${TTS}`);
+ console.log("Audio worker listening on "+TTS);
  while(true){
   const job=await claimJob();
   if(!job){await sleep(5000);continue}
