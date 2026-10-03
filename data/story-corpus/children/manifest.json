@@ -1,0 +1,368 @@
+{
+  "theme": "children-stories-fables-adventure",
+  "version": 1,
+  "policy": "Rights-first. Full text is stored only after the exact source edition is verified as public domain or otherwise openly licensed.",
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "translationPolicy": {
+    "mode": "SOURCE_LOCKED_FAITHFUL_TRANSLATION",
+    "targetLanguages": [
+      "hi",
+      "en",
+      "ar",
+      "ur"
+    ],
+    "rules": [
+      "Translate the complete source passage; never summarize.",
+      "Preserve every event, character action, relationship, lesson, setting, object, number, date and outcome.",
+      "Preserve story order, point of view, dialogue intent, uncertainty and reveal timing.",
+      "Do not modernize cultural, social, religious or historical details in a way that changes meaning.",
+      "Keep character names, animal names and recurring terms consistent.",
+      "Do not add moral lessons that are absent from the source and do not remove the source lesson.",
+      "Do not convert folklore, fantasy or supernatural material into scientific fact."
+    ]
+  },
+  "records": [
+    {
+      "id": "children-en-alice",
+      "language": "en",
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "year": 1865,
+      "origin": "United Kingdom",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FANTASY",
+        "ADVENTURE",
+        "IMAGINATION"
+      ],
+      "ageBand": "8-12",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/928/pg928.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-wizard-oz",
+      "language": "en",
+      "title": "The Wonderful Wizard of Oz",
+      "author": "L. Frank Baum",
+      "year": 1900,
+      "origin": "United States",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FANTASY",
+        "ADVENTURE",
+        "COURAGE"
+      ],
+      "ageBand": "7-12",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/43936",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/43936/pg43936.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-jungle-book",
+      "language": "en",
+      "title": "The Jungle Book",
+      "author": "Rudyard Kipling",
+      "year": 1894,
+      "origin": "United Kingdom / India setting",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "ANIMALS",
+        "ADVENTURE",
+        "INDIA"
+      ],
+      "ageBand": "8-12",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/236",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/236/pg236.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-just-so",
+      "language": "en",
+      "title": "Just So Stories",
+      "author": "Rudyard Kipling",
+      "year": 1902,
+      "origin": "United Kingdom / global animal folklore",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FABLE",
+        "ANIMALS",
+        "BEDTIME"
+      ],
+      "ageBand": "6-10",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2781",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2781/pg2781.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-wind-willows",
+      "language": "en",
+      "title": "The Wind in the Willows",
+      "author": "Kenneth Grahame",
+      "year": 1908,
+      "origin": "United Kingdom",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "ANIMALS",
+        "FRIENDSHIP",
+        "ADVENTURE"
+      ],
+      "ageBand": "8-12",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/27805",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/27805/pg27805.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-peter-pan",
+      "language": "en",
+      "title": "Peter Pan",
+      "author": "J. M. Barrie",
+      "year": 1911,
+      "origin": "United Kingdom",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FANTASY",
+        "ADVENTURE",
+        "PIRATES"
+      ],
+      "ageBand": "8-12",
+      "rights": "PUBLIC_DOMAIN_SOURCE_EDITION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/16",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/16/pg16.txt",
+        "format": "plain-text",
+        "note": "Project Gutenberg describes this as matching the 1911 original and public domain in the USA; Peter Pan rights have historical jurisdiction-specific complications, so perform target-market legal review."
+      }
+    },
+    {
+      "id": "children-en-secret-garden",
+      "language": "en",
+      "title": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "year": 1911,
+      "origin": "United Kingdom / India and Yorkshire setting",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FRIENDSHIP",
+        "NATURE",
+        "FAMILY"
+      ],
+      "ageBand": "7-12",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/113",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/113/pg113.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-little-princess",
+      "language": "en",
+      "title": "A Little Princess",
+      "author": "Frances Hodgson Burnett",
+      "year": 1905,
+      "origin": "United Kingdom / London setting",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FRIENDSHIP",
+        "KINDNESS",
+        "RESILIENCE"
+      ],
+      "ageBand": "8-12",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/146",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/146/pg146.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-aesop",
+      "language": "en",
+      "title": "The Aesop for Children",
+      "author": "Aesop / traditional fables",
+      "year": null,
+      "origin": "Greek / Mediterranean tradition",
+      "category": "FABLE",
+      "subcategories": [
+        "ANIMALS",
+        "MORAL_TALE",
+        "SHORT_STORY"
+      ],
+      "ageBand": "6-10",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/19994",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/19994/pg19994.txt",
+        "format": "plain-text"
+      }
+    },
+    {
+      "id": "children-en-grimm",
+      "language": "en",
+      "title": "Household Tales by Brothers Grimm",
+      "author": "Jacob Grimm and Wilhelm Grimm",
+      "year": 1812,
+      "origin": "Germany / German folklore",
+      "category": "FAIRY_TALE",
+      "subcategories": [
+        "FOLKLORE",
+        "FAIRY_TALE",
+        "MORAL_TALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/5314",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/5314/pg5314.txt",
+        "format": "plain-text",
+        "note": "The collection includes some darker traditional tales; use story-level audience screening rather than assuming every tale is suitable for every child."
+      }
+    },
+    {
+      "id": "children-hi-eidgah",
+      "language": "hi",
+      "title": "ईदगाह",
+      "author": "मुंशी प्रेमचंद",
+      "year": 1933,
+      "origin": "India",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FAMILY",
+        "KINDNESS",
+        "FESTIVAL",
+        "MORAL_TALE"
+      ],
+      "ageBand": "7-12",
+      "rights": "PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
+      "source": {
+        "name": "Hindi Wikisource",
+        "url": "https://hi.wikisource.org/wiki/प्रेमचंद_की_सर्वश्रेष्ठ_कहानियां/ईदगाह",
+        "format": "Wikisource text",
+        "note": "Underlying work is associated with a public-domain author, but verify the exact transcription/edition rights before commercial redistribution."
+      }
+    },
+    {
+      "id": "children-hi-do-bailon-ki-katha",
+      "language": "hi",
+      "title": "दो बैलों की कथा",
+      "author": "मुंशी प्रेमचंद",
+      "year": 1930,
+      "origin": "India",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "ANIMALS",
+        "FRIENDSHIP",
+        "FREEDOM",
+        "MORAL_TALE"
+      ],
+      "ageBand": "7-12",
+      "rights": "PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
+      "source": {
+        "name": "Hindi Wikisource",
+        "url": "https://hi.wikisource.org/wiki/मानसरोवर_२/१२_दो_बैलोँ_की_कथा",
+        "format": "Wikisource text",
+        "note": "Verify the exact scan/transcription edition before commercial redistribution."
+      }
+    },
+    {
+      "id": "children-hi-bade-bhai-sahab",
+      "language": "hi",
+      "title": "बड़े भाई साहब",
+      "author": "मुंशी प्रेमचंद",
+      "year": 1910,
+      "origin": "India",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "SIBLINGS",
+        "SCHOOL",
+        "HUMOR",
+        "MORAL_TALE"
+      ],
+      "ageBand": "8-13",
+      "rights": "PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
+      "source": {
+        "name": "Hindi Wikisource",
+        "url": "https://hi.wikisource.org/wiki/प्रेमचंद",
+        "format": "author/source discovery",
+        "note": "Select an exact open scan/transcription before materialization."
+      }
+    },
+    {
+      "id": "children-ar-sindbad",
+      "language": "ar",
+      "title": "السندباد البحري",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arabic literary tradition / Baghdad frame",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "ADVENTURE",
+        "SEA",
+        "FANTASY",
+        "TRAVEL"
+      ],
+      "ageBand": "8-13",
+      "rights": "TRADITIONAL_SOURCE_REVIEW",
+      "source": {
+        "name": "Arabic Wikisource",
+        "url": "https://ar.wikisource.org/wiki/ألف_ليلة_وليلة/السندباد_البحري",
+        "format": "Wikisource text",
+        "note": "Use the identified historical/publicly posted Arabic text; verify edition/transcription licence before commercial redistribution."
+      }
+    },
+    {
+      "id": "children-ar-kalila-dimna",
+      "language": "ar",
+      "title": "كليلة ودمنة",
+      "author": "عبد الله بن المقفع / traditional Indian-Persian animal fables",
+      "year": 1816,
+      "origin": "Arabic literary tradition / India-Persian-Arab transmission",
+      "category": "FABLE",
+      "subcategories": [
+        "ANIMALS",
+        "WISDOM",
+        "MORAL_TALE",
+        "FRAME_TALE"
+      ],
+      "ageBand": "8-13",
+      "rights": "PUBLIC_DOMAIN_SOURCE_EDITION_REVIEW",
+      "source": {
+        "name": "Arabic Wikisource",
+        "url": "https://ar.wikisource.org/wiki/كليلة_ودمنة_(1816)",
+        "format": "historical edition",
+        "note": "The page identifies an 1816 Paris edition; verify the exact Wikisource transcription/scan licence and any editorial additions."
+      }
+    }
+  ]
+}
