@@ -1,0 +1,392 @@
+{
+  "theme": "epics-and-heroic-sagas",
+  "version": 1,
+  "policy": "Actual story-level retellings are stored in the repository. They are authored from traditional epic narratives and are not copies of modern copyrighted translations.",
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "completionRule": "A story is multilingual-ready when all four language texts are present. Human editorial review remains required before publication.",
+  "records": [
+    {
+      "id": "epic-ramayana-rama-exile",
+      "title": "Rama's Exile",
+      "tradition": "Ramayana",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-ramayana-rama-exile/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-ramayana-rama-exile/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-ramayana-rama-exile/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-ramayana-rama-exile/ur.txt"
+      },
+      "sourceNote": "Traditional Ramayana narrative; repository-authored faithful retelling, not a transcription of a modern translation.",
+      "tags": [
+        "RAMAYANA",
+        "EXILE",
+        "DUTY",
+        "FAMILY"
+      ],
+      "ageBand": "10-16"
+    },
+    {
+      "id": "epic-ramayana-hanuman-lanka",
+      "title": "Hanuman's Leap to Lanka",
+      "tradition": "Ramayana",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-ramayana-hanuman-lanka/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-ramayana-hanuman-lanka/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-ramayana-hanuman-lanka/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-ramayana-hanuman-lanka/ur.txt"
+      },
+      "sourceNote": "Traditional Ramayana narrative; repository-authored faithful retelling.",
+      "tags": [
+        "RAMAYANA",
+        "HANUMAN",
+        "QUEST",
+        "COURAGE"
+      ],
+      "ageBand": "8-14"
+    },
+    {
+      "id": "epic-mahabharata-bhima-hanuman",
+      "title": "Bhima and Hanuman",
+      "tradition": "Mahabharata",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-mahabharata-bhima-hanuman/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-mahabharata-bhima-hanuman/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-mahabharata-bhima-hanuman/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-mahabharata-bhima-hanuman/ur.txt"
+      },
+      "sourceNote": "Traditional Mahabharata episode; repository-authored faithful retelling.",
+      "tags": [
+        "MAHABHARATA",
+        "BHIMA",
+        "HANUMAN",
+        "HUMILITY"
+      ],
+      "ageBand": "10-16"
+    },
+    {
+      "id": "epic-mahabharata-abhimanyu",
+      "title": "Abhimanyu Enters the Chakravyuha",
+      "tradition": "Mahabharata",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-mahabharata-abhimanyu/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-mahabharata-abhimanyu/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-mahabharata-abhimanyu/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-mahabharata-abhimanyu/ur.txt"
+      },
+      "sourceNote": "Traditional Mahabharata war episode; repository-authored faithful retelling.",
+      "tags": [
+        "MAHABHARATA",
+        "ABHIMANYU",
+        "WAR",
+        "COURAGE"
+      ],
+      "ageBand": "13-17"
+    },
+    {
+      "id": "epic-iliad-achilles-hector",
+      "title": "Achilles and Hector",
+      "tradition": "Iliad",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-iliad-achilles-hector/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-iliad-achilles-hector/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-iliad-achilles-hector/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-iliad-achilles-hector/ur.txt"
+      },
+      "sourceNote": "Traditional Homeric narrative; repository-authored faithful retelling based on the ancient epic.",
+      "tags": [
+        "ILIAD",
+        "ACHILLES",
+        "HECTOR",
+        "WAR"
+      ],
+      "ageBand": "13-17"
+    },
+    {
+      "id": "epic-odyssey-cyclops",
+      "title": "Odysseus and the Cyclops",
+      "tradition": "Odyssey",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-odyssey-cyclops/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-odyssey-cyclops/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-odyssey-cyclops/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-odyssey-cyclops/ur.txt"
+      },
+      "sourceNote": "Traditional Homeric narrative; repository-authored faithful retelling.",
+      "tags": [
+        "ODYSSEY",
+        "ODYSSEUS",
+        "CYCLOPS",
+        "ESCAPE"
+      ],
+      "ageBand": "10-16"
+    },
+    {
+      "id": "epic-beowulf-grendel",
+      "title": "Beowulf and Grendel",
+      "tradition": "Beowulf",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-beowulf-grendel/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-beowulf-grendel/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-beowulf-grendel/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-beowulf-grendel/ur.txt"
+      },
+      "sourceNote": "Traditional Old English epic narrative; repository-authored faithful retelling.",
+      "tags": [
+        "BEOWULF",
+        "GRENDEL",
+        "HERO",
+        "MONSTER"
+      ],
+      "ageBand": "10-16"
+    },
+    {
+      "id": "epic-shahnameh-rostam-sohrab",
+      "title": "Rostam and Sohrab",
+      "tradition": "Shahnameh",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-shahnameh-rostam-sohrab/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-shahnameh-rostam-sohrab/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-shahnameh-rostam-sohrab/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-shahnameh-rostam-sohrab/ur.txt"
+      },
+      "sourceNote": "Traditional Ferdowsi narrative; repository-authored faithful retelling based on the public-domain epic tradition.",
+      "tags": [
+        "SHAHNAMEH",
+        "ROSTAM",
+        "SOHRAB",
+        "TRAGEDY"
+      ],
+      "ageBand": "13-17"
+    },
+    {
+      "id": "epic-gilgamesh-enkidu",
+      "title": "Gilgamesh and Enkidu",
+      "tradition": "Epic of Gilgamesh",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-gilgamesh-enkidu/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-gilgamesh-enkidu/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-gilgamesh-enkidu/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-gilgamesh-enkidu/ur.txt"
+      },
+      "sourceNote": "Ancient Mesopotamian epic tradition; repository-authored story retelling, not a modern translation of a tablet.",
+      "tags": [
+        "GILGAMESH",
+        "ENKIDU",
+        "FRIENDSHIP",
+        "MESOPOTAMIA"
+      ],
+      "ageBand": "12-17"
+    },
+    {
+      "id": "epic-nibelungen-siegfried",
+      "title": "Siegfried and the Dragon",
+      "tradition": "Nibelungenlied",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-nibelungen-siegfried/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-nibelungen-siegfried/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-nibelungen-siegfried/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-nibelungen-siegfried/ur.txt"
+      },
+      "sourceNote": "Germanic heroic tradition; repository-authored faithful retelling.",
+      "tags": [
+        "NIBELUNGENLIED",
+        "SIEGFRIED",
+        "DRAGON",
+        "HERO"
+      ],
+      "ageBand": "10-16"
+    },
+    {
+      "id": "epic-kalevala-vainamoinen",
+      "title": "Väinämöinen and Joukahainen",
+      "tradition": "Kalevala",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-kalevala-vainamoinen/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-kalevala-vainamoinen/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-kalevala-vainamoinen/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-kalevala-vainamoinen/ur.txt"
+      },
+      "sourceNote": "Finnish-Karelian epic tradition; repository-authored faithful retelling.",
+      "tags": [
+        "KALEVALA",
+        "VÄINÄMÖINEN",
+        "JOUKAHAINEN",
+        "WISDOM"
+      ],
+      "ageBand": "10-16"
+    },
+    {
+      "id": "epic-ireland-cu-chulainn-hound",
+      "title": "Cú Chulainn and the Hound",
+      "tradition": "Ulster Cycle",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-ireland-cu-chulainn-hound/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-ireland-cu-chulainn-hound/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-ireland-cu-chulainn-hound/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-ireland-cu-chulainn-hound/ur.txt"
+      },
+      "sourceNote": "Traditional Irish heroic narrative; repository-authored faithful retelling.",
+      "tags": [
+        "IRISH",
+        "CÚ_CHULAINN",
+        "HERO",
+        "HONOR"
+      ],
+      "ageBand": "12-17"
+    },
+    {
+      "id": "epic-bhagiratha-ganga",
+      "title": "Bhagiratha and the Descent of the Ganga",
+      "tradition": "Ramayana / Puranic tradition",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-bhagiratha-ganga/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-bhagiratha-ganga/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-bhagiratha-ganga/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-bhagiratha-ganga/ur.txt"
+      },
+      "sourceNote": "Traditional Indian sacred narrative; repository-authored faithful retelling.",
+      "tags": [
+        "INDIA",
+        "GANGA",
+        "BHAGIRATHA",
+        "DEVOTION"
+      ],
+      "ageBand": "10-16"
+    },
+    {
+      "id": "epic-ramayana-sita-fire-test",
+      "title": "Sita Returns to Rama",
+      "tradition": "Ramayana",
+      "category": "EPIC_HEROIC_SAGA",
+      "textType": "ORIGINAL_FAITHFUL_RETELLING",
+      "languages": {
+        "hi": "PRESENT",
+        "en": "PRESENT",
+        "ar": "PRESENT",
+        "ur": "PRESENT"
+      },
+      "paths": {
+        "hi": "data/story-corpus/epics/text/epic-ramayana-sita-fire-test/hi.txt",
+        "en": "data/story-corpus/epics/text/epic-ramayana-sita-fire-test/en.txt",
+        "ar": "data/story-corpus/epics/text/epic-ramayana-sita-fire-test/ar.txt",
+        "ur": "data/story-corpus/epics/text/epic-ramayana-sita-fire-test/ur.txt"
+      },
+      "sourceNote": "Traditional Ramayana narrative; repository-authored faithful retelling of the return after Lanka.",
+      "tags": [
+        "RAMAYANA",
+        "SITA",
+        "RAMA",
+        "RETURN"
+      ],
+      "ageBand": "13-17"
+    }
+  ]
+}
