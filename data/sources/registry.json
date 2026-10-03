@@ -431,5 +431,113 @@
     "status": "reference-only",
     "license": "site-specific",
     "ingest_policy": "Use for discovery and verification of Ashokan edict context; repository text remains an original retelling."
+  },
+  {
+    "id": "muhammad-mecca-reference",
+    "tradition": "Islam",
+    "source": "Muhammad in Mecca reference article",
+    "url": "https://en.wikipedia.org/wiki/Muhammad_in_Mecca",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use only for factual cross-checking of broad chronology; do not copy article prose."
+  },
+  {
+    "id": "stanford-buddha",
+    "tradition": "Buddhism",
+    "source": "Stanford Encyclopedia of Philosophy — Buddha",
+    "url": "https://plato.stanford.edu/archives/spr2024/entries/buddha/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for scholarly historical/philosophical verification; repository biographies are original retellings."
+  },
+  {
+    "id": "jainism-info-mahavira",
+    "tradition": "Jainism",
+    "source": "Jainism.info — The Life and Times of Mahavira",
+    "url": "https://www.jainism.info/public/articles/the-life-and-times-of-mahavira",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for tradition-aware historical reference; verify rights before any direct reuse."
+  },
+  {
+    "id": "sikhiwiki-guru-nanak",
+    "tradition": "Sikhism",
+    "source": "SikhiWiki — Guru Nanak",
+    "url": "https://www.sikhiwiki.org/index.php?redirect=no&title=Nanak",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use as a Sikh-tradition reference; do not copy source wording into the corpus."
+  },
+  {
+    "id": "stanford-confucius",
+    "tradition": "Chinese philosophy",
+    "source": "Stanford Encyclopedia of Philosophy — Confucius",
+    "url": "https://plato.stanford.edu/entries/confucius/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for source criticism and historical/philosophical context; biography text is original."
+  },
+  {
+    "id": "rumi-reference",
+    "tradition": "Persian / Sufi traditions",
+    "source": "Rumi reference",
+    "url": "https://en.wikipedia.org/wiki/Rumi",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for broad chronology and source discovery; later traditions around Shams must be reviewed critically."
+  },
+  {
+    "id": "stanford-ibn-sina",
+    "tradition": "Islamic philosophy / science",
+    "source": "Stanford Encyclopedia of Philosophy — Ibn Sina",
+    "url": "https://plato.stanford.edu/entries/ibn-sina/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for scholarly biography and source criticism."
+  },
+  {
+    "id": "mactutor-al-biruni",
+    "tradition": "Islamic Golden Age / mathematics",
+    "source": "MacTutor History of Mathematics — Al-Biruni",
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Biruni/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for biographical and scholarly verification; do not copy prose."
+  },
+  {
+    "id": "nobel-tagore",
+    "tradition": "Bengali literature",
+    "source": "Nobel Prize — Rabindranath Tagore",
+    "url": "https://www.nobelprize.org/prizes/literature/1913/tagore/biographical/",
+    "status": "reference-only",
+    "license": "Nobel source terms",
+    "ingest_policy": "Use for factual biographical verification. The Nobel biographical text itself notes expired copyright, but repository content remains original."
+  },
+  {
+    "id": "nobel-marie-curie",
+    "tradition": "History of science",
+    "source": "Nobel Prize — Marie Curie",
+    "url": "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/biographical/",
+    "status": "reference-only",
+    "license": "Nobel source terms",
+    "ingest_policy": "Use for factual biographical verification; repository content remains original."
+  },
+  {
+    "id": "president-india-kalam",
+    "tradition": "Modern India",
+    "source": "President of India — Dr A.P.J. Abdul Kalam",
+    "url": "https://www.presidentofindia.gov.in/former-president/dr-apj-abdul-kalam",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use for official biographical facts; repository stories are original retellings."
+  },
+  {
+    "id": "poetry-foundation-kabir",
+    "tradition": "Bhakti / Sufi-associated poetry",
+    "source": "Poetry Foundation — Kabir",
+    "url": "https://www.poetryfoundation.org/poets/kabir",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for source criticism and biographical uncertainty; do not copy modern commentary."
   }
 ]
