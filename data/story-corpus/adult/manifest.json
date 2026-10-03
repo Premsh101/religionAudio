@@ -1,0 +1,335 @@
+{
+  "version": 1,
+  "theme": "adult-romance-stories",
+  "category": "ADULT_ROMANCE",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "contentRating": "ADULT",
+  "ageBand": "18+",
+  "rule": "Actual story text is stored in stories.json. 18+ only and age-gated in the app; mature but non-explicit. Each record identifies whether the narrative is documented history, legend, literature, or a mix, and carries specific content warnings.",
+  "records": [
+    {
+      "id": "adult-bilhana-fifty-stanzas-of-a-thief",
+      "title": "Fifty Stanzas of a Thief: Bilhana and the Princess",
+      "tradition": "Sanskrit lyric poetry (Chaurapanchashika attributed to Bilhana, 11th century) and its traditional frame story",
+      "origin": "Kashmir / India",
+      "tags": [
+        "ADULT_ROMANCE",
+        "SANSKRIT_LITERATURE",
+        "BILHANA",
+        "SECRET_LOVE",
+        "POETRY",
+        "KASHMIR"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "secret affair",
+        "death sentence",
+        "implied intimacy (non-explicit)"
+      ],
+      "evidenceType": "LITERARY_WORK_WITH_LEGENDARY_FRAME",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-roopmati-baz-bahadur-mandu",
+      "title": "The Pavilion Above the Valley: Roopmati and Baz Bahadur",
+      "tradition": "Malwa / Mandu history and regional romantic legend",
+      "origin": "Mandu, Madhya Pradesh, India",
+      "tags": [
+        "ADULT_ROMANCE",
+        "HISTORY_AND_LEGEND",
+        "MALWA",
+        "MANDU",
+        "MUSIC",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "war",
+        "threat of sexual coercion (not depicted)",
+        "suicide by poison"
+      ],
+      "evidenceType": "HISTORY_WITH_LEGENDARY_ROMANCE",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-bajirao-mastani-pune",
+      "title": "The General and the Rider: Bajirao and Mastani",
+      "tradition": "18th-century Maratha history and later Marathi/Hindi literary and cinematic dramatisation",
+      "origin": "Pune and Bundelkhand, India",
+      "tags": [
+        "ADULT_ROMANCE",
+        "HISTORY",
+        "MARATHA",
+        "PUNE",
+        "SECOND_MARRIAGE",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "family conflict over a second marriage",
+        "confinement",
+        "death from illness",
+        "possible suicide (uncertain)"
+      ],
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_LATER_DRAMATISATION",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-anarkali-salim-lahore",
+      "title": "Pomegranate Blossom: The Legend of Anarkali",
+      "tradition": "Lahore / Mughal-era legend recorded by European travellers and popularised in 20th-century drama and film",
+      "origin": "Lahore, Pakistan",
+      "tags": [
+        "ADULT_ROMANCE",
+        "LEGEND",
+        "MUGHAL",
+        "LAHORE",
+        "FORBIDDEN_LOVE",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "forbidden relationship",
+        "execution by immurement (legend)",
+        "implied intimacy (non-explicit)"
+      ],
+      "evidenceType": "LEGEND_WITH_DISPUTED_HISTORICAL_BASIS",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-khosrow-shirin-nizami",
+      "title": "The Portrait and the Spring: Khosrow and Shirin",
+      "tradition": "Persian romance poetry (Nizami Ganjavi, Khosrow and Shirin, c. 1180) with a Sasanian historical core",
+      "origin": "Persia (Iran) and Armenia",
+      "tags": [
+        "ADULT_ROMANCE",
+        "PERSIAN_LITERATURE",
+        "NIZAMI",
+        "SASANIAN",
+        "JEALOUSY",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "bathing scene (non-explicit)",
+        "jealousy",
+        "deception leading to suicide",
+        "murder",
+        "suicide"
+      ],
+      "evidenceType": "LITERATURE_WITH_HISTORICAL_CORE",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-jamil-buthayna-udhri",
+      "title": "The Valley of Baghid: Jamil and Buthayna",
+      "tradition": "Early Arabic Udhri (chaste-love) poetry and its biographical traditions (Umayyad era, Hijaz)",
+      "origin": "Hijaz (Arabia) and Egypt",
+      "tags": [
+        "ADULT_ROMANCE",
+        "ARABIC_LITERATURE",
+        "UDHRI_LOVE",
+        "FORBIDDEN_LOVE",
+        "POETRY",
+        "LONGING"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual longing",
+        "love for a married woman",
+        "secret meetings",
+        "threat of death",
+        "exile",
+        "death of a lover"
+      ],
+      "evidenceType": "HISTORICAL_POET_WITH_LITERARY_TRADITION",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-yang-guifei-xuanzong",
+      "title": "The Lychee Road: Emperor Xuanzong and Yang Guifei",
+      "tradition": "Tang dynasty history and Bai Juyi's poem 'Song of Everlasting Sorrow' (806)",
+      "origin": "Chang'an and Mawei, China",
+      "tags": [
+        "ADULT_ROMANCE",
+        "HISTORY_AND_POETRY",
+        "TANG_DYNASTY",
+        "CHINA",
+        "SCANDAL",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "bathing imagery (non-explicit)",
+        "a father taking his son's wife",
+        "political scandal",
+        "mutiny",
+        "forced death of the heroine"
+      ],
+      "evidenceType": "HISTORY_WITH_CLASSICAL_POETIC_RETELLING",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-antony-cleopatra-plutarch",
+      "title": "The Golden Barge: Antony and Cleopatra",
+      "tradition": "Roman and Ptolemaic history as told by Plutarch (Life of Antony, early 2nd century CE)",
+      "origin": "Tarsus, Alexandria and Actium (Eastern Mediterranean)",
+      "tags": [
+        "ADULT_ROMANCE",
+        "HISTORY",
+        "PLUTARCH",
+        "EGYPT",
+        "ROME",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "adultery",
+        "war",
+        "suicide"
+      ],
+      "evidenceType": "DOCUMENTED_HISTORY_ANCIENT_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-tristan-iseult-potion",
+      "title": "The Cup on the Becalmed Sea: Tristan and Iseult",
+      "tradition": "Medieval Celtic-French romance (Thomas, Beroul and later versions; as reconstructed by Joseph Bédier, 1900)",
+      "origin": "Cornwall, Ireland and Brittany",
+      "tags": [
+        "ADULT_ROMANCE",
+        "MEDIEVAL_ROMANCE",
+        "LEGEND",
+        "ADULTERY",
+        "LOVE_POTION",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "adultery",
+        "love potion affecting free will (mythic device)",
+        "deception",
+        "tragic death"
+      ],
+      "evidenceType": "MEDIEVAL_LEGEND_LITERATURE",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adult-paolo-francesca-rimini",
+      "title": "That Day We Read No Further: Paolo and Francesca",
+      "tradition": "13th-century Italian history as told in Dante's Inferno (Canto V) and Boccaccio's commentary",
+      "origin": "Ravenna and Rimini, Italy",
+      "tags": [
+        "ADULT_ROMANCE",
+        "HISTORY_AND_LITERATURE",
+        "DANTE",
+        "ITALY",
+        "ADULTERY",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "18+",
+      "contentRating": "ADULT",
+      "contentWarnings": [
+        "sensual themes",
+        "adultery",
+        "murder",
+        "afterlife setting (literary)"
+      ],
+      "evidenceType": "HISTORY_WITH_LITERARY_RETELLING",
+      "multilingualTextPath": "data/story-corpus/adult/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

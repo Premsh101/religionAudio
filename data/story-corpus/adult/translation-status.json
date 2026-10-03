@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "category": "ADULT_ROMANCE",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "records": [
+    {
+      "id": "adult-bilhana-fifty-stanzas-of-a-thief",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-roopmati-baz-bahadur-mandu",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-bajirao-mastani-pune",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-anarkali-salim-lahore",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-khosrow-shirin-nizami",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-jamil-buthayna-udhri",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-yang-guifei-xuanzong",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-antony-cleopatra-plutarch",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-tristan-iseult-potion",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "adult-paolo-francesca-rimini",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    }
+  ]
+}

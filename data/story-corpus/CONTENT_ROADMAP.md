@@ -22,6 +22,7 @@ documented in `data/story-corpus/README.md`):
 | War & courage | data/story-corpus/war-courage | Started (9 records; ORIGINAL_FAITHFUL_RETELLING in en/hi/ar/ur; category WAR_COURAGE) |
 | Survival & disaster | data/story-corpus/survival | Started (9 records; ORIGINAL_FAITHFUL_RETELLING in en/hi/ar/ur; category SURVIVAL) |
 | Inspirational & resilience | data/story-corpus/inspirational | Started (9 records; ORIGINAL_FAITHFUL_RETELLING in en/hi/ar/ur; category INSPIRATIONAL) |
+| Adult romance (18+, age-gated, non-explicit) | data/story-corpus/adult | Started (10 records; contentRating ADULT, no sacred figures) |
 
 All collections target Hindi (hi), English (en), Arabic (ar) and Urdu (ur).
 

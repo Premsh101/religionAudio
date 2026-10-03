@@ -2251,5 +2251,194 @@
     "status": "reference-only",
     "license": "site-specific",
     "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-sant-ravidas)."
+  },
+  {
+    "id": "chaurapanchashika-reference",
+    "tradition": "Sanskrit literature",
+    "source": "Chaurapanchashika reference",
+    "url": "https://en.wikipedia.org/wiki/Chaurapanchashika",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the poem and its frame-story variants; frame story is labeled legend."
+  },
+  {
+    "id": "bilhana-reference",
+    "tradition": "Sanskrit literature",
+    "source": "Bilhana reference",
+    "url": "https://en.wikipedia.org/wiki/Bilhana",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the historical poet's context; repository text is an original retelling."
+  },
+  {
+    "id": "roopmati-reference",
+    "tradition": "Malwa / Indian history and legend",
+    "source": "Roopmati reference",
+    "url": "https://en.wikipedia.org/wiki/Rani_Roopmati",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to separate documented history of Malwa's fall from romantic legend."
+  },
+  {
+    "id": "baz-bahadur-reference",
+    "tradition": "Malwa / Indian history",
+    "source": "Baz Bahadur reference",
+    "url": "https://en.wikipedia.org/wiki/Baz_Bahadur",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical/literary verification of an adult (18+) romance retelling; repository text is an original retelling."
+  },
+  {
+    "id": "mastani-reference",
+    "tradition": "Maratha history",
+    "source": "Mastani reference",
+    "url": "https://en.wikipedia.org/wiki/Mastani",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for documented history; disputed parentage and manner of death are kept uncertain; avoid communal framing."
+  },
+  {
+    "id": "bajirao-i-reference",
+    "tradition": "Maratha history",
+    "source": "Baji Rao I reference",
+    "url": "https://en.wikipedia.org/wiki/Baji_Rao_I",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical/literary verification of an adult (18+) romance retelling; repository text is an original retelling."
+  },
+  {
+    "id": "anarkali-reference",
+    "tradition": "Mughal-era legend (Lahore)",
+    "source": "Anarkali reference",
+    "url": "https://en.wikipedia.org/wiki/Anarkali",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to label the Anarkali story as legend with disputed historical basis (Finch/Terry accounts)."
+  },
+  {
+    "id": "tomb-of-anarkali-reference",
+    "tradition": "Mughal-era monument (Lahore)",
+    "source": "Tomb of Anarkali reference",
+    "url": "https://en.wikipedia.org/wiki/Tomb_of_Anarkali",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the tomb and inscription; attribution is debated."
+  },
+  {
+    "id": "khosrow-and-shirin-reference",
+    "tradition": "Persian literature",
+    "source": "Khosrow and Shirin reference",
+    "url": "https://en.wikipedia.org/wiki/Khosrow_and_Shirin",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the plot of Nizami's poem; repository text is an original retelling."
+  },
+  {
+    "id": "shirin-reference",
+    "tradition": "Sasanian history",
+    "source": "Shirin reference",
+    "url": "https://en.wikipedia.org/wiki/Shirin",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to separate the historical consort of Khosrow II from Nizami's literary heroine."
+  },
+  {
+    "id": "jamil-ibn-mamar-reference",
+    "tradition": "Arabic literature",
+    "source": "Jamil ibn Ma'mar reference",
+    "url": "https://en.wikipedia.org/wiki/Jamil_ibn_Ma%27mar",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical/literary verification of an adult (18+) romance retelling; repository text is an original retelling."
+  },
+  {
+    "id": "jamil-buthayna-ar-reference",
+    "tradition": "Arabic literature",
+    "source": "Jamil Buthayna (Arabic Wikipedia)",
+    "url": "https://ar.wikipedia.org/wiki/%D8%AC%D9%85%D9%8A%D9%84_%D8%A8%D8%AB%D9%8A%D9%86%D8%A9",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the classical biographical tradition (Aghani/Tabaqat anecdotes); labeled history + tradition."
+  },
+  {
+    "id": "udhri-reference",
+    "tradition": "Arabic literature",
+    "source": "Udhri love poetry reference",
+    "url": "https://en.wikipedia.org/wiki/Udhri",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the chaste-love (Udhri) poetic context."
+  },
+  {
+    "id": "yang-guifei-reference",
+    "tradition": "Tang dynasty history",
+    "source": "Yang Guifei reference",
+    "url": "https://en.wikipedia.org/wiki/Yang_Guifei",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical/literary verification of an adult (18+) romance retelling; repository text is an original retelling."
+  },
+  {
+    "id": "song-of-everlasting-sorrow-reference",
+    "tradition": "Chinese literature",
+    "source": "Song of Everlasting Sorrow reference",
+    "url": "https://en.wikipedia.org/wiki/Song_of_Everlasting_Sorrow",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for Bai Juyi's poem; poetic images are attributed to the poem, not presented as history."
+  },
+  {
+    "id": "plutarch-life-of-antony-lacuscurtius",
+    "tradition": "Classical history",
+    "source": "LacusCurtius: Plutarch, Life of Antony (Loeb, 1920)",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html",
+    "status": "reference-only",
+    "license": "public-domain-translation-site-terms-apply",
+    "ingest_policy": "Use for verification of Plutarch's account; repository text is an original retelling and does not quote the translation."
+  },
+  {
+    "id": "cleopatra-reference",
+    "tradition": "Classical history",
+    "source": "Cleopatra reference",
+    "url": "https://en.wikipedia.org/wiki/Cleopatra",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical/literary verification of an adult (18+) romance retelling; repository text is an original retelling."
+  },
+  {
+    "id": "gutenberg-bedier-tristan-iseult",
+    "tradition": "Medieval European literature",
+    "source": "Project Gutenberg: The Romance of Tristan and Iseult (Bédier, tr. Belloc)",
+    "url": "https://www.gutenberg.org/ebooks/14244",
+    "status": "reference-only",
+    "license": "Public Domain in the USA (check local jurisdiction)",
+    "ingest_policy": "Use for episode sequence verification; repository text is an original retelling."
+  },
+  {
+    "id": "tristan-and-iseult-reference",
+    "tradition": "Medieval European literature",
+    "source": "Tristan and Iseult reference",
+    "url": "https://en.wikipedia.org/wiki/Tristan_and_Iseult",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for version history (Thomas, Beroul, Gottfried); labeled legend/literature."
+  },
+  {
+    "id": "francesca-da-rimini-reference",
+    "tradition": "Italian history and literature",
+    "source": "Francesca da Rimini reference",
+    "url": "https://en.wikipedia.org/wiki/Francesca_da_Rimini",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to separate the historical killing from Dante's and Boccaccio's literary layers."
+  },
+  {
+    "id": "gutenberg-longfellow-inferno",
+    "tradition": "Italian literature",
+    "source": "Project Gutenberg: Divine Comedy, Longfellow's Translation, Hell",
+    "url": "https://www.gutenberg.org/ebooks/1001",
+    "status": "reference-only",
+    "license": "Public Domain in the USA (check local jurisdiction)",
+    "ingest_policy": "Use for Inferno Canto V verification; lines are paraphrased, not quoted."
   }
 ]
