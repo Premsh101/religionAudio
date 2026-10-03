@@ -1,20 +1,4 @@
-"use client";
+import { redirect } from "next/navigation";
 
-import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
-import { ArrowLeft, BookOpen, Filter, Search, Sparkles } from "lucide-react";
-import AppHeader from "../../components/AppHeader";
-
-type Item={id:string;title:string;slug:string;type:string;audience:string;ageMin:number|null;ageMax:number|null;language:string;summary:string|null;evidenceLens:string|null;rightsStatus:string;work:any;passage:any;source:any};
-
-const types=["","SCRIPTURE","COMMENTARY","STORY","MYTHOLOGY","FOLKLORE","GHOST_STORY","MORAL_TALE","BIOGRAPHY","FESTIVAL","RITUAL","HISTORICAL_ACCOUNT","SACRED_PLACE"];
-const audiences=["","KIDS","FAMILY","TEENS","ADULTS","RESEARCH"];
-
-export default function ContentPage(){
- const [q,setQ]=useState("");const [type,setType]=useState("");const [audience,setAudience]=useState("");const [items,setItems]=useState<Item[]>([]);
- useEffect(()=>{const p=new URLSearchParams({q,type,audience});fetch("/api/content?"+p).then(r=>r.json()).then(d=>setItems(d.items||[])).catch(()=>setItems([]));},[q,type,audience]);
- const grouped=useMemo(()=>items.reduce<Record<string,Item[]>>((acc,item)=>{(acc[item.type]??=[]).push(item);return acc},{}),[items]);
- return <main className="min-h-screen bg-zinc-950"><AppHeader/><section className="mx-auto max-w-6xl px-5 pb-20 pt-8"><Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link><div className="mt-8"><p className="text-sm text-violet-300">Content universe</p><h1 className="mt-2 font-display text-5xl">Stories, texts, traditions and evidence — connected.</h1><p className="mt-4 max-w-3xl text-zinc-500">One content model lets us serve the same knowledge differently to a child, a family listener, a curious adult or a researcher.</p></div>
- <div className="mt-8 grid gap-3 md:grid-cols-[1fr_220px_180px] items-center"><div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-black/20 p-2"><Search className="ml-3 h-4 w-4 text-zinc-600"/><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search stories, rituals, commentary..." className="w-full bg-transparent px-2 py-3 text-sm outline-none"/></div><select value={type} onChange={e=>setType(e.target.value)} className="rounded-2xl border border-white/10 bg-zinc-900 px-4 py-3 text-sm text-zinc-300"><option value="">All content types</option>{types.slice(1).map(t=><option key={t}>{t}</option>)}</select><select value={audience} onChange={e=>setAudience(e.target.value)} className="rounded-2xl border border-white/10 bg-zinc-900 px-4 py-3 text-sm text-zinc-300"><option value="">All audiences</option>{audiences.slice(1).map(a=><option key={a}>{a}</option>)}</select></div>
- <div className="mt-10 space-y-10">{Object.entries(grouped).map(([group,list])=><section key={group}><div className="mb-4 flex items-center gap-2"><Filter className="h-4 w-4 text-zinc-600"/><h2 className="font-display text-2xl capitalize">{group.replaceAll("_"," ").toLowerCase()}</h2><span className="text-xs text-zinc-700">{list.length}</span></div><div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">{list.map(item=><article key={item.id} className="glass rounded-3xl p-5"><div className="flex items-center justify-between gap-2"><span className="text-[10px] uppercase tracking-[0.15em] text-amber-300">{item.evidenceLens||"CONTENT"}</span><span className="text-[10px] uppercase text-zinc-700">{item.audience}</span></div><h3 className="mt-5 font-display text-xl">{item.title}</h3><p className="mt-2 text-sm leading-6 text-zinc-500">{item.summary||"Explore this item in the connected content graph."}</p><div className="mt-5 flex flex-wrap gap-2 text-[10px] text-zinc-600"><span>{item.language}</span><span>·</span><span>{item.rightsStatus}</span>{item.source&&<><span>·</span><span>{item.source.name}</span></>}</div></article>)}</div></section>)}{!items.length&&<div className="glass rounded-3xl p-10 text-center"><Sparkles className="mx-auto h-6 w-6 text-zinc-700"/><p className="mt-4 text-sm text-zinc-600">No content records match this filter yet. The graph is ready for ingestion.</p></div>}</div></section></main>
-}
+/** Content and Library were two views of the same catalogue; Library is the one place now. */
+export default function ContentPage(){redirect("/library")}

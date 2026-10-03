@@ -15,6 +15,11 @@
     {
       "id": "adult-bilhana-fifty-stanzas-of-a-thief",
       "title": "Fifty Stanzas of a Thief: Bilhana and the Princess",
+      "titles": {
+        "hi": "चोर के पचास छंद: बिल्हण और राजकुमारी",
+        "ar": "خمسون مقطعًا للص: بلهانا والأميرة",
+        "ur": "ایک چور کے پچاس بند: بلہن اور شہزادی"
+      },
       "tradition": "Sanskrit lyric poetry (Chaurapanchashika attributed to Bilhana, 11th century) and its traditional frame story",
       "origin": "Kashmir / India",
       "tags": [
@@ -48,6 +53,11 @@
     {
       "id": "adult-roopmati-baz-bahadur-mandu",
       "title": "The Pavilion Above the Valley: Roopmati and Baz Bahadur",
+      "titles": {
+        "hi": "घाटी के ऊपर मंडप: रूपमती और बाज़ बहादुर",
+        "ar": "الجوسق المطل على الوادي: روبماتي وباز بهادر",
+        "ur": "وادی پر جھکا محل: روپ متی اور باز بہادر"
+      },
       "tradition": "Malwa / Mandu history and regional romantic legend",
       "origin": "Mandu, Madhya Pradesh, India",
       "tags": [
@@ -81,6 +91,11 @@
     {
       "id": "adult-bajirao-mastani-pune",
       "title": "The General and the Rider: Bajirao and Mastani",
+      "titles": {
+        "hi": "सेनापति और घुड़सवार: बाजीराव और मस्तानी",
+        "ar": "القائد والفارسة: باجيراو ومستاني",
+        "ur": "سپہ سالار اور شہسوار: باجی راؤ اور مستانی"
+      },
       "tradition": "18th-century Maratha history and later Marathi/Hindi literary and cinematic dramatisation",
       "origin": "Pune and Bundelkhand, India",
       "tags": [
@@ -115,6 +130,11 @@
     {
       "id": "adult-anarkali-salim-lahore",
       "title": "Pomegranate Blossom: The Legend of Anarkali",
+      "titles": {
+        "hi": "अनार की कली: अनारकली की कथा",
+        "ar": "زهرة الرمان: أسطورة أناركلي",
+        "ur": "انار کی کلی: داستانِ انارکلی"
+      },
       "tradition": "Lahore / Mughal-era legend recorded by European travellers and popularised in 20th-century drama and film",
       "origin": "Lahore, Pakistan",
       "tags": [
@@ -148,6 +168,11 @@
     {
       "id": "adult-khosrow-shirin-nizami",
       "title": "The Portrait and the Spring: Khosrow and Shirin",
+      "titles": {
+        "hi": "तस्वीर और झरना: ख़ुसरो और शीरीं",
+        "ar": "الصورة والنبع: خسرو وشيرين",
+        "ur": "تصویر اور چشمہ: خسرو اور شیریں"
+      },
       "tradition": "Persian romance poetry (Nizami Ganjavi, Khosrow and Shirin, c. 1180) with a Sasanian historical core",
       "origin": "Persia (Iran) and Armenia",
       "tags": [
@@ -183,6 +208,11 @@
     {
       "id": "adult-jamil-buthayna-udhri",
       "title": "The Valley of Baghid: Jamil and Buthayna",
+      "titles": {
+        "hi": "बग़ीद की घाटी: जमील और बुसैना",
+        "ar": "وادي بغيض: جميل وبثينة",
+        "ur": "وادیٔ بغیض: جمیل اور بثینہ"
+      },
       "tradition": "Early Arabic Udhri (chaste-love) poetry and its biographical traditions (Umayyad era, Hijaz)",
       "origin": "Hijaz (Arabia) and Egypt",
       "tags": [
@@ -219,6 +249,11 @@
     {
       "id": "adult-yang-guifei-xuanzong",
       "title": "The Lychee Road: Emperor Xuanzong and Yang Guifei",
+      "titles": {
+        "hi": "लीची की राह: सम्राट श्वानज़ोंग और यांग ग्वेफ़ेई",
+        "ar": "طريق الليتشي: الإمبراطور شوان تسونغ ويانغ قوي في",
+        "ur": "لیچی کی راہ: شہنشاہ شوان زونگ اور یانگ گوئی فے"
+      },
       "tradition": "Tang dynasty history and Bai Juyi's poem 'Song of Everlasting Sorrow' (806)",
       "origin": "Chang'an and Mawei, China",
       "tags": [
@@ -254,6 +289,11 @@
     {
       "id": "adult-antony-cleopatra-plutarch",
       "title": "The Golden Barge: Antony and Cleopatra",
+      "titles": {
+        "hi": "सुनहरी नौका: एंटनी और क्लियोपेट्रा",
+        "ar": "المركب الذهبي: أنطونيو وكليوباترا",
+        "ur": "سنہری بجرا: انطونی اور قلوپطرہ"
+      },
       "tradition": "Roman and Ptolemaic history as told by Plutarch (Life of Antony, early 2nd century CE)",
       "origin": "Tarsus, Alexandria and Actium (Eastern Mediterranean)",
       "tags": [
@@ -287,6 +327,11 @@
     {
       "id": "adult-tristan-iseult-potion",
       "title": "The Cup on the Becalmed Sea: Tristan and Iseult",
+      "titles": {
+        "hi": "ठहरे सागर पर प्याला: ट्रिस्टन और इज़ोल्ड",
+        "ar": "الكأس في البحر الساكن: تريستان وإيزولت",
+        "ur": "ٹھہرے سمندر پر جام: ٹرسٹان اور آئسولٹ"
+      },
       "tradition": "Medieval Celtic-French romance (Thomas, Beroul and later versions; as reconstructed by Joseph Bédier, 1900)",
       "origin": "Cornwall, Ireland and Brittany",
       "tags": [
@@ -321,6 +366,11 @@
     {
       "id": "adult-paolo-francesca-rimini",
       "title": "That Day We Read No Further: Paolo and Francesca",
+      "titles": {
+        "hi": "उस दिन हम आगे न पढ़ सके: पाओलो और फ़्रांचेस्का",
+        "ar": "يومها لم نقرأ المزيد: باولو وفرانشيسكا",
+        "ur": "اس دن ہم آگے نہ پڑھ سکے: پاؤلو اور فرانچیسکا"
+      },
       "tradition": "13th-century Italian history as told in Dante's Inferno (Canto V) and Boccaccio's commentary",
       "origin": "Ravenna and Rimini, Italy",
       "tags": [

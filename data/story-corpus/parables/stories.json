@@ -13,6 +13,11 @@
     {
       "id": "parables-good-samaritan",
       "title": "The Good Samaritan",
+      "titles": {
+        "hi": "भला सामरी",
+        "ar": "السامري الصالح",
+        "ur": "نیک سامری"
+      },
       "tradition": "Gospel parable",
       "origin": "Christianity / first-century Judea",
       "tags": [
@@ -37,6 +42,11 @@
     {
       "id": "parables-prodigal-son",
       "title": "The Prodigal Son",
+      "titles": {
+        "hi": "उड़ाऊ पुत्र",
+        "ar": "الابن الضال",
+        "ur": "مسرف بیٹا"
+      },
       "tradition": "Gospel parable",
       "origin": "Christianity / first-century Judea",
       "tags": [
@@ -61,6 +71,11 @@
     {
       "id": "parables-sower",
       "title": "The Sower and the Four Soils",
+      "titles": {
+        "hi": "बोने वाला और चार तरह की मिट्टी",
+        "ar": "الزارع والتربات الأربع",
+        "ur": "بیج بونے والا اور چار طرح کی زمین"
+      },
       "tradition": "Gospel parable",
       "origin": "Christianity / first-century Judea",
       "tags": [
@@ -84,6 +99,11 @@
     {
       "id": "parables-mustard-seed",
       "title": "The Mustard Seed",
+      "titles": {
+        "hi": "राई का दाना",
+        "ar": "حبة الخردل",
+        "ur": "رائی کا دانہ"
+      },
       "tradition": "Gospel parable",
       "origin": "Christianity / first-century Judea",
       "tags": [
@@ -107,6 +127,11 @@
     {
       "id": "parables-poisoned-arrow",
       "title": "The Man Wounded by the Poisoned Arrow",
+      "titles": {
+        "hi": "विषैले तीर से घायल व्यक्ति",
+        "ar": "الرجل المصاب بالسهم المسموم",
+        "ur": "زہریلے تیر سے زخمی آدمی"
+      },
       "tradition": "Buddhist teaching story / Cūḷamālukya Sutta",
       "origin": "Early Buddhism",
       "tags": [
@@ -132,6 +157,11 @@
     {
       "id": "parables-kisa-gotami",
       "title": "Kisa Gotami and the Mustard Seeds",
+      "titles": {
+        "hi": "किसा गोतमी और सरसों के दाने",
+        "ar": "كيسا غوتامي وبذور الخردل",
+        "ur": "کیسا گوتمی اور سرسوں کے دانے"
+      },
       "tradition": "Buddhist teaching story",
       "origin": "Early Buddhist tradition",
       "tags": [
@@ -156,6 +186,11 @@
     {
       "id": "parables-blind-men-elephant-jain",
       "title": "The Blind Men and the Elephant",
+      "titles": {
+        "hi": "अंधे और हाथी",
+        "ar": "العميان والفيل",
+        "ur": "اندھے اور ہاتھی"
+      },
       "tradition": "Jain anekantavada teaching story",
       "origin": "Jain tradition / India",
       "tags": [
@@ -179,6 +214,11 @@
     {
       "id": "parables-nachiketa-yama",
       "title": "Nachiketa and the Question of What Endures",
+      "titles": {
+        "hi": "नचिकेता और शाश्वत का प्रश्न",
+        "ar": "ناتشيكيتا وسؤال ما يبقى",
+        "ur": "نچیکیتا اور سوال کہ کیا باقی رہتا ہے"
+      },
       "tradition": "Katha Upanishad",
       "origin": "Hindu philosophical tradition / ancient India",
       "tags": [
@@ -204,6 +244,11 @@
     {
       "id": "parables-bhai-lalo",
       "title": "Bhai Lalo and Malik Bhago",
+      "titles": {
+        "hi": "भाई लालो और मलिक भागो",
+        "ar": "بهاي لالو وملك بهاغو",
+        "ur": "بھائی لالو اور ملک بھاگو"
+      },
       "tradition": "Sikh sakhi tradition",
       "origin": "Punjab / Sikh tradition",
       "tags": [
@@ -228,6 +273,11 @@
     {
       "id": "parables-rumi-elephant",
       "title": "The Elephant in the Dark Room",
+      "titles": {
+        "hi": "अँधेरे कमरे में हाथी",
+        "ar": "الفيل في الغرفة المظلمة",
+        "ur": "اندھیرے کمرے میں ہاتھی"
+      },
       "tradition": "Rumi / Masnavi wisdom story",
       "origin": "Persian Sufi literary tradition",
       "tags": [
@@ -252,6 +302,11 @@
     {
       "id": "parables-honi-carob",
       "title": "Honi and the Carob Tree",
+      "titles": {
+        "hi": "होनी और ख़रूब का पेड़",
+        "ar": "حوني وشجرة الخرّوب",
+        "ur": "حونی اور خرنوب کا درخت"
+      },
       "tradition": "Rabbinic wisdom story / Talmud",
       "origin": "Jewish tradition",
       "tags": [
@@ -276,6 +331,11 @@
     {
       "id": "parables-two-arrows",
       "title": "The Two Arrows",
+      "titles": {
+        "hi": "दो तीर",
+        "ar": "السهمان",
+        "ur": "دو تیر"
+      },
       "tradition": "Buddhist teaching / Sallatha Sutta",
       "origin": "Early Buddhism",
       "tags": [

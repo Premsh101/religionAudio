@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getLocale } from "../../../lib/i18n/server";
 import { getPrisma } from "../../../lib/server/prisma";
 import { getCurrentSessionUser } from "../../../lib/server/session";
 import { getHomeFeed, loadUserHistory } from "../../../lib/server/recommendations";
@@ -13,5 +14,5 @@ export async function POST(request:NextRequest){
   const body=await request.json().catch(()=>({}));
   const user=await getCurrentSessionUser();
   const history=[...parseClientHistory(body.history),...(user?await loadUserHistory(prisma,user.id):[])];
-  return NextResponse.json(await getHomeFeed(prisma,history),{headers:{"cache-control":"no-store"}});
+  return NextResponse.json(await getHomeFeed(prisma,history,await getLocale()),{headers:{"cache-control":"no-store"}});
 }

@@ -13,6 +13,7 @@ export const RULES={
   ttsGenerateGlobal:{name:"tts-global",limit:600,windowSeconds:60*60},
   narrationRequestPerIp:{name:"narration-ip",limit:10,windowSeconds:60*60},
   askPerIp:{name:"ask-ip",limit:20,windowSeconds:60*60},
+  passwordChangePerUser:{name:"password-change",limit:5,windowSeconds:15*60},
 } satisfies Record<string,RateLimitRule>;
 
 /** Cloudflare's published proxy ranges (https://www.cloudflare.com/ips/). */

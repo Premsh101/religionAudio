@@ -11,14 +11,14 @@ export const dynamic="force-dynamic";
 
 /** The only place adult (18+) stories are listed; nothing is shown until the age confirmation. */
 export default async function AdultStoriesPage(){
-  if(!(await hasAdultConsent()))return <main className="min-h-screen bg-zinc-950"><AppHeader/><AdultGate title="Stories for adults"/></main>;
+  if(!(await hasAdultConsent()))return <main className="min-h-screen"><AppHeader/><AdultGate title="Stories for adults"/></main>;
   const prisma=getPrisma();
   const stories=prisma?await prisma.story.findMany({
     where:{status:"PUBLISHED",matureContent:true},
     orderBy:{publishedAt:"desc"},
     select:{slug:true,title:true,summary:true,contentWarnings:true,coverImageKey:true}
   }).catch(()=>[]):[];
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <section className="mx-auto max-w-6xl px-5 py-10">
       <div className="flex flex-wrap items-end justify-between gap-4">

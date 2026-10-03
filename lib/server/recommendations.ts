@@ -1,5 +1,7 @@
 import type { PrismaClient } from "../../generated/prisma/client";
 import { audioPublicUrl } from "../audio-storage";
+import { asTranslations, localizeStory } from "../story-i18n";
+import type { Locale } from "../i18n/config";
 
 export type ItemKind="story"|"work";
 export type FeedItem={
@@ -15,10 +17,10 @@ type Candidate=FeedItem&{features:string[];popularity:number};
 
 const typeTag:Record<string,string>={STORY:"Story",MYTHOLOGY:"Mythology",FOLKLORE:"Folklore",GHOST_STORY:"Ghost story",MORAL_TALE:"Moral tale",SCRIPTURE:"Scripture",BIOGRAPHY:"Biography"};
 
-async function loadCandidates(prisma:PrismaClient):Promise<Candidate[]>{
+async function loadCandidates(prisma:PrismaClient,locale:Locale="en"):Promise<Candidate[]>{
   const since=new Date(Date.now()-30*DAY);
   const [stories,works,storyPlays,workPlays,audioPlays]=await Promise.all([
-    prisma.story.findMany({where:{status:"PUBLISHED",matureContent:false},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,type:true,audience:true,narrationProfile:true,language:true,religionId:true,traditionId:true,createdAt:true,publishedAt:true,religion:{select:{name:true}}}}),
+    prisma.story.findMany({where:{status:"PUBLISHED",matureContent:false},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,type:true,audience:true,narrationProfile:true,language:true,religionId:true,traditionId:true,createdAt:true,publishedAt:true,translations:true,religion:{select:{name:true}}}}),
     prisma.work.findMany({where:{status:"PUBLISHED"},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,edition:true,translator:true,language:true,religionId:true,traditionId:true,createdAt:true,religion:{select:{name:true}}}}),
     prisma.storyProgress.groupBy({by:["storyId"],where:{updatedAt:{gte:since}},_count:{_all:true}}),
     prisma.workProgress.groupBy({by:["workId"],where:{updatedAt:{gte:since}},_count:{_all:true}}),
@@ -33,8 +35,9 @@ async function loadCandidates(prisma:PrismaClient):Promise<Candidate[]>{
   return [
     ...stories.map(s=>{
       const added=(s.publishedAt||s.createdAt);
+      const local=localizeStory({title:s.title,summary:s.summary||""},asTranslations(s.translations),locale);
       return {
-        kind:"story" as const,id:s.id,slug:s.slug,title:s.title,subtitle:s.summary||"",tag:typeTag[s.type]||"Story",href:"/stories/"+s.slug,coverUrl:s.coverImageKey?audioPublicUrl(s.coverImageKey):null,
+        kind:"story" as const,id:s.id,slug:s.slug,title:local.title,subtitle:local.summary,tag:typeTag[s.type]||"Story",href:"/stories/"+s.slug,coverUrl:s.coverImageKey?audioPublicUrl(s.coverImageKey):null,
         createdAt:added.toISOString(),isNew:now-added.getTime()<NEW_DAYS*DAY,
         features:["kind:story","type:"+s.type,"aud:"+s.audience,"prof:"+s.narrationProfile,"lang:"+s.language,s.religionId?"rel:"+s.religionId:"",s.traditionId?"trad:"+s.traditionId:""].filter(Boolean),
         popularity:plays.get("story:"+s.id)||0
@@ -90,18 +93,13 @@ export function mergeHistory(entries:HistoryEntry[]):HistoryEntry[]{
   return [...map.values()].sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));
 }
 
-export async function getNewArrivals(prisma:PrismaClient,limit=6):Promise<FeedItem[]>{
-  const candidates=await loadCandidates(prisma);
-  return candidates.sort((a,b)=>b.createdAt.localeCompare(a.createdAt)).slice(0,limit).map(strip);
-}
-
 /**
  * Content-based recommendations: every item in the listener's history adds weight to its features
  * (genre, audience, narration style, tradition, language), more for recent and further-progressed items.
  * Unplayed items are scored against that taste profile, with a small boost for popular and new items.
  */
-export async function getHomeFeed(prisma:PrismaClient,history:HistoryEntry[]){
-  const candidates=await loadCandidates(prisma);
+export async function getHomeFeed(prisma:PrismaClient,history:HistoryEntry[],locale:Locale="en"){
+  const candidates=await loadCandidates(prisma,locale);
   const byKey=new Map(candidates.map(c=>[keyOf(c),c]));
   const known=mergeHistory(history).filter(h=>byKey.has(keyOf(h)));
   const seen=new Set(known.map(keyOf));
@@ -147,8 +145,8 @@ export async function getHomeFeed(prisma:PrismaClient,history:HistoryEntry[]){
 }
 
 /** Hydrates history entries with titles/links for the history page. */
-export async function describeHistory(prisma:PrismaClient,history:HistoryEntry[]){
-  const candidates=await loadCandidates(prisma);
+export async function describeHistory(prisma:PrismaClient,history:HistoryEntry[],locale:Locale="en"){
+  const candidates=await loadCandidates(prisma,locale);
   const byKey=new Map(candidates.map(c=>[keyOf(c),c]));
   return mergeHistory(history).flatMap(h=>{
     const c=byKey.get(keyOf(h));

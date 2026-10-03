@@ -79,7 +79,7 @@ Set these on the app in Coolify → Environment Variables (no quotes needed) and
 - `ADMIN_EMAIL` (e.g. `admin@yourdomain.com`)
 - `ADMIN_PASSWORD` (8+ characters; use a long, unique one, since the admin can approve and publish content)
 
-On every start the app makes sure that account exists, is an admin, and has `ADMIN_PASSWORD` as its password. To change the password, change the variable and redeploy. The deployment log shows what happened on a line starting with `Admin:` (for example `Admin: account created for …` or `Admin: ADMIN_EMAIL is not set on the web service`).
+On every start the app makes sure that account exists, is an admin, and has `ADMIN_PASSWORD` as its password. To change the password, change the variable and redeploy. (The in-app Settings → Change password form refuses this one account and points here, since the next deploy would reset it.) The deployment log shows what happened on a line starting with `Admin:` (for example `Admin: account created for …` or `Admin: ADMIN_EMAIL is not set on the web service`).
 
 If login says the password is wrong, check that line first. If it is missing or says the variable isn't set, the value didn't reach the app: save it on this application's Environment Variables page and redeploy (saving alone doesn't restart the app). `ADMIN_PASSWORD_RESET` is no longer used.
 

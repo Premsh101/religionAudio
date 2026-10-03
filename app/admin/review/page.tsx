@@ -95,10 +95,10 @@ export default function ReviewDashboard(){
   const counts={queue:items.filter(i=>i.status==="DRAFT"||i.status==="REVIEW").length,live:items.filter(i=>i.status==="PUBLISHED").length,noCover:items.filter(i=>!i.coverUrl).length};
   const update=(it:Item,patch:Partial<Item>)=>setItems(list=>list.map(x=>x.kind===it.kind&&x.id===it.id?{...x,...patch}:x));
 
-  if(role===undefined)return <main className="min-h-screen bg-zinc-950"><AppHeader/><p className="p-10 text-sm text-zinc-500">Loading…</p></main>;
-  if(role!=="ADMIN"&&role!=="EDITOR")return <main className="min-h-screen bg-zinc-950"><AppHeader/><section className="mx-auto max-w-xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><h1 className="mt-4 font-display text-3xl">Admins only</h1><p className="mt-2 text-sm text-zinc-500">Log in with an admin or editor account to review content.</p><Link href="/login?next=/admin/review" className="mt-6 inline-flex rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-black">Log in</Link></div></section></main>;
+  if(role===undefined)return <main className="min-h-screen"><AppHeader/><p className="p-10 text-sm text-zinc-500">Loading…</p></main>;
+  if(role!=="ADMIN"&&role!=="EDITOR")return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><h1 className="mt-4 font-display text-3xl">Admins only</h1><p className="mt-2 text-sm text-zinc-500">Log in with an admin or editor account to review content.</p><Link href="/login?next=/admin/review" className="mt-6 inline-flex rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-black">Log in</Link></div></section></main>;
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <section className="mx-auto max-w-6xl px-5 py-10">
       <div className="flex flex-wrap items-end justify-between gap-4">

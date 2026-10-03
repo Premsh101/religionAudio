@@ -13,6 +13,11 @@
     {
       "id": "friendship-krishna-sudama",
       "title": "Krishna and Sudama: A Handful of Rice",
+      "titles": {
+        "hi": "कृष्ण और सुदामा: मुट्ठी भर चावल",
+        "ar": "كريشنا وسوداما: حفنة من الأرز",
+        "ur": "کرشن اور سداما: مٹھی بھر چاول"
+      },
       "tradition": "Bhagavata Purana (Book 10) and Krishna devotional tradition",
       "origin": "India (Ujjain and Dwarka)",
       "tags": [
@@ -39,6 +44,11 @@
     {
       "id": "friendship-david-jonathan",
       "title": "David and Jonathan: The Sign of the Arrows",
+      "titles": {
+        "hi": "दाऊद और योनातान: तीरों का संकेत",
+        "ar": "داود ويوناثان: علامة السهام",
+        "ur": "داؤد اور یونتن: تیروں کا اشارہ"
+      },
       "tradition": "Hebrew Bible (1 and 2 Samuel); Jewish and Christian scripture",
       "origin": "Ancient Israel",
       "tags": [
@@ -65,6 +75,11 @@
     {
       "id": "friendship-ruth-naomi",
       "title": "Ruth and Naomi: Where You Go, I Will Go",
+      "titles": {
+        "hi": "रूत और नाओमी: जहाँ तुम, वहाँ मैं",
+        "ar": "راعوث ونُعمي: حيثما ذهبتِ أذهب",
+        "ur": "روت اور نعومی: جہاں تم جاؤ، میں جاؤں گی"
+      },
       "tradition": "Hebrew Bible (Book of Ruth); Jewish and Christian scripture",
       "origin": "Moab and Bethlehem (ancient Near East)",
       "tags": [
@@ -93,6 +108,11 @@
     {
       "id": "friendship-damon-pythias",
       "title": "Damon and Pythias: The Friend Who Stayed",
+      "titles": {
+        "hi": "डेमन और पिथियस: वह मित्र जो डटा रहा",
+        "ar": "دامون وبيثياس: الصديق الذي بقي",
+        "ur": "ڈیمن اور پیتھیاس: وہ دوست جو ٹھہرا رہا"
+      },
       "tradition": "Ancient Greek and Roman tradition (Pythagorean friendship anecdote)",
       "origin": "Syracuse, Sicily (ancient Greece)",
       "tags": [
@@ -117,6 +137,11 @@
     {
       "id": "friendship-rama-bharata-paduka",
       "title": "Bharata and the Sandals of Rama",
+      "titles": {
+        "hi": "भरत और राम की खड़ाऊँ",
+        "ar": "بهاراتا ونعلا راما",
+        "ur": "بھرت اور رام کی کھڑاؤں"
+      },
       "tradition": "Valmiki Ramayana (Ayodhya Kanda); Hindu epic tradition",
       "origin": "India (Ayodhya and Chitrakuta)",
       "tags": [
@@ -145,6 +170,11 @@
     {
       "id": "friendship-joseph-forgives-brothers",
       "title": "Joseph Forgives His Brothers",
+      "titles": {
+        "hi": "यूसुफ़ ने भाइयों को क्षमा किया",
+        "ar": "يوسف يعفو عن إخوته",
+        "ur": "یوسف نے بھائیوں کو معاف کر دیا"
+      },
       "tradition": "Hebrew Bible (Genesis 37-46) and Qur'an (Surah Yusuf)",
       "origin": "Canaan and Egypt (ancient Near East)",
       "tags": [
@@ -174,6 +204,11 @@
     {
       "id": "friendship-shravan-kumar-parents",
       "title": "Shravan Kumar: The Son Who Carried His Parents",
+      "titles": {
+        "hi": "श्रवण कुमार: माता-पिता को काँवर में ढोने वाला बेटा",
+        "ar": "شرافان كومار: الابن الذي حمل والديه",
+        "ur": "شرون کمار: ماں باپ کو کندھوں پر اٹھانے والا بیٹا"
+      },
       "tradition": "Valmiki Ramayana (Ayodhya Kanda) and later Indian folk tradition",
       "origin": "India (banks of the Sarayu)",
       "tags": [
@@ -200,6 +235,11 @@
     {
       "id": "friendship-hijra-abu-bakr-companion",
       "title": "The Companion in the Cave: Abu Bakr and the Hijra",
+      "titles": {
+        "hi": "गुफा का साथी: अबू बक्र और हिजरत",
+        "ar": "صاحب الغار: أبو بكر والهجرة",
+        "ur": "یارِ غار: حضرت ابوبکر اور ہجرت"
+      },
       "tradition": "Islam (Qur'an 9:40, hadith and early sira)",
       "origin": "Mecca and Medina, Arabia",
       "tags": [
@@ -228,6 +268,11 @@
     {
       "id": "friendship-guru-angad-devotion",
       "title": "Bhai Lehna Becomes Guru Angad",
+      "titles": {
+        "hi": "भाई लहणा बने गुरु अंगद",
+        "ar": "بهاي لهنا يصبح غورو أنغاد",
+        "ur": "بھائی لہنا سے گرو انگد تک"
+      },
       "tradition": "Sikhism (Sikh history and sakhi tradition)",
       "origin": "Punjab (Kartarpur and Khadur Sahib)",
       "tags": [
@@ -254,6 +299,11 @@
     {
       "id": "friendship-karna-duryodhana",
       "title": "Karna and Duryodhana: A Friendship Tested",
+      "titles": {
+        "hi": "कर्ण और दुर्योधन: कसौटी पर मित्रता",
+        "ar": "كارنا ودوريودهانا: صداقة على المحك",
+        "ur": "کرن اور دریودھن: آزمائش میں دوستی"
+      },
       "tradition": "Mahabharata (Adi Parva and Udyoga Parva); Hindu epic tradition",
       "origin": "India (Hastinapura and Kurukshetra)",
       "tags": [

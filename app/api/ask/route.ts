@@ -3,6 +3,7 @@ import { formatRetrievedContext } from "../../../lib/retrieval";
 import { getPrisma } from "../../../lib/server/prisma";
 import { chatText, textAiConfigured } from "../../../lib/server/ai/text";
 import { RULES, clientIp, hit, tooManyRequests } from "../../../lib/server/rate-limit";
+import { staffOnlyResponse } from "../../../lib/server/staff";
 
 export const dynamic="force-dynamic";
 
@@ -11,6 +12,8 @@ function safeQuestion(value:unknown){
 }
 
 export async function POST(request:NextRequest){
+  const denied=await staffOnlyResponse();
+  if(denied)return denied;
   const limit=await hit(RULES.askPerIp,clientIp(request));
   if(!limit.ok)return tooManyRequests(limit,"You've asked a lot of questions in the last hour.");
   const question=safeQuestion((await request.json().catch(()=>({}))).question);

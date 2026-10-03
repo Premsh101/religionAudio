@@ -33,7 +33,7 @@ export default function AIPage(){
     ["SCIENCE","Science","Empirical explanations, evidence and uncertainty.",FlaskConical]
   ] as const;
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <section className="mx-auto max-w-5xl px-5 pb-20 pt-10">
       <Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link>

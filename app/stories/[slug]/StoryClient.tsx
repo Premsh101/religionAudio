@@ -7,6 +7,7 @@ import AppHeader from "../../../components/AppHeader";
 import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../../../components/NarrationPlayer";
 import { recordHistory } from "../../../lib/client/history";
 import CoverArt from "../../../components/CoverArt";
+import { useApp } from "../../../components/AppProvider";
 
 type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;audioByLanguage?:Record<string,NarrationAssets>;language?:string;translations?:Record<string,string>;mature?:boolean;previewStatus?:string|null;coverUrl?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
 
@@ -34,10 +35,14 @@ export default function StoryClient({story}:{story:Story}){
 
   const label=labels[story.narration_profile]||"Natural";
   const baseLang=story.language||"en";
-  const languages=[baseLang,...Object.keys(story.translations||{}).filter(l=>l!==baseLang&&story.translations?.[l])];
-  const [lang,setLang]=useState(baseLang);
+  const languages=[baseLang,...(["en","hi","ar","ur"] as const).filter(l=>l!==baseLang&&story.translations?.[l])];
+  const {locale}=useApp();
+  // Open the story in the visitor's language when a translation exists.
+  const [lang,setLang]=useState(languages.includes(locale)?locale:baseLang);
   const shownBody=lang===baseLang?story.body:(story.translations?.[lang]||story.body);
   const rtl=lang==="ar"||lang==="ur";
+  const titleOk=story.translations?.["title_"+lang]&&(!story.translations?.title_src||story.translations.title_src===story.title);
+  const shownTitle=lang!==baseLang&&titleOk?story.translations!["title_"+lang]:story.title;
   // Narration voices exist for English and Hindi; Arabic/Urdu readers hear the English narration.
   const narrationLang=lang==="hi"||lang===baseLang?lang:baseLang;
   const historyTarget=story.storyId?{kind:"story" as const,id:story.storyId,slug:story.slug,title:story.title,href:"/stories/"+story.slug}:undefined;
@@ -132,7 +137,7 @@ export default function StoryClient({story}:{story:Story}){
     }finally{setBusy(false)}
   }
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <header className="mx-auto max-w-6xl px-5 py-5"><Link href="/stories" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Story universe</Link></header>
     <section className="mx-auto max-w-5xl px-5 pb-20 pt-6">
@@ -141,8 +146,8 @@ export default function StoryClient({story}:{story:Story}){
           <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500"><span className="rounded-full border border-amber-300/15 bg-amber-300/5 px-3 py-1 text-amber-200">{story.tag}</span>{story.mature&&<span className="rounded-full bg-rose-500 px-2.5 py-1 font-bold text-white">18+</span>}{story.previewStatus&&<span className="rounded-full bg-zinc-700 px-2.5 py-1 text-zinc-200">Preview · {story.previewStatus.toLowerCase()}</span>}<span>{story.audience}</span><span>Age {story.age_min}+</span></div>
           <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save story"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 bg-white/[0.02] p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
         </div>
-        {story.coverUrl&&<div className="mt-7 w-40 md:float-right md:mb-4 md:ml-8 md:mt-0 md:w-52"><CoverArt title={story.title} tag={story.tag} kind="story" coverUrl={story.coverUrl} size="md"/></div>}
-        <h1 className="mt-7 max-w-3xl font-display text-5xl leading-tight">{story.title}</h1>
+        {story.coverUrl&&<div className="mt-7 w-40 md:float-right md:mb-4 md:ml-8 md:mt-0 md:w-52"><CoverArt title={shownTitle} tag={story.tag} kind="story" coverUrl={story.coverUrl} size="md"/></div>}
+        <h1 dir="auto" className="mt-7 max-w-3xl font-display text-4xl leading-tight md:text-5xl">{shownTitle}</h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-400">{story.style_notes}</p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <button onClick={play} disabled={busy} className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3.5 text-sm font-semibold text-black disabled:opacity-50">{playing?<Pause className="h-4 w-4"/>:<Play className="h-4 w-4 fill-current"/>}{busy?"Generating…":playing?"Pause":"Play preview"}</button>

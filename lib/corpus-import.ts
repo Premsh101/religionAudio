@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 /** Shared by the importer script and its tests: turns a stories.json record into Story fields. */
-export type CorpusRecord={id:string;title:string;tradition?:string;ageBand?:string;tags?:string[];contentRating?:string;contentWarnings?:string[];en?:string;hi?:string;ar?:string;ur?:string;texts?:Record<string,string>};
+export type CorpusRecord={id:string;title:string;tradition?:string;ageBand?:string;tags?:string[];contentRating?:string;contentWarnings?:string[];en?:string;hi?:string;ar?:string;ur?:string;texts?:Record<string,string>;titles?:Record<string,string>};
 
 const TYPE_BY_COLLECTION:Record<string,string>={
   epics:"MYTHOLOGY",mythology:"MYTHOLOGY",adventure:"STORY",historical:"HISTORICAL_ACCOUNT",biographies:"BIOGRAPHY",
@@ -48,7 +48,9 @@ export function toStoryFields(collection:string,r:CorpusRecord){
   const t=textsOf(r);
   const {min,max}=parseAgeBand(r.ageBand);
   const mature=r.contentRating==="ADULT"||collection==="adult"||(min!==null&&min>=18);
-  const translations=Object.fromEntries((["hi","ar","ur"] as const).filter(l=>t[l]).map(l=>[l,t[l]]));
+  const translations:Record<string,string>=Object.fromEntries((["hi","ar","ur"] as const).filter(l=>t[l]).map(l=>[l,t[l]]));
+  const titles=Object.entries(r.titles||{}).filter(([l,v])=>["hi","ar","ur"].includes(l)&&typeof v==="string"&&v.trim());
+  if(titles.length){for(const [l,v] of titles)translations["title_"+l]=v.trim();translations.title_src=r.title.trim()}
   return {
     corpusId:r.id,
     collection,

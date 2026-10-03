@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getPrisma } from "../../../lib/server/prisma";
+import { staffOnlyResponse } from "../../../lib/server/staff";
 
 export const dynamic="force-dynamic";
 
 export async function GET(request:NextRequest){
+  const denied=await staffOnlyResponse();
+  if(denied)return denied;
   const q=(request.nextUrl.searchParams.get("q")||"").trim().slice(0,120);
   const type=(request.nextUrl.searchParams.get("type")||"").trim();
   const audience=(request.nextUrl.searchParams.get("audience")||"").trim();

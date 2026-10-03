@@ -13,6 +13,11 @@
     {
       "id": "survival-nuh-noah-flood",
       "title": "Noah and the Ark: A Story Shared by Bible and Quran",
+      "titles": {
+        "hi": "नूह और नौका: बाइबिल और क़ुरआन की साझा कहानी",
+        "ar": "نوح والفلك: قصة يجمع عليها الكتاب المقدس والقرآن",
+        "ur": "حضرت نوح اور کشتی: بائبل اور قرآن کی مشترک کہانی"
+      },
       "tradition": "Hebrew Bible, Genesis 6-9 / Quran, Surah Hud 11:25-48 and Surah Nuh",
       "origin": "Ancient Near East",
       "tags": [
@@ -40,6 +45,11 @@
     {
       "id": "survival-manu-matsya",
       "title": "Manu and the Fish: The Flood in Indian Scripture",
+      "titles": {
+        "hi": "मनु और मत्स्य: भारतीय शास्त्रों में जलप्रलय",
+        "ar": "مانو والسمكة: الطوفان في الكتب الهندية المقدسة",
+        "ur": "منو اور مچھلی: ہندوستانی صحیفوں میں طوفان"
+      },
       "tradition": "Shatapatha Brahmana 1.8.1 / Matsya avatar in the Puranas",
       "origin": "India",
       "tags": [
@@ -64,6 +74,11 @@
     {
       "id": "survival-jonah-yunus-whale",
       "title": "Jonah and the Great Fish",
+      "titles": {
+        "hi": "योना और विशाल मछली",
+        "ar": "يونس والحوت العظيم",
+        "ur": "حضرت یونس اور بڑی مچھلی"
+      },
       "tradition": "Hebrew Bible, Book of Jonah / Quran 21:87-88, 37:139-148",
       "origin": "Ancient Near East (Joppa to Nineveh)",
       "tags": [
@@ -92,6 +107,11 @@
     {
       "id": "survival-utnapishtim-flood-tablet",
       "title": "Utnapishtim and the Flood Tablet",
+      "titles": {
+        "hi": "उत्नापिश्तिम और प्रलय की पट्टिका",
+        "ar": "أوتنابشتيم ولوح الطوفان",
+        "ur": "اتناپشتم اور طوفان کی تختی"
+      },
       "tradition": "Epic of Gilgamesh, Tablet XI / Mesopotamian literature",
       "origin": "Ancient Mesopotamia (Iraq)",
       "tags": [
@@ -116,6 +136,11 @@
     {
       "id": "survival-yusuf-famine-planning",
       "title": "Yusuf and the Seven Years: Planning for Famine",
+      "titles": {
+        "hi": "यूसुफ़ और सात बरस: अकाल की तैयारी",
+        "ar": "يوسف والسنوات السبع: التدبير للمجاعة",
+        "ur": "یوسف اور سات برس: قحط کی پیش بندی"
+      },
       "tradition": "Hebrew Bible, Genesis 41 / Quran, Surah Yusuf 12:43-56",
       "origin": "Ancient Egypt",
       "tags": [
@@ -144,6 +169,11 @@
     {
       "id": "survival-shackleton-endurance",
       "title": "Shackleton and the Endurance",
+      "titles": {
+        "hi": "शैकलटन और एंड्योरेंस",
+        "ar": "شاكلتون والسفينة إندورانس",
+        "ur": "شیکلٹن اور اینڈیورنس"
+      },
       "tradition": "Imperial Trans-Antarctic Expedition, 1914-1917",
       "origin": "Antarctica, Weddell Sea and South Georgia",
       "tags": [
@@ -170,6 +200,11 @@
     {
       "id": "survival-apollo-13",
       "title": "Apollo 13: The Lifeboat in Space",
+      "titles": {
+        "hi": "अपोलो 13: अंतरिक्ष में जीवन-नौका",
+        "ar": "أبولو 13: قارب النجاة في الفضاء",
+        "ur": "اپالو ۱۳: خلا میں حفاظتی کشتی"
+      },
       "tradition": "NASA Apollo programme, April 1970",
       "origin": "United States / space between Earth and the Moon",
       "tags": [
@@ -195,6 +230,11 @@
     {
       "id": "survival-chilean-miners-2010",
       "title": "The Thirty-Three: The Chilean Miners, 2010",
+      "titles": {
+        "hi": "तैंतीस: चिली के खनिक, 2010",
+        "ar": "الثلاثة والثلاثون: عمال المناجم في تشيلي، 2010",
+        "ur": "تینتیس: چلی کے کان کن، ۲۰۱۰ء"
+      },
       "tradition": "San Jose mine collapse and rescue, Atacama, Chile",
       "origin": "Chile",
       "tags": [
@@ -219,6 +259,11 @@
     {
       "id": "survival-dunkirk-little-ships",
       "title": "The Little Ships of Dunkirk",
+      "titles": {
+        "hi": "डनकर्क की छोटी नावें",
+        "ar": "السفن الصغيرة في دنكيرك",
+        "ur": "ڈنکرک کی ننھی کشتیاں"
+      },
       "tradition": "Operation Dynamo, Second World War, May-June 1940",
       "origin": "Dunkirk (France) and the English Channel",
       "tags": [
