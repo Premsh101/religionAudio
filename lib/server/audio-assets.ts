@@ -4,12 +4,16 @@ import { resolveAudioSource } from "../audio-source";
 import { normalizeProfile, type VoiceGender } from "../narration";
 
 export type AudioTarget={workId?:string;storyId?:string;contentId?:string};
+export type EnsureResult={assetId:string;status:"QUEUED"|"PROCESSING"|"READY"|"FAILED";totalSegments:number;reused:boolean};
 
 /**
  * Returns the narration for a target + language + voice, creating it (and its jobs) only if none exists yet.
  * Every listener after the first reuses the same stored audio.
  */
-export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string}){
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly:true}):Promise<EnsureResult|null>;
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly?:false}):Promise<EnsureResult>;
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly?:boolean}):Promise<EnsureResult|null>;
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly?:boolean}):Promise<EnsureResult|null>{
   const {workId,storyId,contentId,language,voiceGender}=opts;
   const targetWhere=workId?{workId}:storyId?{storyId}:{contentId};
   const lockKey=`audio-asset:${workId||""}:${storyId||""}:${contentId||""}:${language}:${voiceGender}`;
@@ -17,6 +21,7 @@ export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{lan
   // Fast path: almost every request after the first finds the stored narration without loading the source text.
   const known=await prisma.audioAsset.findFirst({where:activeWhere,orderBy:{createdAt:"desc"},select:{id:true,status:true,totalSegments:true}});
   if(known)return {assetId:known.id,status:known.status,totalSegments:known.totalSegments,reused:true};
+  if(opts.existingOnly)return null;
   const source=await resolveAudioSource(prisma,{workId,storyId,contentId,language});
   const requested=normalizeProfile(opts.narrationProfile);
   const profile=requested!=="default"?requested:source.profile;

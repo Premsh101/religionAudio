@@ -473,3 +473,12 @@ model Bookmark {
   @@index([passageId])
   @@index([storyId])
 }
+
+/// Fixed-window request counters for rate limiting (login, signup, TTS generation, AI).
+model RateLimit {
+  key         String   @id
+  windowStart DateTime
+  count       Int      @default(0)
+
+  @@index([windowStart])
+}

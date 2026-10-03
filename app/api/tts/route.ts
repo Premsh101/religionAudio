@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { NextRequest } from "next/server";
 import { buildTTSRequest, getNarrationPlan, normalizeVoiceGender } from "../../../lib/narration";
 import { audioObjectExists, audioPublicUrl, storeAudioAt } from "../../../lib/audio-storage";
+import { RULES, clientIp, hit, tooManyRequests } from "../../../lib/server/rate-limit";
 
 export const dynamic="force-dynamic";
 
@@ -23,6 +24,12 @@ export async function POST(request:NextRequest){
   const hash=createHash("sha256").update([CACHE_VERSION,text,language,profile,voiceGender||"default"].join("\n")).digest("hex");
   const key=`tts-cache/${hash.slice(0,2)}/${hash}.mp3`;
   if(await audioObjectExists(key))return Response.json({url:audioPublicUrl(key),cached:true,profile});
+
+  // Only new generation is limited (it uses the server's CPU); stored audio above is always served.
+  const perIp=await hit(RULES.ttsGeneratePerIp,clientIp(request));
+  if(!perIp.ok)return tooManyRequests(perIp,"You've generated a lot of new narration.");
+  const global=await hit(RULES.ttsGenerateGlobal,"all");
+  if(!global.ok)return tooManyRequests(global,"Narration is very busy right now.");
 
   const service=process.env.TTS_SERVICE_URL||"http://localhost:8010";
   try{
