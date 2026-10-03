@@ -24,7 +24,7 @@ Verified locally against PostgreSQL 16: migrations on an empty DB, zero schema d
 
 ## Continuous deployment
 
-See [COOLIFY_SELF_HOSTED.md](COOLIFY_SELF_HOSTED.md#automatic-deployment-on-every-change). Push to `main` → CI (typecheck, migrations, drift, seed, build, image build, container smoke test) → Coolify deploy webhook. Needs the `COOLIFY_WEBHOOK` and `COOLIFY_TOKEN` repository secrets.
+Coolify Auto Deploy redeploys on every push to `main`. CI runs on pull requests and on `main` (typecheck, migrations, drift, seed, build, image build, container smoke test); merge only when it is green. See [COOLIFY_SELF_HOSTED.md](COOLIFY_SELF_HOSTED.md#automatic-deployment-on-every-change).
 
 ## Before public launch (not fixed here)
 

@@ -30,23 +30,11 @@ PostgreSQL should not be exposed publicly. The web container connects to it usin
 
 ## Automatic deployment on every change
 
-Every push to `main` runs CI (`.github/workflows/ci.yml`): typecheck, migrations on a fresh database, a schema-drift check, an idempotent seed, the production build, a Docker image build and a container smoke test against `/api/health`. Only if all of that passes does the `deploy` job call Coolify's deploy webhook. Broken commits never reach the KVM.
+Coolify's own **Auto Deploy** (GitHub App / webhook) redeploys the stack on every push to `main`. Keep it enabled in the application settings.
 
-One-time setup:
+Workflow for changes: work on a branch → open a pull request into `main` (CI in `.github/workflows/ci.yml` runs typecheck, fresh-DB migrations, schema-drift check, seed, build, Docker image build and a `/api/health` smoke test) → merge once green → Coolify deploys. Committed migrations under `prisma/migrations` apply automatically when the new container starts.
 
-1. In Coolify, open the application → **Webhooks** and copy the **Deploy Webhook** URL (looks like `https://<coolify-host>/api/v1/deploy?uuid=<app-uuid>&force=false`).
-2. In Coolify → **Keys & Tokens → API tokens**, create a token with the **deploy** permission.
-3. In GitHub → repository **Settings → Secrets and variables → Actions**, add:
-   - `COOLIFY_WEBHOOK` — the URL from step 1
-   - `COOLIFY_TOKEN` — the token from step 2
-4. In Coolify → application **Advanced/General** settings, turn **off** "Auto Deploy" (the Coolify GitHub-App push trigger). Otherwise every push deploys twice, and the Coolify-triggered deploy does not wait for CI.
-5. Optional: in GitHub → **Settings → Environments → production**, add required reviewers if you ever want a manual approval before deploys.
-
-To redeploy without a code change, run the workflow manually (**Actions → CI / Deploy → Run workflow** on `main`).
-
-Workflow for changes: open a pull request into `main` (CI runs, no deploy) → merge → CI runs again on `main` → Coolify deploys. Database migrations committed under `prisma/migrations` are applied automatically when the new container starts.
-
-If the Coolify instance is not reachable from the public internet (e.g. firewalled admin panel), GitHub-hosted runners cannot call the webhook. In that case either allow the webhook path through the firewall, use a self-hosted runner on the KVM, or fall back to Coolify's own GitHub-App auto-deploy (step 4 left on) and drop the `deploy` job.
+Coolify does not wait for CI, so only merge to `main` once CI is green. If a Coolify build fails, the previous containers keep running.
 
 The production image runs `prisma migrate deploy` before `next start`, so new committed migrations are applied automatically during deployment.
 

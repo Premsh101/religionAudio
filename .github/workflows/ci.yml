@@ -1,4 +1,4 @@
-name: CI / Deploy
+name: CI
 
 on:
   push:
@@ -75,27 +75,3 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m py_compile app.py
-
-  # Every push to main that passes CI triggers a Coolify redeploy.
-  # Requires repository secrets COOLIFY_WEBHOOK and COOLIFY_TOKEN (see docs/COOLIFY_SELF_HOSTED.md).
-  deploy:
-    needs: [web, tts]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    environment: production
-    concurrency:
-      group: deploy-production
-      cancel-in-progress: false
-    steps:
-      - name: Trigger Coolify deployment
-        env:
-          COOLIFY_WEBHOOK: ${{ secrets.COOLIFY_WEBHOOK }}
-          COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
-        run: |
-          if [ -z "$COOLIFY_WEBHOOK" ] || [ -z "$COOLIFY_TOKEN" ]; then
-            echo "::error::COOLIFY_WEBHOOK / COOLIFY_TOKEN secrets are not set; cannot deploy."
-            exit 1
-          fi
-          curl -fsS --retry 3 --retry-all-errors \
-            -H "Authorization: Bearer $COOLIFY_TOKEN" \
-            "$COOLIFY_WEBHOOK"
