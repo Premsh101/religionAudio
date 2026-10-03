@@ -23,21 +23,59 @@ services:
     environment:
       DATABASE_URL: ${DATABASE_URL:-postgresql://${POSTGRES_USER:-religion_audio}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-religion_audio}}
       TTS_SERVICE_URL: http://tts:8010
+      AUDIO_STORAGE_PROVIDER: ${AUDIO_STORAGE_PROVIDER:-local}
+      AUDIO_STORAGE_DIR: /data/generated-audio
+      AUDIO_PUBLIC_BASE_URL: ${AUDIO_PUBLIC_BASE_URL:-}
+      R2_ENDPOINT: ${R2_ENDPOINT:-}
+      R2_BUCKET: ${R2_BUCKET:-}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
+      R2_PUBLIC_BASE_URL: ${R2_PUBLIC_BASE_URL:-}
       AI_BASE_URL: ${AI_BASE_URL:-}
       AI_API_KEY: ${AI_API_KEY:-}
       AI_MODEL: ${AI_MODEL:-gpt-4o-mini}
       AUTH_SECRET: ${AUTH_SECRET:?Set AUTH_SECRET in Coolify}
       NODE_ENV: production
+    volumes:
+      - religion_generated_audio:/data/generated-audio
     depends_on:
       db:
         condition: service_healthy
       tts:
         condition: service_healthy
+      audio-worker:
+        condition: service_started
     healthcheck:
       test: ["CMD","node","-e","fetch('http://localhost:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
       interval: 20s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
+
+  audio-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["sh","-c","npx prisma migrate deploy && npm run audio:worker"]
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgresql://${POSTGRES_USER:-religion_audio}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-religion_audio}}
+      TTS_SERVICE_URL: http://tts:8010
+      AUDIO_STORAGE_PROVIDER: ${AUDIO_STORAGE_PROVIDER:-local}
+      AUDIO_STORAGE_DIR: /data/generated-audio
+      AUDIO_PUBLIC_BASE_URL: ${AUDIO_PUBLIC_BASE_URL:-}
+      R2_ENDPOINT: ${R2_ENDPOINT:-}
+      R2_BUCKET: ${R2_BUCKET:-}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
+      R2_PUBLIC_BASE_URL: ${R2_PUBLIC_BASE_URL:-}
+      NODE_ENV: production
+    volumes:
+      - religion_generated_audio:/data/generated-audio
+    depends_on:
+      db:
+        condition: service_healthy
+      tts:
+        condition: service_healthy
     restart: unless-stopped
 
   tts:
@@ -50,7 +88,7 @@ services:
       KOKORO_VOICE_EN: ${KOKORO_VOICE_EN:-af_heart}
       KOKORO_VOICE_HI: ${KOKORO_VOICE_HI:-hf_alpha}
     volumes:
-      - religion_audio:/data/audio
+      - religion_tts_audio:/data/audio
       - religion_tts_models:/models
     healthcheck:
       test: ["CMD","python","-c","import urllib.request; urllib.request.urlopen('http://localhost:8010/health', timeout=3)"]
@@ -61,5 +99,6 @@ services:
 
 volumes:
   religion_postgres:
-  religion_audio:
+  religion_generated_audio:
+  religion_tts_audio:
   religion_tts_models:
