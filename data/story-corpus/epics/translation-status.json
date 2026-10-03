@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "targetLanguages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "recordCount": 14,
+  "rule": "All four actual story texts are stored, not placeholders.",
+  "records": [
+    {
+      "index": 1,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 2,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 3,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 4,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 5,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 6,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 7,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 8,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 9,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 10,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 11,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 12,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 13,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "index": 14,
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}
