@@ -18,8 +18,7 @@ PostgreSQL should not be exposed publicly. The web container connects to it usin
 3. Add these secrets/environment variables in Coolify:
    - `POSTGRES_PASSWORD`
    - `AUTH_SECRET`
-   - `AI_API_KEY` when an external AI provider is enabled
-   - `AI_BASE_URL` when an external or self-hosted OpenAI-compatible gateway is used
+   - `OPENROUTER_API_KEY` for Ask AI (free models via OpenRouter; Gemini is used first when its key is set)
 4. Keep:
    - `POSTGRES_DB=religion_audio`
    - `POSTGRES_USER=religion_audio`
@@ -88,6 +87,16 @@ npm run db:make-admin -- someone@example.com                      # promote an e
 ```
 
 Admins and editors get **Studio** in the menu: `/admin/review` (approve stories and books; generate titles and covers) and `/admin` (story editor).
+
+## Ask AI and AI fallback (OpenRouter, free)
+
+Text AI (Ask AI answers, title suggestions, cover art briefs) uses **Gemini on Vertex AI first** when `GOOGLE_VERTEX_CREDENTIALS_JSON` is set, and falls back automatically to **OpenRouter's free models**. Cover *images* always need Gemini/Imagen.
+
+1. Sign in at openrouter.ai → **Keys** → **Create key**. Copy it (starts with `sk-or-`).
+2. In Coolify set `OPENROUTER_API_KEY` to that key. Optional: `OPENROUTER_MODELS` (comma-separated, up to 3; default `openrouter/free,google/gemma-4-31b-it:free,qwen/qwen3.8-27b:free`) and `OPENROUTER_SITE_URL` (e.g. `https://sunave.tech`).
+3. Free models have daily request limits set by OpenRouter (check openrouter.ai/docs for current numbers); adding a small credit balance raises them.
+
+The old `AI_BASE_URL`, `AI_API_KEY` and `AI_MODEL` settings are no longer used and can be deleted in Coolify.
 
 ## Cover and title generation (Gemini on Vertex AI)
 
