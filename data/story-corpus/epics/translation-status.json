@@ -7,76 +7,160 @@
     "ur"
   ],
   "recordCount": 14,
-  "rule": "All four actual story texts are stored, not placeholders.",
+  "rule": "All four actual story texts are stored in stories.json; no placeholder language records are used.",
   "records": [
     {
-      "index": 1,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-ramayana-rama-exile",
+      "title": "Rama's Exile",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 2,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-ramayana-hanuman-lanka",
+      "title": "Hanuman's Leap to Lanka",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 3,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-mahabharata-bhima-hanuman",
+      "title": "Bhima and Hanuman",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 4,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-mahabharata-abhimanyu",
+      "title": "Abhimanyu Enters the Chakravyuha",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 5,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-iliad-achilles-hector",
+      "title": "Achilles and Hector",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 6,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-odyssey-cyclops",
+      "title": "Odysseus and the Cyclops",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 7,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-beowulf-grendel",
+      "title": "Beowulf and Grendel",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 8,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-shahnameh-rostam-sohrab",
+      "title": "Rostam and Sohrab",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 9,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-gilgamesh-enkidu",
+      "title": "Gilgamesh and Enkidu",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 10,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-nibelungen-siegfried",
+      "title": "Siegfried and the Dragon",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 11,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-kalevala-vainamoinen",
+      "title": "Väinämöinen and Joukahainen",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 12,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-ireland-cu-chulainn-hound",
+      "title": "Cú Chulainn and the Hound",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 13,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-bhagiratha-ganga",
+      "title": "Bhagiratha and the Descent of the Ganga",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     },
     {
-      "index": 14,
-      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "storyId": "epic-ramayana-sita-fire-test",
+      "title": "Sita Returns to Rama",
+      "languages": {
+        "hi": "TEXT_PRESENT",
+        "en": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
       "editorialStatus": "NEEDS_HUMAN_REVIEW"
     }
   ]
