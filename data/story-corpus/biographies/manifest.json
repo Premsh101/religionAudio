@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "theme": "biographies-and-life-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual biography text is stored in stories.json. Every record must contain usable text in all four languages. Historical, religious-traditional, hagiographic, and disputed elements are explicitly labeled.",
+  "records": [
+    {
+      "id": "biography-muhammad-early-life",
+      "title": "Muhammad: From Mecca to the Beginning of a New Community",
+      "tradition": "Islamic biography / Sirah tradition",
+      "origin": "Arabia",
+      "tags": [
+        "RELIGIOUS_BIOGRAPHY",
+        "ISLAMIC_HISTORY",
+        "PROPHET",
+        "COMMUNITY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "RELIGIOUS_TRADITION_AND_EARLY_HISTORY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-buddha-renunciation",
+      "title": "Gautama Buddha: The Search for Awakening",
+      "tradition": "Buddhist biography tradition",
+      "origin": "Ancient South Asia",
+      "tags": [
+        "RELIGIOUS_BIOGRAPHY",
+        "BUDDHISM",
+        "RENUNCIATION",
+        "AWAKENING"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "HISTORICAL_TRADITION",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-mahavira-renunciation",
+      "title": "Mahavira: The Life of Renunciation",
+      "tradition": "Jain biography tradition",
+      "origin": "Ancient Bihar and the Gangetic plain",
+      "tags": [
+        "RELIGIOUS_BIOGRAPHY",
+        "JAINISM",
+        "AHIMSA",
+        "RENUNCIATION"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "JAIN_TRADITION_WITH_HISTORICAL_CONTEXT",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-guru-nanak-awakening",
+      "title": "Guru Nanak: From Talwandi to Kartarpur",
+      "tradition": "Sikh tradition and early Sikh history",
+      "origin": "Punjab",
+      "tags": [
+        "RELIGIOUS_BIOGRAPHY",
+        "SIKHISM",
+        "EQUALITY",
+        "TRAVEL"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "HISTORICAL_TRADITION_AND_COMMUNITY_MEMORY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-confucius-teacher",
+      "title": "Confucius: The Teacher Who Travelled",
+      "tradition": "Confucius / Analects and early biographies",
+      "origin": "Ancient China",
+      "tags": [
+        "PHILOSOPHER_BIOGRAPHY",
+        "CHINA",
+        "EDUCATION",
+        "ETHICS"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "ANCIENT_TRADITION_WITH_SOURCE_UNCERTAINTY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-rumi-shams",
+      "title": "Rumi and the Meeting with Shams",
+      "tradition": "Jalal al-Din Rumi / Persian Sufi tradition",
+      "origin": "Persia and Anatolia",
+      "tags": [
+        "POET_BIOGRAPHY",
+        "SUFISM",
+        "POETRY",
+        "SPIRITUALITY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "HISTORICAL_BIOGRAPHY_WITH_SUFI_TRADITION",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-ibn-sina-healer-scholar",
+      "title": "Ibn Sina: The Scholar Who Served as a Physician",
+      "tradition": "Ibn Sina / Avicenna",
+      "origin": "Central Asia and Persia",
+      "tags": [
+        "SCHOLAR_BIOGRAPHY",
+        "ISLAMIC_GOLDEN_AGE",
+        "MEDICINE",
+        "PHILOSOPHY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY_WITH_AUTOBIOGRAPHICAL_SOURCE",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-al-biruni-india",
+      "title": "Al-Biruni: A Scholar Studies India",
+      "tradition": "Al-Biruni / Islamic Golden Age",
+      "origin": "Khwarazm, Ghazni and South Asia",
+      "tags": [
+        "SCHOLAR_BIOGRAPHY",
+        "ISLAMIC_GOLDEN_AGE",
+        "INDIA",
+        "COMPARATIVE_STUDY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-tagore-shantiniketan",
+      "title": "Rabindranath Tagore: Poetry and a New Kind of School",
+      "tradition": "Rabindranath Tagore",
+      "origin": "Bengal, India",
+      "tags": [
+        "POET_BIOGRAPHY",
+        "EDUCATION",
+        "BENGALI_LITERATURE",
+        "INDIA"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-marie-curie-radium",
+      "title": "Marie Curie: The Long Road to Radium",
+      "tradition": "Marie Curie / history of science",
+      "origin": "Poland and France",
+      "tags": [
+        "SCIENTIST_BIOGRAPHY",
+        "SCIENCE",
+        "WOMEN_IN_SCIENCE",
+        "RADIOACTIVITY"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-apj-abdul-kalam-dreams",
+      "title": "A.P.J. Abdul Kalam: From Rameswaram to the Presidency",
+      "tradition": "Dr. A.P.J. Abdul Kalam",
+      "origin": "India",
+      "tags": [
+        "SCIENTIST_BIOGRAPHY",
+        "INDIA",
+        "EDUCATION",
+        "PUBLIC_SERVICE"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "biography-kabir-weaver-poet",
+      "title": "Kabir: The Weaver and the Poet",
+      "tradition": "Kabir / Bhakti and Sufi-associated traditions",
+      "origin": "North India",
+      "tags": [
+        "POET_BIOGRAPHY",
+        "BHAKTI",
+        "SUFI_TRADITION",
+        "INDIA"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "HISTORICAL_FIGURE_WITH_LEGENDARY_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/biographies/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}
