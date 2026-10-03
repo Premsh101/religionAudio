@@ -1,0 +1,1086 @@
+{
+  "theme": "world-folklore-legends-fairy-tales",
+  "version": 1,
+  "policy": "Rights-first. Full text is materialized only from the exact source edition verified as public domain or otherwise openly licensed.",
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "translationPolicy": {
+    "mode": "SOURCE_LOCKED_FAITHFUL_TRANSLATION",
+    "targetLanguages": [
+      "hi",
+      "en",
+      "ar",
+      "ur"
+    ],
+    "rules": [
+      "Every story must exist in Hindi, English, Arabic and Urdu before it is treated as multilingual-ready.",
+      "Translate the complete canonical source passage; never summarize, adapt, merge or replace it with a different retelling.",
+      "Preserve every event, character, relationship, place, object, number, cultural practice, dialogue intention, uncertainty and outcome.",
+      "Preserve traditional names and culturally specific concepts with stable transliteration when necessary.",
+      "Do not convert folklore, legend, magic or supernatural claims into scientific facts.",
+      "Do not add or remove a moral, explanation or commentary that is not in the source."
+    ]
+  },
+  "records": [
+    {
+      "id": "folklore-en-lion-crane",
+      "language": "en",
+      "title": "The Lion and the Crane",
+      "collection": "Indian Fairy Tales",
+      "author": "Joseph Jacobs / Indian tradition",
+      "year": 1892,
+      "origin": "India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "WISDOM",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "format": "plain-text",
+        "collection": "Indian Fairy Tales",
+        "sourceStoryTitle": "The Lion and the Crane"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-princess-labam",
+      "language": "en",
+      "title": "The Princess Labam",
+      "collection": "Indian Fairy Tales",
+      "author": "Joseph Jacobs / Indian tradition",
+      "year": 1892,
+      "origin": "India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ADVENTURE",
+        "MAGIC",
+        "PRINCESS"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "format": "plain-text",
+        "collection": "Indian Fairy Tales",
+        "sourceStoryTitle": "The Princess Labam"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-boy-thirteen-months",
+      "language": "en",
+      "title": "The Boy Who Had Thirteen Mothers",
+      "collection": "Indian Fairy Tales",
+      "author": "Joseph Jacobs / Indian tradition",
+      "year": 1892,
+      "origin": "India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "FAMILY",
+        "MAGIC",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "format": "plain-text",
+        "collection": "Indian Fairy Tales",
+        "sourceStoryTitle": "The Boy Who Had Thirteen Mothers"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-rajah-crocodiles",
+      "language": "en",
+      "title": "The Rajah's Son and the Crocodiles",
+      "collection": "Indian Fairy Tales",
+      "author": "Joseph Jacobs / Indian tradition",
+      "year": 1892,
+      "origin": "India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "ADVENTURE",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "format": "plain-text",
+        "collection": "Indian Fairy Tales",
+        "sourceStoryTitle": "The Rajah's Son and the Crocodiles"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-tiger-brahman",
+      "language": "en",
+      "title": "The Tiger, the Brahman, and the Jackal",
+      "collection": "Indian Fairy Tales",
+      "author": "Joseph Jacobs / Indian tradition",
+      "year": 1892,
+      "origin": "India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "TRICKSTER",
+        "ANIMAL",
+        "MORAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "format": "plain-text",
+        "collection": "Indian Fairy Tales",
+        "sourceStoryTitle": "The Tiger, the Brahman, and the Jackal"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-goats-three",
+      "language": "en",
+      "title": "The Three Goats",
+      "collection": "Indian Fairy Tales",
+      "author": "Joseph Jacobs / Indian tradition",
+      "year": 1892,
+      "origin": "India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "TRICKSTER",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
+        "format": "plain-text",
+        "collection": "Indian Fairy Tales",
+        "sourceStoryTitle": "The Three Goats"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-lifes-secret",
+      "language": "en",
+      "title": "Life's Secret",
+      "collection": "Folk-Tales of Bengal",
+      "author": "Lal Behari Day",
+      "year": 1883,
+      "origin": "Bengal / India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MAGIC",
+        "KINGDOM",
+        "FAMILY"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "format": "plain-text",
+        "collection": "Folk-Tales of Bengal",
+        "sourceStoryTitle": "Life's Secret"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-phakir-chand",
+      "language": "en",
+      "title": "Phakir Chand",
+      "collection": "Folk-Tales of Bengal",
+      "author": "Lal Behari Day",
+      "year": 1883,
+      "origin": "Bengal / India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "HUMOR",
+        "FOLKTALE",
+        "ADVENTURE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "format": "plain-text",
+        "collection": "Folk-Tales of Bengal",
+        "sourceStoryTitle": "Phakir Chand"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-swet-basanta",
+      "language": "en",
+      "title": "The Story of Swet-Basanta",
+      "collection": "Folk-Tales of Bengal",
+      "author": "Lal Behari Day",
+      "year": 1883,
+      "origin": "Bengal / India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "BROTHERS",
+        "ADVENTURE",
+        "MAGIC"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "format": "plain-text",
+        "collection": "Folk-Tales of Bengal",
+        "sourceStoryTitle": "The Story of Swet-Basanta"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-matchmaking-jackal",
+      "language": "en",
+      "title": "The Match-Making Jackal",
+      "collection": "Folk-Tales of Bengal",
+      "author": "Lal Behari Day",
+      "year": 1883,
+      "origin": "Bengal / India",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "TRICKSTER",
+        "HUMOR"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
+        "format": "plain-text",
+        "collection": "Folk-Tales of Bengal",
+        "sourceStoryTitle": "The Match-Making Jackal"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-tom-tit-tot",
+      "language": "en",
+      "title": "Tom Tit Tot",
+      "collection": "English Fairy Tales",
+      "author": "Joseph Jacobs / English tradition",
+      "year": 1890,
+      "origin": "England",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "FAIRY",
+        "RIDDLE",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "format": "plain-text",
+        "collection": "English Fairy Tales",
+        "sourceStoryTitle": "Tom Tit Tot"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-three-sillies",
+      "language": "en",
+      "title": "The Three Sillies",
+      "collection": "English Fairy Tales",
+      "author": "Joseph Jacobs / English tradition",
+      "year": 1890,
+      "origin": "England",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "HUMOR",
+        "WISDOM",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "format": "plain-text",
+        "collection": "English Fairy Tales",
+        "sourceStoryTitle": "The Three Sillies"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-jack-fortune",
+      "language": "en",
+      "title": "How Jack Went to Seek His Fortune",
+      "collection": "English Fairy Tales",
+      "author": "Joseph Jacobs / English tradition",
+      "year": 1890,
+      "origin": "England",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ADVENTURE",
+        "FOLKTALE",
+        "LUCK"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "format": "plain-text",
+        "collection": "English Fairy Tales",
+        "sourceStoryTitle": "How Jack Went to Seek His Fortune"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-mr-fox",
+      "language": "en",
+      "title": "Mr. Fox",
+      "collection": "English Fairy Tales",
+      "author": "Joseph Jacobs / English tradition",
+      "year": 1890,
+      "origin": "England",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MYSTERY",
+        "FAIRY",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
+        "format": "plain-text",
+        "collection": "English Fairy Tales",
+        "sourceStoryTitle": "Mr. Fox"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-fionn-boyhood",
+      "language": "en",
+      "title": "The Boyhood of Fionn",
+      "collection": "Irish Fairy Tales",
+      "author": "James Stephens / Irish tradition",
+      "year": 1920,
+      "origin": "Ireland",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "HERO",
+        "FAIRY",
+        "ADVENTURE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
+        "format": "plain-text",
+        "collection": "Irish Fairy Tales",
+        "sourceStoryTitle": "The Boyhood of Fionn"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-enchanted-cave",
+      "language": "en",
+      "title": "The Enchanted Cave of Cesh Corran",
+      "collection": "Irish Fairy Tales",
+      "author": "James Stephens / Irish tradition",
+      "year": 1920,
+      "origin": "Ireland",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MAGIC",
+        "QUEST",
+        "ADVENTURE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
+        "format": "plain-text",
+        "collection": "Irish Fairy Tales",
+        "sourceStoryTitle": "The Enchanted Cave of Cesh Corran"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-becuma-white-skin",
+      "language": "en",
+      "title": "Becuma of the White Skin",
+      "collection": "Irish Fairy Tales",
+      "author": "James Stephens / Irish tradition",
+      "year": 1920,
+      "origin": "Ireland",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MAGIC",
+        "ROYALTY",
+        "FOLKLORE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
+        "format": "plain-text",
+        "collection": "Irish Fairy Tales",
+        "sourceStoryTitle": "Becuma of the White Skin"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-urashima",
+      "language": "en",
+      "title": "Urashima Taro, the Fisher Lad",
+      "collection": "Japanese Fairy Tales",
+      "author": "Yei Theodora Ozaki",
+      "year": 1903,
+      "origin": "Japan",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "SEA",
+        "MAGIC",
+        "TIME"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "format": "plain-text",
+        "collection": "Japanese Fairy Tales",
+        "sourceStoryTitle": "The Story of Urashima Taro, the Fisher Lad"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-kintaro",
+      "language": "en",
+      "title": "Kintaro, the Golden Boy",
+      "collection": "Japanese Fairy Tales",
+      "author": "Yei Theodora Ozaki",
+      "year": 1903,
+      "origin": "Japan",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "HERO",
+        "CHILDHOOD",
+        "MOUNTAIN"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "format": "plain-text",
+        "collection": "Japanese Fairy Tales",
+        "sourceStoryTitle": "The Adventures of Kintaro, the Golden Boy"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-bamboo-cutter",
+      "language": "en",
+      "title": "The Bamboo-Cutter and the Moon-Child",
+      "collection": "Japanese Fairy Tales",
+      "author": "Yei Theodora Ozaki",
+      "year": 1903,
+      "origin": "Japan",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MOON",
+        "FANTASY",
+        "ORIGIN"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "format": "plain-text",
+        "collection": "Japanese Fairy Tales",
+        "sourceStoryTitle": "The Bamboo-Cutter and the Moon-Child"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-momotaro",
+      "language": "en",
+      "title": "Momotaro, the Son of a Peach",
+      "collection": "Japanese Fairy Tales",
+      "author": "Yei Theodora Ozaki",
+      "year": 1903,
+      "origin": "Japan",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "HERO",
+        "QUEST",
+        "ANIMALS"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "format": "plain-text",
+        "collection": "Japanese Fairy Tales",
+        "sourceStoryTitle": "Momotaro, or the Story of the Son of a Peach"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-jellyfish-monkey",
+      "language": "en",
+      "title": "The Jelly-Fish and the Monkey",
+      "collection": "Japanese Fairy Tales",
+      "author": "Yei Theodora Ozaki",
+      "year": 1903,
+      "origin": "Japan",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "TRICKSTER",
+        "SEA"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
+        "format": "plain-text",
+        "collection": "Japanese Fairy Tales",
+        "sourceStoryTitle": "The Jelly Fish and the Monkey"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-morozko",
+      "language": "en",
+      "title": "Morozko",
+      "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+      "author": "P. Polevoi / R. Nisbet Bain translation",
+      "year": 1910,
+      "origin": "Russia",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MAGIC",
+        "WINTER",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "format": "plain-text",
+        "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+        "sourceStoryTitle": "Morozko"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-flying-ship",
+      "language": "en",
+      "title": "The Flying Ship",
+      "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+      "author": "P. Polevoi / R. Nisbet Bain translation",
+      "year": 1910,
+      "origin": "Russia",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MAGIC",
+        "ADVENTURE",
+        "QUEST"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "format": "plain-text",
+        "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+        "sourceStoryTitle": "The Flying Ship"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-frog-tsarevna",
+      "language": "en",
+      "title": "The Frog-Tsarevna",
+      "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+      "author": "P. Polevoi / R. Nisbet Bain translation",
+      "year": 1910,
+      "origin": "Russia",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "TRANSFORMATION",
+        "ROYALTY",
+        "MAGIC"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "format": "plain-text",
+        "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+        "sourceStoryTitle": "The Frog-Tsarevna"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-enchanted-ring",
+      "language": "en",
+      "title": "The Enchanted Ring",
+      "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+      "author": "P. Polevoi / R. Nisbet Bain translation",
+      "year": 1910,
+      "origin": "Russia",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "MAGIC",
+        "ADVENTURE",
+        "OBJECT"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
+        "format": "plain-text",
+        "collection": "Russian Fairy Tales from the Skazki of Polevoi",
+        "sourceStoryTitle": "The Enchanted Ring"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-two-brothers-china",
+      "language": "en",
+      "title": "Two Brothers",
+      "collection": "The Chinese Fairy Book",
+      "author": "Richard Wilhelm, ed.",
+      "year": 1921,
+      "origin": "China",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "BROTHERS",
+        "MORAL",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
+        "format": "plain-text",
+        "collection": "The Chinese Fairy Book",
+        "sourceStoryTitle": "Two Brothers"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-rooster-girl",
+      "language": "en",
+      "title": "The Rooster, the Dog, and the Girl",
+      "collection": "The Chinese Fairy Book",
+      "author": "Richard Wilhelm, ed.",
+      "year": 1921,
+      "origin": "China",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "MAGIC",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
+        "format": "plain-text",
+        "collection": "The Chinese Fairy Book",
+        "sourceStoryTitle": "The Rooster, the Dog, and the Girl"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-white-nymph",
+      "language": "en",
+      "title": "The White-Nymph",
+      "collection": "The Chinese Fairy Book",
+      "author": "Richard Wilhelm, ed.",
+      "year": 1921,
+      "origin": "China",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "SPIRIT",
+        "LOVE",
+        "FOLKTALE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
+        "format": "plain-text",
+        "collection": "The Chinese Fairy Book",
+        "sourceStoryTitle": "The White-Nymph"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-anansi-wisdom",
+      "language": "en",
+      "title": "How Wisdom Became the Property of Man",
+      "collection": "West African Folk-Tales",
+      "author": "W. H. Barker and Cecilia Sinclair",
+      "year": 1917,
+      "origin": "Gold Coast / West Africa",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANANSI",
+        "TRICKSTER",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/66923/pg66923.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/66923/pg66923.txt",
+        "format": "plain-text",
+        "collection": "West African Folk-Tales",
+        "sourceStoryTitle": "How Wisdom Became the Property of Man"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-tortoise-elephant",
+      "language": "en",
+      "title": "The Tortoise and the Elephant",
+      "collection": "West African Folk-Tales",
+      "author": "W. H. Barker and Cecilia Sinclair",
+      "year": 1917,
+      "origin": "Gold Coast / West Africa",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "TRICKSTER",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/66923/pg66923.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/66923/pg66923.txt",
+        "format": "plain-text",
+        "collection": "West African Folk-Tales",
+        "sourceStoryTitle": "The Tortoise and the Elephant"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-lion-jackal",
+      "language": "en",
+      "title": "The Lion and the Jackal",
+      "collection": "South-African Folk-Tales",
+      "author": "James A. Honey",
+      "year": 1910,
+      "origin": "South Africa",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ANIMAL",
+        "TRICKSTER",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/38339/pg38339.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/38339/pg38339.txt",
+        "format": "plain-text",
+        "collection": "South-African Folk-Tales",
+        "sourceStoryTitle": "The Lion and the Jackal"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "folklore-en-origin-death",
+      "language": "en",
+      "title": "The Origin of Death",
+      "collection": "South-African Folk-Tales",
+      "author": "James A. Honey",
+      "year": 1910,
+      "origin": "South Africa",
+      "category": "FOLKLORE",
+      "subcategories": [
+        "ORIGIN",
+        "DEATH",
+        "LEGEND"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/cache/epub/38339/pg38339.txt",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/38339/pg38339.txt",
+        "format": "plain-text",
+        "collection": "South-African Folk-Tales",
+        "sourceStoryTitle": "The Origin of Death"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    }
+  ]
+}
