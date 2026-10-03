@@ -177,5 +177,32 @@
       "حكاية الصياد مع العفريت"
     ],
     "ingest_policy": "Prefer the historical scan pages recorded in the ghost corpus. Exclude modern 21st-century translations/editions unless separately licensed."
+  },
+  {
+    "id": "crime-literature-sources",
+    "tradition": "Cross-cultural crime and detective literature",
+    "source": "Project Gutenberg; Hindi literary sources; Rekhta; Arabic Wikisource",
+    "url": "https://www.gutenberg.org/",
+    "status": "mixed-rights-edition-by-edition",
+    "license": "work/edition specific",
+    "works": [
+      "The Murders in the Rue Morgue",
+      "The Mystery of Marie Rogêt",
+      "The Purloined Letter",
+      "The Gold-Bug",
+      "The Red-Headed League",
+      "The Boscombe Valley Mystery",
+      "The Five Orange Pips",
+      "The Adventure of the Speckled Band",
+      "The Adventure of the Blue Carbuncle",
+      "The Arrest of Arsène Lupin",
+      "गेरुआ बाबा",
+      "भोजपुर की ठगी",
+      "خونی شہزادہ",
+      "خونی بھید",
+      "قصة التفاحات الثلاث",
+      "حكاية الأحدب"
+    ],
+    "ingest_policy": "Use only the exact source edition recorded in data/story-corpus/crime/manifest.json. Project Gutenberg public-domain status is explicitly US-facing; verify target-jurisdiction status. For Rekhta/Hindi web material and Arabic Wikisource scans, verify scan/transcription rights separately. Do not substitute modern copyrighted translations."
   }
 ]
