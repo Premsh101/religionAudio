@@ -102,7 +102,8 @@ export default function ReadingAudioPanel({
         const ready=data.asset?.status==="READY";
         setPreparing(ready?null:{done:nextSegments.length,total:data.asset?.totalSegments||0});
         const prevCount=segmentCountRef.current;
-        if(nextSegments.length>=prevCount){
+        // Replace only when new parts arrived (or on first load); swapping in identical data would reset the playing <audio>.
+        if(nextSegments.length>prevCount){
           segmentCountRef.current=nextSegments.length;
           setSegments(nextSegments);
           if(waitingRef.current&&nextSegments.length>prevCount){

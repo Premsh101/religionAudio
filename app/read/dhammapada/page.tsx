@@ -99,10 +99,10 @@ export default function DhammapadaReader(){
         body:JSON.stringify({text:current.text,language:"en",profile:"scripture"})
       });
       if(!res.ok) throw new Error("TTS service unavailable");
-      const blob=await res.blob();
-      const url=URL.createObjectURL(blob);
+      const {url}=await res.json();
+      if(!url) throw new Error("TTS service unavailable");
       const audio=new Audio(url);
-      audio.onended=()=>{setPlaying(false);URL.revokeObjectURL(url)};
+      audio.onended=()=>setPlaying(false);
       await audio.play();
       setPlaying(true);
     }catch{

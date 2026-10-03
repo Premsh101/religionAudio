@@ -224,6 +224,9 @@ def cache_key(req: TTSRequest, profile: dict, resolved_engine: str, voice: str |
 def synthesize(req: TTSRequest):
     profile = resolve_profile(req)
     preferred_engine = profile["engine"]
+    if req.voice_gender and not req.reference_audio and preferred_engine == "chatterbox":
+        # Chatterbox has no built-in male/female speakers; honour the listener's choice with Kokoro voices.
+        preferred_engine = "kokoro"
     voice = resolve_voice(req, profile)
     key = cache_key(req, profile, preferred_engine, voice)
     destination = AUDIO_DIR / f"{key}.{req.format}"
