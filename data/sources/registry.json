@@ -889,5 +889,590 @@
       "Jamshid"
     ],
     "ingest_policy": "Use for factual cross-checking only; do not copy article prose."
+  },
+  {
+    "id": "rituals-safa-and-marwa",
+    "tradition": "Islam",
+    "source": "Qur'an 2:158 — Safa and Marwa (Quran.com)",
+    "url": "https://quran.com/2/158",
+    "status": "reference-only",
+    "license": "site-specific; translations individually licensed",
+    "ingest_policy": "Use for verification of rituals-sai-hajar-zamzam; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-hagar-in-islam-reference",
+    "tradition": "Islam",
+    "source": "Hagar in Islam reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hagar_in_Islam",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-sai-hajar-zamzam; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-zamzam-well-reference",
+    "tradition": "Islam",
+    "source": "Zamzam Well reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Zamzam_Well",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-sai-hajar-zamzam; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-sefaria-exodus-12-26",
+    "tradition": "Judaism",
+    "source": "Exodus 12:26 — children's question at Passover (Sefaria)",
+    "url": "https://www.sefaria.org/Exodus.12.26",
+    "status": "reference-only",
+    "license": "per-text license on Sefaria; site terms apply",
+    "ingest_policy": "Use for verification of rituals-passover-seder-questions; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-sefaria-exodus-13-8",
+    "tradition": "Judaism",
+    "source": "Exodus 13:8 — telling the Exodus to one's child (Sefaria)",
+    "url": "https://www.sefaria.org/Exodus.13.8",
+    "status": "reference-only",
+    "license": "per-text license on Sefaria; site terms apply",
+    "ingest_policy": "Use for verification of rituals-passover-seder-questions; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-passover-seder-reference",
+    "tradition": "Judaism",
+    "source": "Passover Seder reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Passover_Seder",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-passover-seder-questions; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-raksha-bandhan-reference",
+    "tradition": "Hindu",
+    "source": "Raksha Bandhan reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Raksha_Bandhan",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-raksha-bandhan-draupadi-krishna; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-pranami-raksha-bandhan",
+    "tradition": "Hindu",
+    "source": "Shri Krishna Pranami Sampraday — Raksha Bandhan",
+    "url": "https://www.pranami.org/articles/129-raksha-bandhan",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for verification of rituals-raksha-bandhan-draupadi-krishna; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-guru-nanak-reference",
+    "tradition": "Sikhism",
+    "source": "Guru Nanak reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guru_Nanak",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-langar-true-bargain; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-langar-reference",
+    "tradition": "Sikhism",
+    "source": "Langar (Sikhism) reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Langar_(Sikhism)",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-langar-true-bargain; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-sgpc-langar",
+    "tradition": "Sikhism",
+    "source": "SGPC — Langar",
+    "url": "https://www.sgpc.net/langar/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for verification of rituals-langar-true-bargain; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-the-story-about-suddhodana",
+    "tradition": "Buddhism",
+    "source": "Dhammapada Commentary 13.2 — the story about Suddhodana (Ancient Buddhist Texts)",
+    "url": "https://ancient-buddhist-texts.net/English-Texts/Dhamma-Verses-Comm/13-02.htm",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for verification of rituals-alms-round-kapilavastu; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-dhammapada-chapter-13",
+    "tradition": "Buddhism",
+    "source": "Dhammapada chapter 13 (Thanissaro translation, Access to Insight)",
+    "url": "https://www.accesstoinsight.org/tipitaka/kn/dhp/dhp.13.than.html",
+    "status": "reference-only",
+    "license": "CC BY-NC 4.0 (Thanissaro translations, site terms)",
+    "ingest_policy": "Use for verification of rituals-alms-round-kapilavastu; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-pindapata-reference",
+    "tradition": "Buddhism",
+    "source": "Piṇḍapāta reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pi%E1%B9%87%E1%B8%8Dap%C4%81ta",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-alms-round-kapilavastu; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-words-on-the-doorposts",
+    "tradition": "Judaism",
+    "source": "Deuteronomy 6:9 — words on the doorposts (Sefaria)",
+    "url": "https://www.sefaria.org/Deuteronomy.6.9",
+    "status": "reference-only",
+    "license": "per-text license on Sefaria; site terms apply",
+    "ingest_policy": "Use for verification of rituals-mezuzah-onkelos; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-onkelos-and-the-mezuzah",
+    "tradition": "Judaism",
+    "source": "Babylonian Talmud, Avodah Zarah 11a — Onkelos and the mezuzah (Sefaria)",
+    "url": "https://www.sefaria.org/Avodah_Zarah.11a.4",
+    "status": "reference-only",
+    "license": "per-text license on Sefaria; site terms apply",
+    "ingest_policy": "Use for verification of rituals-mezuzah-onkelos; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-mezuzah-reference",
+    "tradition": "Judaism",
+    "source": "Mezuzah reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mezuzah",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-mezuzah-onkelos; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-the-last-supper",
+    "tradition": "Christianity",
+    "source": "Gospel of Luke 22 — the Last Supper (KJV, Bible Gateway)",
+    "url": "https://www.biblegateway.com/passage/?search=Luke+22&version=KJV",
+    "status": "reference-only",
+    "license": "KJV text public domain (outside UK Crown patent); site terms apply",
+    "ingest_policy": "Use for verification of rituals-breaking-of-bread; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-the-road-to-emmaus",
+    "tradition": "Christianity",
+    "source": "Gospel of Luke 24 — the road to Emmaus (KJV, Bible Gateway)",
+    "url": "https://www.biblegateway.com/passage/?search=Luke+24&version=KJV",
+    "status": "reference-only",
+    "license": "KJV text public domain (outside UK Crown patent); site terms apply",
+    "ingest_policy": "Use for verification of rituals-breaking-of-bread; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-biblegateway-1-corinthians-11",
+    "tradition": "Christianity",
+    "source": "1 Corinthians 11:23-26 — the Lord's Supper (KJV, Bible Gateway)",
+    "url": "https://www.biblegateway.com/passage/?search=1+Corinthians+11%3A23-26&version=KJV",
+    "status": "reference-only",
+    "license": "KJV text public domain (outside UK Crown patent); site terms apply",
+    "ingest_policy": "Use for verification of rituals-breaking-of-bread; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-the-baptism-of-jesus",
+    "tradition": "Christianity",
+    "source": "Gospel of Matthew 3:13-17 — the baptism of Jesus (KJV, Bible Gateway)",
+    "url": "https://www.biblegateway.com/passage/?search=Matthew+3%3A13-17&version=KJV",
+    "status": "reference-only",
+    "license": "KJV text public domain (outside UK Crown patent); site terms apply",
+    "ingest_policy": "Use for verification of rituals-baptism-jordan; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-baptism-of-jesus-reference",
+    "tradition": "Christianity",
+    "source": "Baptism of Jesus reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Baptism_of_Jesus",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-baptism-jordan; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-avesta-modi-navjote",
+    "tradition": "Zoroastrianism",
+    "source": "J. J. Modi, The Navjote Ceremony of the Parsis (1914), on avesta.org",
+    "url": "https://www.avesta.org/ritual/navjote.htm",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for verification of rituals-navjote-sudreh-kusti; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-navjote-reference",
+    "tradition": "Zoroastrianism",
+    "source": "Navjote reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Navjote",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-navjote-sudreh-kusti; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-kushti-reference",
+    "tradition": "Zoroastrianism",
+    "source": "Kushti reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kushti",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-navjote-sudreh-kusti; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-pitru-paksha-reference",
+    "tradition": "Hindu",
+    "source": "Pitru Paksha reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pitru_Paksha",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-pitru-paksha-karna; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-shraddha-reference",
+    "tradition": "Hindu",
+    "source": "Shraddha reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Shraddha",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-pitru-paksha-karna; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-karna-reference",
+    "tradition": "Hindu",
+    "source": "Karna reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Karna",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-pitru-paksha-karna; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-akshaya-tritiya-reference",
+    "tradition": "Jainism",
+    "source": "Akshaya Tritiya reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Akshaya_Tritiya",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-akshaya-tritiya-sugarcane; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-rishabhanatha-reference",
+    "tradition": "Jainism",
+    "source": "Rishabhanatha reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rishabhanatha",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of rituals-akshaya-tritiya-sugarcane; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "rituals-the-owners-of-the-garden",
+    "tradition": "Islam",
+    "source": "Qur'an 68:17-33 — the owners of the garden (Quran.com)",
+    "url": "https://quran.com/68/17-33",
+    "status": "reference-only",
+    "license": "site-specific; translations individually licensed",
+    "ingest_policy": "Use for verification of rituals-sadaqah-garden-owners; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-mahabodhi-temple-reference",
+    "tradition": "Buddhism",
+    "source": "Mahabodhi Temple reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahabodhi_Temple",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-bodh-gaya; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-whe-bodh-gaya",
+    "tradition": "Buddhism",
+    "source": "World History Encyclopedia — Bodh Gaya",
+    "url": "https://www.worldhistory.org/Bodh_Gaya/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for verification of sacred-places-bodh-gaya; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-lumbini-reference",
+    "tradition": "Buddhism",
+    "source": "Lumbini reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lumbini",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-lumbini; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-whe-lumbini",
+    "tradition": "Buddhism",
+    "source": "World History Encyclopedia — Lumbini",
+    "url": "https://www.worldhistory.org/Lumbini/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for verification of sacred-places-lumbini; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-sarnath-reference",
+    "tradition": "Buddhism",
+    "source": "Sarnath reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sarnath",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-sarnath; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-dhammacakkappavattana-sutta-sn-56-11",
+    "tradition": "Buddhism",
+    "source": "Dhammacakkappavattana Sutta SN 56.11 (Sujato translation, SuttaCentral)",
+    "url": "https://suttacentral.net/sn56.11/en/sujato",
+    "status": "reference-only",
+    "license": "CC0 (Sujato translation)",
+    "ingest_policy": "Use for verification of sacred-places-sarnath; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-dhamek-stupa-reference",
+    "tradition": "Buddhism",
+    "source": "Dhamek Stupa reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dhamek_Stupa",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-sarnath; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-varanasi-reference",
+    "tradition": "Hinduism (with Buddhist, Jain, Sikh, Sufi and Muslim heritage in the city)",
+    "source": "Varanasi reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Varanasi",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-kashi-varanasi; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-kashi-vishwanath-temple-reference",
+    "tradition": "Hinduism (with Buddhist, Jain, Sikh, Sufi and Muslim heritage in the city)",
+    "source": "Kashi Vishwanath Temple reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-kashi-varanasi; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-incredible-india-varanasi",
+    "tradition": "Hinduism (with Buddhist, Jain, Sikh, Sufi and Muslim heritage in the city)",
+    "source": "Incredible India — Varanasi",
+    "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use for verification of sacred-places-kashi-varanasi; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-kedarnath-temple-reference",
+    "tradition": "Hinduism",
+    "source": "Kedarnath Temple reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-kedarnath; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-panch-kedar-reference",
+    "tradition": "Hinduism",
+    "source": "Panch Kedar reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Panch_Kedar",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-kedarnath; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-shri-badarinath-kedarnath-temple-committee",
+    "tradition": "Hinduism",
+    "source": "Shri Badarinath-Kedarnath Temple Committee (official site)",
+    "url": "https://badrinath-kedarnath.gov.in/",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use for verification of sacred-places-kedarnath; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-ibrahim-and-ismail-raise-the-house",
+    "tradition": "Islam",
+    "source": "Qur'an 2:125-129 — Ibrahim and Ismail raise the House (Quran.com)",
+    "url": "https://quran.com/2/125-129",
+    "status": "reference-only",
+    "license": "site-specific; translations individually licensed",
+    "ingest_policy": "Use for verification of sacred-places-kaaba; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-the-first-house",
+    "tradition": "Islam",
+    "source": "Qur'an 3:96-97 — the first House (Quran.com)",
+    "url": "https://quran.com/3/96-97",
+    "status": "reference-only",
+    "license": "site-specific; translations individually licensed",
+    "ingest_policy": "Use for verification of sacred-places-kaaba; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-kaaba-reference",
+    "tradition": "Islam",
+    "source": "Kaaba reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kaaba",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-kaaba; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-western-wall-reference",
+    "tradition": "Judaism, Islam and Christianity",
+    "source": "Western Wall reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Western_Wall",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-jerusalem-western-wall; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-temple-mount-reference",
+    "tradition": "Judaism, Islam and Christianity",
+    "source": "Temple Mount reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Temple_Mount",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-jerusalem-western-wall; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-al-aqsa-mosque-reference",
+    "tradition": "Judaism, Islam and Christianity",
+    "source": "Al-Aqsa Mosque reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Al-Aqsa_Mosque",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-jerusalem-western-wall; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-golden-temple-reference",
+    "tradition": "Sikhism",
+    "source": "Golden Temple reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Golden_Temple",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-harmandir-sahib; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-golden-temple-amritsar",
+    "tradition": "Sikhism",
+    "source": "Golden Temple Amritsar (official information site)",
+    "url": "https://www.goldentempleamritsar.org/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for verification of sacred-places-harmandir-sahib; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-mian-mir-reference",
+    "tradition": "Sikhism",
+    "source": "Mian Mir reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mian_Mir",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-harmandir-sahib; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-moinuddin-chishti-reference",
+    "tradition": "Islam",
+    "source": "Moinuddin Chishti reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Moinuddin_Chishti",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-ajmer-sharif; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-ajmer-sharif-dargah-reference",
+    "tradition": "Islam",
+    "source": "Ajmer Sharif Dargah reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ajmer_Sharif_Dargah",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-ajmer-sharif; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-incredible-india-ajmer",
+    "tradition": "Islam",
+    "source": "Incredible India — Ajmer",
+    "url": "https://www.incredibleindia.gov.in/en/rajasthan/ajmer",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use for verification of sacred-places-ajmer-sharif; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-shravanabelagola-reference",
+    "tradition": "Jainism",
+    "source": "Shravanabelagola reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Shravanabelagola",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-shravanabelagola; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-gommateshwara-statue-reference",
+    "tradition": "Jainism",
+    "source": "Gommateshwara statue reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gommateshwara_statue",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-shravanabelagola; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-bahubali-reference",
+    "tradition": "Jainism",
+    "source": "Bahubali reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bahubali",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-shravanabelagola; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-santiago-de-compostela-cathedral-reference",
+    "tradition": "Christianity",
+    "source": "Santiago de Compostela Cathedral reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Santiago_de_Compostela_Cathedral",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-santiago-de-compostela; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-camino-de-santiago-reference",
+    "tradition": "Christianity",
+    "source": "Camino de Santiago reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Camino_de_Santiago",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-santiago-de-compostela; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-james-the-great-reference",
+    "tradition": "Christianity",
+    "source": "James the Great reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/James_the_Great",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-santiago-de-compostela; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-iranshah-atash-behram-reference",
+    "tradition": "Zoroastrianism",
+    "source": "Iranshah Atash Behram reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Iranshah_Atash_Behram",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-udvada-atash-behram; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-qissa-i-sanjan-reference",
+    "tradition": "Zoroastrianism",
+    "source": "Qissa-i Sanjan reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Qissa-i_Sanjan",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-udvada-atash-behram; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "sacred-places-udvada-reference",
+    "tradition": "Zoroastrianism",
+    "source": "Udvada reference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Udvada",
+    "status": "reference-only",
+    "license": "CC BY-SA 4.0 (reference only)",
+    "ingest_policy": "Use for verification of sacred-places-udvada-atash-behram; repository text is an original retelling and does not copy source prose."
   }
 ]

@@ -15,6 +15,8 @@ documented in `data/story-corpus/README.md`):
 | Folklore & legends | data/story-corpus/folklore | Started (36 records) |
 | Moral tales & fables | data/story-corpus/moral-tales | Started (40 records: Hitopadesha, Jataka, Oriental Tales, Thousand and One Days) |
 | Epics & heroic sagas | data/story-corpus/epics | Started (materialized multilingual episodes in stories.json) |
+| Rituals & customs | data/story-corpus/rituals | Started (12 records; en/hi/ar/ur text present; NEEDS_HUMAN_REVIEW) |
+| Sacred places & pilgrimage | data/story-corpus/sacred-places | Started (12 records; en/hi/ar/ur text present; NEEDS_HUMAN_REVIEW) |
 
 All collections target Hindi (hi), English (en), Arabic (ar) and Urdu (ur).
 
@@ -152,6 +154,10 @@ A short factual explanation plus an optional traditional story.
 
 Priority: MEDIUM-HIGH
 
+Status: STARTED — 12 records in data/story-corpus/rituals (Hinduism 2, Islam 2, Judaism 2,
+Christianity 2, Sikhism 1, Buddhism 1, Jainism 1, Zoroastrianism 1). Gaps: wedding, naming and
+funeral customs; fasting traditions; regional variants.
+
 ### 7. Sacred Places & Pilgrimage Stories
 Place-based storytelling.
 
@@ -178,6 +184,10 @@ Story subtypes:
 The current Place model already supports this category directly.
 
 Priority: MEDIUM-HIGH
+
+Status: STARTED — 12 records in data/story-corpus/sacred-places (Buddhism 3, Hinduism 2, Islam 2,
+shared Jewish/Muslim/Christian site 1, Sikhism 1, Jainism 1, Christianity 1, Zoroastrianism 1).
+Gaps: rivers, caves, mountains and pilgrimage routes; Africa, East Asia and the Americas.
 
 ### 8. Romance & Love Stories
 A major general-story genre currently missing.
