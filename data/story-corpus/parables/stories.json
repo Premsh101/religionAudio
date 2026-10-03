@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "category": "PARABLES_AND_WISDOM",
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "editorialRule": "Actual parable/wisdom story text is stored here. Scriptural, canonical, rabbinic, philosophical, Sufi literary, and later traditional layers are explicitly labeled. No modern copyrighted translation is reproduced.",
+  "records": [
+    {
+      "id": "parables-good-samaritan",
+      "title": "The Good Samaritan",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "COMPASSION",
+        "NEIGHBOR",
+        "SERVICE"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "sourceBasis": [
+        "https://www.biblegateway.com/learn/topics-themes/explainers/jesus-parables/"
+      ],
+      "evidenceNote": "A parable attributed to Jesus and recorded in Luke 10:30-37. This is a repository-authored retelling, not a modern Bible translation.",
+      "en": "A man was traveling from Jerusalem toward Jericho when robbers attacked him. They took what he had and left him injured beside the road. A religious man passed by and then another religious traveler passed by, but neither stopped to help.\n\nThen a Samaritan came along. Jews and Samaritans had a long history of tension, yet the Samaritan did not allow that hostility to decide what he should do. He went to the injured man, treated his wounds, placed him on his own animal, and took him to a place where he could be cared for.\n\nThe parable ends with a question about who truly acted as a neighbor. Its lesson is not simply to feel pity for a stranger. It presents compassion as an action that crosses social boundaries and accepts a cost in time, attention, and resources.",
+      "hi": "एक व्यक्ति यरूशलेम से यरीहो की ओर जा रहा था कि रास्ते में लुटेरों ने उस पर हमला कर दिया। उन्होंने उसका सामान छीन लिया और उसे घायल अवस्था में सड़क किनारे छोड़ दिया। एक धार्मिक व्यक्ति वहाँ से गुज़रा और फिर एक दूसरा धार्मिक यात्री भी आया, लेकिन दोनों ने उसकी सहायता नहीं की।\n\nफिर एक सामरी वहाँ पहुँचा। यहूदियों और सामरियों के बीच लंबे समय से तनाव था, फिर भी सामरी ने उस शत्रुता को अपने व्यवहार का आधार नहीं बनने दिया। उसने घायल व्यक्ति के पास जाकर उसके घावों की देखभाल की, उसे अपने पशु पर बैठाया और ऐसी जगह ले गया जहाँ उसकी सेवा हो सके।\n\nकहानी अंत में पूछती है कि वास्तव में पड़ोसी की तरह व्यवहार किसने किया। इसका संदेश केवल किसी अजनबी पर दया महसूस करना नहीं है। यह करुणा को ऐसे कार्य के रूप में प्रस्तुत करती है जो सामाजिक सीमाओं को पार करता है और समय, ध्यान तथा संसाधनों की कीमत स्वीकार करता है।",
+      "ar": "كان رجل يسافر من أورشليم إلى أريحا، فهاجمه لصوص وسلبوه ما معه وتركوه جريحًا على جانب الطريق. مرّ به رجل من أهل الدين ثم مرّ به مسافر ديني آخر، لكن أيًا منهما لم يتوقف لمساعدته.\n\nثم جاء سامري. وكانت بين اليهود والسامريين توترات قديمة، لكن السامري لم يجعل العداوة الاجتماعية تحدد تصرفه. اقترب من الرجل الجريح، وعالج جراحه، وحمله على دابته، وأخذه إلى مكان يمكن أن يتلقى فيه العناية.\n\nوتنتهي المَثَل بسؤال عن الشخص الذي تصرف حقًا كجار. فالمغزى ليس مجرد الشعور بالشفقة على غريب، بل جعل الرحمة فعلًا يتجاوز الحدود الاجتماعية ويتطلب وقتًا واهتمامًا وتكلفة.",
+      "ur": "ایک شخص یروشلم سے یریحو کی طرف جا رہا تھا کہ راستے میں ڈاکوؤں نے اس پر حملہ کیا۔ انہوں نے اس کا سامان چھین لیا اور اسے زخمی حالت میں سڑک کے کنارے چھوڑ دیا۔ ایک مذہبی شخص وہاں سے گزرا اور پھر ایک اور مذہبی مسافر بھی آیا، لیکن دونوں نے مدد نہیں کی۔\n\nپھر ایک سامری وہاں سے گزرا۔ یہودیوں اور سامریوں کے درمیان پرانی کشیدگی تھی، مگر سامری نے اس دشمنی کو اپنے عمل کا فیصلہ نہیں بننے دیا۔ وہ زخمی شخص کے پاس گیا، اس کے زخموں کی دیکھ بھال کی، اسے اپنے جانور پر سوار کیا اور ایسی جگہ لے گیا جہاں اس کی نگہداشت ہوسکے۔\n\nکہانی آخر میں پوچھتی ہے کہ حقیقی پڑوسی کی طرح کس نے عمل کیا۔ سبق صرف کسی اجنبی پر ترس کھانا نہیں بلکہ ایسی ہمدردی ہے جو سماجی حدوں کو عبور کرکے وقت، توجہ اور وسائل کی قیمت ادا کرنے پر آمادہ ہو۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of Luke 10:30-37. No modern copyrighted Bible translation is reproduced."
+    },
+    {
+      "id": "parables-prodigal-son",
+      "title": "The Prodigal Son",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "FORGIVENESS",
+        "FAMILY",
+        "RETURN"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "sourceBasis": [
+        "https://www.biblegateway.com/learn/topics-themes/explainers/jesus-parables/"
+      ],
+      "evidenceNote": "Recorded in Luke 15:11-32. The story is commonly called the Prodigal Son or the Two Brothers.",
+      "en": "A man had two sons. The younger son asked for the share of the family property that would come to him and left home for a distant country. There he spent his wealth freely. When his money was gone and a severe shortage came, he found himself hungry and without the security he had once taken for granted.\n\nHe decided to return home. He expected that his father might reject him or at least treat him as a servant. Instead, his father saw him while he was still far away, welcomed him, and celebrated his return. A robe, a meal, and a feast marked the joy of the reunion.\n\nThe older brother became angry. He felt that his years of obedience had earned a different treatment. The father answered that the family had reason to celebrate because a son who had been lost had returned. The parable places forgiveness beside the difficult emotions of the brother who stayed, inviting listeners to consider what restoration can mean for an entire family.",
+      "hi": "एक व्यक्ति के दो पुत्र थे। छोटे पुत्र ने अपने हिस्से की संपत्ति माँगी और घर छोड़कर दूर देश चला गया। वहाँ उसने अपना धन बिना सोच-विचार के खर्च कर दिया। जब धन समाप्त हो गया और गंभीर अभाव आया, तो वह भूखा और असुरक्षित रह गया।\n\nउसने घर लौटने का निश्चय किया। उसे लगा कि उसके पिता शायद उसे स्वीकार नहीं करेंगे या अधिक से अधिक नौकर की तरह रखेंगे। लेकिन पिता ने उसे दूर से ही देख लिया, उसका स्वागत किया और उसकी वापसी पर उत्सव मनाया। वस्त्र, भोजन और समारोह ने पुनर्मिलन की खुशी को व्यक्त किया।\n\nबड़ा भाई नाराज़ हुआ। उसे लगा कि उसकी वर्षों की निष्ठा के बदले उसे अलग व्यवहार मिलना चाहिए था। पिता ने कहा कि परिवार के पास उत्सव मनाने का कारण है, क्योंकि जो पुत्र खो गया था वह लौट आया है। यह दृष्टांत क्षमा को उस भाई की कठिन भावनाओं के साथ रखता है जो घर में बना रहा, और श्रोताओं को सोचने के लिए कहता है कि पूरे परिवार के लिए पुनर्स्थापन का अर्थ क्या हो सकता है।",
+      "ar": "كان لرجل ابنان. طلب الابن الأصغر نصيبه من المال وترك البيت إلى بلد بعيد، وأنفق ماله هناك بلا حساب. وعندما نفد ماله وحدثت مجاعة شديدة، وجد نفسه جائعًا وفاقدًا للأمان الذي كان يعدّه أمرًا مضمونًا.\n\nقرر أن يعود إلى بيته. وتوقع أن يرفضه أبوه أو يعامله على الأقل كخادم. لكن الأب رآه وهو لا يزال بعيدًا، واستقبله وأقام فرحًا بعودته. وجاء الرداء والطعام والاحتفال تعبيرًا عن فرحة اللقاء من جديد.\n\nغضب الأخ الأكبر، لأنه رأى أن سنوات طاعته تستحق معاملة مختلفة. فأجابه الأب بأن للعائلة سببًا للفرح لأن ابنًا كان مفقودًا قد عاد. ويضع المثل الغفران إلى جانب مشاعر الأخ الذي بقي، ويدعو المستمعين إلى التفكير في معنى استعادة العلاقة داخل الأسرة كلها.",
+      "ur": "ایک شخص کے دو بیٹے تھے۔ چھوٹے بیٹے نے اپنے حصے کی جائیداد مانگی اور گھر چھوڑ کر دور ملک چلا گیا۔ وہاں اس نے اپنی دولت بے احتیاطی سے خرچ کردی۔ جب دولت ختم ہوگئی اور سخت قحط آیا تو وہ بھوکا اور اس تحفظ سے محروم ہوگیا جسے کبھی یقینی سمجھتا تھا۔\n\nاس نے گھر واپس جانے کا فیصلہ کیا۔ اسے توقع تھی کہ باپ اسے رد کردے گا یا کم از کم خادم کی طرح رکھے گا۔ لیکن باپ نے اسے دور ہی سے دیکھ لیا، اس کا استقبال کیا اور اس کی واپسی پر خوشی منائی۔ لباس، کھانا اور ضیافت دوبارہ ملنے کی خوشی کی علامت بن گئے۔\n\nبڑا بھائی ناراض ہوا۔ اسے لگا کہ برسوں کی فرمانبرداری کے باوجود اس کے ساتھ مختلف سلوک ہونا چاہیے تھا۔ باپ نے جواب دیا کہ خاندان کے پاس خوشی منانے کی وجہ ہے کیونکہ جو بیٹا کھو گیا تھا وہ واپس آگیا۔ یہ تمثیل معافی کو اس بھائی کے مشکل جذبات کے ساتھ رکھتی ہے جو گھر میں رہا، اور خاندان میں تعلق کی بحالی کے معنی پر غور کی دعوت دیتی ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of Luke 15:11-32. No modern copyrighted Bible translation is reproduced."
+    },
+    {
+      "id": "parables-sower",
+      "title": "The Sower and the Four Soils",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "TEACHING",
+        "RECEPTIVITY",
+        "GROWTH"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "sourceBasis": [
+        "https://www.biblegateway.com/passage/?search=Matthew%2013%3A1-52%2CMark%204%3A1-34%2CLuke%208%3A4-17&version=NIV"
+      ],
+      "en": "A farmer went out to sow seed. Some seed fell on the path, where birds quickly ate it. Some fell on rocky ground, where it sprang up quickly but had little soil. When the sun became strong, those plants withered because their roots were shallow.\n\nOther seed fell among thorns. The plants grew, but the thorns competed with them until they could not produce a good harvest. Finally, some seed fell on good soil. It took root, grew, and produced a crop.\n\nThe story uses one seed and four settings to ask what happens when a message is received by different kinds of hearts and circumstances. Its wisdom is about receptivity and perseverance: hearing something valuable is not the same as allowing it to take root and shape a life.",
+      "hi": "एक किसान बीज बोने निकला। कुछ बीज रास्ते पर गिरे और पक्षियों ने उन्हें जल्दी खा लिया। कुछ पथरीली जमीन पर गिरे, जहाँ थोड़ी मिट्टी होने के कारण वे जल्दी अंकुरित तो हुए, लेकिन उनकी जड़ें गहरी नहीं थीं। तेज धूप पड़ने पर वे मुरझा गए।\n\nकुछ बीज काँटों के बीच गिरे। पौधे तो उगे, लेकिन काँटों ने उन्हें घेर लिया और वे अच्छी फसल नहीं दे सके। अंत में कुछ बीज अच्छी मिट्टी में गिरे। उन्होंने जड़ पकड़ी, बढ़े और फसल दी।\n\nएक ही बीज और चार अलग परिस्थितियों के माध्यम से कहानी पूछती है कि अलग-अलग मन और परिस्थितियों में कोई संदेश मिलने पर क्या होता है। इसका ज्ञान ग्रहणशीलता और धैर्य से जुड़ा है: किसी मूल्यवान बात को सुन लेना और उसे जीवन में जड़ पकड़ने देना एक ही बात नहीं है।",
+      "ar": "خرج زارع ليزرع. فسقط بعض البذر على الطريق فجاءت الطيور وأكلته سريعًا. وسقط بعضه على أرض صخرية ذات تربة قليلة، فنبت بسرعة لكنه لم يملك جذورًا عميقة، ولما اشتدت الشمس ذبل.\n\nوسقط بعض البذر بين الشوك، فنمت النباتات لكن الشوك نافسها حتى لم تستطع أن تعطي محصولًا جيدًا. أما البذر الآخر فسقط في أرض جيدة، فتجذر ونما وأثمر.\n\nيستخدم المثل بذرة واحدة وأربعة أوضاع مختلفة ليسأل عما يحدث عندما تصل الرسالة إلى قلوب وظروف مختلفة. وحكمته تتعلق بالاستعداد والصبر: سماع شيء ذي قيمة ليس هو نفسه السماح له بأن يتجذر ويشكل حياة الإنسان.",
+      "ur": "ایک کسان بیج بونے نکلا۔ کچھ بیج راستے پر گرے اور پرندوں نے انہیں فوراً کھا لیا۔ کچھ پتھریلی زمین پر گرے جہاں مٹی کم تھی؛ وہ جلد اگے مگر جڑیں گہری نہ ہوسکیں، اور دھوپ تیز ہوئی تو مرجھا گئے۔\n\nکچھ بیج کانٹوں میں گرے۔ پودے تو اگے مگر کانٹوں نے انہیں گھیر لیا اور وہ اچھی فصل نہ دے سکے۔ آخر کچھ بیج اچھی زمین میں گرے، جڑ پکڑی، بڑھے اور پھل لائے۔\n\nیہ کہانی ایک ہی بیج اور چار حالات کے ذریعے پوچھتی ہے کہ مختلف دلوں اور حالات تک کوئی پیغام پہنچے تو کیا ہوتا ہے۔ اس کی دانائی قبولیت اور ثابت قدمی کے بارے میں ہے: قیمتی بات سن لینا اور اسے زندگی میں جڑ پکڑنے دینا ایک چیز نہیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the Synoptic Sower parable."
+    },
+    {
+      "id": "parables-mustard-seed",
+      "title": "The Mustard Seed",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "SMALL_BEGINNINGS",
+        "GROWTH",
+        "HOPE"
+      ],
+      "ageBand": "7-14",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "sourceBasis": [
+        "https://www.biblegateway.com/passage/?search=Matthew%2013%3A1-52%2CMark%204%3A1-34%2CLuke%208%3A4-17&version=NIV"
+      ],
+      "en": "Jesus compared the growth of God's kingdom to a mustard seed. A seed seems tiny when held in the hand, yet when planted it grows into a substantial plant with branches where birds can find shelter.\n\nThe image is deliberately simple. A beginning may look too small to matter, while time and growth can reveal a much larger result. The parable turns attention away from judging the future only by the size of the beginning.\n\nFor listeners, the wisdom can be applied to faith, service, learning, or an act of kindness. Small beginnings do not tell the whole story of what something may become.",
+      "hi": "यीशु ने परमेश्वर के राज्य की वृद्धि की तुलना सरसों के बीज से की। हाथ में रखा बीज बहुत छोटा दिखाई देता है, लेकिन बोए जाने के बाद वह एक बड़ा पौधा बन सकता है जिसकी शाखाओं में पक्षी आश्रय पा सकते हैं।\n\nचित्र सरल है, लेकिन विचार गहरा है। किसी शुरुआत का आकार इतना छोटा लग सकता है कि वह महत्वहीन प्रतीत हो, जबकि समय और विकास उसका कहीं बड़ा परिणाम दिखा सकते हैं। यह दृष्टांत भविष्य को केवल शुरुआत के आकार से आँकने से रोकता है।\n\nश्रोता इस ज्ञान को विश्वास, सेवा, शिक्षा या किसी छोटे अच्छे काम पर लागू कर सकते हैं। छोटी शुरुआत इस पूरी कहानी को नहीं बताती कि कोई चीज़ आगे क्या बन सकती है।",
+      "ar": "شبّه يسوع نمو ملكوت الله بحبة خردل. تبدو الحبة صغيرة في اليد، لكنها عندما تُزرع تنمو إلى نبات كبير ذي أغصان تستطيع الطيور أن تجد فيها مأوى.\n\nالصورة بسيطة عمدًا، لكنها تحمل فكرة واضحة: قد تبدو البداية صغيرة إلى درجة تجعلها غير مهمة، ثم يكشف الزمن والنمو عن نتيجة أكبر بكثير. ويوجه المثل الانتباه بعيدًا عن الحكم على المستقبل من حجم البداية وحده.\n\nويمكن تطبيق الحكمة على الإيمان والخدمة والتعلم والعمل الصالح. فصِغر البداية لا يخبرنا بكل ما يمكن أن تصبح عليه النتيجة.",
+      "ur": "عیسیٰ نے خدا کی بادشاہی کی ترقی کو رائی کے دانے سے تشبیہ دی۔ ہاتھ میں رکھا ہوا دانہ بہت چھوٹا دکھائی دیتا ہے، لیکن بویا جائے تو ایک بڑا پودا بن سکتا ہے جس کی شاخوں میں پرندوں کو پناہ ملے۔\n\nیہ مثال سادہ ہے مگر اس میں اہم خیال ہے۔ کسی آغاز کا حجم اتنا چھوٹا ہوسکتا ہے کہ وہ بے معنی لگے، جبکہ وقت اور نشوونما اس کا بہت بڑا نتیجہ ظاہر کرسکتے ہیں۔ یہ تمثیل مستقبل کو صرف آغاز کے حجم سے جانچنے سے روکتی ہے۔\n\nاس دانائی کا اطلاق ایمان، خدمت، تعلیم یا کسی چھوٹے نیک عمل پر ہوسکتا ہے۔ چھوٹی ابتدا یہ نہیں بتاتی کہ کوئی چیز آگے چل کر کیا بن سکتی ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the Mustard Seed parables in Matthew 13, Mark 4 and Luke 13."
+    },
+    {
+      "id": "parables-poisoned-arrow",
+      "title": "The Man Wounded by the Poisoned Arrow",
+      "tradition": "Buddhist teaching story / Cūḷamālukya Sutta",
+      "origin": "Early Buddhism",
+      "tags": [
+        "BUDDHISM",
+        "PRACTICAL_WISDOM",
+        "SUFFERING",
+        "PRIORITY"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "CANONICAL_BUDDHIST_DISCOURSE",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Parable_of_the_Poisoned_Arrow"
+      ],
+      "evidenceNote": "A teaching analogy in the Cūḷamālukya Sutta (Majjhima Nikāya). The repository retells the teaching without reproducing a modern translation.",
+      "en": "A man was struck by a poisoned arrow. Imagine, says the teaching, that he refused treatment until he knew every detail about the arrow: who made it, who shot it, where the shooter came from, what kind of wood had been used, and many other questions.\n\nWhile he demanded those answers, the poison would continue spreading. The important task would remain undone: removing the arrow and treating the wound. Knowledge is valuable, but some questions can become distractions when an urgent problem is already causing harm.\n\nThe Buddhist teaching uses this image to emphasize practical liberation rather than endless speculation about questions that do not help end suffering. The wisdom is not that questions are bad. It is that a person should recognize which questions help healing and which merely postpone necessary action.",
+      "hi": "एक व्यक्ति के शरीर में विष-बुझा तीर लग गया। उपदेश में कल्पना की जाती है कि वह उपचार कराने से पहले यह जानने पर अड़ जाए कि तीर किसने बनाया, किसने चलाया, वह व्यक्ति कहाँ से आया, किस लकड़ी का उपयोग हुआ और ऐसी ही कई दूसरी बातें क्या हैं।\n\nजब तक वह इन उत्तरों की माँग करता रहेगा, विष शरीर में फैलता रहेगा। असली काम—तीर निकालना और घाव का उपचार करना—अधूरा रह जाएगा। ज्ञान मूल्यवान है, लेकिन जब तत्काल पीड़ा सामने हो तो कुछ प्रश्न ध्यान भटकाने वाले भी बन सकते हैं।\n\nबौद्ध शिक्षण इस उदाहरण के माध्यम से व्यावहारिक मुक्ति को उन अंतहीन अटकलों से अलग करता है जो दुःख कम करने में सहायता नहीं करतीं। इसका अर्थ यह नहीं कि प्रश्न बुरे हैं। अर्थ यह है कि व्यक्ति को पहचानना चाहिए कि कौन-से प्रश्न उपचार में मदद करते हैं और कौन-से आवश्यक कर्म को टालते हैं।",
+      "ar": "أصيب رجل بسهم مسموم. وتصور التعاليم أنه رفض العلاج حتى يعرف كل شيء عن السهم: من صنعه، ومن أطلقه، ومن أي مكان جاء مطلقه، ونوع الخشب الذي صنع منه، وأسئلة أخرى كثيرة.\n\nوبينما كان يطلب هذه الإجابات كان السم يستمر في الانتشار. وبقيت المهمة المهمة دون إنجاز: نزع السهم ومعالجة الجرح. فالمعرفة قيمة، لكن بعض الأسئلة قد تتحول إلى تشتيت عندما يكون هناك ألم عاجل يحتاج إلى علاج.\n\nيستخدم التعليم البوذي هذه الصورة للتأكيد على التحرر العملي بدل الانشغال بلا نهاية بتكهنات لا تساعد على إنهاء المعاناة. وليس المقصود أن الأسئلة سيئة، بل أن على الإنسان أن يميز بين الأسئلة التي تساعد على الشفاء وتلك التي تؤجل الفعل الضروري.",
+      "ur": "ایک شخص کو زہریلا تیر لگا۔ اس تعلیم میں تصور کیا جاتا ہے کہ وہ علاج کروانے سے پہلے یہ جاننے پر اصرار کرے کہ تیر کس نے بنایا، کس نے چلایا، چلانے والا کہاں سے آیا، کس لکڑی کا تیر تھا اور اس طرح کی بہت سی دوسری باتیں کیا ہیں۔\n\nجب تک وہ ان سوالات کے جواب مانگتا رہے گا، زہر پھیلتا رہے گا۔ اصل کام، یعنی تیر نکالنا اور زخم کا علاج کرنا، باقی رہ جائے گا۔ علم قیمتی ہے، لیکن جب فوری تکلیف سامنے ہو تو بعض سوالات انسان کی توجہ اصل ضرورت سے ہٹا سکتے ہیں۔\n\nبدھ مت کی یہ تعلیم عملی نجات پر زور دیتی ہے اور ایسی بے انتہا قیاس آرائی سے الگ کرتی ہے جو دکھ کم کرنے میں مدد نہیں دیتی۔ مطلب یہ نہیں کہ سوال برے ہیں؛ مطلب یہ ہے کہ انسان کو پہچاننا چاہیے کہ کون سے سوال شفا میں مدد دیتے ہیں اور کون سے ضروری عمل کو مؤخر کرتے ہیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the teaching analogy in the Cūḷamālukya Sutta."
+    },
+    {
+      "id": "parables-kisa-gotami",
+      "title": "Kisa Gotami and the Mustard Seeds",
+      "tradition": "Buddhist teaching story",
+      "origin": "Early Buddhist tradition",
+      "tags": [
+        "BUDDHISM",
+        "IMPERMANENCE",
+        "GRIEF",
+        "WISDOM"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "COMMENTARIAL_BUDDHIST_TRADITION",
+      "sourceBasis": [
+        "https://www.dhammatalks.org/suttas/KN/Thig/thig10.html",
+        "https://ancient-buddhist-texts.net/English-Texts/Dhamma-Verses-Comm/08-13.htm"
+      ],
+      "evidenceNote": "The famous mustard-seed episode is transmitted in later commentary and story traditions associated with Kisa Gotami. The canonical verses associated with her have a different narrative context, so the retelling identifies the mustard-seed episode as a traditional story.",
+      "en": "Kisa Gotami was overwhelmed by grief after the death of her child. Unable to accept what had happened, she searched for a medicine that might restore the child. In the traditional story, she was directed to the Buddha.\n\nThe Buddha told her to bring mustard seeds from a household that had never known death. She went from house to house. People were willing to give her mustard seeds, but every family had its own story of someone who had died—a parent, a child, a spouse, or another loved one.\n\nSlowly Kisa Gotami understood what the search had revealed. Her family was not alone in experiencing death. The realization did not make her loss meaningless, but it changed her relationship to grief. The story teaches impermanence and shared human vulnerability, while also reminding us that this particular episode comes from later Buddhist storytelling rather than being a simple verbatim record of an encounter.",
+      "hi": "किसा गोतमी अपने बच्चे की मृत्यु के बाद गहरे शोक में डूब गईं। जो हुआ था उसे स्वीकार करना उनके लिए असंभव था और वे ऐसी औषधि खोजने लगीं जो शायद बच्चे को वापस ला सके। पारंपरिक कथा में उन्हें बुद्ध के पास जाने की सलाह दी जाती है।\n\nबुद्ध ने उनसे कहा कि वे ऐसे घर से सरसों के बीज लाएँ जहाँ कभी किसी की मृत्यु न हुई हो। वे एक-एक घर गईं। लोगों ने सरसों देने में संकोच नहीं किया, लेकिन हर परिवार के पास किसी न किसी की मृत्यु की अपनी कहानी थी—माता-पिता, बच्चे, पति-पत्नी या किसी और प्रियजन की।\n\nधीरे-धीरे किसा गोतमी समझ गईं कि इस खोज ने उन्हें क्या दिखाया है। उनका परिवार मृत्यु का अनुभव करने वाला अकेला परिवार नहीं था। यह समझ उनके दुख को निरर्थक नहीं बनाती, लेकिन उसके साथ उनके संबंध को बदल देती है। कहानी अनित्यता और साझा मानवीय असुरक्षा पर शिक्षा देती है और यह भी याद दिलाती है कि सरसों के बीज वाली घटना बाद की बौद्ध कथा-परंपरा से आती है, किसी सरल शब्दशः प्रत्यक्ष विवरण से नहीं।",
+      "ar": "غمر الحزن كيسا غوتامي بعد وفاة طفلها. ولم تستطع تقبل ما حدث، فبحثت عن دواء قد يعيد الطفل إلى الحياة. وفي القصة التقليدية وُجهت إلى بوذا.\n\nطلب منها بوذا أن تأتي بحبات خردل من بيت لم يعرف الموت قط. فذهبت من بيت إلى بيت. وكان الناس مستعدين لإعطائها الخردل، لكن كل أسرة كانت تحمل قصة عن شخص مات: والد أو طفل أو زوج أو قريب آخر.\n\nوفهمت كيسا غوتامي تدريجيًا ما كشفه بحثها. لم تكن أسرتها وحدها في مواجهة الموت. ولم يجعل هذا الإدراك فقدها بلا معنى، لكنه غيّر علاقتها بالحزن. وتعلّم القصة عن عدم الدوام وعن هشاشة الإنسان المشتركة، مع التنبيه إلى أن حادثة بذور الخردل تنتمي إلى تقاليد قصصية بوذية لاحقة ولا ينبغي تقديمها كسجل حرفي بسيط للقاء تاريخي.",
+      "ur": "کِسا گوتمى اپنے بچے کی موت کے بعد شدید غم میں مبتلا تھیں۔ وہ اس واقعے کو قبول نہیں کرپارہی تھیں اور ایسی دوا کی تلاش میں تھیں جو شاید بچے کو زندہ کردے۔ روایتی کہانی میں انہیں بدھا کے پاس جانے کا مشورہ دیا گیا۔\n\nبدھا نے کہا کہ وہ ایسے گھر سے سرسوں کے بیج لائیں جہاں کبھی کسی کی موت نہ ہوئی ہو۔ وہ گھر گھر گئیں۔ لوگ انہیں بیج دینے کے لیے تیار تھے، لیکن ہر خاندان کے پاس کسی نہ کسی کی موت کی کہانی تھی—والدین، بچے، شریکِ حیات یا کوئی اور عزیز۔\n\nآہستہ آہستہ کِسا گوتمى سمجھ گئیں کہ اس تلاش نے انہیں کیا دکھایا ہے۔ ان کا خاندان موت کا تجربہ کرنے والا واحد خاندان نہیں تھا۔ اس حقیقت نے ان کے نقصان کو بے معنی نہیں بنایا، لیکن غم کے ساتھ ان کا تعلق بدل دیا۔ یہ کہانی ناپائیداری اور مشترکہ انسانی کمزوری کا سبق دیتی ہے، اور یہ بھی واضح کرتی ہے کہ سرسوں کے بیج والا واقعہ بعد کی بدھ روایتی حکایت میں محفوظ ہوا ہے، نہ کہ کسی سادہ لفظ بہ لفظ تاریخی مکالمے میں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of a later Buddhist story tradition associated with Kisa Gotami."
+    },
+    {
+      "id": "parables-blind-men-elephant-jain",
+      "title": "The Blind Men and the Elephant",
+      "tradition": "Jain anekantavada teaching story",
+      "origin": "Jain tradition / India",
+      "tags": [
+        "JAINISM",
+        "ANEKANTAVADA",
+        "PERSPECTIVE",
+        "WISDOM"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "JAIN_PHILOSOPHICAL_TRADITION",
+      "sourceBasis": [
+        "https://jainworld.com/education/jain-education-material/jain-stories/elephant-and-the-blind-men/"
+      ],
+      "evidenceNote": "The elephant analogy is used in Jain teaching about non-one-sidedness and appears in Jain philosophical literature. It is not exclusive to Jainism, so the corpus labels the Jain philosophical framing rather than claiming exclusive ownership of the story.",
+      "en": "Several people who could not see were brought near an elephant. One person touched its leg and concluded that an elephant was like a pillar. Another touched its tail and thought it was like a rope. Someone else felt the trunk and compared it with a thick pipe. Others touched the ear or side and formed still different descriptions.\n\nEach person had experienced something real, but each mistook a part for the whole. Soon they argued because each was certain that his own description was complete. A wiser observer explained that their observations were not worthless; they were partial.\n\nThe Jain philosophical tradition uses this kind of story to illuminate anekantavada, the idea that reality is many-sided and that a single limited viewpoint may not exhaust the truth. The lesson is not that every claim is equally correct. It is that careful understanding requires recognizing what a viewpoint can and cannot establish.",
+      "hi": "कुछ दृष्टिबाधित लोगों को एक हाथी के पास लाया गया। एक व्यक्ति ने उसका पैर छुआ और निष्कर्ष निकाला कि हाथी एक खंभे जैसा है। दूसरे ने पूँछ छुई और उसे रस्सी जैसा समझा। किसी ने सूँड़ को छुआ और उसे मोटी नली जैसा बताया। अन्य लोगों ने कान या शरीर के दूसरे हिस्से को छुआ और अलग-अलग वर्णन किए।\n\nहर व्यक्ति ने कोई वास्तविक चीज़ अनुभव की थी, लेकिन उसने एक हिस्से को पूरा समझ लिया। जल्दी ही वे इस बात पर बहस करने लगे कि किसका वर्णन सही है, क्योंकि प्रत्येक को अपने अनुभव पर पूरा भरोसा था। एक समझदार व्यक्ति ने समझाया कि उनके अनुभव बेकार नहीं थे; वे केवल आंशिक थे।\n\nजैन दार्शनिक परंपरा ऐसी कहानी के माध्यम से अनेकांतवाद को समझाती है—अर्थात वास्तविकता के अनेक पक्ष हो सकते हैं और सीमित दृष्टिकोण अकेले पूरी सच्चाई को समाप्त नहीं कर सकता। इसका अर्थ यह नहीं कि हर दावा बराबर सही है। अर्थ यह है कि सही समझ के लिए यह पहचानना जरूरी है कि कोई दृष्टिकोण क्या सिद्ध कर सकता है और क्या नहीं।",
+      "ar": "اقترب عدد من الأشخاص الذين لا يستطيعون الرؤية من فيل. لمس أحدهم ساق الفيل فقال إنه يشبه عمودًا. ولمس آخر الذيل فظنه كالحبل. ولمس ثالث الخرطوم وقارنه بأنبوب سميك. أما الآخرون فلامسوا الأذن أو الجانب وأعطوا أوصافًا مختلفة.\n\nكان كل واحد منهم قد اختبر شيئًا حقيقيًا، لكنه جعل الجزء كأنه الكل. وسرعان ما اختلفوا لأن كل واحد اعتقد أن وصفه كامل. فشرح لهم شخص أكثر حكمة أن ملاحظاتهم ليست بلا قيمة، وإنما هي جزئية.\n\nوتستخدم التقاليد الفلسفية الجاينية هذا النوع من القصص لإيضاح مفهوم أنيكانتاواد، أي تعدد جوانب الواقع وأن المنظور المحدود قد لا يستنفد الحقيقة. وليس المقصود أن كل ادعاء صحيح بالقدر نفسه، بل أن الفهم الدقيق يتطلب معرفة ما يستطيع المنظور إثباته وما لا يستطيع.",
+      "ur": "کئی ایسے لوگ جو دیکھ نہیں سکتے تھے ایک ہاتھی کے قریب لائے گئے۔ ایک شخص نے اس کی ٹانگ چھو کر کہا کہ ہاتھی ستون جیسا ہے۔ دوسرے نے دم کو چھوا اور اسے رسی جیسا سمجھا۔ کسی نے سونڈ چھوئی اور اسے موٹی نلی سے تشبیہ دی۔ دوسرے لوگوں نے کان یا جسم کے کسی اور حصے کو چھوا اور مختلف بیان پیش کیے۔\n\nہر شخص نے کسی حقیقی چیز کا تجربہ کیا تھا، مگر ہر ایک نے ایک حصے کو پوری حقیقت سمجھ لیا۔ جلد ہی وہ اس بات پر جھگڑنے لگے کہ درست بیان کس کا ہے، کیونکہ ہر شخص اپنے تجربے کو مکمل سمجھ رہا تھا۔ ایک دانا شخص نے بتایا کہ ان کے مشاہدات بےکار نہیں تھے، وہ صرف جزوی تھے۔\n\nجین فلسفیانہ روایت اس طرح کی کہانی کے ذریعے انیکانت واد کو سمجھاتی ہے، یعنی حقیقت کے کئی پہلو ہوسکتے ہیں اور محدود نقطۂ نظر اکیلا پوری سچائی کا احاطہ نہیں کرتا۔ سبق یہ نہیں کہ ہر دعویٰ یکساں طور پر درست ہے، بلکہ یہ ہے کہ درست فہم کے لیے جاننا ضروری ہے کہ کوئی نقطۂ نظر کیا ثابت کرسکتا ہے اور کیا نہیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING using the Jain philosophical framing of anekantavada; source tradition notes that similar versions circulate more widely."
+    },
+    {
+      "id": "parables-nachiketa-yama",
+      "title": "Nachiketa and the Question of What Endures",
+      "tradition": "Katha Upanishad",
+      "origin": "Hindu philosophical tradition / ancient India",
+      "tags": [
+        "HINDUISM",
+        "UPANISHAD",
+        "DEATH",
+        "WISDOM"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "SCRIPTURAL_PHILOSOPHICAL_TEXT",
+      "sourceBasis": [
+        "https://upanishads.org.in/upanishads/2/3"
+      ],
+      "evidenceNote": "A philosophical narrative from the Katha Upanishad. The repository retelling follows the narrative structure while not reproducing a modern translation.",
+      "en": "Nachiketa was a young seeker who became troubled when he saw his father performing a ritual donation. He asked a question that was difficult for the household to answer and, in the story, was sent to the house of Yama, the lord associated with death.\n\nYama was away when Nachiketa arrived. The young visitor waited for several days before Yama returned. Recognizing that a guest had been left waiting, Yama offered Nachiketa three gifts or wishes. Nachiketa used the opportunity first to ask for reconciliation with his father and then to pursue deeper questions about what happens beyond death.\n\nYama offered him wealth, long life, and worldly pleasures instead of answering the deepest question. Nachiketa refused to exchange lasting knowledge for temporary possessions. The Upanishad then turns from the story toward philosophical teaching about the self, choice, discipline, and the distinction between what is merely pleasant and what is truly worth pursuing.",
+      "hi": "नचिकेता एक युवा साधक था जो अपने पिता द्वारा किए जा रहे यज्ञ में दान दी जा रही वस्तुओं को देखकर चिंतित हुआ। उसने ऐसा प्रश्न पूछा जिसका उत्तर देना परिवार के लिए कठिन था और कथा के अनुसार उसे मृत्यु से जुड़े देवता यम के घर भेज दिया गया।\n\nजब नचिकेता पहुँचा, यम वहाँ नहीं थे। वह कई दिनों तक प्रतीक्षा करता रहा और फिर यम लौटे। यह देखकर कि अतिथि को प्रतीक्षा करनी पड़ी, यम ने नचिकेता को तीन वर या इच्छाएँ माँगने का अवसर दिया। नचिकेता ने पहले अपने पिता के साथ मेल-मिलाप की बात पूछी और फिर मृत्यु के बाद क्या रहता है, इस गहरे प्रश्न की ओर बढ़ा।\n\nयम ने उसके गहरे प्रश्न के बदले धन, लंबी आयु और सांसारिक सुखों का प्रस्ताव रखा। नचिकेता ने स्थायी ज्ञान के बदले अस्थायी वस्तुएँ स्वीकार करने से इनकार किया। इसके बाद उपनिषद कथा से दर्शन की ओर मुड़ता है और आत्मा, चुनाव, अनुशासन तथा उस अंतर पर विचार करता है जो केवल सुखद लगने वाली चीज़ और वास्तव में मूल्यवान लक्ष्य के बीच होता है।",
+      "ar": "كان ناتشيكيتا طالبًا شابًا للمعرفة اضطرب عندما رأى أباه يقدم الهدايا في طقس ديني. وطرح سؤالًا صعبًا على أسرته، وفي القصة أُرسل إلى بيت ياما، المرتبط بالموت.\n\nكان ياما غائبًا عندما وصل ناتشيكيتا، فانتظر الشاب عدة أيام حتى عاد. ولأن ضيفًا بقي منتظرًا، عرض ياما على ناتشيكيتا ثلاثة طلبات. فاختار أولًا أن يسأل عن المصالحة مع أبيه، ثم اتجه إلى السؤال الأعمق: ماذا يبقى بعد الموت؟\n\nوعرض ياما عليه المال وطول العمر والمتع الدنيوية بدل الإجابة عن السؤال الأعمق. رفض ناتشيكيتا أن يستبدل المعرفة الدائمة بممتلكات مؤقتة. وبعد ذلك تنتقل الأوبانيشاد من القصة إلى التعليم الفلسفي عن الذات والاختيار والانضباط والتمييز بين ما يبدو ممتعًا وما يستحق السعي الحقيقي.",
+      "ur": "نچیکیتا ایک نوجوان طالبِ علم تھا جو اپنے والد کو ایک مذہبی رسم میں عطیات دیتے دیکھ کر پریشان ہوا۔ اس نے ایسا سوال اٹھایا جس کا جواب گھر والوں کے لیے مشکل تھا، اور کہانی کے مطابق اسے موت سے وابستہ دیوتا یما کے گھر بھیج دیا گیا۔\n\nجب نچیکیتا وہاں پہنچا تو یما موجود نہیں تھے۔ نوجوان کئی دن انتظار کرتا رہا، یہاں تک کہ یما واپس آئے۔ یہ دیکھ کر کہ ایک مہمان کو انتظار کرنا پڑا، یما نے نچیکیتا کو تین خواہشیں مانگنے کا موقع دیا۔ نچیکیتا نے پہلے اپنے والد کے ساتھ صلح کی خواہش کی اور پھر یہ گہرا سوال اٹھایا کہ موت کے بعد کیا باقی رہتا ہے۔\n\nیما نے اس سوال کے بدلے دولت، طویل عمر اور دنیاوی لذتیں پیش کیں۔ نچیکیتا نے مستقل علم کے بدلے عارضی چیزیں قبول کرنے سے انکار کیا۔ اس کے بعد اپنشد کہانی سے فلسفیانہ تعلیم کی طرف منتقل ہوتا ہے اور خودی، انتخاب، ضبط اور خوش کن نظر آنے والی چیز اور حقیقی طور پر قابلِ حصول مقصد کے درمیان فرق پر غور کرتا ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the narrative frame of the Katha Upanishad."
+    },
+    {
+      "id": "parables-bhai-lalo",
+      "title": "Bhai Lalo and Malik Bhago",
+      "tradition": "Sikh sakhi tradition",
+      "origin": "Punjab / Sikh tradition",
+      "tags": [
+        "SIKHISM",
+        "HONEST_LIVELIHOOD",
+        "EQUALITY",
+        "SERVICE"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "SIKH_TRADITIONAL_SAKHI",
+      "sourceBasis": [
+        "https://sgpc.net/gazette/2019/January/January-English.pdf"
+      ],
+      "evidenceNote": "A traditional Sikh sakhi associated with Guru Nanak, Bhai Lalo, and Malik Bhago. The supernatural food imagery is presented as a traditional teaching element, not an independently verified event.",
+      "en": "Guru Nanak is traditionally remembered as having met Bhai Lalo, a hardworking carpenter in Saidpur, and Malik Bhago, a wealthy official. Malik Bhago held a large feast and invited Guru Nanak. Nanak did not accept the invitation at first and instead stayed with Bhai Lalo.\n\nWhen Malik Bhago questioned him, the traditional sakhi presents Guru Nanak holding the simple food prepared by Lalo alongside the richer food associated with the official's feast. In the teaching story, the two foods become symbols: honest work is contrasted with wealth gained through exploitation or pride. The dramatic imagery is part of the tradition and is not presented here as a scientifically verified event.\n\nThe central message is about the dignity of honest earning and the rejection of social superiority based only on wealth. The sakhi has remained important in Sikh memory because it turns a meal into a lesson about how income is obtained and how people should be valued.",
+      "hi": "गुरु नानक के बारे में सिख परंपरा में एक प्रसिद्ध साखी है कि उन्होंने सैदपुर के मेहनती बढ़ई भाई लालो और धनी अधिकारी मलिक भागो से मुलाकात की। मलिक भागो ने एक बड़ा भोज रखा और गुरु नानक को आमंत्रित किया। नानक ने पहले निमंत्रण स्वीकार नहीं किया और भाई लालो के साथ रहे।\n\nजब मलिक भागो ने उनसे कारण पूछा, तो पारंपरिक साखी में गुरु नानक के सामने लालो का साधारण भोजन और अधिकारी के भोज का समृद्ध भोजन रखा जाता है। कथा में दोनों भोजन प्रतीक बन जाते हैं: ईमानदार श्रम से कमाई की तुलना ऐसे धन से की जाती है जिसे शोषण या घमंड से जोड़ा जाता है। इसमें आने वाला चमत्कारिक खाद्य-चित्र परंपरा का हिस्सा है, इसे वैज्ञानिक रूप से प्रमाणित घटना नहीं माना गया है।\n\nमुख्य संदेश ईमानदार कमाई की गरिमा और केवल धन के आधार पर सामाजिक श्रेष्ठता को अस्वीकार करने का है। सिख स्मृति में यह साखी इसलिए महत्वपूर्ण रही है क्योंकि यह भोजन को आय के साधन और मनुष्य के मूल्य के बारे में एक नैतिक शिक्षा में बदल देती है।",
+      "ar": "تروي السَّخي السيخية التقليدية أن غورو ناناك التقى بهاي لالو، النجار المجتهد في سيدبور، وبمالك بهاگو، المسؤول الثري. أقام مالك بهاگو وليمة كبيرة ودعا إليها غورو ناناك، لكنه لم يقبل الدعوة في البداية وبقي مع بهاي لالو.\n\nوعندما سأل مالك بهاگو عن السبب، تقدم السَّخي التقليدي صورة رمزية للطعام البسيط الذي أعده لالو إلى جانب الطعام الغني المرتبط بوليمة المسؤول. ويصبح الطعامان رمزًا في القصة: الكسب من العمل الصادق في مقابل ثروة ترتبط بالاستغلال أو الكبرياء. أما الصورة المعجزة للطعام فهي جزء من التقليد ولا تقدم هنا بوصفها حدثًا مثبتًا علميًا.\n\nوتتمثل الرسالة الأساسية في كرامة الكسب الحلال ورفض التفوق الاجتماعي القائم على الثروة وحدها. وبقيت هذه السَّخي مهمة في الذاكرة السيخية لأنها تجعل من الطعام درسًا في مصدر المال وفي كيفية تقدير الإنسان.",
+      "ur": "سکھ روایت میں مشہور ساکھی بیان کی جاتی ہے کہ گرو نانک نے سیدپور کے محنتی بڑھئی بھائی لالو اور دولت مند افسر ملک بھاگو سے ملاقات کی۔ ملک بھاگو نے ایک بڑی دعوت رکھی اور گرو نانک کو بلایا، مگر نانک نے ابتدا میں دعوت قبول نہیں کی اور بھائی لالو کے ساتھ رہے۔\n\nجب ملک بھاگو نے وجہ پوچھی تو روایتی ساکھی میں لالو کے سادہ کھانے اور افسر کی دعوت کے امیرانہ کھانے کو علامتی طور پر سامنے لایا جاتا ہے۔ کہانی میں دونوں کھانے علامت بن جاتے ہیں: دیانت دار محنت سے کمائی کے مقابلے میں ایسا مال جسے استحصال یا غرور سے جوڑا جاتا ہے۔ کھانے کے بارے میں معجزاتی منظر روایت کا حصہ ہے اور اسے یہاں سائنسی طور پر ثابت شدہ واقعہ نہیں کہا گیا۔\n\nمرکزی سبق دیانت دار کمائی کی عزت اور صرف دولت کی بنیاد پر سماجی برتری کو رد کرنا ہے۔ یہ ساکھی سکھ یادداشت میں اس لیے اہم رہی ہے کہ یہ کھانے کو مال کمانے کے طریقے اور انسان کی قدر کے بارے میں اخلاقی تعلیم میں بدل دیتی ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of a Sikh sakhi tradition. Miracle imagery is explicitly labeled as traditional."
+    },
+    {
+      "id": "parables-rumi-elephant",
+      "title": "The Elephant in the Dark Room",
+      "tradition": "Rumi / Masnavi wisdom story",
+      "origin": "Persian Sufi literary tradition",
+      "tags": [
+        "SUFISM",
+        "RUMI",
+        "PERSPECTIVE",
+        "KNOWLEDGE"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "CLASSICAL_SUFI_LITERATURE",
+      "sourceBasis": [
+        "https://www.masnavi.net/1/25/eng/3/1259/"
+      ],
+      "evidenceNote": "The story appears in Rumi's Masnavi, Book III, around the elephant in a dark room. The corpus uses a new retelling rather than a modern translation.",
+      "en": "An elephant was brought into a dark room so people could experience it. Because they could not see the animal, each person reached out a hand to discover its shape. One touched the trunk and imagined a long pipe. Another touched an ear and thought of a fan. Someone touched a leg and imagined a pillar.\n\nEach description seemed convincing to the person who had touched that part. Because the room remained dark, no one had the complete picture. Their disagreement came not from having no experience, but from treating a partial experience as if it were the whole truth.\n\nRumi uses the story as a meditation on limited perception and knowledge. The wisdom is a warning against mistaking one perspective for total understanding. It also encourages humility: seeing one part clearly does not mean that we have seen everything.",
+      "hi": "एक हाथी को एक अंधेरे कमरे में लाया गया ताकि लोग उसे अनुभव कर सकें। अंधेरा इतना था कि कोई उसे देख नहीं सकता था। इसलिए हर व्यक्ति ने हाथ बढ़ाकर उसके आकार को समझने की कोशिश की। किसी ने सूँड़ छुई और उसे लंबी नली जैसा समझा। दूसरे ने कान छुआ और उसे पंखे जैसा बताया। किसी ने पैर छुआ और उसे खंभे जैसा माना।\n\nजिस हिस्से को प्रत्येक व्यक्ति ने छुआ, उसके आधार पर उसका वर्णन उसे बिल्कुल सही लगा। कमरा अंधेरा रहा, इसलिए किसी के पास पूरी तस्वीर नहीं थी। उनका मतभेद इस कारण नहीं था कि उनके पास कोई अनुभव नहीं था, बल्कि इसलिए कि वे आंशिक अनुभव को पूरी सच्चाई मान रहे थे।\n\nरूमी इस कहानी का उपयोग सीमित दृष्टि और ज्ञान पर विचार करने के लिए करते हैं। इसका संदेश किसी एक दृष्टिकोण को पूर्ण समझ लेने से सावधान करता है। यह विनम्रता की ओर भी बुलाता है: किसी एक हिस्से को स्पष्ट देखना यह सिद्ध नहीं करता कि हमने सब कुछ देख लिया है।",
+      "ar": "أُدخل فيل إلى غرفة مظلمة لكي يختبره الناس. ولأنهم لم يستطيعوا رؤية الحيوان، مد كل واحد يده ليتعرف إلى شكله. لمس أحدهم الخرطوم فتخيله أنبوبًا طويلًا. ولمس آخر الأذن فحسبها كالمروحة. ولمس شخص ثالث الساق فتصورها كعمود.\n\nبدا وصف كل واحد مقنعًا له لأنه لمس جزءًا حقيقيًا. وبقيت الغرفة مظلمة، فلم يكن لدى أحد صورة كاملة. ولم ينشأ اختلافهم من انعدام التجربة، بل من اعتبار التجربة الجزئية حقيقة كاملة.\n\nيستخدم الرومي القصة للتأمل في محدودية الإدراك والمعرفة. والحكمة تحذر من تحويل منظور واحد إلى فهم شامل، وتشجع على التواضع: رؤية جزء بوضوح لا تعني أننا رأينا الكل.",
+      "ur": "ایک ہاتھی کو ایک اندھیرے کمرے میں لایا گیا تاکہ لوگ اسے محسوس کرسکیں۔ چونکہ وہ جانور کو دیکھ نہیں سکتے تھے، ہر شخص نے ہاتھ بڑھا کر اس کی شکل سمجھنے کی کوشش کی۔ کسی نے سونڈ چھوئی اور اسے لمبی نلی سمجھا۔ دوسرے نے کان چھوا اور اسے پنکھے سے تشبیہ دی۔ کسی نے ٹانگ چھوئی اور اسے ستون قرار دیا۔\n\nجس حصے کو ہر شخص نے چھوا، اس کی بنیاد پر اس کا بیان اسے بالکل درست محسوس ہوا۔ کمرہ اندھیرا تھا، اس لیے کسی کے پاس مکمل تصویر نہیں تھی۔ اختلاف اس لیے نہیں تھا کہ ان کے پاس کوئی تجربہ نہ تھا بلکہ اس لیے تھا کہ ہر ایک جزوی تجربے کو پوری حقیقت سمجھ رہا تھا۔\n\nرومی اس کہانی کو محدود ادراک اور علم پر غور کے لیے استعمال کرتے ہیں۔ اس کی دانائی خبردار کرتی ہے کہ ایک نقطۂ نظر کو مکمل فہم نہ سمجھا جائے۔ یہ عاجزی کی دعوت بھی ہے: کسی ایک حصے کو واضح دیکھنے کا مطلب یہ نہیں کہ ہم نے پوری چیز دیکھ لی ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of Rumi's classical Masnavi story; no modern copyrighted translation reproduced."
+    },
+    {
+      "id": "parables-honi-carob",
+      "title": "Honi and the Carob Tree",
+      "tradition": "Rabbinic wisdom story / Talmud",
+      "origin": "Jewish tradition",
+      "tags": [
+        "JUDAISM",
+        "GENERATIONS",
+        "PATIENCE",
+        "LEGACY"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "RABBINIC_LITERATURE",
+      "sourceBasis": [
+        "https://voices.sefaria.org/sheets/152534"
+      ],
+      "evidenceNote": "The story appears in Ta'anit 23a. The later rabbinic narrative includes extraordinary sleep imagery; the corpus retelling keeps the wisdom theme and identifies the story as rabbinic tradition.",
+      "en": "Honi the Circle Maker once saw a man planting a carob tree. Honi asked why he would plant a tree whose fruit would not appear for many years. The man answered that his ancestors had planted trees from which he benefited. He would therefore plant for people who would come after him.\n\nThe answer changed the meaning of the act. The planter might not live long enough to sit beneath that tree or eat its fruit, yet he considered the future worth working for. Later in the story, Honi himself experiences a long sleep and awakens to see descendants enjoying what an earlier generation had planted.\n\nThe rabbinic story teaches a simple wisdom: people inherit work done before them and can choose to leave something useful for those who come after. A legacy does not have to be famous. It can be a tree, a skill, a repaired house, a book, or a kinder community.",
+      "hi": "हौनी द सर्कल मेकर ने एक बार एक व्यक्ति को कैरब का पेड़ लगाते देखा। हौनी ने पूछा कि वह ऐसा पेड़ क्यों लगा रहा है जिसके फल आने में कई वर्ष लगेंगे। व्यक्ति ने उत्तर दिया कि उसके पूर्वजों ने ऐसे पेड़ लगाए थे जिनका लाभ उसे मिला। इसलिए वह भी आने वाली पीढ़ियों के लिए पेड़ लगाएगा।\n\nइस उत्तर ने काम का अर्थ बदल दिया। पेड़ लगाने वाला शायद इतना लंबा न जिए कि उसकी छाया में बैठे या उसके फल खाए, फिर भी वह भविष्य के लिए मेहनत को मूल्यवान मानता था। आगे की रब्बी कथा में हौनी की लंबी नींद और बाद की पीढ़ियों द्वारा पेड़ के फल का आनंद लेने का असाधारण प्रसंग आता है।\n\nइस कहानी की सरल शिक्षा है: हर पीढ़ी को पिछले लोगों के काम से कुछ मिलता है और वह तय कर सकती है कि अगली पीढ़ी के लिए क्या छोड़ा जाए। विरासत का प्रसिद्ध होना जरूरी नहीं। यह पेड़, कोई कौशल, सुधारा हुआ घर, कोई पुस्तक या अधिक दयालु समुदाय भी हो सकता है।",
+      "ar": "رأى حوني هماعغل ذات يوم رجلًا يزرع شجرة خروب. فسأله لماذا يزرع شجرة لن تثمر إلا بعد سنوات طويلة. فأجاب الرجل أن أسلافه زرعوا أشجارًا استفاد منها هو، ولذلك فهو يزرع لمن سيأتي بعده.\n\nغيّرت الإجابة معنى الفعل. قد لا يعيش الزارع طويلًا بما يكفي ليجلس تحت شجرته أو يأكل ثمرها، لكنه رأى أن العمل للمستقبل يستحق. وفي بقية القصة الربانية ينام حوني نومًا طويلًا، ثم يستيقظ ليرى أحفادًا ينتفعون بما زرعه جيل سابق.\n\nوتعلم القصة الربانية حكمة بسيطة: يرث كل جيل أعمال من سبقوه، ويمكنه أن يختار ترك شيء نافع لمن يأتي بعده. ولا يشترط أن يكون الإرث مشهورًا؛ فقد يكون شجرة أو مهارة أو بيتًا أصلحناه أو كتابًا أو مجتمعًا أكثر رحمة.",
+      "ur": "حونی ہمعگل نے ایک دن ایک آدمی کو خرّوب کا درخت لگاتے دیکھا۔ حونی نے پوچھا کہ وہ ایسا درخت کیوں لگا رہا ہے جس کا پھل کئی برس بعد آئے گا۔ آدمی نے جواب دیا کہ اس کے بزرگوں نے ایسے درخت لگائے تھے جن سے اسے فائدہ ملا، اس لیے وہ بھی آنے والوں کے لیے درخت لگا رہا ہے۔\n\nاس جواب نے اس عمل کا مفہوم بدل دیا۔ ممکن ہے درخت لگانے والا اتنی عمر نہ پائے کہ اس کے سائے میں بیٹھ سکے یا اس کا پھل کھا سکے، لیکن وہ مستقبل کے لیے محنت کو قیمتی سمجھتا تھا۔ ربانی روایت کے اگلے حصے میں حونی کی طویل نیند اور بعد میں آنے والی نسلوں کو اس درخت سے فائدہ اٹھاتے دکھایا گیا ہے۔\n\nاس کہانی کی سادہ دانائی یہ ہے کہ ہر نسل کو پچھلی نسلوں کے کام سے فائدہ ملتا ہے اور وہ آنے والوں کے لیے کچھ مفید چھوڑ سکتی ہے۔ میراث کا مشہور ہونا ضروری نہیں؛ یہ ایک درخت، کوئی ہنر، مرمت شدہ گھر، کتاب یا زیادہ مہربان معاشرہ بھی ہوسکتا ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the rabbinic Honi/carob story in Ta'anit 23a. Extraordinary narrative elements are identified as tradition."
+    }
+  ]
+}
