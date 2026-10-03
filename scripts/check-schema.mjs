@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
-import { PrismaClient } from "../generated/prisma/client/index.js";
+import { PrismaClient } from "../generated/prisma/client.ts";
 
 const connectionString=process.env.DATABASE_URL;
 if(!connectionString){console.error("DATABASE_URL is required");process.exit(1)}

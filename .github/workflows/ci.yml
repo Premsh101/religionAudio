@@ -5,10 +5,26 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   web:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: religion_audio
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s --health-timeout 5s --health-retries 12
     env:
       DATABASE_URL: postgresql://postgres:postgres@localhost:5432/religion_audio
       TTS_SERVICE_URL: http://localhost:8010
@@ -17,15 +33,36 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
+          cache: npm
+      - run: npm ci
       - run: npx prisma validate
       - run: npx prisma generate
+      - run: npm run lint
+      - name: Apply migrations to a fresh database
+        run: npx prisma migrate deploy
+      - name: Check migrations match schema.prisma
+        run: npx prisma migrate diff --from-config-datasource --to-schema prisma/schema.prisma --exit-code
+      - name: Seed (idempotency check runs it twice)
+        run: npm run db:seed && npm run db:seed && npm run db:check
       - run: npm run build
       - name: Validate Coolify compose
         env:
           POSTGRES_PASSWORD: ci-db-password
           AUTH_SECRET: ci-auth-secret
-        run: docker compose config
+        run: docker compose config --quiet
+      - name: Build production image
+        run: docker build -t religion-audio-web:ci .
+      - name: Smoke test production image
+        run: |
+          docker run -d --name web --network host \
+            -e DATABASE_URL="$DATABASE_URL" -e AUTH_SECRET=ci-auth-secret \
+            religion-audio-web:ci
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:3000/api/health; then echo; exit 0; fi
+            sleep 2
+          done
+          docker logs web
+          exit 1
 
   tts:
     runs-on: ubuntu-latest

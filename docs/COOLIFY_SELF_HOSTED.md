@@ -25,7 +25,16 @@ PostgreSQL should not be exposed publicly. The web container connects to it usin
    - `POSTGRES_USER=religion_audio`
    - `DATABASE_URL=postgresql://religion_audio:<same-password>@db:5432/religion_audio`
 5. Generate a strong password using URL-safe characters for the first deployment, or URL-encode special characters before placing them in `DATABASE_URL`.
-6. Expose only the `web` service through the Coolify proxy/domain. Do not publish PostgreSQL or the TTS service as public endpoints.
+6. Expose only the `web` service through the Coolify proxy/domain (set the domain on the `web` service, port 3000). Do not publish PostgreSQL or the TTS service as public endpoints. The compose file intentionally publishes no host ports.
+7. Set the health check path to `/api/health` if Coolify asks for one.
+
+## Automatic deployment on every change
+
+Coolify's own **Auto Deploy** (GitHub App / webhook) redeploys the stack on every push to `main`. Keep it enabled in the application settings.
+
+Workflow for changes: work on a branch → open a pull request into `main` (CI in `.github/workflows/ci.yml` runs typecheck, fresh-DB migrations, schema-drift check, seed, build, Docker image build and a `/api/health` smoke test) → merge once green → Coolify deploys. Committed migrations under `prisma/migrations` apply automatically when the new container starts.
+
+Coolify does not wait for CI, so only merge to `main` once CI is green. If a Coolify build fails, the previous containers keep running.
 
 The production image runs `prisma migrate deploy` before `next start`, so new committed migrations are applied automatically during deployment.
 

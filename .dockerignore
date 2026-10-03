@@ -3,3 +3,8 @@ node_modules
 .git
 .env
 .env.*
+generated
+tsconfig.tsbuildinfo
+docs
+*.md
+!README.md

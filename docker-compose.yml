@@ -18,8 +18,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
+    # Coolify's proxy routes the domain to this port; no host port is published.
+    expose:
+      - "3000"
     environment:
       DATABASE_URL: ${DATABASE_URL:-postgresql://${POSTGRES_USER:-religion_audio}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-religion_audio}}
       TTS_SERVICE_URL: http://tts:8010
@@ -41,9 +42,11 @@ services:
     depends_on:
       db:
         condition: service_healthy
+      # The site must come up even if TTS is unhealthy; narration routes return 503 until it recovers.
       tts:
-        condition: service_healthy
+        condition: service_started
     healthcheck:
+      start_period: 30s
       test: ["CMD","node","-e","fetch('http://localhost:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
       interval: 20s
       timeout: 5s
