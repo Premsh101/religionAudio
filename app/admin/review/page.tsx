@@ -15,6 +15,7 @@ const statusStyle:Record<Status,string>={DRAFT:"bg-zinc-700/40 text-zinc-300",RE
 function Row({item,aiConfigured,imageConfigured,onChange}:{item:Item;aiConfigured:boolean;imageConfigured:boolean;onChange:(patch:Partial<Item>)=>void}){
   const [busy,setBusy]=useState<""|"approve"|"status"|"title"|"cover">("");
   const [error,setError]=useState("");
+  const [notice,setNotice]=useState("");
   const [titles,setTitles]=useState<string[]|null>(null);
   const [summary,setSummary]=useState("");
   const [direction,setDirection]=useState("");
@@ -33,7 +34,7 @@ function Row({item,aiConfigured,imageConfigured,onChange}:{item:Item;aiConfigure
   const setStatus=async(status:Status)=>{const d=await call(status==="PUBLISHED"?"approve":"status",base,{method:"PATCH",body:JSON.stringify({status})});if(d)onChange({status:d.item.status})};
   const suggest=async()=>{const d=await call("title",base+"/title",{method:"POST"});if(d){setTitles(d.titles);setSummary(d.summary||"")}};
   const applyTitle=async(title:string)=>{const d=await call("title",base,{method:"PATCH",body:JSON.stringify({title,summary:summary||undefined})});if(d){onChange({title:d.item.title,subtitle:d.item.summary||item.subtitle,needsTitle:false});setTitles(null)}};
-  const cover=async()=>{const d=await call("cover",base+"/cover",{method:"POST",body:JSON.stringify({direction})});if(d)onChange({coverUrl:d.coverUrl,coverUpdatedAt:new Date().toISOString()})};
+  const cover=async()=>{setNotice("");const d=await call("cover",base+"/cover",{method:"POST",body:JSON.stringify({direction})});if(d){onChange({coverUrl:d.coverUrl,coverUpdatedAt:new Date().toISOString()});setNotice(d.warning||(d.moment?`Cover shows: ${d.moment}`:""))}};
 
   return <li className="grid gap-5 rounded-3xl border border-white/10 bg-white/[0.02] p-5 md:grid-cols-[150px_1fr]">
     <div className="w-[150px]"><CoverArt title={item.title} tag={item.tag} kind={item.kind} coverUrl={item.coverUrl} size="md"/></div>
@@ -71,6 +72,7 @@ function Row({item,aiConfigured,imageConfigured,onChange}:{item:Item;aiConfigure
         </div>
       </div>
       {error&&<p className="text-sm text-amber-200">{error}</p>}
+      {notice&&!error&&<p className="text-sm text-zinc-400">{notice}</p>}
     </div>
   </li>;
 }
