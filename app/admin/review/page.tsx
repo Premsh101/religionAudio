@@ -12,7 +12,7 @@ type Item={kind:"story"|"work";id:string;slug:string;title:string;subtitle:strin
 const FILTERS=[["queue","Needs review"],["PUBLISHED","Live"],["all","Everything"]] as const;
 const statusStyle:Record<Status,string>={DRAFT:"bg-zinc-700/40 text-zinc-300",REVIEW:"bg-amber-300/15 text-amber-200",PUBLISHED:"bg-emerald-400/15 text-emerald-300",ARCHIVED:"bg-zinc-800 text-zinc-500"};
 
-function Row({item,aiConfigured,onChange}:{item:Item;aiConfigured:boolean;onChange:(patch:Partial<Item>)=>void}){
+function Row({item,aiConfigured,imageConfigured,onChange}:{item:Item;aiConfigured:boolean;imageConfigured:boolean;onChange:(patch:Partial<Item>)=>void}){
   const [busy,setBusy]=useState<""|"approve"|"status"|"title"|"cover">("");
   const [error,setError]=useState("");
   const [titles,setTitles]=useState<string[]|null>(null);
@@ -66,7 +66,7 @@ function Row({item,aiConfigured,onChange}:{item:Item;aiConfigured:boolean;onChan
         </div>
         <div className="rounded-2xl border border-white/5 bg-black/20 p-4">
           <div className="flex items-center justify-between gap-2"><p className="text-xs uppercase tracking-[0.14em] text-zinc-500">Cover</p>
-            <button onClick={cover} disabled={!aiConfigured||!!busy} className="inline-flex items-center gap-1.5 rounded-xl bg-white px-3 py-1.5 text-xs font-semibold text-black disabled:opacity-40">{busy==="cover"?<Loader2 className="h-3.5 w-3.5 animate-spin"/>:item.coverUrl?<RefreshCw className="h-3.5 w-3.5"/>:<ImagePlus className="h-3.5 w-3.5"/>}{busy==="cover"?"Painting… (up to a minute)":item.coverUrl?"Regenerate cover":"Generate cover"}</button></div>
+            <button onClick={cover} disabled={!imageConfigured||!!busy} className="inline-flex items-center gap-1.5 rounded-xl bg-white px-3 py-1.5 text-xs font-semibold text-black disabled:opacity-40">{busy==="cover"?<Loader2 className="h-3.5 w-3.5 animate-spin"/>:item.coverUrl?<RefreshCw className="h-3.5 w-3.5"/>:<ImagePlus className="h-3.5 w-3.5"/>}{busy==="cover"?"Painting… (up to a minute)":item.coverUrl?"Regenerate cover":"Generate cover"}</button></div>
           <input id={"direction-"+item.id} value={direction} onChange={e=>setDirection(e.target.value)} placeholder="Optional art direction, e.g. “moonlit banyan tree, watercolour”" className="mt-3 w-full rounded-xl border border-white/10 bg-transparent px-3 py-2 text-xs text-zinc-200 outline-none placeholder:text-zinc-600"/>
         </div>
       </div>
@@ -79,6 +79,7 @@ export default function ReviewDashboard(){
   const [role,setRole]=useState<string|null|undefined>(undefined);
   const [items,setItems]=useState<Item[]>([]);
   const [aiConfigured,setAiConfigured]=useState(false);
+  const [imageConfigured,setImageConfigured]=useState(false);
   const [filter,setFilter]=useState<(typeof FILTERS)[number][0]>("queue");
 
   useEffect(()=>{
@@ -86,7 +87,7 @@ export default function ReviewDashboard(){
       setRole(me.user?.role||null);
       if(me.user?.role!=="ADMIN"&&me.user?.role!=="EDITOR")return;
       const res=await fetch("/api/admin/catalog");
-      if(res.ok){const d=await res.json();setItems(d.items);setAiConfigured(d.aiConfigured)}
+      if(res.ok){const d=await res.json();setItems(d.items);setAiConfigured(d.aiConfigured);setImageConfigured(Boolean(d.imageConfigured))}
     }).catch(()=>setRole(null));
   },[]);
 
@@ -109,10 +110,10 @@ export default function ReviewDashboard(){
         <div className="rounded-2xl border border-white/10 p-4"><p className="text-xs text-zinc-500">Live</p><p className="mt-1 font-display text-3xl tabular-nums">{counts.live}</p></div>
         <div className="rounded-2xl border border-white/10 p-4"><p className="text-xs text-zinc-500">Without a cover</p><p className="mt-1 font-display text-3xl tabular-nums">{counts.noCover}</p></div>
       </div>
-      {!aiConfigured&&<p className="mt-6 rounded-2xl border border-amber-300/20 bg-amber-300/[0.05] p-4 text-sm text-amber-100">Title and cover generation is off until the Vertex AI service-account JSON is added to <code>GOOGLE_VERTEX_CREDENTIALS_JSON</code> in Coolify. Approving and publishing still work.</p>}
+      {!imageConfigured&&<p className="mt-6 rounded-2xl border border-amber-300/20 bg-amber-300/[0.05] p-4 text-sm text-amber-100">{aiConfigured?"Title suggestions work (via OpenRouter). Cover images need the Gemini key: add the Vertex AI service-account JSON to GOOGLE_VERTEX_CREDENTIALS_JSON in Coolify.":"Title and cover generation are off. Add a free OPENROUTER_API_KEY for titles, and the Vertex AI JSON (GOOGLE_VERTEX_CREDENTIALS_JSON) for covers, in Coolify. Approving and publishing still work."}</p>}
       <div className="mt-8 flex gap-2">{FILTERS.map(([key,label])=><button key={key} onClick={()=>setFilter(key)} className={"rounded-full border px-4 py-2 text-sm "+(filter===key?"border-white/20 bg-white text-black":"border-white/10 text-zinc-400")}>{label}</button>)}</div>
       {visible.length===0?<p className="mt-10 text-sm text-zinc-500">{filter==="queue"?"Nothing waiting for review.":"Nothing here."}</p>:
-      <ul className="mt-6 space-y-4">{visible.map(item=><Row key={item.kind+item.id} item={item} aiConfigured={aiConfigured} onChange={patch=>update(item,patch)}/>)}</ul>}
+      <ul className="mt-6 space-y-4">{visible.map(item=><Row key={item.kind+item.id} item={item} aiConfigured={aiConfigured} imageConfigured={imageConfigured} onChange={patch=>update(item,patch)}/>)}</ul>}
     </section>
   </main>;
 }

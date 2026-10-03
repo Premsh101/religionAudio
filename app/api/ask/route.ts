@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { formatRetrievedContext } from "../../../lib/retrieval";
 import { getPrisma } from "../../../lib/server/prisma";
+import { chatText, textAiConfigured } from "../../../lib/server/ai/text";
 import { RULES, clientIp, hit, tooManyRequests } from "../../../lib/server/rate-limit";
 
 export const dynamic="force-dynamic";
@@ -16,9 +17,6 @@ export async function POST(request:NextRequest){
   if(!question) return Response.json({error:"Question is required."},{status:400});
 
   const retrieved=await formatRetrievedContext(question);
-  const endpoint=process.env.AI_BASE_URL;
-  const apiKey=process.env.AI_API_KEY;
-  const model=process.env.AI_MODEL || "gpt-4o-mini";
   const system=[
     "You are an evidence-aware religious text research assistant.",
     "Never invent scripture, verse numbers, quotations, historical claims or citations.",
@@ -30,20 +28,13 @@ export async function POST(request:NextRequest){
     "Retrieved TEXT context:\n"+retrieved.context
   ].join("\n");
 
-  if(!endpoint || !apiKey){
-    return Response.json({answer:"AI gateway is not configured yet. The indexed source context is available for testing.",context:retrieved.context,citations:retrieved.citations,lenses:["Text","Tradition","Scholarship","Science"]});
+  if(!textAiConfigured()){
+    return Response.json({answer:"Ask AI is not configured yet. Add a free OpenRouter key (OPENROUTER_API_KEY) or the Gemini key in the server settings. The indexed source context is available for testing.",context:retrieved.context,citations:retrieved.citations,lenses:["Text","Tradition","Scholarship","Science"]});
   }
 
-  const response=await fetch(endpoint,{
-    method:"POST",
-    headers:{"Content-Type":"application/json","Authorization":"Bearer "+apiKey},
-    body:JSON.stringify({model,messages:[{role:"system",content:system},{role:"user",content:question}],temperature:0.2}),
-    cache:"no-store"
-  });
-
-  if(!response.ok) return Response.json({error:"AI provider returned "+response.status+".",citations:retrieved.citations},{status:502});
-  const data=await response.json();
-  const answer=data.choices?.[0]?.message?.content || "No answer returned.";
+  let answer="";
+  try{answer=(await chatText(system,question,0.2)).text}
+  catch{return Response.json({error:"The AI service is busy or unavailable right now. Please try again in a minute.",citations:retrieved.citations},{status:502})}
 
   // Persist only the evidence metadata, not the user's question or generated answer.
   const prisma=getPrisma();

@@ -1,6 +1,7 @@
 import type { PrismaClient } from "../../../generated/prisma/client";
 import { audioPublicUrl, storeAudioAt } from "../../audio-storage";
-import { generateImage, generateJson, Type } from "./vertex";
+import { generateImage, Type } from "./vertex";
+import { chatJson } from "./text";
 
 export type CatalogKind="story"|"work";
 
@@ -41,10 +42,9 @@ Also write a 1-2 sentence listener-facing summary (no spoilers of the ending).`;
 
 export async function suggestTitles(prisma:PrismaClient,kind:CatalogKind,id:string){
   const c=await loadContent(prisma,kind,id);
-  return generateJson<{titles:string[];summary:string}>(
+  return chatJson<{titles:string[];summary:string}>(TITLE_SYSTEM,
     `Suggest 5 titles for this ${kind==="work"?"book":"story"}.\n\n${describe(c)}`,
-    {type:Type.OBJECT,properties:{titles:{type:Type.ARRAY,items:{type:Type.STRING},minItems:3,maxItems:5},summary:{type:Type.STRING}},required:["titles","summary"]},
-    TITLE_SYSTEM
+    {type:Type.OBJECT,properties:{titles:{type:Type.ARRAY,items:{type:Type.STRING},minItems:3,maxItems:5},summary:{type:Type.STRING}},required:["titles","summary"]}
   );
 }
 
@@ -57,10 +57,9 @@ Cover requirements:
 - No real or living people, no recognisable celebrities, no copyrighted characters or brand designs.`;
 
 export async function buildCoverBrief(c:Content,direction?:string){
-  return generateJson<{prompt:string;mood:string}>(
+  return chatJson<{prompt:string;mood:string}>(ART_SYSTEM,
     `Create the cover prompt.\n${direction?`Editor's art direction (follow it unless it breaks a rule): ${direction}\n`:""}\n${describe(c)}`,
-    {type:Type.OBJECT,properties:{prompt:{type:Type.STRING},mood:{type:Type.STRING}},required:["prompt","mood"]},
-    ART_SYSTEM
+    {type:Type.OBJECT,properties:{prompt:{type:Type.STRING},mood:{type:Type.STRING}},required:["prompt","mood"]}
   );
 }
 
