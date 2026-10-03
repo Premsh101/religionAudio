@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "targetLanguages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "recordCount": 30,
+  "expectedLayout": "data/story-corpus/mythology/translations/<storyId>/<lang>.txt",
+  "qaLayout": "data/story-corpus/mythology/translations/<storyId>/<lang>.qa.json",
+  "completionRule": "Every story is multilingual-ready only when the source version plus Hindi, English, Arabic and Urdu outputs exist and semantic QA passes."
+}
