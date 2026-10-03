@@ -48,7 +48,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
         "format": "plain-text",
         "collection": "Indian Fairy Tales",
-        "sourceStoryTitle": "The Lion and the Crane"
+        "sourceStoryTitle": "The Lion and the Crane",
+        "sourceKey": "india"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -80,7 +81,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
         "format": "plain-text",
         "collection": "Indian Fairy Tales",
-        "sourceStoryTitle": "The Princess Labam"
+        "sourceStoryTitle": "The Princess Labam",
+        "sourceKey": "india"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -112,7 +114,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
         "format": "plain-text",
         "collection": "Indian Fairy Tales",
-        "sourceStoryTitle": "The Boy Who Had Thirteen Mothers"
+        "sourceStoryTitle": "The Boy Who Had Thirteen Mothers",
+        "sourceKey": "india"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -144,7 +147,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
         "format": "plain-text",
         "collection": "Indian Fairy Tales",
-        "sourceStoryTitle": "The Rajah's Son and the Crocodiles"
+        "sourceStoryTitle": "The Rajah's Son and the Crocodiles",
+        "sourceKey": "india"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -176,7 +180,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
         "format": "plain-text",
         "collection": "Indian Fairy Tales",
-        "sourceStoryTitle": "The Tiger, the Brahman, and the Jackal"
+        "sourceStoryTitle": "The Tiger, the Brahman, and the Jackal",
+        "sourceKey": "india"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -208,7 +213,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7128/pg7128.txt",
         "format": "plain-text",
         "collection": "Indian Fairy Tales",
-        "sourceStoryTitle": "The Three Goats"
+        "sourceStoryTitle": "The Three Goats",
+        "sourceKey": "india"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -240,7 +246,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
         "format": "plain-text",
         "collection": "Folk-Tales of Bengal",
-        "sourceStoryTitle": "Life's Secret"
+        "sourceStoryTitle": "Life's Secret",
+        "sourceKey": "bengal"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -272,7 +279,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
         "format": "plain-text",
         "collection": "Folk-Tales of Bengal",
-        "sourceStoryTitle": "Phakir Chand"
+        "sourceStoryTitle": "Phakir Chand",
+        "sourceKey": "bengal"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -304,7 +312,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
         "format": "plain-text",
         "collection": "Folk-Tales of Bengal",
-        "sourceStoryTitle": "The Story of Swet-Basanta"
+        "sourceStoryTitle": "The Story of Swet-Basanta",
+        "sourceKey": "bengal"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -336,7 +345,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/38488/pg38488.txt",
         "format": "plain-text",
         "collection": "Folk-Tales of Bengal",
-        "sourceStoryTitle": "The Match-Making Jackal"
+        "sourceStoryTitle": "The Match-Making Jackal",
+        "sourceKey": "bengal"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -368,7 +378,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
         "format": "plain-text",
         "collection": "English Fairy Tales",
-        "sourceStoryTitle": "Tom Tit Tot"
+        "sourceStoryTitle": "Tom Tit Tot",
+        "sourceKey": "english"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -400,7 +411,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
         "format": "plain-text",
         "collection": "English Fairy Tales",
-        "sourceStoryTitle": "The Three Sillies"
+        "sourceStoryTitle": "The Three Sillies",
+        "sourceKey": "english"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -432,7 +444,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
         "format": "plain-text",
         "collection": "English Fairy Tales",
-        "sourceStoryTitle": "How Jack Went to Seek His Fortune"
+        "sourceStoryTitle": "How Jack Went to Seek His Fortune",
+        "sourceKey": "english"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -464,7 +477,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/7439/pg7439.txt",
         "format": "plain-text",
         "collection": "English Fairy Tales",
-        "sourceStoryTitle": "Mr. Fox"
+        "sourceStoryTitle": "Mr. Fox",
+        "sourceKey": "english"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -496,7 +510,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
         "format": "plain-text",
         "collection": "Irish Fairy Tales",
-        "sourceStoryTitle": "The Boyhood of Fionn"
+        "sourceStoryTitle": "The Boyhood of Fionn",
+        "sourceKey": "irish"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -528,7 +543,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
         "format": "plain-text",
         "collection": "Irish Fairy Tales",
-        "sourceStoryTitle": "The Enchanted Cave of Cesh Corran"
+        "sourceStoryTitle": "The Enchanted Cave of Cesh Corran",
+        "sourceKey": "irish"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -560,7 +576,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/2892/pg2892.txt",
         "format": "plain-text",
         "collection": "Irish Fairy Tales",
-        "sourceStoryTitle": "Becuma of the White Skin"
+        "sourceStoryTitle": "Becuma of the White Skin",
+        "sourceKey": "irish"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -592,7 +609,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
         "format": "plain-text",
         "collection": "Japanese Fairy Tales",
-        "sourceStoryTitle": "The Story of Urashima Taro, the Fisher Lad"
+        "sourceStoryTitle": "The Story of Urashima Taro, the Fisher Lad",
+        "sourceKey": "japan"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -624,7 +642,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
         "format": "plain-text",
         "collection": "Japanese Fairy Tales",
-        "sourceStoryTitle": "The Adventures of Kintaro, the Golden Boy"
+        "sourceStoryTitle": "The Adventures of Kintaro, the Golden Boy",
+        "sourceKey": "japan"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -656,7 +675,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
         "format": "plain-text",
         "collection": "Japanese Fairy Tales",
-        "sourceStoryTitle": "The Bamboo-Cutter and the Moon-Child"
+        "sourceStoryTitle": "The Bamboo-Cutter and the Moon-Child",
+        "sourceKey": "japan"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -688,7 +708,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
         "format": "plain-text",
         "collection": "Japanese Fairy Tales",
-        "sourceStoryTitle": "Momotaro, or the Story of the Son of a Peach"
+        "sourceStoryTitle": "Momotaro, or the Story of the Son of a Peach",
+        "sourceKey": "japan"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -720,7 +741,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/4018/pg4018.txt",
         "format": "plain-text",
         "collection": "Japanese Fairy Tales",
-        "sourceStoryTitle": "The Jelly Fish and the Monkey"
+        "sourceStoryTitle": "The Jelly Fish and the Monkey",
+        "sourceKey": "japan"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -752,7 +774,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
         "format": "plain-text",
         "collection": "Russian Fairy Tales from the Skazki of Polevoi",
-        "sourceStoryTitle": "Morozko"
+        "sourceStoryTitle": "Morozko",
+        "sourceKey": "russia-polevoi"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -784,7 +807,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
         "format": "plain-text",
         "collection": "Russian Fairy Tales from the Skazki of Polevoi",
-        "sourceStoryTitle": "The Flying Ship"
+        "sourceStoryTitle": "The Flying Ship",
+        "sourceKey": "russia-polevoi"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -816,7 +840,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
         "format": "plain-text",
         "collection": "Russian Fairy Tales from the Skazki of Polevoi",
-        "sourceStoryTitle": "The Frog-Tsarevna"
+        "sourceStoryTitle": "The Frog-Tsarevna",
+        "sourceKey": "russia-polevoi"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -848,7 +873,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/34705/pg34705.txt",
         "format": "plain-text",
         "collection": "Russian Fairy Tales from the Skazki of Polevoi",
-        "sourceStoryTitle": "The Enchanted Ring"
+        "sourceStoryTitle": "The Enchanted Ring",
+        "sourceKey": "russia-polevoi"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -880,7 +906,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
         "format": "plain-text",
         "collection": "The Chinese Fairy Book",
-        "sourceStoryTitle": "Two Brothers"
+        "sourceStoryTitle": "Two Brothers",
+        "sourceKey": "china"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -912,7 +939,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
         "format": "plain-text",
         "collection": "The Chinese Fairy Book",
-        "sourceStoryTitle": "The Rooster, the Dog, and the Girl"
+        "sourceStoryTitle": "The Rooster, the Dog, and the Girl",
+        "sourceKey": "china"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -944,7 +972,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/29939/pg29939.txt",
         "format": "plain-text",
         "collection": "The Chinese Fairy Book",
-        "sourceStoryTitle": "The White-Nymph"
+        "sourceStoryTitle": "The White-Nymph",
+        "sourceKey": "china"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -976,7 +1005,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/66923/pg66923.txt",
         "format": "plain-text",
         "collection": "West African Folk-Tales",
-        "sourceStoryTitle": "How Wisdom Became the Property of Man"
+        "sourceStoryTitle": "How Wisdom Became the Property of Man",
+        "sourceKey": "west-africa"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -1008,7 +1038,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/66923/pg66923.txt",
         "format": "plain-text",
         "collection": "West African Folk-Tales",
-        "sourceStoryTitle": "The Tortoise and the Elephant"
+        "sourceStoryTitle": "The Tortoise and the Elephant",
+        "sourceKey": "west-africa"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -1040,7 +1071,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/38339/pg38339.txt",
         "format": "plain-text",
         "collection": "South-African Folk-Tales",
-        "sourceStoryTitle": "The Lion and the Jackal"
+        "sourceStoryTitle": "The Lion and the Jackal",
+        "sourceKey": "south-africa"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
@@ -1072,7 +1104,8 @@
         "rawUrl": "https://www.gutenberg.org/cache/epub/38339/pg38339.txt",
         "format": "plain-text",
         "collection": "South-African Folk-Tales",
-        "sourceStoryTitle": "The Origin of Death"
+        "sourceStoryTitle": "The Origin of Death",
+        "sourceKey": "south-africa"
       },
       "ingest": "project-gutenberg-extract",
       "translations": {
