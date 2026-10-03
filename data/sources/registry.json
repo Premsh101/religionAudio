@@ -274,5 +274,25 @@
       "Kalevala"
     ],
     "ingest_policy": "Use only the exact source edition recorded in data/story-corpus/mythology/manifest.json. Project Gutenberg states public-domain availability in the USA for the cited works; verify target-jurisdiction status for commercial redistribution. Ancient works are not automatically represented by modern translations. Keep source editions, translations and later retellings distinct."
+  },
+  {
+    "id": "folklore-literature-sources",
+    "tradition": "World folklore, legends and fairy tales",
+    "source": "Project Gutenberg public-domain editions and historical source collections",
+    "url": "https://www.gutenberg.org/",
+    "status": "mixed-rights-edition-by-edition",
+    "license": "work/edition specific",
+    "works": [
+      "Indian Fairy Tales",
+      "Folk-Tales of Bengal",
+      "English Fairy Tales",
+      "Irish Fairy Tales",
+      "Japanese Fairy Tales",
+      "Russian Fairy Tales from the Skazki of Polevoi",
+      "The Chinese Fairy Book",
+      "West African Folk-Tales",
+      "South-African Folk-Tales"
+    ],
+    "ingest_policy": "Use only the exact edition and story heading recorded in data/story-corpus/folklore/manifest.json. Project Gutenberg states public-domain availability for the cited editions in the USA; verify intended distribution jurisdictions. Do not replace historical source editions with modern copyrighted translations or unrelated retellings."
   }
 ]
