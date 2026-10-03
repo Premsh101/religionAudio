@@ -330,5 +330,25 @@
       "Ulster Cycle"
     ],
     "ingest_policy": "These story-level texts are original retellings created for the repository. They are not copied from modern translations. Preserve the distinction between traditional narrative material and any later translation or interpretation."
+  },
+  {
+    "id": "adventure-quest-literature-repository-stories",
+    "tradition": "Adventure and quest narratives",
+    "source": "Traditional narratives and public-domain classic literature; repository-authored faithful retellings",
+    "url": "https://github.com/Premsh101/religionAudio/tree/main/data/story-corpus/adventure",
+    "status": "repository-authored-retelling",
+    "license": "Original repository text based on public-domain/traditional narratives",
+    "works": [
+      "Treasure Island",
+      "Around the World in Eighty Days",
+      "The Prisoner of Zenda",
+      "The Swiss Family Robinson",
+      "The Adventures of Tom Sawyer",
+      "Robin Hood tradition",
+      "Arthurian tradition",
+      "Sindbad tradition",
+      "Chandrakanta tradition"
+    ],
+    "ingest_policy": "The multilingual story texts are original retellings created for the repository and are not copied from modern translations. The underlying classic works have historical public-domain editions in the USA; verify target-jurisdiction status before commercial redistribution."
   }
 ]
