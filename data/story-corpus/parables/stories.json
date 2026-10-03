@@ -261,6 +261,29 @@
       "ar": "رأى حوني هماعغل ذات يوم رجلًا يزرع شجرة خروب. فسأله لماذا يزرع شجرة لن تثمر إلا بعد سنوات طويلة. فأجاب الرجل أن أسلافه زرعوا أشجارًا استفاد منها هو، ولذلك فهو يزرع لمن سيأتي بعده.\n\nغيّرت الإجابة معنى الفعل. قد لا يعيش الزارع طويلًا بما يكفي ليجلس تحت شجرته أو يأكل ثمرها، لكنه رأى أن العمل للمستقبل يستحق. وفي بقية القصة الربانية ينام حوني نومًا طويلًا، ثم يستيقظ ليرى أحفادًا ينتفعون بما زرعه جيل سابق.\n\nوتعلم القصة الربانية حكمة بسيطة: يرث كل جيل أعمال من سبقوه، ويمكنه أن يختار ترك شيء نافع لمن يأتي بعده. ولا يشترط أن يكون الإرث مشهورًا؛ فقد يكون شجرة أو مهارة أو بيتًا أصلحناه أو كتابًا أو مجتمعًا أكثر رحمة.",
       "ur": "حونی ہمعگل نے ایک دن ایک آدمی کو خرّوب کا درخت لگاتے دیکھا۔ حونی نے پوچھا کہ وہ ایسا درخت کیوں لگا رہا ہے جس کا پھل کئی برس بعد آئے گا۔ آدمی نے جواب دیا کہ اس کے بزرگوں نے ایسے درخت لگائے تھے جن سے اسے فائدہ ملا، اس لیے وہ بھی آنے والوں کے لیے درخت لگا رہا ہے۔\n\nاس جواب نے اس عمل کا مفہوم بدل دیا۔ ممکن ہے درخت لگانے والا اتنی عمر نہ پائے کہ اس کے سائے میں بیٹھ سکے یا اس کا پھل کھا سکے، لیکن وہ مستقبل کے لیے محنت کو قیمتی سمجھتا تھا۔ ربانی روایت کے اگلے حصے میں حونی کی طویل نیند اور بعد میں آنے والی نسلوں کو اس درخت سے فائدہ اٹھاتے دکھایا گیا ہے۔\n\nاس کہانی کی سادہ دانائی یہ ہے کہ ہر نسل کو پچھلی نسلوں کے کام سے فائدہ ملتا ہے اور وہ آنے والوں کے لیے کچھ مفید چھوڑ سکتی ہے۔ میراث کا مشہور ہونا ضروری نہیں؛ یہ ایک درخت، کوئی ہنر، مرمت شدہ گھر، کتاب یا زیادہ مہربان معاشرہ بھی ہوسکتا ہے۔",
       "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the rabbinic Honi/carob story in Ta'anit 23a. Extraordinary narrative elements are identified as tradition."
+    },
+    {
+      "id": "parables-two-arrows",
+      "title": "The Two Arrows",
+      "tradition": "Buddhist teaching / Sallatha Sutta",
+      "origin": "Early Buddhism",
+      "tags": [
+        "BUDDHISM",
+        "SUFFERING",
+        "MINDFULNESS",
+        "EMOTIONAL_REACTION"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "CANONICAL_BUDDHIST_DISCOURSE",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Sallatha_Sutta"
+      ],
+      "evidenceNote": "A Buddhist teaching distinguishes unavoidable painful experience from the additional suffering created by mental reaction. The repository retelling is original.",
+      "en": "The Buddha compared ordinary human suffering to being struck by two arrows. The first arrow represents painful experiences that are part of life: loss, illness, disappointment, fear, or physical pain. Such experiences can hurt whether or not a person wants them.\n\nThe second arrow represents the suffering added by the mind—fear about what the pain means, anger that it happened, repeated regret, or the belief that a painful moment must determine the whole future. The teaching says that a person cannot always prevent the first arrow, but there is another way to relate to the second.\n\nThe point is not to deny pain or pretend that difficult events are pleasant. It is to notice the difference between an experience and the layers of reaction that can follow it. That distinction can create space for understanding, steadiness, and wiser action.",
+      "hi": "बुद्ध ने सामान्य मानवीय दुःख की तुलना दो तीरों से की। पहला तीर जीवन में आने वाले दर्दनाक अनुभवों का प्रतीक है—हानि, बीमारी, निराशा, भय या शारीरिक पीड़ा। व्यक्ति उन्हें न चाहे तब भी ऐसे अनुभव हो सकते हैं।\n\nदूसरा तीर मन द्वारा जोड़े गए अतिरिक्त दुःख का प्रतीक है—दर्द का अर्थ लेकर भय पैदा करना, उसके होने पर क्रोध करना, बार-बार पछताना या यह मान लेना कि एक पीड़ादायक क्षण पूरे भविष्य को तय कर देगा। शिक्षा यह बताती है कि पहला तीर हमेशा रोका नहीं जा सकता, लेकिन दूसरे तीर के साथ संबंध अलग हो सकता है।\n\nबात दर्द से इनकार करने या कठिन घटना को सुखद मान लेने की नहीं है। बात अनुभव और उसके बाद बनने वाली मानसिक प्रतिक्रियाओं के बीच अंतर पहचानने की है। यह अंतर समझ, स्थिरता और अधिक विवेकपूर्ण कर्म के लिए जगह बना सकता है।",
+      "ar": "شبّه بوذا المعاناة الإنسانية المعتادة بسهمين. يمثل السهم الأول التجارب المؤلمة التي قد تكون جزءًا من الحياة، مثل الفقد والمرض وخيبة الأمل والخوف والألم الجسدي. وقد تقع هذه التجارب سواء أرادها الإنسان أم لم يردها.\n\nأما السهم الثاني فيمثل المعاناة التي يضيفها الذهن: الخوف مما يعنيه الألم، والغضب من حدوثه، والندم المتكرر، أو الاعتقاد بأن لحظة مؤلمة يجب أن تحدد المستقبل كله. ويعلّم النص أن الإنسان لا يستطيع دائمًا منع السهم الأول، لكنه يستطيع أن يغير علاقته بالسهم الثاني.\n\nولا يعني ذلك إنكار الألم أو التظاهر بأن الحدث الصعب ممتع. بل يعني ملاحظة الفرق بين التجربة نفسها وبين طبقات التفاعل الذهني التي قد تتبعها. ويمكن لهذا التمييز أن يفتح مجالًا للفهم والثبات والتصرف بحكمة أكبر.",
+      "ur": "بدھا نے عام انسانی دکھ کو دو تیروں سے تشبیہ دی۔ پہلا تیر زندگی کے ان تکلیف دہ تجربات کی علامت ہے جو انسان کے حصے میں آسکتے ہیں: نقصان، بیماری، مایوسی، خوف یا جسمانی درد۔ انسان انہیں نہ بھی چاہے تو وہ پیش آسکتے ہیں۔\n\nدوسرا تیر اس اضافی تکلیف کی علامت ہے جو ذہن خود پیدا کرسکتا ہے—درد کے معنی کے بارے میں خوف، اس واقعے پر غصہ، بار بار پچھتاوا یا یہ خیال کہ ایک تکلیف دہ لمحہ پورے مستقبل کا فیصلہ کردے گا۔ تعلیم یہ بتاتی ہے کہ پہلا تیر ہمیشہ روکا نہیں جاسکتا، مگر دوسرے تیر کے ساتھ انسان اپنا تعلق بدل سکتا ہے۔\n\nاس کا مطلب درد سے انکار یا مشکل واقعے کو خوشگوار سمجھنا نہیں۔ مطلب یہ ہے کہ اصل تجربے اور اس کے بعد پیدا ہونے والی ذہنی کیفیتوں میں فرق دیکھا جائے۔ یہ فرق سمجھ، استقامت اور زیادہ دانائی کے ساتھ عمل کرنے کے لیے جگہ پیدا کرسکتا ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the Buddhist two-arrows teaching associated with the Sallatha Sutta."
     }
   ]
 }
