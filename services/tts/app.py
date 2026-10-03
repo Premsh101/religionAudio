@@ -3,7 +3,6 @@ import json
 import os
 import re
 import shutil
-import subprocess
 import tempfile
 from pathlib import Path
 
@@ -22,7 +21,7 @@ MODEL_DIR = Path(os.getenv("PIPER_MODEL_DIR", "/models"))
 PROFILES = json.loads((BASE / "profiles.json").read_text(encoding="utf-8"))
 AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 
-app = FastAPI(title="ReligionAudio Local TTS", version="0.1.0")
+app = FastAPI(title="ReligionAudio Local TTS", version="0.2.0")
 app.mount("/audio", StaticFiles(directory=AUDIO_DIR), name="audio")
 
 
@@ -34,13 +33,18 @@ class TTSRequest(BaseModel):
     reference_audio: str | None = None
     engine: str | None = None
     speed: float | None = Field(default=None, ge=0.5, le=1.5)
+    rate: float | None = Field(default=None, ge=0.5, le=1.5)
+    pause_ms: int | None = Field(default=None, ge=0, le=3000)
+    pitch: float | None = Field(default=None, ge=-2, le=2)
+    emotion: str | None = None
+    instructions: str | None = None
 
 
 def narration_segments(text: str, limit: int = 1800) -> list[str]:
-    paragraphs = [part.strip() for part in re.split(r"\\n\\s*\\n", text) if part.strip()]
+    paragraphs = [part.strip() for part in re.split(r"\n\s*\n", text) if part.strip()]
     segments: list[str] = []
     for paragraph in paragraphs:
-        sentences = [part.strip() for part in re.split(r"(?<=[.!?।؟])\\s+", paragraph) if part.strip()]
+        sentences = [part.strip() for part in re.split(r"(?<=[.!?।؟])\s+", paragraph) if part.strip()]
         for sentence in sentences:
             if len(sentence) <= limit:
                 segments.append(sentence)
@@ -60,10 +64,10 @@ def narration_segments(text: str, limit: int = 1800) -> list[str]:
 
 def pause_after(text: str, profile: dict) -> int:
     base = int(profile["pause_ms"])
-    if text.rstrip().endswith(("!", "?","।","؟")):
+    if text.rstrip().endswith(("!", "?", "।", "؟")):
         return int(base * 1.35)
     if text.rstrip().endswith((".", "…")):
-        return int(base)
+        return base
     if text.rstrip().endswith(","):
         return int(base * 0.45)
     return int(base * 0.75)
@@ -75,19 +79,24 @@ def resolve_profile(req: TTSRequest) -> dict:
         profile["engine"] = req.engine
     if req.speed is not None:
         profile["speed"] = req.speed
+    elif req.rate is not None:
+        profile["speed"] = req.rate
+    if req.pause_ms is not None:
+        profile["pause_ms"] = req.pause_ms
     return profile
 
 
 def piper_generate(text: str, language: str, voice: str | None, speed: float, output: Path) -> None:
     model = voice or os.getenv(f"PIPER_VOICE_{language.upper()}")
     if not model:
-        raise RuntimeError(f"No Piper voice configured for {language}. Set PIPER_VOICE_{language.upper()}.")
+        raise RuntimeError(f"No Piper voice configured for {language}.")
     model_path = Path(model)
     if not model_path.is_absolute():
         model_path = MODEL_DIR / model
     config_path = Path(str(model_path) + ".json")
     if not model_path.exists() or not config_path.exists():
         raise RuntimeError(f"Piper model/config not found: {model_path}")
+    import subprocess
     proc = subprocess.run(
         ["piper","--model",str(model_path),"--config",str(config_path),
          "--length_scale",str(1.0 / speed),"--output_file",str(output)],
@@ -99,7 +108,6 @@ def piper_generate(text: str, language: str, voice: str | None, speed: float, ou
 
 def kokoro_generate(text: str, language: str, voice: str | None, speed: float, output: Path) -> None:
     try:
-        import soundfile as sf_local
         from kokoro import KPipeline
     except Exception as exc:
         raise RuntimeError("Kokoro is not installed") from exc
@@ -122,7 +130,7 @@ def kokoro_generate(text: str, language: str, voice: str | None, speed: float, o
             audio_parts.append(audio.numpy())
     if not audio_parts:
         raise RuntimeError("Kokoro produced no audio")
-    sf_local.write(str(output), np.concatenate(audio_parts), 24000)
+    sf.write(str(output), np.concatenate(audio_parts), 24000)
 
 
 def chatterbox_generate(text: str, language: str, reference_audio: str | None, exaggeration: float, cfg_weight: float, output: Path) -> None:
@@ -132,7 +140,6 @@ def chatterbox_generate(text: str, language: str, reference_audio: str | None, e
         from chatterbox.mtl_tts import ChatterboxMultilingualTTS
     except Exception as exc:
         raise RuntimeError("Chatterbox is not installed") from exc
-
     device = "cuda" if torch.cuda.is_available() else "cpu"
     cache_key = f"{device}:{language}"
     model = _CHATTERBOX_MODELS.get(cache_key)
@@ -155,7 +162,9 @@ def add_silence(files: list[tuple[Path,int]], output: Path) -> None:
         sample_rate = sample_rate or rate
         waves.append(data)
         if index < len(files) - 1:
-            waves.append(np.zeros(int(sample_rate * pause_ms / 1000), dtype=np.float32))
+            waves.append(np.zeros(int((sample_rate or rate) * pause_ms / 1000), dtype=np.float32))
+    if not waves:
+        raise RuntimeError("No generated audio")
     sf.write(output, np.concatenate(waves), sample_rate or 22050)
 
 
@@ -165,9 +174,8 @@ def health():
 
 
 def cache_key(req: TTSRequest, profile: dict, resolved_engine: str) -> str:
-    reference = req.reference_audio or ""
     raw = "\n".join([
-        req.text, req.language, req.profile, req.voice or "", reference,
+        req.text, req.language, req.profile, req.voice or "", req.reference_audio or "",
         resolved_engine, str(profile.get("speed")), str(profile.get("exaggeration")),
         str(profile.get("cfg_weight")), str(profile.get("pause_ms"))
     ])
@@ -177,39 +185,48 @@ def cache_key(req: TTSRequest, profile: dict, resolved_engine: str) -> str:
 @app.post("/synthesize")
 def synthesize(req: TTSRequest):
     profile = resolve_profile(req)
+    preferred_engine = profile["engine"]
+    key = cache_key(req, profile, preferred_engine)
+    destination = AUDIO_DIR / f"{key}.wav"
+    if destination.exists():
+        return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":preferred_engine,"parts":1,"pause_profile_ms":profile["pause_ms"],"cached":True}
+
     work = Path(tempfile.mkdtemp(prefix="religion-tts-"))
     generated: list[tuple[Path,int]] = []
+    used_engines: set[str] = set()
     try:
         segments = narration_segments(req.text)
         for index, part in enumerate(segments):
             output = work / f"{index:04d}.wav"
-            engine = profile["engine"]
+            engine = preferred_engine
+
             if engine in ("chatterbox","auto") and (engine == "chatterbox" or req.reference_audio):
                 try:
                     chatterbox_generate(part, req.language, req.reference_audio, profile["exaggeration"], profile["cfg_weight"], output)
+                    used_engines.add("chatterbox")
                 except Exception:
-                    if engine == "chatterbox":
-                        try:
-                            kokoro_generate(part, req.language, req.voice, profile["speed"], output)
-                        except Exception:
-                            piper_generate(part, req.language, req.voice, profile["speed"], output)
-                    else:
-                        try:
-                            kokoro_generate(part, req.language, req.voice, profile["speed"], output)
-                        except Exception:
-                            piper_generate(part, req.language, req.voice, profile["speed"], output)
+                    try:
+                        kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                        used_engines.add("kokoro")
+                    except Exception:
+                        piper_generate(part, req.language, req.voice, profile["speed"], output)
+                        used_engines.add("piper")
             elif engine in ("auto","kokoro"):
                 try:
                     kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                    used_engines.add("kokoro")
                 except Exception:
                     piper_generate(part, req.language, req.voice, profile["speed"], output)
+                    used_engines.add("piper")
             else:
                 piper_generate(part, req.language, req.voice, profile["speed"], output)
+                used_engines.add("piper")
+
             generated.append((output, pause_after(part, profile)))
 
-        destination = AUDIO_DIR / f"{key}.wav"
         add_silence(generated, destination)
-        return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":preferred_engine,"parts":len(generated),"pause_profile_ms":profile["pause_ms"],"cached":False}
+        actual_engine = "+".join(sorted(used_engines)) or preferred_engine
+        return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":actual_engine,"parts":len(generated),"pause_profile_ms":profile["pause_ms"],"cached":False}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
     finally:
