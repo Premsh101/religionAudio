@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "theme": "adventure-and-quest",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual story text is stored in stories.json. Every record must contain usable text in all four languages.",
+  "records": [
+    {
+      "id": "adventure-treasure-island-map",
+      "title": "The Treasure Map",
+      "tradition": "Treasure Island",
+      "origin": "Britain / maritime adventure",
+      "tags": [
+        "TREASURE",
+        "PIRATES",
+        "QUEST"
+      ],
+      "ageBand": "10-16",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-around-world-race",
+      "title": "Around the World in Eighty Days",
+      "tradition": "Around the World in Eighty Days",
+      "origin": "France / global journey",
+      "tags": [
+        "TRAVEL",
+        "RACE",
+        "ADVENTURE"
+      ],
+      "ageBand": "9-16",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-prisoner-zenda-rescue",
+      "title": "The Rescue at Zenda",
+      "tradition": "The Prisoner of Zenda",
+      "origin": "Europe / Ruritanian adventure",
+      "tags": [
+        "RESCUE",
+        "IMPOSTOR",
+        "PALACE",
+        "COURAGE"
+      ],
+      "ageBand": "12-17",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-swiss-family-shipwreck",
+      "title": "The Family Survives the Shipwreck",
+      "tradition": "The Swiss Family Robinson",
+      "origin": "Europe / island adventure",
+      "tags": [
+        "SHIPWRECK",
+        "FAMILY",
+        "SURVIVAL",
+        "EXPLORATION"
+      ],
+      "ageBand": "8-14",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-solomon-mines-quest",
+      "title": "The Search for King Solomon's Mines",
+      "tradition": "King Solomon's Mines",
+      "origin": "Southern Africa / adventure fiction",
+      "tags": [
+        "TREASURE",
+        "EXPLORATION",
+        "QUEST",
+        "SURVIVAL"
+      ],
+      "ageBand": "13-17",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-jules-verne-earth",
+      "title": "Journey to the Center of the Earth",
+      "tradition": "Journey to the Center of the Earth",
+      "origin": "France / subterranean adventure",
+      "tags": [
+        "EXPLORATION",
+        "DISCOVERY",
+        "CAVES"
+      ],
+      "ageBand": "10-16",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-tom-sawyer-cave",
+      "title": "Tom Sawyer and the Cave",
+      "tradition": "The Adventures of Tom Sawyer",
+      "origin": "United States / Mississippi River Valley",
+      "tags": [
+        "CHILDHOOD",
+        "CAVE",
+        "FRIENDSHIP"
+      ],
+      "ageBand": "9-14",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-robin-hood-outlaw",
+      "title": "Robin Hood and the Forest",
+      "tradition": "Robin Hood tradition",
+      "origin": "England / medieval legend",
+      "tags": [
+        "FOREST",
+        "JUSTICE",
+        "ARCHERY",
+        "LEGEND"
+      ],
+      "ageBand": "10-16",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-three-musketeers-friendship",
+      "title": "The Three Musketeers and the New Companion",
+      "tradition": "The Three Musketeers",
+      "origin": "France / historical adventure fiction",
+      "tags": [
+        "FRIENDSHIP",
+        "SWORDSMEN",
+        "LOYALTY",
+        "QUEST"
+      ],
+      "ageBand": "13-17",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-last-mohicans-escape",
+      "title": "The Journey Through the Wilderness",
+      "tradition": "The Last of the Mohicans",
+      "origin": "North America / frontier adventure",
+      "tags": [
+        "WILDERNESS",
+        "ESCAPE",
+        "FRONTIER",
+        "COURAGE"
+      ],
+      "ageBand": "13-17",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-king-arthur-sword",
+      "title": "Arthur and the Sword in the Stone",
+      "tradition": "Arthurian legend",
+      "origin": "Britain / medieval legend",
+      "tags": [
+        "ARTHUR",
+        "SWORD",
+        "KING",
+        "LEGEND"
+      ],
+      "ageBand": "9-15",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-sindbad-first-voyage",
+      "title": "Sindbad's First Voyage",
+      "tradition": "Sindbad the Sailor",
+      "origin": "Arabic literary tradition",
+      "tags": [
+        "SINDabad",
+        "SEA",
+        "VOYAGE",
+        "ADVENTURE"
+      ],
+      "ageBand": "8-15",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "adventure-chandrakanta-tilism",
+      "title": "The Secret Passage of Chandrakanta",
+      "tradition": "Chandrakanta tradition",
+      "origin": "India / Hindi fantasy adventure",
+      "tags": [
+        "CHANDRAKANTA",
+        "SECRET_PASSAGE",
+        "AYYARI",
+        "QUEST"
+      ],
+      "ageBand": "10-16",
+      "multilingualTextPath": "data/story-corpus/adventure/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}
