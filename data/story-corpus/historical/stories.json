@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "category": "HISTORICAL_ACCOUNT",
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "editorialRule": "Actual story text is stored here. Every record contains usable story text in all four publication languages. Historical fact, source tradition, and uncertainty are explicitly distinguished.",
+  "records": [
+    {
+      "id": "historical-ashoka-after-kalinga",
+      "title": "Ashoka After Kalinga",
+      "tradition": "Mauryan India / Edict XIII tradition",
+      "origin": "Ancient India",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "LEADERSHIP",
+        "WAR",
+        "DHAMMA"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "evidenceNote": "Ashoka's own inscriptions describe the Kalinga campaign, the suffering that followed, and his later emphasis on Dhamma. The narrative below is an original retelling, not a translation of an inscription.",
+      "sourceBasis": [
+        "https://www.britishmuseum.org/collection/term/x25076",
+        "https://www.worldhistory.org/Edicts_of_Ashoka/"
+      ],
+      "en": "Kalinga stood beyond the heartland of the Mauryan Empire, and Ashoka's army eventually conquered it. The victory gave the emperor territory, but the aftermath gave him something very different: a reason to look at power with new eyes. In his later inscription about Kalinga, Ashoka recorded the deaths, deportations, and suffering caused by the campaign. He did not describe the conquest only as glory. He wrote of remorse.\n\nThe change was not a claim that the past had never happened. Ashoka remained a ruler, but he began to present Dhamma—ethical conduct, restraint, concern for people, and respect—as a better kind of conquest. His inscriptions urged officials and subjects toward humane behavior and warned against treating future military victory as the highest achievement.\n\nThe story of Ashoka after Kalinga is therefore a story about what can happen after a victory. A ruler who had gained land discovered that victory could also carry a moral cost. His public words turned attention from conquering territory to governing people with greater restraint and responsibility.",
+      "hi": "कलिंग मौर्य साम्राज्य के हृदय-प्रदेश से बाहर था और अंततः अशोक की सेना ने उसे जीत लिया। इस विजय से सम्राट को नया भूभाग मिला, लेकिन उसके बाद का दृश्य उसके लिए बिल्कुल अलग अर्थ लेकर आया। कलिंग से संबंधित अपने बाद के अभिलेख में अशोक ने युद्ध से हुई मृत्यु, लोगों के निर्वासन और व्यापक पीड़ा का उल्लेख किया। उसने विजय को केवल गौरव के रूप में प्रस्तुत नहीं किया; उसने पश्चाताप व्यक्त किया।\n\nयह परिवर्तन ऐसा नहीं था मानो युद्ध हुआ ही न हो। अशोक शासक बना रहा, लेकिन उसने धम्म—नैतिक आचरण, संयम, लोगों की चिंता और सम्मान—को एक बेहतर प्रकार की विजय के रूप में प्रस्तुत करना शुरू किया। उसके अभिलेख अधिकारियों और प्रजा को मानवीय व्यवहार की ओर प्रेरित करते हैं और संकेत देते हैं कि आगे केवल सैन्य विजय को सर्वोच्च उपलब्धि नहीं मानना चाहिए।\n\nकलिंग के बाद अशोक की कहानी इसलिए विजय के बाद की आत्म-परीक्षा की कहानी है। जिस शासक ने भूमि जीती, उसने समझा कि विजय की एक नैतिक कीमत भी हो सकती है। उसके सार्वजनिक संदेशों ने क्षेत्र जीतने से अधिक जिम्मेदारी और संयम के साथ लोगों का शासन करने पर ध्यान दिया।",
+      "ar": "كانت كالينغا تقع خارج قلب الإمبراطورية الماورية، وفي النهاية نجح جيش أشوكا في إخضاعها. منحت الانتصارات الإمبراطور أرضًا جديدة، لكن ما حدث بعد الحرب منحه شيئًا مختلفًا: سببًا للنظر إلى القوة بعين جديدة. ففي نقشه المتعلق بكالينغا وصف أشوكا لاحقًا القتلى والمهجّرين والمعاناة التي سببتها الحملة. ولم يعرض النصر بوصفه مجدًا فقط، بل تحدث عن الندم.\n\nلم يكن التحول إنكارًا لما وقع في الماضي. ظل أشوكا حاكمًا، لكنه بدأ يقدم الدهَمّا، بما فيها السلوك الأخلاقي وضبط النفس والاهتمام بالناس والاحترام، على أنها صورة أفضل من النصر. وحثت نقوشه المسؤولين والرعية على معاملة أكثر إنسانية، وحذرت ضمنيًا من اعتبار الانتصار العسكري وحده أعظم إنجاز.\n\nولهذا أصبحت قصة أشوكا بعد كالينغا قصة عمّا يمكن أن يحدث بعد النصر. فقد اكتشف حاكمٌ كسب الأرض أن للنصر كلفة أخلاقية أيضًا. وتحولت كلماته المعلنة من التركيز على إخضاع الأراضي إلى التركيز على حكم الناس بمزيد من المسؤولية وضبط النفس.",
+      "ur": "کلنگ موریا سلطنت کے مرکزی علاقے سے باہر تھا اور آخرکار اشوک کی فوج نے اسے فتح کر لیا۔ اس فتح سے بادشاہ کو نئی زمین ملی، لیکن جنگ کے بعد کے مناظر نے اسے طاقت کو ایک نئی نظر سے دیکھنے پر مجبور کیا۔ کلنگ سے متعلق اپنے بعد کے کتبے میں اشوک نے جنگ سے ہونے والی ہلاکتوں، لوگوں کی جلاوطنی اور وسیع مصیبت کا ذکر کیا۔ اس نے فتح کو صرف فخر کے طور پر پیش نہیں کیا بلکہ افسوس کا اظہار بھی کیا۔\n\nیہ تبدیلی ماضی کے واقعات سے انکار نہیں تھی۔ اشوک حاکم ہی رہا، لیکن اس نے دھمّ، یعنی اخلاقی رویّے، ضبط، لوگوں کی فکر اور احترام، کو ایک بہتر قسم کی فتح کے طور پر پیش کرنا شروع کیا۔ اس کے کتبے حکام اور رعایا کو انسان دوست رویّے کی طرف متوجہ کرتے ہیں اور یہ احساس دیتے ہیں کہ آئندہ صرف فوجی فتح کو سب سے بڑی کامیابی نہیں سمجھنا چاہیے۔\n\nاس طرح کلنگ کے بعد اشوک کی کہانی فتح کے بعد ہونے والی خود احتسابی کی کہانی بن گئی۔ جس حاکم نے زمین حاصل کی، اسے معلوم ہوا کہ فتح کی ایک اخلاقی قیمت بھی ہو سکتی ہے۔ اس کے عوامی پیغامات نے زمین فتح کرنے کے بجائے ذمہ داری اور ضبط کے ساتھ لوگوں پر حکومت کرنے کو زیادہ اہم قرار دیا۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Historical backbone drawn from Ashokan inscriptions and museum/reference material; not copied from any modern copyrighted translation."
+    },
+    {
+      "id": "historical-rani-lakshmibai-jhansi",
+      "title": "Lakshmibai and the Defence of Jhansi",
+      "tradition": "Rani Lakshmibai / Indian Rebellion of 1857",
+      "origin": "India",
+      "tags": [
+        "MODERN_HISTORY",
+        "RESISTANCE",
+        "COURAGE",
+        "WOMEN_IN_HISTORY"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "evidenceNote": "The events are documented in government and historical sources, while some details of responsibility during the 1857 violence remain contested. The retelling avoids disputed claims.",
+      "sourceBasis": [
+        "https://jhansi.nic.in/history/",
+        "https://en.wikipedia.org/wiki/Rani_of_Jhansi"
+      ],
+      "en": "When Raja Gangadhar Rao of Jhansi died in 1853, the question of succession became a crisis for the state. His widow, Lakshmibai, protested when the East India Company refused to recognize the adopted heir Damodar Rao and annexed Jhansi. She was not merely defending a title; she was arguing that the political rights of Jhansi had been denied.\n\nIn 1857 rebellion spread across parts of northern India. Jhansi became a center of conflict, and Lakshmibai took charge of the state while preparing its defence. In 1858 British forces led by Hugh Rose besieged Jhansi. The city was captured, and Lakshmibai escaped the siege and continued the struggle with other rebel forces.\n\nShe later took part in the fighting around Gwalior. She died in 1858, but her reputation did not end with the battle. Over time, Lakshmibai became a powerful symbol of resistance, leadership, and courage. The historical record contains hard and disputed details, but one point is clear: she became one of the most remembered figures of the rebellion.",
+      "hi": "1853 में झांसी के राजा गंगाधर राव की मृत्यु के बाद उत्तराधिकार का प्रश्न राज्य के लिए संकट बन गया। उनकी पत्नी लक्ष्मीबाई ने तब विरोध किया जब ईस्ट इंडिया कंपनी ने दत्तक उत्तराधिकारी दामोदर राव को मान्यता देने से इनकार किया और झांसी का विलय कर लिया। वह केवल एक पद की रक्षा नहीं कर रही थीं; वह झांसी के राजनीतिक अधिकारों के लिए भी तर्क कर रही थीं।\n\n1857 में उत्तर भारत के कई हिस्सों में विद्रोह फैल गया। झांसी संघर्ष का एक महत्वपूर्ण केंद्र बना और लक्ष्मीबाई ने राज्य का नेतृत्व संभालते हुए उसकी रक्षा की तैयारी की। 1858 में ह्यू रोज़ के नेतृत्व में ब्रिटिश सेना ने झांसी को घेर लिया। शहर पर कब्ज़ा हो गया, लेकिन लक्ष्मीबाई घेराबंदी से निकल गईं और दूसरे विद्रोही नेताओं के साथ संघर्ष जारी रखा।\n\nबाद में उन्होंने ग्वालियर के आसपास की लड़ाइयों में भी भाग लिया। 1858 में उनकी मृत्यु हुई, लेकिन उनकी पहचान युद्धभूमि के साथ समाप्त नहीं हुई। समय के साथ लक्ष्मीबाई प्रतिरोध, नेतृत्व और साहस की एक शक्तिशाली प्रतीक बन गईं। ऐतिहासिक विवरणों में कुछ कठिन और विवादित तथ्य हैं, पर यह स्पष्ट है कि वह विद्रोह की सबसे अधिक याद की जाने वाली हस्तियों में शामिल हुईं।",
+      "ar": "عندما توفي راجا غانغادار راو حاكم جهاني عام 1853، تحولت مسألة الخلافة إلى أزمة للدولة. اعترضت أرملته لاكشميباي عندما رفضت شركة الهند الشرقية الاعتراف بالوريث المتبنّى دامودار راو وضمت جهاني إلى نفوذها. ولم تكن تدافع عن لقب فقط، بل كانت تحتج على حرمان جهاني من حقوق سياسية رآها أنصارها مشروعة.\n\nفي عام 1857 انتشر التمرد في مناطق واسعة من شمال الهند. وأصبحت جهاني مركزًا للصراع، وتولت لاكشميباي قيادة الدولة واستعدت للدفاع عنها. وفي عام 1858 حاصرت قوات بريطانية بقيادة هيو روز المدينة. سقطت جهاني، لكن لاكشميباي تمكنت من الخروج من الحصار وواصلت القتال مع قادة متمردين آخرين.\n\nوشاركت لاحقًا في القتال حول غواليور. توفيت عام 1858، لكن ذكراها لم تنته بموتها. ومع مرور الزمن أصبحت لاكشميباي رمزًا قويًا للمقاومة والقيادة والشجاعة. وتبقى بعض تفاصيل أحداث 1857 موضع نقاش، إلا أن مكانتها بوصفها إحدى أشهر شخصيات التمرد راسخة في الذاكرة التاريخية.",
+      "ur": "1853 میں جھانسی کے راجا گنگادھر راؤ کی وفات کے بعد جانشینی کا مسئلہ ریاست کے لیے بحران بن گیا۔ ان کی اہلیہ لکشمی بائی نے اس وقت احتجاج کیا جب ایسٹ انڈیا کمپنی نے گود لیے ہوئے وارث دامودر راؤ کو تسلیم کرنے سے انکار کیا اور جھانسی کو اپنے قبضے میں شامل کر لیا۔ وہ صرف ایک منصب کا دفاع نہیں کر رہی تھیں بلکہ جھانسی کے سیاسی حقوق پر بھی زور دے رہی تھیں۔\n\n1857 میں شمالی ہندوستان کے کئی حصوں میں بغاوت پھیل گئی۔ جھانسی بھی ایک اہم مرکز بن گیا اور لکشمی بائی نے ریاست کی باگ ڈور سنبھال کر اس کے دفاع کی تیاری کی۔ 1858 میں ہیو روز کی قیادت میں برطانوی فوج نے جھانسی کا محاصرہ کیا۔ شہر پر قبضہ ہوگیا، لیکن لکشمی بائی محاصرے سے نکل گئیں اور دوسرے باغی رہنماؤں کے ساتھ جدوجہد جاری رکھی۔\n\nبعد میں انہوں نے گوالیار کے آس پاس کی لڑائیوں میں بھی حصہ لیا۔ 1858 میں ان کی موت ہوگئی، مگر ان کی یاد جنگ کے ساتھ ختم نہیں ہوئی۔ وقت کے ساتھ لکشمی بائی مزاحمت، قیادت اور بہادری کی ایک مضبوط علامت بن گئیں۔ 1857 کے واقعات کی بعض تفصیلات متنازع ہیں، لیکن یہ واضح ہے کہ وہ بغاوت کی سب سے زیادہ یاد کی جانے والی شخصیات میں شامل ہوئیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Uses documented historical facts and avoids asserting contested allegations as settled fact."
+    },
+    {
+      "id": "historical-mansa-musa-hajj",
+      "title": "Mansa Musa's Journey to Mecca",
+      "tradition": "Mansa Musa of Mali / Hajj of 1324-25",
+      "origin": "Mali and the Islamic world",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "HAJJ",
+        "ISLAMIC_HISTORY",
+        "CULTURAL_EXCHANGE"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "evidenceNote": "The date is commonly given around 1324-25. Accounts emphasize Mansa Musa's pilgrimage, his passage through Cairo, and his lasting influence on Mali and Timbuktu. Dramatic numerical details in later retellings should not be treated as exact.",
+      "sourceBasis": [
+        "https://www.metmuseum.org/es/exhibitions/sahel-art-empire-sahara/inside-the-exhibition",
+        "https://www.metmuseum.org/pt/essays/the-trans-saharan-gold-trade-7th-14th-century"
+      ],
+      "en": "Mansa Musa, ruler of Mali, set out on the long journey to Mecca in the fourteenth century. The pilgrimage was an act of faith, but it was also a major journey through the connected worlds of West Africa, North Africa, and the Islamic Middle East. His caravan traveled through the Sahara and reached Cairo, where his arrival drew great attention.\n\nThe movement of people and wealth on the journey showed how closely distant regions were linked. Mansa Musa's spending of gold in Cairo became part of the historical memory of the pilgrimage, although later stories often make the exact amounts sound more certain than the evidence allows. What is less disputed is that his journey made Mali more visible to people far beyond West Africa.\n\nAfter the pilgrimage, Mansa Musa's rule was associated with patronage of learning and Islamic institutions. Timbuktu grew in importance as a center of scholarship. His story is therefore more than a tale of wealth: it is a story of pilgrimage, cultural exchange, and how one ruler's journey connected places that many people imagined to be far apart.",
+      "hi": "माली के शासक मनसा मूसा ने चौदहवीं शताब्दी में मक्का की लंबी यात्रा के लिए प्रस्थान किया। यह यात्रा आस्था की अभिव्यक्ति थी, लेकिन साथ ही पश्चिमी अफ्रीका, उत्तरी अफ्रीका और इस्लामी मध्य-पूर्व को जोड़ने वाली एक विशाल यात्रा भी थी। उनका काफिला सहारा पार कर काहिरा पहुँचा, जहाँ उनके आगमन ने बहुत ध्यान आकर्षित किया।\n\nइस यात्रा में लोगों और धन की आवाजाही ने दिखाया कि दूर-दूर के क्षेत्र कितने जुड़े हुए थे। काहिरा में मनसा मूसा द्वारा सोने के खर्च की चर्चा इतिहास में प्रसिद्ध हुई, हालांकि बाद की कथाएँ कई बार मात्रा को प्रमाण से अधिक निश्चित रूप में बताती हैं। इतना स्पष्ट है कि उनकी यात्रा ने पश्चिमी अफ्रीका से बहुत दूर रहने वाले लोगों के सामने माली को अधिक प्रसिद्ध बनाया।\n\nहज के बाद मनसा मूसा का शासन शिक्षा और इस्लामी संस्थानों के संरक्षण से भी जुड़ा। टिंबकटू विद्या के एक महत्वपूर्ण केंद्र के रूप में उभरा। इसलिए उनकी कहानी केवल धन की कहानी नहीं है; यह तीर्थयात्रा, सांस्कृतिक संपर्क और दूर स्थित समाजों के आपसी जुड़ाव की कहानी भी है।",
+      "ar": "خرج مانسا موسى، حاكم مالي، في رحلة طويلة إلى مكة في القرن الرابع عشر. كانت الرحلة عبادة وحجًا، لكنها كانت أيضًا رحلة كبرى عبر عالم مترابط يضم غرب أفريقيا وشمالها والمشرق الإسلامي. عبر موكبه الصحراء ووصل إلى القاهرة، حيث أثار وصوله اهتمامًا واسعًا.\n\nوأظهرت حركة الناس والذهب في الرحلة مدى ارتباط المناطق البعيدة ببعضها. وأصبحت إنفاقاته من الذهب في القاهرة جزءًا مشهورًا من الذاكرة التاريخية للحج، مع أن الروايات المتأخرة كثيرًا ما تقدم أرقامًا دقيقة أكثر مما تسمح به الأدلة. والأوضح تاريخيًا أن رحلته جعلت مالي معروفة بدرجة أكبر لدى أناس يعيشون بعيدًا عن غرب أفريقيا.\n\nوبعد الحج ارتبط حكم مانسا موسى برعاية العلم والمؤسسات الإسلامية. وازدادت أهمية تمبكتو بوصفها مركزًا للمعرفة. ولهذا فقصته ليست مجرد قصة ثروة، بل قصة حج وتبادل ثقافي ورحلة ربطت بين أقاليم كانت تبدو للناس بعيدة جدًا عن بعضها.",
+      "ur": "چودھویں صدی میں مالی کے حکمران مانسا موسیٰ مکہ کی طویل زیارت کے لیے روانہ ہوئے۔ یہ سفر ایمان کا اظہار تھا، لیکن اس کے ساتھ یہ مغربی افریقہ، شمالی افریقہ اور اسلامی مشرقِ وسطیٰ کو جوڑنے والا ایک بڑا سفر بھی تھا۔ ان کا قافلہ صحرا سے گزرتا ہوا قاہرہ پہنچا، جہاں ان کی آمد نے خاصی توجہ حاصل کی۔\n\nسفر کے دوران لوگوں اور دولت کی نقل و حرکت نے دکھایا کہ دور دراز خطے کتنے باہم مربوط تھے۔ قاہرہ میں مانسا موسیٰ کے سونے خرچ کرنے کا ذکر تاریخی یادداشت کا حصہ بن گیا، اگرچہ بعد کی روایات بعض اوقات مقداروں کو ثبوت سے زیادہ یقین کے ساتھ بیان کرتی ہیں۔ زیادہ واضح بات یہ ہے کہ اس سفر نے مالی کو مغربی افریقہ سے بہت دور کے لوگوں کے لیے بھی نمایاں کر دیا۔\n\nحج کے بعد مانسا موسیٰ کی حکومت علم اور اسلامی اداروں کی سرپرستی سے بھی وابستہ ہوئی۔ ٹمبکٹو علمی مرکز کے طور پر مزید اہم ہوا۔ اس لیے ان کی کہانی صرف دولت کی نہیں، بلکہ حج، ثقافتی تبادلے اور ایک ایسے سفر کی کہانی ہے جس نے بظاہر دور معاشروں کو ایک دوسرے سے جوڑ دیا۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Based on museum and historical reference material; later legendary numerical embellishments are deliberately not presented as exact fact."
+    },
+    {
+      "id": "historical-zheng-he-calicut",
+      "title": "Zheng He Reaches the Indian Ocean",
+      "tradition": "Zheng He / Ming treasure voyages",
+      "origin": "China and Indian Ocean world",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "EXPLORATION",
+        "MARITIME_HISTORY",
+        "CULTURAL_EXCHANGE"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "evidenceNote": "The Ming state sponsored seven major voyages between 1405 and 1433. Zheng He commanded the expeditions, which reached South and Southeast Asia, Arabia and East Africa.",
+      "sourceBasis": [
+        "https://chiculture.org.hk/en/china-five-thousand-years/2004",
+        "https://www.ageofseas.com/en/voyages/zheng-he-seven-voyages"
+      ],
+      "en": "In the early fifteenth century, the Ming court prepared fleets unlike any most sailors had seen. Zheng He was appointed to command major expeditions that would cross the South China Sea and Indian Ocean. The voyages were not one single trip: between 1405 and 1433, seven expeditions traveled through a changing network of ports and sea routes.\n\nThe ships reached Southeast Asia and then sailed toward the Indian coast. Calicut, on the Malabar Coast, became one of the important destinations of the voyages. Later expeditions went farther west toward the Persian Gulf, Arabia, and East Africa. Diplomacy, gifts, trade, navigation, and imperial prestige all traveled with the fleet.\n\nZheng He's journeys show that medieval oceans were not empty barriers between civilizations. They were highways for people, languages, goods, and political relationships. The voyages became an enduring part of maritime history because they connected courts and ports across an enormous distance before the modern age of global travel.",
+      "hi": "पंद्रहवीं शताब्दी की शुरुआत में मिंग दरबार ने ऐसे विशाल बेड़े तैयार किए जिन्हें उस समय के अधिकांश नाविकों ने शायद ही देखा होगा। झेंग हे को उन प्रमुख यात्राओं का नेतृत्व सौंपा गया जो दक्षिण चीन सागर और हिंद महासागर को पार करने वाली थीं। यह एक ही यात्रा नहीं थी; 1405 से 1433 के बीच सात बड़े अभियानों ने अलग-अलग बंदरगाहों और समुद्री मार्गों के नेटवर्क में यात्रा की।\n\nजहाज़ दक्षिण-पूर्व एशिया तक पहुँचे और फिर भारतीय तट की ओर बढ़े। मालाबार तट का कालीकट इन यात्राओं के महत्वपूर्ण पड़ावों में था। बाद के अभियानों ने पश्चिम की ओर फारस की खाड़ी, अरब और पूर्वी अफ्रीका तक भी मार्ग बनाया। बेड़े के साथ कूटनीति, उपहार, व्यापार, नौवहन और साम्राज्य की प्रतिष्ठा भी यात्रा करती थी।\n\nझेंग हे की यात्राएँ दिखाती हैं कि मध्यकालीन महासागर सभ्यताओं के बीच खाली दीवारें नहीं थे। वे लोगों, भाषाओं, वस्तुओं और राजनीतिक संबंधों के लिए मार्ग थे। आधुनिक वैश्विक यात्रा के युग से पहले इतने विशाल क्षेत्र के बंदरगाहों और दरबारों को जोड़ने के कारण ये यात्राएँ समुद्री इतिहास का स्थायी हिस्सा बन गईं।",
+      "ar": "في أوائل القرن الخامس عشر أعد بلاط أسرة مينغ أساطيل ضخمة لم يرَ معظم البحارة مثلها في ذلك العصر. عُيّن تشنغ خه لقيادة بعثات كبرى تعبر بحر الصين الجنوبي والمحيط الهندي. ولم تكن الرحلات رحلة واحدة، بل سبع بعثات رئيسية بين عامي 1405 و1433 جابت شبكة متغيرة من الموانئ والطرق البحرية.\n\nوصلت السفن إلى جنوب شرق آسيا ثم اتجهت إلى الساحل الهندي. وكانت كاليكوت على ساحل مالابار إحدى الوجهات المهمة. وفي الرحلات اللاحقة امتدت المسارات غربًا نحو الخليج العربي والجزيرة العربية وشرق أفريقيا. وسارت مع الأسطول الدبلوماسية والهدايا والتجارة والملاحة وهيبة الدولة.\n\nتوضح رحلات تشنغ خه أن محيطات العصور الوسطى لم تكن حواجز فارغة بين الحضارات. كانت طرقًا لحركة الناس واللغات والبضائع والعلاقات السياسية. وأصبحت هذه الرحلات جزءًا راسخًا من تاريخ الملاحة لأنها ربطت موانئ وبلاطات عبر مسافات هائلة قبل عصر السفر العالمي الحديث.",
+      "ur": "پندرہویں صدی کے آغاز میں منگ دربار نے ایسے بڑے بیڑے تیار کیے جنہیں اس زمانے کے بہت سے ملاحوں نے شاید ہی دیکھا ہو۔ ژینگ ہہ کو ان اہم مہمات کی قیادت دی گئی جو بحیرہ جنوبی چین اور بحرِ ہند عبور کرنے والی تھیں۔ یہ ایک ہی سفر نہیں تھا؛ 1405 سے 1433 کے درمیان سات بڑی مہمات نے مختلف بندرگاہوں اور سمندری راستوں کے ایک وسیع نیٹ ورک میں سفر کیا۔\n\nجہاز جنوب مشرقی ایشیا تک پہنچے اور پھر ہندوستانی ساحل کی طرف بڑھے۔ مالابار کے ساحل پر کالی کٹ ان اہم منزلوں میں شامل تھا۔ بعد کی مہمات مغرب میں خلیج فارس، عرب اور مشرقی افریقہ تک بھی پہنچیں۔ بیڑے کے ساتھ سفارت کاری، تحائف، تجارت، سمندری مہارت اور سلطنت کی وقار کی نمائندگی بھی سفر کرتی تھی۔\n\nژینگ ہہ کے سفر بتاتے ہیں کہ قرونِ وسطیٰ کے سمندر تہذیبوں کے درمیان خالی رکاوٹیں نہیں تھے۔ وہ لوگوں، زبانوں، اشیا اور سیاسی تعلقات کے راستے تھے۔ جدید عالمی سفر کے زمانے سے پہلے دور دراز بندرگاہوں اور درباروں کو ملانے کی وجہ سے یہ سفر بحری تاریخ کا اہم حصہ بن گئے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Based on historical descriptions of the Ming treasure voyages; route details are simplified for story listening."
+    },
+    {
+      "id": "historical-ibn-battuta-delhi",
+      "title": "Ibn Battuta Arrives in Delhi",
+      "tradition": "Ibn Battuta / Rihla",
+      "origin": "Morocco, India and the wider Islamic world",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "TRAVEL",
+        "PILGRIMAGE",
+        "CULTURAL_EXCHANGE"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_TRAVEL_ACCOUNT",
+      "evidenceNote": "Ibn Battuta began his travels in 1325 and later spent years in India, where he served in the court of Muhammad bin Tughluq. His own Rihla is an important but mediated travel account; some details are debated by historians.",
+      "sourceBasis": [
+        "https://orias.berkeley.edu/resources-teachers/travels-ibn-battuta",
+        "https://orias.berkeley.edu/resources-teachers/travels-ibn-battuta/journey/escape-delhi-maldive-islands-and-sri-lanka-1341-1344"
+      ],
+      "en": "Ibn Battuta left Tangier in 1325 intending to make the pilgrimage to Mecca. The journey grew far beyond his first plan. After years of travel, he reached the Indian subcontinent and eventually came to Delhi, the capital of the Tughluq dynasty. There he entered the service of Sultan Muhammad bin Tughluq and was appointed as a judge.\n\nDelhi was a world of courts, scholars, soldiers, merchants, and travelers. Ibn Battuta observed its institutions and customs while also living inside the political uncertainty of the period. In 1341 he left Delhi with an assignment connected to a diplomatic mission toward China, beginning another stage of his long travels.\n\nHis importance comes not only from the distance he covered but from what he recorded about the people and places he encountered. The Rihla is both a travel narrative and a window into fourteenth-century connections across Africa and Asia. His life shows how pilgrimage, scholarship, government service, and travel could intersect in one person's journey.",
+      "hi": "इब्न बतूता 1325 में तांज़ीर से मक्का की तीर्थयात्रा के उद्देश्य से निकले। लेकिन यह यात्रा उनकी पहली योजना से कहीं आगे बढ़ गई। कई वर्षों की यात्राओं के बाद वह भारतीय उपमहाद्वीप पहुँचे और अंततः तुगलक वंश की राजधानी दिल्ली आए। यहाँ उन्होंने सुल्तान मुहम्मद बिन तुगलक की सेवा स्वीकार की और न्यायाधीश के रूप में नियुक्त हुए।\n\nदिल्ली उस समय दरबारों, विद्वानों, सैनिकों, व्यापारियों और यात्रियों की दुनिया थी। इब्न बतूता ने इसकी संस्थाओं और रीति-रिवाजों को देखा, जबकि स्वयं भी उस समय की राजनीतिक अनिश्चितताओं के बीच रह रहे थे। 1341 में उन्होंने चीन की ओर जाने वाले एक राजनयिक मिशन से जुड़े दायित्व के साथ दिल्ली छोड़ी और उनकी लंबी यात्राओं का एक नया चरण शुरू हुआ।\n\nउनका महत्व केवल इतनी दूर यात्रा करने में नहीं था, बल्कि उन लोगों और स्थानों के बारे में लिखने में भी था जिन्हें उन्होंने देखा। रिहला चौदहवीं शताब्दी के अफ्रीका और एशिया के बीच संबंधों की एक झलक देती है। उनका जीवन दिखाता है कि तीर्थयात्रा, विद्वता, राजकीय सेवा और यात्रा एक ही व्यक्ति के जीवन में किस तरह मिल सकते थे।",
+      "ar": "غادر ابن بطوطة طنجة سنة 1325 وهو يقصد الحج إلى مكة. لكن رحلته تجاوزت خطته الأولى بكثير. وبعد سنوات من السفر وصل إلى شبه القارة الهندية، ثم وصل إلى دلهي، عاصمة الدولة التغلقية. وهناك دخل في خدمة السلطان محمد بن تغلق وعُيّن قاضيًا.\n\nكانت دلهي عالمًا من البلاط والعلماء والجنود والتجار والمسافرين. راقب ابن بطوطة مؤسسات المدينة وعاداتها، بينما عاش هو نفسه في ظل حالة سياسية متقلبة. وفي عام 1341 غادر دلهي ضمن مهمة مرتبطة برحلة دبلوماسية نحو الصين، فبدأ مرحلة جديدة من أسفاره الطويلة.\n\nلا تكمن أهمية ابن بطوطة في المسافات التي قطعها فقط، بل أيضًا في ما دوّنه عن الناس والأماكن التي التقاها. فالرحلة أو الريحلة تمثل سردًا للسفر ونافذة على الروابط بين أفريقيا وآسيا في القرن الرابع عشر. وتبين حياته كيف يمكن للحج والعلم والخدمة الحكومية والسفر أن تجتمع في مسار إنسان واحد.",
+      "ur": "ابن بطوطہ 1325 میں طنجہ سے مکہ کی زیارت کے ارادے سے روانہ ہوئے۔ لیکن یہ سفر ان کے ابتدائی منصوبے سے کہیں آگے بڑھ گیا۔ کئی سال کی مسافت کے بعد وہ برصغیر پہنچے اور آخرکار تغلق سلطنت کے دارالحکومت دہلی آئے۔ وہاں انہوں نے سلطان محمد بن تغلق کی خدمت اختیار کی اور قاضی مقرر ہوئے۔\n\nاس زمانے کی دہلی درباروں، علما، سپاہیوں، تاجروں اور مسافروں کی دنیا تھی۔ ابن بطوطہ نے اس کے اداروں اور رسم و رواج کا مشاہدہ کیا جبکہ خود بھی سیاسی بے یقینی کے ماحول میں زندگی گزار رہے تھے۔ 1341 میں وہ چین سے متعلق ایک سفارتی مشن کے سلسلے میں دہلی سے روانہ ہوئے اور ان کے طویل سفر کا ایک نیا مرحلہ شروع ہوا۔\n\nان کی اہمیت صرف طویل فاصلے طے کرنے میں نہیں بلکہ ان لوگوں اور مقامات کے بارے میں لکھنے میں بھی ہے جن سے وہ ملے۔ رِحلہ چودھویں صدی میں افریقہ اور ایشیا کے باہمی روابط کی ایک جھلک فراہم کرتی ہے۔ ان کی زندگی دکھاتی ہے کہ زیارت، علم، حکومتی خدمت اور سفر ایک ہی شخص کی زندگی میں کس طرح ایک ساتھ آ سکتے تھے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Based on Berkeley's historical teaching material and the Rihla tradition; it does not reproduce a modern copyrighted translation."
+    },
+    {
+      "id": "historical-joan-orleans",
+      "title": "Joan of Arc and the Relief of Orléans",
+      "tradition": "Joan of Arc / Hundred Years' War",
+      "origin": "France",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "WAR",
+        "COURAGE",
+        "FAITH_AND_HISTORY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_HAGIOGRAPHIC_TRADITION",
+      "evidenceNote": "The Siege of Orléans ended in a French victory in May 1429. Joan's role is historically documented, while devotional and later heroic traditions add interpretations beyond the surviving evidence.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Siege_of_Orl%C3%A9ans_%281428%E2%80%931429%29",
+        "https://www.britannica.com/biography/Saint-Joan-of-Arc"
+      ],
+      "en": "In 1428 and early 1429, Orléans was under siege during the long conflict between England and France. The city's position mattered because its loss would have threatened the remaining French resistance. Into this crisis came Joan, a young woman from rural France who said she had received a divine calling to support the French cause.\n\nJoan reached the French army and became part of the effort to lift the siege. Fighting remained dangerous, and she was wounded, but the French forces attacked several English positions around the city. In early May 1429 the siege was broken. Joan's presence became closely linked with the change in French morale and the success of the relief campaign.\n\nHer later capture and execution in 1431 did not erase the memory of what happened at Orléans. Centuries of retelling transformed Joan into a symbol with both historical and religious dimensions. A careful story must keep those layers visible: the military events belong to history, while later interpretations of her mission belong to devotional and cultural tradition.",
+      "hi": "1428 और 1429 की शुरुआत में इंग्लैंड और फ्रांस के लंबे संघर्ष के दौरान ऑर्लियॉं घेराबंदी में था। शहर की स्थिति महत्वपूर्ण थी क्योंकि उसके पतन से फ्रांसीसी प्रतिरोध को बड़ा खतरा हो सकता था। इसी संकट के बीच ग्रामीण फ्रांस की एक युवा महिला जॉन ऑफ आर्क सामने आईं, जिन्होंने कहा कि उन्हें फ्रांसीसी उद्देश्य का समर्थन करने के लिए ईश्वरीय बुलाहट मिली थी।\n\nजॉन फ्रांसीसी सेना तक पहुँचीं और घेराबंदी हटाने के प्रयास में शामिल हुईं। लड़ाई अत्यंत खतरनाक थी और वह घायल भी हुईं, लेकिन फ्रांसीसी सेना ने शहर के आसपास कई अंग्रेज़ी ठिकानों पर हमला किया। मई 1429 की शुरुआत तक घेराबंदी टूट गई। जॉन की उपस्थिति को फ्रांसीसी मनोबल में आए बदलाव और राहत अभियान की सफलता से गहराई से जोड़ा गया।\n\n1431 में उनकी गिरफ्तारी और मृत्यु के बाद भी ऑर्लियॉं की घटना की स्मृति मिट नहीं गई। सदियों की कथाओं ने जॉन को ऐतिहासिक और धार्मिक दोनों अर्थों वाले प्रतीक में बदल दिया। सावधान इतिहास-कथा में इन परतों को अलग रखना आवश्यक है: सैन्य घटनाएँ इतिहास का हिस्सा हैं, जबकि उनके मिशन की बाद की व्याख्याएँ धार्मिक और सांस्कृतिक परंपरा का हिस्सा हैं।",
+      "ar": "في عامي 1428 وبداية 1429 كانت أورليان تحت الحصار خلال الصراع الطويل بين إنجلترا وفرنسا. وكان موقع المدينة مهمًا لأن سقوطها كان سيشكل خطرًا كبيرًا على ما تبقى من المقاومة الفرنسية. وفي خضم هذه الأزمة ظهرت جان، وهي شابة من ريف فرنسا قالت إنها تلقت دعوة إلهية لمساندة القضية الفرنسية.\n\nوصلت جان إلى الجيش الفرنسي وشاركت في الجهود الرامية إلى رفع الحصار. كانت المعارك خطرة وأصيبت خلالها، لكن القوات الفرنسية هاجمت عدة مواقع إنجليزية حول المدينة. وبحلول أوائل مايو 1429 انكسر الحصار. وأصبح حضور جان مرتبطًا ارتباطًا وثيقًا بتغير الروح المعنوية للفرنسيين وبنجاح حملة الإغاثة.\n\nلم تمحِ محاكمتها وإعدامها عام 1431 ذكرى أحداث أورليان. ومع مرور القرون تحولت جان في الرواية العامة إلى رمز يحمل أبعادًا تاريخية ودينية معًا. ولذلك ينبغي أن تبقى هذه الطبقات واضحة: فالوقائع العسكرية تنتمي إلى التاريخ، أما التفسيرات اللاحقة لرسالتها فتنتمي إلى التراث الديني والثقافي.",
+      "ur": "1428 اور 1429 کے آغاز میں انگلستان اور فرانس کی طویل جنگ کے دوران اورلیاں محاصرے میں تھا۔ اس شہر کی حیثیت اس لیے اہم تھی کہ اس کے گرنے سے فرانسیسی مزاحمت کو شدید خطرہ لاحق ہوسکتا تھا۔ اسی بحران میں دیہی فرانس کی ایک نوجوان عورت ژاں سامنے آئیں، جنہوں نے کہا کہ انہیں فرانسیسی مقصد کی حمایت کے لیے ایک خدائی پکار ملی ہے۔\n\nژاں فرانسیسی فوج تک پہنچیں اور محاصرہ ختم کرنے کی کوشش میں شامل ہوئیں۔ لڑائی خطرناک تھی اور وہ زخمی بھی ہوئیں، لیکن فرانسیسی فوج نے شہر کے آس پاس کئی انگریزی ٹھکانوں پر حملے کیے۔ مئی 1429 کے آغاز تک محاصرہ ٹوٹ گیا۔ ژاں کی موجودگی کو فرانسیسی حوصلے میں تبدیلی اور امدادی مہم کی کامیابی کے ساتھ مضبوطی سے جوڑا گیا۔\n\n1431 میں ان کی گرفتاری اور موت بھی اورلیاں کے واقعات کی یاد کو ختم نہ کرسکی۔ صدیوں کی روایت نے ژاں کو تاریخی اور مذہبی دونوں پہلو رکھنے والی علامت بنا دیا۔ ایک محتاط تاریخی کہانی میں ان تہوں کو الگ رکھنا ضروری ہے: فوجی واقعات تاریخ کا حصہ ہیں، جبکہ ان کے مشن کی بعد کی تشریحات مذہبی اور ثقافتی روایت کا حصہ ہیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Separates documented events from later devotional interpretation and does not present contested miracle claims as historical fact."
+    },
+    {
+      "id": "historical-caesar-rubicon",
+      "title": "Caesar Crosses the Rubicon",
+      "tradition": "Julius Caesar / Roman Republic",
+      "origin": "Ancient Rome",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "POLITICS",
+        "WAR",
+        "TURNING_POINT"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_ANCIENT_ACCOUNTS",
+      "evidenceNote": "Caesar crossed the Rubicon with troops in 49 BCE, helping trigger the Roman Civil War. Details of the famous saying associated with the crossing are preserved through later ancient sources and should not be treated as a verbatim eyewitness transcript.",
+      "sourceBasis": [
+        "https://origins.osu.edu/read/julius-caesar-crosses-rubicon",
+        "https://www.history.com/articles/crossing-rubicon-phrase-origins-ancient-rome-caesar"
+      ],
+      "en": "By 49 BCE Julius Caesar had spent years commanding Roman forces in Gaul. Political rivals in Rome wanted him to disband his army and return without the military power that had made him influential. Caesar faced a choice: obey the demand and risk losing his position, or cross the legal boundary that separated his command from Italy with an army.\n\nHe chose to cross the Rubicon with troops. The river itself was small, but the political meaning of the crossing was enormous. In the Roman system, bringing an army into Italy under these circumstances was an act of open conflict. Caesar then advanced toward Rome while Pompey and many senators withdrew, and civil war followed.\n\nThe story survives because a small physical action changed the course of a republic. The river was not the largest obstacle Caesar ever faced. Its importance came from the decision it represented: once the army crossed, there was no easy return to the old political situation. That is why “crossing the Rubicon” became a phrase for an irreversible decision.",
+      "hi": "49 ईसा पूर्व तक जूलियस सीज़र गॉल में कई वर्षों तक रोमन सेनाओं का नेतृत्व कर चुका था। रोम के उसके राजनीतिक विरोधी चाहते थे कि वह सेना भंग करके बिना उस सैन्य शक्ति के लौटे जिसने उसे प्रभावशाली बनाया था। सीज़र के सामने एक विकल्प था: आदेश मानकर अपनी स्थिति को जोखिम में डालना, या उस कानूनी सीमा को सेना के साथ पार करना जो उसके सैन्य अधिकार और इटली के बीच मानी जाती थी।\n\nउसने सेना के साथ रूबिकॉन पार करने का निर्णय लिया। नदी स्वयं छोटी थी, लेकिन उसके पार करने का राजनीतिक अर्थ बहुत बड़ा था। रोमन व्यवस्था में इस परिस्थिति में सेना को इटली में लाना खुले संघर्ष के समान था। सीज़र रोम की ओर बढ़ा, जबकि पोम्पेई और कई सीनेटर पीछे हट गए, और गृहयुद्ध शुरू हो गया।\n\nयह कहानी इसलिए जीवित है क्योंकि एक छोटी भौतिक क्रिया ने गणराज्य की दिशा बदल दी। रूबिकॉन कोई विशाल प्राकृतिक बाधा नहीं थी। उसका महत्व उस निर्णय में था जो उसने दर्शाया: सेना एक बार पार कर गई तो पुरानी राजनीतिक स्थिति में लौटना आसान नहीं था। इसी कारण “रूबिकॉन पार करना” अपरिवर्तनीय निर्णय का मुहावरा बन गया।",
+      "ar": "بحلول عام 49 قبل الميلاد كان يوليوس قيصر قد أمضى سنوات يقود القوات الرومانية في بلاد الغال. أراد خصومه السياسيون في روما أن يحل جيشه ويعود من دون القوة العسكرية التي جعلته مؤثرًا. واجه قيصر خيارًا صعبًا: أن يطيع ويخاطر بموقعه، أو أن يعبر مع جيشه الحد الذي فصل مجال قيادته عن إيطاليا.\n\nاختار أن يعبر نهر روبيكون مع قواته. كان النهر صغيرًا، لكن المعنى السياسي لعبوره كان هائلًا. ففي النظام الروماني كان إدخال جيش إلى إيطاليا في تلك الظروف يعني صراعًا مفتوحًا. ثم تحرك قيصر نحو روما، بينما انسحب بومبيوس وعدد من أعضاء مجلس الشيوخ، وتبع ذلك اندلاع الحرب الأهلية.\n\nوتبقى القصة لأن فعلًا ماديًا صغيرًا غيّر مسار الجمهورية. لم يكن النهر أكبر عقبة واجهها قيصر في حياته، لكن أهميته جاءت من القرار الذي مثله. فبعد عبور الجيش لم يعد من السهل العودة إلى الوضع السياسي السابق. ولهذا أصبح تعبير “عبور الروبيكون” رمزًا لاتخاذ قرار لا رجعة فيه.",
+      "ur": "49 قبل مسیح تک جولیس سیزر گال میں کئی برس رومی فوج کی قیادت کر چکا تھا۔ روم میں اس کے سیاسی مخالفین چاہتے تھے کہ وہ اپنی فوج ختم کرکے واپس آئے اور وہ فوجی طاقت ساتھ نہ لائے جس نے اسے بااثر بنایا تھا۔ سیزر کے سامنے ایک انتخاب تھا: حکم مان کر اپنی حیثیت کو خطرے میں ڈالنا، یا اس حد کو فوج کے ساتھ پار کرنا جو اس کی فوجی کمان اور اٹلی کے درمیان قانونی علامت سمجھی جاتی تھی۔\n\nاس نے فوج کے ساتھ دریائے روبیکون عبور کرنے کا فیصلہ کیا۔ دریا خود چھوٹا تھا، لیکن اس عبور کا سیاسی مطلب بہت بڑا تھا۔ رومی نظام میں ایسے حالات میں فوج کو اٹلی میں داخل کرنا کھلے تصادم کے مترادف تھا۔ سیزر روم کی طرف بڑھا، جبکہ پومپے اور کئی سینیٹر پیچھے ہٹ گئے، اور خانہ جنگی شروع ہوگئی۔\n\nیہ کہانی اس لیے زندہ رہی کہ ایک چھوٹے سے عملی قدم نے جمہوریہ کی سمت بدل دی۔ روبیکون کوئی بہت بڑی قدرتی رکاوٹ نہیں تھا؛ اس کی اہمیت اس فیصلے میں تھی جس کی وہ نمائندگی کرتا تھا۔ فوج کے دریا پار کر لینے کے بعد پرانی سیاسی حالت کی طرف آسان واپسی ممکن نہ رہی۔ اسی لیے “روبیکون عبور کرنا” ناقابلِ واپسی فیصلے کی علامت بن گیا۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Based on historical accounts of the Roman Civil War; famous wording attached to the event is intentionally not quoted as certain eyewitness speech."
+    },
+    {
+      "id": "historical-hannibal-alps",
+      "title": "Hannibal Crosses the Alps",
+      "tradition": "Hannibal / Second Punic War",
+      "origin": "Carthage, Iberia, Gaul and Italy",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "WAR",
+        "STRATEGY",
+        "ENDURANCE"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_ROUTE_UNCERTAINTY",
+      "evidenceNote": "Hannibal led a Carthaginian army over the Alps in 218 BCE. Ancient sources disagree on route details and exact losses; this retelling keeps the strategic event while avoiding false precision.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Hannibal%27s_crossing_of_the_Alps",
+        "https://www.britannica.com/biography/Hannibal"
+      ],
+      "en": "In 218 BCE Carthaginian commander Hannibal chose an unexpected way to take the war to Rome. Instead of relying only on routes where Roman forces could anticipate him, he led his army northward and toward the Alps. The journey demanded a march through difficult mountain country at the start of a campaign meant to surprise Rome.\n\nThe army had to cross steep ground, narrow paths, unstable slopes, and harsh weather. Hannibal also brought war elephants, animals that later became one of the most famous images of the campaign. Ancient writers disagree about the exact route and losses, but they agree on the central fact: the Carthaginian army succeeded in getting through the Alps and reached Italy.\n\nThe crossing did not by itself decide the war, but it changed the strategic situation. Rome now faced an enemy army arriving from an unexpected direction. Hannibal's story became a lasting example of endurance and strategic imagination, while also reminding later generations that bold plans can demand enormous human and material costs.",
+      "hi": "218 ईसा पूर्व में कार्थेज के सेनापति हनिबल ने रोम के विरुद्ध युद्ध को एक अप्रत्याशित दिशा से ले जाने का निर्णय किया। उन मार्गों पर निर्भर रहने के बजाय जहाँ रोमन सेना उसकी प्रतीक्षा कर सकती थी, उसने अपनी सेना को उत्तर की ओर और आल्प्स की दिशा में बढ़ाया। यह यात्रा कठिन पर्वतीय क्षेत्र से होकर गुजरनी थी और उसका उद्देश्य रोम को रणनीतिक रूप से चौंकाना था।\n\nसेना को खड़ी ढलानों, संकरे रास्तों, अस्थिर भूमि और कठोर मौसम का सामना करना पड़ा। हनिबल के साथ युद्ध-हाथी भी थे, जो बाद में इस अभियान की सबसे प्रसिद्ध छवियों में से एक बन गए। प्राचीन लेखक मार्ग और नुकसान की सटीक मात्रा पर सहमत नहीं हैं, लेकिन मुख्य तथ्य पर सहमति है: कार्थेज की सेना आल्प्स पार करके इटली पहुँच गई।\n\nइस पारगमन ने अकेले युद्ध का फैसला नहीं किया, लेकिन रणनीतिक स्थिति बदल दी। रोम के सामने अब एक ऐसी शत्रु सेना थी जो अप्रत्याशित दिशा से पहुँची थी। हनिबल की कहानी धैर्य और रणनीतिक कल्पना का उदाहरण बनी, साथ ही यह भी दिखाती है कि साहसी योजनाएँ मानव और भौतिक लागत बहुत बड़ी मांग सकती हैं।",
+      "ar": "في عام 218 قبل الميلاد اختار القائد القرطاجي حنبعل طريقًا غير متوقع لنقل الحرب إلى روما. وبدل الاعتماد فقط على المسارات التي يمكن للرومان توقعه فيها، قاد جيشه شمالًا باتجاه جبال الألب. وكانت الرحلة تعني عبور مناطق جبلية صعبة في بداية حملة هدفها مفاجأة روما.\n\nواجه الجيش منحدرات شديدة وممرات ضيقة وأرضًا غير مستقرة وطقسًا قاسيًا. كما اصطحب حنبعل فيلًا حربيًا، فأصبحت الفيلة لاحقًا من أشهر صور الحملة. وتختلف المصادر القديمة في تحديد الطريق الدقيق وحجم الخسائر، لكنها تتفق على الحقيقة الأساسية: نجح الجيش القرطاجي في عبور الألب والوصول إلى إيطاليا.\n\nلم يحسم العبور الحرب وحده، لكنه غيّر الوضع الاستراتيجي. فقد واجهت روما جيشًا معاديًا وصل من اتجاه لم يكن متوقعًا. وأصبحت قصة حنبعل مثالًا دائمًا على التحمل والخيال الاستراتيجي، مع تذكير بأن الخطط الجريئة قد تفرض كلفة بشرية ومادية كبيرة.",
+      "ur": "218 قبل مسیح میں کارتھیج کے سپہ سالار ہنی بل نے روم کے خلاف جنگ کو ایک غیر متوقع راستے سے لے جانے کا فیصلہ کیا۔ ان راستوں پر انحصار کرنے کے بجائے جہاں رومی فوج اس کی آمد کا اندازہ لگا سکتی تھی، اس نے اپنی فوج کو شمال کی طرف اور الپس کے پہاڑوں کی جانب بڑھایا۔ یہ سفر ایک مشکل پہاڑی علاقے سے گزرنا تھا اور مقصد روم کو حکمت عملی کے لحاظ سے حیران کرنا تھا۔\n\nفوج کو اونچی ڈھلوانوں، تنگ راستوں، غیر مستحکم زمین اور سخت موسم کا سامنا کرنا پڑا۔ ہنی بل اپنے ساتھ جنگی ہاتھی بھی لایا، جو بعد میں اس مہم کی سب سے مشہور علامتوں میں شمار ہوئے۔ قدیم ماخذ راستے اور جانی نقصان کی صحیح مقدار پر متفق نہیں ہیں، لیکن بنیادی حقیقت پر اتفاق ہے: کارتھیج کی فوج الپس پار کرکے اٹلی پہنچ گئی۔\n\nیہ عبور اکیلا جنگ کا فیصلہ نہیں تھا، مگر اس نے حکمت عملی کی صورت حال بدل دی۔ روم کو اب ایک ایسی دشمن فوج کا سامنا تھا جو غیر متوقع سمت سے آئی تھی۔ ہنی بل کی داستان برداشت اور حکمت عملی کے تخیل کی مثال بن گئی، ساتھ ہی یہ بھی یاد دلاتی ہے کہ جرات مندانہ منصوبوں کی انسانی اور مادی قیمت بہت زیادہ ہوسکتی ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Preserves the well-supported strategic event while explicitly avoiding disputed route and casualty precision."
+    },
+    {
+      "id": "historical-saladin-jerusalem",
+      "title": "Saladin and Jerusalem, 1187",
+      "tradition": "Saladin / Ayyubid reconquest of Jerusalem",
+      "origin": "Middle East",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "JERUSALEM",
+        "WAR",
+        "ISLAMIC_HISTORY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "evidenceNote": "Saladin defeated the main Crusader army at Hattin in July 1187 and Jerusalem surrendered to his forces in October 1187. Later literature adds romanticized details; this retelling stays with the broad documented sequence.",
+      "sourceBasis": [
+        "https://whc.unesco.org/en/list/148/",
+        "https://en.wikipedia.org/wiki/Saladin"
+      ],
+      "en": "In 1187 the struggle for control of Jerusalem stood at the center of a much larger conflict in the eastern Mediterranean. Saladin, the Ayyubid ruler, gathered forces against the Crusader states. In July his army defeated the main Crusader force at the Battle of Hattin, opening the way toward Jerusalem.\n\nThe city was then placed under pressure, and negotiations followed. In October 1187 Jerusalem surrendered to Saladin's forces. The event mattered far beyond one city: Jerusalem was a sacred place for Judaism, Christianity, and Islam, so its change of political control carried enormous religious and symbolic weight.\n\nThe story is often retold as a contest between perfect heroes and villains, but the historical reality was more complicated. Armies, rulers, civilians, negotiations, and religious communities all had interests at stake. A responsible retelling should preserve the importance of the event without turning later legends of perfect chivalry into settled fact.",
+      "hi": "1187 में यरूशलेम पर नियंत्रण का संघर्ष पूर्वी भूमध्यसागर के एक बहुत बड़े संघर्ष के केंद्र में था। अय्यूबी शासक सलाउद्दीन ने क्रूसेडर राज्यों के विरुद्ध सेना संगठित की। जुलाई में हट्टीन के युद्ध में उसकी सेना ने मुख्य क्रूसेडर सेना को पराजित किया, जिससे यरूशलेम की ओर रास्ता खुल गया।\n\nइसके बाद शहर पर दबाव बढ़ा और बातचीत भी हुई। अक्टूबर 1187 में यरूशलेम ने सलाउद्दीन की सेनाओं के सामने आत्मसमर्पण किया। यह घटना केवल एक शहर के राजनीतिक नियंत्रण का परिवर्तन नहीं थी; यरूशलेम यहूदी धर्म, ईसाई धर्म और इस्लाम के लिए पवित्र था, इसलिए उसका सत्ता परिवर्तन बहुत गहरा धार्मिक और प्रतीकात्मक अर्थ रखता था।\n\nइस कहानी को अक्सर बिल्कुल अच्छे और बुरे नायकों की लड़ाई के रूप में सुनाया जाता है, जबकि वास्तविक इतिहास अधिक जटिल था। सेनाएँ, शासक, नागरिक, वार्ताकार और धार्मिक समुदाय—सभी के हित दाँव पर थे। जिम्मेदार ऐतिहासिक कथा को घटना की गंभीरता बनाए रखनी चाहिए और बाद की आदर्शीकृत शौर्य-कथाओं को निर्विवाद तथ्य की तरह नहीं पेश करना चाहिए।",
+      "ar": "في عام 1187 كان الصراع على القدس جزءًا من نزاع أوسع بكثير في شرق البحر المتوسط. جمع صلاح الدين، الحاكم الأيوبي، قواته ضد الدول الصليبية. وفي يوليو هزم جيشه الجيش الصليبي الرئيسي في معركة حطين، ففتح الطريق نحو القدس.\n\nبعد ذلك تعرضت المدينة لضغط عسكري وتبعت ذلك مفاوضات. وفي أكتوبر 1187 استسلمت القدس لقوات صلاح الدين. وكان الحدث يتجاوز أهمية مدينة واحدة، لأن القدس مدينة مقدسة لليهودية والمسيحية والإسلام، ولذلك حمل انتقال السيطرة السياسية عليها وزنًا دينيًا ورمزيًا هائلًا.\n\nوغالبًا ما يعاد سرد القصة كأنها مواجهة بين أبطال كاملين وأشرار كاملين، لكن الواقع التاريخي كان أكثر تعقيدًا. كانت مصالح الجيوش والحكام والمدنيين والمفاوضين والجماعات الدينية متشابكة. ولهذا ينبغي للسرد المسؤول أن يحافظ على أهمية الحدث من دون تحويل روايات الفروسية المثالية التي ظهرت لاحقًا إلى حقائق مؤكدة.",
+      "ur": "1187 میں یروشلم پر قبضے کا تنازع مشرقی بحیرۂ روم میں جاری ایک بہت بڑی کشمکش کا مرکز تھا۔ ایوبی حکمران صلاح الدین نے صلیبی ریاستوں کے خلاف فوج جمع کی۔ جولائی میں حطین کی جنگ میں اس کی فوج نے مرکزی صلیبی فوج کو شکست دی اور یروشلم کی طرف راستہ کھل گیا۔\n\nاس کے بعد شہر پر دباؤ بڑھا اور مذاکرات ہوئے۔ اکتوبر 1187 میں یروشلم نے صلاح الدین کی افواج کے سامنے ہتھیار ڈال دیے۔ یہ واقعہ صرف ایک شہر کے سیاسی اختیار کی تبدیلی نہیں تھا، کیونکہ یروشلم یہودیت، عیسائیت اور اسلام کے لیے مقدس حیثیت رکھتا ہے۔ اس لیے اقتدار کی تبدیلی کا مذہبی اور علامتی وزن بہت زیادہ تھا۔\n\nاس قصے کو اکثر مکمل اچھے اور برے ہیروز کی لڑائی کے طور پر بیان کیا جاتا ہے، جبکہ تاریخی حقیقت اس سے زیادہ پیچیدہ تھی۔ فوجوں، حکمرانوں، شہریوں، مذاکرات کاروں اور مذہبی برادریوں کے مفادات ایک دوسرے سے جڑے ہوئے تھے۔ ایک ذمہ دار تاریخی بیان کو واقعے کی اہمیت برقرار رکھتے ہوئے بعد کی مثالی بہادری کی روایات کو قطعی حقیقت کے طور پر پیش نہیں کرنا چاہیے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Keeps the documented sequence and distinguishes historical events from later chivalric legend."
+    },
+    {
+      "id": "historical-socrates-final-day",
+      "title": "Socrates' Final Day in Athens",
+      "tradition": "Socrates / Athenian trial tradition",
+      "origin": "Ancient Greece",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "PHILOSOPHY",
+        "TRIAL",
+        "ETHICS"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY_THROUGH_SECONDARY_ACCOUNTS",
+      "evidenceNote": "Socrates left no writings. Knowledge of his trial and death comes mainly through later writers such as Plato and Xenophon, and details of the final scene are partly literary and contested.",
+      "sourceBasis": [
+        "https://plato.stanford.edu/entries/socrates/",
+        "https://iep.utm.edu/socrates/"
+      ],
+      "en": "In 399 BCE the city of Athens tried Socrates, a philosopher famous for questioning people about virtue, knowledge, and the way a person should live. He was found guilty and sentenced to death. Socrates was offered opportunities to escape according to the literary tradition preserved by Plato, but the surviving accounts present him as choosing to remain within the judgment of the city.\n\nOn his final day, the story moves away from the courtroom and toward conversation. Plato's account presents Socrates discussing the fate of the soul and the demands of philosophy with his friends. The end comes with the administration of hemlock, after which the philosopher dies in prison.\n\nHistorians must be careful here. Socrates wrote nothing himself, and the surviving narratives are shaped by the authors who remembered or portrayed him. Yet the trial and death are central to the historical memory of Athens. The story remains powerful because it asks a difficult question: what should a person do when personal conviction, law, and the cost of obedience pull in different directions?",
+      "hi": "399 ईसा पूर्व में एथेंस ने सुकरात पर मुकदमा चलाया। वह ऐसे दार्शनिक के रूप में प्रसिद्ध थे जो सद्गुण, ज्ञान और सही जीवन के बारे में लोगों से प्रश्न करते थे। उन्हें दोषी ठहराया गया और मृत्यु-दंड दिया गया। प्लेटो की साहित्यिक परंपरा के अनुसार उन्हें भाग निकलने के अवसर मिले, लेकिन जीवित विवरण उन्हें नगर के निर्णय के भीतर रहने का विकल्प चुनते हुए दिखाते हैं।\n\nउनके अंतिम दिन कहानी अदालत से हटकर बातचीत की ओर जाती है। प्लेटो के विवरण में सुकरात अपने मित्रों के साथ आत्मा, मृत्यु और दर्शन की जिम्मेदारी पर चर्चा करते हैं। अंततः कारागार में हेमलॉक के विष के सेवन के बाद उनकी मृत्यु हो जाती है।\n\nयहाँ इतिहासकारों को सावधान रहना चाहिए। सुकरात ने स्वयं कुछ नहीं लिखा, और हमारे पास उपलब्ध कथाएँ उन लेखकों की रचनात्मक दृष्टि से आकार लेती हैं जिन्होंने उन्हें याद किया या चित्रित किया। फिर भी उनका मुकदमा और मृत्यु एथेंस की ऐतिहासिक स्मृति का केंद्रीय हिस्सा हैं। यह कहानी आज भी इसलिए प्रभावशाली है क्योंकि यह पूछती है: जब व्यक्तिगत विश्वास, कानून और आज्ञापालन की कीमत अलग-अलग दिशाओं में खींचें, तब व्यक्ति को क्या करना चाहिए?",
+      "ar": "في عام 399 قبل الميلاد حاكمت أثينا سقراط، الفيلسوف المعروف بأسئلته عن الفضيلة والمعرفة وكيف ينبغي للإنسان أن يعيش. أُدين وحُكم عليه بالموت. ووفق التقليد الأدبي الذي حفظه أفلاطون، أتيحت له فرص للهروب، لكن الروايات الباقية تصوره وهو يختار البقاء تحت حكم المدينة.\n\nفي يومه الأخير تنتقل القصة من قاعة المحكمة إلى الحوار. ويعرض أفلاطون سقراط وهو يناقش مع أصدقائه مصير النفس والموت ومسؤولية الفلسفة. وتنتهي القصة في السجن بعد تناول سم الشوكران ووفاته.\n\nويجب على المؤرخين توخي الحذر هنا. لم يكتب سقراط شيئًا بنفسه، والروايات التي بقيت لنا تشكلت على يد المؤلفين الذين نقلوا صورته أو أعادوا بناءها. ومع ذلك يبقى موته ومحاكمته جزءًا أساسيًا من الذاكرة التاريخية لأثينا. وتظل القصة مؤثرة لأنها تطرح سؤالًا صعبًا: ماذا يفعل الإنسان عندما تتعارض قناعاته الشخصية والقانون وثمن الطاعة؟",
+      "ur": "399 قبل مسیح میں ایتھنز نے سقراط پر مقدمہ چلایا۔ وہ ایسے فلسفی کے طور پر مشہور تھے جو فضیلت، علم اور انسان کو کس طرح زندگی گزارنی چاہیے جیسے سوالات اٹھاتے تھے۔ انہیں مجرم قرار دے کر موت کی سزا سنائی گئی۔ افلاطون کی ادبی روایت کے مطابق انہیں فرار کے مواقع ملے، لیکن باقی رہ جانے والے بیانات انہیں شہر کے فیصلے کے اندر رہنے کا انتخاب کرتے ہوئے دکھاتے ہیں۔\n\nان کا آخری دن عدالت سے نکل کر گفتگو کی طرف جاتا ہے۔ افلاطون کے بیان میں سقراط اپنے دوستوں کے ساتھ روح، موت اور فلسفے کی ذمہ داری پر گفتگو کرتے ہیں۔ آخرکار جیل میں زہریلی شوکران پینے کے بعد ان کی موت واقع ہوتی ہے۔\n\nیہاں مؤرخین کو احتیاط کرنا ضروری ہے۔ سقراط نے خود کچھ نہیں لکھا، اور ہمارے پاس موجود روایات ان مصنفین کے انداز سے تشکیل پاتی ہیں جنہوں نے انہیں یاد کیا یا بیان کیا۔ اس کے باوجود ان کا مقدمہ اور موت ایتھنز کی تاریخی یاد کا اہم حصہ ہیں۔ یہ قصہ آج بھی اس لیے طاقتور ہے کہ یہ ایک مشکل سوال پوچھتا ہے: جب ذاتی یقین، قانون اور فرمانبرداری کی قیمت انسان کو مختلف سمتوں میں کھینچیں تو اسے کیا کرنا چاہیے؟",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Based on the historical Socrates tradition as treated by Stanford Encyclopedia of Philosophy and IEP; final-dialogue details are presented as a literary tradition rather than verbatim transcript."
+    }
+  ]
+}
