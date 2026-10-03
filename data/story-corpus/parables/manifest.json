@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "theme": "parables-and-wisdom",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual story text is stored in stories.json. Every record must contain usable text in all four languages. Scriptural, canonical, rabbinic, philosophical, Sufi literary, and later traditional layers are explicitly labeled.",
+  "records": [
+    {
+      "id": "parables-good-samaritan",
+      "title": "The Good Samaritan",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "COMPASSION",
+        "NEIGHBOR",
+        "SERVICE"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-prodigal-son",
+      "title": "The Prodigal Son",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "FORGIVENESS",
+        "FAMILY",
+        "RETURN"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-sower",
+      "title": "The Sower and the Four Soils",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "TEACHING",
+        "RECEPTIVITY",
+        "GROWTH"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-mustard-seed",
+      "title": "The Mustard Seed",
+      "tradition": "Gospel parable",
+      "origin": "Christianity / first-century Judea",
+      "tags": [
+        "CHRISTIANITY",
+        "SMALL_BEGINNINGS",
+        "GROWTH",
+        "HOPE"
+      ],
+      "ageBand": "7-14",
+      "evidenceType": "SCRIPTURAL_PARABLE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-poisoned-arrow",
+      "title": "The Man Wounded by the Poisoned Arrow",
+      "tradition": "Buddhist teaching story / Cūḷamālukya Sutta",
+      "origin": "Early Buddhism",
+      "tags": [
+        "BUDDHISM",
+        "PRACTICAL_WISDOM",
+        "SUFFERING",
+        "PRIORITY"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "CANONICAL_BUDDHIST_DISCOURSE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-kisa-gotami",
+      "title": "Kisa Gotami and the Mustard Seeds",
+      "tradition": "Buddhist teaching story",
+      "origin": "Early Buddhist tradition",
+      "tags": [
+        "BUDDHISM",
+        "IMPERMANENCE",
+        "GRIEF",
+        "WISDOM"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "COMMENTARIAL_BUDDHIST_TRADITION",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-blind-men-elephant-jain",
+      "title": "The Blind Men and the Elephant",
+      "tradition": "Jain anekantavada teaching story",
+      "origin": "Jain tradition / India",
+      "tags": [
+        "JAINISM",
+        "ANEKANTAVADA",
+        "PERSPECTIVE",
+        "WISDOM"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "JAIN_PHILOSOPHICAL_TRADITION",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-nachiketa-yama",
+      "title": "Nachiketa and the Question of What Endures",
+      "tradition": "Katha Upanishad",
+      "origin": "Hindu philosophical tradition / ancient India",
+      "tags": [
+        "HINDUISM",
+        "UPANISHAD",
+        "DEATH",
+        "WISDOM"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "SCRIPTURAL_PHILOSOPHICAL_TEXT",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-bhai-lalo",
+      "title": "Bhai Lalo and Malik Bhago",
+      "tradition": "Sikh sakhi tradition",
+      "origin": "Punjab / Sikh tradition",
+      "tags": [
+        "SIKHISM",
+        "HONEST_LIVELIHOOD",
+        "EQUALITY",
+        "SERVICE"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "SIKH_TRADITIONAL_SAKHI",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-rumi-elephant",
+      "title": "The Elephant in the Dark Room",
+      "tradition": "Rumi / Masnavi wisdom story",
+      "origin": "Persian Sufi literary tradition",
+      "tags": [
+        "SUFISM",
+        "RUMI",
+        "PERSPECTIVE",
+        "KNOWLEDGE"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "CLASSICAL_SUFI_LITERATURE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-honi-carob",
+      "title": "Honi and the Carob Tree",
+      "tradition": "Rabbinic wisdom story / Talmud",
+      "origin": "Jewish tradition",
+      "tags": [
+        "JUDAISM",
+        "GENERATIONS",
+        "PATIENCE",
+        "LEGACY"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "RABBINIC_LITERATURE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "parables-two-arrows",
+      "title": "The Two Arrows",
+      "tradition": "Buddhist teaching / Sallatha Sutta",
+      "origin": "Early Buddhism",
+      "tags": [
+        "BUDDHISM",
+        "SUFFERING",
+        "MINDFULNESS",
+        "EMOTIONAL_REACTION"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "CANONICAL_BUDDHIST_DISCOURSE",
+      "multilingualTextPath": "data/story-corpus/parables/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}
