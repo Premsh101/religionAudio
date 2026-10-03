@@ -38,6 +38,8 @@ class TTSRequest(BaseModel):
     pitch: float | None = Field(default=None, ge=-2, le=2)
     emotion: str | None = None
     instructions: str | None = None
+    voice_gender: str | None = None  # "female" | "male"; falls back to the profile's default_gender
+    format: str = Field(default="wav", pattern="^(wav|mp3)$")
 
 
 def narration_segments(text: str, limit: int = 1800) -> list[tuple[str, bool]]:
@@ -91,7 +93,21 @@ def resolve_voice(req: "TTSRequest", profile: dict) -> str | None:
         return req.voice
     language = req.language.lower()
     voices = profile.get("voices") or {}
-    return voices.get(language) or voices.get(language.split("-")[0])
+    choice = voices.get(language) or voices.get(language.split("-")[0])
+    if isinstance(choice, dict):
+        gender = (req.voice_gender or profile.get("default_gender") or "female").lower()
+        return choice.get(gender) or choice.get("female") or next(iter(choice.values()), None)
+    return choice
+
+
+def encode_mp3(source: Path, output: Path) -> None:
+    import subprocess
+    proc = subprocess.run(
+        ["ffmpeg", "-y", "-loglevel", "error", "-i", str(source), "-ac", "1", "-codec:a", "libmp3lame", "-b:a", "64k", str(output)],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False,
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(proc.stderr.decode("utf-8", errors="ignore"))
 
 
 def resolve_profile(req: TTSRequest) -> dict:
@@ -199,7 +215,7 @@ def cache_key(req: TTSRequest, profile: dict, resolved_engine: str, voice: str |
         req.text, req.language, profile_key(req.profile), voice or "", req.reference_audio or "",
         resolved_engine, str(profile.get("speed")), str(profile.get("exaggeration")),
         str(profile.get("cfg_weight")), str(profile.get("pause_ms")),
-        str(profile.get("paragraph_pause_ms")), str(profile.get("suspense_factor"))
+        str(profile.get("paragraph_pause_ms")), str(profile.get("suspense_factor")), req.format
     ])
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
@@ -210,7 +226,7 @@ def synthesize(req: TTSRequest):
     preferred_engine = profile["engine"]
     voice = resolve_voice(req, profile)
     key = cache_key(req, profile, preferred_engine, voice)
-    destination = AUDIO_DIR / f"{key}.wav"
+    destination = AUDIO_DIR / f"{key}.{req.format}"
     if destination.exists():
         return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":preferred_engine,"parts":1,"pause_profile_ms":profile["pause_ms"],"cached":True}
 
@@ -247,7 +263,12 @@ def synthesize(req: TTSRequest):
 
             generated.append((output, pause_after(part, profile, paragraph_end)))
 
-        add_silence(generated, destination)
+        if req.format == "mp3":
+            joined = work / "joined.wav"
+            add_silence(generated, joined)
+            encode_mp3(joined, destination)
+        else:
+            add_silence(generated, destination)
         actual_engine = "+".join(sorted(used_engines)) or preferred_engine
         return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":actual_engine,"parts":len(generated),"pause_profile_ms":profile["pause_ms"],"voice":voice,"cached":False}
     except Exception as exc:

@@ -19,7 +19,8 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
     select:{
       title:true,slug:true,type:true,audience:true,ageMin:true,ageMax:true,language:true,summary:true,body:true,status:true,narrationProfile:true,
       source:{select:{name:true,url:true,license:true,rightsStatus:true}},
-      audioAssets:{where:{status:"READY"},orderBy:{createdAt:"desc"},take:1,select:{id:true}}
+      id:true,
+      audioAssets:{where:{status:{in:["QUEUED","PROCESSING","READY"]},voiceId:{in:["female","male"]}},orderBy:{createdAt:"desc"},select:{id:true,voiceId:true}}
     }
   }).catch(()=>null) : null;
 
@@ -40,7 +41,8 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
       body:dbStory.body,
       status:dbStory.status,
       source:dbStory.source,
-      audioAssetId:dbStory.audioAssets[0]?.id||null
+      storyId:dbStory.id,
+      audio:{female:dbStory.audioAssets.find(a=>a.voiceId==="female")?.id||null,male:dbStory.audioAssets.find(a=>a.voiceId==="male")?.id||null}
     }}/>;
   }
 
