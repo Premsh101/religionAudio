@@ -5,6 +5,7 @@ import { ArrowLeft, Bookmark, Headphones, Pause, Play, Sparkles, Volume2 } from 
 import Link from "next/link";
 import AppHeader from "../../../components/AppHeader";
 import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../../../components/NarrationPlayer";
+import { recordHistory } from "../../../lib/client/history";
 
 type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
 
@@ -29,6 +30,9 @@ export default function StoryClient({story}:{story:Story}){
   const audioRef=useRef<HTMLAudioElement|null>(null);
 
   const label=labels[story.narration_profile]||"Natural";
+  const historyTarget=story.storyId?{kind:"story" as const,id:story.storyId,slug:story.slug,title:story.title,href:"/stories/"+story.slug}:undefined;
+
+  useEffect(()=>{if(historyTarget)recordHistory(historyTarget);},[story.storyId]);
 
   useEffect(()=>{
     async function load(){
@@ -51,6 +55,7 @@ export default function StoryClient({story}:{story:Story}){
 
   async function saveProgress(value:number){
     setProgress(value);
+    if(historyTarget)recordHistory({...historyTarget,progressPercent:value,completed:value>=100});
     try{
       await fetch("/api/user/progress",{
         method:"POST",
@@ -133,7 +138,7 @@ export default function StoryClient({story}:{story:Story}){
           <div className="inline-flex items-center gap-2 rounded-2xl border border-white/10 px-4 py-3 text-xs text-zinc-500"><Volume2 className="h-4 w-4"/>{label}</div>
           <select value={speed} onChange={e=>setSpeed(Number(e.target.value))} className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-xs text-zinc-400 outline-none"><option value={0.8}>0.8×</option><option value={1}>1×</option><option value={1.2}>1.2×</option></select>
         </div>
-        {story.storyId&&<div className="mt-8"><NarrationPlayer title={story.title+" · full narration"} storyId={story.storyId} assets={story.audio||{}} voice={voice} onVoiceChange={setVoice}/></div>}
+        {story.storyId&&<div className="mt-8"><NarrationPlayer title={story.title+" · full narration"} storyId={story.storyId} target={historyTarget} assets={story.audio||{}} voice={voice} onVoiceChange={setVoice}/></div>}
         <div className="mt-7">
           <div className="flex items-center justify-between text-xs text-zinc-600"><span>Your reading progress</span><span>{Math.round(progress)}%</span></div>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/5"><div className="h-full rounded-full bg-amber-300" style={{width:String(Math.max(2,progress))+"%"}}/></div>

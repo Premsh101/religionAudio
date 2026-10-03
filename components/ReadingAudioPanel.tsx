@@ -2,6 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Bookmark, ChevronLeft, ChevronRight, Headphones, Pause, Play } from "lucide-react";
+import { getLocalAudioProgress, getLocalTargetProgress, recordHistory, setLocalAudioProgress, type HistoryKind } from "../lib/client/history";
+
+export type NarrationTarget={kind:HistoryKind;id:string;slug:string;title:string;href:string};
 
 type Segment={
   id:string;
@@ -23,16 +26,17 @@ type Progress={
 export default function ReadingAudioPanel({
   title,
   assetId,
+  target,
   onBookmark
 }:{
   title:string;
   assetId:string;
+  target?:NarrationTarget;
   onBookmark?:(segment:Segment)=>void;
 }){
   const audioRef=useRef<HTMLAudioElement>(null);
   const resumePositionRef=useRef(0);
   const shouldAutoplayRef=useRef(false);
-  const saveTimerRef=useRef<ReturnType<typeof setTimeout>|null>(null);
   const [segments,setSegments]=useState<Segment[]>([]);
   const [index,setIndex]=useState(0);
   const [rate,setRate]=useState(1);
@@ -44,40 +48,49 @@ export default function ReadingAudioPanel({
   const segmentCountRef=useRef(0);
   const current=segments[index];
 
-  const saveProgress=async(sequence:number,positionMs:number,completed=false)=>{
+  const lastSaveRef=useRef(0);
+
+  const saveProgress=async(sequence:number,positionMs:number,completed=false,beacon=false)=>{
     if(!assetId)return;
-    const durationMs=Math.max(0,current ? current.endMs-current.startMs : 1);
+    lastSaveRef.current=Date.now();
+    const seg=segments.find(s=>s.sequence===sequence)||current;
+    const durationMs=Math.max(0,seg ? seg.endMs-seg.startMs : 1);
     const segmentFraction=Math.min(1,Math.max(0,positionMs/Math.max(durationMs,1)));
-    const percent=((Math.max(0,sequence-1)+segmentFraction)/Math.max(segments.length,1))*100;
+    const totalParts=Math.max(preparing?.total||0,segments.length,1);
+    const percent=completed?100:((Math.max(0,sequence-1)+segmentFraction)/totalParts)*100;
+    const position=Math.max(0,Math.round(positionMs));
+    // Saved in this browser too, so guests resume where they stopped and see it in history.
+    setLocalAudioProgress(assetId,{currentSequence:sequence,positionMs:position,progressPercent:percent});
+    if(target)recordHistory({...target,progressPercent:percent,completed,assetId,sequence,positionMs:position});
+    const payload=JSON.stringify({assetId,currentSequence:sequence,positionMs:position,progressPercent:percent,completed});
+    if(beacon&&typeof navigator!=="undefined"&&navigator.sendBeacon){
+      navigator.sendBeacon("/api/user/audio-progress",new Blob([payload],{type:"application/json"}));
+      return;
+    }
     try{
-      await fetch("/api/user/audio-progress",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          assetId,
-          currentSequence:sequence,
-          positionMs:Math.max(0,Math.round(positionMs)),
-          progressPercent:completed?100:percent,
-          completed
-        })
-      });
+      await fetch("/api/user/audio-progress",{method:"POST",headers:{"Content-Type":"application/json"},body:payload,keepalive:true});
     }catch{}
   };
 
+  // Save at most every 10 s while playing (timeupdate fires several times a second).
   const queueSave=()=>{
     const a=audioRef.current;
-    if(!a||!current)return;
-    if(saveTimerRef.current)clearTimeout(saveTimerRef.current);
-    saveTimerRef.current=setTimeout(()=>{
-      void saveProgress(current.sequence,a.currentTime*1000,false);
-    },1200);
+    if(!a||!current||a.paused)return;
+    if(Date.now()-lastSaveRef.current<10000)return;
+    void saveProgress(current.sequence,a.currentTime*1000,false);
   };
 
+  // Closing the tab, switching apps or locking the phone keeps the exact position.
   useEffect(()=>{
-    return ()=>{
-      if(saveTimerRef.current)clearTimeout(saveTimerRef.current);
+    const flush=()=>{
+      const a=audioRef.current;
+      if(a&&current&&a.currentTime>0)void saveProgress(current.sequence,a.currentTime*1000,false,true);
     };
-  },[]);
+    const onVisibility=()=>{if(document.visibilityState==="hidden")flush()};
+    window.addEventListener("pagehide",flush);
+    document.addEventListener("visibilitychange",onVisibility);
+    return()=>{window.removeEventListener("pagehide",flush);document.removeEventListener("visibilitychange",onVisibility)};
+  });
 
   useEffect(()=>{
     let cancelled=false;
@@ -114,9 +127,10 @@ export default function ReadingAudioPanel({
             setIndex(prevCount);
           }
         }
-        if(first&&progressRes&&progressRes.ok&&nextSegments.length){
-          const p=(await progressRes.json()).progress as Progress|null;
-          if(p){
+        if(first&&nextSegments.length){
+          const server=progressRes&&progressRes.ok?((await progressRes.json()).progress as Progress|null):null;
+          const p=server||getLocalAudioProgress(assetId)||(target?getLocalTargetProgress(target.kind,target.id):null);
+          if(p&&!(server?.completedAt)){
             const nextIndex=Math.min(nextSegments.length-1,Math.max(0,(p.currentSequence||1)-1));
             setIndex(nextIndex);
             resumePositionRef.current=Math.max(0,p.positionMs||0);
@@ -202,6 +216,18 @@ export default function ReadingAudioPanel({
       await saveProgress(current.sequence,a.currentTime*1000,false);
     }
   };
+
+  // Lock-screen, notification-shade and headphone-button controls on phones.
+  useEffect(()=>{
+    if(typeof navigator==="undefined"||!("mediaSession" in navigator)||!current)return;
+    try{
+      navigator.mediaSession.metadata=new MediaMetadata({title,artist:"Sacred Stories",album:"Part "+current.sequence+" of "+Math.max(preparing?.total||0,segments.length)});
+      navigator.mediaSession.setActionHandler("play",()=>{void audioRef.current?.play()});
+      navigator.mediaSession.setActionHandler("pause",()=>{audioRef.current?.pause()});
+      navigator.mediaSession.setActionHandler("previoustrack",index>0?()=>choose(index-1):null);
+      navigator.mediaSession.setActionHandler("nexttrack",index<segments.length-1?()=>choose(index+1):null);
+    }catch{}
+  });
 
   const choose=(next:number)=>{
     const target=Math.min(segments.length-1,Math.max(0,next));

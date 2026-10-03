@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, Bookmark, Pause, Play, Sparkles, Volume2 } from "lucide-react";
 import AppHeader from "../../../components/AppHeader";
 import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../../../components/NarrationPlayer";
+import { recordHistory } from "../../../lib/client/history";
 
 type Passage={id:string;reference:string;sequence:number;text:string};
 type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audio:NarrationAssets};
@@ -20,6 +21,9 @@ export default function WorkReader({work}:{work:Work}){
   const currentChapterIndex=work.chapters.indexOf(work.currentChapter);
   const previousChapter=currentChapterIndex>0?work.chapters[currentChapterIndex-1]:null;
   const nextChapter=currentChapterIndex>=0&&currentChapterIndex<work.chapters.length-1?work.chapters[currentChapterIndex+1]:null;
+
+  const historyTarget={kind:"work" as const,id:work.id,slug:work.slug,title:work.title,href:"/read/"+work.slug};
+  useEffect(()=>{recordHistory(historyTarget);},[work.id]);
 
   useEffect(()=>{
     async function load(){
@@ -41,6 +45,7 @@ export default function WorkReader({work}:{work:Work}){
   },[work.slug,total]);
 
   async function saveProgress(sequence:number){
+    recordHistory({...historyTarget,progressPercent:total?(sequence/total)*100:0,completed:sequence>=total});
     try{
       await fetch("/api/user/progress",{
         method:"POST",headers:{"Content-Type":"application/json"},
@@ -106,7 +111,7 @@ export default function WorkReader({work}:{work:Work}){
           <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save book"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
         </div>
 
-        <div className="mt-8"><NarrationPlayer title={work.title+" · full narration"} workId={work.id} assets={work.audio} voice={voice} onVoiceChange={setVoice}/></div>
+        <div className="mt-8"><NarrationPlayer title={work.title+" · full narration"} workId={work.id} target={historyTarget} assets={work.audio} voice={voice} onVoiceChange={setVoice}/></div>
         <div className="mt-8 flex items-center justify-between gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-4">
           <Link href={previousChapter?"/read/"+work.slug+"?chapter="+previousChapter:"#"} className={"rounded-xl border border-white/10 px-3 py-2 text-xs "+(previousChapter?"text-zinc-300 hover:bg-white/5":"pointer-events-none text-zinc-700")}>← Previous</Link>
           <div className="flex max-w-[60%] gap-1 overflow-x-auto">{work.chapters.map(ch=><Link key={ch} href={"/read/"+work.slug+"?chapter="+ch} className={"min-w-9 rounded-lg px-2.5 py-2 text-center text-xs "+(ch===work.currentChapter?"bg-white text-black":"border border-white/10 text-zinc-500 hover:text-white")}>{ch}</Link>)}</div>

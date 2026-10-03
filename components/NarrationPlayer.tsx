@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Headphones } from "lucide-react";
-import ReadingAudioPanel from "./ReadingAudioPanel";
+import ReadingAudioPanel, { type NarrationTarget } from "./ReadingAudioPanel";
 
 export type VoiceChoice="female"|"male";
 export type NarrationAssets={female?:string|null;male?:string|null};
@@ -25,7 +25,7 @@ export function VoiceToggle({voice,onChange}:{voice:VoiceChoice;onChange:(v:Voic
   </div>;
 }
 
-export default function NarrationPlayer({title,storyId,workId,assets,voice:controlledVoice,onVoiceChange}:{title:string;storyId?:string;workId?:string;assets:NarrationAssets;voice?:VoiceChoice;onVoiceChange?:(v:VoiceChoice)=>void}){
+export default function NarrationPlayer({title,storyId,workId,assets,target,voice:controlledVoice,onVoiceChange}:{title:string;storyId?:string;workId?:string;assets:NarrationAssets;target?:NarrationTarget;voice?:VoiceChoice;onVoiceChange?:(v:VoiceChoice)=>void}){
   const [ownVoice,setOwnVoice]=useVoicePreference();
   const voice=controlledVoice||ownVoice;
   const setVoice=onVoiceChange||setOwnVoice;
@@ -52,6 +52,6 @@ export default function NarrationPlayer({title,storyId,workId,assets,voice:contr
       {!assetId&&<button onClick={prepare} disabled={busy} className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/[0.04] px-4 py-2.5 text-sm text-white disabled:opacity-50"><Headphones className="h-4 w-4"/>{busy?"Starting…":"Listen to full narration"}</button>}
     </div>
     {error&&<p className="text-sm text-amber-200">{error}</p>}
-    {assetId&&<ReadingAudioPanel key={assetId} title={title} assetId={assetId}/>}
+    {assetId&&<ReadingAudioPanel key={assetId} title={title} assetId={assetId} target={target}/>}
   </div>;
 }

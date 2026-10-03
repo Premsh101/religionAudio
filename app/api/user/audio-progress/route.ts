@@ -14,7 +14,15 @@ export async function GET(request:NextRequest){
   const progress=await prisma.audioPlaybackProgress.findUnique({
     where:{userId_audioAssetId:{userId:user.id,audioAssetId:assetId}}
   });
-  return NextResponse.json({progress});
+  if(progress)return NextResponse.json({progress});
+  // No position for this narration yet: continue from the same story/book in the other voice, if any.
+  const asset=await prisma.audioAsset.findUnique({where:{id:assetId},select:{storyId:true,workId:true}});
+  const target=asset?.storyId?{storyId:asset.storyId}:asset?.workId?{workId:asset.workId}:null;
+  const sibling=target?await prisma.audioPlaybackProgress.findFirst({
+    where:{userId:user.id,completedAt:null,audioAsset:target},
+    orderBy:{updatedAt:"desc"}
+  }):null;
+  return NextResponse.json({progress:sibling,fromOtherVoice:Boolean(sibling)});
 }
 
 export async function POST(request:NextRequest){

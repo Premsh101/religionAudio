@@ -8,7 +8,7 @@ export default function AppHeader(){
   const [open,setOpen]=useState(false);
   const [user,setUser]=useState<{displayName:string|null;role:"USER"|"EDITOR"|"ADMIN"}|null>(null);
   useEffect(()=>{fetch("/api/auth/me").then(r=>r.json()).then(data=>setUser(data.user)).catch(()=>{});},[]);
-  const links=[["Stories","/stories"],["Library","/library"],["Content","/content"],["Search","/search"],["Places","/places"],["Ask AI","/ai"],["Narration","/tts"]];
+  const links=[["Stories","/stories"],["Library","/library"],["History","/history"],["Content","/content"],["Search","/search"],["Places","/places"],["Ask AI","/ai"],["Narration","/tts"]];
   return <header className="sticky top-0 z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
    <Link href="/" className="flex items-center gap-3" onClick={()=>setOpen(false)}><span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white text-black"><BookOpen className="h-5 w-5"/></span><span><span className="block font-display text-lg font-semibold leading-none">Sacred Stories</span><span className="mt-1 block text-[10px] uppercase tracking-[0.22em] text-zinc-600">Read · Listen · Explore</span></span></Link>
    <nav className="hidden items-center gap-5 text-sm text-zinc-400 md:flex">{links.map(([label,href])=><Link key={href} href={href} className="hover:text-white">{label}</Link>)}{user&&(user.role==="ADMIN"||user.role==="EDITOR")&&<Link href="/admin" className="hover:text-white">Studio</Link>}</nav>
