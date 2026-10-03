@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "theme": "festival-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual festival story text is stored in stories.json. Each record identifies whether the narrative is scriptural, traditional, historical, folkloric, or a living observance.",
+  "records": [
+    {
+      "id": "festival-diwali-rama-return",
+      "title": "The Lamps of Ayodhya: Rama Returns",
+      "tradition": "Ramayana / North Indian Diwali tradition",
+      "origin": "India",
+      "tags": [
+        "DIWALI",
+        "HINDUISM",
+        "RAMAYANA",
+        "HOMECOMING",
+        "LIGHT"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "TRADITIONAL_FESTIVAL_ASSOCIATION",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-holi-prahlada-holika",
+      "title": "Prahlada, Holika, and the Fire of Holi",
+      "tradition": "Hindu Purana and Holi tradition",
+      "origin": "India",
+      "tags": [
+        "HOLI",
+        "HINDUISM",
+        "PRAHLADA",
+        "HOLIKA_DAHAN"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "HINDU_TRADITIONAL_LEGEND",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-janmashtami-krishna-birth",
+      "title": "Krishna's Birth in the Night",
+      "tradition": "Bhagavata / Krishna devotional tradition",
+      "origin": "India",
+      "tags": [
+        "JANMASHTAMI",
+        "HINDUISM",
+        "KRISHNA",
+        "BIRTH_STORY"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_TRADITION",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-ganesh-chaturthi-birth",
+      "title": "Ganesha: The Child at the Door",
+      "tradition": "Shaiva / Ganesha Puranic tradition and Ganesh Chaturthi",
+      "origin": "India",
+      "tags": [
+        "GANESH_CHATURTHI",
+        "HINDUISM",
+        "GANESHA",
+        "NEW_BEGINNINGS"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "PURAṇIC_TRADITION_AND_MODERN_FESTIVAL_HISTORY",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-onam-mahabali-return",
+      "title": "Onam: Mahabali Comes Home Again",
+      "tradition": "Kerala Onam / Mahabali-Vamana tradition",
+      "origin": "Kerala, India",
+      "tags": [
+        "ONAM",
+        "KERALA",
+        "MAHABALI",
+        "HARVEST",
+        "WELCOME"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "KERALA_TRADITIONAL_LEGEND",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-vaisakhi-khalsa-1699",
+      "title": "Vaisakhi at Anandpur: The Khalsa Is Formed",
+      "tradition": "Sikh history / Khalsa tradition",
+      "origin": "Anandpur Sahib, Punjab",
+      "tags": [
+        "VAISAKHI",
+        "SIKHISM",
+        "KHALSA",
+        "1699",
+        "COMMUNITY"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "DOCUMENTED_SIKH_HISTORY_AND_TRADITION",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-vesak-buddha-life",
+      "title": "Vesak: Remembering the Buddha's Life",
+      "tradition": "Buddhist Vesak / Buddha Purnima",
+      "origin": "South and Southeast Asia",
+      "tags": [
+        "VESAK",
+        "BUDDHISM",
+        "BUDDHA",
+        "COMPASSION"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "BUDDHIST_FESTIVAL_TRADITION",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-eid-fitr-day-of-return",
+      "title": "Eid al-Fitr: The Morning After Ramadan",
+      "tradition": "Islamic festival tradition",
+      "origin": "Muslim communities worldwide",
+      "tags": [
+        "EID_AL_FITR",
+        "ISLAM",
+        "RAMADAN",
+        "COMMUNITY",
+        "CHARITY"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "RELIGIOUS_OBSERVANCE_AND_LIVING_TRADITION",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-christmas-nativity",
+      "title": "The Nativity: A Child in Bethlehem",
+      "tradition": "Christian Gospel tradition",
+      "origin": "Christianity / Judea",
+      "tags": [
+        "CHRISTMAS",
+        "CHRISTIANITY",
+        "NATIVITY",
+        "BETHLEHEM"
+      ],
+      "ageBand": "6-15",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-easter-resurrection",
+      "title": "Easter Morning: The Empty Tomb",
+      "tradition": "Christian Gospel tradition",
+      "origin": "Christianity / Jerusalem",
+      "tags": [
+        "EASTER",
+        "CHRISTIANITY",
+        "RESURRECTION",
+        "HOPE"
+      ],
+      "ageBand": "7-16",
+      "evidenceType": "SCRIPTURAL_NARRATIVE_AND_CHRISTIAN_BELIEF",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-hanukkah-rededication",
+      "title": "Hanukkah: The Temple Is Rededicated",
+      "tradition": "Second Temple / Maccabean and rabbinic tradition",
+      "origin": "Judea",
+      "tags": [
+        "HANUKKAH",
+        "JUDAISM",
+        "MACCABEES",
+        "REDedication"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "HISTORICAL_TRADITION_AND_RABBINIC_MEMORY",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-passover-exodus",
+      "title": "Passover: The Night of Leaving Egypt",
+      "tradition": "Torah / Jewish Passover tradition",
+      "origin": "Ancient Israel / Egypt narrative",
+      "tags": [
+        "PASSOVER",
+        "JUDAISM",
+        "EXODUS",
+        "FREEDOM"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "festival-nowruz-spring-renewal",
+      "title": "Nowruz: The New Day of Spring",
+      "tradition": "Persian / Iranian New Year tradition",
+      "origin": "Iran and wider Persianate world",
+      "tags": [
+        "NOWRUZ",
+        "PERSIAN_CULTURE",
+        "SPRING",
+        "RENEWAL"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "CULTURAL_TRADITION_WITH_LEGENDARY_ORIGINS",
+      "multilingualTextPath": "data/story-corpus/festivals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}
