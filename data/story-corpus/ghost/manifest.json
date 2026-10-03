@@ -1,0 +1,253 @@
+{
+  "theme": "ghosts-and-supernatural",
+  "version": 1,
+  "policy": "Rights-first. Full text is stored only after the source edition is verified as public domain or otherwise openly licensed.",
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "records": [
+    {
+      "id": "ghost-en-canterville",
+      "language": "en",
+      "title": "The Canterville Ghost",
+      "author": "Oscar Wilde",
+      "year": 1887,
+      "origin": "Ireland / British setting",
+      "category": "GHOST_STORY",
+      "rights": "PUBLIC_DOMAIN_CANDIDATE",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/14522",
+        "format": "plain-text"
+      },
+      "ingest": "project-gutenberg"
+    },
+    {
+      "id": "ghost-en-monkeys-paw",
+      "language": "en",
+      "title": "The Monkey's Paw",
+      "author": "W. W. Jacobs",
+      "year": 1902,
+      "origin": "United Kingdom",
+      "category": "GHOST_STORY",
+      "rights": "PUBLIC_DOMAIN_CANDIDATE",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/12122",
+        "format": "plain-text"
+      },
+      "ingest": "project-gutenberg"
+    },
+    {
+      "id": "ghost-en-red-room",
+      "language": "en",
+      "title": "The Red Room",
+      "author": "H. G. Wells",
+      "year": 1896,
+      "origin": "England",
+      "category": "GHOST_STORY",
+      "rights": "PUBLIC_DOMAIN_CANDIDATE",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/23218",
+        "format": "plain-text"
+      },
+      "ingest": "project-gutenberg"
+    },
+    {
+      "id": "ghost-en-signal-man",
+      "language": "en",
+      "title": "The Signal-Man",
+      "author": "Charles Dickens",
+      "year": 1866,
+      "origin": "England",
+      "category": "GHOST_STORY",
+      "rights": "PUBLIC_DOMAIN_CANDIDATE",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/27924",
+        "format": "plain-text"
+      },
+      "ingest": "project-gutenberg"
+    },
+    {
+      "id": "ghost-en-banshee",
+      "language": "en",
+      "title": "The Banshee",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Ireland",
+      "category": "FOLKLORE",
+      "rights": "TRADITIONAL_SOURCE_REVIEW",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Project Gutenberg anthology",
+        "url": "https://www.gutenberg.org/ebooks/6040",
+        "format": "anthology"
+      },
+      "ingest": "project-gutenberg-review"
+    },
+    {
+      "id": "ghost-hi-bhoot-premchand",
+      "language": "hi",
+      "title": "भूत",
+      "author": "मुंशी प्रेमचंद",
+      "year": 1929,
+      "origin": "India",
+      "category": "GHOST_STORY",
+      "rights": "PUBLIC_DOMAIN_WORK",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Hindi Wikisource / open corpus",
+        "url": "https://hi.wikisource.org/wiki/विषयसूची:मानसरोवर_भाग_4.djvu",
+        "alternateUrl": "https://github.com/lastmansleeping/hindi-toolkit/blob/master/hindi_toolkit/data/stories/12.txt",
+        "format": "text"
+      },
+      "ingest": "github-open-source-text"
+    },
+    {
+      "id": "ghost-hi-vetal-pachisi",
+      "language": "hi",
+      "title": "वेताल पच्चीसी",
+      "author": "Traditional; Hindi retellings",
+      "year": null,
+      "origin": "India",
+      "category": "SUPERNATURAL_FOLKLORE",
+      "rights": "TRADITIONAL_SOURCE_REVIEW",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Hindi Wikisource",
+        "url": "https://hi.wikisource.org/",
+        "format": "source-discovery"
+      },
+      "ingest": "wikisource-review"
+    },
+    {
+      "id": "ghost-hi-singhasan-battisi",
+      "language": "hi",
+      "title": "सिंहासन बत्तीसी",
+      "author": "Traditional; Hindi retellings",
+      "year": null,
+      "origin": "India",
+      "category": "SUPERNATURAL_FOLKLORE",
+      "rights": "TRADITIONAL_SOURCE_REVIEW",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Hindi Wikisource",
+        "url": "https://hi.wikisource.org/",
+        "format": "source-discovery"
+      },
+      "ingest": "wikisource-review"
+    },
+    {
+      "id": "ghost-ur-fasana-e-ajaib",
+      "language": "ur",
+      "title": "فسانۂ عجائب",
+      "author": "رجب علی بیگ سرور",
+      "year": 1824,
+      "origin": "Lucknow, India",
+      "category": "SUPERNATURAL_FOLKLORE",
+      "rights": "PUBLIC_DOMAIN_CANDIDATE",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Urdu Wikisource / UrduZaban",
+        "url": "https://ur.wikisource.org/wiki/فسانۂ_عجائب",
+        "alternateUrl": "https://github.com/FarooqStars/urduzaban/blob/master/uz-data/uz-adab-matn.json",
+        "format": "Wikisource text"
+      },
+      "ingest": "wikisource-api"
+    },
+    {
+      "id": "ghost-ur-bagh-o-bahar",
+      "language": "ur",
+      "title": "باغ و بہار / قصۂ چار درویش",
+      "author": "میر امن دہلوی",
+      "year": 1801,
+      "origin": "Delhi / North India",
+      "category": "SUPERNATURAL_FOLKLORE",
+      "rights": "PUBLIC_DOMAIN_CANDIDATE",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Urdu Wikisource",
+        "url": "https://ur.wikisource.org/wiki/باغ_و_بہار/سیر_پہلے_درویش_کی",
+        "format": "Wikisource text"
+      },
+      "ingest": "wikisource-api"
+    },
+    {
+      "id": "ghost-ur-dastan-amir-hamza",
+      "language": "ur",
+      "title": "داستان امیر حمزہ / طلسم ہوش ربا",
+      "author": "Traditional Urdu dastan; multiple historical narrators/editors",
+      "year": null,
+      "origin": "North India / Indo-Persian storytelling tradition",
+      "category": "SUPERNATURAL_FANTASY",
+      "rights": "EDITION_REVIEW_REQUIRED",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Urdu Wikisource / Urdu literary sources",
+        "url": "https://ur.wikisource.org/",
+        "format": "source-discovery"
+      },
+      "ingest": "wikisource-review"
+    },
+    {
+      "id": "ghost-ar-merchant-ifrit",
+      "language": "ar",
+      "title": "حكاية التاجر مع العفريت",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arab world / composite Thousand Nights tradition",
+      "category": "JINN_GHOST_FOLKLORE",
+      "rights": "PUBLIC_DOMAIN_TRADITION",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Arabic Wikisource — ألف ليلة وليلة",
+        "url": "https://ar.wikisource.org/wiki/ألف_ليلة_ولي_لة",
+        "format": "Wikisource text"
+      },
+      "ingest": "wikisource-api"
+    },
+    {
+      "id": "ghost-ar-fisherman-ifrit",
+      "language": "ar",
+      "title": "حكاية الصياد والعفريت",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arab world / composite Thousand Nights tradition",
+      "category": "JINN_GHOST_FOLKLORE",
+      "rights": "PUBLIC_DOMAIN_TRADITION",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Arabic Wikisource — ألف ليلة وليلة",
+        "url": "https://ar.wikisource.org/wiki/ألف_ليلة_ولي_لة",
+        "format": "Wikisource text"
+      },
+      "ingest": "wikisource-api"
+    },
+    {
+      "id": "ghost-ar-hasan-badr-al-din",
+      "language": "ar",
+      "title": "حسن بدر الدين والجنية",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arab world / composite Thousand Nights tradition",
+      "category": "JINN_FOLKLORE",
+      "rights": "PUBLIC_DOMAIN_TRADITION",
+      "fullText": "SOURCE_ONLY",
+      "source": {
+        "name": "Arabic Wikisource — ألف ليلة وليلة",
+        "url": "https://ar.wikisource.org/wiki/ألف_ليلة_ولي_لة/الجزء_الثاني",
+        "format": "Wikisource text"
+      },
+      "ingest": "wikisource-api"
+    }
+  ]
+}
