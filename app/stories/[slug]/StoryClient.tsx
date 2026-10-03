@@ -4,8 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, Bookmark, Headphones, Pause, Play, Sparkles, Volume2 } from "lucide-react";
 import Link from "next/link";
 import AppHeader from "../../../components/AppHeader";
+import ReadingAudioPanel from "../../../components/ReadingAudioPanel";
 
-type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
+type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;audioAssetId?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
 
 const labels:Record<string,string>={
   ghost:"After-dark / atmospheric",
@@ -129,8 +130,9 @@ export default function StoryClient({story}:{story:Story}){
           <div className="inline-flex items-center gap-2 rounded-2xl border border-white/10 px-4 py-3 text-xs text-zinc-500"><Volume2 className="h-4 w-4"/>{label}</div>
           <select value={speed} onChange={e=>setSpeed(Number(e.target.value))} className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-xs text-zinc-400 outline-none"><option value={0.8}>0.8×</option><option value={1}>1×</option><option value={1.2}>1.2×</option></select>
         </div>
+        {story.audioAssetId&&<div className="mt-8"><ReadingAudioPanel title={story.title+" · full narration"} assetId={story.audioAssetId}/></div>}
         <div className="mt-7">
-          <div className="flex items-center justify-between text-xs text-zinc-600"><span>Your progress</span><span>{Math.round(progress)}%</span></div>
+          <div className="flex items-center justify-between text-xs text-zinc-600"><span>Your reading progress</span><span>{Math.round(progress)}%</span></div>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/5"><div className="h-full rounded-full bg-amber-300" style={{width:String(Math.max(2,progress))+"%"}}/></div>
         </div>
       </div>
