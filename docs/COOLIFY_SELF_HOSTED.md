@@ -41,16 +41,18 @@ The production image runs `prisma migrate deploy` before `next start`, so new co
 
 Narration is generated once and stored; every later listener streams the stored MP3. With R2, listeners download audio straight from Cloudflare's network instead of from the KVM, so playback starts without buffering and the server's bandwidth isn't used.
 
-1. In Cloudflare → **R2 Object Storage** → **Create bucket**, e.g. `religionaudio-audio`.
-2. Open the bucket → **Settings** → **Public access**: either connect a custom domain (recommended, e.g. `audio.yourdomain.com`) or enable the **r2.dev** public URL. Copy that public URL.
-3. R2 overview → **Manage R2 API Tokens** → **Create API token** with **Object Read & Write** on that bucket. Copy the Access Key ID, Secret Access Key, and the S3 endpoint (`https://<account-id>.r2.cloudflarestorage.com`).
-4. In Coolify → Environment Variables, set:
-   - `AUDIO_STORAGE_PROVIDER=r2`
-   - `R2_ENDPOINT` = the S3 endpoint
-   - `R2_BUCKET` = the bucket name
-   - `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`
-   - `R2_PUBLIC_BASE_URL` = the public URL from step 2 (no trailing slash)
-5. Redeploy.
+1. In Cloudflare → **R2 Object Storage** → **Create bucket**, e.g. `religionaudio-audio`. Copy the **Account ID** shown on the R2 overview page.
+2. R2 overview → **Manage API tokens** → **Create API token**: permission **Object Read & Write**, applied to **that bucket only**. Copy the Access Key ID and Secret Access Key (the secret is shown once).
+3. In Coolify → Environment Variables, set these four:
+   - `R2_ACCOUNT_ID`
+   - `R2_BUCKET`
+   - `R2_ACCESS_KEY_ID`
+   - `R2_SECRET_ACCESS_KEY`
+4. Redeploy. R2 switches on by itself once all four are set; with any missing, audio stays on the server's disk.
+
+Optional, for faster playback: in the bucket → **Settings** → **Public access**, connect a custom domain (e.g. `audio.yourdomain.com`) or enable the r2.dev URL, and set `R2_PUBLIC_BASE_URL` to it. Listeners then download straight from Cloudflare. Without it, the app streams audio from R2 itself, which works but uses the server's bandwidth. The bucket only ever holds generated audio and cover images, so making it public exposes nothing else.
+
+`R2_ENDPOINT` (the S3 API URL, even with the bucket name on the end) still works in place of `R2_ACCOUNT_ID`. `AUDIO_STORAGE_PROVIDER` and `AUDIO_PUBLIC_BASE_URL` are no longer used and can be deleted.
 
 How caching works:
 
@@ -72,17 +74,19 @@ The seed is intentionally not part of every application startup. This prevents a
 
 ## Create the first administrator
 
-Set these in Coolify → Environment Variables and redeploy. On startup the app creates the account (or promotes it if it already exists):
+Set these on the app in Coolify → Environment Variables (no quotes needed) and redeploy:
 
 - `ADMIN_EMAIL` (e.g. `admin@yourdomain.com`)
-- `ADMIN_PASSWORD` (use a long, unique password; the admin can approve and publish content)
+- `ADMIN_PASSWORD` (8+ characters; use a long, unique one, since the admin can approve and publish content)
 
-On later deploys the password is **not** overwritten, so changing it is safe. To force a reset, set `ADMIN_PASSWORD_RESET=true` for one deploy, then set it back to `false`.
+On every start the app makes sure that account exists, is an admin, and has `ADMIN_PASSWORD` as its password. To change the password, change the variable and redeploy. The deployment log shows what happened on a line starting with `Admin:` (for example `Admin: account created for …` or `Admin: ADMIN_EMAIL is not set on the web service`).
+
+If login says the password is wrong, check that line first. If it is missing or says the variable isn't set, the value didn't reach the app: save it on this application's Environment Variables page and redeploy (saving alone doesn't restart the app). `ADMIN_PASSWORD_RESET` is no longer used.
 
 From the Coolify terminal (web service) you can also run:
 
 ```bash
-npm run db:create-admin -- someone@example.com 'their-password'   # create, or promote + reset password
+npm run db:create-admin -- someone@example.com 'their-password'   # create, or promote + set password (works immediately)
 npm run db:make-admin -- someone@example.com                      # promote an existing account
 ```
 
@@ -136,6 +140,6 @@ Application code only depends on `DATABASE_URL`. A future move to managed Postgr
 - Use a strong PostgreSQL password.
 - Keep PostgreSQL private; do not publish port 5432.
 - Back up the database and test restores.
-- Rate limiting is built in (login, signup, TTS generation, narration requests, Ask AI); limits are in `lib/server/rate-limit.ts`. Client IPs come from Coolify's proxy. If you put Cloudflare's orange-cloud proxy in front of the site, set `TRUST_CLOUDFLARE_IP=true` so limits apply per visitor rather than per Cloudflare server.
+- Rate limiting is built in (login, signup, TTS generation, narration requests, Ask AI); limits are in `lib/server/rate-limit.ts`. Visitor IPs are detected automatically: the `CF-Connecting-IP` header is used only when the connection really comes from one of Cloudflare's published IP ranges, so it works with or without Cloudflare's orange-cloud proxy and can't be spoofed by someone hitting the server directly. No setting is needed (`TRUST_CLOUDFLARE_IP` is no longer used).
 - Add email/phone verification when account recovery is introduced.
 - Rotate secrets through Coolify rather than committing them to Git.
