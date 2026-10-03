@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "targetLanguages": ["hi","en","ar","ur"],
+  "records": [
+    "thriller-en-jekyll-hyde","thriller-en-dracula","thriller-en-frankenstein","thriller-en-woman-in-white",
+    "thriller-en-moonstone","thriller-en-thirty-nine-steps","thriller-en-lodger","thriller-en-moreau",
+    "thriller-hi-chandrakanta","thriller-hi-chandrakanta-santati","thriller-ur-firdous-bareen",
+    "thriller-ur-fasana-azad","thriller-ar-city-of-brass","thriller-ar-ebony-horse"
+  ],
+  "expectedLayout": "data/story-corpus/thriller/translations/<storyId>/<lang>.txt",
+  "qaLayout": "data/story-corpus/thriller/translations/<storyId>/<lang>.qa.json",
+  "completionRule": "A story is multilingual-ready only when all four language versions are present and semantic QA has PASS for every target translation."
+}
