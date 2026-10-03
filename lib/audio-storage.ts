@@ -45,3 +45,8 @@ export async function readStoredAudio(key:string){
 }
 
 export function audioStorageProvider(){return provider}
+
+export function audioPublicUrl(key:string){
+ const base=r2PublicBase||publicBase;
+ return base?base+"/"+key:key.split("/").map(encodeURIComponent).join("/") ? "/api/audio/file/"+key.split("/").map(encodeURIComponent).join("/") : "";
+}
