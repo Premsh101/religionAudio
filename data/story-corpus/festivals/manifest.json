@@ -89,7 +89,7 @@
         "NEW_BEGINNINGS"
       ],
       "ageBand": "7-15",
-      "evidenceType": "PURAṇIC_TRADITION_AND_MODERN_FESTIVAL_HISTORY",
+      "evidenceType": "PURANIC_TRADITION_AND_MODERN_FESTIVAL_HISTORY",
       "multilingualTextPath": "data/story-corpus/festivals/stories.json",
       "languageStatus": {
         "en": "TEXT_PRESENT",
@@ -243,7 +243,7 @@
         "HANUKKAH",
         "JUDAISM",
         "MACCABEES",
-        "REDedication"
+        "REDEDICATION"
       ],
       "ageBand": "9-16",
       "evidenceType": "HISTORICAL_TRADITION_AND_RABBINIC_MEMORY",

@@ -329,7 +329,7 @@
       "Kalevala",
       "Ulster Cycle"
     ],
-    "ingest_policy": "These story-level texts are original retellings created for the repository. They are not copied from modern translations. Preserve the distinction between traditional narrative material and any later translation or interpretation."
+    "ingest_policy": "These story-level texts are original retellings created for the repository. They are not copied from modern translations. Preserve the distinction between traditional narrative material and any later translation or interpretation. Per-record sourceBasis links point to public-domain historical editions (mostly Project Gutenberg) and reference articles; see project-gutenberg-epic-and-adventure-editions."
   },
   {
     "id": "adventure-quest-literature-repository-stories",
@@ -343,49 +343,53 @@
       "Around the World in Eighty Days",
       "The Prisoner of Zenda",
       "The Swiss Family Robinson",
+      "King Solomon's Mines",
+      "Journey to the Centre of the Earth",
       "The Adventures of Tom Sawyer",
       "Robin Hood tradition",
-      "Arthurian tradition",
-      "Sindbad tradition",
-      "Chandrakanta tradition"
+      "The Three Musketeers",
+      "The Last of the Mohicans",
+      "Arthurian tradition (Malory, Le Morte d'Arthur)",
+      "Sindbad tradition (Thousand and One Nights)",
+      "Chandrakanta (Devaki Nandan Khatri, 1888)"
     ],
     "ingest_policy": "The multilingual story texts are original retellings created for the repository and are not copied from modern translations. The underlying classic works have historical public-domain editions in the USA; verify target-jurisdiction status before commercial redistribution."
   },
   {
-    "id": "british-museum-ashoka",
+    "id": "wikipedia-kalinga-war",
     "tradition": "Ancient India / Buddhism",
-    "source": "British Museum",
-    "url": "https://www.britishmuseum.org/collection/term/x25076",
+    "source": "Wikipedia — Kalinga War",
+    "url": "https://en.wikipedia.org/wiki/Kalinga_War",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use for historical verification and object metadata; do not copy museum prose into the corpus without permission."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for factual cross-checking only; do not copy article prose into the corpus."
   },
   {
-    "id": "jhansi-government-history",
+    "id": "wikipedia-siege-of-jhansi",
     "tradition": "Modern Indian history",
-    "source": "District Jhansi, Government of Uttar Pradesh",
-    "url": "https://jhansi.nic.in/history/",
+    "source": "Wikipedia — Siege of Jhansi",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Jhansi",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use for official local historical reference; repository stories are original retellings rather than copied site text."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for factual cross-checking only; do not copy article prose into the corpus."
   },
   {
-    "id": "met-mali-mansa-musa",
+    "id": "wikipedia-mansa-musa",
     "tradition": "Mali / Islamic history",
-    "source": "The Metropolitan Museum of Art",
-    "url": "https://www.metmuseum.org/es/exhibitions/sahel-art-empire-sahara/inside-the-exhibition",
+    "source": "Wikipedia — Mansa Musa",
+    "url": "https://en.wikipedia.org/wiki/Mansa_Musa",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use for historical and cultural verification; no verbatim museum text is redistributed."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for factual cross-checking only; do not copy article prose into the corpus."
   },
   {
-    "id": "academy-chinese-zheng-he",
+    "id": "wikipedia-zheng-he",
     "tradition": "Chinese maritime history",
-    "source": "Academy of Chinese Studies",
-    "url": "https://chiculture.org.hk/en/china-five-thousand-years/2004",
+    "source": "Wikipedia — Zheng He",
+    "url": "https://en.wikipedia.org/wiki/Zheng_He",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use for historical verification of Zheng He's voyages; no verbatim source text is redistributed."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for factual cross-checking only; do not copy article prose into the corpus."
   },
   {
     "id": "berkeley-ibn-battuta",
@@ -406,13 +410,13 @@
     "ingest_policy": "Use for factual verification; do not copy article prose into corpus."
   },
   {
-    "id": "unesco-jerusalem",
+    "id": "wikipedia-siege-of-jerusalem-1187",
     "tradition": "Jerusalem / Abrahamic history",
-    "source": "UNESCO World Heritage Centre",
-    "url": "https://whc.unesco.org/en/list/148/",
+    "source": "Wikipedia — Siege of Jerusalem (1187)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1187)",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use for historical and cultural context for Jerusalem; verify current UNESCO terms before any direct reuse."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for the documented 1187 sequence and surrender terms; do not copy article prose."
   },
   {
     "id": "stanford-socrates",
@@ -460,13 +464,13 @@
     "ingest_policy": "Use for tradition-aware historical reference; verify rights before any direct reuse."
   },
   {
-    "id": "sikhiwiki-guru-nanak",
+    "id": "wikipedia-guru-nanak",
     "tradition": "Sikhism",
-    "source": "SikhiWiki — Guru Nanak",
-    "url": "https://www.sikhiwiki.org/index.php?redirect=no&title=Nanak",
+    "source": "Wikipedia — Guru Nanak",
+    "url": "https://en.wikipedia.org/wiki/Guru_Nanak",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use as a Sikh-tradition reference; do not copy source wording into the corpus."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for broad chronology; janamsakhi traditions are labeled as tradition in the corpus."
   },
   {
     "id": "stanford-confucius",
@@ -511,7 +515,10 @@
     "url": "https://www.nobelprize.org/prizes/literature/1913/tagore/biographical/",
     "status": "reference-only",
     "license": "Nobel source terms",
-    "ingest_policy": "Use for factual biographical verification. The Nobel biographical text itself notes expired copyright, but repository content remains original."
+    "ingest_policy": "Use for factual biographical verification. The Nobel biographical text itself notes expired copyright, but repository content remains original.",
+    "works": [
+      "https://www.nobelprize.org/prizes/literature/1913/tagore/facts/"
+    ]
   },
   {
     "id": "nobel-marie-curie",
@@ -532,13 +539,13 @@
     "ingest_policy": "Use for official biographical facts; repository stories are original retellings."
   },
   {
-    "id": "poetry-foundation-kabir",
+    "id": "wikipedia-kabir",
     "tradition": "Bhakti / Sufi-associated poetry",
-    "source": "Poetry Foundation — Kabir",
-    "url": "https://www.poetryfoundation.org/poets/kabir",
+    "source": "Wikipedia — Kabir",
+    "url": "https://en.wikipedia.org/wiki/Kabir",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use for source criticism and biographical uncertainty; do not copy modern commentary."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for source criticism and biographical uncertainty; do not copy article prose."
   },
   {
     "id": "biblegateway-jesus-parables",
@@ -552,11 +559,11 @@
   {
     "id": "biblegateway-sower",
     "tradition": "Christianity",
-    "source": "Bible Gateway — Matthew 13 / Mark 4 / Luke 8",
-    "url": "https://www.biblegateway.com/passage/?search=Matthew%2013%3A1-52%2CMark%204%3A1-34%2CLuke%208%3A4-17&version=NIV",
+    "source": "Bible Gateway — Matthew 13:1-23; Mark 4:1-20; Luke 8:4-15 (KJV)",
+    "url": "https://www.biblegateway.com/passage/?search=Matthew%2013%3A1-23%3BMark%204%3A1-20%3BLuke%208%3A4-15&version=KJV",
     "status": "reference-only",
-    "license": "NIV copyrighted",
-    "ingest_policy": "Reference only; never ingest NIV prose into the commercial corpus without appropriate rights."
+    "license": "KJV (public domain outside the UK; Crown patent in the UK)",
+    "ingest_policy": "Reference for scripture location; repository text is an original retelling."
   },
   {
     "id": "suttacentral-arrow-reference",
@@ -565,7 +572,7 @@
     "url": "https://en.wikipedia.org/wiki/Parable_of_the_Poisoned_Arrow",
     "status": "reference-only",
     "license": "site-specific",
-    "ingest_policy": "Use for locating the canonical teaching; repository story is an original retelling."
+    "ingest_policy": "Use for locating the canonical teaching (MN 63); repository story is an original retelling. See also accesstoinsight-mn63."
   },
   {
     "id": "dhammatalks-kisa-gotami",
@@ -595,19 +602,19 @@
     "ingest_policy": "Use for Jain anekantavada framing; do not claim the motif is exclusive to Jainism."
   },
   {
-    "id": "masnavi-elephant",
+    "id": "wikipedia-masnavi",
     "tradition": "Persian Sufi tradition",
-    "source": "Masnavi.net — Rumi, elephant in dark room",
-    "url": "https://www.masnavi.net/1/25/eng/3/1259/",
+    "source": "Wikipedia — Masnavi",
+    "url": "https://en.wikipedia.org/wiki/Masnavi",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use the classical Persian text for identification and line location; repository stores an original retelling rather than a modern translation."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use to identify Rumi's Masnavi (Book III, elephant in the dark); repository stores an original retelling."
   },
   {
-    "id": "sefaria-honi-carob",
+    "id": "sefaria-taanit-23a",
     "tradition": "Judaism",
-    "source": "Sefaria — Ta'anit 23a, Honi and the carob tree",
-    "url": "https://voices.sefaria.org/sheets/152534",
+    "source": "Sefaria — Babylonian Talmud, Ta'anit 23a",
+    "url": "https://www.sefaria.org/Taanit.23a",
     "status": "reference-only",
     "license": "Sefaria version-specific",
     "ingest_policy": "Use for traditional source identification; verify exact edition/license before any direct text reuse."
@@ -622,22 +629,22 @@
     "ingest_policy": "Use for Sikh traditional framing; miraculous food imagery is labeled as tradition in the repository."
   },
   {
-    "id": "katha-upanishad-reference",
+    "id": "wisdomlib-katha-upanishad",
     "tradition": "Hindu / Upanishadic tradition",
-    "source": "Katha Upanishad reference",
-    "url": "https://upanishads.org.in/upanishads/2/3",
+    "source": "Wisdom Library — Katha Upanishad with Shankara's commentary",
+    "url": "https://www.wisdomlib.org/hinduism/book/katha-upanishad-shankara-bhashya",
     "status": "reference-only",
     "license": "site-specific",
-    "ingest_policy": "Use for narrative structure and philosophical context; verify edition-specific rights before direct reuse."
+    "ingest_policy": "Use for narrative structure (three nights, three boons) and philosophical context; verify edition-specific rights before direct reuse."
   },
   {
-    "id": "indianexpress-diwali-stories",
+    "id": "wikipedia-diwali",
     "tradition": "Hindu / Indian festival traditions",
-    "source": "Indian Express — Diwali stories and traditions",
-    "url": "https://indianexpress.com/article/express-sunday-eye/devdutt-pattanaik-on-how-rama-return-to-ayodhya-is-one-of-the-many-stories-around-diwali-10313936/",
+    "source": "Wikipedia — Diwali",
+    "url": "https://en.wikipedia.org/wiki/Diwali",
     "status": "reference-only",
-    "license": "site-specific",
-    "ingest_policy": "Use for regional Diwali context and the distinction between multiple Diwali narratives; repository text is original."
+    "license": "CC BY-SA (Wikipedia)",
+    "ingest_policy": "Use for the plurality of regional Diwali narratives; repository text is original."
   },
   {
     "id": "india-today-holi-2026",
@@ -746,5 +753,141 @@
     "status": "reference-only",
     "license": "site-specific",
     "ingest_policy": "Use for broad historical/cultural context; Jamshid origin is labeled as legend."
+  },
+  {
+    "id": "biblegateway-kjv-luke-parables",
+    "tradition": "Christianity",
+    "source": "Bible Gateway — Luke 10:25-37 and Luke 15:11-32 (KJV)",
+    "url": "https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=KJV",
+    "status": "reference-only",
+    "license": "KJV (public domain outside the UK; Crown patent in the UK)",
+    "works": [
+      "https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=KJV",
+      "https://www.biblegateway.com/passage/?search=Luke%2015%3A11-32&version=KJV"
+    ],
+    "ingest_policy": "Reference for scripture location of the Good Samaritan and Prodigal Son; repository texts are original retellings."
+  },
+  {
+    "id": "biblegateway-kjv-mustard-seed",
+    "tradition": "Christianity",
+    "source": "Bible Gateway — Matthew 13:31-32; Mark 4:30-32; Luke 13:18-19 (KJV)",
+    "url": "https://www.biblegateway.com/passage/?search=Matthew%2013%3A31-32%3BMark%204%3A30-32%3BLuke%2013%3A18-19&version=KJV",
+    "status": "reference-only",
+    "license": "KJV (public domain outside the UK; Crown patent in the UK)",
+    "ingest_policy": "Reference for scripture location; repository text is an original retelling."
+  },
+  {
+    "id": "accesstoinsight-mn63",
+    "tradition": "Buddhism",
+    "source": "Access to Insight — Cula-Malunkyovada Sutta (MN 63)",
+    "url": "https://www.accesstoinsight.org/tipitaka/mn/mn.063.than.html",
+    "status": "reference-only",
+    "license": "Access to Insight / translator terms",
+    "ingest_policy": "Use to verify the poisoned-arrow teaching; do not copy the translation."
+  },
+  {
+    "id": "suttacentral-mn63",
+    "tradition": "Buddhism",
+    "source": "SuttaCentral — MN 63",
+    "url": "https://suttacentral.net/mn63/en/sujato",
+    "status": "reference-only",
+    "license": "site-specific (verify translation licence)",
+    "ingest_policy": "Use to verify the canonical teaching; repository text is original."
+  },
+  {
+    "id": "accesstoinsight-sn36-6",
+    "tradition": "Buddhism",
+    "source": "Access to Insight — Sallatha Sutta (SN 36.6)",
+    "url": "https://www.accesstoinsight.org/tipitaka/sn/sn36/sn36.006.than.html",
+    "status": "reference-only",
+    "license": "Access to Insight / translator terms",
+    "ingest_policy": "Replaces a dead Wikipedia link; use to verify the two-arrows teaching."
+  },
+  {
+    "id": "suttacentral-sn36-6",
+    "tradition": "Buddhism",
+    "source": "SuttaCentral — SN 36.6",
+    "url": "https://suttacentral.net/sn36.6/en/sujato",
+    "status": "reference-only",
+    "license": "site-specific (verify translation licence)",
+    "ingest_policy": "Use to verify the canonical teaching; repository text is original."
+  },
+  {
+    "id": "bbc-religions-muhammad",
+    "tradition": "Islam",
+    "source": "BBC Religions — Prophet Muhammad (570-632)",
+    "url": "https://www.bbc.co.uk/religion/religions/islam/history/muhammad_1.shtml",
+    "status": "reference-only",
+    "license": "BBC terms",
+    "ingest_policy": "Use for broad chronology cross-checking; do not copy prose."
+  },
+  {
+    "id": "project-gutenberg-epic-and-adventure-editions",
+    "tradition": "World epics and adventure literature",
+    "source": "Project Gutenberg historical editions cited in epics/adventure sourceBasis",
+    "url": "https://www.gutenberg.org/",
+    "status": "reference-only",
+    "license": "public domain in the USA; verify other jurisdictions",
+    "works": [
+      "https://www.gutenberg.org/ebooks/24869 (Griffith, The Ramayan of Valmiki)",
+      "https://www.gutenberg.org/ebooks/15474 (Ganguli, Mahabharata vol. 1)",
+      "https://www.gutenberg.org/ebooks/2199 (Butler, Iliad)",
+      "https://www.gutenberg.org/ebooks/1727 (Butler, Odyssey)",
+      "https://www.gutenberg.org/ebooks/16328 (Hall, Beowulf)",
+      "https://www.gutenberg.org/ebooks/11000 (Jastrow and Clay, Old Babylonian Gilgamesh)",
+      "https://www.gutenberg.org/ebooks/7321 (Needler, Nibelungenlied)",
+      "https://www.gutenberg.org/ebooks/5186 (Crawford, Kalevala)",
+      "https://www.gutenberg.org/ebooks/14391 (Faraday, Tain Bo Cualnge)",
+      "https://www.gutenberg.org/ebooks/120 (Treasure Island)",
+      "https://www.gutenberg.org/ebooks/103 (Around the World in Eighty Days)",
+      "https://www.gutenberg.org/ebooks/95 (The Prisoner of Zenda)",
+      "https://www.gutenberg.org/ebooks/3836 (Swiss Family Robinson)",
+      "https://www.gutenberg.org/ebooks/2166 (King Solomon's Mines)",
+      "https://www.gutenberg.org/ebooks/18857 (Journey to the Centre of the Earth)",
+      "https://www.gutenberg.org/ebooks/74 (Tom Sawyer)",
+      "https://www.gutenberg.org/ebooks/964 (Pyle, Merry Adventures of Robin Hood)",
+      "https://www.gutenberg.org/ebooks/1257 (The Three Musketeers)",
+      "https://www.gutenberg.org/ebooks/940 (The Last of the Mohicans)",
+      "https://www.gutenberg.org/ebooks/1251 (Malory, Le Morte d'Arthur vol. 1)",
+      "https://www.gutenberg.org/ebooks/128 (Lang, Arabian Nights Entertainments)"
+    ],
+    "ingest_policy": "Reference editions for verifying plot details; repository stories are original retellings and do not copy these texts."
+  },
+  {
+    "id": "wikipedia-story-corpus-references",
+    "tradition": "Multiple",
+    "source": "Wikipedia reference articles cited in story sourceBasis fields",
+    "url": "https://en.wikipedia.org/",
+    "status": "reference-only",
+    "license": "CC BY-SA (Wikipedia)",
+    "works": [
+      "Ramayana",
+      "Sundara Kanda",
+      "Bhima",
+      "Abhimanyu",
+      "Rostam and Sohrab",
+      "Shahnameh",
+      "Epic of Gilgamesh",
+      "Siegfried",
+      "Joukahainen",
+      "Cú Chulainn",
+      "Bhagiratha",
+      "Sita",
+      "Chandrakanta (novel)",
+      "Rani of Jhansi",
+      "Mali Empire",
+      "Joan of Arc",
+      "Hannibal",
+      "Saladin",
+      "Mahavira",
+      "Al-Biruni",
+      "Katha Upanishad",
+      "Nachiketa",
+      "Bhai Lalo",
+      "Blind men and an elephant",
+      "Honi HaMe'agel",
+      "Jamshid"
+    ],
+    "ingest_policy": "Use for factual cross-checking only; do not copy article prose."
   }
 ]

@@ -39,6 +39,10 @@ A retelling is not presented as the canonical Sanskrit, Greek, Old English, Pers
 
 Human review is still required before publication, especially for sensitive religious interpretation and stories involving war or death.
 
+## Evidence labelling
+
+Each record in `stories.json` carries an `evidenceType` (`SACRED_EPIC_NARRATIVE` for the Ramayana and Mahabharata, `LITERARY_EPIC_AND_LEGEND` or `ANCIENT_EPIC_LITERATURE` for the other epics) and an `evidenceNote`. Gods, miracles, monsters and magic are presented as part of each epic's narrative or religious tradition, not as historical or scientific fact.
+
 ## Sources and narrative lineage
 
-The repository was checked against public-domain historical editions and traditional narrative descriptions. For example, Project Gutenberg hosts public-domain-in-the-USA English editions of Beowulf and the Ganguli Mahabharata; Wikisource hosts a public-domain historical Collins Iliad edition; Project Gutenberg hosts historical English Persian literature containing the Shahnameh. The repository texts themselves remain original retellings, not those editions copied into the corpus.
+Each record lists verified reference URLs in `sourceBasis`, mostly public-domain historical English editions on Project Gutenberg (Griffith's Ramayan of Valmiki, Ganguli's Mahabharata, Butler's Iliad and Odyssey, Hall's Beowulf, Needler's Nibelungenlied, Crawford's Kalevala, Faraday's Tain Bo Cualnge, Jastrow and Clay's Old Babylonian Gilgamesh) plus reference articles. The repository texts themselves remain original retellings, not those editions copied into the corpus.
