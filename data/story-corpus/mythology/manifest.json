@@ -1,0 +1,756 @@
+{
+  "theme": "world-mythology-and-sacred-mythic-narratives",
+  "version": 1,
+  "policy": "Rights-first. Full text is materialized only from exact source editions verified as public domain or openly licensed. Ancient/traditional narratives and later translations are kept distinct.",
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "translationPolicy": {
+    "mode": "SOURCE_LOCKED_FAITHFUL_TRANSLATION",
+    "targetLanguages": [
+      "hi",
+      "en",
+      "ar",
+      "ur"
+    ],
+    "rules": [
+      "Translate from the canonical source text used by this record; never translate a summary or another language's modern translation.",
+      "Preserve every event, action, relationship, name, place, object, number, genealogy, dialogue intent and narrative order.",
+      "Preserve uncertainty and the difference between mythic tradition, literary retelling, scholarly interpretation and historical claim.",
+      "Do not modernize divine, ritual, cosmological or cultural concepts in a way that changes their meaning.",
+      "Do not convert mythology or supernatural events into scientific factual claims.",
+      "Keep proper names and culturally specific terms consistent across all four target languages.",
+      "For sacred traditions, retain respectful terminology without inserting devotion or criticism not present in the source."
+    ]
+  },
+  "records": [
+    {
+      "id": "myth-en-prometheus-pandora",
+      "language": "en",
+      "title": "Prometheus and Pandora",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "CREATION",
+        "TITANS",
+        "HUMANITY"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-apollo-daphne",
+      "language": "en",
+      "title": "Apollo and Daphne",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "GODS",
+        "TRANSFORMATION",
+        "LOVE"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-midas",
+      "language": "en",
+      "title": "Midas",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "KING",
+        "GREED",
+        "TRANSFORMATION"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-cupid-psyche",
+      "language": "en",
+      "title": "Cupid and Psyche",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "LOVE",
+        "TRIAL",
+        "TRANSFORMATION"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-perseus-medusa",
+      "language": "en",
+      "title": "Perseus and Medusa",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "HERO",
+        "QUEST",
+        "MONSTERS"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-golden-fleece",
+      "language": "en",
+      "title": "The Golden Fleece",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "QUEST",
+        "HERO",
+        "ARGONAUTS"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-hercules",
+      "language": "en",
+      "title": "Hercules",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "HERO",
+        "LABORS",
+        "GODS"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-orpheus-eurydice",
+      "language": "en",
+      "title": "Orpheus and Eurydice",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "UNDERWORLD",
+        "LOVE",
+        "MUSIC"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-ulysses-cyclopes",
+      "language": "en",
+      "title": "Ulysses and the Cyclopes",
+      "author": "Thomas Bulfinch",
+      "year": 1867,
+      "origin": "Greek / Roman literary retelling",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "ODYSSEY",
+        "MONSTERS",
+        "ADVENTURE"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-odin-creation",
+      "language": "en",
+      "title": "The Creation of the Norse World",
+      "author": "H. A. Guerber",
+      "year": 1909,
+      "origin": "Norse tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "CREATION",
+        "Ymir",
+        "COSMOLOGY"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-thor",
+      "language": "en",
+      "title": "Thor and the Giants",
+      "author": "H. A. Guerber",
+      "year": 1909,
+      "origin": "Norse tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "THOR",
+        "GIANTS",
+        "ADVENTURE"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-baldur",
+      "language": "en",
+      "title": "The Death of Baldur",
+      "author": "H. A. Guerber",
+      "year": 1909,
+      "origin": "Norse tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "BALDUR",
+        "TRAGEDY",
+        "GODS"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-loki",
+      "language": "en",
+      "title": "Loki and the Gods",
+      "author": "H. A. Guerber",
+      "year": 1909,
+      "origin": "Norse tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "LOKI",
+        "TRICKSTER",
+        "GODS"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-ragnarok",
+      "language": "en",
+      "title": "Ragnarok",
+      "author": "H. A. Guerber",
+      "year": 1909,
+      "origin": "Norse tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "END_OF_WORLD",
+        "GODS",
+        "COSMOLOGY"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-ra-creation",
+      "language": "en",
+      "title": "The Legend of the Creation",
+      "author": "E. A. Wallis Budge",
+      "year": 1911,
+      "origin": "Ancient Egyptian tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "CREATION",
+        "RA",
+        "COSMOLOGY"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-destruction-mankind",
+      "language": "en",
+      "title": "The Destruction of Mankind",
+      "author": "E. A. Wallis Budge",
+      "year": 1911,
+      "origin": "Ancient Egyptian tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "RA",
+        "SEKHMET",
+        "HUMANITY"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-ra-snakebite",
+      "language": "en",
+      "title": "Ra and the Snake-Bite",
+      "author": "E. A. Wallis Budge",
+      "year": 1911,
+      "origin": "Ancient Egyptian tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "ISIS",
+        "RA",
+        "MAGIC"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-horus-winged-disk",
+      "language": "en",
+      "title": "Horus of Edfu and the Winged Disk",
+      "author": "E. A. Wallis Budge",
+      "year": 1911,
+      "origin": "Ancient Egyptian tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "HORUS",
+        "BATTLE",
+        "DIVINE_POWER"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-origin-horus",
+      "language": "en",
+      "title": "The Origin of Horus",
+      "author": "E. A. Wallis Budge",
+      "year": 1911,
+      "origin": "Ancient Egyptian tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "HORUS",
+        "ISIS",
+        "OSIRIS"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-isis-osiris",
+      "language": "en",
+      "title": "Isis and Osiris",
+      "author": "E. A. Wallis Budge",
+      "year": 1911,
+      "origin": "Ancient Egyptian tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "ISIS",
+        "OSIRIS",
+        "AFTERLIFE"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-gita-krishna-arjuna",
+      "language": "en",
+      "title": "Krishna and Arjuna — The Bhagavad-Gita",
+      "author": "Sir Edwin Arnold",
+      "year": 1885,
+      "origin": "India / Hindu tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "KRISHNA",
+        "ARJUNA",
+        "DHARMA",
+        "WISDOM"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-savitri-satyavan",
+      "language": "en",
+      "title": "Savitri and Satyavan",
+      "author": "Vyasa tradition / Kisari Mohan Ganguli translation",
+      "year": 1896,
+      "origin": "India / Mahabharata tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "LOVE",
+        "DEVOTION",
+        "DEATH"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-nala-damayanti",
+      "language": "en",
+      "title": "Nala and Damayanti",
+      "author": "Vyasa tradition / Kisari Mohan Ganguli translation",
+      "year": 1896,
+      "origin": "India / Mahabharata tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "LOVE",
+        "EXILE",
+        "FATE"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-draupadi-swayamvara",
+      "language": "en",
+      "title": "Draupadi's Swayamvara",
+      "author": "Vyasa tradition / Kisari Mohan Ganguli translation",
+      "year": 1896,
+      "origin": "India / Mahabharata tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "DRAUPADI",
+        "PANDAVAS",
+        "ROYALTY"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-jataka-monkey-crocodile",
+      "language": "en",
+      "title": "The Monkey and the Crocodile",
+      "author": "Ellen C. Babbitt",
+      "year": 1918,
+      "origin": "Buddhist Jataka tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "BUDDHA",
+        "ANIMALS",
+        "WISDOM"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {
+        "sourceSection": "6-10"
+      },
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-jataka-banyan-deer",
+      "language": "en",
+      "title": "The Banyan Deer",
+      "author": "Ellen C. Babbitt",
+      "year": 1918,
+      "origin": "Buddhist Jataka tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "BUDDHA",
+        "ANIMALS",
+        "SELF_SACRIFICE"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {
+        "sourceSection": "6-10"
+      },
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-lady-fountain",
+      "language": "en",
+      "title": "The Lady of the Fountain",
+      "author": "Lady Charlotte Guest / Welsh tradition",
+      "year": 1849,
+      "origin": "Wales / Welsh mythology",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "WELSH",
+        "KING_ARTHUR",
+        "QUEST"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-branwen",
+      "language": "en",
+      "title": "Branwen, Daughter of Llyr",
+      "author": "Lady Charlotte Guest / Welsh tradition",
+      "year": 1849,
+      "origin": "Wales / Welsh mythology",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "WELSH",
+        "ROYALTY",
+        "TRAGEDY"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-kalevala-sampo",
+      "language": "en",
+      "title": "The Sampo Quest",
+      "author": "Elias Lönnrot",
+      "year": 1849,
+      "origin": "Finland / Karelian-Finnish tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "KALEVALA",
+        "QUEST",
+        "MAGIC"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "myth-en-kalevala-creation",
+      "language": "en",
+      "title": "The Creation of the World — Kalevala",
+      "author": "Elias Lönnrot",
+      "year": 1849,
+      "origin": "Finland / Karelian-Finnish tradition",
+      "category": "MYTHOLOGY",
+      "subcategories": [
+        "CREATION",
+        "COSMOLOGY",
+        "KALEVALA"
+      ],
+      "ageBand": "12+",
+      "rights": "SOURCE_REVIEW",
+      "source": {},
+      "ingest": "project-gutenberg-source-edition",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    }
+  ]
+}
