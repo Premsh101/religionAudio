@@ -1,0 +1,7 @@
+-- AlterEnum
+ALTER TYPE "NarrationProfile" ADD VALUE 'ROMANCE';
+ALTER TYPE "NarrationProfile" ADD VALUE 'SENSUAL';
+ALTER TYPE "NarrationProfile" ADD VALUE 'DOCUMENTARY';
+ALTER TYPE "NarrationProfile" ADD VALUE 'INSPIRATIONAL';
+ALTER TYPE "NarrationProfile" ADD VALUE 'DEVOTIONAL';
+ALTER TYPE "NarrationProfile" ADD VALUE 'ADVENTURE';

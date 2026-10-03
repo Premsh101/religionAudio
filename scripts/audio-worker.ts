@@ -15,8 +15,9 @@ const sleep=(ms:number)=>new Promise(r=>setTimeout(r,ms));
 async function claimJob(){
  const jobs=await prisma.audioJob.findMany({
    where:{status:"QUEUED",nextRunAt:{lte:new Date()}},
-   // Oldest audiobook first, and its parts in order, so listeners can start on part 1 while the rest is generated.
-   orderBy:[{createdAt:"asc"},{segmentSequence:"asc"}],take:5,include:{audioAsset:true}
+   // Listener requests before Studio bulk jobs; then oldest audiobook first, parts in order,
+   // so listeners can start on part 1 while the rest is generated.
+   orderBy:[{priority:"desc"},{createdAt:"asc"},{segmentSequence:"asc"}],take:5,include:{audioAsset:true}
  });
  for(const job of jobs){
   const updated=await prisma.audioJob.updateMany({

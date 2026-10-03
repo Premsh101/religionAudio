@@ -10,10 +10,10 @@ export type EnsureResult={assetId:string;status:"QUEUED"|"PROCESSING"|"READY"|"F
  * Returns the narration for a target + language + voice, creating it (and its jobs) only if none exists yet.
  * Every listener after the first reuses the same stored audio.
  */
-export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly:true}):Promise<EnsureResult|null>;
-export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly?:false}):Promise<EnsureResult>;
-export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly?:boolean}):Promise<EnsureResult|null>;
-export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;existingOnly?:boolean}):Promise<EnsureResult|null>{
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;priority?:number;existingOnly:true}):Promise<EnsureResult|null>;
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;priority?:number;existingOnly?:false}):Promise<EnsureResult>;
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;priority?:number;existingOnly?:boolean}):Promise<EnsureResult|null>;
+export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{language:string;voiceGender:VoiceGender;narrationProfile?:string;title?:string;priority?:number;existingOnly?:boolean}):Promise<EnsureResult|null>{
   const {workId,storyId,contentId,language,voiceGender}=opts;
   const targetWhere=workId?{workId}:storyId?{storyId}:{contentId};
   const lockKey=`audio-asset:${workId||""}:${storyId||""}:${contentId||""}:${language}:${voiceGender}`;
@@ -39,7 +39,7 @@ export async function ensureAudioAsset(prisma:PrismaClient,opts:AudioTarget&{lan
       rightsStatus:"UNKNOWN",workId:workId||undefined,storyId:storyId||undefined,contentId:contentId||undefined,
       totalSegments:segments.length,status:"QUEUED"
     }});
-    await tx.audioJob.createMany({data:segments.map(segment=>({audioAssetId:asset.id,status:"QUEUED" as const,segmentSequence:segment.sequence}))});
+    await tx.audioJob.createMany({data:segments.map(segment=>({audioAssetId:asset.id,status:"QUEUED" as const,segmentSequence:segment.sequence,priority:opts.priority??0}))});
     return {assetId:asset.id,status:"QUEUED" as const,totalSegments:segments.length,reused:false};
   });
 }

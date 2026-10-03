@@ -56,6 +56,12 @@ enum NarrationProfile {
   MORAL_TALE
   MYSTERY
   THRILLER
+  ROMANCE
+  SENSUAL
+  DOCUMENTARY
+  INSPIRATIONAL
+  DEVOTIONAL
+  ADVENTURE
 }
 
 enum StoryIntensity {
@@ -380,10 +386,13 @@ model AudioJob {
   audioAssetId   String
   audioAsset     AudioAsset     @relation(fields: [audioAssetId], references: [id], onDelete: Cascade)
   segmentSequence Int?
+  /// Higher runs first: a listener waiting on Play outranks narration queued in bulk from the Studio.
+  priority       Int            @default(0)
   createdAt      DateTime       @default(now())
   updatedAt      DateTime       @updatedAt
 
   @@index([status, nextRunAt])
+  @@index([status, priority])
   @@index([audioAssetId, status])
 }
 

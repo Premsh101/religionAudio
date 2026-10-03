@@ -6,7 +6,7 @@ function canEdit(role:string){
   return role==="ADMIN" || role==="EDITOR";
 }
 const allowedStatuses=["DRAFT","REVIEW","PUBLISHED","ARCHIVED"];
-const allowedProfiles=["DEFAULT","SCRIPTURE","MYTHOLOGY","FOLKLORE","GHOST","KIDS","MORAL_TALE","MYSTERY","THRILLER"];
+const allowedProfiles=["DEFAULT","SCRIPTURE","MYTHOLOGY","FOLKLORE","GHOST","KIDS","MORAL_TALE","MYSTERY","THRILLER","ROMANCE","SENSUAL","DOCUMENTARY","INSPIRATIONAL","DEVOTIONAL","ADVENTURE"];
 const allowedIntensity=["GENTLE","ADVENTUROUS","SPOOKY","DARK"];
 
 export async function PATCH(request:NextRequest,{params}:{params:Promise<{slug:string}>}){
