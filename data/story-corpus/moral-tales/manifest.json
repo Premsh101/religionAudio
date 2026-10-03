@@ -1,0 +1,1312 @@
+{
+  "theme": "moral-tales-fables-wisdom-stories",
+  "version": 1,
+  "policy": "Rights-first. The repository records exact historical source editions. A public-domain source edition is still subject to jurisdiction review before commercial redistribution.",
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "translationPolicy": {
+    "mode": "SOURCE_LOCKED_FAITHFUL_TRANSLATION",
+    "targetLanguages": [
+      "hi",
+      "en",
+      "ar",
+      "ur"
+    ],
+    "rules": [
+      "Every record must ultimately exist in Hindi, English, Arabic and Urdu.",
+      "Translate the complete source story, never a summary or an unrelated retelling.",
+      "Preserve every event, action, character relationship, setting, object, number, dialogue, moral lesson and outcome.",
+      "Preserve the order in which evidence, consequences and lessons are revealed.",
+      "Do not add a moral that the source does not state and do not remove an explicit source lesson.",
+      "Preserve culturally specific terms and animal, religious or social roles without replacing them with unrelated target-culture concepts.",
+      "Where the source is a historical English translation of an older Sanskrit, Buddhist or Eastern work, label that lineage; do not claim the English source is the original-language text.",
+      "Do not convert traditional, religious or legendary material into scientific fact."
+    ]
+  },
+  "records": [
+    {
+      "id": "moral-en-jackal-deer-crow",
+      "language": "en",
+      "title": "The Story of the Jackal, Deer, and Crow",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "FRIENDSHIP",
+        "COOPERATION",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Jackal, Deer, and Crow"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-vulture-cat-birds",
+      "language": "en",
+      "title": "The Story of the Vulture, the Cat, and the Birds",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "DECEPTION",
+        "WISDOM",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Vulture, the Cat, and the Birds"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-dead-game-jackal",
+      "language": "en",
+      "title": "The Story of the Dead Game and the Jackal",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "GREED",
+        "CAUTION",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Dead Game and the Jackal"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-prince-merchants-wife",
+      "language": "en",
+      "title": "The Prince and the Wife of the Merchant's Son",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "DECEIT",
+        "JUDGMENT",
+        "CONSEQUENCES"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Prince and the Wife of the Merchant's Son"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-old-jackal-elephant",
+      "language": "en",
+      "title": "The Story of the Old Jackal and the Elephant",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "STRATEGY",
+        "WISDOM",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Old Jackal and the Elephant"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-lion-jackals-bull",
+      "language": "en",
+      "title": "The Story of the Lion, the Jackals, and the Bull",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "RUMOR",
+        "FRIENDSHIP",
+        "CONFLICT"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Lion, the Jackals, and the Bull"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-monkey-wedge",
+      "language": "en",
+      "title": "The Story of the Monkey and the Wedge",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "CURIOSITY",
+        "CONSEQUENCES",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Monkey and the Wedge"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-washerman-jackass",
+      "language": "en",
+      "title": "The Story of the Washerman's Jackass",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "DECEPTION",
+        "HUMOR",
+        "CONSEQUENCES"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Washerman's Jackass"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-cat-served-lion",
+      "language": "en",
+      "title": "The Story of the Cat who Served the Lion",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "LOYALTY",
+        "INGRATITUDE",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Cat who Served the Lion"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-terrible-bell",
+      "language": "en",
+      "title": "The Story of the Terrible Bell",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "FEAR",
+        "RUMOR",
+        "REASON"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Terrible Bell"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-black-snake-golden-chain",
+      "language": "en",
+      "title": "The Story of the Black Snake and the Golden Chain",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "STRATEGY",
+        "GREED",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Black Snake and the Golden Chain"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-lion-old-hare",
+      "language": "en",
+      "title": "The Story of the Lion and the Old Hare",
+      "author": "Hitopadesha tradition / Edwin Arnold translation",
+      "year": 1895,
+      "origin": "Indian / Hitopadesha tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "CLEVERNESS",
+        "COURAGE",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Hindu literature / The Book of Good Counsels",
+        "url": "https://www.gutenberg.org/ebooks/13268",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/13268/pg13268.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Lion and the Old Hare"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-turtle-saved-life",
+      "language": "en",
+      "title": "How the Turtle Saved His Own Life",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "CLEVERNESS",
+        "SELF_PRESERVATION",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "How the Turtle Saved His Own Life"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-merchant-seri",
+      "language": "en",
+      "title": "The Merchant of Seri",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "HONESTY",
+        "GENEROSITY",
+        "TRADE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Merchant of Seri"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-turtle-couldnt-talk",
+      "language": "en",
+      "title": "The Turtle Who Couldn't Stop Talking",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "SELF_CONTROL",
+        "CONSEQUENCES",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Turtle Who Couldn't Stop Talking"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-ox-won-forfeit",
+      "language": "en",
+      "title": "The Ox Who Won the Forfeit",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "HONESTY",
+        "JUSTICE",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Ox Who Won the Forfeit"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-sandy-road",
+      "language": "en",
+      "title": "The Sandy Road",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "PERSEVERANCE",
+        "JUDGMENT",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Sandy Road"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-quarrel-quails",
+      "language": "en",
+      "title": "The Quarrel of the Quails",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "UNITY",
+        "DIVISION",
+        "ANIMAL"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Quarrel of the Quails"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-measure-rice",
+      "language": "en",
+      "title": "The Measure of Rice",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "FAIRNESS",
+        "DECEPTION",
+        "JUSTICE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Measure of Rice"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-timid-rabbit",
+      "language": "en",
+      "title": "The Foolish, Timid Rabbit",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "FEAR",
+        "REASON",
+        "COURAGE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Foolish, Timid Rabbit"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-wise-foolish-merchant",
+      "language": "en",
+      "title": "The Wise and the Foolish Merchant",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "WISDOM",
+        "GREED",
+        "JUSTICE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Wise and the Foolish Merchant"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-elephant-girly-face",
+      "language": "en",
+      "title": "The Elephant Girly-Face",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "INFLUENCE",
+        "FRIENDSHIP",
+        "CHOICE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Elephant Girly-Face"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-king-white-elephant",
+      "language": "en",
+      "title": "The King's White Elephant",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "COMPASSION",
+        "LOYALTY",
+        "LEADERSHIP"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The King's White Elephant"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-crab-crane",
+      "language": "en",
+      "title": "The Crab and the Crane",
+      "author": "Ellen C. Babbitt, retold Jataka tradition",
+      "year": 1918,
+      "origin": "India / Buddhist Jataka tradition",
+      "originalLanguage": "sa",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "CLEVERNESS",
+        "DECEPTION",
+        "JUSTICE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — More Jataka Tales",
+        "url": "https://www.gutenberg.org/ebooks/7518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7518/pg7518.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Crab and the Crane"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-merchant-two-sons",
+      "language": "en",
+      "title": "The Merchant and His Sons",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "KINDNESS",
+        "GREED",
+        "FAMILY"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Merchant and His Sons"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-story-mencius",
+      "language": "en",
+      "title": "The Story of Mencius",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "WISDOM",
+        "INGRATITUDE",
+        "ETHICS"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of Mencius"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-schacabac",
+      "language": "en",
+      "title": "The Story of Schacabac",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "GENEROSITY",
+        "MISFORTUNE",
+        "CHARACTER"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of Schacabac"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-hamet-raschid",
+      "language": "en",
+      "title": "Hamet and Raschid",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "FRIENDSHIP",
+        "LOYALTY",
+        "VIRTUE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "Hamet and Raschid"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-cham-dervise",
+      "language": "en",
+      "title": "The Cham and Dervise",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "WISDOM",
+        "HUMILITY",
+        "TEACHING"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Cham and Dervise"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-story-omar",
+      "language": "en",
+      "title": "The Story of Omar",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "JUSTICE",
+        "CHARACTER",
+        "CONSEQUENCES"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of Omar"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-dervise",
+      "language": "en",
+      "title": "Story of a Dervise",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "FAITH",
+        "PATIENCE",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "Story of a Dervise"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-omars-plan",
+      "language": "en",
+      "title": "Omar's Plan of Life",
+      "author": "Anonymous / Eastern moral tale collection",
+      "year": 1800,
+      "origin": "Eastern / Oriental literary tradition",
+      "originalLanguage": "en",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "LIFE_WISDOM",
+        "DISCIPLINE",
+        "VIRTUE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — Oriental tales, for the entertainment of youth",
+        "url": "https://www.gutenberg.org/ebooks/62868",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62868/pg62868.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "Omar's Plan of Life"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-hassan-abdallah",
+      "language": "en",
+      "title": "Hassan Abdallah, or the Enchanted Keys",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "GENEROSITY",
+        "JUSTICE",
+        "MAGIC"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "Hassan Abdallah, or the Enchanted Keys"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-basket-maker",
+      "language": "en",
+      "title": "The Story of the Basket-Maker",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "HONESTY",
+        "INGENUITY",
+        "WORK"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Basket-Maker"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-dervise-abounadar",
+      "language": "en",
+      "title": "The Story of the Dervise Abounadar",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "GRATITUDE",
+        "GREED",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Story of the Dervise Abounadar"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-soliman-three-tellers",
+      "language": "en",
+      "title": "Soliman Bey and the Three Story Tellers",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "WISDOM",
+        "JUDGMENT",
+        "STORYTELLING"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "Soliman Bey and the Three Story Tellers"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-prince-khalaf-china",
+      "language": "en",
+      "title": "Prince Khalaf and the Princess of China",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "LOVE",
+        "COURAGE",
+        "ADVENTURE"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "Prince Khalaf and the Princess of China"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-wise-dey",
+      "language": "en",
+      "title": "The Wise Dey",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "JUSTICE",
+        "WISDOM",
+        "LEADERSHIP"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Wise Dey"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-tunisian-sage",
+      "language": "en",
+      "title": "The Tunisian Sage",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "GENEROSITY",
+        "CREDULITY",
+        "WISDOM"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Tunisian Sage"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    },
+    {
+      "id": "moral-en-nose-for-gold",
+      "language": "en",
+      "title": "The Nose for Gold",
+      "author": "Miss Pardoe / Eastern tale tradition",
+      "year": 1857,
+      "origin": "Arabian / Persian-influenced Eastern literary tradition",
+      "originalLanguage": "ar",
+      "sourceTextLanguage": "en",
+      "category": "MORAL_TALE",
+      "subcategories": [
+        "GREED",
+        "AMBITION",
+        "CONSEQUENCES"
+      ],
+      "ageBand": "8-14",
+      "rights": "PUBLIC_DOMAIN_USA_JURISDICTION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg — The Thousand and One Days",
+        "url": "https://www.gutenberg.org/ebooks/36301",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/36301/pg36301.txt",
+        "format": "plain-text historical edition",
+        "sourceSection": "The Nose for Gold"
+      },
+      "ingest": "project-gutenberg-extract",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      }
+    }
+  ]
+}
