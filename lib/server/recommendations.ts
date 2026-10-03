@@ -18,7 +18,7 @@ const typeTag:Record<string,string>={STORY:"Story",MYTHOLOGY:"Mythology",FOLKLOR
 async function loadCandidates(prisma:PrismaClient):Promise<Candidate[]>{
   const since=new Date(Date.now()-30*DAY);
   const [stories,works,storyPlays,workPlays,audioPlays]=await Promise.all([
-    prisma.story.findMany({where:{status:"PUBLISHED"},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,type:true,audience:true,narrationProfile:true,language:true,religionId:true,traditionId:true,createdAt:true,publishedAt:true,religion:{select:{name:true}}}}),
+    prisma.story.findMany({where:{status:"PUBLISHED",matureContent:false},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,type:true,audience:true,narrationProfile:true,language:true,religionId:true,traditionId:true,createdAt:true,publishedAt:true,religion:{select:{name:true}}}}),
     prisma.work.findMany({where:{status:"PUBLISHED"},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,edition:true,translator:true,language:true,religionId:true,traditionId:true,createdAt:true,religion:{select:{name:true}}}}),
     prisma.storyProgress.groupBy({by:["storyId"],where:{updatedAt:{gte:since}},_count:{_all:true}}),
     prisma.workProgress.groupBy({by:["workId"],where:{updatedAt:{gte:since}},_count:{_all:true}}),

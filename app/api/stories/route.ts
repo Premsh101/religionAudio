@@ -8,7 +8,7 @@ export async function GET(){
   if(!prisma) return NextResponse.json({stories:[]});
 
   const stories=await prisma.story.findMany({
-    where:{status:"PUBLISHED"},
+    where:{status:"PUBLISHED",matureContent:false},
     orderBy:{publishedAt:"desc"},
     take:50,
     select:{

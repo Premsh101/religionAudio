@@ -39,6 +39,10 @@ export default function StoriesPage(){
     </div>
    </section>}
 
+   <Link href="/stories/adult" className="mt-12 flex items-center justify-between gap-4 rounded-3xl border border-rose-300/15 bg-rose-300/[0.03] p-6 hover:border-rose-300/30">
+    <div><div className="flex items-center gap-2"><span className="rounded-full bg-rose-500 px-2.5 py-0.5 text-xs font-bold text-white">18+</span><span className="font-display text-xl">Stories for adults</span></div><p className="mt-2 text-sm text-zinc-500">Mature romance from classic literature and history. You'll be asked to confirm you are 18 or older.</p></div>
+    <span className="shrink-0 text-sm text-zinc-400">Enter →</span>
+   </Link>
   </section>
  </main>
 }

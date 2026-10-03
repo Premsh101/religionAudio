@@ -8,7 +8,9 @@ import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../..
 import { recordHistory } from "../../../lib/client/history";
 import CoverArt from "../../../components/CoverArt";
 
-type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;coverUrl?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
+type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;audioByLanguage?:Record<string,NarrationAssets>;language?:string;translations?:Record<string,string>;mature?:boolean;previewStatus?:string|null;coverUrl?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
+
+const LANG_NAMES:Record<string,string>={en:"English",hi:"हिन्दी",ar:"العربية",ur:"اردو"};
 
 const labels:Record<string,string>={
   ghost:"After-dark / atmospheric",
@@ -31,6 +33,13 @@ export default function StoryClient({story}:{story:Story}){
   const audioRef=useRef<HTMLAudioElement|null>(null);
 
   const label=labels[story.narration_profile]||"Natural";
+  const baseLang=story.language||"en";
+  const languages=[baseLang,...Object.keys(story.translations||{}).filter(l=>l!==baseLang&&story.translations?.[l])];
+  const [lang,setLang]=useState(baseLang);
+  const shownBody=lang===baseLang?story.body:(story.translations?.[lang]||story.body);
+  const rtl=lang==="ar"||lang==="ur";
+  // Narration voices exist for English and Hindi; Arabic/Urdu readers hear the English narration.
+  const narrationLang=lang==="hi"||lang===baseLang?lang:baseLang;
   const historyTarget=story.storyId?{kind:"story" as const,id:story.storyId,slug:story.slug,title:story.title,href:"/stories/"+story.slug}:undefined;
 
   useEffect(()=>{if(historyTarget)recordHistory(historyTarget);},[story.storyId]);
@@ -129,7 +138,7 @@ export default function StoryClient({story}:{story:Story}){
     <section className="mx-auto max-w-5xl px-5 pb-20 pt-6">
       <div className="glass rounded-[32px] p-7 md:p-12">
         <div className="flex items-start justify-between gap-5">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500"><span className="rounded-full border border-amber-300/15 bg-amber-300/5 px-3 py-1 text-amber-200">{story.tag}</span><span>{story.audience}</span><span>Age {story.age_min}+</span></div>
+          <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500"><span className="rounded-full border border-amber-300/15 bg-amber-300/5 px-3 py-1 text-amber-200">{story.tag}</span>{story.mature&&<span className="rounded-full bg-rose-500 px-2.5 py-1 font-bold text-white">18+</span>}{story.previewStatus&&<span className="rounded-full bg-zinc-700 px-2.5 py-1 text-zinc-200">Preview · {story.previewStatus.toLowerCase()}</span>}<span>{story.audience}</span><span>Age {story.age_min}+</span></div>
           <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save story"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 bg-white/[0.02] p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
         </div>
         {story.coverUrl&&<div className="mt-7 w-40 md:float-right md:mb-4 md:ml-8 md:mt-0 md:w-52"><CoverArt title={story.title} tag={story.tag} kind="story" coverUrl={story.coverUrl} size="md"/></div>}
@@ -140,15 +149,18 @@ export default function StoryClient({story}:{story:Story}){
           <div className="inline-flex items-center gap-2 rounded-2xl border border-white/10 px-4 py-3 text-xs text-zinc-500"><Volume2 className="h-4 w-4"/>{label}</div>
           <select value={speed} onChange={e=>setSpeed(Number(e.target.value))} className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-xs text-zinc-400 outline-none"><option value={0.8}>0.8×</option><option value={1}>1×</option><option value={1.2}>1.2×</option></select>
         </div>
-        {story.storyId&&<div className="mt-8"><NarrationPlayer title={story.title+" · full narration"} storyId={story.storyId} target={historyTarget} assets={story.audio||{}} voice={voice} onVoiceChange={setVoice}/></div>}
+        {story.storyId&&<div className="mt-8"><NarrationPlayer key={narrationLang} title={story.title+" · full narration"+(narrationLang!=="en"?` (${LANG_NAMES[narrationLang]||narrationLang})`:"")} storyId={story.storyId} target={historyTarget} language={narrationLang} assets={story.audioByLanguage?.[narrationLang]||story.audio||{}} voice={voice} onVoiceChange={setVoice}/>{narrationLang!==lang&&<p className="mt-2 text-xs text-zinc-500">Narration is available in English and Hindi; playing English.</p>}</div>}
         <div className="mt-7">
           <div className="flex items-center justify-between text-xs text-zinc-600"><span>Your reading progress</span><span>{Math.round(progress)}%</span></div>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/5"><div className="h-full rounded-full bg-amber-300" style={{width:String(Math.max(2,progress))+"%"}}/></div>
         </div>
       </div>
       {story.body && <article className="mt-5 glass rounded-3xl p-7 md:p-10">
-        <div className="text-xs uppercase tracking-[0.18em] text-zinc-600">Story</div>
-        <div className="mt-5 whitespace-pre-wrap font-display text-lg leading-9 text-zinc-200">{story.body}</div>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="text-xs uppercase tracking-[0.18em] text-zinc-600">Story</div>
+          {languages.length>1&&<div role="tablist" aria-label="Story language" className="flex flex-wrap gap-1 rounded-2xl border border-white/10 p-1">{languages.map(l=><button key={l} role="tab" aria-selected={lang===l} onClick={()=>setLang(l)} className={"rounded-xl px-3 py-1.5 text-xs "+(lang===l?"bg-white text-black":"text-zinc-400 hover:text-white")}>{LANG_NAMES[l]||l}</button>)}</div>}
+        </div>
+        <div lang={lang} dir={rtl?"rtl":"ltr"} className={"mt-5 whitespace-pre-wrap text-lg leading-9 text-zinc-200 "+(rtl?"text-right font-sans":"font-display")}>{shownBody}</div>
       </article>}
       {story.source&&<div className="mt-5 rounded-3xl border border-emerald-300/10 bg-emerald-300/[0.03] p-6"><div className="text-xs uppercase tracking-[0.18em] text-emerald-300">Source & rights</div><div className="mt-3 font-display text-lg">{story.source.name}</div><div className="mt-1 text-xs text-zinc-500">{story.source.license||story.source.rightsStatus}</div><a href={story.source.url} target="_blank" rel="noreferrer" className="mt-4 inline-flex text-xs text-zinc-300 hover:text-white">Open source record →</a></div>}
       <div className="mt-5 grid gap-5 md:grid-cols-2">

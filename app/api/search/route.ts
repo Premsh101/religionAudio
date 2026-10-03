@@ -32,6 +32,7 @@ export async function GET(request:NextRequest){
     prisma.story.findMany({
       where:{
         status:"PUBLISHED",
+        matureContent:false,
         OR:contains.map(term=>({OR:[
           {title:{contains:term,mode:"insensitive"}},
           {summary:{contains:term,mode:"insensitive"}},

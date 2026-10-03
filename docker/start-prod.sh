@@ -9,5 +9,8 @@ if [ -n "${ADMIN_EMAIL:-}" ]; then
   npx tsx scripts/create-admin.ts --from-env || echo "Admin bootstrap failed; continuing startup."
 fi
 
+echo "Importing story collections..."
+npx tsx scripts/import-corpus-stories.ts || echo "Story import failed; continuing startup."
+
 echo "Starting ReligionAudio..."
 exec npm start

@@ -25,7 +25,7 @@ export function VoiceToggle({voice,onChange}:{voice:VoiceChoice;onChange:(v:Voic
   </div>;
 }
 
-export default function NarrationPlayer({title,storyId,workId,assets,target,voice:controlledVoice,onVoiceChange}:{title:string;storyId?:string;workId?:string;assets:NarrationAssets;target?:NarrationTarget;voice?:VoiceChoice;onVoiceChange?:(v:VoiceChoice)=>void}){
+export default function NarrationPlayer({title,storyId,workId,assets,target,language,voice:controlledVoice,onVoiceChange}:{title:string;storyId?:string;workId?:string;assets:NarrationAssets;target?:NarrationTarget;language?:string;voice?:VoiceChoice;onVoiceChange?:(v:VoiceChoice)=>void}){
   const [ownVoice,setOwnVoice]=useVoicePreference();
   const voice=controlledVoice||ownVoice;
   const setVoice=onVoiceChange||setOwnVoice;
@@ -37,7 +37,7 @@ export default function NarrationPlayer({title,storyId,workId,assets,target,voic
   async function prepare(){
     setBusy(true);setError("");
     try{
-      const res=await fetch("/api/audio/request",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({storyId,workId,voice})});
+      const res=await fetch("/api/audio/request",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({storyId,workId,voice,language})});
       const data=await res.json().catch(()=>null);
       if(!res.ok||!data?.assetId)throw new Error(data?.error||"Narration is not available right now.");
       setKnown(k=>({...k,[voice]:data.assetId}));

@@ -4,6 +4,9 @@ import StoryClient from "./StoryClient";
 import stories from "../../../data/stories.seed.json";
 import { getPrisma } from "../../../lib/server/prisma";
 import { audioPublicUrl } from "../../../lib/audio-storage";
+import { hasAdultConsent } from "../../../lib/server/adult";
+import { getCurrentSessionUser } from "../../../lib/server/session";
+import AdultGate from "../../../components/AdultGate";
 import AppHeader from "../../../components/AppHeader";
 
 type StorySeed={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;status:string;body?:string};
@@ -20,15 +23,22 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
     select:{
       title:true,slug:true,type:true,audience:true,ageMin:true,ageMax:true,language:true,summary:true,body:true,status:true,narrationProfile:true,
       source:{select:{name:true,url:true,license:true,rightsStatus:true}},
-      id:true,coverImageKey:true,
-      audioAssets:{where:{status:{in:["QUEUED","PROCESSING","READY"]},voiceId:{in:["female","male"]}},orderBy:{createdAt:"desc"},select:{id:true,voiceId:true}}
+      id:true,coverImageKey:true,matureContent:true,translations:true,collection:true,
+      audioAssets:{where:{status:{in:["QUEUED","PROCESSING","READY"]},voiceId:{in:["female","male"]}},orderBy:{createdAt:"desc"},select:{id:true,voiceId:true,language:true}}
     }
   }).catch(()=>null) : null;
 
   if(dbStory){
-    if(dbStory.status!=="PUBLISHED"){
+    const viewer=dbStory.status!=="PUBLISHED"?await getCurrentSessionUser():null;
+    const canPreview=viewer?.role==="ADMIN"||viewer?.role==="EDITOR";
+    if(dbStory.status!=="PUBLISHED"&&!canPreview){
       return <main className="min-h-screen bg-zinc-950"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><p className="mt-4 text-xs uppercase tracking-[0.18em] text-zinc-600">Editorial status · {dbStory.status}</p><h1 className="mt-2 font-display text-3xl">{dbStory.title}</h1><p className="mt-3 text-sm leading-6 text-zinc-500">This story is not published yet. Readers will see it here after editorial review and publication.</p><Link href="/stories" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><ArrowLeft className="h-4 w-4"/>Back to stories</Link></div></section></main>;
     }
+    if(dbStory.matureContent&&!(await hasAdultConsent())){
+      return <main className="min-h-screen bg-zinc-950"><AppHeader/><AdultGate title={dbStory.title}/></main>;
+    }
+    const assetsFor=(lang:string)=>({female:dbStory.audioAssets.find(a=>a.voiceId==="female"&&a.language===lang)?.id||null,male:dbStory.audioAssets.find(a=>a.voiceId==="male"&&a.language===lang)?.id||null});
+    const translations=(dbStory.translations&&typeof dbStory.translations==="object"&&!Array.isArray(dbStory.translations)?dbStory.translations:{}) as Record<string,string>;
     return <StoryClient story={{
       title:dbStory.title,
       slug:dbStory.slug,
@@ -44,7 +54,12 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
       source:dbStory.source,
       storyId:dbStory.id,
       coverUrl:dbStory.coverImageKey?audioPublicUrl(dbStory.coverImageKey):null,
-      audio:{female:dbStory.audioAssets.find(a=>a.voiceId==="female")?.id||null,male:dbStory.audioAssets.find(a=>a.voiceId==="male")?.id||null}
+      audio:assetsFor(dbStory.language),
+      audioByLanguage:{[dbStory.language]:assetsFor(dbStory.language),hi:assetsFor("hi")},
+      language:dbStory.language,
+      translations,
+      mature:dbStory.matureContent,
+      previewStatus:dbStory.status!=="PUBLISHED"?dbStory.status:null
     }}/>;
   }
 
