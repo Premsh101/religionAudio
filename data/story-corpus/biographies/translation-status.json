@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "category": "BIOGRAPHIES_AND_LIFE_STORIES",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "records": [
+    {
+      "id": "biography-muhammad-early-life",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-buddha-renunciation",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-mahavira-renunciation",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-guru-nanak-awakening",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-confucius-teacher",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-rumi-shams",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-ibn-sina-healer-scholar",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-al-biruni-india",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-tagore-shantiniketan",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-marie-curie-radium",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-apj-abdul-kalam-dreams",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "biography-kabir-weaver-poet",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    }
+  ]
+}
