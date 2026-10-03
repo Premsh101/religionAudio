@@ -1,3 +1,4 @@
+import { NARRATION_BY_CATEGORY } from "./narration";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -10,10 +11,8 @@ const TYPE_BY_COLLECTION:Record<string,string>={
   romance:"STORY","friendship-family":"STORY","war-courage":"HISTORICAL_ACCOUNT",survival:"STORY",inspirational:"BIOGRAPHY",
   adult:"STORY",folklore:"FOLKLORE",ghost:"GHOST_STORY",children:"STORY"
 };
-const PROFILE_BY_COLLECTION:Record<string,string>={
-  epics:"MYTHOLOGY",mythology:"MYTHOLOGY",adventure:"FOLKLORE",parables:"MORAL_TALE","moral-tales":"MORAL_TALE",festivals:"FOLKLORE",
-  romance:"FOLKLORE","friendship-family":"MORAL_TALE",folklore:"FOLKLORE",ghost:"GHOST",children:"KIDS",survival:"THRILLER"
-};
+/** Narration style per collection, from the shared category map (DB enum names). */
+export function profileForCollection(collection:string){return (NARRATION_BY_CATEGORY[collection]||"default").toUpperCase().replace(/-/g,"_")}
 
 export function parseAgeBand(band?:string){
   const m=(band||"").match(/(\d+)\s*(?:-\s*(\d+)|\+)?/);
@@ -61,7 +60,7 @@ export function toStoryFields(collection:string,r:CorpusRecord){
     language:"en",
     body:t.en,
     summary:summaryFrom(t.en),
-    narrationProfile:PROFILE_BY_COLLECTION[collection]||"DEFAULT",
+    narrationProfile:profileForCollection(collection),
     contentWarnings:Array.isArray(r.contentWarnings)?r.contentWarnings.map(String):[],
     matureContent:mature,
     translations:Object.keys(translations).length?translations:null,

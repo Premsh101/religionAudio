@@ -17,7 +17,7 @@ import { CATEGORY_STYLE, categoryLabelKey, fallbackCover, type CategoryKey } fro
 type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;audioByLanguage?:Record<string,NarrationAssets>;language?:string;translations?:Record<string,string>;mature?:boolean;previewStatus?:string|null;coverUrl?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null;category:CategoryKey};
 
 const LANG_NAMES:Record<string,string>={en:"English",hi:"हिन्दी",ar:"العربية",ur:"اردو"};
-const VOICE_LABEL:Record<string,string>={ghost:"Atmospheric",mythology:"Cinematic",folklore:"Oral storytelling",kids:"Warm & playful","moral-tale":"Bright",scripture:"Calm",mystery:"Composed",thriller:"Taut"};
+const VOICE_LABEL:Record<string,string>={ghost:"Atmospheric",mythology:"Cinematic",folklore:"Oral storytelling",kids:"Warm & playful","moral-tale":"Bright",scripture:"Calm",mystery:"Composed",thriller:"Taut",romance:"Tender",sensual:"Intimate",documentary:"Documentary",inspirational:"Uplifting",devotional:"Serene",adventure:"Vivid"};
 
 export default function StoryClient({story}:{story:Story}){
   const {t,locale}=useApp();

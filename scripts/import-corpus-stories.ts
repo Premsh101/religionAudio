@@ -17,9 +17,10 @@ async function main(){
       const f=toStoryFields(collection,record);
       if(!f.body){skipped++;continue}
       const shared={collection:f.collection,type:f.type as never,audience:f.audience as never,ageMin:f.ageMin,ageMax:f.ageMax,body:f.body,contentWarnings:f.contentWarnings,matureContent:f.matureContent,translations:f.translations??undefined};
-      const existing=await prisma.story.findUnique({where:{corpusId:f.corpusId},select:{id:true}});
+      const existing=await prisma.story.findUnique({where:{corpusId:f.corpusId},select:{id:true,narrationProfile:true}});
       if(existing){
-        await prisma.story.update({where:{id:existing.id},data:shared});
+        // A story still on the generic style picks up its collection's style; a hand-picked style is kept.
+        await prisma.story.update({where:{id:existing.id},data:{...shared,...(existing.narrationProfile==="DEFAULT"?{narrationProfile:f.narrationProfile as never}:{})}});
         updated++;
       }else{
         const slugTaken=await prisma.story.findUnique({where:{slug:f.corpusId},select:{id:true}});

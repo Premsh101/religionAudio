@@ -1,5 +1,5 @@
 import { PrismaClient } from "../generated/prisma/client";
-import { narrationProfileFor, normalizeProfile } from "./narration";
+import { NARRATION_BY_CATEGORY, narrationProfileFor, normalizeProfile } from "./narration";
 
 export type AudioSource={text:string;profile:string;language:string;title:string;kind:"work"|"story"|"content"};
 
@@ -9,7 +9,7 @@ export async function resolveAudioSource(prisma:PrismaClient,asset:any):Promise<
     if(!story)throw new Error("Story not found");
     const translations=(story.translations&&typeof story.translations==="object"?story.translations:{}) as Record<string,string>;
     const wanted=asset.language&&asset.language!==story.language?translations[asset.language]:undefined;
-    return {text:wanted||story.scenes.map((s:any)=>s.text).join("\n\n")||story.body,profile:normalizeProfile(story.narrationProfile)!=="default"?normalizeProfile(story.narrationProfile):narrationProfileFor(story.type,story.audience),language:asset.language||"en",title:story.title,kind:"story"};
+    return {text:wanted||story.scenes.map((s:any)=>s.text).join("\n\n")||story.body,profile:normalizeProfile(story.narrationProfile)!=="default"?normalizeProfile(story.narrationProfile):story.matureContent?"sensual":(story.collection&&NARRATION_BY_CATEGORY[story.collection])||narrationProfileFor(story.type,story.audience),language:asset.language||"en",title:story.title,kind:"story"};
   }
   if(asset.contentId){
     const content=await prisma.contentItem.findUnique({where:{id:asset.contentId}});

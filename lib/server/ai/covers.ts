@@ -66,6 +66,7 @@ Think like a cover designer, not a scene illustrator:
 - Describe what to paint concretely: who (age, build, clothing, hair), where (place, era, architecture or landscape), which objects. Make clothing, architecture, landscape and art influences accurate to the story's region and era.
 - The top third of the cover must stay calm and simple (sky, mist, plain backdrop) because the title is added later as type. Never ask for any text in the image.
 - Children's stories: friendly and gentle. Ghost stories: eerie but never gory. War: courage, not violence. Romance: tasteful, fully clothed.
+- Adult (18+) romance: make it alluring and sensual like a bestselling romance cover that makes adults want to pick it up: an attractive adult couple in a passionate embrace or near-kiss, bare shoulders, loosened period clothing, intense gazes, warm glowing light. Suggestive, never explicit: no exposed breasts, buttocks or genitals and no sexual acts. Everyone clearly adult (25+). Never use religious or sacred figures in adult covers.
 - Religion: deities only with traditional, respectful iconography. Never depict the Prophet Muhammad, other prophets of Islam, angels, or God in traditions that forbid it; use architecture, light, landscape and objects instead. Never show sacred figures in disrespectful, sexualised or violent ways.
 - No real living people, no celebrities, no copyrighted characters or brands.
 Write all fields in English.`;
