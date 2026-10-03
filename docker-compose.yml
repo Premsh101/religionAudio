@@ -43,8 +43,6 @@ services:
         condition: service_healthy
       tts:
         condition: service_healthy
-      audio-worker:
-        condition: service_started
     healthcheck:
       test: ["CMD","node","-e","fetch('http://localhost:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
       interval: 20s
