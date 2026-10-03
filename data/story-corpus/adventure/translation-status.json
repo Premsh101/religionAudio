@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "targetLanguages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "recordCount": 13,
+  "records": [
+    {
+      "storyId": "adventure-treasure-island-map",
+      "title": "The Treasure Map",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-around-world-race",
+      "title": "Around the World in Eighty Days",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-prisoner-zenda-rescue",
+      "title": "The Rescue at Zenda",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-swiss-family-shipwreck",
+      "title": "The Family Survives the Shipwreck",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-solomon-mines-quest",
+      "title": "The Search for King Solomon's Mines",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-jules-verne-earth",
+      "title": "Journey to the Center of the Earth",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-tom-sawyer-cave",
+      "title": "Tom Sawyer and the Cave",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-robin-hood-outlaw",
+      "title": "Robin Hood and the Forest",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-three-musketeers-friendship",
+      "title": "The Three Musketeers and the New Companion",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-last-mohicans-escape",
+      "title": "The Journey Through the Wilderness",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-king-arthur-sword",
+      "title": "Arthur and the Sword in the Stone",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-sindbad-first-voyage",
+      "title": "Sindbad's First Voyage",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "storyId": "adventure-chandrakanta-tilism",
+      "title": "The Secret Passage of Chandrakanta",
+      "status": "TEXT_PRESENT_ALL_LANGUAGES",
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}
