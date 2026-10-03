@@ -13,6 +13,11 @@
     {
       "id": "festival-diwali-rama-return",
       "title": "The Lamps of Ayodhya: Rama Returns",
+      "titles": {
+        "hi": "अयोध्या के दीप: राम की घर वापसी",
+        "ar": "قناديل أيودهيا: عودة راما",
+        "ur": "ایودھیا کے دیے: رام کی واپسی"
+      },
       "tradition": "Ramayana / North Indian Diwali tradition",
       "origin": "India",
       "tags": [
@@ -37,6 +42,11 @@
     {
       "id": "festival-holi-prahlada-holika",
       "title": "Prahlada, Holika, and the Fire of Holi",
+      "titles": {
+        "hi": "प्रह्लाद, होलिका और होली की अग्नि",
+        "ar": "براهلادا وهوليكا ونار هولي",
+        "ur": "پرہلاد، ہولیکا اور ہولی کی آگ"
+      },
       "tradition": "Hindu Purana and Holi tradition",
       "origin": "India",
       "tags": [
@@ -61,6 +71,11 @@
     {
       "id": "festival-janmashtami-krishna-birth",
       "title": "Krishna's Birth in the Night",
+      "titles": {
+        "hi": "आधी रात कृष्ण जन्म",
+        "ar": "مولد كريشنا في الليل",
+        "ur": "رات میں کرشن کا جنم"
+      },
       "tradition": "Bhagavata / Krishna devotional tradition",
       "origin": "India",
       "tags": [
@@ -84,6 +99,11 @@
     {
       "id": "festival-ganesh-chaturthi-birth",
       "title": "Ganesha: The Child at the Door",
+      "titles": {
+        "hi": "गणेश: द्वार पर खड़ा बालक",
+        "ar": "غانيشا: الطفل على الباب",
+        "ur": "گنیش: دروازے پر کھڑا بچہ"
+      },
       "tradition": "Shaiva / Ganesha Puranic tradition and Ganesh Chaturthi",
       "origin": "India",
       "tags": [
@@ -108,6 +128,11 @@
     {
       "id": "festival-onam-mahabali-return",
       "title": "Onam: Mahabali Comes Home Again",
+      "titles": {
+        "hi": "ओणम: महाबली फिर घर आए",
+        "ar": "أونام: عودة ماهابالي إلى دياره",
+        "ur": "اونم: مہابلی پھر گھر آئے"
+      },
       "tradition": "Kerala Onam / Mahabali-Vamana tradition",
       "origin": "Kerala, India",
       "tags": [
@@ -132,6 +157,11 @@
     {
       "id": "festival-vaisakhi-khalsa-1699",
       "title": "Vaisakhi at Anandpur: The Khalsa Is Formed",
+      "titles": {
+        "hi": "आनंदपुर की वैसाखी: ख़ालसा का जन्म",
+        "ar": "فيساكي في أناندبور: ميلاد الخالصة",
+        "ur": "آنندپور کی ویساکھی: خالصہ کی تشکیل"
+      },
       "tradition": "Sikh history / Khalsa tradition",
       "origin": "Anandpur Sahib, Punjab",
       "tags": [
@@ -157,6 +187,11 @@
     {
       "id": "festival-vesak-buddha-life",
       "title": "Vesak: Remembering the Buddha's Life",
+      "titles": {
+        "hi": "वेसाक: बुद्ध के जीवन का स्मरण",
+        "ar": "فيساك: ذكرى حياة بوذا",
+        "ur": "ویساک: بدھ کی زندگی کی یاد"
+      },
       "tradition": "Buddhist Vesak / Buddha Purnima",
       "origin": "South and Southeast Asia",
       "tags": [
@@ -180,6 +215,11 @@
     {
       "id": "festival-eid-fitr-day-of-return",
       "title": "Eid al-Fitr: The Morning After Ramadan",
+      "titles": {
+        "hi": "ईद-उल-फ़ितर: रमज़ान के बाद की सुबह",
+        "ar": "عيد الفطر: صباح ما بعد رمضان",
+        "ur": "عید الفطر: رمضان کے بعد کی صبح"
+      },
       "tradition": "Islamic festival tradition",
       "origin": "Muslim communities worldwide",
       "tags": [
@@ -204,6 +244,11 @@
     {
       "id": "festival-christmas-nativity",
       "title": "The Nativity: A Child in Bethlehem",
+      "titles": {
+        "hi": "ईसा का जन्म: बेथलेहेम का बालक",
+        "ar": "الميلاد: طفل في بيت لحم",
+        "ur": "ولادتِ مسیح: بیت لحم کا ایک بچہ"
+      },
       "tradition": "Christian Gospel tradition",
       "origin": "Christianity / Judea",
       "tags": [
@@ -227,6 +272,11 @@
     {
       "id": "festival-easter-resurrection",
       "title": "Easter Morning: The Empty Tomb",
+      "titles": {
+        "hi": "ईस्टर की सुबह: ख़ाली क़ब्र",
+        "ar": "صباح الفصح: القبر الفارغ",
+        "ur": "ایسٹر کی صبح: خالی قبر"
+      },
       "tradition": "Christian Gospel tradition",
       "origin": "Christianity / Jerusalem",
       "tags": [
@@ -250,6 +300,11 @@
     {
       "id": "festival-hanukkah-rededication",
       "title": "Hanukkah: The Temple Is Rededicated",
+      "titles": {
+        "hi": "हनुक्का: मंदिर का पुनः समर्पण",
+        "ar": "حانوكا: إعادة تكريس الهيكل",
+        "ur": "حنوکا: ہیکل کی دوبارہ تقدیس"
+      },
       "tradition": "Second Temple / Maccabean and rabbinic tradition",
       "origin": "Judea",
       "tags": [
@@ -273,6 +328,11 @@
     {
       "id": "festival-passover-exodus",
       "title": "Passover: The Night of Leaving Egypt",
+      "titles": {
+        "hi": "पासओवर: मिस्र से विदा की रात",
+        "ar": "عيد الفصح اليهودي: ليلة الخروج من مصر",
+        "ur": "عیدِ فسح: مصر سے روانگی کی رات"
+      },
       "tradition": "Torah / Jewish Passover tradition",
       "origin": "Ancient Israel / Egypt narrative",
       "tags": [
@@ -296,6 +356,11 @@
     {
       "id": "festival-nowruz-spring-renewal",
       "title": "Nowruz: The New Day of Spring",
+      "titles": {
+        "hi": "नौरोज़: बसंत का नया दिन",
+        "ar": "نوروز: يوم الربيع الجديد",
+        "ur": "نوروز: بہار کا نیا دن"
+      },
       "tradition": "Persian / Iranian New Year tradition",
       "origin": "Iran and wider Persianate world",
       "tags": [

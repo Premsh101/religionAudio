@@ -11,8 +11,8 @@ export async function POST(request:NextRequest){
   if(typeof identifier!=="string"||typeof password!=="string"){
     return NextResponse.json({error:"Email/phone and password are required."},{status:400});
   }
-  if(!validateIdentifier(identifier)) return NextResponse.json({error:"Enter a valid email address or phone number."},{status:400});
-  if(!validatePassword(password)) return NextResponse.json({error:"Password must be 8-128 characters."},{status:400});
+  if(!validateIdentifier(identifier)) return NextResponse.json({error:"Enter a valid email address or phone number.",code:"bad_identifier"},{status:400});
+  if(!validatePassword(password)) return NextResponse.json({error:"Password must be 8-128 characters.",code:"bad_password"},{status:400});
 
   const prisma=getPrisma();
   if(!prisma) return NextResponse.json({error:"Database is not configured yet."},{status:503});
@@ -21,7 +21,7 @@ export async function POST(request:NextRequest){
   const existing=await prisma.user.findFirst({
     where:normalized.type==="email"?{email:normalized.value}:{phone:normalized.value}
   });
-  if(existing) return NextResponse.json({error:"An account already exists with this email/phone."},{status:409});
+  if(existing) return NextResponse.json({error:"An account already exists with this email/phone.",code:"exists"},{status:409});
 
   const user=await prisma.user.create({
     data:{

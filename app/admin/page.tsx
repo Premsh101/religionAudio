@@ -66,11 +66,11 @@ export default function AdminPage(){
     if(!selected && data.story) edit({...data.story,publishedAt:data.story.publishedAt||null});
   }
 
-  if(loading) return <main className="min-h-screen bg-zinc-950"><AppHeader/><div className="mx-auto max-w-6xl px-5 py-16 text-sm text-zinc-500">Loading editorial workspace…</div></main>;
+  if(loading) return <main className="min-h-screen"><AppHeader/><div className="mx-auto max-w-6xl px-5 py-16 text-sm text-zinc-500">Loading editorial workspace…</div></main>;
 
-  if(!user || (user.role!=="ADMIN" && user.role!=="EDITOR")) return <main className="min-h-screen bg-zinc-950"><AppHeader/><div className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><h1 className="mt-4 font-display text-3xl">Editorial access only</h1><p className="mt-3 text-sm leading-6 text-zinc-500">This workspace is available to editors and administrators. Normal reader accounts stay separate.</p><Link href="/" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><ArrowLeft className="h-4 w-4"/>Back home</Link></div></div></main>;
+  if(!user || (user.role!=="ADMIN" && user.role!=="EDITOR")) return <main className="min-h-screen"><AppHeader/><div className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><h1 className="mt-4 font-display text-3xl">Editorial access only</h1><p className="mt-3 text-sm leading-6 text-zinc-500">This workspace is available to editors and administrators. Normal reader accounts stay separate.</p><Link href="/" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><ArrowLeft className="h-4 w-4"/>Back home</Link></div></div></main>;
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <section className="mx-auto max-w-7xl px-5 py-10">
       <div className="flex flex-wrap items-end justify-between gap-5">

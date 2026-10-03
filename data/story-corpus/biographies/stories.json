@@ -13,6 +13,11 @@
     {
       "id": "biography-muhammad-early-life",
       "title": "Muhammad: From Mecca to the Beginning of a New Community",
+      "titles": {
+        "hi": "मुहम्मद: मक्का से एक नए समुदाय की शुरुआत तक",
+        "ar": "محمد: من مكة إلى بداية مجتمع جديد",
+        "ur": "حضرت محمد ﷺ: مکہ سے ایک نئی امت کے آغاز تک"
+      },
       "tradition": "Islamic biography / Sirah tradition",
       "origin": "Arabia",
       "tags": [
@@ -37,6 +42,11 @@
     {
       "id": "biography-buddha-renunciation",
       "title": "Gautama Buddha: The Search for Awakening",
+      "titles": {
+        "hi": "गौतम बुद्ध: बोध की खोज",
+        "ar": "غوتاما بوذا: البحث عن الاستنارة",
+        "ur": "گوتم بدھ: نروان کی تلاش"
+      },
       "tradition": "Buddhist biography tradition",
       "origin": "Ancient South Asia",
       "tags": [
@@ -60,6 +70,11 @@
     {
       "id": "biography-mahavira-renunciation",
       "title": "Mahavira: The Life of Renunciation",
+      "titles": {
+        "hi": "महावीर: त्याग का जीवन",
+        "ar": "مهافيرا: حياة الزهد",
+        "ur": "مہاویر: ترکِ دنیا کی زندگی"
+      },
       "tradition": "Jain biography tradition",
       "origin": "Ancient Bihar and the Gangetic plain",
       "tags": [
@@ -84,6 +99,11 @@
     {
       "id": "biography-guru-nanak-awakening",
       "title": "Guru Nanak: From Talwandi to Kartarpur",
+      "titles": {
+        "hi": "गुरु नानक: तलवंडी से करतारपुर तक",
+        "ar": "غورو ناناك: من تالواندي إلى كارتاربور",
+        "ur": "گرو نانک: تلونڈی سے کرتارپور تک"
+      },
       "tradition": "Sikh tradition and early Sikh history",
       "origin": "Punjab",
       "tags": [
@@ -107,6 +127,11 @@
     {
       "id": "biography-confucius-teacher",
       "title": "Confucius: The Teacher Who Travelled",
+      "titles": {
+        "hi": "कन्फ़्यूशियस: यात्री गुरु",
+        "ar": "كونفوشيوس: المعلم الرحّالة",
+        "ur": "کنفیوشس: سفر کرنے والا استاد"
+      },
       "tradition": "Confucius / Analects and early biographies",
       "origin": "Ancient China",
       "tags": [
@@ -130,6 +155,11 @@
     {
       "id": "biography-rumi-shams",
       "title": "Rumi and the Meeting with Shams",
+      "titles": {
+        "hi": "रूमी और शम्स से मुलाक़ात",
+        "ar": "الرومي ولقاء شمس",
+        "ur": "رومی اور شمس سے ملاقات"
+      },
       "tradition": "Jalal al-Din Rumi / Persian Sufi tradition",
       "origin": "Persia and Anatolia",
       "tags": [
@@ -153,6 +183,11 @@
     {
       "id": "biography-ibn-sina-healer-scholar",
       "title": "Ibn Sina: The Scholar Who Served as a Physician",
+      "titles": {
+        "hi": "इब्न सीना: विद्वान जो हकीम बने",
+        "ar": "ابن سينا: العالِم الطبيب",
+        "ur": "ابنِ سینا: عالم جو طبیب بنا"
+      },
       "tradition": "Ibn Sina / Avicenna",
       "origin": "Central Asia and Persia",
       "tags": [
@@ -177,6 +212,11 @@
     {
       "id": "biography-al-biruni-india",
       "title": "Al-Biruni: A Scholar Studies India",
+      "titles": {
+        "hi": "अल-बिरूनी: एक विद्वान की नज़र में भारत",
+        "ar": "البيروني: عالِم يدرس الهند",
+        "ur": "البیرونی: ایک عالم ہندوستان کا مطالعہ کرتا ہے"
+      },
       "tradition": "Al-Biruni / Islamic Golden Age",
       "origin": "Khwarazm, Ghazni and South Asia",
       "tags": [
@@ -201,6 +241,11 @@
     {
       "id": "biography-tagore-shantiniketan",
       "title": "Rabindranath Tagore: Poetry and a New Kind of School",
+      "titles": {
+        "hi": "रवींद्रनाथ टैगोर: कविता और एक नई तरह का विद्यालय",
+        "ar": "رابندرانات طاغور: الشعر ومدرسة من نوع جديد",
+        "ur": "رابندر ناتھ ٹیگور: شاعری اور ایک نئی طرز کا مدرسہ"
+      },
       "tradition": "Rabindranath Tagore",
       "origin": "Bengal, India",
       "tags": [
@@ -225,6 +270,11 @@
     {
       "id": "biography-marie-curie-radium",
       "title": "Marie Curie: The Long Road to Radium",
+      "titles": {
+        "hi": "मैरी क्यूरी: रेडियम तक का लंबा सफ़र",
+        "ar": "ماري كوري: الطريق الطويل إلى الراديوم",
+        "ur": "میری کیوری: ریڈیم تک کا طویل سفر"
+      },
       "tradition": "Marie Curie / history of science",
       "origin": "Poland and France",
       "tags": [
@@ -249,6 +299,11 @@
     {
       "id": "biography-apj-abdul-kalam-dreams",
       "title": "A.P.J. Abdul Kalam: From Rameswaram to the Presidency",
+      "titles": {
+        "hi": "ए.पी.जे. अब्दुल कलाम: रामेश्वरम से राष्ट्रपति भवन तक",
+        "ar": "عبد الكلام: من راميسوارام إلى الرئاسة",
+        "ur": "اے پی جے عبدالکلام: رامیشورم سے ایوانِ صدر تک"
+      },
       "tradition": "Dr. A.P.J. Abdul Kalam",
       "origin": "India",
       "tags": [
@@ -272,6 +327,11 @@
     {
       "id": "biography-kabir-weaver-poet",
       "title": "Kabir: The Weaver and the Poet",
+      "titles": {
+        "hi": "कबीर: जुलाहा और कवि",
+        "ar": "كبير: الحائك والشاعر",
+        "ur": "کبیر: جولاہا اور شاعر"
+      },
       "tradition": "Kabir / Bhakti and Sufi-associated traditions",
       "origin": "North India",
       "tags": [

@@ -8,6 +8,7 @@ import { hasAdultConsent } from "../../../lib/server/adult";
 import { getCurrentSessionUser } from "../../../lib/server/session";
 import AdultGate from "../../../components/AdultGate";
 import AppHeader from "../../../components/AppHeader";
+import { asTranslations } from "../../../lib/story-i18n";
 
 type StorySeed={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;status:string;body?:string};
 
@@ -32,13 +33,13 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
     const viewer=dbStory.status!=="PUBLISHED"?await getCurrentSessionUser():null;
     const canPreview=viewer?.role==="ADMIN"||viewer?.role==="EDITOR";
     if(dbStory.status!=="PUBLISHED"&&!canPreview){
-      return <main className="min-h-screen bg-zinc-950"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><p className="mt-4 text-xs uppercase tracking-[0.18em] text-zinc-600">Editorial status · {dbStory.status}</p><h1 className="mt-2 font-display text-3xl">{dbStory.title}</h1><p className="mt-3 text-sm leading-6 text-zinc-500">This story is not published yet. Readers will see it here after editorial review and publication.</p><Link href="/stories" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><ArrowLeft className="h-4 w-4"/>Back to stories</Link></div></section></main>;
+      return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><p className="mt-4 text-xs uppercase tracking-[0.18em] text-zinc-600">Editorial status · {dbStory.status}</p><h1 className="mt-2 font-display text-3xl">{dbStory.title}</h1><p className="mt-3 text-sm leading-6 text-zinc-500">This story is not published yet. Readers will see it here after editorial review and publication.</p><Link href="/stories" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><ArrowLeft className="h-4 w-4"/>Back to stories</Link></div></section></main>;
     }
     if(dbStory.matureContent&&!(await hasAdultConsent())){
-      return <main className="min-h-screen bg-zinc-950"><AppHeader/><AdultGate title={dbStory.title}/></main>;
+      return <main className="min-h-screen"><AppHeader/><AdultGate title={dbStory.title}/></main>;
     }
     const assetsFor=(lang:string)=>({female:dbStory.audioAssets.find(a=>a.voiceId==="female"&&a.language===lang)?.id||null,male:dbStory.audioAssets.find(a=>a.voiceId==="male"&&a.language===lang)?.id||null});
-    const translations=(dbStory.translations&&typeof dbStory.translations==="object"&&!Array.isArray(dbStory.translations)?dbStory.translations:{}) as Record<string,string>;
+    const translations=asTranslations(dbStory.translations);
     return <StoryClient story={{
       title:dbStory.title,
       slug:dbStory.slug,
@@ -64,7 +65,7 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
   }
 
   const story=(stories as StorySeed[]).find(item=>item.slug===slug);
-  if(!story) return <main className="min-h-screen bg-zinc-950"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><h1 className="font-display text-3xl">Story not found</h1><Link href="/stories" className="mt-6 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white"><ArrowLeft className="h-4 w-4"/>Back to stories</Link></div></section></main>;
+  if(!story) return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><h1 className="font-display text-3xl">Story not found</h1><Link href="/stories" className="mt-6 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white"><ArrowLeft className="h-4 w-4"/>Back to stories</Link></div></section></main>;
 
   return <StoryClient story={{
     title:story.title,

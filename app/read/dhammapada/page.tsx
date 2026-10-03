@@ -116,7 +116,7 @@ export default function DhammapadaReader(){
     }finally{setBusy(false)}
   }
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
       <Link href="/library" className="text-sm text-zinc-500 hover:text-white">← Library</Link>

@@ -13,6 +13,11 @@
     {
       "id": "historical-ashoka-after-kalinga",
       "title": "Ashoka After Kalinga",
+      "titles": {
+        "hi": "कलिंग के बाद अशोक",
+        "ar": "أشوكا بعد كالينغا",
+        "ur": "کلنگ کے بعد اشوک"
+      },
       "tradition": "Mauryan India / Edict XIII tradition",
       "origin": "Ancient India",
       "tags": [
@@ -37,6 +42,11 @@
     {
       "id": "historical-rani-lakshmibai-jhansi",
       "title": "Lakshmibai and the Defence of Jhansi",
+      "titles": {
+        "hi": "लक्ष्मीबाई और झाँसी की रक्षा",
+        "ar": "لاكشميباي والدفاع عن جانسي",
+        "ur": "لکشمی بائی اور جھانسی کا دفاع"
+      },
       "tradition": "Rani Lakshmibai / Indian Rebellion of 1857",
       "origin": "India",
       "tags": [
@@ -61,6 +71,11 @@
     {
       "id": "historical-mansa-musa-hajj",
       "title": "Mansa Musa's Journey to Mecca",
+      "titles": {
+        "hi": "मनसा मूसा की मक्का यात्रा",
+        "ar": "رحلة منسا موسى إلى مكة",
+        "ur": "منسا موسیٰ کا سفرِ مکہ"
+      },
       "tradition": "Mansa Musa of Mali / Hajj of 1324-25",
       "origin": "Mali and the Islamic world",
       "tags": [
@@ -85,6 +100,11 @@
     {
       "id": "historical-zheng-he-calicut",
       "title": "Zheng He Reaches the Indian Ocean",
+      "titles": {
+        "hi": "झेंग ह हिंद महासागर पहुँचे",
+        "ar": "تشنغ خه يبلغ المحيط الهندي",
+        "ur": "ژینگ ہی بحرِ ہند میں"
+      },
       "tradition": "Zheng He / Ming treasure voyages",
       "origin": "China and Indian Ocean world",
       "tags": [
@@ -109,6 +129,11 @@
     {
       "id": "historical-ibn-battuta-delhi",
       "title": "Ibn Battuta Arrives in Delhi",
+      "titles": {
+        "hi": "इब्न बतूता दिल्ली पहुँचे",
+        "ar": "ابن بطوطة يصل إلى دلهي",
+        "ur": "ابنِ بطوطہ دہلی میں"
+      },
       "tradition": "Ibn Battuta / Rihla",
       "origin": "Morocco, India and the wider Islamic world",
       "tags": [
@@ -133,6 +158,11 @@
     {
       "id": "historical-joan-orleans",
       "title": "Joan of Arc and the Relief of Orléans",
+      "titles": {
+        "hi": "जोन ऑफ़ आर्क और ऑरलियंस की मुक्ति",
+        "ar": "جان دارك وفك حصار أورليان",
+        "ur": "جون آف آرک اور اورلیان کی رہائی"
+      },
       "tradition": "Joan of Arc / Hundred Years' War",
       "origin": "France",
       "tags": [
@@ -157,6 +187,11 @@
     {
       "id": "historical-caesar-rubicon",
       "title": "Caesar Crosses the Rubicon",
+      "titles": {
+        "hi": "सीज़र ने रूबिकॉन पार की",
+        "ar": "قيصر يعبر الروبيكون",
+        "ur": "سیزر نے روبیکون پار کیا"
+      },
       "tradition": "Julius Caesar / Roman Republic",
       "origin": "Ancient Rome",
       "tags": [
@@ -181,6 +216,11 @@
     {
       "id": "historical-hannibal-alps",
       "title": "Hannibal Crosses the Alps",
+      "titles": {
+        "hi": "हैनिबल ने आल्प्स पार किए",
+        "ar": "هانيبال يعبر جبال الألب",
+        "ur": "ہنی بال نے الپس پار کیے"
+      },
       "tradition": "Hannibal / Second Punic War",
       "origin": "Carthage, Iberia, Gaul and Italy",
       "tags": [
@@ -205,6 +245,11 @@
     {
       "id": "historical-saladin-jerusalem",
       "title": "Saladin and Jerusalem, 1187",
+      "titles": {
+        "hi": "सलाहुद्दीन और यरूशलम, 1187",
+        "ar": "صلاح الدين والقدس، 1187",
+        "ur": "صلاح الدین اور یروشلم، ۱۱۸۷ء"
+      },
       "tradition": "Saladin / Ayyubid reconquest of Jerusalem",
       "origin": "Middle East",
       "tags": [
@@ -229,6 +274,11 @@
     {
       "id": "historical-socrates-final-day",
       "title": "Socrates' Final Day in Athens",
+      "titles": {
+        "hi": "एथेंस में सुकरात का अंतिम दिन",
+        "ar": "يوم سقراط الأخير في أثينا",
+        "ur": "ایتھنز میں سقراط کا آخری دن"
+      },
       "tradition": "Socrates / Athenian trial tradition",
       "origin": "Ancient Greece",
       "tags": [

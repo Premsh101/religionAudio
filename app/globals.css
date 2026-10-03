@@ -1,4 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(139,92,246,.2),transparent 32%),radial-gradient(circle at 85% 10%,rgba(245,158,11,.12),transparent 25%),#09090b;color:#f4f4f5;font-family:Inter,system-ui,sans-serif}.glass{background:rgba(24,24,27,.66);border:1px solid rgba(255,255,255,.09);backdrop-filter:blur(18px)}.story-card{transition:transform .2s ease,border-color .2s ease}.story-card:hover{transform:translateY(-4px);border-color:rgba(251,191,36,.35)}.scrollbar-hide::-webkit-scrollbar{display:none}.scrollbar-hide{-ms-overflow-style:none;scrollbar-width:none}
+
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-tap-highlight-color:transparent}
+body{margin:0;min-height:100vh;background:#0b0a14;color:#f4f4f5;font-family:Inter,"Segoe UI",system-ui,-apple-system,"Noto Sans","Noto Sans Devanagari","Noto Naskh Arabic","Noto Nastaliq Urdu",sans-serif;-webkit-font-smoothing:antialiased}
+/* Serif display type has no Devanagari/Arabic glyphs; use the clean sans for those scripts instead. */
+:lang(hi) .font-display,:lang(ar) .font-display,:lang(ur) .font-display{font-family:inherit;font-weight:700;letter-spacing:0}
+:lang(ur){line-height:1.9}
+.page-glow{background:radial-gradient(60% 50% at 15% 0%,rgba(245,158,11,.14),transparent 70%),radial-gradient(50% 40% at 90% 5%,rgba(139,92,246,.18),transparent 70%)}
+.glass{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(18px)}
+.story-card{transition:transform .2s ease,border-color .2s ease}
+.story-card:hover{transform:translateY(-4px);border-color:rgba(251,191,36,.35)}
+.scrollbar-hide::-webkit-scrollbar{display:none}
+.scrollbar-hide{-ms-overflow-style:none;scrollbar-width:none}
+@keyframes float-slow{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-14px) rotate(var(--r,0deg))}}
+.float-slow{animation:float-slow 7s ease-in-out infinite}
+@keyframes fade-up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.fade-up{animation:fade-up .6s ease both}
+@media (prefers-reduced-motion:reduce){.float-slow,.fade-up{animation:none}}

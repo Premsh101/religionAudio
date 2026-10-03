@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, Search as SearchIcon, Sparkles } from "lucide-react";
 import AppHeader from "../../components/AppHeader";
+import { useT } from "../../components/AppProvider";
 
 type Result={
   query:string;
@@ -13,6 +14,7 @@ type Result={
 };
 
 export default function SearchPage(){
+  const t=useT();
   const [q,setQ]=useState("");
   const [loading,setLoading]=useState(false);
   const [results,setResults]=useState<Result>({query:"",works:[],passages:[],stories:[]});
@@ -29,17 +31,15 @@ export default function SearchPage(){
 
   const total=results.works.length+results.passages.length+results.stories.length;
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="page-glow min-h-screen">
     <AppHeader/>
     <section className="mx-auto max-w-6xl px-5 py-10 md:py-14">
-      <Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link>
-      <div className="mt-7 rounded-[32px] border border-white/10 bg-gradient-to-br from-indigo-950 via-zinc-900 to-zinc-950 p-7 md:p-10">
-        <p className="text-xs uppercase tracking-[0.2em] text-amber-300">Library search</p>
-        <h1 className="mt-2 font-display text-4xl md:text-5xl">Find a word, passage, book or story.</h1>
+      <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-amber-300/10 via-white/[0.03] to-violet-500/10 p-7 md:p-10">
+        <h1 className="font-display text-4xl font-semibold md:text-5xl">{t("search.title")}</h1>
         <form onSubmit={submit} className="mt-7 flex max-w-3xl items-center gap-2 rounded-2xl border border-white/10 bg-black/25 p-2">
           <SearchIcon className="ml-3 h-5 w-5 text-zinc-600"/>
-          <input autoFocus value={q} onChange={e=>setQ(e.target.value)} placeholder="Try creation, Buddha, Eden, moon, forgiveness…" className="w-full bg-transparent px-2 py-3 text-sm outline-none placeholder:text-zinc-700"/>
-          <button className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-black disabled:opacity-50" disabled={loading}>{loading?"Searching…":"Search"}</button>
+          <input autoFocus value={q} onChange={e=>setQ(e.target.value)} placeholder={t("search.placeholder")} className="w-full bg-transparent px-2 py-3 text-sm outline-none placeholder:text-zinc-700"/>
+          <button className="rounded-full bg-amber-300 px-5 py-2.5 text-sm font-semibold text-black disabled:opacity-50" disabled={loading}>{loading?t("common.loading"):t("search.button")}</button>
         </form>
       </div>
 

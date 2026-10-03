@@ -12,6 +12,11 @@
     {
       "id": "adventure-treasure-island-map",
       "title": "The Treasure Map",
+      "titles": {
+        "hi": "ख़ज़ाने का नक़्शा",
+        "ar": "خريطة الكنز",
+        "ur": "خزانے کا نقشہ"
+      },
       "tradition": "Treasure Island",
       "origin": "Britain / maritime adventure",
       "tags": [
@@ -34,6 +39,11 @@
     {
       "id": "adventure-around-world-race",
       "title": "Around the World in Eighty Days",
+      "titles": {
+        "hi": "अस्सी दिनों में दुनिया की सैर",
+        "ar": "حول العالم في ثمانين يومًا",
+        "ur": "اسّی دن میں دنیا کا سفر"
+      },
       "tradition": "Around the World in Eighty Days",
       "origin": "France / global journey",
       "tags": [
@@ -56,6 +66,11 @@
     {
       "id": "adventure-prisoner-zenda-rescue",
       "title": "The Rescue at Zenda",
+      "titles": {
+        "hi": "ज़ेंडा में बचाव",
+        "ar": "الإنقاذ في زيندا",
+        "ur": "زینڈا میں رہائی"
+      },
       "tradition": "The Prisoner of Zenda",
       "origin": "Europe / Ruritanian adventure",
       "tags": [
@@ -79,6 +94,11 @@
     {
       "id": "adventure-swiss-family-shipwreck",
       "title": "The Family Survives the Shipwreck",
+      "titles": {
+        "hi": "जहाज़ डूबा, परिवार बचा",
+        "ar": "العائلة تنجو من الغرق",
+        "ur": "جہاز ڈوبا، خاندان بچ گیا"
+      },
       "tradition": "The Swiss Family Robinson",
       "origin": "Europe / island adventure",
       "tags": [
@@ -102,6 +122,11 @@
     {
       "id": "adventure-solomon-mines-quest",
       "title": "The Search for King Solomon's Mines",
+      "titles": {
+        "hi": "राजा सुलेमान की खानों की खोज",
+        "ar": "البحث عن كنوز الملك سليمان",
+        "ur": "شاہ سلیمان کی کانوں کی تلاش"
+      },
       "tradition": "King Solomon's Mines",
       "origin": "Southern Africa / adventure fiction",
       "tags": [
@@ -125,6 +150,11 @@
     {
       "id": "adventure-jules-verne-earth",
       "title": "Journey to the Center of the Earth",
+      "titles": {
+        "hi": "पृथ्वी के केंद्र की यात्रा",
+        "ar": "رحلة إلى مركز الأرض",
+        "ur": "زمین کے مرکز کا سفر"
+      },
       "tradition": "Journey to the Center of the Earth",
       "origin": "France / subterranean adventure",
       "tags": [
@@ -147,6 +177,11 @@
     {
       "id": "adventure-tom-sawyer-cave",
       "title": "Tom Sawyer and the Cave",
+      "titles": {
+        "hi": "टॉम सॉयर और गुफा",
+        "ar": "توم سوير والكهف",
+        "ur": "ٹام سایر اور غار"
+      },
       "tradition": "The Adventures of Tom Sawyer",
       "origin": "United States / Mississippi River Valley",
       "tags": [
@@ -169,6 +204,11 @@
     {
       "id": "adventure-robin-hood-outlaw",
       "title": "Robin Hood and the Forest",
+      "titles": {
+        "hi": "रॉबिन हुड और जंगल",
+        "ar": "روبن هود والغابة",
+        "ur": "رابن ہڈ اور جنگل"
+      },
       "tradition": "Robin Hood tradition",
       "origin": "England / medieval legend",
       "tags": [
@@ -192,6 +232,11 @@
     {
       "id": "adventure-three-musketeers-friendship",
       "title": "The Three Musketeers and the New Companion",
+      "titles": {
+        "hi": "तीन बंदूकची और नया साथी",
+        "ar": "الفرسان الثلاثة والرفيق الجديد",
+        "ur": "تین بندوقچی اور نیا ساتھی"
+      },
       "tradition": "The Three Musketeers",
       "origin": "France / historical adventure fiction",
       "tags": [
@@ -215,6 +260,11 @@
     {
       "id": "adventure-last-mohicans-escape",
       "title": "The Journey Through the Wilderness",
+      "titles": {
+        "hi": "बीहड़ जंगल का सफ़र",
+        "ar": "رحلة عبر البرية",
+        "ur": "بیابان کا سفر"
+      },
       "tradition": "The Last of the Mohicans",
       "origin": "North America / frontier adventure",
       "tags": [
@@ -238,6 +288,11 @@
     {
       "id": "adventure-king-arthur-sword",
       "title": "Arthur and the Sword in the Stone",
+      "titles": {
+        "hi": "आर्थर और पत्थर में धँसी तलवार",
+        "ar": "آرثر والسيف في الصخرة",
+        "ur": "آرتھر اور پتھر میں گڑی تلوار"
+      },
       "tradition": "Arthurian legend",
       "origin": "Britain / medieval legend",
       "tags": [
@@ -261,6 +316,11 @@
     {
       "id": "adventure-sindbad-first-voyage",
       "title": "Sindbad's First Voyage",
+      "titles": {
+        "hi": "सिंदबाद की पहली यात्रा",
+        "ar": "رحلة السندباد الأولى",
+        "ur": "سندباد کا پہلا سفر"
+      },
       "tradition": "Sindbad the Sailor",
       "origin": "Arabic literary tradition",
       "tags": [
@@ -284,6 +344,11 @@
     {
       "id": "adventure-chandrakanta-tilism",
       "title": "The Secret Passage of Chandrakanta",
+      "titles": {
+        "hi": "चंद्रकांता का गुप्त रास्ता",
+        "ar": "الممر السري لتشاندراكانتا",
+        "ur": "چندرکانتا کا خفیہ راستہ"
+      },
       "tradition": "Chandrakanta (Devaki Nandan Khatri, 1888)",
       "origin": "India / Hindi fantasy adventure",
       "tags": [

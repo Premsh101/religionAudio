@@ -13,6 +13,11 @@
     {
       "id": "sacred-places-bodh-gaya",
       "title": "Bodh Gaya: Beneath the Tree of Awakening",
+      "titles": {
+        "hi": "बोधगया: बोधि वृक्ष की छाँव में",
+        "ar": "بوده غايا: تحت شجرة الاستنارة",
+        "ur": "بودھ گیا: بیداری کے درخت تلے"
+      },
       "tradition": "Buddhism",
       "origin": "Bodh Gaya, Bihar, India",
       "tags": [
@@ -40,6 +45,11 @@
     {
       "id": "sacred-places-lumbini",
       "title": "Lumbini: The Garden Where a Prince Was Born",
+      "titles": {
+        "hi": "लुंबिनी: वह उपवन जहाँ राजकुमार जन्मे",
+        "ar": "لومبيني: الحديقة التي وُلد فيها أمير",
+        "ur": "لمبنی: وہ باغ جہاں ایک شہزادہ پیدا ہوا"
+      },
       "tradition": "Buddhism",
       "origin": "Lumbini, Rupandehi District, Nepal",
       "tags": [
@@ -67,6 +77,11 @@
     {
       "id": "sacred-places-sarnath",
       "title": "Sarnath: Where the Wheel Began to Turn",
+      "titles": {
+        "hi": "सारनाथ: जहाँ धर्मचक्र घूमना शुरू हुआ",
+        "ar": "سارناث: حيث بدأت العجلة تدور",
+        "ur": "سارناتھ: جہاں دھرم کا پہیہ گھومنے لگا"
+      },
       "tradition": "Buddhism",
       "origin": "Sarnath, near Varanasi, Uttar Pradesh, India",
       "tags": [
@@ -95,6 +110,11 @@
     {
       "id": "sacred-places-kashi-varanasi",
       "title": "Kashi: The City of Light on the Ganga",
+      "titles": {
+        "hi": "काशी: गंगा किनारे प्रकाश की नगरी",
+        "ar": "كاشي: مدينة النور على الغانج",
+        "ur": "کاشی: گنگا کنارے روشنیوں کا شہر"
+      },
       "tradition": "Hinduism (with Buddhist, Jain, Sikh, Sufi and Muslim heritage in the city)",
       "origin": "Varanasi (Kashi / Banaras), Uttar Pradesh, India",
       "tags": [
@@ -124,6 +144,11 @@
     {
       "id": "sacred-places-kedarnath",
       "title": "Kedarnath: The Pandavas Search for Shiva",
+      "titles": {
+        "hi": "केदारनाथ: पांडवों की शिव खोज",
+        "ar": "كيدارناث: الباندافا يبحثون عن شيفا",
+        "ur": "کیدارناتھ: پانڈو شیو کی تلاش میں"
+      },
       "tradition": "Hinduism / Mahabharata-linked Puranic and regional tradition",
       "origin": "Kedarnath, Garhwal Himalaya, Uttarakhand, India",
       "tags": [
@@ -153,6 +178,11 @@
     {
       "id": "sacred-places-kaaba",
       "title": "The Kaaba: A Father and Son Raise the House",
+      "titles": {
+        "hi": "काबा: पिता और पुत्र ने उठाया घर",
+        "ar": "الكعبة: أب وابنه يرفعان البيت",
+        "ur": "خانۂ کعبہ: باپ اور بیٹا گھر کی بنیاد اٹھاتے ہیں"
+      },
       "tradition": "Islam / Qur'an and Islamic tradition",
       "origin": "Makkah, Arabia",
       "tags": [
@@ -182,6 +212,11 @@
     {
       "id": "sacred-places-jerusalem-western-wall",
       "title": "Jerusalem's Ancient Stones: The Western Wall and the Sacred Hill",
+      "titles": {
+        "hi": "यरूशलम के प्राचीन पत्थर: पश्चिमी दीवार और पवित्र पहाड़ी",
+        "ar": "حجارة القدس العتيقة: الحائط الغربي والتلّ المقدس",
+        "ur": "یروشلم کے قدیم پتھر: دیوارِ گریہ اور مقدس پہاڑی"
+      },
       "tradition": "Judaism, Islam and Christianity",
       "origin": "Old City of Jerusalem",
       "tags": [
@@ -212,6 +247,11 @@
     {
       "id": "sacred-places-harmandir-sahib",
       "title": "Harmandir Sahib: The House of God with Four Doors",
+      "titles": {
+        "hi": "हरमंदिर साहिब: चार द्वारों वाला प्रभु का घर",
+        "ar": "هرمندر صاحب: بيت الله ذو الأبواب الأربعة",
+        "ur": "ہرمندر صاحب: چار دروازوں والا رب کا گھر"
+      },
       "tradition": "Sikhism",
       "origin": "Amritsar, Punjab, India",
       "tags": [
@@ -241,6 +281,11 @@
     {
       "id": "sacred-places-ajmer-sharif",
       "title": "Ajmer Sharif: The Shrine of the Friend of the Poor",
+      "titles": {
+        "hi": "अजमेर शरीफ़: ग़रीब नवाज़ की दरगाह",
+        "ar": "أجمير شريف: مقام صديق الفقراء",
+        "ur": "اجمیر شریف: غریب نواز کی درگاہ"
+      },
       "tradition": "Islam / Sufi Chishti tradition, revered across faiths in South Asia",
       "origin": "Ajmer, Rajasthan, India",
       "tags": [
@@ -270,6 +315,11 @@
     {
       "id": "sacred-places-shravanabelagola",
       "title": "Shravanabelagola: Bahubali's Greatest Victory",
+      "titles": {
+        "hi": "श्रवणबेलगोला: बाहुबली की सबसे बड़ी विजय",
+        "ar": "شرافانابيلاغولا: أعظم انتصارات باهوبالي",
+        "ur": "شرونابیلگولا: باہوبلی کی سب سے بڑی فتح"
+      },
       "tradition": "Jainism",
       "origin": "Shravanabelagola, Hassan District, Karnataka, India",
       "tags": [
@@ -298,6 +348,11 @@
     {
       "id": "sacred-places-santiago-de-compostela",
       "title": "Santiago de Compostela: The Field of the Star",
+      "titles": {
+        "hi": "सैंटियागो डे कंपोस्टेला: तारे का मैदान",
+        "ar": "سانتياغو دي كومبوستيلا: حقل النجمة",
+        "ur": "سانتیاگو دی کومپوستیلا: ستارے کا میدان"
+      },
       "tradition": "Christianity / Catholic tradition and the Camino de Santiago",
       "origin": "Santiago de Compostela, Galicia, Spain",
       "tags": [
@@ -325,6 +380,11 @@
     {
       "id": "sacred-places-udvada-atash-behram",
       "title": "Udvada: The Fire That Crossed the Sea",
+      "titles": {
+        "hi": "उदवाड़ा: सागर पार आई अग्नि",
+        "ar": "أودفادا: النار التي عبرت البحر",
+        "ur": "اودواڑا: سمندر پار آئی آگ"
+      },
       "tradition": "Zoroastrianism / Parsi tradition",
       "origin": "Udvada, Valsad District, Gujarat, India (earlier Sanjan)",
       "tags": [

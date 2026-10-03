@@ -21,7 +21,7 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
   const {slug}=await params;
   const query=await searchParams;
   const prisma=getPrisma();
-  if(!prisma) return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="Library database is offline." /></main>;
+  if(!prisma) return <main className="min-h-screen"><AppHeader/><EmptyState title="Library database is offline." /></main>;
 
   const work=await prisma.work.findUnique({
     where:{slug},
@@ -33,10 +33,10 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
     }
   });
 
-  if(!work) return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="Book not found." /></main>;
+  if(!work) return <main className="min-h-screen"><AppHeader/><EmptyState title="Book not found." /></main>;
   if(work.status!=="PUBLISHED"){
     const viewer=await getCurrentSessionUser();
-    if(viewer?.role!=="ADMIN"&&viewer?.role!=="EDITOR") return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="This book is not published yet." /></main>;
+    if(viewer?.role!=="ADMIN"&&viewer?.role!=="EDITOR") return <main className="min-h-screen"><AppHeader/><EmptyState title="This book is not published yet." /></main>;
   }
 
   const chapters=[...new Set(work.passages.map(p=>chapterFromReference(p.reference)).filter((value):value is number=>value!==null))];

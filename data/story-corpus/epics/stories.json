@@ -14,6 +14,11 @@
     {
       "id": "epic-ramayana-rama-exile",
       "title": "Rama's Exile",
+      "titles": {
+        "hi": "राम का वनवास",
+        "ar": "نفي راما",
+        "ur": "رام کا بن باس"
+      },
       "tradition": "Ramayana",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Ramayana narrative; repository-authored faithful retelling, not a transcription of a modern translation.",
@@ -40,6 +45,11 @@
     {
       "id": "epic-ramayana-hanuman-lanka",
       "title": "Hanuman's Leap to Lanka",
+      "titles": {
+        "hi": "हनुमान की लंका छलाँग",
+        "ar": "قفزة هانومان إلى لانكا",
+        "ur": "ہنومان کی لنکا کی جانب چھلانگ"
+      },
       "tradition": "Ramayana",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Ramayana narrative; repository-authored faithful retelling.",
@@ -66,6 +76,11 @@
     {
       "id": "epic-mahabharata-bhima-hanuman",
       "title": "Bhima and Hanuman",
+      "titles": {
+        "hi": "भीम और हनुमान",
+        "ar": "بهيما وهانومان",
+        "ur": "بھیم اور ہنومان"
+      },
       "tradition": "Mahabharata",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Mahabharata episode; repository-authored faithful retelling.",
@@ -92,6 +107,11 @@
     {
       "id": "epic-mahabharata-abhimanyu",
       "title": "Abhimanyu Enters the Chakravyuha",
+      "titles": {
+        "hi": "अभिमन्यु और चक्रव्यूह",
+        "ar": "أبهيمانيو يقتحم التشاكرافيوها",
+        "ur": "ابھیمنیو چکرویوہ میں"
+      },
       "tradition": "Mahabharata",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Mahabharata war episode; repository-authored faithful retelling.",
@@ -118,6 +138,11 @@
     {
       "id": "epic-iliad-achilles-hector",
       "title": "Achilles and Hector",
+      "titles": {
+        "hi": "एकिलीज़ और हेक्टर",
+        "ar": "أخيل وهكتور",
+        "ur": "اکیلیز اور ہیکٹر"
+      },
       "tradition": "Iliad",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Homeric narrative; repository-authored faithful retelling based on the ancient epic.",
@@ -143,6 +168,11 @@
     {
       "id": "epic-odyssey-cyclops",
       "title": "Odysseus and the Cyclops",
+      "titles": {
+        "hi": "ओडिसियस और साइक्लोप्स",
+        "ar": "أوديسيوس والعملاق ذو العين الواحدة",
+        "ur": "اوڈیسیئس اور سائیکلوپس"
+      },
       "tradition": "Odyssey",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Homeric narrative; repository-authored faithful retelling.",
@@ -168,6 +198,11 @@
     {
       "id": "epic-beowulf-grendel",
       "title": "Beowulf and Grendel",
+      "titles": {
+        "hi": "बियोवुल्फ़ और ग्रेंडल",
+        "ar": "بيوولف وغرندل",
+        "ur": "بیوولف اور گرینڈل"
+      },
       "tradition": "Beowulf",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Old English epic narrative; repository-authored faithful retelling.",
@@ -193,6 +228,11 @@
     {
       "id": "epic-shahnameh-rostam-sohrab",
       "title": "Rostam and Sohrab",
+      "titles": {
+        "hi": "रुस्तम और सोहराब",
+        "ar": "رستم وسهراب",
+        "ur": "رستم و سہراب"
+      },
       "tradition": "Shahnameh",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Ferdowsi narrative; repository-authored faithful retelling based on the public-domain epic tradition.",
@@ -219,6 +259,11 @@
     {
       "id": "epic-gilgamesh-enkidu",
       "title": "Gilgamesh and Enkidu",
+      "titles": {
+        "hi": "गिलगमेश और एनकिडु",
+        "ar": "جلجامش وأنكيدو",
+        "ur": "گلگامش اور انکیدو"
+      },
       "tradition": "Epic of Gilgamesh",
       "sourceLanguage": "en",
       "sourceNote": "Ancient Mesopotamian epic tradition; repository-authored story retelling, not a modern translation of a tablet.",
@@ -245,6 +290,11 @@
     {
       "id": "epic-nibelungen-siegfried",
       "title": "Siegfried and the Dragon",
+      "titles": {
+        "hi": "ज़ीगफ़्रीड और अजगर",
+        "ar": "زيغفريد والتنين",
+        "ur": "زیگفرائیڈ اور اژدہا"
+      },
       "tradition": "Nibelungenlied",
       "sourceLanguage": "en",
       "sourceNote": "Germanic heroic tradition; repository-authored faithful retelling.",
@@ -271,6 +321,11 @@
     {
       "id": "epic-kalevala-vainamoinen",
       "title": "Väinämöinen and Joukahainen",
+      "titles": {
+        "hi": "वैनामोइनेन और यूकाहाइनेन",
+        "ar": "فاينامواينن ويوكاهاينن",
+        "ur": "وائنامؤئنن اور یوکاہائنن"
+      },
       "tradition": "Kalevala",
       "sourceLanguage": "en",
       "sourceNote": "Finnish-Karelian epic tradition; repository-authored faithful retelling.",
@@ -297,6 +352,11 @@
     {
       "id": "epic-ireland-cu-chulainn-hound",
       "title": "Cú Chulainn and the Hound",
+      "titles": {
+        "hi": "कू हुलिन और शिकारी कुत्ता",
+        "ar": "كو هولين والكلب",
+        "ur": "کو خولن اور شکاری کتا"
+      },
       "tradition": "Ulster Cycle",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Irish heroic narrative; repository-authored faithful retelling.",
@@ -323,6 +383,11 @@
     {
       "id": "epic-bhagiratha-ganga",
       "title": "Bhagiratha and the Descent of the Ganga",
+      "titles": {
+        "hi": "भगीरथ और गंगा का अवतरण",
+        "ar": "بهاغيراثا ونزول الغانج",
+        "ur": "بھاگیرتھ اور گنگا کا نزول"
+      },
       "tradition": "Ramayana / Puranic tradition",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Indian sacred narrative; repository-authored faithful retelling.",
@@ -349,6 +414,11 @@
     {
       "id": "epic-ramayana-sita-fire-test",
       "title": "Sita Returns to Rama",
+      "titles": {
+        "hi": "सीता की राम के पास वापसी",
+        "ar": "عودة سيتا إلى راما",
+        "ur": "سیتا کی رام کے پاس واپسی"
+      },
       "tradition": "Ramayana",
       "sourceLanguage": "en",
       "sourceNote": "Traditional Ramayana narrative; repository-authored faithful retelling of the return after Lanka.",

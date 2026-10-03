@@ -13,6 +13,11 @@
     {
       "id": "courage-saladin-richard-jaffa",
       "title": "Saladin and Richard at Jaffa, 1192",
+      "titles": {
+        "hi": "जाफ़ा में सलाहुद्दीन और रिचर्ड, 1192",
+        "ar": "صلاح الدين وريتشارد في يافا، 1192",
+        "ur": "صلاح الدین اور رچرڈ یافا میں، ۱۱۹۲ء"
+      },
       "tradition": "Third Crusade / Ayyubid and crusader chronicles",
       "origin": "Levant (Palestine)",
       "tags": [
@@ -37,6 +42,11 @@
     {
       "id": "courage-thermopylae-history-legend",
       "title": "Thermopylae: The Pass, the History and the Legend",
+      "titles": {
+        "hi": "थर्मोपिली: दर्रा, इतिहास और किंवदंती",
+        "ar": "ثيرموبيلاي: الممر والتاريخ والأسطورة",
+        "ur": "تھرموپلی: درّہ، تاریخ اور داستان"
+      },
       "tradition": "Greco-Persian Wars / Herodotus, Histories Book 7",
       "origin": "Ancient Greece",
       "tags": [
@@ -61,6 +71,11 @@
     {
       "id": "courage-david-goliath",
       "title": "David and Goliath",
+      "titles": {
+        "hi": "दाऊद और जालूत",
+        "ar": "داود وجالوت",
+        "ur": "داؤد اور جالوت"
+      },
       "tradition": "Hebrew Bible, 1 Samuel 17 / Quran 2:249-251",
       "origin": "Ancient Israel",
       "tags": [
@@ -87,6 +102,11 @@
     {
       "id": "courage-guru-tegh-bahadur",
       "title": "Guru Tegh Bahadur and the Freedom of Conscience",
+      "titles": {
+        "hi": "गुरु तेग बहादुर और अंतरात्मा की स्वतंत्रता",
+        "ar": "غورو تيغ بهادر وحرية الضمير",
+        "ur": "گرو تیغ بہادر اور ضمیر کی آزادی"
+      },
       "tradition": "Sikh history / Ninth Guru, 1675",
       "origin": "Punjab and Delhi, India",
       "tags": [
@@ -111,6 +131,11 @@
     {
       "id": "courage-bilal-steadfast",
       "title": "Bilal: The Voice That Would Not Bend",
+      "titles": {
+        "hi": "बिलाल: वह आवाज़ जो झुकी नहीं",
+        "ar": "بلال: الصوت الذي لم ينحنِ",
+        "ur": "بلال: وہ آواز جو نہ جھکی"
+      },
       "tradition": "Early Islamic history / Companions of the Prophet",
       "origin": "Mecca and Medina, Arabia",
       "tags": [
@@ -134,6 +159,11 @@
     {
       "id": "courage-noor-inayat-khan",
       "title": "Noor Inayat Khan: The Radio Operator Called Madeleine",
+      "titles": {
+        "hi": "नूर इनायत ख़ान: रेडियो ऑपरेटर 'मेडेलीन'",
+        "ar": "نور عنايت خان: عاملة اللاسلكي المسماة مادلين",
+        "ur": "نور عنایت خان: میڈلین نام کی ریڈیو آپریٹر"
+      },
       "tradition": "Second World War / Special Operations Executive",
       "origin": "India (family heritage), France and Britain",
       "tags": [
@@ -157,6 +187,11 @@
     {
       "id": "courage-chittorgarh-padmini",
       "title": "Chittorgarh, 1303: The Siege and the Legend of Padmini",
+      "titles": {
+        "hi": "चित्तौड़गढ़, 1303: घेराबंदी और पद्मिनी की किंवदंती",
+        "ar": "تشيتورغاره، 1303: الحصار وأسطورة بادميني",
+        "ur": "چتوڑگڑھ، ۱۳۰۳ء: محاصرہ اور پدمنی کی داستان"
+      },
       "tradition": "Medieval Rajasthan / Padmavat of Malik Muhammad Jayasi (1540)",
       "origin": "Mewar, Rajasthan, India",
       "tags": [
@@ -182,6 +217,11 @@
     {
       "id": "courage-arjuna-dilemma",
       "title": "Arjuna's Dilemma at Kurukshetra",
+      "titles": {
+        "hi": "कुरुक्षेत्र में अर्जुन की दुविधा",
+        "ar": "حيرة أرجونا في كوروكشترا",
+        "ur": "کُرُکشیتر میں ارجن کی کشمکش"
+      },
       "tradition": "Mahabharata, Bhishma Parva / Bhagavad Gita chapters 1-2 and 18",
       "origin": "India",
       "tags": [
@@ -207,6 +247,11 @@
     {
       "id": "courage-ghaffar-khan-nonviolence",
       "title": "Badshah Khan and the Army Without Weapons",
+      "titles": {
+        "hi": "बादशाह ख़ान और बिना हथियारों की सेना",
+        "ar": "بادشاه خان والجيش الأعزل",
+        "ur": "بادشاہ خان اور بے ہتھیار فوج"
+      },
       "tradition": "Indian independence movement / Khudai Khidmatgar",
       "origin": "North-West Frontier (present-day Khyber Pakhtunkhwa, Pakistan)",
       "tags": [

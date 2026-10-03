@@ -13,6 +13,11 @@
     {
       "id": "romance-layla-majnun-nizami",
       "title": "Layla and Majnun: The Poet Who Loved Too Much",
+      "titles": {
+        "hi": "लैला और मजनूँ: हद से ज़्यादा प्रेम करने वाला कवि",
+        "ar": "ليلى والمجنون: الشاعر الذي أفرط في الحب",
+        "ur": "لیلیٰ مجنوں: وہ شاعر جس نے حد سے بڑھ کر چاہا"
+      },
       "tradition": "Persian classical poetry (Nizami Ganjavi) drawing on earlier Arabic tradition",
       "origin": "Arabia / Persia",
       "tags": [
@@ -37,6 +42,11 @@
     {
       "id": "romance-heer-ranjha-waris-shah",
       "title": "Heer and Ranjha: The Flute by the Chenab",
+      "titles": {
+        "hi": "हीर और राँझा: चनाब किनारे बाँसुरी",
+        "ar": "هير ورانجها: الناي على ضفاف تشيناب",
+        "ur": "ہیر رانجھا: چناب کنارے بانسری"
+      },
       "tradition": "Punjabi qissa poetry (Waris Shah, 1766)",
       "origin": "Punjab (India and Pakistan)",
       "tags": [
@@ -61,6 +71,11 @@
     {
       "id": "romance-shirin-farhad-nizami",
       "title": "Shirin and Farhad: The Mountain of Bisotun",
+      "titles": {
+        "hi": "शीरीं और फ़रहाद: बीसुतून का पहाड़",
+        "ar": "شيرين وفرهاد: جبل بيستون",
+        "ur": "شیریں فرہاد: کوہِ بیستون"
+      },
       "tradition": "Persian classical poetry (Nizami's Khosrow and Shirin) and South Asian folk retellings",
       "origin": "Persia (Iran) / Armenia; retold across South Asia",
       "tags": [
@@ -86,6 +101,11 @@
     {
       "id": "romance-sohni-mahiwal",
       "title": "Sohni and Mahiwal: The Clay Pot on the River",
+      "titles": {
+        "hi": "सोहनी और महिवाल: नदी पर मिट्टी का घड़ा",
+        "ar": "سوهني وماهيوال: الجرة الفخارية على النهر",
+        "ur": "سوہنی مہینوال: دریا پر کچا گھڑا"
+      },
       "tradition": "Punjabi and Sindhi folk romance; Sufi poetry of Shah Abdul Latif",
       "origin": "Punjab and Sindh (Pakistan and India)",
       "tags": [
@@ -110,6 +130,11 @@
     {
       "id": "romance-sassi-punnu",
       "title": "Sassi and Punnu: Footprints in the Desert",
+      "titles": {
+        "hi": "सस्सी और पुन्नू: रेगिस्तान में पदचिह्न",
+        "ar": "سسي وبنو: آثار أقدام في الصحراء",
+        "ur": "سسی پنوں: صحرا میں قدموں کے نشان"
+      },
       "tradition": "Sindhi and Baloch folk romance; Sufi poetry of Shah Abdul Latif",
       "origin": "Sindh and Balochistan (Pakistan)",
       "tags": [
@@ -134,6 +159,11 @@
     {
       "id": "romance-jacob-rachel-genesis",
       "title": "Jacob and Rachel: Fourteen Years of Love",
+      "titles": {
+        "hi": "याकूब और राहेल: चौदह बरस का प्रेम",
+        "ar": "يعقوب وراحيل: أربعة عشر عامًا من الحب",
+        "ur": "یعقوب اور راخل: محبت کے چودہ برس"
+      },
       "tradition": "Hebrew Bible (Genesis 29-35); Jewish and Christian scripture",
       "origin": "Ancient Near East (Haran and Canaan)",
       "tags": [
@@ -161,6 +191,11 @@
     {
       "id": "romance-yusuf-zulaikha-jami",
       "title": "Yusuf and Zulaikha: From Scripture to Sufi Poem",
+      "titles": {
+        "hi": "यूसुफ़ और ज़ुलेख़ा: धर्मग्रंथ से सूफ़ी काव्य तक",
+        "ar": "يوسف وزليخا: من الكتاب المقدس إلى القصيدة الصوفية",
+        "ur": "یوسف زلیخا: صحیفے سے صوفی نظم تک"
+      },
       "tradition": "Qur'an (Surah Yusuf) and Persian Sufi poetry (Jami's Yusuf and Zulaikha, 1483)",
       "origin": "Egypt (narrative setting); Persia (poem)",
       "tags": [
@@ -188,6 +223,11 @@
     {
       "id": "romance-shakuntala-dushyanta-kalidasa",
       "title": "Shakuntala and the Lost Ring",
+      "titles": {
+        "hi": "शकुंतला और खोई अंगूठी",
+        "ar": "شاكونتالا والخاتم المفقود",
+        "ur": "شکنتلا اور کھوئی ہوئی انگوٹھی"
+      },
       "tradition": "Sanskrit classical drama (Kalidasa's Abhijnanashakuntalam), based on a Mahabharata episode",
       "origin": "India",
       "tags": [
@@ -214,6 +254,11 @@
     {
       "id": "romance-mirabai-krishna-devotion",
       "title": "Mirabai: The Princess Who Loved Krishna",
+      "titles": {
+        "hi": "मीराबाई: कृष्ण की दीवानी राजकुमारी",
+        "ar": "ميراباي: الأميرة التي أحبت كريشنا",
+        "ur": "میرا بائی: کرشن کی دیوانی شہزادی"
+      },
       "tradition": "Hindu bhakti (Krishna devotion); Rajasthani history and hagiography",
       "origin": "Rajasthan and Gujarat, India",
       "tags": [
@@ -240,6 +285,11 @@
     {
       "id": "romance-dhola-maru-rajasthan",
       "title": "Dhola and Maru: The Song That Crossed the Desert",
+      "titles": {
+        "hi": "ढोला और मारू: रेगिस्तान पार करता गीत",
+        "ar": "دولا ومارو: الأغنية التي عبرت الصحراء",
+        "ur": "ڈھولا مارو: صحرا پار کرتا گیت"
+      },
       "tradition": "Rajasthani folk ballad (Dhola Maru ra Duha)",
       "origin": "Rajasthan, India",
       "tags": [

@@ -17,7 +17,7 @@ export default function PlacesPage(){
   const types=["all",...Array.from(new Set(normalized.map(p=>p.placeType||"place")))];
   const visible=useMemo(()=>normalized.filter(p=>(type==="all"||p.placeType===type)&&(!query.trim()||`${p.name} ${p.region} ${p.country}`.toLowerCase().includes(query.toLowerCase()))),[query,type,places]);
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <section className="mx-auto max-w-6xl px-5 pb-20 pt-8">
       <Link href="/" className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-white"><ArrowLeft className="h-4 w-4"/>Home</Link>

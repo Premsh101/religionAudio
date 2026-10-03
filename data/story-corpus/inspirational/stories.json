@@ -13,6 +13,11 @@
     {
       "id": "inspire-bruce-and-the-spider",
       "title": "Robert the Bruce and the Spider",
+      "titles": {
+        "hi": "रॉबर्ट द ब्रूस और मकड़ी",
+        "ar": "روبرت بروس والعنكبوت",
+        "ur": "رابرٹ دی بروس اور مکڑی"
+      },
       "tradition": "Scottish tradition / Walter Scott, Tales of a Grandfather (1828)",
       "origin": "Scotland",
       "tags": [
@@ -37,6 +42,11 @@
     {
       "id": "inspire-helen-keller-water",
       "title": "Helen Keller and the Word Water",
+      "titles": {
+        "hi": "हेलेन केलर और 'पानी' शब्द",
+        "ar": "هيلين كيلر وكلمة الماء",
+        "ur": "ہیلن کیلر اور لفظ \"پانی\""
+      },
       "tradition": "Helen Keller, The Story of My Life (1903)",
       "origin": "Tuscumbia, Alabama, United States",
       "tags": [
@@ -63,6 +73,11 @@
     {
       "id": "inspire-vivekananda-chicago-1893",
       "title": "Swami Vivekananda at Chicago, 1893",
+      "titles": {
+        "hi": "शिकागो में स्वामी विवेकानंद, 1893",
+        "ar": "سوامي فيفيكاناندا في شيكاغو، 1893",
+        "ur": "سوامی وویکانند شکاگو میں، ۱۸۹۳ء"
+      },
       "tradition": "World's Parliament of Religions, Chicago",
       "origin": "India and the United States",
       "tags": [
@@ -88,6 +103,11 @@
     {
       "id": "inspire-frederick-douglass-reading",
       "title": "Frederick Douglass Learns to Read",
+      "titles": {
+        "hi": "फ़्रेडरिक डगलस ने पढ़ना सीखा",
+        "ar": "فريدريك دوغلاس يتعلم القراءة",
+        "ur": "فریڈرک ڈگلس نے پڑھنا سیکھا"
+      },
       "tradition": "Narrative of the Life of Frederick Douglass (1845)",
       "origin": "Maryland, United States",
       "tags": [
@@ -113,6 +133,11 @@
     {
       "id": "inspire-booker-washington-hampton",
       "title": "Booker T. Washington and the Swept Room",
+      "titles": {
+        "hi": "बुकर टी. वॉशिंगटन और बुहारा हुआ कमरा",
+        "ar": "بوكر تي. واشنطن والغرفة المكنوسة",
+        "ur": "بکر ٹی واشنگٹن اور صاف کیا ہوا کمرہ"
+      },
       "tradition": "Booker T. Washington, Up from Slavery (1901)",
       "origin": "Virginia and West Virginia, United States",
       "tags": [
@@ -137,6 +162,11 @@
     {
       "id": "inspire-wilma-rudolph",
       "title": "Wilma Rudolph: From Leg Brace to Olympic Gold",
+      "titles": {
+        "hi": "विल्मा रूडोल्फ़: पैर के ब्रेस से ओलंपिक स्वर्ण तक",
+        "ar": "ويلما رودولف: من الدعامة إلى الذهب الأولمبي",
+        "ur": "ولما روڈولف: ٹانگ کے شکنجے سے اولمپک سونے تک"
+      },
       "tradition": "Wilma Rudolph / Rome Olympics, 1960",
       "origin": "Tennessee, United States",
       "tags": [
@@ -161,6 +191,11 @@
     {
       "id": "inspire-edison-persistence",
       "title": "Edison and the Thousand Experiments: Fact and Myth",
+      "titles": {
+        "hi": "एडिसन और हज़ार प्रयोग: सच और मिथक",
+        "ar": "إديسون والألف تجربة: بين الحقيقة والأسطورة",
+        "ur": "ایڈیسن اور ہزار تجربے: حقیقت اور افسانہ"
+      },
       "tradition": "Thomas Edison / Menlo Park laboratory",
       "origin": "United States",
       "tags": [
@@ -187,6 +222,11 @@
     {
       "id": "inspire-savitribai-phule-schools",
       "title": "Savitribai Phule Opens a School for Girls",
+      "titles": {
+        "hi": "सावित्रीबाई फुले ने खोला लड़कियों का स्कूल",
+        "ar": "سافيتريباي فولي تفتتح مدرسة للبنات",
+        "ur": "ساوتری بائی پھلے اور لڑکیوں کا اسکول"
+      },
       "tradition": "Social reform in nineteenth-century Maharashtra",
       "origin": "Pune, Maharashtra, India",
       "tags": [
@@ -212,6 +252,11 @@
     {
       "id": "inspire-sant-ravidas",
       "title": "Sant Ravidas: The Cobbler Saint of Varanasi",
+      "titles": {
+        "hi": "संत रविदास: काशी के चर्मकार संत",
+        "ar": "سانت رافيداس: قديس فاراناسي الإسكافي",
+        "ur": "سنت روی داس: بنارس کے موچی سنت"
+      },
       "tradition": "Bhakti movement / Guru Granth Sahib / Ravidassia tradition",
       "origin": "Varanasi, India",
       "tags": [

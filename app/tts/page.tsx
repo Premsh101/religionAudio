@@ -54,7 +54,7 @@ export default function TTSStudio(){
    }
  }
 
- return <main className="min-h-screen bg-zinc-950">
+ return <main className="min-h-screen">
     <AppHeader/>
   <section className="mx-auto max-w-6xl px-5 pb-20 pt-8">
    <div className="max-w-3xl"><p className="text-sm text-amber-300">Free / self-hosted narration</p><h1 className="mt-2 font-display text-5xl">Give every kind of story its own voice.</h1><p className="mt-4 text-zinc-400">Voice identity and narration style are separate. That lets one licensed narrator speak differently for scripture, mythology, folklore, ghost stories and children.</p></div>

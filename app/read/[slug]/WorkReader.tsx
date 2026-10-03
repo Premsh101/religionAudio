@@ -92,7 +92,7 @@ export default function WorkReader({work}:{work:Work}){
     }finally{setBusy(false)}
   }
 
-  return <main className="min-h-screen bg-zinc-950">
+  return <main className="min-h-screen">
     <AppHeader/>
     <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
       <Link href="/library" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Library</Link>

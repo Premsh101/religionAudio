@@ -13,6 +13,11 @@
     {
       "id": "rituals-sai-hajar-zamzam",
       "title": "Hajar's Search for Water: The Story of Sa'i and Zamzam",
+      "titles": {
+        "hi": "हाजरा की पानी की खोज: सई और ज़मज़म की कहानी",
+        "ar": "هاجر تبحث عن الماء: حكاية السعي وزمزم",
+        "ur": "پانی کی تلاش میں ہاجرہ: سعی اور زمزم کی کہانی"
+      },
       "tradition": "Islam / Qur'an, hadith and Hajj practice",
       "origin": "Makkah, Arabia",
       "tags": [
@@ -41,6 +46,11 @@
     {
       "id": "rituals-passover-seder-questions",
       "title": "Why Is This Night Different? The Story of the Passover Seder",
+      "titles": {
+        "hi": "यह रात अलग क्यों है? पासओवर सेडर की कहानी",
+        "ar": "لماذا تختلف هذه الليلة؟ حكاية سيدر الفصح",
+        "ur": "یہ رات اور راتوں سے مختلف کیوں؟ فسح کے سیدر کی کہانی"
+      },
       "tradition": "Judaism / Torah and Haggadah tradition",
       "origin": "Ancient Israel / Egypt narrative; Jewish homes worldwide",
       "tags": [
@@ -68,6 +78,11 @@
     {
       "id": "rituals-raksha-bandhan-draupadi-krishna",
       "title": "A Strip of Cloth: Draupadi, Krishna and the Rakhi Thread",
+      "titles": {
+        "hi": "कपड़े की एक पट्टी: द्रौपदी, कृष्ण और राखी का धागा",
+        "ar": "شريط من قماش: دروبادي وكريشنا وخيط الراكهي",
+        "ur": "کپڑے کی ایک دھجی: دروپدی، کرشن اور راکھی کا دھاگا"
+      },
       "tradition": "Hindu / Mahabharata-linked devotional tradition",
       "origin": "India",
       "tags": [
@@ -95,6 +110,11 @@
     {
       "id": "rituals-langar-true-bargain",
       "title": "The True Bargain: Guru Nanak and the Langar",
+      "titles": {
+        "hi": "सच्चा सौदा: गुरु नानक और लंगर",
+        "ar": "الصفقة الصادقة: غورو ناناك واللنغار",
+        "ur": "سچا سودا: گرو نانک اور لنگر"
+      },
       "tradition": "Sikhism / Janamsakhi tradition and Sikh history",
       "origin": "Punjab (Talwandi / Nankana Sahib and Chuharkana, present-day Pakistan)",
       "tags": [
@@ -123,6 +143,11 @@
     {
       "id": "rituals-alms-round-kapilavastu",
       "title": "The Prince with a Begging Bowl: The Buddhist Alms Round",
+      "titles": {
+        "hi": "भिक्षापात्र लिए राजकुमार: बौद्ध भिक्षाटन",
+        "ar": "الأمير ذو وعاء الاستعطاء: جولة الصدقات البوذية",
+        "ur": "کشکول والا شہزادہ: بدھ بھکشوؤں کی بھکشا"
+      },
       "tradition": "Buddhism / Pali commentarial tradition and Theravada practice",
       "origin": "Kapilavastu (Nepal-India border region); practised across South and Southeast Asia",
       "tags": [
@@ -150,6 +175,11 @@
     {
       "id": "rituals-mezuzah-onkelos",
       "title": "The Mezuzah on the Doorpost: The Story of Onkelos",
+      "titles": {
+        "hi": "द्वार की चौखट पर मेज़ूज़ा: ओंकेलोस की कहानी",
+        "ar": "المزوزاه على قائمة الباب: حكاية أونقيلوس",
+        "ur": "چوکھٹ پر مزوزا: اونقلوس کی کہانی"
+      },
       "tradition": "Judaism / Torah and Talmudic tradition",
       "origin": "Ancient Israel (Torah command); Roman-era story (Babylonian Talmud)",
       "tags": [
@@ -178,6 +208,11 @@
     {
       "id": "rituals-breaking-of-bread",
       "title": "The Breaking of Bread: From the Last Supper to Emmaus",
+      "titles": {
+        "hi": "रोटी तोड़ना: अंतिम भोज से इम्माउस तक",
+        "ar": "كسر الخبز: من العشاء الأخير إلى عمواس",
+        "ur": "روٹی توڑنا: عشائے ربانی سے عماوس تک"
+      },
       "tradition": "Christianity / Gospel narrative and Christian worship",
       "origin": "Jerusalem and Emmaus, Judea",
       "tags": [
@@ -205,6 +240,11 @@
     {
       "id": "rituals-baptism-jordan",
       "title": "Water from the Jordan: The Story Behind Christian Baptism",
+      "titles": {
+        "hi": "यरदन का जल: ईसाई बपतिस्मा की कहानी",
+        "ar": "ماء من الأردن: الحكاية وراء المعمودية المسيحية",
+        "ur": "دریائے اردن کا پانی: مسیحی بپتسمہ کی کہانی"
+      },
       "tradition": "Christianity / Gospel narrative and Christian sacramental practice",
       "origin": "Jordan River, Judea",
       "tags": [
@@ -231,6 +271,11 @@
     {
       "id": "rituals-navjote-sudreh-kusti",
       "title": "The Shirt and the Sacred Cord: The Zoroastrian Navjote",
+      "titles": {
+        "hi": "कुर्ता और पवित्र डोरी: पारसी नवजोत",
+        "ar": "القميص والزنار المقدس: النافجوت الزرادشتي",
+        "ur": "کرتا اور مقدس ڈوری: زرتشتی نوجوت"
+      },
       "tradition": "Zoroastrianism / Parsi and Iranian Zoroastrian practice",
       "origin": "Ancient Iran; Parsi communities of India and the diaspora",
       "tags": [
@@ -259,6 +304,11 @@
     {
       "id": "rituals-pitru-paksha-karna",
       "title": "Karna's Golden Meal: Why Families Offer Food to the Ancestors",
+      "titles": {
+        "hi": "कर्ण का सोने का भोजन: पितरों को भोजन क्यों",
+        "ar": "وجبة كارنا الذهبية: لماذا تقدّم العائلات الطعام للأسلاف",
+        "ur": "کرن کا سونے کا کھانا: خاندان پُرکھوں کو کھانا کیوں چڑھاتے ہیں"
+      },
       "tradition": "Hindu / Mahabharata-linked popular legend and shraddha practice",
       "origin": "India",
       "tags": [
@@ -287,6 +337,11 @@
     {
       "id": "rituals-akshaya-tritiya-sugarcane",
       "title": "The First Gift of Food: Rishabhanatha and Akshaya Tritiya",
+      "titles": {
+        "hi": "आहार का पहला दान: ऋषभदेव और अक्षय तृतीया",
+        "ar": "أول عطية طعام: ريشابهاناثا وأكشايا تريتيا",
+        "ur": "کھانے کا پہلا دان: رشبھ ناتھ اور اکشے ترتیا"
+      },
       "tradition": "Jainism / Jain sacred narrative and fasting practice",
       "origin": "Hastinapura, India (Jain tradition)",
       "tags": [
@@ -314,6 +369,11 @@
     {
       "id": "rituals-sadaqah-garden-owners",
       "title": "The Owners of the Garden: A Qur'anic Story About Charity",
+      "titles": {
+        "hi": "बाग़ के मालिक: दान पर एक क़ुरआनी कहानी",
+        "ar": "أصحاب الجنة: قصة قرآنية عن الصدقة",
+        "ur": "باغ والے: صدقے کے بارے میں ایک قرآنی قصہ"
+      },
       "tradition": "Islam / Qur'an (Surah al-Qalam) and the practice of sadaqah",
       "origin": "Arabia (Qur'anic narrative)",
       "tags": [
