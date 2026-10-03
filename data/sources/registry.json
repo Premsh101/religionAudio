@@ -126,5 +126,56 @@
     "license": "Public Domain in USA; jurisdiction review before global commercial launch",
     "work": "The World English Bible (WEB): Ruth",
     "ingest_policy": "Download the source file without modification. Preserve Project Gutenberg/source metadata and verify target-country copyright status before commercial distribution."
+  },
+  {
+    "id": "project-gutenberg-ghosts",
+    "tradition": "Cross-cultural literature",
+    "source": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/",
+    "status": "approved-with-jurisdiction-review",
+    "license": "Public-domain works under Project Gutenberg terms",
+    "works": [
+      "The Canterville Ghost",
+      "The Monkey's Paw",
+      "The Red Room",
+      "The Signal-Man"
+    ],
+    "ingest_policy": "Use the specific eBook page and plain-text edition recorded in the ghost corpus. Preserve required Project Gutenberg notices and verify rights in every target jurisdiction before commercial redistribution."
+  },
+  {
+    "id": "premchand-ghost-open-transcription",
+    "tradition": "Indian literature",
+    "source": "Hindi Wikisource / lastmansleeping Hindi toolkit",
+    "url": "https://hi.wikisource.org/",
+    "status": "public-domain-work-plus-open-transcription",
+    "license": "Underlying Premchand work: public-domain candidate; transcription repository: MIT",
+    "work": "भूत",
+    "ingest_policy": "Use the recorded source edition and transcription provenance. Preserve the MIT attribution for the transcription repository and verify jurisdiction-specific rights before commercial distribution."
+  },
+  {
+    "id": "urdu-wikisource-classics",
+    "tradition": "Urdu literature",
+    "source": "Urdu Wikisource",
+    "url": "https://ur.wikisource.org/",
+    "status": "edition-by-edition",
+    "license": "Varies by scanned edition; many classical texts are public-domain works",
+    "works": [
+      "فسانۂ عجائب",
+      "باغ و بہار / قصۂ چار درویش"
+    ],
+    "ingest_policy": "Record exact page titles/editions. Do not assume a modern edited or translated edition is public domain."
+  },
+  {
+    "id": "arabic-wikisource-alf-layla",
+    "tradition": "Arabic literature",
+    "source": "Arabic Wikisource",
+    "url": "https://ar.wikisource.org/",
+    "status": "edition-by-edition",
+    "license": "Varies by scan/edition; traditional core stories are public-domain material",
+    "works": [
+      "حكاية التاجر مع العفريت",
+      "حكاية الصياد مع العفريت"
+    ],
+    "ingest_policy": "Prefer the historical scan pages recorded in the ghost corpus. Exclude modern 21st-century translations/editions unless separately licensed."
   }
 ]
