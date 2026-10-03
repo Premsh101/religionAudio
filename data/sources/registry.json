@@ -294,5 +294,20 @@
       "South-African Folk-Tales"
     ],
     "ingest_policy": "Use only the exact edition and story heading recorded in data/story-corpus/folklore/manifest.json. Project Gutenberg states public-domain availability for the cited editions in the USA; verify intended distribution jurisdictions. Do not replace historical source editions with modern copyrighted translations or unrelated retellings."
+  },
+  {
+    "id": "moral-tales-literature-sources",
+    "tradition": "Moral tales, fables and wisdom storytelling",
+    "source": "Project Gutenberg historical editions",
+    "url": "https://www.gutenberg.org/",
+    "status": "mixed-rights-edition-by-edition",
+    "license": "work/edition specific",
+    "works": [
+      "Hindu literature / The Book of Good Counsels",
+      "More Jataka Tales",
+      "Oriental Tales, for the Entertainment of Youth",
+      "The Thousand and One Days"
+    ],
+    "ingest_policy": "Use only the exact source edition and source section recorded in data/story-corpus/moral-tales/manifest.json. Project Gutenberg identifies these editions as public domain in the USA; verify target-jurisdiction status before commercial redistribution. Historical English translations and retellings must be labeled as such and not represented as original-language text."
   }
 ]
