@@ -18,7 +18,8 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
     where:{slug},
     select:{
       title:true,slug:true,type:true,audience:true,ageMin:true,ageMax:true,language:true,summary:true,body:true,status:true,narrationProfile:true,
-      source:{select:{name:true,url:true,license:true,rightsStatus:true}}
+      source:{select:{name:true,url:true,license:true,rightsStatus:true}},
+      audioAssets:{where:{status:"READY"},orderBy:{createdAt:"desc"},take:1,select:{id:true}}
     }
   }).catch(()=>null) : null;
 
@@ -38,7 +39,8 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
       style_notes:dbStory.summary||"",
       body:dbStory.body,
       status:dbStory.status,
-      source:dbStory.source
+      source:dbStory.source,
+      audioAssetId:dbStory.audioAssets[0]?.id||null
     }}/>;
   }
 
