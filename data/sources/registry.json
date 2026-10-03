@@ -255,5 +255,24 @@
       "كليلة ودمنة"
     ],
     "ingest_policy": "Use only the exact edition recorded in data/story-corpus/children/manifest.json. Project Gutenberg public-domain status is jurisdiction-specific; Peter Pan receives additional legal review. Hindi and Arabic Wikisource sources require edition/transcription rights verification. Do not replace a canonical source with a modern copyrighted translation."
+  },
+  {
+    "id": "mythology-literature-sources",
+    "tradition": "World mythology and sacred mythic narratives",
+    "source": "Project Gutenberg public-domain editions and verified historical sources",
+    "url": "https://www.gutenberg.org/",
+    "status": "mixed-rights-edition-by-edition",
+    "license": "work/edition specific",
+    "works": [
+      "Bulfinch's Mythology",
+      "Myths of the Norsemen",
+      "Legends of the Gods",
+      "The Mahabharata of Krishna-Dwaipayana Vyasa",
+      "The Song Celestial / Bhagavad-Gita",
+      "Jataka Tales",
+      "The Mabinogion",
+      "Kalevala"
+    ],
+    "ingest_policy": "Use only the exact source edition recorded in data/story-corpus/mythology/manifest.json. Project Gutenberg states public-domain availability in the USA for the cited works; verify target-jurisdiction status for commercial redistribution. Ancient works are not automatically represented by modern translations. Keep source editions, translations and later retellings distinct."
   }
 ]
