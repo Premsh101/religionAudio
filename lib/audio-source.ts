@@ -7,7 +7,9 @@ export async function resolveAudioSource(prisma:PrismaClient,asset:any):Promise<
   if(asset.storyId){
     const story=await prisma.story.findUnique({where:{id:asset.storyId},include:{scenes:{orderBy:{sequence:"asc"}}}});
     if(!story)throw new Error("Story not found");
-    return {text:story.scenes.map((s:any)=>s.text).join("\n\n")||story.body,profile:normalizeProfile(story.narrationProfile)!=="default"?normalizeProfile(story.narrationProfile):narrationProfileFor(story.type,story.audience),language:asset.language||"en",title:story.title,kind:"story"};
+    const translations=(story.translations&&typeof story.translations==="object"?story.translations:{}) as Record<string,string>;
+    const wanted=asset.language&&asset.language!==story.language?translations[asset.language]:undefined;
+    return {text:wanted||story.scenes.map((s:any)=>s.text).join("\n\n")||story.body,profile:normalizeProfile(story.narrationProfile)!=="default"?normalizeProfile(story.narrationProfile):narrationProfileFor(story.type,story.audience),language:asset.language||"en",title:story.title,kind:"story"};
   }
   if(asset.contentId){
     const content=await prisma.contentItem.findUnique({where:{id:asset.contentId}});

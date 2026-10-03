@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "theme": "sacred-place-and-pilgrimage-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual sacred-place story text is stored in stories.json. Each record identifies the historical layer of the site and the scriptural, legendary or devotional layer of its foundation story.",
+  "records": [
+    {
+      "id": "sacred-places-bodh-gaya",
+      "title": "Bodh Gaya: Beneath the Tree of Awakening",
+      "tradition": "Buddhism",
+      "origin": "Bodh Gaya, Bihar, India",
+      "tags": [
+        "SACRED_PLACES",
+        "BUDDHISM",
+        "BODH_GAYA",
+        "MAHABODHI",
+        "BODHI_TREE",
+        "ENLIGHTENMENT",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "HISTORICAL_SITE_WITH_TRADITIONAL_ORIGIN",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-lumbini",
+      "title": "Lumbini: The Garden Where a Prince Was Born",
+      "tradition": "Buddhism",
+      "origin": "Lumbini, Rupandehi District, Nepal",
+      "tags": [
+        "SACRED_PLACES",
+        "BUDDHISM",
+        "LUMBINI",
+        "NEPAL",
+        "BIRTH_OF_THE_BUDDHA",
+        "ASHOKA",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "6-14",
+      "evidenceType": "HISTORICAL_SITE_WITH_TRADITIONAL_ORIGIN",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-sarnath",
+      "title": "Sarnath: Where the Wheel Began to Turn",
+      "tradition": "Buddhism",
+      "origin": "Sarnath, near Varanasi, Uttar Pradesh, India",
+      "tags": [
+        "SACRED_PLACES",
+        "BUDDHISM",
+        "SARNATH",
+        "FIRST_SERMON",
+        "DHAMEK_STUPA",
+        "ASHOKA",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "HISTORICAL_SITE_WITH_TRADITIONAL_ORIGIN",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-kashi-varanasi",
+      "title": "Kashi: The City of Light on the Ganga",
+      "tradition": "Hinduism (with Buddhist, Jain, Sikh, Sufi and Muslim heritage in the city)",
+      "origin": "Varanasi (Kashi / Banaras), Uttar Pradesh, India",
+      "tags": [
+        "SACRED_PLACES",
+        "HINDUISM",
+        "VARANASI",
+        "KASHI",
+        "SHIVA",
+        "JYOTIRLINGA",
+        "GANGA",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "HISTORICAL_CITY_WITH_TRADITIONAL_LEGEND",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-kedarnath",
+      "title": "Kedarnath: The Pandavas Search for Shiva",
+      "tradition": "Hinduism / Mahabharata-linked Puranic and regional tradition",
+      "origin": "Kedarnath, Garhwal Himalaya, Uttarakhand, India",
+      "tags": [
+        "SACRED_PLACES",
+        "HINDUISM",
+        "KEDARNATH",
+        "SHIVA",
+        "PANDAVAS",
+        "JYOTIRLINGA",
+        "CHAR_DHAM",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "TRADITIONAL_LEGEND_AT_HISTORICAL_SITE",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-kaaba",
+      "title": "The Kaaba: A Father and Son Raise the House",
+      "tradition": "Islam / Qur'an and Islamic tradition",
+      "origin": "Makkah, Arabia",
+      "tags": [
+        "SACRED_PLACES",
+        "ISLAM",
+        "KAABA",
+        "MAKKAH",
+        "IBRAHIM",
+        "ISMAIL",
+        "HAJJ",
+        "QIBLA"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_NARRATIVE_AND_ISLAMIC_TRADITION",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-jerusalem-western-wall",
+      "title": "Jerusalem's Ancient Stones: The Western Wall and the Sacred Hill",
+      "tradition": "Judaism, Islam and Christianity",
+      "origin": "Old City of Jerusalem",
+      "tags": [
+        "SACRED_PLACES",
+        "JUDAISM",
+        "ISLAM",
+        "CHRISTIANITY",
+        "JERUSALEM",
+        "WESTERN_WALL",
+        "TEMPLE_MOUNT",
+        "HARAM_AL_SHARIF",
+        "AL_AQSA"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "HISTORICAL_SITE_WITH_MULTIPLE_RELIGIOUS_TRADITIONS",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-harmandir-sahib",
+      "title": "Harmandir Sahib: The House of God with Four Doors",
+      "tradition": "Sikhism",
+      "origin": "Amritsar, Punjab, India",
+      "tags": [
+        "SACRED_PLACES",
+        "SIKHISM",
+        "GOLDEN_TEMPLE",
+        "HARMANDIR_SAHIB",
+        "AMRITSAR",
+        "GURU_ARJAN",
+        "GURU_RAM_DAS",
+        "LANGAR"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "DOCUMENTED_SIKH_HISTORY_AND_TRADITION",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-ajmer-sharif",
+      "title": "Ajmer Sharif: The Shrine of the Friend of the Poor",
+      "tradition": "Islam / Sufi Chishti tradition, revered across faiths in South Asia",
+      "origin": "Ajmer, Rajasthan, India",
+      "tags": [
+        "SACRED_PLACES",
+        "ISLAM",
+        "SUFISM",
+        "CHISHTI",
+        "AJMER",
+        "DARGAH",
+        "URS",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "HISTORICAL_SHRINE_WITH_SUFI_TRADITION",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-shravanabelagola",
+      "title": "Shravanabelagola: Bahubali's Greatest Victory",
+      "tradition": "Jainism",
+      "origin": "Shravanabelagola, Hassan District, Karnataka, India",
+      "tags": [
+        "SACRED_PLACES",
+        "JAINISM",
+        "SHRAVANABELAGOLA",
+        "BAHUBALI",
+        "GOMMATESHWARA",
+        "MAHAMASTAKABHISHEKA",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "HISTORICAL_SITE_WITH_TRADITIONAL_ORIGIN",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-santiago-de-compostela",
+      "title": "Santiago de Compostela: The Field of the Star",
+      "tradition": "Christianity / Catholic tradition and the Camino de Santiago",
+      "origin": "Santiago de Compostela, Galicia, Spain",
+      "tags": [
+        "SACRED_PLACES",
+        "CHRISTIANITY",
+        "SANTIAGO_DE_COMPOSTELA",
+        "SAINT_JAMES",
+        "CAMINO",
+        "PILGRIMAGE"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "TRADITIONAL_LEGEND_AT_HISTORICAL_SITE",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "sacred-places-udvada-atash-behram",
+      "title": "Udvada: The Fire That Crossed the Sea",
+      "tradition": "Zoroastrianism / Parsi tradition",
+      "origin": "Udvada, Valsad District, Gujarat, India (earlier Sanjan)",
+      "tags": [
+        "SACRED_PLACES",
+        "ZOROASTRIANISM",
+        "PARSI",
+        "UDVADA",
+        "IRANSHAH",
+        "ATASH_BEHRAM",
+        "SANJAN",
+        "MIGRATION"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "HISTORICAL_SITE_WITH_TRADITIONAL_ORIGIN",
+      "multilingualTextPath": "data/story-corpus/sacred-places/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "theme": "friendship-family-relationships",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual friendship, family and relationship story text is stored in stories.json. Each record identifies whether the narrative is scriptural, epic, classical, historical, folkloric or a later devotional tradition.",
+  "records": [
+    {
+      "id": "friendship-krishna-sudama",
+      "title": "Krishna and Sudama: A Handful of Rice",
+      "tradition": "Bhagavata Purana (Book 10) and Krishna devotional tradition",
+      "origin": "India (Ujjain and Dwarka)",
+      "tags": [
+        "FRIENDSHIP",
+        "KRISHNA",
+        "SUDAMA",
+        "BHAGAVATA_PURANA",
+        "HINDUISM",
+        "HUMILITY"
+      ],
+      "ageBand": "7+",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-david-jonathan",
+      "title": "David and Jonathan: The Sign of the Arrows",
+      "tradition": "Hebrew Bible (1 and 2 Samuel); Jewish and Christian scripture",
+      "origin": "Ancient Israel",
+      "tags": [
+        "FRIENDSHIP",
+        "DAVID",
+        "JONATHAN",
+        "LOYALTY",
+        "JUDAISM",
+        "CHRISTIANITY"
+      ],
+      "ageBand": "9+",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-ruth-naomi",
+      "title": "Ruth and Naomi: Where You Go, I Will Go",
+      "tradition": "Hebrew Bible (Book of Ruth); Jewish and Christian scripture",
+      "origin": "Moab and Bethlehem (ancient Near East)",
+      "tags": [
+        "FAMILY",
+        "FRIENDSHIP",
+        "RUTH",
+        "NAOMI",
+        "LOYALTY",
+        "JUDAISM",
+        "CHRISTIANITY",
+        "SHAVUOT"
+      ],
+      "ageBand": "9+",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-damon-pythias",
+      "title": "Damon and Pythias: The Friend Who Stayed",
+      "tradition": "Ancient Greek and Roman tradition (Pythagorean friendship anecdote)",
+      "origin": "Syracuse, Sicily (ancient Greece)",
+      "tags": [
+        "FRIENDSHIP",
+        "DAMON_PYTHIAS",
+        "LOYALTY",
+        "TRUST",
+        "GREEK_TRADITION"
+      ],
+      "ageBand": "8+",
+      "evidenceType": "CLASSICAL_ANECDOTE",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-rama-bharata-paduka",
+      "title": "Bharata and the Sandals of Rama",
+      "tradition": "Valmiki Ramayana (Ayodhya Kanda); Hindu epic tradition",
+      "origin": "India (Ayodhya and Chitrakuta)",
+      "tags": [
+        "FAMILY",
+        "BROTHERS",
+        "RAMA",
+        "BHARATA",
+        "RAMAYANA",
+        "HINDUISM",
+        "PADUKA",
+        "LOYALTY"
+      ],
+      "ageBand": "7+",
+      "evidenceType": "EPIC_EPISODE",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-joseph-forgives-brothers",
+      "title": "Joseph Forgives His Brothers",
+      "tradition": "Hebrew Bible (Genesis 37-46) and Qur'an (Surah Yusuf)",
+      "origin": "Canaan and Egypt (ancient Near East)",
+      "tags": [
+        "FAMILY",
+        "FORGIVENESS",
+        "BROTHERS",
+        "JOSEPH",
+        "YUSUF",
+        "JUDAISM",
+        "CHRISTIANITY",
+        "ISLAM"
+      ],
+      "ageBand": "8+",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-shravan-kumar-parents",
+      "title": "Shravan Kumar: The Son Who Carried His Parents",
+      "tradition": "Valmiki Ramayana (Ayodhya Kanda) and later Indian folk tradition",
+      "origin": "India (banks of the Sarayu)",
+      "tags": [
+        "FAMILY",
+        "PARENTS",
+        "SHRAVAN_KUMAR",
+        "RAMAYANA",
+        "HINDUISM",
+        "DEVOTION_TO_PARENTS"
+      ],
+      "ageBand": "8+",
+      "evidenceType": "EPIC_EPISODE_AND_FOLK_TRADITION",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-hijra-abu-bakr-companion",
+      "title": "The Companion in the Cave: Abu Bakr and the Hijra",
+      "tradition": "Islam (Qur'an 9:40, hadith and early sira)",
+      "origin": "Mecca and Medina, Arabia",
+      "tags": [
+        "FRIENDSHIP",
+        "LOYALTY",
+        "ISLAM",
+        "HIJRA",
+        "ABU_BAKR",
+        "SAHABA",
+        "QURAN"
+      ],
+      "ageBand": "9+",
+      "evidenceType": "SCRIPTURAL_REFERENCE_AND_EARLY_HISTORY",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-guru-angad-devotion",
+      "title": "Bhai Lehna Becomes Guru Angad",
+      "tradition": "Sikhism (Sikh history and sakhi tradition)",
+      "origin": "Punjab (Kartarpur and Khadur Sahib)",
+      "tags": [
+        "DEVOTION",
+        "TEACHER_AND_STUDENT",
+        "SIKHISM",
+        "GURU_ANGAD",
+        "GURU_NANAK",
+        "SEVA",
+        "HUMILITY"
+      ],
+      "ageBand": "8+",
+      "evidenceType": "DOCUMENTED_SIKH_HISTORY_AND_SAKHI_TRADITION",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "friendship-karna-duryodhana",
+      "title": "Karna and Duryodhana: A Friendship Tested",
+      "tradition": "Mahabharata (Adi Parva and Udyoga Parva); Hindu epic tradition",
+      "origin": "India (Hastinapura and Kurukshetra)",
+      "tags": [
+        "FRIENDSHIP",
+        "LOYALTY",
+        "MORAL_COMPLEXITY",
+        "KARNA",
+        "DURYODHANA",
+        "MAHABHARATA",
+        "HINDUISM"
+      ],
+      "ageBand": "12+",
+      "evidenceType": "EPIC_EPISODE",
+      "multilingualTextPath": "data/story-corpus/friendship-family/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

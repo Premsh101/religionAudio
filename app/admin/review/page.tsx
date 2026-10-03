@@ -7,7 +7,7 @@ import AppHeader from "../../../components/AppHeader";
 import CoverArt from "../../../components/CoverArt";
 
 type Status="DRAFT"|"REVIEW"|"PUBLISHED"|"ARCHIVED";
-type Item={kind:"story"|"work";id:string;slug:string;title:string;subtitle:string;tag:string;audience:string;language:string;status:Status;href:string;coverUrl:string|null;coverUpdatedAt:string|null;updatedAt:string;needsTitle:boolean;passages?:number};
+type Item={kind:"story"|"work";id:string;slug:string;title:string;subtitle:string;tag:string;audience:string;language:string;status:Status;href:string;coverUrl:string|null;coverUpdatedAt:string|null;updatedAt:string;needsTitle:boolean;passages?:number;mature?:boolean;collection?:string|null;languages?:string[]};
 
 const FILTERS=[["queue","Needs review"],["PUBLISHED","Live"],["all","Everything"]] as const;
 const statusStyle:Record<Status,string>={DRAFT:"bg-zinc-700/40 text-zinc-300",REVIEW:"bg-amber-300/15 text-amber-200",PUBLISHED:"bg-emerald-400/15 text-emerald-300",ARCHIVED:"bg-zinc-800 text-zinc-500"};
@@ -40,7 +40,7 @@ function Row({item,aiConfigured,onChange}:{item:Item;aiConfigured:boolean;onChan
     <div className="min-w-0 space-y-4">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2 text-xs"><span className={"rounded-full px-2.5 py-1 font-semibold "+statusStyle[item.status]}>{item.status==="REVIEW"?"In review":item.status.toLowerCase()}</span><span className="text-zinc-500">{item.kind==="work"?"Book":"Story"}{item.tag!=="story"?` · ${item.tag}`:""} · {item.audience} · {item.language}{item.passages?` · ${item.passages} passages`:""}</span></div>
+          <div className="flex flex-wrap items-center gap-2 text-xs"><span className={"rounded-full px-2.5 py-1 font-semibold "+statusStyle[item.status]}>{item.status==="REVIEW"?"In review":item.status.toLowerCase()}</span>{item.mature&&<span className="rounded-full bg-rose-500 px-2 py-1 font-bold text-white">18+</span>}{item.collection&&<span className="rounded-full border border-white/10 px-2 py-1 text-zinc-400">{item.collection}</span>}{item.languages&&item.languages.length>1&&<span className="text-zinc-500">{item.languages.join(" · ")}</span>}<span className="text-zinc-500">{item.kind==="work"?"Book":"Story"}{item.tag!=="story"?` · ${item.tag}`:""} · {item.audience} · {item.language}{item.passages?` · ${item.passages} passages`:""}</span></div>
           <h2 className="mt-2 font-display text-2xl text-white">{item.title}</h2>
           {item.needsTitle&&<p className="mt-1 text-xs text-amber-300">This title looks like a placeholder. Generate a real one.</p>}
           {item.subtitle&&<p className="mt-1 line-clamp-2 text-sm text-zinc-500">{item.subtitle}</p>}
@@ -50,6 +50,7 @@ function Row({item,aiConfigured,onChange}:{item:Item;aiConfigured:boolean;onChan
           {item.status!=="PUBLISHED"
             ?<button onClick={()=>setStatus("PUBLISHED")} disabled={!!busy} className="inline-flex items-center gap-1.5 rounded-xl bg-emerald-400 px-3 py-2 text-xs font-semibold text-black disabled:opacity-50">{busy==="approve"?<Loader2 className="h-3.5 w-3.5 animate-spin"/>:<Check className="h-3.5 w-3.5"/>}Approve &amp; publish</button>
             :<button onClick={()=>setStatus("DRAFT")} disabled={!!busy} className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 px-3 py-2 text-xs text-zinc-300 disabled:opacity-50"><Undo2 className="h-3.5 w-3.5"/>Unpublish</button>}
+          {item.kind==="story"&&<button onClick={async()=>{const d=await call("status",base,{method:"PATCH",body:JSON.stringify({mature:!item.mature})});if(d)onChange({mature:!item.mature})}} disabled={!!busy} className={"rounded-xl border px-3 py-2 text-xs disabled:opacity-50 "+(item.mature?"border-rose-300/40 text-rose-200":"border-white/10 text-zinc-300")}>{item.mature?"Remove 18+":"Mark 18+"}</button>}
           {item.status==="DRAFT"&&<button onClick={()=>setStatus("REVIEW")} disabled={!!busy} className="rounded-xl border border-white/10 px-3 py-2 text-xs text-zinc-300 disabled:opacity-50">Mark for review</button>}
         </div>
       </div>

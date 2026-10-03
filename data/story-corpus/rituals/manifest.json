@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "theme": "ritual-and-custom-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual ritual and custom story text is stored in stories.json. Each record identifies whether the origin narrative is scriptural, traditional, legendary or historical, and separates it from the living practice it explains.",
+  "records": [
+    {
+      "id": "rituals-sai-hajar-zamzam",
+      "title": "Hajar's Search for Water: The Story of Sa'i and Zamzam",
+      "tradition": "Islam / Qur'an, hadith and Hajj practice",
+      "origin": "Makkah, Arabia",
+      "tags": [
+        "RITUALS",
+        "ISLAM",
+        "HAJJ",
+        "UMRAH",
+        "SAI",
+        "ZAMZAM",
+        "HAJAR"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_AND_HADITH_TRADITION_WITH_LIVING_PRACTICE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-passover-seder-questions",
+      "title": "Why Is This Night Different? The Story of the Passover Seder",
+      "tradition": "Judaism / Torah and Haggadah tradition",
+      "origin": "Ancient Israel / Egypt narrative; Jewish homes worldwide",
+      "tags": [
+        "RITUALS",
+        "JUDAISM",
+        "PASSOVER",
+        "SEDER",
+        "EXODUS",
+        "FAMILY"
+      ],
+      "ageBand": "6-14",
+      "evidenceType": "SCRIPTURAL_NARRATIVE_WITH_LIVING_PRACTICE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-raksha-bandhan-draupadi-krishna",
+      "title": "A Strip of Cloth: Draupadi, Krishna and the Rakhi Thread",
+      "tradition": "Hindu / Mahabharata-linked devotional tradition",
+      "origin": "India",
+      "tags": [
+        "RITUALS",
+        "HINDUISM",
+        "RAKSHA_BANDHAN",
+        "RAKHI",
+        "KRISHNA",
+        "DRAUPADI",
+        "MAHABHARATA"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "TRADITIONAL_LEGEND",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-langar-true-bargain",
+      "title": "The True Bargain: Guru Nanak and the Langar",
+      "tradition": "Sikhism / Janamsakhi tradition and Sikh history",
+      "origin": "Punjab (Talwandi / Nankana Sahib and Chuharkana, present-day Pakistan)",
+      "tags": [
+        "RITUALS",
+        "SIKHISM",
+        "LANGAR",
+        "GURU_NANAK",
+        "SACHA_SAUDA",
+        "SEVA",
+        "EQUALITY"
+      ],
+      "ageBand": "6-14",
+      "evidenceType": "TRADITIONAL_ACCOUNT_AND_DOCUMENTED_INSTITUTION",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-alms-round-kapilavastu",
+      "title": "The Prince with a Begging Bowl: The Buddhist Alms Round",
+      "tradition": "Buddhism / Pali commentarial tradition and Theravada practice",
+      "origin": "Kapilavastu (Nepal-India border region); practised across South and Southeast Asia",
+      "tags": [
+        "RITUALS",
+        "BUDDHISM",
+        "ALMS_ROUND",
+        "PINDAPATA",
+        "SUDDHODANA",
+        "GENEROSITY"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "TRADITIONAL_BUDDHIST_NARRATIVE_WITH_LIVING_PRACTICE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-mezuzah-onkelos",
+      "title": "The Mezuzah on the Doorpost: The Story of Onkelos",
+      "tradition": "Judaism / Torah and Talmudic tradition",
+      "origin": "Ancient Israel (Torah command); Roman-era story (Babylonian Talmud)",
+      "tags": [
+        "RITUALS",
+        "JUDAISM",
+        "MEZUZAH",
+        "SHEMA",
+        "TALMUD",
+        "ONKELOS",
+        "HOME"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_COMMAND_AND_TALMUDIC_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-breaking-of-bread",
+      "title": "The Breaking of Bread: From the Last Supper to Emmaus",
+      "tradition": "Christianity / Gospel narrative and Christian worship",
+      "origin": "Jerusalem and Emmaus, Judea",
+      "tags": [
+        "RITUALS",
+        "CHRISTIANITY",
+        "LAST_SUPPER",
+        "EUCHARIST",
+        "COMMUNION",
+        "EMMAUS"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-baptism-jordan",
+      "title": "Water from the Jordan: The Story Behind Christian Baptism",
+      "tradition": "Christianity / Gospel narrative and Christian sacramental practice",
+      "origin": "Jordan River, Judea",
+      "tags": [
+        "RITUALS",
+        "CHRISTIANITY",
+        "BAPTISM",
+        "JOHN_THE_BAPTIST",
+        "JORDAN",
+        "WATER"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-navjote-sudreh-kusti",
+      "title": "The Shirt and the Sacred Cord: The Zoroastrian Navjote",
+      "tradition": "Zoroastrianism / Parsi and Iranian Zoroastrian practice",
+      "origin": "Ancient Iran; Parsi communities of India and the diaspora",
+      "tags": [
+        "RITUALS",
+        "ZOROASTRIANISM",
+        "PARSI",
+        "NAVJOTE",
+        "SUDREH",
+        "KUSTI",
+        "INITIATION"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "LIVING_PRACTICE_WITH_TRADITIONAL_ORIGIN",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-pitru-paksha-karna",
+      "title": "Karna's Golden Meal: Why Families Offer Food to the Ancestors",
+      "tradition": "Hindu / Mahabharata-linked popular legend and shraddha practice",
+      "origin": "India",
+      "tags": [
+        "RITUALS",
+        "HINDUISM",
+        "PITRU_PAKSHA",
+        "SHRADDHA",
+        "TARPAN",
+        "KARNA",
+        "ANCESTORS"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "TRADITIONAL_LEGEND",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-akshaya-tritiya-sugarcane",
+      "title": "The First Gift of Food: Rishabhanatha and Akshaya Tritiya",
+      "tradition": "Jainism / Jain sacred narrative and fasting practice",
+      "origin": "Hastinapura, India (Jain tradition)",
+      "tags": [
+        "RITUALS",
+        "JAINISM",
+        "AKSHAYA_TRITIYA",
+        "RISHABHANATHA",
+        "SHREYANSA",
+        "VARSHITAP",
+        "FASTING"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "JAIN_SACRED_NARRATIVE_WITH_LIVING_PRACTICE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "rituals-sadaqah-garden-owners",
+      "title": "The Owners of the Garden: A Qur'anic Story About Charity",
+      "tradition": "Islam / Qur'an (Surah al-Qalam) and the practice of sadaqah",
+      "origin": "Arabia (Qur'anic narrative)",
+      "tags": [
+        "RITUALS",
+        "ISLAM",
+        "SADAQAH",
+        "ZAKAT",
+        "CHARITY",
+        "QURAN",
+        "SURAH_AL_QALAM"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/rituals/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

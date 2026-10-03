@@ -15,6 +15,10 @@ documented in `data/story-corpus/README.md`):
 | Folklore & legends | data/story-corpus/folklore | Started (36 records) |
 | Moral tales & fables | data/story-corpus/moral-tales | Started (40 records: Hitopadesha, Jataka, Oriental Tales, Thousand and One Days) |
 | Epics & heroic sagas | data/story-corpus/epics | Started (materialized multilingual episodes in stories.json) |
+| Rituals & customs | data/story-corpus/rituals | Started (12 records; en/hi/ar/ur text present; NEEDS_HUMAN_REVIEW) |
+| Sacred places & pilgrimage | data/story-corpus/sacred-places | Started (12 records; en/hi/ar/ur text present; NEEDS_HUMAN_REVIEW) |
+| Romance & love stories | data/story-corpus/romance | Started (10 records: scriptural, classical, folk and devotional love; category ROMANCE) |
+| Friendship, family & relationships | data/story-corpus/friendship-family | Started (10 records; category FRIENDSHIP_FAMILY) |
 
 All collections target Hindi (hi), English (en), Arabic (ar) and Urdu (ur).
 
@@ -152,6 +156,10 @@ A short factual explanation plus an optional traditional story.
 
 Priority: MEDIUM-HIGH
 
+Status: STARTED — 12 records in data/story-corpus/rituals (Hinduism 2, Islam 2, Judaism 2,
+Christianity 2, Sikhism 1, Buddhism 1, Jainism 1, Zoroastrianism 1). Gaps: wedding, naming and
+funeral customs; fasting traditions; regional variants.
+
 ### 7. Sacred Places & Pilgrimage Stories
 Place-based storytelling.
 
@@ -179,8 +187,13 @@ The current Place model already supports this category directly.
 
 Priority: MEDIUM-HIGH
 
+Status: STARTED — 12 records in data/story-corpus/sacred-places (Buddhism 3, Hinduism 2, Islam 2,
+shared Jewish/Muslim/Christian site 1, Sikhism 1, Jainism 1, Christianity 1, Zoroastrianism 1).
+Gaps: rivers, caves, mountains and pilgrimage routes; Africa, East Asia and the Americas.
+
 ### 8. Romance & Love Stories
-A major general-story genre currently missing.
+Status: STARTED (10 records in data/story-corpus/romance: Layla-Majnun, Heer-Ranjha, Shirin-Farhad,
+Sohni-Mahiwal, Sassi-Punnu, Jacob-Rachel, Yusuf-Zulaikha, Shakuntala, Mirabai, Dhola-Maru).
 
 Coverage:
 - legendary couples
@@ -236,6 +249,10 @@ Priority: MEDIUM
 
 ### 11. Friendship, Family & Relationships
 Stories designed for family listening.
+
+Status: STARTED (10 records in data/story-corpus/friendship-family: Krishna-Sudama, David-Jonathan,
+Ruth-Naomi, Damon-Pythias, Rama-Bharata, Joseph and his brothers, Shravan Kumar, the Hijra companionship,
+Guru Angad, Karna-Duryodhana).
 
 Subcategories:
 - parent and child

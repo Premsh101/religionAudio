@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getPrisma } from "../../../../lib/server/prisma";
 import { normalizeVoiceGender } from "../../../../lib/narration";
 import { ensureAudioAsset } from "../../../../lib/server/audio-assets";
+import { hasAdultConsent } from "../../../../lib/server/adult";
 import { RULES, clientIp, hit, isLimited, tooManyRequests } from "../../../../lib/server/rate-limit";
 
 export const dynamic="force-dynamic";
@@ -27,9 +28,13 @@ export async function POST(request:NextRequest){
   const countIfNew=async(result:{reused:boolean})=>{if(!result.reused)await hit(RULES.narrationRequestPerIp,ip)};
   try{
     if(typeof body.storyId==="string"){
-      const story=await prisma.story.findUnique({where:{id:body.storyId},select:{id:true,status:true,language:true}});
+      const story=await prisma.story.findUnique({where:{id:body.storyId},select:{id:true,status:true,language:true,matureContent:true,translations:true}});
       if(!story||story.status!=="PUBLISHED")return NextResponse.json({error:"Story not found."},{status:404});
-      const result=await ensureAudioAsset(prisma,{storyId:story.id,language:languageCode(story.language),voiceGender,existingOnly:!limited.ok});
+      if(story.matureContent&&!(await hasAdultConsent()))return NextResponse.json({error:"Confirm you are 18 or older to listen."},{status:403});
+      const translations=(story.translations&&typeof story.translations==="object"?story.translations:{}) as Record<string,string>;
+      // Narration voices exist for English and Hindi; Hindi is used only when the story has a Hindi text.
+      const language=body.language==="hi"&&(languageCode(story.language)==="hi"||translations.hi)?"hi":languageCode(story.language);
+      const result=await ensureAudioAsset(prisma,{storyId:story.id,language,voiceGender,existingOnly:!limited.ok});
       if(!result)return tooManyRequests(limited,"You've started a lot of new narrations.");
       await countIfNew(result);
       return NextResponse.json(result,{status:result.status==="READY"?200:202});

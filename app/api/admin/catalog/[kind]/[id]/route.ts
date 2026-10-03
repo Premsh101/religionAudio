@@ -12,7 +12,7 @@ export async function PATCH(request:NextRequest,{params}:{params:Promise<{kind:s
   const kind=parseKind(rawKind);
   if(!kind)return NextResponse.json({error:"Unknown item type."},{status:400});
   const body=await request.json().catch(()=>({}));
-  const data:{status?:Status;publishedAt?:Date|null;title?:string;summary?:string}={};
+  const data:{status?:Status;publishedAt?:Date|null;title?:string;summary?:string;matureContent?:boolean}={};
   if(typeof body.status==="string"){
     if(!STATUSES.includes(body.status))return NextResponse.json({error:"Invalid status."},{status:400});
     data.status=body.status;
@@ -24,6 +24,10 @@ export async function PATCH(request:NextRequest,{params}:{params:Promise<{kind:s
     data.title=title;
   }
   if(typeof body.summary==="string")data.summary=body.summary.trim().slice(0,1000);
+  if(typeof body.mature==="boolean"){
+    if(kind!=="story")return NextResponse.json({error:"Only stories can be marked 18+."},{status:400});
+    data.matureContent=body.mature;
+  }
   if(!Object.keys(data).length)return NextResponse.json({error:"Nothing to update."},{status:400});
   try{
     const item=kind==="story"
