@@ -1,41 +1,52 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { Play } from "lucide-react";
 import { useT } from "./AppProvider";
-import { CATEGORY_STYLE, categoryGradient, categoryLabelKey, type CategoryKey } from "../lib/categories";
+import { CATEGORY_STYLE, categoryLabelKey, fallbackCover, type CategoryKey } from "../lib/categories";
 import type { StoryCard } from "../lib/server/catalog";
 
-/** Cover for a story: its artwork, or a coloured card for its category with the title set over it. */
-export function StoryCover({title,category,coverUrl,large}:{title:string;category:CategoryKey;coverUrl:string|null;large?:boolean}){
-  return <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-zinc-900 shadow-lg shadow-black/30 ring-1 ring-white/10" style={coverUrl?undefined:{background:categoryGradient(category)}}>
-    {coverUrl?<img src={coverUrl} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover"/>:<>
-      <span aria-hidden className="absolute -bottom-4 -end-3 select-none text-[7rem] leading-none opacity-30 blur-[1px]">{CATEGORY_STYLE[category].emoji}</span>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,.25),transparent_55%)]"/>
-    </>}
-    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/30"/>
-    <p dir="auto" className={"absolute inset-x-0 bottom-0 p-3 font-display font-semibold leading-tight text-white drop-shadow "+(large?"text-xl":"text-[15px]")} style={{textWrap:"balance"} as React.CSSProperties}>{title}</p>
+const TITLE_SIZE={sm:"text-[19px]",md:"text-[24px]",lg:"text-[34px]"};
+
+/** Photo cover from the Sunave design: tint in the category colour, dark fade, serif title, optional tag/NEW/progress. */
+export function Cover({title,category,coverUrl,seed,size="sm",sub,tag,isNew,progress,className="",ratio="3/4"}:{title:string;category:CategoryKey;coverUrl?:string|null;seed?:string;size?:"sm"|"md"|"lg";sub?:string;tag?:string;isNew?:boolean;progress?:number;className?:string;ratio?:string}){
+  const t=useT();
+  const color=CATEGORY_STYLE[category].color;
+  const img=coverUrl||fallbackCover(category,seed||title);
+  return <div className={"relative isolate w-full overflow-hidden "+(size==="lg"?"rounded-[24px]":"rounded-[18px]")+" "+className} style={{aspectRatio:ratio,background:color,boxShadow:"0 18px 40px -20px rgba(10,8,25,.6)"}}>
+    <img src={img} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover"/>
+    <div className="absolute inset-0" style={{background:`linear-gradient(165deg, ${color}99 0%, rgba(0,0,0,0) 48%)`}}/>
+    <div className="absolute inset-0" style={{background:"linear-gradient(to top, rgba(9,7,20,.94) 0%, rgba(9,7,20,.55) 36%, rgba(9,7,20,0) 66%)"}}/>
+    {tag!==undefined&&<span className="absolute start-2.5 top-2.5 flex max-w-[75%] items-center gap-1.5 rounded-full bg-[rgba(9,7,20,.55)] py-[5px] pe-2.5 ps-2 text-[11px] font-bold leading-none text-white backdrop-blur-md"><span className="h-[7px] w-[7px] shrink-0 rounded-full" style={{background:color}}/><span className="truncate">{tag||t(categoryLabelKey(category))}</span></span>}
+    {isNew&&<span className="absolute end-2.5 top-2.5 rounded-full px-[9px] py-[5px] text-[10px] font-extrabold uppercase leading-none tracking-[.08em] text-[#1A0E00]" style={{background:"linear-gradient(135deg,#FFB020,#FF5A5F)"}}>{t("common.new")}</span>}
+    <div className={"absolute inset-x-0 bottom-0 flex flex-col gap-1.5 "+(size==="lg"?"p-5":"p-3.5")}>
+      <div dir="auto" className={"font-display leading-[1.02] text-white "+TITLE_SIZE[size]} style={{textWrap:"balance",textShadow:"0 2px 12px rgba(0,0,0,.4)"} as React.CSSProperties}>{title}</div>
+      {sub&&<div className="text-xs font-semibold leading-tight text-white/80">{sub}</div>}
+      {typeof progress==="number"&&<div className="mt-1 h-1 overflow-hidden rounded-full bg-white/20"><div className="h-full rounded-full" style={{width:`${Math.max(4,progress)}%`,background:"linear-gradient(90deg,#FFB020,#FF5A5F)"}}/></div>}
+    </div>
   </div>;
 }
 
-export default function StoryTile({story,wide}:{story:StoryCard;wide?:boolean}){
+export function storyMeta(t:ReturnType<typeof useT>,story:Pick<StoryCard,"ageMin"|"minutes">){
+  return [story.ageMin?t("stories.ages",{age:story.ageMin}):"",story.minutes?`${story.minutes} min`:""].filter(Boolean).join(" · ");
+}
+
+/** A story in a rail or grid: cover with category tag, then age and length underneath. */
+export default function StoryTile({story,wide,showTag=true}:{story:StoryCard;wide?:boolean;showTag?:boolean}){
   const t=useT();
-  return <Link href={"/stories/"+story.slug} className={"group block shrink-0 snap-start "+(wide?"w-full":"w-[42vw] max-w-[11rem] sm:w-44")}>
-    <div className="relative transition duration-300 group-hover:-translate-y-1">
-      <StoryCover title={story.title} category={story.category} coverUrl={story.coverUrl}/>
-      {story.isNew&&<span className="absolute start-2 top-2 rounded-full bg-amber-300 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-black">{t("common.new")}</span>}
-      <span className="absolute bottom-3 end-3 flex h-9 w-9 translate-y-2 items-center justify-center rounded-full bg-white text-black opacity-0 shadow-lg transition group-hover:translate-y-0 group-hover:opacity-100"><Play className="h-4 w-4 fill-current"/></span>
-    </div>
-    <p className="mt-2 text-xs text-zinc-500">{CATEGORY_STYLE[story.category].emoji} {t(categoryLabelKey(story.category))}{story.ageMin?` · ${t("stories.ages",{age:story.ageMin})}`:""}</p>
+  return <Link href={"/stories/"+story.slug} className={"group block shrink-0 snap-start "+(wide?"w-full":"w-[46vw] max-w-[184px] min-[480px]:w-[184px]")}>
+    <div className="lift-sm"><Cover title={story.title} category={story.category} coverUrl={story.coverUrl} seed={story.slug} tag={showTag?"":undefined} isNew={story.isNew}/></div>
+    <div className="mt-2.5 flex items-center justify-between gap-2 text-xs font-semibold text-mut"><span className="truncate">{story.ageMin?t("stories.ages",{age:story.ageMin}):t(categoryLabelKey(story.category))}</span>{story.minutes?<span className="shrink-0 tabular-nums">{story.minutes} min</span>:null}</div>
   </Link>;
 }
 
-export function Shelf({title,href,action,children}:{title:React.ReactNode;href?:string;action?:string;children:React.ReactNode}){
-  return <section className="mx-auto max-w-7xl px-4 pb-10 md:px-8">
+export function Rail({title,href,action,children,big}:{title:React.ReactNode;href?:string;action?:string;children:React.ReactNode;big?:boolean}){
+  return <section className="container-site pb-12">
     <div className="mb-4 flex items-end justify-between gap-4">
-      <h2 className="font-display text-xl font-semibold md:text-2xl">{title}</h2>
-      {href&&<Link href={href} className="shrink-0 text-sm font-medium text-amber-300 hover:text-amber-200">{action}</Link>}
+      <h2 className={big?"h-section":"h-rail"}>{title}</h2>
+      {href&&<Link href={href} className="shrink-0 text-sm font-extrabold text-acc">{action} →</Link>}
     </div>
-    <div className="scrollbar-hide -mx-4 flex snap-x scroll-px-4 gap-4 overflow-x-auto px-4 pb-2 md:-mx-8 md:scroll-px-8 md:px-8">{children}</div>
+    <div className="scrollbar-hide -mx-[18px] flex snap-x scroll-px-[18px] gap-4 overflow-x-auto px-[18px] pb-2 min-[760px]:-mx-10 min-[760px]:scroll-px-10 min-[760px]:px-10">{children}</div>
   </section>;
 }
+/** Kept for older imports. */
+export const Shelf=Rail;

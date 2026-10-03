@@ -25,7 +25,7 @@ async function openRouterChat(system:string,user:string,opts:{json?:boolean;temp
       "Authorization":"Bearer "+process.env.OPENROUTER_API_KEY,
       // Optional attribution headers recommended by OpenRouter.
       ...(process.env.OPENROUTER_SITE_URL?{"HTTP-Referer":process.env.OPENROUTER_SITE_URL}:{}),
-      "X-Title":"Sacred Stories"
+      "X-Title":"Sunave"
     },
     body:JSON.stringify({
       model:models[0],

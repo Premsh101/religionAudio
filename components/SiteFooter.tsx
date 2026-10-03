@@ -1,20 +1,26 @@
 "use client";
 import Link from "next/link";
-import { Logo } from "./AppHeader";
-import { useT } from "./AppProvider";
+import SunaveLogo from "./SunaveLogo";
+import { useApp } from "./AppProvider";
 
 export default function SiteFooter(){
-  const t=useT();
-  return <footer className="mt-10 border-t border-white/[0.06]">
-    <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 md:flex-row md:items-center md:justify-between md:px-8">
-      <div><Logo/><p className="mt-3 text-sm text-zinc-500">{t("footer.line")}</p></div>
-      <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-400">
-        <Link href="/stories" className="hover:text-white">{t("nav.stories")}</Link>
-        <Link href="/library" className="hover:text-white">{t("nav.library")}</Link>
-        <Link href="/search" className="hover:text-white">{t("nav.search")}</Link>
-        <Link href="/account" className="hover:text-white">{t("nav.settings")}</Link>
-      </nav>
+  const {t,user}=useApp();
+  const col="flex flex-col gap-2 text-sm";
+  return <footer className="mt-16 border-t border-line bg-bg2">
+    <div className="container-site flex flex-col gap-8 py-12 min-[760px]:flex-row min-[760px]:justify-between">
+      <div><SunaveLogo size={30}/><p className="mt-4 text-sm text-mut">{t("footer.line")}</p></div>
+      <div className="flex gap-14">
+        <nav className={col}><span className="font-extrabold text-ink">{t("footer.explore")}</span>
+          <Link href="/stories" className="text-mut hover:text-ink">{t("nav.browse")}</Link>
+          <Link href="/library" className="text-mut hover:text-ink">{t("nav.library")}</Link>
+          <Link href="/search" className="text-mut hover:text-ink">{t("nav.search")}</Link>
+        </nav>
+        <nav className={col}><span className="font-extrabold text-ink">{t("footer.account")}</span>
+          {user?<><Link href="/account" className="text-mut hover:text-ink">{t("nav.settings")}</Link><Link href="/history" className="text-mut hover:text-ink">{t("nav.history")}</Link></>
+          :<><Link href="/login" className="text-mut hover:text-ink">{t("nav.login")}</Link><Link href="/signup" className="text-mut hover:text-ink">{t("footer.signup")}</Link></>}
+        </nav>
+      </div>
     </div>
-    <p className="pb-8 text-center text-xs text-zinc-600">© {new Date().getFullYear()} {t("brand.name")}</p>
+    <p className="pb-8 text-center text-xs text-mut2">© {new Date().getFullYear()} Sunave · sunave.tech</p>
   </footer>;
 }

@@ -36,6 +36,6 @@ export default function SignupPage(){
       <FormError message={error}/>
       <button disabled={busy} className={primaryButton}>{busy?t("auth.creating"):t("auth.signupBtn")}</button>
     </form>
-    <p className="mt-8 text-center text-sm text-zinc-400">{t("auth.haveAccount")} <Link href="/login" className="font-semibold text-amber-300 hover:text-amber-200">{t("nav.login")}</Link></p>
+    <p className="mt-6 text-center text-sm text-mut">{t("auth.haveAccount")} <Link href="/login" className="font-extrabold text-acc">{t("nav.login")}</Link></p>
   </AuthShell>;
 }

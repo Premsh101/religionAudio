@@ -1,177 +1,154 @@
 "use client";
-
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Bookmark, Headphones, Pause, Play, Sparkles, Volume2 } from "lucide-react";
-import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
+import { Bookmark, ChevronLeft, Moon, Pause, Play, RotateCcw, RotateCw, Volume2 } from "lucide-react";
 import AppHeader from "../../../components/AppHeader";
-import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../../../components/NarrationPlayer";
+import SiteFooter from "../../../components/SiteFooter";
+import { Cover } from "../../../components/StoryTile";
+import { VoiceToggle, type NarrationAssets } from "../../../components/NarrationPlayer";
+import Waveform from "../../../components/player/Waveform";
+import { formatTime } from "../../../components/player/PlayerProvider";
+import { useNarration } from "../../../components/player/useNarration";
 import { recordHistory } from "../../../lib/client/history";
-import CoverArt from "../../../components/CoverArt";
 import { useApp } from "../../../components/AppProvider";
+import { CATEGORY_STYLE, categoryLabelKey, fallbackCover, type CategoryKey } from "../../../lib/categories";
 
-type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;audioByLanguage?:Record<string,NarrationAssets>;language?:string;translations?:Record<string,string>;mature?:boolean;previewStatus?:string|null;coverUrl?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
+type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;audioByLanguage?:Record<string,NarrationAssets>;language?:string;translations?:Record<string,string>;mature?:boolean;previewStatus?:string|null;coverUrl?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null;category:CategoryKey};
 
 const LANG_NAMES:Record<string,string>={en:"English",hi:"हिन्दी",ar:"العربية",ur:"اردو"};
-
-const labels:Record<string,string>={
-  ghost:"After-dark / atmospheric",
-  mythology:"Cinematic / warm",
-  folklore:"Oral-storytelling / suspense",
-  kids:"Warm / playful",
-  "moral-tale":"Bright / lesson-focused",
-  scripture:"Calm / deliberate",
-  mystery:"Composed / clue-by-clue",
-  thriller:"Taut / urgent"
-};
+const VOICE_LABEL:Record<string,string>={ghost:"Atmospheric",mythology:"Cinematic",folklore:"Oral storytelling",kids:"Warm & playful","moral-tale":"Bright",scripture:"Calm",mystery:"Composed",thriller:"Taut"};
 
 export default function StoryClient({story}:{story:Story}){
-  const [voice,setVoice]=useVoicePreference();
-  const [playing,setPlaying]=useState(false);
-  const [busy,setBusy]=useState(false);
-  const [speed,setSpeed]=useState(1);
-  const [progress,setProgress]=useState(0);
+  const {t,locale}=useApp();
+  const router=useRouter();
+  const params=useSearchParams();
   const [bookmarked,setBookmarked]=useState(false);
-  const audioRef=useRef<HTMLAudioElement|null>(null);
-
-  const label=labels[story.narration_profile]||"Natural";
   const baseLang=story.language||"en";
   const languages=[baseLang,...(["en","hi","ar","ur"] as const).filter(l=>l!==baseLang&&story.translations?.[l])];
-  const {locale}=useApp();
   // Open the story in the visitor's language when a translation exists.
   const [lang,setLang]=useState(languages.includes(locale)?locale:baseLang);
   const shownBody=lang===baseLang?story.body:(story.translations?.[lang]||story.body);
   const rtl=lang==="ar"||lang==="ur";
-  const titleOk=story.translations?.["title_"+lang]&&(!story.translations?.title_src||story.translations.title_src===story.title);
-  const shownTitle=lang!==baseLang&&titleOk?story.translations!["title_"+lang]:story.title;
-  // Narration voices exist for English and Hindi; Arabic/Urdu readers hear the English narration.
-  const narrationLang=lang==="hi"||lang===baseLang?lang:baseLang;
-  const historyTarget=story.storyId?{kind:"story" as const,id:story.storyId,slug:story.slug,title:story.title,href:"/stories/"+story.slug}:undefined;
+  const titleOk=story.translations?.["title_"+locale]&&(!story.translations?.title_src||story.translations.title_src===story.title);
+  const shownTitle=locale!==baseLang&&titleOk?story.translations!["title_"+locale]:story.title;
+  // Narration exists in English and Hindi; Arabic and Urdu readers hear the English narration.
+  const narrationLang=lang==="hi"||lang===baseLang?lang:(locale==="hi"&&story.translations?.hi?"hi":baseLang);
+  const href="/stories/"+story.slug;
+  const coverUrl=story.coverUrl||fallbackCover(story.category,story.slug);
+  const historyTarget=story.storyId?{kind:"story" as const,id:story.storyId,slug:story.slug,title:story.title,href}:undefined;
+  const minutes=Math.max(1,Math.round(story.body.length/870));
+  const color=CATEGORY_STYLE[story.category].color;
 
-  useEffect(()=>{if(historyTarget)recordHistory(historyTarget);},[story.storyId]);
+  const n=useNarration({storyId:story.storyId,language:narrationLang,assets:story.audioByLanguage?.[narrationLang]||story.audio||{},item:{title:shownTitle,href,coverUrl,target:historyTarget}});
+  const p=n.player;
+  const live=n.isCurrent;
+  const progress=live&&p.duration?Math.min(1,p.elapsed/p.duration):0;
+  const segmentsInLang=live&&p.segments.length>0&&lang===narrationLang;
+
+  useEffect(()=>{if(historyTarget)recordHistory(historyTarget)},[story.storyId]);// eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(()=>{
-    async function load(){
-      const [progressRes,bookmarkRes]=await Promise.all([
-        fetch("/api/user/progress"),
-        fetch("/api/user/bookmarks")
-      ]);
-      if(progressRes.ok){
-        const data=await progressRes.json();
-        const item=data.stories?.find((row:any)=>row.story?.slug===story.slug);
-        if(item) setProgress(item.progressPercent||0);
-      }
-      if(bookmarkRes.ok){
-        const data=await bookmarkRes.json();
-        setBookmarked(Boolean(data.bookmarks?.some((row:any)=>row.story?.slug===story.slug)));
-      }
-    }
-    load().catch(()=>{});
+    fetch("/api/user/bookmarks").then(r=>r.ok?r.json():null).then(d=>{if(d)setBookmarked(Boolean(d.bookmarks?.some((row:{story?:{slug:string}})=>row.story?.slug===story.slug)))}).catch(()=>{});
   },[story.slug]);
 
-  async function saveProgress(value:number){
-    setProgress(value);
-    if(historyTarget)recordHistory({...historyTarget,progressPercent:value,completed:value>=100});
-    try{
-      await fetch("/api/user/progress",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          kind:"story",
-          targetSlug:story.slug,
-          sequence:1,
-          progressPercent:value,
-          completed:value>=100
-        })
-      });
-    }catch{}
-  }
+  // "Listen" on the home banner opens this page with ?play=1.
+  const autoplayed=useRef(false);
+  useEffect(()=>{
+    if(params.get("play")==="1"&&!autoplayed.current&&story.storyId){autoplayed.current=true;if(!n.playing)void n.play();router.replace(href,{scroll:false})}
+  });// eslint-disable-line react-hooks/exhaustive-deps
 
   async function toggleBookmark(){
-    const res=await fetch("/api/user/bookmarks",{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({targetType:"story",targetKey:story.slug})
-    });
-    if(res.status===401){
-      window.location.href="/login?next=/stories/"+encodeURIComponent(story.slug);
-      return;
-    }
-    if(res.ok){
-      const data=await res.json();
-      setBookmarked(Boolean(data.bookmarked));
-    }
+    const res=await fetch("/api/user/bookmarks",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({targetType:"story",targetKey:story.slug})});
+    if(res.status===401){window.location.href="/login?next="+encodeURIComponent(href);return}
+    if(res.ok){const data=await res.json();setBookmarked(Boolean(data.bookmarked))}
   }
 
-  async function play(){
-    if(playing){
-      audioRef.current?.pause();
-      window.speechSynthesis.cancel();
-      setPlaying(false);
-      return;
-    }
-    setBusy(true);
-    await saveProgress(Math.max(progress,10));
-    const previewText="This is a preview of "+story.title+". "+story.style_notes;
-    try{
-      const res=await fetch("/api/tts",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({text:previewText,language:"en",profile:story.narration_profile,voice})
-      });
-      if(!res.ok) throw new Error("TTS unavailable");
-      const {url}=await res.json();
-      if(!url) throw new Error("TTS unavailable");
-      const audio=new Audio(url);
-      audio.playbackRate=speed;
-      audio.onended=()=>setPlaying(false);
-      audioRef.current=audio;
-      await audio.play();
-      setPlaying(true);
-    }catch{
-      const utterance=new SpeechSynthesisUtterance(previewText);
-      utterance.rate=speed;
-      utterance.onend=()=>setPlaying(false);
-      window.speechSynthesis.cancel();
-      window.speechSynthesis.speak(utterance);
-      setPlaying(true);
-    }finally{setBusy(false)}
-  }
+  const playLabel=n.busy?t("story.starting"):n.playing?t("story.pause"):live&&p.elapsed>1?t("story.resume"):t("story.play");
+  const paragraphs=shownBody.split(/\n{2,}|\n/).map(s=>s.trim()).filter(Boolean);
 
   return <main className="min-h-screen">
     <AppHeader/>
-    <header className="mx-auto max-w-6xl px-5 py-5"><Link href="/stories" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Story universe</Link></header>
-    <section className="mx-auto max-w-5xl px-5 pb-20 pt-6">
-      <div className="glass rounded-[32px] p-7 md:p-12">
-        <div className="flex items-start justify-between gap-5">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500"><span className="rounded-full border border-amber-300/15 bg-amber-300/5 px-3 py-1 text-amber-200">{story.tag}</span>{story.mature&&<span className="rounded-full bg-rose-500 px-2.5 py-1 font-bold text-white">18+</span>}{story.previewStatus&&<span className="rounded-full bg-zinc-700 px-2.5 py-1 text-zinc-200">Preview · {story.previewStatus.toLowerCase()}</span>}<span>{story.audience}</span><span>Age {story.age_min}+</span></div>
-          <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save story"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 bg-white/[0.02] p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
-        </div>
-        {story.coverUrl&&<div className="mt-7 w-40 md:float-right md:mb-4 md:ml-8 md:mt-0 md:w-52"><CoverArt title={shownTitle} tag={story.tag} kind="story" coverUrl={story.coverUrl} size="md"/></div>}
-        <h1 dir="auto" className="mt-7 max-w-3xl font-display text-4xl leading-tight md:text-5xl">{shownTitle}</h1>
-        <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-400">{story.style_notes}</p>
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <button onClick={play} disabled={busy} className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3.5 text-sm font-semibold text-black disabled:opacity-50">{playing?<Pause className="h-4 w-4"/>:<Play className="h-4 w-4 fill-current"/>}{busy?"Generating…":playing?"Pause":"Play preview"}</button>
-          <div className="inline-flex items-center gap-2 rounded-2xl border border-white/10 px-4 py-3 text-xs text-zinc-500"><Volume2 className="h-4 w-4"/>{label}</div>
-          <select value={speed} onChange={e=>setSpeed(Number(e.target.value))} className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-xs text-zinc-400 outline-none"><option value={0.8}>0.8×</option><option value={1}>1×</option><option value={1.2}>1.2×</option></select>
-        </div>
-        {story.storyId&&<div className="mt-8"><NarrationPlayer key={narrationLang} title={story.title+" · full narration"+(narrationLang!=="en"?` (${LANG_NAMES[narrationLang]||narrationLang})`:"")} storyId={story.storyId} target={historyTarget} language={narrationLang} assets={story.audioByLanguage?.[narrationLang]||story.audio||{}} voice={voice} onVoiceChange={setVoice}/>{narrationLang!==lang&&<p className="mt-2 text-xs text-zinc-500">Narration is available in English and Hindi; playing English.</p>}</div>}
-        <div className="mt-7">
-          <div className="flex items-center justify-between text-xs text-zinc-600"><span>Your reading progress</span><span>{Math.round(progress)}%</span></div>
-          <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/5"><div className="h-full rounded-full bg-amber-300" style={{width:String(Math.max(2,progress))+"%"}}/></div>
-        </div>
+    <div className="relative">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[620px] overflow-hidden" aria-hidden>
+        <img src={coverUrl} alt="" className="h-full w-full scale-110 object-cover opacity-45 blur-[50px]"/>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[color-mix(in_srgb,var(--bg)_60%,transparent)] to-bg"/>
       </div>
-      {story.body && <article className="mt-5 glass rounded-3xl p-7 md:p-10">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="text-xs uppercase tracking-[0.18em] text-zinc-600">Story</div>
-          {languages.length>1&&<div role="tablist" aria-label="Story language" className="flex flex-wrap gap-1 rounded-2xl border border-white/10 p-1">{languages.map(l=><button key={l} role="tab" aria-selected={lang===l} onClick={()=>setLang(l)} className={"rounded-xl px-3 py-1.5 text-xs "+(lang===l?"bg-white text-black":"text-zinc-400 hover:text-white")}>{LANG_NAMES[l]||l}</button>)}</div>}
+
+      <section className="relative mx-auto w-full max-w-[1180px] px-[18px] pb-10 pt-6 min-[760px]:px-10">
+        <button onClick={()=>window.history.length>1?router.back():router.push("/stories")} className="inline-flex items-center gap-1.5 rounded-full bg-chip px-4 py-2 text-sm font-bold text-ink backdrop-blur hover:bg-line2"><ChevronLeft className="h-4 w-4 rtl:rotate-180"/>{t("story.back")}</button>
+
+        <div className="mt-6 grid items-end gap-8 min-[900px]:grid-cols-[340px_1fr]">
+          <div className="mx-auto w-[240px] min-[900px]:w-full"><Cover title={shownTitle} category={story.category} coverUrl={coverUrl} seed={story.slug} size="lg" tag=""/></div>
+          <div>
+            <div className="flex flex-wrap items-center gap-2 text-[13px] font-bold">
+              <span className="rounded-full px-3 py-1.5 text-white" style={{background:color}}>{t(categoryLabelKey(story.category))}</span>
+              {story.mature&&<span className="rounded-full bg-coral px-3 py-1.5 text-white">18+</span>}
+              {story.previewStatus&&<span className="rounded-full bg-chip px-3 py-1.5">{t("story.preview")} · {story.previewStatus.toLowerCase()}</span>}
+              {story.age_min>0&&<span className="rounded-full bg-chip px-3 py-1.5">{t("stories.ages",{age:story.age_min})}</span>}
+              <span className="rounded-full bg-chip px-3 py-1.5">{minutes} min</span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-chip px-3 py-1.5"><Volume2 className="h-3.5 w-3.5"/>{VOICE_LABEL[story.narration_profile]||"Natural"}</span>
+            </div>
+            <h1 dir="auto" className="mt-4 font-display text-[44px] leading-[.98] tracking-[-.02em] min-[760px]:text-[64px]" style={{textWrap:"balance"} as React.CSSProperties}>{shownTitle}</h1>
+            {story.style_notes&&<p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-mut">{story.style_notes}</p>}
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              {story.storyId&&<button onClick={()=>void n.play()} disabled={n.busy} className="btn-primary">{n.playing?<Pause className="h-4 w-4 fill-current"/>:<Play className="h-4 w-4 fill-current"/>}{playLabel}</button>}
+              <button onClick={toggleBookmark} aria-pressed={bookmarked} className="btn-ghost !py-3.5"><Bookmark className="h-4 w-4" fill={bookmarked?"currentColor":"none"}/>{bookmarked?t("story.saved"):t("story.save")}</button>
+              {story.storyId&&<VoiceToggle voice={n.voice} onChange={n.setVoice}/>}
+            </div>
+          </div>
         </div>
-        <div lang={lang} dir={rtl?"rtl":"ltr"} className={"mt-5 whitespace-pre-wrap text-lg leading-9 text-zinc-200 "+(rtl?"text-right font-sans":"font-display")}>{shownBody}</div>
-      </article>}
-      {story.source&&<div className="mt-5 rounded-3xl border border-emerald-300/10 bg-emerald-300/[0.03] p-6"><div className="text-xs uppercase tracking-[0.18em] text-emerald-300">Source & rights</div><div className="mt-3 font-display text-lg">{story.source.name}</div><div className="mt-1 text-xs text-zinc-500">{story.source.license||story.source.rightsStatus}</div><a href={story.source.url} target="_blank" rel="noreferrer" className="mt-4 inline-flex text-xs text-zinc-300 hover:text-white">Open source record →</a></div>}
-      <div className="mt-5 grid gap-5 md:grid-cols-2">
-        <div className="glass rounded-3xl p-7"><div className="flex items-center gap-2 text-sm"><Sparkles className="h-4 w-4 text-violet-300"/> Story notes</div><p className="mt-4 text-sm leading-7 text-zinc-400">Published stories will carry their source, tradition, rights status and evidence labels alongside the narrative.</p></div>
-        <div className="glass rounded-3xl p-7"><div className="flex items-center gap-2 text-sm"><Headphones className="h-4 w-4 text-amber-300"/> Narration</div><p className="mt-4 text-sm leading-7 text-zinc-400">Narration style follows the story profile: atmospheric for ghost folklore, warm for mythology and clearer, playful pacing for children.</p></div>
-      </div>
-    </section>
-  </main>
+
+        {story.storyId&&<div className="card mt-8 p-5 min-[760px]:p-7">
+          <Waveform seed={story.slug} progress={progress} onSeek={live?f=>p.seek(f*p.duration):undefined} label={t("story.play")}/>
+          <div className="mt-2 flex justify-between text-xs font-bold tabular-nums text-mut2"><span>{formatTime(live?p.elapsed:0)}</span><span>-{formatTime(live?Math.max(0,p.duration-p.elapsed):minutes*60)}</span></div>
+          <div className="mt-4 flex items-center justify-between gap-3">
+            <button onClick={p.cycleRate} disabled={!live} aria-label={t("story.speed")} className="h-11 min-w-[72px] rounded-full border border-line2 px-4 text-sm font-extrabold disabled:opacity-40">{(live?p.rate:1)}×</button>
+            <div className="flex items-center gap-3">
+              <button onClick={()=>p.skip(-15)} disabled={!live} aria-label={t("story.back15")} className="flex h-12 w-12 items-center justify-center rounded-full bg-chip disabled:opacity-40"><RotateCcw className="h-5 w-5"/></button>
+              <button onClick={()=>void n.play()} disabled={n.busy} aria-label={playLabel} className="flex h-[72px] w-[72px] items-center justify-center rounded-full bg-ink text-bg shadow-card disabled:opacity-50">{n.playing?<Pause className="h-7 w-7 fill-current"/>:<Play className="ms-1 h-7 w-7 fill-current"/>}</button>
+              <button onClick={()=>p.skip(15)} disabled={!live} aria-label={t("story.fwd15")} className="flex h-12 w-12 items-center justify-center rounded-full bg-chip disabled:opacity-40"><RotateCw className="h-5 w-5"/></button>
+            </div>
+            <button onClick={p.cycleSleep} disabled={!live} className={"inline-flex h-11 items-center gap-2 rounded-full border px-4 text-sm font-extrabold disabled:opacity-40 "+(live&&p.sleep?"border-teal bg-teal/15 text-teal":"border-line2")}><Moon className="h-4 w-4"/><span className="hidden min-[480px]:inline">{live&&p.sleep?t("story.sleepOn",{n:p.sleep}):t("story.sleep")}</span></button>
+          </div>
+          {(n.error||(live&&(p.error||p.preparing||p.resumeWaiting))||narrationLang!==lang)&&<div className="mt-4 space-y-1 text-sm text-mut">
+            {n.error&&<p className="font-semibold text-coral">{n.error==="unavailable"?t("story.unavailable"):n.error}</p>}
+            {live&&p.error&&<p className="font-semibold text-coral">{p.error}</p>}
+            {live&&p.preparing&&<p>{t("story.preparing",{done:p.preparing.done,total:p.preparing.total||"…"})} {t("story.firstTime")}</p>}
+            {live&&p.resumeWaiting&&<p>{t("story.resumeWaiting",{n:p.resumeWaiting})}</p>}
+            {narrationLang!==lang&&<p>{t("story.narrationLang")}</p>}
+          </div>}
+        </div>}
+
+        <div className={"mt-6 grid gap-6 "+((live&&p.segments.length>1)||story.source?"min-[900px]:grid-cols-[1fr_340px]":"")}>
+          <article id="read" className="card scroll-mt-24 p-5 min-[760px]:p-7">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <p className="eyebrow text-mut2">{t("story.readAlong")}</p>
+              {languages.length>1&&<div role="tablist" aria-label="Story language" className="flex rounded-full bg-chip p-1">{languages.map(l=><button key={l} role="tab" lang={l} aria-selected={lang===l} onClick={()=>setLang(l)} className={"rounded-full px-3.5 py-1.5 text-sm font-bold transition "+(lang===l?"bg-ink text-bg":"text-mut hover:text-ink")}>{LANG_NAMES[l]||l}</button>)}</div>}
+            </div>
+            <div lang={lang} dir={rtl?"rtl":"ltr"} className={"mt-5 space-y-1 "+(rtl?"font-sans text-[20px] leading-[2]":"font-display text-[21px] leading-[1.5]")}>
+              {segmentsInLang?p.segments.map((s,i)=><button key={s.id} onClick={()=>p.choose(i)} className={"block w-full rounded-xl px-3 py-2 text-start transition "+(i===p.index?"bg-hl text-ink":"text-mut hover:text-ink")}>{s.transcript}</button>)
+                :paragraphs.map((para,i)=><p key={i} className="px-3 py-2 text-ink/90">{para}</p>)}
+            </div>
+          </article>
+          <aside className="space-y-4">
+            {live&&p.segments.length>1&&<div className="card p-5">
+              <p className="eyebrow text-mut2">{t("story.parts")}</p>
+              <div className="mt-3 space-y-1">{p.segments.map((s,i)=><button key={s.id} onClick={()=>p.choose(i)} className={"flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-start text-sm font-bold transition "+(i===p.index?"bg-hl":"hover:bg-chip")}>
+                <span className={"flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs "+(i===p.index?"text-[#1A0E00]":"bg-chip text-mut")} style={i===p.index?{background:"linear-gradient(135deg,#FFB020,#FF5A5F)"}:undefined}>{i+1}</span>
+                <span className="flex-1">{t("story.part",{n:i+1})}</span><span className="text-xs text-mut2">{formatTime((s.endMs-s.startMs)/1000)}</span>
+              </button>)}</div>
+            </div>}
+            {story.source&&<div className="rounded-[24px] border border-teal/30 bg-teal/[0.08] p-5">
+              <p className="eyebrow text-teal">{t("story.source")}</p>
+              <p className="mt-2 font-extrabold">{story.source.name}</p>
+              <p className="mt-1 text-sm text-mut">{story.source.license||story.source.rightsStatus}</p>
+              {story.source.url&&<a href={story.source.url} target="_blank" rel="noreferrer" className="mt-3 inline-flex text-sm font-bold text-teal">{t("story.openSource")} →</a>}
+            </div>}
+          </aside>
+        </div>
+      </section>
+    </div>
+    <SiteFooter/>
+  </main>;
 }

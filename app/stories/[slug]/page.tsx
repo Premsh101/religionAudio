@@ -9,6 +9,8 @@ import { getCurrentSessionUser } from "../../../lib/server/session";
 import AdultGate from "../../../components/AdultGate";
 import AppHeader from "../../../components/AppHeader";
 import { asTranslations } from "../../../lib/story-i18n";
+import { categoryOf } from "../../../lib/categories";
+import { getTranslator } from "../../../lib/i18n/server";
 
 type StorySeed={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;status:string;body?:string};
 
@@ -33,7 +35,8 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
     const viewer=dbStory.status!=="PUBLISHED"?await getCurrentSessionUser():null;
     const canPreview=viewer?.role==="ADMIN"||viewer?.role==="EDITOR";
     if(dbStory.status!=="PUBLISHED"&&!canPreview){
-      return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><ShieldCheck className="h-6 w-6 text-amber-300"/><p className="mt-4 text-xs uppercase tracking-[0.18em] text-zinc-600">Editorial status · {dbStory.status}</p><h1 className="mt-2 font-display text-3xl">{dbStory.title}</h1><p className="mt-3 text-sm leading-6 text-zinc-500">This story is not published yet. Readers will see it here after editorial review and publication.</p><Link href="/stories" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><ArrowLeft className="h-4 w-4"/>Back to stories</Link></div></section></main>;
+      const t=await getTranslator();
+      return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="card p-8"><ShieldCheck className="h-6 w-6 text-acc"/><h1 className="mt-4 font-display text-4xl">{dbStory.title}</h1><p className="mt-3 text-mut">{t("story.notPublished")}</p><Link href="/stories" className="btn-outline mt-6"><ArrowLeft className="h-4 w-4 rtl:rotate-180"/>{t("story.back")}</Link></div></section></main>;
     }
     if(dbStory.matureContent&&!(await hasAdultConsent())){
       return <main className="min-h-screen"><AppHeader/><AdultGate title={dbStory.title}/></main>;
@@ -60,12 +63,16 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
       language:dbStory.language,
       translations,
       mature:dbStory.matureContent,
-      previewStatus:dbStory.status!=="PUBLISHED"?dbStory.status:null
+      previewStatus:dbStory.status!=="PUBLISHED"?dbStory.status:null,
+      category:dbStory.matureContent?"romance":categoryOf(dbStory)
     }}/>;
   }
 
   const story=(stories as StorySeed[]).find(item=>item.slug===slug);
-  if(!story) return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><h1 className="font-display text-3xl">Story not found</h1><Link href="/stories" className="mt-6 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white"><ArrowLeft className="h-4 w-4"/>Back to stories</Link></div></section></main>;
+  if(!story){
+    const t=await getTranslator();
+    return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-2xl px-5 py-16"><div className="card p-8"><h1 className="font-display text-4xl">{t("story.notFound")}</h1><Link href="/stories" className="btn-outline mt-6"><ArrowLeft className="h-4 w-4 rtl:rotate-180"/>{t("story.back")}</Link></div></section></main>;
+  }
 
   return <StoryClient story={{
     title:story.title,
@@ -78,6 +85,7 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
     narration_profile:story.narration_profile,
     style_notes:story.style_notes,
     body:story.body||"",
-    status:story.status
+    status:story.status,
+    category:categoryOf({type:story.content_type.toUpperCase(),audience:story.audience.toUpperCase()})
   }}/>;
 }

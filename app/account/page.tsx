@@ -14,7 +14,7 @@ type WorkProgress={id:string;progressPercent:number;currentSequence:number;updat
 type StoryProgress={id:string;progressPercent:number;currentScene:number;updatedAt:string;story:{title:string;slug:string;summary:string|null}};
 type BookmarkRow={id:string;work:{title:string;slug:string}|null;story:{title:string;slug:string}|null;createdAt:string};
 
-const bookHref=(slug:string)=>slug==="dhammapada-sujato-en"?"/read/dhammapada":"/read/"+slug;
+const bookHref=(slug:string)=>"/read/"+slug;
 
 function ChangePassword(){
   const {t}=useApp();
@@ -40,7 +40,7 @@ function ChangePassword(){
     <Field label={t("settings.new")} hint={t("auth.pwHint")}><PasswordInput value={next} onChange={setNext} autoComplete="new-password" minLength={8}/></Field>
     <Field label={t("settings.confirmNew")}><PasswordInput value={confirm} onChange={setConfirm} autoComplete="new-password" minLength={8}/></Field>
     <FormError message={error}/>
-    {done&&<div role="status" className="flex items-center gap-2 rounded-2xl border border-emerald-400/20 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-200"><Check className="h-4 w-4"/>{t("settings.updated")}</div>}
+    {done&&<div role="status" className="flex items-center gap-2 rounded-2xl border border-teal/30 bg-teal/10 px-4 py-3 text-sm font-semibold text-teal"><Check className="h-4 w-4"/>{t("settings.updated")}</div>}
     <button disabled={busy} className={primaryButton+" sm:w-auto"}>{busy?t("settings.updating"):t("settings.update")}</button>
   </form>;
 }
@@ -66,46 +66,46 @@ export default function AccountPage(){
     ...stories.map(p=>({type:"story",title:p.story.title,href:"/stories/"+p.story.slug,percent:p.progressPercent,updatedAt:p.updatedAt}))
   ].sort((a,b)=>new Date(b.updatedAt).getTime()-new Date(a.updatedAt).getTime()).slice(0,6);
 
-  const card="glass rounded-3xl p-6 md:p-7";
-  return <main className="page-glow min-h-screen">
+  const card="card rounded-3xl p-6 md:p-7";
+  return <main className="min-h-screen">
     <AppHeader/>
     <section className="mx-auto max-w-5xl px-4 py-8 md:px-8 md:py-12">
-      {!user?<div className={card+" text-center"}><p className="text-zinc-300">{t("settings.loginPrompt")}</p><Link href="/login" className="mt-5 inline-flex rounded-full bg-amber-300 px-6 py-3 font-semibold text-black">{t("nav.login")}</Link></div>:<>
+      {!user?<div className={card+" text-center"}><p className="text-ink">{t("settings.loginPrompt")}</p><Link href="/login" className="mt-5 inline-flex rounded-full btn-primary px-6 py-3 font-semibold text-black">{t("nav.login")}</Link></div>:<>
         <div className="flex items-center gap-4">
-          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-400 to-fuchsia-500 text-2xl font-semibold uppercase text-white">{(user.displayName||user.email||user.phone||"U")[0]}</span>
-          <div className="min-w-0"><h1 className="truncate font-display text-3xl font-semibold">{user.displayName||t("settings.title")}</h1><p className="truncate text-sm text-zinc-400">{t("settings.signedInAs")} <span dir="ltr">{user.email||user.phone}</span></p></div>
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-purple to-pink text-2xl font-semibold uppercase text-ink">{(user.displayName||user.email||user.phone||"U")[0]}</span>
+          <div className="min-w-0"><h1 className="truncate font-display text-4xl">{user.displayName||t("settings.title")}</h1><p className="truncate text-sm text-mut">{t("settings.signedInAs")} <span dir="ltr">{user.email||user.phone}</span></p></div>
         </div>
 
         <div className="mt-8 grid gap-5 lg:grid-cols-2">
           <section className={card}>
-            <h2 className="flex items-center gap-2 text-lg font-semibold"><Globe className="h-5 w-5 text-sky-300"/>{t("settings.language")}</h2>
-            <p className="mt-1 text-sm text-zinc-400">{t("settings.languageSub")}</p>
-            <div className="mt-5 grid grid-cols-2 gap-2">{LOCALES.map(l=><button key={l} lang={l} onClick={()=>l!==locale&&setLocale(l)} aria-pressed={l===locale} className={"flex items-center justify-between rounded-2xl border px-4 py-3 text-start transition "+(l===locale?"border-amber-300 bg-amber-300/10 text-amber-100":"border-white/10 text-zinc-300 hover:bg-white/5")}>{LOCALE_NAMES[l]}{l===locale&&<Check className="h-4 w-4"/>}</button>)}</div>
+            <h2 className="flex items-center gap-2 text-lg font-semibold"><Globe className="h-5 w-5 text-sky"/>{t("settings.language")}</h2>
+            <p className="mt-1 text-sm text-mut">{t("settings.languageSub")}</p>
+            <div className="mt-5 grid grid-cols-2 gap-2">{LOCALES.map(l=><button key={l} lang={l} onClick={()=>l!==locale&&setLocale(l)} aria-pressed={l===locale} className={"flex items-center justify-between rounded-2xl border px-4 py-3 text-start transition "+(l===locale?"border-orange bg-orange/10 text-ink":"border-line text-ink hover:bg-chip")}>{LOCALE_NAMES[l]}{l===locale&&<Check className="h-4 w-4"/>}</button>)}</div>
           </section>
 
           <section className={card}>
-            <h2 className="flex items-center gap-2 text-lg font-semibold"><KeyRound className="h-5 w-5 text-amber-300"/>{t("settings.password")}</h2>
+            <h2 className="flex items-center gap-2 text-lg font-semibold"><KeyRound className="h-5 w-5 text-acc"/>{t("settings.password")}</h2>
             <div className="mt-5"><ChangePassword/></div>
           </section>
 
           <section className={card}>
-            <div className="flex items-center justify-between gap-3"><h2 className="flex items-center gap-2 text-lg font-semibold"><Clock3 className="h-5 w-5 text-emerald-300"/>{t("settings.continue")}</h2><Link href="/history" className="text-sm font-medium text-amber-300">{t("nav.history")}</Link></div>
-            <div className="mt-4 space-y-2">{recent.length===0?<p className="text-sm text-zinc-500">{t("settings.nothingYet")}</p>:recent.map(item=><Link key={item.type+item.href} href={item.href} className="block rounded-2xl border border-white/5 bg-white/[0.02] p-4 transition hover:bg-white/[0.05]">
-              <div className="flex items-center justify-between gap-3"><span className="truncate font-medium">{item.title}</span><span className="shrink-0 text-xs text-zinc-500">{item.percent}%</span></div>
-              <div className="mt-3 h-1 overflow-hidden rounded-full bg-white/10"><div className="h-full rounded-full bg-amber-300" style={{width:Math.max(3,item.percent)+"%"}}/></div>
+            <div className="flex items-center justify-between gap-3"><h2 className="flex items-center gap-2 text-lg font-semibold"><Clock3 className="h-5 w-5 text-teal"/>{t("settings.continue")}</h2><Link href="/history" className="text-sm font-medium text-acc">{t("nav.history")}</Link></div>
+            <div className="mt-4 space-y-2">{recent.length===0?<p className="text-sm text-mut2">{t("settings.nothingYet")}</p>:recent.map(item=><Link key={item.type+item.href} href={item.href} className="block rounded-2xl border border-line bg-card p-4 transition hover:bg-chip">
+              <div className="flex items-center justify-between gap-3"><span className="truncate font-medium">{item.title}</span><span className="shrink-0 text-xs text-mut2">{item.percent}%</span></div>
+              <div className="mt-3 h-1 overflow-hidden rounded-full bg-chip"><div className="h-full rounded-full bg-gradient-to-r from-sun to-coral" style={{width:Math.max(3,item.percent)+"%"}}/></div>
             </Link>)}</div>
           </section>
 
           <section className={card}>
-            <h2 className="flex items-center gap-2 text-lg font-semibold"><Bookmark className="h-5 w-5 text-violet-300"/>{t("settings.saved")}</h2>
-            <div className="mt-4 space-y-2">{bookmarks.length===0?<p className="text-sm text-zinc-500">{t("settings.nothingSaved")}</p>:bookmarks.slice(0,8).map(item=>{
+            <h2 className="flex items-center gap-2 text-lg font-semibold"><Bookmark className="h-5 w-5 text-purple"/>{t("settings.saved")}</h2>
+            <div className="mt-4 space-y-2">{bookmarks.length===0?<p className="text-sm text-mut2">{t("settings.nothingSaved")}</p>:bookmarks.slice(0,8).map(item=>{
               const target=item.work?{href:bookHref(item.work.slug),title:item.work.title,kind:t("common.book")}:item.story?{href:"/stories/"+item.story.slug,title:item.story.title,kind:t("common.story")}:null;
-              return target&&<Link key={item.id} href={target.href} className="flex items-center justify-between gap-3 rounded-2xl border border-white/5 p-4 transition hover:bg-white/[0.05]"><span className="truncate">{target.title}</span><span className="shrink-0 text-xs text-zinc-500">{target.kind}</span></Link>;
+              return target&&<Link key={item.id} href={target.href} className="flex items-center justify-between gap-3 rounded-2xl border border-line p-4 transition hover:bg-chip"><span className="truncate">{target.title}</span><span className="shrink-0 text-xs text-mut2">{target.kind}</span></Link>;
             })}</div>
           </section>
         </div>
 
-        <button onClick={logout} className="mt-6 inline-flex items-center gap-2 rounded-full border border-rose-300/20 px-5 py-3 text-sm font-medium text-rose-200 transition hover:bg-rose-500/10"><LogOut className="h-4 w-4"/>{t("settings.logout")}</button>
+        <button onClick={logout} className="mt-6 inline-flex items-center gap-2 rounded-full border border-coral/30 px-5 py-3 text-sm font-medium text-coral transition hover:bg-coral/10"><LogOut className="h-4 w-4"/>{t("settings.logout")}</button>
       </>}
     </section>
     <SiteFooter/>

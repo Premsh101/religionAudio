@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, BookOpen } from "lucide-react";
 import AppHeader from "../../../components/AppHeader";
+import { getTranslator } from "../../../lib/i18n/server";
 import WorkReader from "./WorkReader";
 import { getPrisma } from "../../../lib/server/prisma";
 import { getCurrentSessionUser } from "../../../lib/server/session";
@@ -33,10 +34,10 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
     }
   });
 
-  if(!work) return <main className="min-h-screen"><AppHeader/><EmptyState title="Book not found." /></main>;
+  if(!work) return <main className="min-h-screen"><AppHeader/><EmptyState title={(await getTranslator())("reader.notFound")} /></main>;
   if(work.status!=="PUBLISHED"){
     const viewer=await getCurrentSessionUser();
-    if(viewer?.role!=="ADMIN"&&viewer?.role!=="EDITOR") return <main className="min-h-screen"><AppHeader/><EmptyState title="This book is not published yet." /></main>;
+    if(viewer?.role!=="ADMIN"&&viewer?.role!=="EDITOR") return <main className="min-h-screen"><AppHeader/><EmptyState title={(await getTranslator())("reader.notPublished")} /></main>;
   }
 
   const chapters=[...new Set(work.passages.map(p=>chapterFromReference(p.reference)).filter((value):value is number=>value!==null))];
@@ -58,5 +59,5 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
 }
 
 function EmptyState({title}:{title:string}){
-  return <section className="mx-auto max-w-2xl px-5 py-16"><div className="glass rounded-3xl p-8"><BookOpen className="h-6 w-6 text-amber-300"/><h1 className="mt-4 font-display text-3xl">{title}</h1><p className="mt-3 text-sm text-zinc-500">Return to the library and choose another text.</p><Link href="/library" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><ArrowLeft className="h-4 w-4"/>Library</Link></div></section>;
+  return <section className="mx-auto max-w-2xl px-5 py-16"><div className="card p-8"><BookOpen className="h-6 w-6 text-acc"/><h1 className="mt-4 font-display text-4xl">{title}</h1><Link href="/library?tab=books" className="btn-outline mt-6"><ArrowLeft className="h-4 w-4 rtl:rotate-180"/>Library</Link></div></section>;
 }

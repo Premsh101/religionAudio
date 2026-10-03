@@ -30,6 +30,6 @@ export default function LoginPage(){
       <FormError message={error}/>
       <button disabled={busy} className={primaryButton}>{busy?t("auth.loggingIn"):t("auth.loginBtn")}</button>
     </form>
-    <p className="mt-8 text-center text-sm text-zinc-400">{t("auth.noAccount")} <Link href="/signup" className="font-semibold text-amber-300 hover:text-amber-200">{t("auth.createOne")}</Link></p>
+    <p className="mt-6 text-center text-sm text-mut">{t("auth.noAccount")} <Link href="/signup" className="font-extrabold text-acc">{t("auth.createOne")}</Link></p>
   </AuthShell>;
 }

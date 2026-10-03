@@ -1,12 +1,13 @@
 import type { PrismaClient } from "../../generated/prisma/client";
 import { audioPublicUrl } from "../audio-storage";
 import { asTranslations, localizeStory } from "../story-i18n";
+import { categoryOf, type CategoryKey } from "../categories";
 import type { Locale } from "../i18n/config";
 
 export type ItemKind="story"|"work";
 export type FeedItem={
   kind:ItemKind;id:string;slug:string;title:string;subtitle:string;tag:string;href:string;
-  createdAt:string;isNew:boolean;progressPercent?:number;updatedAt?:string;reason?:string;coverUrl?:string|null;
+  createdAt:string;isNew:boolean;progressPercent?:number;updatedAt?:string;reason?:string;coverUrl?:string|null;category?:CategoryKey;
 };
 export type HistoryEntry={kind:ItemKind;id:string;progressPercent:number;completed?:boolean;updatedAt:string;passageSequence?:number};
 
@@ -20,7 +21,7 @@ const typeTag:Record<string,string>={STORY:"Story",MYTHOLOGY:"Mythology",FOLKLOR
 async function loadCandidates(prisma:PrismaClient,locale:Locale="en"):Promise<Candidate[]>{
   const since=new Date(Date.now()-30*DAY);
   const [stories,works,storyPlays,workPlays,audioPlays]=await Promise.all([
-    prisma.story.findMany({where:{status:"PUBLISHED",matureContent:false},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,type:true,audience:true,narrationProfile:true,language:true,religionId:true,traditionId:true,createdAt:true,publishedAt:true,translations:true,religion:{select:{name:true}}}}),
+    prisma.story.findMany({where:{status:"PUBLISHED",matureContent:false},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,type:true,audience:true,narrationProfile:true,language:true,religionId:true,traditionId:true,createdAt:true,publishedAt:true,translations:true,collection:true,religion:{select:{name:true}}}}),
     prisma.work.findMany({where:{status:"PUBLISHED"},select:{id:true,slug:true,title:true,summary:true,coverImageKey:true,edition:true,translator:true,language:true,religionId:true,traditionId:true,createdAt:true,religion:{select:{name:true}}}}),
     prisma.storyProgress.groupBy({by:["storyId"],where:{updatedAt:{gte:since}},_count:{_all:true}}),
     prisma.workProgress.groupBy({by:["workId"],where:{updatedAt:{gte:since}},_count:{_all:true}}),
@@ -37,7 +38,7 @@ async function loadCandidates(prisma:PrismaClient,locale:Locale="en"):Promise<Ca
       const added=(s.publishedAt||s.createdAt);
       const local=localizeStory({title:s.title,summary:s.summary||""},asTranslations(s.translations),locale);
       return {
-        kind:"story" as const,id:s.id,slug:s.slug,title:local.title,subtitle:local.summary,tag:typeTag[s.type]||"Story",href:"/stories/"+s.slug,coverUrl:s.coverImageKey?audioPublicUrl(s.coverImageKey):null,
+        kind:"story" as const,id:s.id,slug:s.slug,title:local.title,subtitle:local.summary,category:categoryOf(s),tag:typeTag[s.type]||"Story",href:"/stories/"+s.slug,coverUrl:s.coverImageKey?audioPublicUrl(s.coverImageKey):null,
         createdAt:added.toISOString(),isNew:now-added.getTime()<NEW_DAYS*DAY,
         features:["kind:story","type:"+s.type,"aud:"+s.audience,"prof:"+s.narrationProfile,"lang:"+s.language,s.religionId?"rel:"+s.religionId:"",s.traditionId?"trad:"+s.traditionId:""].filter(Boolean),
         popularity:plays.get("story:"+s.id)||0
@@ -124,7 +125,7 @@ export async function getHomeFeed(prisma:PrismaClient,history:HistoryEntry[],loc
     .map(c=>({c,s:score(c)}))
     .sort((a,b)=>b.s-a.s||b.c.createdAt.localeCompare(a.c.createdAt))
     .slice(0,12)
-    .map(({c})=>({...strip(c),reason:known.length?"Matches what you listen to":c.isNew?"New on Sacred Stories":"Popular with listeners"}));
+    .map(({c})=>({...strip(c),reason:known.length?"Matches what you listen to":c.isNew?"New on Sunave":"Popular with listeners"}));
 
   let becauseYou:{seed:FeedItem;items:FeedItem[]}|null=null;
   const seed=known[0]&&byKey.get(keyOf(known[0]));
