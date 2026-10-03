@@ -1,4 +1,5 @@
 import { PrismaClient } from "../generated/prisma/client";
+import { narrationTextForWork } from "./books";
 import { NARRATION_BY_CATEGORY, narrationProfileFor, normalizeProfile } from "./narration";
 
 export type AudioSource={text:string;profile:string;language:string;title:string;kind:"work"|"story"|"content"};
@@ -19,7 +20,7 @@ export async function resolveAudioSource(prisma:PrismaClient,asset:any):Promise<
   if(asset.workId){
     const work=await prisma.work.findUnique({where:{id:asset.workId},include:{passages:{orderBy:{sequence:"asc"}}}});
     if(!work)throw new Error("Work not found");
-    return {text:work.passages.map((p:any)=>p.text).join("\n\n"),profile:"scripture",language:asset.language||work.language||"en",title:work.title,kind:"work"};
+    return {text:narrationTextForWork(work.title,work.passages),profile:"scripture",language:asset.language||work.language||"en",title:work.title,kind:"work"};
   }
   throw new Error("AudioAsset must reference a work, story, or content item");
 }

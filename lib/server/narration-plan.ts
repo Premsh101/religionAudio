@@ -55,3 +55,9 @@ export async function queueNarrations(prisma:PrismaClient,kind:Kind,id:string,la
   }
   return queued;
 }
+
+/** Rebuilds a finished narration with the current voice settings (the old audio and its listening progress go). */
+export async function redoNarration(prisma:PrismaClient,kind:Kind,id:string,language:NarrationLanguage,voiceGender:VoiceGender){
+  await prisma.audioAsset.deleteMany({where:{...(kind==="story"?{storyId:id}:{workId:id}),language,voiceId:voiceGender}});
+  return queueNarrations(prisma,kind,id,[language],[voiceGender]);
+}

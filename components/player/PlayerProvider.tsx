@@ -147,6 +147,15 @@ export function PlayerProvider({children}:{children:React.ReactNode}){
 
   useEffect(()=>{if(audioRef.current)audioRef.current.playbackRate=rate},[rate]);
 
+  // Download the next part while this one plays, so the hand-over (inside a paragraph pause) is instant.
+  useEffect(()=>{
+    const next=segments[index+1];
+    if(!next?.url||!playing)return;
+    const ctrl=new AbortController();
+    fetch(next.url,{signal:ctrl.signal}).then(r=>r.blob()).catch(()=>{});
+    return()=>ctrl.abort();
+  },[segments,index,playing]);
+
   useEffect(()=>{
     const a=audioRef.current;
     if(!a)return;

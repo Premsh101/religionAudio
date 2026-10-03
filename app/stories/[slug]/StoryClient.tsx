@@ -66,6 +66,16 @@ export default function StoryClient({story}:{story:Story}){
 
   const playLabel=n.busy?t("story.starting"):n.playing?t("story.pause"):live&&p.elapsed>1?t("story.resume"):t("story.play");
   const paragraphs=shownBody.split(/\n{2,}|\n/).map(s=>s.trim()).filter(Boolean);
+  // Narration parts span several paragraphs: highlight the ones the current part is reading, and let a tap jump there.
+  const plain=(x:string)=>x.toLowerCase().normalize("NFKD").replace(/[^\p{L}\p{N}]+/gu," ").trim();
+  const transcript=segmentsInLang?plain(p.segments[p.index]?.transcript||""):"";
+  const reading=(para:string)=>Boolean(transcript)&&transcript.includes(plain(para).slice(0,60));
+  const jumpTo=(para:string)=>{
+    if(!segmentsInLang)return;
+    const key=plain(para).slice(0,60);
+    const i=p.segments.findIndex(seg=>plain(seg.transcript||"").includes(key));
+    if(i>=0){p.choose(i);if(!p.playing)p.toggle()}
+  };
 
   return <main className="min-h-screen">
     <AppHeader/>
@@ -127,7 +137,7 @@ export default function StoryClient({story}:{story:Story}){
               {languages.length>1&&<div role="tablist" aria-label="Story language" className="flex rounded-full bg-chip p-1">{languages.map(l=><button key={l} role="tab" lang={l} aria-selected={lang===l} onClick={()=>setLang(l)} className={"rounded-full px-3.5 py-1.5 text-sm font-bold transition "+(lang===l?"bg-ink text-bg":"text-mut hover:text-ink")}>{LANG_NAMES[l]||l}</button>)}</div>}
             </div>
             <div lang={lang} dir={rtl?"rtl":"ltr"} className={"mt-5 space-y-1 "+(rtl?"font-sans text-[20px] leading-[2]":"font-display text-[21px] leading-[1.5]")}>
-              {segmentsInLang?p.segments.map((s,i)=><button key={s.id} onClick={()=>p.choose(i)} className={"block w-full rounded-xl px-3 py-2 text-start transition "+(i===p.index?"bg-hl text-ink":"text-mut hover:text-ink")}>{s.transcript}</button>)
+              {segmentsInLang?paragraphs.map((para,i)=><button key={i} onClick={()=>jumpTo(para)} className={"block w-full rounded-xl px-3 py-2 text-start transition "+(reading(para)?"bg-hl text-ink":"text-mut hover:text-ink")}>{para}</button>)
                 :paragraphs.map((para,i)=><p key={i} className="px-3 py-2 text-ink/90">{para}</p>)}
             </div>
           </article>
