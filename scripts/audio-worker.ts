@@ -3,7 +3,7 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
 import { buildSegmentRequests } from "../lib/audio-pipeline";
 import { resolveAudioSource } from "../lib/audio-source";
-import { storeAudio } from "../lib/audio-storage";
+import { storeAudio, storeJson } from "../lib/audio-storage";
 
 const dbUrl=process.env.DATABASE_URL;
 if(!dbUrl) throw new Error("DATABASE_URL is required");
@@ -68,14 +68,30 @@ async function processJob(job:any){
    where:{audioAssetId:asset.id,status:{in:["QUEUED","PROCESSING","FAILED"]}}
  });
  if(openJobs===0){
-   const finished=await prisma.audioSegment.count({where:{audioAssetId:asset.id}});
-   await prisma.audioAsset.update({
-     where:{id:asset.id},
-     data:{
-       status:finished>=asset.totalSegments?"READY":"FAILED",
-       storageKey:finished>=asset.totalSegments?"audiobooks/"+asset.id+"/manifest":asset.storageKey
-     }
+   const finishedSegments=await prisma.audioSegment.findMany({
+     where:{audioAssetId:asset.id},
+     orderBy:{sequence:"asc"},
+     select:{sequence:true,startMs:true,endMs:true,storageKey:true,transcript:true}
    });
+   const finished=finishedSegments.length;
+   const ready=finished>=asset.totalSegments;
+   if(ready){
+     const manifest=await storeJson({
+       assetId:asset.id,
+       title:asset.title,
+       language:asset.language,
+       narrationProfile:asset.narrationProfile,
+       totalSegments:asset.totalSegments,
+       durationMs:Math.max(...finishedSegments.map(segment=>segment.endMs),0),
+       segments:finishedSegments
+     });
+     await prisma.audioAsset.update({
+       where:{id:asset.id},
+       data:{status:"READY",storageKey:manifest.storageKey,durationMs:Math.max(...finishedSegments.map(segment=>segment.endMs),0)}
+     });
+   } else {
+     await prisma.audioAsset.update({where:{id:asset.id},data:{status:"FAILED"}});
+   }
  }
 }
 
