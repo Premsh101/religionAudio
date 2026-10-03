@@ -309,5 +309,26 @@
       "The Thousand and One Days"
     ],
     "ingest_policy": "Use only the exact source edition and source section recorded in data/story-corpus/moral-tales/manifest.json. Project Gutenberg identifies these editions as public domain in the USA; verify target-jurisdiction status before commercial redistribution. Historical English translations and retellings must be labeled as such and not represented as original-language text."
+  },
+  {
+    "id": "epics-heroic-sagas-repository-stories",
+    "tradition": "World epics and heroic sagas",
+    "source": "Traditional epic narratives; repository-authored faithful retellings",
+    "url": "https://github.com/Premsh101/religionAudio/tree/main/data/story-corpus/epics",
+    "status": "repository-authored-retelling",
+    "license": "Original repository text based on public-domain/traditional narratives",
+    "works": [
+      "Ramayana",
+      "Mahabharata",
+      "Iliad",
+      "Odyssey",
+      "Beowulf",
+      "Shahnameh",
+      "Epic of Gilgamesh",
+      "Nibelungenlied",
+      "Kalevala",
+      "Ulster Cycle"
+    ],
+    "ingest_policy": "These story-level texts are original retellings created for the repository. They are not copied from modern translations. Preserve the distinction between traditional narrative material and any later translation or interpretation."
   }
 ]
