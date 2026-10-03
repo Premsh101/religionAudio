@@ -13,7 +13,7 @@ export async function GET(_request:Request,{params}:{params:Promise<{id:string}>
  try{
    const asset=await prisma.audioAsset.findUnique({
      where:{id},
-     select:{id:true,title:true,status:true,totalSegments:true,durationMs:true,language:true,narrationProfile:true,engine:true,story:{select:{title:true,slug:true,status:true}},work:{select:{title:true,slug:true}},content:{select:{title:true,slug:true}},segments:{orderBy:{sequence:"asc"},select:{id:true,sequence:true,startMs:true,endMs:true,storageKey:true,transcript:true}}
+     select:{id:true,title:true,status:true,totalSegments:true,durationMs:true,language:true,narrationProfile:true,engine:true,story:{select:{title:true,slug:true,status:true}},work:{select:{title:true,slug:true}},content:{select:{title:true,slug:true}},segments:{orderBy:{sequence:"asc"},select:{id:true,sequence:true,startMs:true,endMs:true,storageKey:true,transcript:true}}}
    });
    if(!asset)return NextResponse.json({error:"Audio asset not found."},{status:404});
    if(asset.status!=="READY")return NextResponse.json({error:"Audio asset is not ready.",status:asset.status,totalSegments:asset.totalSegments},{status:409});
