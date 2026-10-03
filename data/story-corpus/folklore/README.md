@@ -16,8 +16,8 @@ The Project Gutenberg source pages used for this wave identify the cited books a
 
 ## Regional sources
 
-- Indian Fairy Tales — Project Gutenberg eBook #7128. cite source: web research 
-- Folk-Tales of Bengal — Project Gutenberg eBook #38488. cite source: web research 
+- Indian Fairy Tales — Project Gutenberg eBook #7128.
+- Folk-Tales of Bengal — Project Gutenberg eBook #38488.
 - English Fairy Tales — Project Gutenberg eBook #7439.
 - Irish Fairy Tales — Project Gutenberg eBook #2892.
 - Japanese Fairy Tales — Project Gutenberg eBook #4018.
