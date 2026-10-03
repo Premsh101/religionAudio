@@ -77,3 +77,13 @@ export function readCorpusCollections(root=path.join(process.cwd(),"data/story-c
     return records.filter(r=>r&&r.id&&r.title).map(r=>({collection:d.name,record:r}));
   });
 }
+
+let corpusIndex:Map<string,{collection:string;record:CorpusRecord&{origin?:string}}>|null=null;
+/** A corpus record by id (cached), for extra context such as the story's tradition and region. */
+export function findCorpusRecord(id:string){
+  if(!corpusIndex){
+    corpusIndex=new Map();
+    try{for(const entry of readCorpusCollections())corpusIndex.set(entry.record.id,entry)}catch{/* no corpus on disk */}
+  }
+  return corpusIndex.get(id)||null;
+}
