@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "theme": "war-courage-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual story text is stored in stories.json. Every record must contain usable text in all four languages. Documented history, scriptural narrative and later legend are separated in evidence metadata; violence is never glorified.",
+  "records": [
+    {
+      "id": "courage-saladin-richard-jaffa",
+      "title": "Saladin and Richard at Jaffa, 1192",
+      "tradition": "Third Crusade / Ayyubid and crusader chronicles",
+      "origin": "Levant (Palestine)",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "CHIVALRY",
+        "PEACEMAKING",
+        "CRUSADES"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "HISTORY_WITH_LEGENDARY_ELEMENTS",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-thermopylae-history-legend",
+      "title": "Thermopylae: The Pass, the History and the Legend",
+      "tradition": "Greco-Persian Wars / Herodotus, Histories Book 7",
+      "origin": "Ancient Greece",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "COURAGE",
+        "HISTORY_VS_LEGEND",
+        "SACRIFICE"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "HISTORY_WITH_LEGENDARY_ELEMENTS",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-david-goliath",
+      "title": "David and Goliath",
+      "tradition": "Hebrew Bible, 1 Samuel 17 / Quran 2:249-251",
+      "origin": "Ancient Israel",
+      "tags": [
+        "SCRIPTURE",
+        "JUDAISM",
+        "CHRISTIANITY",
+        "ISLAM",
+        "COURAGE",
+        "FAITH"
+      ],
+      "ageBand": "9-15",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-guru-tegh-bahadur",
+      "title": "Guru Tegh Bahadur and the Freedom of Conscience",
+      "tradition": "Sikh history / Ninth Guru, 1675",
+      "origin": "Punjab and Delhi, India",
+      "tags": [
+        "SIKHISM",
+        "MARTYRDOM",
+        "FREEDOM_OF_CONSCIENCE",
+        "MUGHAL_HISTORY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "HISTORICAL_EVENT",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-bilal-steadfast",
+      "title": "Bilal: The Voice That Would Not Bend",
+      "tradition": "Early Islamic history / Companions of the Prophet",
+      "origin": "Mecca and Medina, Arabia",
+      "tags": [
+        "ISLAM",
+        "STEADFASTNESS",
+        "FREEDOM",
+        "ADHAN"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-noor-inayat-khan",
+      "title": "Noor Inayat Khan: The Radio Operator Called Madeleine",
+      "tradition": "Second World War / Special Operations Executive",
+      "origin": "India (family heritage), France and Britain",
+      "tags": [
+        "MODERN_HISTORY",
+        "WORLD_WAR_II",
+        "WOMEN_IN_HISTORY",
+        "RESISTANCE"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-chittorgarh-padmini",
+      "title": "Chittorgarh, 1303: The Siege and the Legend of Padmini",
+      "tradition": "Medieval Rajasthan / Padmavat of Malik Muhammad Jayasi (1540)",
+      "origin": "Mewar, Rajasthan, India",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "HISTORY_VS_LEGEND",
+        "RAJASTHAN",
+        "LITERATURE"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "HISTORY_WITH_LEGENDARY_ELEMENTS",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-arjuna-dilemma",
+      "title": "Arjuna's Dilemma at Kurukshetra",
+      "tradition": "Mahabharata, Bhishma Parva / Bhagavad Gita chapters 1-2 and 18",
+      "origin": "India",
+      "tags": [
+        "HINDUISM",
+        "SCRIPTURE",
+        "BHAGAVAD_GITA",
+        "MORAL_COURAGE",
+        "DUTY"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "courage-ghaffar-khan-nonviolence",
+      "title": "Badshah Khan and the Army Without Weapons",
+      "tradition": "Indian independence movement / Khudai Khidmatgar",
+      "origin": "North-West Frontier (present-day Khyber Pakhtunkhwa, Pakistan)",
+      "tags": [
+        "MODERN_HISTORY",
+        "NONVIOLENCE",
+        "ISLAM",
+        "INDEPENDENCE_MOVEMENT"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/war-courage/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

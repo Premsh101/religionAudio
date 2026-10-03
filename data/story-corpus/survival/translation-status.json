@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "category": "SURVIVAL",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "records": [
+    {
+      "id": "survival-nuh-noah-flood",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-manu-matsya",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-jonah-yunus-whale",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-utnapishtim-flood-tablet",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-yusuf-famine-planning",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-shackleton-endurance",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-apollo-13",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-chilean-miners-2010",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "survival-dunkirk-little-ships",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    }
+  ]
+}

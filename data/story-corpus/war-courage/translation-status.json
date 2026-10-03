@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "category": "WAR_COURAGE",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "records": [
+    {
+      "id": "courage-saladin-richard-jaffa",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-thermopylae-history-legend",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-david-goliath",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-guru-tegh-bahadur",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-bilal-steadfast",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-noor-inayat-khan",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-chittorgarh-padmini",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-arjuna-dilemma",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "courage-ghaffar-khan-nonviolence",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    }
+  ]
+}

@@ -19,6 +19,9 @@ documented in `data/story-corpus/README.md`):
 | Sacred places & pilgrimage | data/story-corpus/sacred-places | Started (12 records; en/hi/ar/ur text present; NEEDS_HUMAN_REVIEW) |
 | Romance & love stories | data/story-corpus/romance | Started (10 records: scriptural, classical, folk and devotional love; category ROMANCE) |
 | Friendship, family & relationships | data/story-corpus/friendship-family | Started (10 records; category FRIENDSHIP_FAMILY) |
+| War & courage | data/story-corpus/war-courage | Started (9 records; ORIGINAL_FAITHFUL_RETELLING in en/hi/ar/ur; category WAR_COURAGE) |
+| Survival & disaster | data/story-corpus/survival | Started (9 records; ORIGINAL_FAITHFUL_RETELLING in en/hi/ar/ur; category SURVIVAL) |
+| Inspirational & resilience | data/story-corpus/inspirational | Started (9 records; ORIGINAL_FAITHFUL_RETELLING in en/hi/ar/ur; category INSPIRATIONAL) |
 
 All collections target Hindi (hi), English (en), Arabic (ar) and Urdu (ur).
 
@@ -231,6 +234,8 @@ Separate documented history from later heroic tradition.
 
 Priority: MEDIUM
 
+Status: STARTED — 9 records in data/story-corpus/war-courage (non-graphic; history, scripture and legend separated).
+
 ### 10. Survival & Disaster Stories
 High-engagement narrative category.
 
@@ -246,6 +251,8 @@ Subcategories:
 For real events, distinguish eyewitness or documented history from later retelling.
 
 Priority: MEDIUM
+
+Status: STARTED — 9 records in data/story-corpus/survival (scriptural floods side by side; documented modern rescues).
 
 ### 11. Friendship, Family & Relationships
 Stories designed for family listening.
@@ -280,6 +287,8 @@ Subcategories:
 Avoid turning inspirational storytelling into unsupported biographies.
 
 Priority: MEDIUM
+
+Status: STARTED — 9 records in data/story-corpus/inspirational (documented biographies, labelled legends, myth checks).
 
 ## Categories that should not become separate ContentType values yet
 
