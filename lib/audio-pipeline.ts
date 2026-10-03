@@ -1,4 +1,4 @@
-import { getNarrationPlan } from "./narration";
+import { getNarrationPlan, type VoiceGender } from "./narration";
 
 export type NarrationChunk={sequence:number;text:string;startMs:number;endMs:number;profile:string};
 
@@ -25,8 +25,8 @@ export function splitForNarration(text:string,profile="default",maxChars=MAX_CHA
  return chunks.map((chunk,i)=>{const estimated=Math.max(1200,Math.round(chunk.length/(14*plan.rate)*1000));const start=cursor;const end=start+estimated+plan.pauseMs;cursor=end;return {sequence:i+1,text:chunk,startMs:start,endMs:end,profile:plan.profile}});
 }
 
-export function buildSegmentRequests(text:string,profile:string,language="en"){
+export function buildSegmentRequests(text:string,profile:string,language="en",voiceGender?:VoiceGender){
  const plan=getNarrationPlan(profile);
  const chunks=splitForNarration(text,plan.profile);
- return chunks.map(chunk=>({...chunk,profile:plan.profile,language,request:{text:chunk.text,language,profile:plan.profile}}));
+ return chunks.map(chunk=>({...chunk,profile:plan.profile,language,request:{text:chunk.text,language,profile:plan.profile,voice_gender:voiceGender,format:"mp3" as const}}));
 }

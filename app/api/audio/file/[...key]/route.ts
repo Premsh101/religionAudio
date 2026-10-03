@@ -7,7 +7,7 @@ export async function GET(request:NextRequest,{params}:{params:Promise<{key:stri
  try{
   const {key}=await params;const storageKey=key.join("/");
   const data=await readStoredAudio(storageKey);
-  const type=storageKey.endsWith(".mp3")?"audio/mpeg":storageKey.endsWith(".ogg")?"audio/ogg":"audio/wav";
+  const type=storageKey.endsWith(".mp3")?"audio/mpeg":storageKey.endsWith(".ogg")?"audio/ogg":storageKey.endsWith(".json")?"application/json":"audio/wav";
   return new Response(data,{headers:{"content-type":type,"cache-control":"public, max-age=31536000, immutable","accept-ranges":"bytes"}});
  }catch{return new Response("Audio not found",{status:404})}
 }

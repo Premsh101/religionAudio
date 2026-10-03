@@ -6,3 +6,4 @@ node_modules
 generated
 tsconfig.tsbuildinfo
 __pycache__/
+.claude/worktrees/

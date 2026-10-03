@@ -38,6 +38,29 @@ Coolify does not wait for CI, so only merge to `main` once CI is green. If a Coo
 
 The production image runs `prisma migrate deploy` before `next start`, so new committed migrations are applied automatically during deployment.
 
+## Audio storage on Cloudflare R2
+
+Narration is generated once and stored; every later listener streams the stored MP3. With R2, listeners download audio straight from Cloudflare's network instead of from the KVM, so playback starts without buffering and the server's bandwidth isn't used.
+
+1. In Cloudflare → **R2 Object Storage** → **Create bucket**, e.g. `religionaudio-audio`.
+2. Open the bucket → **Settings** → **Public access**: either connect a custom domain (recommended, e.g. `audio.yourdomain.com`) or enable the **r2.dev** public URL. Copy that public URL.
+3. R2 overview → **Manage R2 API Tokens** → **Create API token** with **Object Read & Write** on that bucket. Copy the Access Key ID, Secret Access Key, and the S3 endpoint (`https://<account-id>.r2.cloudflarestorage.com`).
+4. In Coolify → Environment Variables, set:
+   - `AUDIO_STORAGE_PROVIDER=r2`
+   - `R2_ENDPOINT` = the S3 endpoint
+   - `R2_BUCKET` = the bucket name
+   - `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`
+   - `R2_PUBLIC_BASE_URL` = the public URL from step 2 (no trailing slash)
+5. Redeploy.
+
+How caching works:
+
+- **Full narration** (story/book "Listen to full narration"): one audiobook per item, language and voice (female/male). The first listener's click queues it; playback starts as soon as part 1 is ready, and from then on it plays instantly for everyone.
+- **Quick listen / previews** (`/api/tts`): stored under `tts-cache/` with a key derived from the text, language, style and voice, so each passage is generated only once.
+- Files are uploaded with `Cache-Control: public, max-age=31536000, immutable`.
+
+Audio stored locally before switching to R2 stays on the `religion_generated_audio` volume; regenerate it (or copy the files into the bucket under the same keys) after switching.
+
 ## First seed
 
 After the first deployment, run the seed command once from the Coolify terminal for the web service:

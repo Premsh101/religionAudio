@@ -22,4 +22,6 @@ export function normalizeProfile(profile?:string|null):NarrationProfile{
 }
 export function narrationProfileFor(contentType?:string,audience?:string):NarrationProfile{if((audience||"").toLowerCase()==="kids")return "kids";return normalizeProfile(contentType)}
 export function getNarrationPlan(profile:string):NarrationPlan{return PLANS[normalizeProfile(profile)]}
-export function buildTTSRequest(text:string,profile:string,language="en"){const plan=getNarrationPlan(profile);return {text,language,profile:plan.profile,emotion:plan.emotion,instructions:plan.prompt};}
+export type VoiceGender="female"|"male";
+export function normalizeVoiceGender(value?:string|null):VoiceGender|undefined{const v=(value||"").toLowerCase();return v==="male"||v==="female"?v:undefined}
+export function buildTTSRequest(text:string,profile:string,language="en",voiceGender?:VoiceGender,format:"wav"|"mp3"="mp3"){const plan=getNarrationPlan(profile);return {text,language,profile:plan.profile,emotion:plan.emotion,instructions:plan.prompt,voice_gender:voiceGender,format};}

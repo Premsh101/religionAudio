@@ -39,6 +39,9 @@ export default function ReadingAudioPanel({
   const [playing,setPlaying]=useState(false);
   const [loading,setLoading]=useState(true);
   const [error,setError]=useState("");
+  const [preparing,setPreparing]=useState<{done:number;total:number}|null>(null);
+  const waitingRef=useRef(false);
+  const segmentCountRef=useRef(0);
   const current=segments[index];
 
   const saveProgress=async(sequence:number,positionMs:number,completed=false)=>{
@@ -78,13 +81,16 @@ export default function ReadingAudioPanel({
 
   useEffect(()=>{
     let cancelled=false;
+    let timer:ReturnType<typeof setTimeout>|null=null;
+    let first=true;
+    segmentCountRef.current=0;
+    waitingRef.current=false;
     async function load(){
-      setLoading(true);
-      setError("");
+      if(first){setLoading(true);setError("");}
       try{
         const [assetRes,progressRes]=await Promise.all([
-          fetch("/api/audio/assets/"+encodeURIComponent(assetId)),
-          fetch("/api/user/audio-progress?assetId="+encodeURIComponent(assetId))
+          fetch("/api/audio/assets/"+encodeURIComponent(assetId),{cache:"no-store"}),
+          first?fetch("/api/user/audio-progress?assetId="+encodeURIComponent(assetId)):Promise.resolve(null)
         ]);
         if(!assetRes.ok){
           const body=await assetRes.json().catch(()=>null);
@@ -92,10 +98,21 @@ export default function ReadingAudioPanel({
         }
         const data=await assetRes.json();
         if(cancelled)return;
-        const nextSegments=Array.isArray(data.segments)?data.segments.filter((s:Segment)=>s.url):[];
-        if(!nextSegments.length)throw new Error("Narration has no playable segments.");
-        setSegments(nextSegments);
-        if(progressRes.ok){
+        const nextSegments:Segment[]=Array.isArray(data.segments)?data.segments.filter((s:Segment)=>s.url):[];
+        const ready=data.asset?.status==="READY";
+        setPreparing(ready?null:{done:nextSegments.length,total:data.asset?.totalSegments||0});
+        const prevCount=segmentCountRef.current;
+        if(nextSegments.length>=prevCount){
+          segmentCountRef.current=nextSegments.length;
+          setSegments(nextSegments);
+          if(waitingRef.current&&nextSegments.length>prevCount){
+            // The listener reached the end of what was ready; continue as soon as the next part lands.
+            waitingRef.current=false;
+            shouldAutoplayRef.current=true;
+            setIndex(prevCount);
+          }
+        }
+        if(first&&progressRes&&progressRes.ok&&nextSegments.length){
           const p=(await progressRes.json()).progress as Progress|null;
           if(p){
             const nextIndex=Math.min(nextSegments.length-1,Math.max(0,(p.currentSequence||1)-1));
@@ -103,14 +120,15 @@ export default function ReadingAudioPanel({
             resumePositionRef.current=Math.max(0,p.positionMs||0);
           }
         }
+        if(!ready)timer=setTimeout(load,5000);
       }catch(e){
         if(!cancelled)setError(e instanceof Error?e.message:"Narration unavailable.");
       }finally{
-        if(!cancelled)setLoading(false);
+        if(!cancelled&&first){setLoading(false);first=false;}
       }
     }
     void load();
-    return()=>{cancelled=true};
+    return()=>{cancelled=true;if(timer)clearTimeout(timer)};
   },[assetId]);
 
   useEffect(()=>{
@@ -155,6 +173,7 @@ export default function ReadingAudioPanel({
         shouldAutoplayRef.current=true;
         setIndex(i=>i+1);
       }else{
+        if(preparing)waitingRef.current=true;
         setPlaying(false);
       }
     };
@@ -168,7 +187,7 @@ export default function ReadingAudioPanel({
       a.removeEventListener("pause",onPause);
       a.removeEventListener("ended",onEnd);
     };
-  },[current,index,segments.length]);
+  },[current,index,segments.length,preparing]);
 
   const toggle=async()=>{
     const a=audioRef.current;
@@ -202,12 +221,15 @@ export default function ReadingAudioPanel({
     </div>
 
     {error ? <div className="border-b border-amber-300/10 bg-amber-300/[0.03] px-5 py-4 text-sm text-amber-100">{error}</div> : null}
+    {!error&&preparing ? <div className="border-b border-white/10 bg-white/[0.02] px-5 py-3 text-xs text-zinc-400">
+      Preparing narration for the first time: {preparing.done} of {preparing.total||"…"} parts ready. {preparing.done?"You can start listening now.":"The first part is usually ready within a minute or two."} After this it is saved and plays instantly for everyone.
+    </div> : null}
 
     <div className="grid md:grid-cols-[1fr_360px]">
       <article className="min-h-[260px] p-6 md:p-8">
         <div className="text-xs uppercase tracking-[.18em] text-zinc-600">Current narration</div>
         {loading ? <p className="mt-5 text-sm text-zinc-500">Loading narration…</p> :
-          <p className="mt-5 font-display text-2xl leading-10 text-white">{current?.transcript||"Narration segment"}</p>}
+          <p className="mt-5 font-display text-2xl leading-10 text-white">{current?.transcript||(preparing?"Generating the first part…":"Narration segment")}</p>}
         <p className="mt-5 text-xs text-zinc-600">Part {current?.sequence||1} · about {duration}s</p>
       </article>
 

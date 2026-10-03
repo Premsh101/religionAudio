@@ -2,7 +2,7 @@ import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
 import { buildSegmentRequests } from "../lib/audio-pipeline";
-import { normalizeProfile } from "../lib/narration";
+import { normalizeProfile, normalizeVoiceGender } from "../lib/narration";
 import { resolveAudioSource } from "../lib/audio-source";
 import { storeAudio, storeJson } from "../lib/audio-storage";
 
@@ -15,7 +15,8 @@ const sleep=(ms:number)=>new Promise(r=>setTimeout(r,ms));
 async function claimJob(){
  const jobs=await prisma.audioJob.findMany({
    where:{status:"QUEUED",nextRunAt:{lte:new Date()}},
-   orderBy:{createdAt:"asc"},take:5,include:{audioAsset:true}
+   // Oldest audiobook first, and its parts in order, so listeners can start on part 1 while the rest is generated.
+   orderBy:[{createdAt:"asc"},{segmentSequence:"asc"}],take:5,include:{audioAsset:true}
  });
  for(const job of jobs){
   const updated=await prisma.audioJob.updateMany({
@@ -35,7 +36,7 @@ async function processJob(job:any){
  // An asset saved as DEFAULT follows the source's own profile (e.g. a ghost story keeps the ghost voice).
  const assetProfile=normalizeProfile(asset.narrationProfile);
  const profile=assetProfile!=="default"?assetProfile:source.profile;
- const requests=buildSegmentRequests(source.text,profile,asset.language||source.language);
+ const requests=buildSegmentRequests(source.text,profile,asset.language||source.language,normalizeVoiceGender(asset.voiceId));
  const sequence=job.segmentSequence||1;
  const segment=requests.find(s=>s.sequence===sequence);
  if(!segment)throw new Error("Narration segment "+sequence+" not found");
@@ -52,7 +53,8 @@ async function processJob(job:any){
  const generated=await fetch(TTS+result.audio_url);
  if(!generated.ok)throw new Error("Unable to download generated audio: "+generated.status);
  const buffer=Buffer.from(await generated.arrayBuffer());
- const stored=await storeAudio(buffer,"wav");
+ const extension=result.audio_url.endsWith(".mp3")?"mp3":"wav";
+ const stored=await storeAudio(buffer,extension);
 
  await prisma.audioSegment.upsert({
    where:{audioAssetId_sequence:{audioAssetId:asset.id,sequence:segment.sequence}},

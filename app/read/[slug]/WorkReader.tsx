@@ -4,13 +4,14 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Bookmark, Pause, Play, Sparkles, Volume2 } from "lucide-react";
 import AppHeader from "../../../components/AppHeader";
-import ReadingAudioPanel from "../../../components/ReadingAudioPanel";
+import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../../../components/NarrationPlayer";
 
 type Passage={id:string;reference:string;sequence:number;text:string};
-type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audioAssetId:string|null};
+type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audio:NarrationAssets};
 
 export default function WorkReader({work}:{work:Work}){
   const [active,setActive]=useState(work.passages[0]?.sequence||1);
+  const [voice,setVoice]=useVoicePreference();
   const [playing,setPlaying]=useState(false);
   const [busy,setBusy]=useState(false);
   const [bookmarked,setBookmarked]=useState(false);
@@ -64,13 +65,13 @@ export default function WorkReader({work}:{work:Work}){
     await saveProgress(current.sequence);
     try{
       const res=await fetch("/api/tts",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
-        text:current.text,language:work.language.slice(0,2).toLowerCase(),profile:"scripture"
+        text:current.text,language:work.language.slice(0,2).toLowerCase(),profile:"scripture",voice
       })});
       if(!res.ok) throw new Error("TTS unavailable");
-      const blob=await res.blob();
-      const url=URL.createObjectURL(blob);
+      const {url}=await res.json();
+      if(!url) throw new Error("TTS unavailable");
       const audio=new Audio(url);
-      audio.onended=()=>{setPlaying(false);URL.revokeObjectURL(url)};
+      audio.onended=()=>setPlaying(false);
       await audio.play();
       setPlaying(true);
     }catch{
@@ -105,7 +106,7 @@ export default function WorkReader({work}:{work:Work}){
           <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save book"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
         </div>
 
-        {work.audioAssetId&&<div className="mt-8"><ReadingAudioPanel title={work.title+" · full narration"} assetId={work.audioAssetId}/></div>}
+        <div className="mt-8"><NarrationPlayer title={work.title+" · full narration"} workId={work.id} assets={work.audio} voice={voice} onVoiceChange={setVoice}/></div>
         <div className="mt-8 flex items-center justify-between gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-4">
           <Link href={previousChapter?"/read/"+work.slug+"?chapter="+previousChapter:"#"} className={"rounded-xl border border-white/10 px-3 py-2 text-xs "+(previousChapter?"text-zinc-300 hover:bg-white/5":"pointer-events-none text-zinc-700")}>← Previous</Link>
           <div className="flex max-w-[60%] gap-1 overflow-x-auto">{work.chapters.map(ch=><Link key={ch} href={"/read/"+work.slug+"?chapter="+ch} className={"min-w-9 rounded-lg px-2.5 py-2 text-center text-xs "+(ch===work.currentChapter?"bg-white text-black":"border border-white/10 text-zinc-500 hover:text-white")}>{ch}</Link>)}</div>
