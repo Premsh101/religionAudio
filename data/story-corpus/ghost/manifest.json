@@ -24,7 +24,20 @@
         "url": "https://www.gutenberg.org/ebooks/14522",
         "format": "plain-text"
       },
-      "ingest": "project-gutenberg"
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-canterville/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-canterville/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-canterville/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-canterville/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-en-monkeys-paw",
@@ -41,7 +54,20 @@
         "url": "https://www.gutenberg.org/ebooks/12122",
         "format": "plain-text"
       },
-      "ingest": "project-gutenberg"
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-monkeys-paw/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-monkeys-paw/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-monkeys-paw/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-monkeys-paw/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-en-red-room",
@@ -58,7 +84,20 @@
         "url": "https://www.gutenberg.org/ebooks/23218",
         "format": "plain-text"
       },
-      "ingest": "project-gutenberg"
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-red-room/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-red-room/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-red-room/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-red-room/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-en-signal-man",
@@ -75,7 +114,20 @@
         "url": "https://www.gutenberg.org/ebooks/27924",
         "format": "plain-text"
       },
-      "ingest": "project-gutenberg"
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-signal-man/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-signal-man/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-signal-man/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-signal-man/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-en-banshee",
@@ -92,7 +144,20 @@
         "url": "https://www.gutenberg.org/ebooks/6040",
         "format": "anthology"
       },
-      "ingest": "project-gutenberg-review"
+      "ingest": "project-gutenberg-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-banshee/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-banshee/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-banshee/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-banshee/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-hi-bhoot-premchand",
@@ -110,7 +175,20 @@
         "alternateUrl": "https://github.com/lastmansleeping/hindi-toolkit/blob/master/hindi_toolkit/data/stories/12.txt",
         "format": "text"
       },
-      "ingest": "github-open-source-text"
+      "ingest": "github-open-source-text",
+      "translations": {
+        "hi": "SOURCE_LANGUAGE",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-hi-bhoot-premchand/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-hi-bhoot-premchand/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-hi-bhoot-premchand/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-hi-bhoot-premchand/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-hi-vetal-pachisi",
@@ -127,7 +205,20 @@
         "url": "https://hi.wikisource.org/",
         "format": "source-discovery"
       },
-      "ingest": "wikisource-review"
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-hi-singhasan-battisi",
@@ -144,7 +235,20 @@
         "url": "https://hi.wikisource.org/",
         "format": "source-discovery"
       },
-      "ingest": "wikisource-review"
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-ur-fasana-e-ajaib",
@@ -163,7 +267,20 @@
         "format": "Wikisource text",
         "pageTitle": "فسانۂ عجائب/فسانۂ سلطانِ یمن"
       },
-      "ingest": "wikisource-api"
+      "ingest": "wikisource-api",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "SOURCE_LANGUAGE"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-ur-bagh-o-bahar",
@@ -180,7 +297,20 @@
         "url": "https://ur.wikisource.org/wiki/باغ_و_بہار/سیر_پہلے_درویش_کی",
         "format": "Wikisource text"
       },
-      "ingest": "wikisource-api"
+      "ingest": "wikisource-api",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "SOURCE_LANGUAGE"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-ur-dastan-amir-hamza",
@@ -197,7 +327,20 @@
         "url": "https://ur.wikisource.org/",
         "format": "source-discovery"
       },
-      "ingest": "wikisource-review"
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-ar-merchant-ifrit",
@@ -222,7 +365,20 @@
           "صفحة:ألف ليلة وليلة.djvu/17"
         ]
       },
-      "ingest": "wikisource-api"
+      "ingest": "wikisource-api",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-ar-merchant-ifrit/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-ar-merchant-ifrit/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-ar-merchant-ifrit/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-ar-merchant-ifrit/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-ar-fisherman-ifrit",
@@ -251,7 +407,20 @@
           "صفحة:ألف ليلة وليلة.djvu/27"
         ]
       },
-      "ingest": "wikisource-api"
+      "ingest": "wikisource-api",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-ar-fisherman-ifrit/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-ar-fisherman-ifrit/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-ar-fisherman-ifrit/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-ar-fisherman-ifrit/ur.txt"
+      },
+      "translationType": "faithful-translation"
     },
     {
       "id": "ghost-ar-hasan-badr-al-din",
@@ -268,7 +437,38 @@
         "url": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A",
         "format": "Wikisource text"
       },
-      "ingest": "wikisource-review"
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-ar-hasan-badr-al-din/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-ar-hasan-badr-al-din/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-ar-hasan-badr-al-din/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-ar-hasan-badr-al-din/ur.txt"
+      },
+      "translationType": "faithful-translation"
     }
-  ]
+  ],
+  "translationPolicy": {
+    "mode": "SOURCE_LOCKED_FAITHFUL_TRANSLATION",
+    "targetLanguages": [
+      "hi",
+      "en",
+      "ar",
+      "ur"
+    ],
+    "rule": "Translate the exact materialized source edition. Do not summarize, modernize, add scenes, remove scenes, or substitute another edition.",
+    "meaningControls": [
+      "Preserve paragraph/chapter order.",
+      "Preserve named characters, places, numbers, dates, objects and supernatural beings.",
+      "Preserve dialogue intent and narrative point of view.",
+      "Do not turn folklore or supernatural claims into scientific claims.",
+      "Do not silently translate culturally specific proper nouns when doing so changes identity.",
+      "Run source/translation completeness checks before marking a language READY."
+    ]
+  }
 }
