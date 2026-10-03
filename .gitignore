@@ -7,3 +7,6 @@ generated
 tsconfig.tsbuildinfo
 __pycache__/
 .claude/worktrees/
+
+# Story text materialized by scripts/ingest/*_corpus.py (regenerate with the scripts; hand-added texts already tracked stay tracked)
+data/story-corpus/*/text/

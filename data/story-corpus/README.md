@@ -90,3 +90,7 @@ translate scripts read from). Apart from the committed Premchand text
 
 `SOURCE_ONLY` (catalogued, no text yet), `PG_EXTRACT` (materialized from PG by markers),
 `TEXT_PRESENT` (source text committed in the repository, referenced by `source.localPath`).
+
+## Extracted text is not committed
+
+`scripts/ingest/*_corpus.py` writes story text to `data/story-corpus/<category>/text/`, which is git-ignored: it is reproducible from the manifests and would otherwise add tens of megabytes to the repository and the production image. Run the scripts (with `--cache-dir` to reuse downloads) before translation or seeding. Hand-curated texts that cannot be re-downloaded (e.g. `ghost/text/hi/ghost-hi-bhoot-premchand.txt`) are committed explicitly.
