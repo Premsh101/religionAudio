@@ -25,7 +25,28 @@ PostgreSQL should not be exposed publicly. The web container connects to it usin
    - `POSTGRES_USER=religion_audio`
    - `DATABASE_URL=postgresql://religion_audio:<same-password>@db:5432/religion_audio`
 5. Generate a strong password using URL-safe characters for the first deployment, or URL-encode special characters before placing them in `DATABASE_URL`.
-6. Expose only the `web` service through the Coolify proxy/domain. Do not publish PostgreSQL or the TTS service as public endpoints.
+6. Expose only the `web` service through the Coolify proxy/domain (set the domain on the `web` service, port 3000). Do not publish PostgreSQL or the TTS service as public endpoints. The compose file intentionally publishes no host ports.
+7. Set the health check path to `/api/health` if Coolify asks for one.
+
+## Automatic deployment on every change
+
+Every push to `main` runs CI (`.github/workflows/ci.yml`): typecheck, migrations on a fresh database, a schema-drift check, an idempotent seed, the production build, a Docker image build and a container smoke test against `/api/health`. Only if all of that passes does the `deploy` job call Coolify's deploy webhook. Broken commits never reach the KVM.
+
+One-time setup:
+
+1. In Coolify, open the application → **Webhooks** and copy the **Deploy Webhook** URL (looks like `https://<coolify-host>/api/v1/deploy?uuid=<app-uuid>&force=false`).
+2. In Coolify → **Keys & Tokens → API tokens**, create a token with the **deploy** permission.
+3. In GitHub → repository **Settings → Secrets and variables → Actions**, add:
+   - `COOLIFY_WEBHOOK` — the URL from step 1
+   - `COOLIFY_TOKEN` — the token from step 2
+4. In Coolify → application **Advanced/General** settings, turn **off** "Auto Deploy" (the Coolify GitHub-App push trigger). Otherwise every push deploys twice, and the Coolify-triggered deploy does not wait for CI.
+5. Optional: in GitHub → **Settings → Environments → production**, add required reviewers if you ever want a manual approval before deploys.
+
+To redeploy without a code change, run the workflow manually (**Actions → CI / Deploy → Run workflow** on `main`).
+
+Workflow for changes: open a pull request into `main` (CI runs, no deploy) → merge → CI runs again on `main` → Coolify deploys. Database migrations committed under `prisma/migrations` are applied automatically when the new container starts.
+
+If the Coolify instance is not reachable from the public internet (e.g. firewalled admin panel), GitHub-hosted runners cannot call the webhook. In that case either allow the webhook path through the firewall, use a self-hosted runner on the KVM, or fall back to Coolify's own GitHub-App auto-deploy (step 4 left on) and drop the `deploy` job.
 
 The production image runs `prisma migrate deploy` before `next start`, so new committed migrations are applied automatically during deployment.
 
