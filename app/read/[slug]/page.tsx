@@ -26,6 +26,7 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
     select:{
       id:true,title:true,language:true,translator:true,edition:true,rightsStatus:true,
       source:{select:{name:true,url:true,license:true}},
+      audioAssets:{where:{status:"READY"},orderBy:{createdAt:"desc"},take:1,select:{id:true}},
       passages:{orderBy:{sequence:"asc"},select:{id:true,reference:true,sequence:true}}
     }
   });
@@ -44,7 +45,7 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
 
   return <WorkReader work={{
     id:work.id,title:work.title,slug,language:work.language,translator:work.translator,edition:work.edition,
-    rightsStatus:work.rightsStatus,source:work.source,passages,chapters,currentChapter:chapter
+    rightsStatus:work.rightsStatus,source:work.source,passages,chapters,currentChapter:chapter,audioAssetId:work.audioAssets[0]?.id||null
   }}/>;
 }
 
