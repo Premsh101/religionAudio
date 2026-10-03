@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "targetLanguages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "recordCount": 33,
+  "expectedLayout": "data/story-corpus/folklore/translations/<storyId>/<lang>.txt",
+  "qaLayout": "data/story-corpus/folklore/translations/<storyId>/<lang>.qa.json",
+  "completionRule": "All four languages plus semantic QA PASS are required."
+}
