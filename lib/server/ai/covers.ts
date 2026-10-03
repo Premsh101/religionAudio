@@ -42,7 +42,7 @@ function describe(c:Content){
   return `Kind: ${c.kind==="work"?"book":"story"}\nCurrent title: ${c.title}\nGenre: ${c.genre} (${COVER_STYLES[c.style].label})\nAudience: ${c.audience}\nLanguage: ${c.language}\nTradition: ${c.tradition||"not specified"}\nRegion / origin: ${c.origin||"not specified"}\nTags: ${c.tags.join(", ")||"none"}\nExisting summary: ${c.existingSummary||"none"}\n\nText excerpt:\n"""\n${c.excerpt}\n"""`;
 }
 
-const TITLE_SYSTEM=`You are the titling editor for "Sacred Stories", a respectful audio library of scripture, mythology, folklore, ghost stories and children's tales from many religions.
+const TITLE_SYSTEM=`You are the titling editor for "Sunave", a respectful audio library of scripture, mythology, folklore, ghost stories and children's tales from many religions.
 Rules:
 - Titles are evocative, specific to the content, 2-7 words, and easy to say aloud. No clickbait, no emojis, no quotation marks.
 - Write titles in the same language as the text excerpt.
@@ -59,7 +59,7 @@ export async function suggestTitles(prisma:PrismaClient,kind:CatalogKind,id:stri
   );
 }
 
-const ART_SYSTEM=`You are the art director for "Sacred Stories", a premium audiobook app. Read the story and plan ONE front-cover illustration for it.
+const ART_SYSTEM=`You are the art director for "Sunave", a premium audiobook app. Read the story and plan ONE front-cover illustration for it.
 Think like a cover designer, not a scene illustrator:
 - Choose the single most iconic, instantly recognisable image for this story: a key character at a defining (non-spoiler) moment, or a powerful symbol or setting from the text. It must be specific to THIS story, never generic.
 - One focal subject that reads clearly as a small phone thumbnail. At most two characters.

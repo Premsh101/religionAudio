@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getPrisma } from "../../../lib/server/prisma";
+import { categoryOf } from "../../../lib/categories";
+import { audioPublicUrl } from "../../../lib/audio-storage";
 
 export const dynamic="force-dynamic";
 
@@ -14,7 +16,8 @@ export async function GET(request:NextRequest){
   const prisma=getPrisma();
   if(!prisma) return NextResponse.json({query:q,works:[],passages:[],stories:[]});
 
-  const terms=[...new Set(q.toLowerCase().replace(/[^a-z0-9\s:-]/g," ").split(/\s+/).filter(v=>v.length>1))].slice(0,6);
+  // Letters and digits in any script, so Hindi, Arabic and Urdu searches work too.
+  const terms=[...new Set(q.toLowerCase().replace(/[^\p{L}\p{M}\p{N}\s:-]/gu," ").split(/\s+/).filter(v=>v.length>1))].slice(0,6);
   const contains=terms.length?terms: [q];
 
   const [works,passages,stories]=await Promise.all([
@@ -39,11 +42,11 @@ export async function GET(request:NextRequest){
           {body:{contains:term,mode:"insensitive"}}
         ]}))
       },
-      take:12,
+      take:24,
       orderBy:{publishedAt:"desc"},
-      select:{title:true,slug:true,type:true,audience:true,summary:true,source:{select:{name:true}}}
+      select:{id:true,title:true,slug:true,type:true,audience:true,ageMin:true,summary:true,collection:true,coverImageKey:true,source:{select:{name:true}}}
     })
   ]);
 
-  return NextResponse.json({query:q,works,passages,stories});
+  return NextResponse.json({query:q,works,passages,stories:stories.map(({coverImageKey,collection,...s})=>({...s,category:categoryOf({collection,type:s.type,audience:s.audience}),coverUrl:coverImageKey?audioPublicUrl(coverImageKey):null}))});
 }

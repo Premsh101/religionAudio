@@ -7,30 +7,48 @@ export const CATEGORY_KEYS=[
 ] as const;
 export type CategoryKey=typeof CATEGORY_KEYS[number];
 
-/** Colours per category: a gradient for cards and an accent for chips. */
-export const CATEGORY_STYLE:Record<CategoryKey,{from:string;to:string;emoji:string}>={
-  epics:{from:"#f59e0b",to:"#7c2d12",emoji:"🏹"},
-  mythology:{from:"#fb923c",to:"#7c2d12",emoji:"🪔"},
-  children:{from:"#34d399",to:"#065f46",emoji:"🧸"},
-  festivals:{from:"#f472b6",to:"#831843",emoji:"🎉"},
-  adventure:{from:"#38bdf8",to:"#0c4a6e",emoji:"🧭"},
-  "moral-tales":{from:"#fb7185",to:"#881337",emoji:"🌱"},
-  parables:{from:"#a3e635",to:"#365314",emoji:"🕊️"},
-  folklore:{from:"#2dd4bf",to:"#134e4a",emoji:"🌳"},
-  biographies:{from:"#fcd34d",to:"#78350f",emoji:"✨"},
-  "sacred-places":{from:"#c084fc",to:"#4c1d95",emoji:"🛕"},
-  ghost:{from:"#a78bfa",to:"#1e1b4b",emoji:"🌙"},
-  historical:{from:"#d6a76c",to:"#44281a",emoji:"📜"},
-  inspirational:{from:"#facc15",to:"#713f12",emoji:"🌅"},
-  "war-courage":{from:"#f87171",to:"#7f1d1d",emoji:"🛡️"},
-  survival:{from:"#4ade80",to:"#14532d",emoji:"🏔️"},
-  "friendship-family":{from:"#fdba74",to:"#7c2d12",emoji:"🤝"},
-  romance:{from:"#f9a8d4",to:"#831843",emoji:"💞"},
-  rituals:{from:"#e879f9",to:"#701a75",emoji:"🕯️"},
-  crime:{from:"#94a3b8",to:"#1e293b",emoji:"🔍"},
-  thriller:{from:"#f97316",to:"#431407",emoji:"⚡"},
-  stories:{from:"#818cf8",to:"#312e81",emoji:"📖"},
+/** Colour and photo per category (from the Sunave design). Photos live in /public/images/photos. */
+export const CATEGORY_STYLE:Record<CategoryKey,{color:string;photo:string;emoji:string}>={
+  epics:{color:"#F57C00",photo:"epics",emoji:"🏹"},
+  mythology:{color:"#7B61FF",photo:"mythology",emoji:"🪔"},
+  children:{color:"#0FA896",photo:"children",emoji:"🧸"},
+  festivals:{color:"#E8358B",photo:"festivals",emoji:"🎉"},
+  adventure:{color:"#1E88E5",photo:"adventure",emoji:"🧭"},
+  "moral-tales":{color:"#D6336C",photo:"moral-tales",emoji:"🌱"},
+  parables:{color:"#2F9E8F",photo:"valley",emoji:"🕊️"},
+  folklore:{color:"#1E9E5A",photo:"folklore",emoji:"🌳"},
+  biographies:{color:"#C77D18",photo:"dusk-hills",emoji:"✨"},
+  "sacred-places":{color:"#B7791F",photo:"sacred-places",emoji:"🛕"},
+  ghost:{color:"#6A4BE0",photo:"ghost",emoji:"🌙"},
+  historical:{color:"#A65A2E",photo:"desert",emoji:"📜"},
+  inspirational:{color:"#E8590C",photo:"inspirational",emoji:"🌅"},
+  "war-courage":{color:"#C2410C",photo:"moor",emoji:"🛡️"},
+  survival:{color:"#0E8A6A",photo:"mountain-lake",emoji:"🏔️"},
+  "friendship-family":{color:"#E86A33",photo:"woods",emoji:"🤝"},
+  romance:{color:"#E0435F",photo:"romance",emoji:"💞"},
+  rituals:{color:"#B0429A",photo:"temple-town",emoji:"🕯️"},
+  crime:{color:"#3F5BD8",photo:"crime",emoji:"🔍"},
+  thriller:{color:"#D9480F",photo:"road",emoji:"⚡"},
+  stories:{color:"#5B5BD6",photo:"lake-dawn",emoji:"📖"},
 };
+
+/** Extra photos per category, so stories without their own cover art don't all look the same. */
+const EXTRA_PHOTOS:Partial<Record<CategoryKey,string[]>>={
+  ghost:["forest-mist","mountain-lake"],children:["earth","woods"],epics:["dusk-hills","mountain-lake"],"moral-tales":["pine-fog","valley"],
+  "sacred-places":["temple-town","lake-dawn"],crime:["moor","road"],romance:["poppies"],adventure:["sea","road","desert"],folklore:["valley","desert","woods"],
+  festivals:["temple-town"],inspirational:["sea","lake-dawn"],parables:["pine-fog"],biographies:["lake-dawn"],historical:["dusk-hills"],"war-courage":["mountain-lake"],
+  survival:["sea","desert"],"friendship-family":["poppies","earth"],rituals:["festivals"],thriller:["moor"],stories:["valley","sea"],mythology:["earth"],
+};
+
+export function photoUrl(name:string){return `/images/photos/${name}.jpg`}
+export function categoryPhoto(key:CategoryKey){return photoUrl(CATEGORY_STYLE[key].photo)}
+
+/** A stable stand-in cover photo for a story until it gets generated cover art. */
+export function fallbackCover(key:CategoryKey,seed:string){
+  const pool=[CATEGORY_STYLE[key].photo,...(EXTRA_PHOTOS[key]||[])];
+  let h=0;for(let i=0;i<seed.length;i++)h=(h*31+seed.charCodeAt(i))>>>0;
+  return photoUrl(pool[h%pool.length]);
+}
 
 export function isCategoryKey(value:unknown):value is CategoryKey{return typeof value==="string"&&(CATEGORY_KEYS as readonly string[]).includes(value)}
 
@@ -48,4 +66,6 @@ export function categoryOf(story:{collection?:string|null;type?:string|null;audi
 
 export function categoryLabelKey(key:CategoryKey){return ("cat."+key) as MessageKey}
 export function categoryBlurbKey(key:CategoryKey){return ("catd."+key) as MessageKey}
-export function categoryGradient(key:CategoryKey){const s=CATEGORY_STYLE[key];return `linear-gradient(150deg, ${s.from} 0%, ${s.to} 100%)`}
+export function categoryColor(key:CategoryKey){return CATEGORY_STYLE[key].color}
+/** Category tint used on covers and tiles: the colour fading to transparent, at 165°. */
+export function categoryTint(key:CategoryKey){return `linear-gradient(165deg, ${CATEGORY_STYLE[key].color}99, transparent 60%)`}

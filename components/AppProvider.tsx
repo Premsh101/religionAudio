@@ -1,17 +1,29 @@
 "use client";
 
-import { createContext, useContext, useMemo } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { LOCALE_COOKIE, type Locale } from "../lib/i18n/config";
 import { translator, type Translate } from "../lib/i18n/messages";
 import type { SessionUser } from "../lib/auth";
+import { PlayerProvider } from "./player/PlayerProvider";
 
-type AppContextValue={locale:Locale;t:Translate;user:SessionUser|null};
-const AppContext=createContext<AppContextValue>({locale:"en",t:translator("en"),user:null});
+export type Theme="dark"|"light";
+type AppContextValue={locale:Locale;t:Translate;user:SessionUser|null;theme:Theme;toggleTheme:()=>void};
+const AppContext=createContext<AppContextValue>({locale:"en",t:translator("en"),user:null,theme:"dark",toggleTheme:()=>{}});
 
-/** Language and signed-in user, resolved on the server so pages render in the right language without a flash. */
+/** Language, signed-in user and theme, plus the site-wide audio player that keeps playing between pages. */
 export default function AppProvider({locale,user,children}:{locale:Locale;user:SessionUser|null;children:React.ReactNode}){
-  const value=useMemo(()=>({locale,t:translator(locale),user}),[locale,user]);
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  const [theme,setTheme]=useState<Theme>("dark");
+  useEffect(()=>{if(document.documentElement.getAttribute("data-theme")==="light")setTheme("light")},[]);
+  const toggleTheme=useCallback(()=>{
+    setTheme(prev=>{
+      const next=prev==="dark"?"light":"dark";
+      document.documentElement.setAttribute("data-theme",next);
+      try{localStorage.setItem("sv-theme",next)}catch{}
+      return next;
+    });
+  },[]);
+  const value=useMemo(()=>({locale,t:translator(locale),user,theme,toggleTheme}),[locale,user,theme,toggleTheme]);
+  return <AppContext.Provider value={value}><PlayerProvider>{children}</PlayerProvider></AppContext.Provider>;
 }
 
 export function useApp(){return useContext(AppContext)}

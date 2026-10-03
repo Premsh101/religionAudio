@@ -12,12 +12,12 @@ export default async function PlacePage({params}:{params:Promise<{slug:string}>}
  const dbPlace=prisma?await prisma.place.findUnique({where:{slug},select:{name:true,slug:true,country:true,region:true,placeType:true,latitude:true,longitude:true,traditionalSignificance:true,historicalSignificance:true,archaeologicalEvidence:true,uncertaintyNotes:true,source:{select:{name:true,url:true,license:true,rightsStatus:true}}}}).catch(()=>null):null;
  const seed=(placesSeed as any[]).find(p=>p.slug===slug);
  const place=dbPlace||seed;
- if(!place) return <main className="min-h-screen"><AppHeader/><section className="mx-auto max-w-3xl px-5 py-16"><div className="glass rounded-3xl p-8"><h1 className="font-display text-3xl">Place not found</h1><Link href="/places" className="mt-6 inline-flex text-sm text-zinc-400 hover:text-white">← Sacred atlas</Link></div></section></main>;
+ if(!place) return <main data-theme="dark" className="min-h-screen"><AppHeader/><section className="mx-auto max-w-3xl px-5 py-16"><div className="glass rounded-3xl p-8"><h1 className="font-display text-3xl">Place not found</h1><Link href="/places" className="mt-6 inline-flex text-sm text-zinc-400 hover:text-white">← Sacred atlas</Link></div></section></main>;
  const traditional=place.traditionalSignificance||"Traditional significance will be populated from named religious and cultural sources.";
  const historical=place.historicalSignificance||"Historical context will be populated from academic, archival and archaeological sources.";
  const archaeology=place.archaeologicalEvidence||"No archaeological evidence has been entered in the current record.";
  const uncertainty=place.uncertaintyNotes||"Claims will be labelled where sources disagree or evidence is incomplete.";
- return <main className="min-h-screen">
+ return <main data-theme="dark" className="min-h-screen">
   <AppHeader/>
   <header className="mx-auto max-w-5xl px-5 py-5"><Link href="/places" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-white"><ArrowLeft className="h-4 w-4"/>Sacred atlas</Link></header>
   <section className="mx-auto max-w-5xl px-5 pb-20 pt-8">
