@@ -350,5 +350,86 @@
       "Chandrakanta tradition"
     ],
     "ingest_policy": "The multilingual story texts are original retellings created for the repository and are not copied from modern translations. The underlying classic works have historical public-domain editions in the USA; verify target-jurisdiction status before commercial redistribution."
+  },
+  {
+    "id": "british-museum-ashoka",
+    "tradition": "Ancient India / Buddhism",
+    "source": "British Museum",
+    "url": "https://www.britishmuseum.org/collection/term/x25076",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical verification and object metadata; do not copy museum prose into the corpus without permission."
+  },
+  {
+    "id": "jhansi-government-history",
+    "tradition": "Modern Indian history",
+    "source": "District Jhansi, Government of Uttar Pradesh",
+    "url": "https://jhansi.nic.in/history/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for official local historical reference; repository stories are original retellings rather than copied site text."
+  },
+  {
+    "id": "met-mali-mansa-musa",
+    "tradition": "Mali / Islamic history",
+    "source": "The Metropolitan Museum of Art",
+    "url": "https://www.metmuseum.org/es/exhibitions/sahel-art-empire-sahara/inside-the-exhibition",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical and cultural verification; no verbatim museum text is redistributed."
+  },
+  {
+    "id": "academy-chinese-zheng-he",
+    "tradition": "Chinese maritime history",
+    "source": "Academy of Chinese Studies",
+    "url": "https://chiculture.org.hk/en/china-five-thousand-years/2004",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical verification of Zheng He's voyages; no verbatim source text is redistributed."
+  },
+  {
+    "id": "berkeley-ibn-battuta",
+    "tradition": "Islamic travel history",
+    "source": "UC Berkeley ORIAS",
+    "url": "https://orias.berkeley.edu/resources-teachers/travels-ibn-battuta",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical reference and teaching context; repository stories are original retellings."
+  },
+  {
+    "id": "osu-caesar-rubicon",
+    "tradition": "Ancient Rome",
+    "source": "Ohio State Origins",
+    "url": "https://origins.osu.edu/read/julius-caesar-crosses-rubicon",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual verification; do not copy article prose into corpus."
+  },
+  {
+    "id": "unesco-jerusalem",
+    "tradition": "Jerusalem / Abrahamic history",
+    "source": "UNESCO World Heritage Centre",
+    "url": "https://whc.unesco.org/en/list/148/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical and cultural context for Jerusalem; verify current UNESCO terms before any direct reuse."
+  },
+  {
+    "id": "stanford-socrates",
+    "tradition": "Ancient Greek philosophy",
+    "source": "Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/socrates/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for historical/philosophical verification; do not copy encyclopedia prose."
+  },
+  {
+    "id": "worldhistory-ashoka-edicts",
+    "tradition": "Ancient India",
+    "source": "World History Encyclopedia",
+    "url": "https://www.worldhistory.org/Edicts_of_Ashoka/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for discovery and verification of Ashokan edict context; repository text remains an original retelling."
   }
 ]
