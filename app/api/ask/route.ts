@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { formatRetrievedContext } from "../../../lib/retrieval";
 import { getPrisma } from "../../../lib/server/prisma";
+import { RULES, clientIp, hit, tooManyRequests } from "../../../lib/server/rate-limit";
 
 export const dynamic="force-dynamic";
 
@@ -9,7 +10,9 @@ function safeQuestion(value:unknown){
 }
 
 export async function POST(request:NextRequest){
-  const question=safeQuestion((await request.json()).question);
+  const limit=await hit(RULES.askPerIp,clientIp(request));
+  if(!limit.ok)return tooManyRequests(limit,"You've asked a lot of questions in the last hour.");
+  const question=safeQuestion((await request.json().catch(()=>({}))).question);
   if(!question) return Response.json({error:"Question is required."},{status:400});
 
   const retrieved=await formatRetrievedContext(question);

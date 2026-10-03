@@ -2,9 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import { getPrisma } from "../../../../lib/server/prisma";
 import { createSessionToken, normalizeIdentifier, validateIdentifier, validatePassword } from "../../../../lib/auth";
+import { RULES, clientIp, hit, tooManyRequests } from "../../../../lib/server/rate-limit";
 
 export async function POST(request:NextRequest){
-  const {identifier,password,displayName}=await request.json();
+  const limit=await hit(RULES.signupPerIp,clientIp(request));
+  if(!limit.ok)return tooManyRequests(limit,"Too many new accounts from this network.");
+  const {identifier,password,displayName}=await request.json().catch(()=>({}));
   if(typeof identifier!=="string"||typeof password!=="string"){
     return NextResponse.json({error:"Email/phone and password are required."},{status:400});
   }

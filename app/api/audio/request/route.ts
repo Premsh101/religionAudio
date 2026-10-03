@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getPrisma } from "../../../../lib/server/prisma";
 import { normalizeVoiceGender } from "../../../../lib/narration";
 import { ensureAudioAsset } from "../../../../lib/server/audio-assets";
+import { RULES, clientIp, hit, isLimited, tooManyRequests } from "../../../../lib/server/rate-limit";
 
 export const dynamic="force-dynamic";
 
@@ -20,17 +21,25 @@ export async function POST(request:NextRequest){
   if(!prisma)return NextResponse.json({error:"Narration is not available right now."},{status:503});
   const body=await request.json().catch(()=>({}));
   const voiceGender=normalizeVoiceGender(body.voice)||"female";
+  const ip=clientIp(request);
+  // Narration that already exists is free to open; starting new generation is limited per network.
+  const limited=await isLimited(RULES.narrationRequestPerIp,ip);
+  const countIfNew=async(result:{reused:boolean})=>{if(!result.reused)await hit(RULES.narrationRequestPerIp,ip)};
   try{
     if(typeof body.storyId==="string"){
       const story=await prisma.story.findUnique({where:{id:body.storyId},select:{id:true,status:true,language:true}});
       if(!story||story.status!=="PUBLISHED")return NextResponse.json({error:"Story not found."},{status:404});
-      const result=await ensureAudioAsset(prisma,{storyId:story.id,language:languageCode(story.language),voiceGender});
+      const result=await ensureAudioAsset(prisma,{storyId:story.id,language:languageCode(story.language),voiceGender,existingOnly:!limited.ok});
+      if(!result)return tooManyRequests(limited,"You've started a lot of new narrations.");
+      await countIfNew(result);
       return NextResponse.json(result,{status:result.status==="READY"?200:202});
     }
     if(typeof body.workId==="string"){
       const work=await prisma.work.findUnique({where:{id:body.workId},select:{id:true,language:true,status:true}});
       if(!work||work.status!=="PUBLISHED")return NextResponse.json({error:"Book not found."},{status:404});
-      const result=await ensureAudioAsset(prisma,{workId:work.id,language:languageCode(work.language),voiceGender});
+      const result=await ensureAudioAsset(prisma,{workId:work.id,language:languageCode(work.language),voiceGender,existingOnly:!limited.ok});
+      if(!result)return tooManyRequests(limited,"You've started a lot of new narrations.");
+      await countIfNew(result);
       return NextResponse.json(result,{status:result.status==="READY"?200:202});
     }
     return NextResponse.json({error:"storyId or workId is required."},{status:400});

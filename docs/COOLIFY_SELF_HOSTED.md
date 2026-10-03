@@ -127,6 +127,6 @@ Application code only depends on `DATABASE_URL`. A future move to managed Postgr
 - Use a strong PostgreSQL password.
 - Keep PostgreSQL private; do not publish port 5432.
 - Back up the database and test restores.
-- Add login/signup rate limiting before public launch.
+- Rate limiting is built in (login, signup, TTS generation, narration requests, Ask AI); limits are in `lib/server/rate-limit.ts`. Client IPs come from Coolify's proxy. If you put Cloudflare's orange-cloud proxy in front of the site, set `TRUST_CLOUDFLARE_IP=true` so limits apply per visitor rather than per Cloudflare server.
 - Add email/phone verification when account recovery is introduced.
 - Rotate secrets through Coolify rather than committing them to Git.

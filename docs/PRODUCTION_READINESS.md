@@ -28,8 +28,13 @@ Coolify Auto Deploy redeploys on every push to `main`. CI runs on pull requests 
 
 ## Before public launch (not fixed here)
 
-1. **Rate limiting**: `/api/auth/login`, `/api/auth/signup`, `/api/ask` (paid AI calls) and `/api/tts` have none. Credential stuffing and cost abuse are both possible.
-2. **`POST /api/tts` is unauthenticated** and accepts up to 30,000 characters. Anyone can max out the KVM CPU. Require a session, lower the limit, or serve only pre-generated audio.
+1. ~~Rate limiting~~ **Done.** PostgreSQL-backed limits (`lib/server/rate-limit.ts`, `RULES`):
+   - Login: 20 attempts per IP per 15 min, and 5 wrong passwords per account per 15 min (cleared on success).
+   - Signup: 5 per IP per hour.
+   - New TTS generation: 30 per IP and 600 site-wide per hour. Cached audio is never limited.
+   - New full narrations: 10 per IP per hour.
+   - Ask AI: 20 per IP per hour.
+2. ~~`POST /api/tts` unauthenticated~~ **Mitigated.** It is still public, but text is capped at 6,000 characters, results are cached, and new generation is rate-limited (above).
 3. **Backups**: documented but not automated. Set up scheduled `pg_dump` off-box (Coolify has scheduled DB backups for its own DB resources; for the compose `db` service use a cron'd `pg_dump` to S3/R2) and test a restore.
 4. **No automated tests**: CI only covers typecheck, build, migrations and a health smoke test.
 5. **Per-request `PrismaClient`** in `app/api/audio/jobs/route.ts` and `app/api/audio/assets/[id]/route.ts` opens a new connection pool on every request. Switch to `getPrisma()` from `lib/server/prisma.ts`.
