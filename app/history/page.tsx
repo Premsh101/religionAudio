@@ -23,7 +23,7 @@ export default function HistoryPage(){
   const [signedIn,setSignedIn]=useState(false);
 
   async function load(){
-    const history=getHistory().map(({kind,id,progressPercent,completed,updatedAt})=>({kind,id,progressPercent,completed,updatedAt}));
+    const history=getHistory().map(({kind,id,progressPercent,completed,updatedAt,passageSequence})=>({kind,id,progressPercent,completed,updatedAt,passageSequence}));
     try{
       const res=await fetch("/api/user/history",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({history})});
       const data=res.ok?await res.json():{items:[],signedIn:false};

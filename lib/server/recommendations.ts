@@ -5,7 +5,7 @@ export type FeedItem={
   kind:ItemKind;id:string;slug:string;title:string;subtitle:string;tag:string;href:string;
   createdAt:string;isNew:boolean;progressPercent?:number;updatedAt?:string;reason?:string;
 };
-export type HistoryEntry={kind:ItemKind;id:string;progressPercent:number;completed?:boolean;updatedAt:string};
+export type HistoryEntry={kind:ItemKind;id:string;progressPercent:number;completed?:boolean;updatedAt:string;passageSequence?:number};
 
 const NEW_DAYS=21;
 const DAY=86400000;
@@ -49,17 +49,19 @@ async function loadCandidates(prisma:PrismaClient):Promise<Candidate[]>{
 }
 
 const strip=({features,popularity,...item}:Candidate):FeedItem=>item;
+/** Resume link: books open at the saved passage (and therefore its chapter), not chapter 1. */
+const resumeHref=(item:FeedItem,h:HistoryEntry)=>item.kind==="work"&&h.passageSequence&&h.passageSequence>1?`${item.href}?at=${h.passageSequence}`:item.href;
 const keyOf=(e:{kind:string;id:string})=>e.kind+":"+e.id;
 
 /** Signed-in history from reading progress and audio playback, newest first. */
 export async function loadUserHistory(prisma:PrismaClient,userId:string):Promise<HistoryEntry[]>{
   const [works,stories,audio]=await Promise.all([
-    prisma.workProgress.findMany({where:{userId},orderBy:{updatedAt:"desc"},take:100,select:{workId:true,progressPercent:true,completedAt:true,updatedAt:true}}),
+    prisma.workProgress.findMany({where:{userId},orderBy:{updatedAt:"desc"},take:100,select:{workId:true,currentSequence:true,progressPercent:true,completedAt:true,updatedAt:true}}),
     prisma.storyProgress.findMany({where:{userId},orderBy:{updatedAt:"desc"},take:100,select:{storyId:true,progressPercent:true,completedAt:true,updatedAt:true}}),
     prisma.audioPlaybackProgress.findMany({where:{userId},orderBy:{updatedAt:"desc"},take:100,select:{progressPercent:true,completedAt:true,updatedAt:true,audioAsset:{select:{storyId:true,workId:true}}}})
   ]);
   const entries:HistoryEntry[]=[
-    ...works.map(w=>({kind:"work" as const,id:w.workId,progressPercent:w.progressPercent,completed:Boolean(w.completedAt),updatedAt:w.updatedAt.toISOString()})),
+    ...works.map(w=>({kind:"work" as const,id:w.workId,progressPercent:w.progressPercent,completed:Boolean(w.completedAt),updatedAt:w.updatedAt.toISOString(),passageSequence:w.currentSequence})),
     ...stories.map(s=>({kind:"story" as const,id:s.storyId,progressPercent:s.progressPercent,completed:Boolean(s.completedAt),updatedAt:s.updatedAt.toISOString()})),
     ...audio.flatMap(a=>{
       const target=a.audioAsset.storyId?{kind:"story" as const,id:a.audioAsset.storyId}:a.audioAsset.workId?{kind:"work" as const,id:a.audioAsset.workId}:null;
@@ -75,11 +77,13 @@ export function mergeHistory(entries:HistoryEntry[]):HistoryEntry[]{
   for(const e of entries){
     const prev=map.get(keyOf(e));
     if(!prev){map.set(keyOf(e),{...e});continue}
+    const newer=prev.updatedAt>e.updatedAt?prev:e, older=newer===prev?e:prev;
     map.set(keyOf(e),{
       kind:e.kind,id:e.id,
       progressPercent:Math.max(prev.progressPercent,e.progressPercent),
       completed:Boolean(prev.completed||e.completed),
-      updatedAt:prev.updatedAt>e.updatedAt?prev.updatedAt:e.updatedAt
+      updatedAt:newer.updatedAt,
+      passageSequence:newer.passageSequence??older.passageSequence
     });
   }
   return [...map.values()].sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));
@@ -105,7 +109,7 @@ export async function getHomeFeed(prisma:PrismaClient,history:HistoryEntry[]){
   const continueItems=known
     .filter(h=>!h.completed&&h.progressPercent<100)
     .slice(0,10)
-    .map(h=>({...strip(byKey.get(keyOf(h))!),progressPercent:h.progressPercent,updatedAt:h.updatedAt}));
+    .map(h=>{const item=strip(byKey.get(keyOf(h))!);return {...item,href:resumeHref(item,h),progressPercent:h.progressPercent,updatedAt:h.updatedAt}});
 
   const taste=new Map<string,number>();
   for(const h of known){
@@ -147,6 +151,8 @@ export async function describeHistory(prisma:PrismaClient,history:HistoryEntry[]
   const byKey=new Map(candidates.map(c=>[keyOf(c),c]));
   return mergeHistory(history).flatMap(h=>{
     const c=byKey.get(keyOf(h));
-    return c?[{...strip(c),progressPercent:h.progressPercent,completed:Boolean(h.completed),updatedAt:h.updatedAt}]:[];
+    if(!c)return [];
+    const item=strip(c);
+    return [{...item,href:resumeHref(item,h),progressPercent:h.progressPercent,completed:Boolean(h.completed),updatedAt:h.updatedAt}];
   });
 }

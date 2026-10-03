@@ -6,6 +6,8 @@ export type LocalHistoryEntry={
   kind:HistoryKind;id:string;slug:string;title:string;href:string;
   progressPercent:number;completed?:boolean;updatedAt:string;
   assetId?:string;sequence?:number;positionMs?:number;
+  /** Books: last passage read (audio uses sequence/positionMs). */
+  passageSequence?:number;
 };
 
 const HISTORY_KEY="ra-history";

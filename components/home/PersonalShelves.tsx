@@ -20,7 +20,7 @@ function Shelf({eyebrow,title,action,children}:{eyebrow:string;title:ReactNode;a
 export default function PersonalShelves(){
   const [feed,setFeed]=useState<Feed|null>(null);
   useEffect(()=>{
-    const history=getHistory().map(({kind,id,progressPercent,completed,updatedAt})=>({kind,id,progressPercent,completed,updatedAt}));
+    const history=getHistory().map(({kind,id,progressPercent,completed,updatedAt,passageSequence})=>({kind,id,progressPercent,completed,updatedAt,passageSequence}));
     fetch("/api/home",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({history})})
       .then(r=>r.ok?r.json():null).then(setFeed).catch(()=>setFeed(null));
   },[]);
