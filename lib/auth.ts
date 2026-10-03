@@ -36,9 +36,8 @@ export async function readSessionToken(token:string){
 export function normalizeIdentifier(identifier:string){
   const value=identifier.trim();
   if(value.includes("@")) return {type:"email" as const,value:value.toLowerCase()};
-  const phone=value.replace(/[s().-]/g,"");
-  if(/^d{10}$/.test(phone)) return {type:"phone" as const,value:phone};
-  return {type:"phone" as const,value};
+  const phone=value.replace(/[\s().-]/g,"");
+  return {type:"phone" as const,value:phone};
 }
 
 export function validateIdentifier(identifier:string){

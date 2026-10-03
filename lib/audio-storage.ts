@@ -22,7 +22,8 @@ export async function storeJson(value:unknown):Promise<StoredAudio>{
  return storeAudio(Buffer.from(JSON.stringify(value,null,2),"utf-8"),"json");
 }
 
-function contentTypeFor(extension:string){return extension==="mp3"?"audio/mpeg":extension==="json"?"application/json":extension==="ogg"?"audio/ogg":"audio/wav"}
+const CONTENT_TYPES:Record<string,string>={mp3:"audio/mpeg",json:"application/json",ogg:"audio/ogg",wav:"audio/wav",png:"image/png",jpg:"image/jpeg",jpeg:"image/jpeg",webp:"image/webp"};
+export function contentTypeFor(extension:string){return CONTENT_TYPES[extension.toLowerCase()]||"application/octet-stream"}
 
 export async function storeAudio(buffer:Buffer,extension="wav"):Promise<StoredAudio>{
  return storeAudioAt(keyFor(extension),buffer,extension);

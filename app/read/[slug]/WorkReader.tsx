@@ -6,9 +6,10 @@ import { ArrowLeft, Bookmark, Pause, Play, Sparkles, Volume2 } from "lucide-reac
 import AppHeader from "../../../components/AppHeader";
 import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../../../components/NarrationPlayer";
 import { recordHistory } from "../../../lib/client/history";
+import CoverArt from "../../../components/CoverArt";
 
 type Passage={id:string;reference:string;sequence:number;text:string};
-type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audio:NarrationAssets;totalPassages:number;initialSequence:number|null};
+type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audio:NarrationAssets;totalPassages:number;initialSequence:number|null;coverUrl:string|null;summary:string|null};
 
 export default function WorkReader({work}:{work:Work}){
   const [active,setActive]=useState(work.initialSequence&&work.passages.some(p=>p.sequence===work.initialSequence)?work.initialSequence:(work.passages[0]?.sequence||1));
@@ -103,7 +104,9 @@ export default function WorkReader({work}:{work:Work}){
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-amber-300">{work.language} · {work.rightsStatus}</p>
+            {work.coverUrl&&<div className="mb-4 mt-3 w-32"><CoverArt title={work.title} tag="Scripture" kind="work" coverUrl={work.coverUrl} size="sm"/></div>}
             <h1 className="mt-2 font-display text-4xl">{work.title}</h1>
+            {work.summary&&<p className="mt-2 max-w-xl text-sm text-zinc-400">{work.summary}</p>}
             <div className="mt-4 flex flex-wrap items-center gap-2">
               <Link href={"/read/"+work.slug} className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-xs text-zinc-300">Chapters</Link>
               <span className="text-xs text-zinc-600">Chapter {work.currentChapter}</span>

@@ -6,8 +6,9 @@ import Link from "next/link";
 import AppHeader from "../../../components/AppHeader";
 import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../../../components/NarrationPlayer";
 import { recordHistory } from "../../../lib/client/history";
+import CoverArt from "../../../components/CoverArt";
 
-type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
+type Story={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;body:string;status:string;storyId?:string;audio?:NarrationAssets;coverUrl?:string|null;source?:{name:string;url:string;license:string|null;rightsStatus:string}|null};
 
 const labels:Record<string,string>={
   ghost:"After-dark / atmospheric",
@@ -131,6 +132,7 @@ export default function StoryClient({story}:{story:Story}){
           <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500"><span className="rounded-full border border-amber-300/15 bg-amber-300/5 px-3 py-1 text-amber-200">{story.tag}</span><span>{story.audience}</span><span>Age {story.age_min}+</span></div>
           <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save story"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 bg-white/[0.02] p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
         </div>
+        {story.coverUrl&&<div className="mt-7 w-40 md:float-right md:mb-4 md:ml-8 md:mt-0 md:w-52"><CoverArt title={story.title} tag={story.tag} kind="story" coverUrl={story.coverUrl} size="md"/></div>}
         <h1 className="mt-7 max-w-3xl font-display text-5xl leading-tight">{story.title}</h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-zinc-400">{story.style_notes}</p>
         <div className="mt-8 flex flex-wrap items-center gap-3">

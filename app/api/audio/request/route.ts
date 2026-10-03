@@ -28,8 +28,8 @@ export async function POST(request:NextRequest){
       return NextResponse.json(result,{status:result.status==="READY"?200:202});
     }
     if(typeof body.workId==="string"){
-      const work=await prisma.work.findUnique({where:{id:body.workId},select:{id:true,language:true}});
-      if(!work)return NextResponse.json({error:"Book not found."},{status:404});
+      const work=await prisma.work.findUnique({where:{id:body.workId},select:{id:true,language:true,status:true}});
+      if(!work||work.status!=="PUBLISHED")return NextResponse.json({error:"Book not found."},{status:404});
       const result=await ensureAudioAsset(prisma,{workId:work.id,language:languageCode(work.language),voiceGender});
       return NextResponse.json(result,{status:result.status==="READY"?200:202});
     }

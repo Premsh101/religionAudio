@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BookOpen, Ghost, Headphones, Sparkles, Baby, Search, ScrollText } from "lucide-react";
 import type { FeedItem } from "../../lib/server/recommendations";
+import CoverArt from "../CoverArt";
 
 const accents:Record<string,string>={
   "Ghost story":"from-violet-500/35 via-fuchsia-500/10",
@@ -22,16 +23,16 @@ export function iconFor(item:Pick<FeedItem,"kind"|"tag">,className="h-4 w-4"){
 }
 
 export default function ItemCard({item,showProgress}:{item:FeedItem;showProgress?:boolean}){
-  return <Link href={item.href} className={`group relative flex w-60 shrink-0 snap-start flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br ${accentFor(item)} to-zinc-950 p-5 transition hover:-translate-y-1 hover:border-white/20 md:w-64`}>
-    <div className="flex items-center justify-between gap-2">
-      <span className="flex items-center gap-2 text-[11px] uppercase tracking-[0.14em] text-zinc-400">{iconFor(item)}{item.tag}</span>
-      {item.isNew&&<span className="rounded-full bg-amber-300 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-black">New</span>}
+  return <Link href={item.href} className="group flex w-40 shrink-0 snap-start flex-col md:w-44">
+    <div className="relative transition group-hover:-translate-y-1">
+      <CoverArt title={item.title} tag={item.tag} kind={item.kind} coverUrl={item.coverUrl} size="sm"/>
+      {item.isNew&&<span className="absolute right-2 top-2 rounded-full bg-amber-300 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-black">New</span>}
     </div>
-    <h3 className="mt-8 line-clamp-2 font-display text-xl leading-snug text-white">{item.title}</h3>
-    {item.subtitle&&<p className="mt-2 line-clamp-2 text-xs leading-5 text-zinc-500">{item.subtitle}</p>}
-    {showProgress&&typeof item.progressPercent==="number"?<div className="mt-auto pt-5">
+    <p className="mt-3 line-clamp-2 text-sm font-medium leading-snug text-white">{item.title}</p>
+    <p className="mt-1 flex items-center gap-1.5 text-[11px] text-zinc-500">{iconFor(item,"h-3 w-3")}{item.tag}</p>
+    {showProgress&&typeof item.progressPercent==="number"?<div className="mt-2">
       <div className="h-1 overflow-hidden rounded-full bg-white/10"><div className="h-full rounded-full bg-amber-300" style={{width:Math.max(4,item.progressPercent)+"%"}}/></div>
-      <p className="mt-2 text-[11px] text-zinc-500">{item.progressPercent}% · Resume</p>
-    </div>:item.reason?<p className="mt-auto pt-5 text-[11px] text-zinc-600">{item.reason}</p>:null}
+      <p className="mt-1 text-[11px] text-zinc-500">{item.progressPercent}% · Resume</p>
+    </div>:item.reason?<p className="mt-1 text-[11px] text-zinc-600">{item.reason}</p>:null}
   </Link>;
 }
