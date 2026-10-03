@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "category": "HISTORICAL_ACCOUNT",
+  "languages": {
+    "en": "TEXT_PRESENT",
+    "hi": "TEXT_PRESENT",
+    "ar": "TEXT_PRESENT",
+    "ur": "TEXT_PRESENT"
+  },
+  "records": [
+    {
+      "id": "historical-ashoka-after-kalinga",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-rani-lakshmibai-jhansi",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-mansa-musa-hajj",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-zheng-he-calicut",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-ibn-battuta-delhi",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-joan-orleans",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-caesar-rubicon",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-hannibal-alps",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-saladin-jerusalem",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "historical-socrates-final-day",
+      "en": "READY_FOR_REVIEW",
+      "hi": "READY_FOR_REVIEW",
+      "ar": "READY_FOR_REVIEW",
+      "ur": "READY_FOR_REVIEW",
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    }
+  ]
+}
