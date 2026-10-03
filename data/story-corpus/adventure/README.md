@@ -28,7 +28,7 @@ The text is marked ORIGINAL_FAITHFUL_RETELLING. These are repository-authored re
 - Sindbad's First Voyage
 - The Secret Passage of Chandrakanta
 
-The current first wave contains eight entries.
+The current first wave contains 13 entries, each with actual English, Hindi, Arabic and Urdu text.
 
 ## Meaning preservation
 
