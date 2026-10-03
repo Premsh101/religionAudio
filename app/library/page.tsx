@@ -23,7 +23,9 @@ export default async function LibraryPage(){
   }).catch(()=>[]) : [];
 
   const catalog=books as CatalogBook[];
-  const merged=dbWorks.length
+  // The bundled catalogue is only a fallback for an empty database, never a way around unpublishing.
+  const dbHasWorks=dbWorks.length>0||(prisma?await prisma.work.count().catch(()=>0):0)>0;
+  const merged=dbHasWorks
     ? dbWorks.map(work=>({
         id:work.id,title:work.title,tradition:work.slug.startsWith("dhammapada")?"Buddhism":work.slug.includes("jps-1917")?"Judaism":"Sacred texts",
         collection:"Primary text",language:work.language,translator:work.translator,edition:work.edition,
