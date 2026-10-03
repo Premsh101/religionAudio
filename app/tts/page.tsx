@@ -29,10 +29,10 @@ export default function TTSStudio(){
    try{
      const response=await fetch("/api/tts",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text,language:"en",profile})});
      if(!response.ok) throw new Error("TTS service is unavailable");
-     const blob=await response.blob();
-     const url=URL.createObjectURL(blob);
+     const {url}=await response.json();
+     if(!url) throw new Error("TTS service is unavailable");
      const audio=new Audio(url);
-     audio.onended=()=>{setPlaying(false);URL.revokeObjectURL(url)};
+     audio.onended=()=>setPlaying(false);
      audioRef.current=audio;
      await audio.play();
      setPlaying(true);

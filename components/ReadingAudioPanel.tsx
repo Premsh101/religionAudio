@@ -102,9 +102,11 @@ export default function ReadingAudioPanel({
         const ready=data.asset?.status==="READY";
         setPreparing(ready?null:{done:nextSegments.length,total:data.asset?.totalSegments||0});
         const prevCount=segmentCountRef.current;
-        if(nextSegments.length>=prevCount){
+        // Replace only when new parts arrived (or on first load); swapping in identical data would reset the playing <audio>.
+        if(nextSegments.length>prevCount){
           segmentCountRef.current=nextSegments.length;
-          setSegments(nextSegments);
+          // Keep existing segment objects so the part that is playing is not reloaded.
+          setSegments(prev=>nextSegments.map((s,i)=>prev[i]&&prev[i].id===s.id&&prev[i].url===s.url?prev[i]:s));
           if(waitingRef.current&&nextSegments.length>prevCount){
             // The listener reached the end of what was ready; continue as soon as the next part lands.
             waitingRef.current=false;
@@ -153,7 +155,8 @@ export default function ReadingAudioPanel({
     };
     a.addEventListener("loadedmetadata",onLoaded);
     return()=>a.removeEventListener("loadedmetadata",onLoaded);
-  },[current,rate,index]);
+    // Keyed on the file URL: new parts arriving or a speed change must not reload the part that is playing.
+  },[current?.url,index]);
 
   useEffect(()=>{
     const a=audioRef.current;
