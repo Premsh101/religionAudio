@@ -68,15 +68,14 @@ def fetch_gutenberg(source_url: str) -> str:
 def fetch_wikisource(lang: str, page_title: str) -> str:
     base = WIKISOURCE_API[lang]
     params = (
-        "?action=query&prop=revisions&rvprop=content&rvslots=main"
-        "&format=json&formatversion=2&titles=" + quote(page_title, safe="")
+        "?action=query&prop=extracts&explaintext=1&format=json&formatversion=2"
+        "&titles=" + quote(page_title, safe="")
     )
     payload = json.loads(fetch_bytes(base + params).decode("utf-8", errors="replace"))
     pages = payload.get("query", {}).get("pages", [])
-    if not pages or "revisions" not in pages[0]:
-        raise RuntimeError(f"Wikisource page not found: {lang}:{page_title}")
-    content = pages[0]["revisions"][0]["slots"]["main"]["content"]
-    return content.strip() + "\n"
+    if not pages or "extract" not in pages[0]:
+        raise RuntimeError(f"Wikisource page not found or has no extract: {lang}:{page_title}")
+    return pages[0]["extract"].strip() + "\n"
 
 
 def fetch_record(record: dict) -> str | None:
@@ -98,10 +97,10 @@ def fetch_record(record: dict) -> str | None:
     if record.get("ingest") == "wikisource-api":
         if rights not in {"PUBLIC_DOMAIN_CANDIDATE", "PUBLIC_DOMAIN_TRADITION"}:
             return None
-        page_title = source.get("pageTitle")
-        if not page_title:
-            raise RuntimeError(f"Missing pageTitle for {record['id']}")
-        return fetch_wikisource(record["language"], page_title)
+        page_titles = source.get("pageTitles") or ([source["pageTitle"]] if source.get("pageTitle") else [])
+        if not page_titles:
+            raise RuntimeError(f"Missing pageTitle/pageTitles for {record['id']}")
+        return "\n\n".join(fetch_wikisource(record["language"], title) for title in page_titles).strip() + "\n"
 
     return None
 
