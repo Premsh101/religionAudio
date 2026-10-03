@@ -4,13 +4,14 @@
     "model": "hexgrad/Kokoro-82M",
     "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
     "voices": {
-      "en": ["af_heart","af_bella","am_michael","bf_emma"],
+      "en": ["af_heart","af_bella","af_nicole","af_sarah","am_michael","am_fenrir","bf_emma"],
       "hi": ["hf_alpha","hf_beta","hm_omega","hm_psi"]
     },
     "default_by_language": {
       "en":"af_heart",
       "hi":"hf_alpha"
     },
+    "profile_voices":"Per-genre voice choices live in services/tts/profiles.json (voices.<language>).",
     "note":"Voice metadata and model licence are separate from any third-party reference voice recordings."
   },
   "piper": {

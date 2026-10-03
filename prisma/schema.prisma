@@ -54,6 +54,8 @@ enum NarrationProfile {
   GHOST
   KIDS
   MORAL_TALE
+  MYSTERY
+  THRILLER
 }
 
 enum StoryIntensity {

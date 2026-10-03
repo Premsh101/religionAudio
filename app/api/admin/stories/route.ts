@@ -50,7 +50,7 @@ export async function POST(request:NextRequest){
 
   const allowedTypes=["STORY","MYTHOLOGY","FOLKLORE","GHOST_STORY","MORAL_TALE"];
   const allowedAudiences=["KIDS","FAMILY","TEENS","ADULTS","RESEARCH"];
-  const allowedProfiles=["DEFAULT","SCRIPTURE","MYTHOLOGY","FOLKLORE","GHOST","KIDS","MORAL_TALE"];
+  const allowedProfiles=["DEFAULT","SCRIPTURE","MYTHOLOGY","FOLKLORE","GHOST","KIDS","MORAL_TALE","MYSTERY","THRILLER"];
   const allowedIntensity=["GENTLE","ADVENTUROUS","SPOOKY","DARK"];
   const type=allowedTypes.includes(body?.type)?body.type:"STORY";
   const audience=allowedAudiences.includes(body?.audience)?body.audience:"FAMILY";

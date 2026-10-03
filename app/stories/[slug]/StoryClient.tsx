@@ -14,7 +14,9 @@ const labels:Record<string,string>={
   folklore:"Oral-storytelling / suspense",
   kids:"Warm / playful",
   "moral-tale":"Bright / lesson-focused",
-  scripture:"Calm / deliberate"
+  scripture:"Calm / deliberate",
+  mystery:"Composed / clue-by-clue",
+  thriller:"Taut / urgent"
 };
 
 export default function StoryClient({story}:{story:Story}){

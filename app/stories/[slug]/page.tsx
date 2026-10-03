@@ -35,7 +35,7 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
       age_min:dbStory.ageMin||0,
       age_max:dbStory.ageMax||0,
       tag:typeTag[dbStory.type]||"Story",
-      narration_profile:dbStory.narrationProfile.toLowerCase(),
+      narration_profile:dbStory.narrationProfile.toLowerCase().replace(/_/g,"-"),
       style_notes:dbStory.summary||"",
       body:dbStory.body,
       status:dbStory.status,
