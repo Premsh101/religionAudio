@@ -2,6 +2,7 @@ import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
 import { buildSegmentRequests } from "../lib/audio-pipeline";
+import { normalizeProfile } from "../lib/narration";
 import { resolveAudioSource } from "../lib/audio-source";
 import { storeAudio, storeJson } from "../lib/audio-storage";
 
@@ -31,7 +32,9 @@ async function processJob(job:any){
  await prisma.audioAsset.update({where:{id:asset.id},data:{status:"PROCESSING"}});
 
  const source=await resolveAudioSource(prisma,asset);
- const profile=asset.narrationProfile||source.profile;
+ // An asset saved as DEFAULT follows the source's own profile (e.g. a ghost story keeps the ghost voice).
+ const assetProfile=normalizeProfile(asset.narrationProfile);
+ const profile=assetProfile!=="default"?assetProfile:source.profile;
  const requests=buildSegmentRequests(source.text,profile,asset.language||source.language);
  const sequence=job.segmentSequence||1;
  const segment=requests.find(s=>s.sequence===sequence);

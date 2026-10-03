@@ -16,7 +16,7 @@ type Source={id:string;name:string;license:string|null;rightsStatus:string};
 const statuses=["DRAFT","REVIEW","PUBLISHED","ARCHIVED"];
 const types=["STORY","MYTHOLOGY","FOLKLORE","GHOST_STORY","MORAL_TALE"];
 const audiences=["KIDS","FAMILY","TEENS","ADULTS","RESEARCH"];
-const profiles=["DEFAULT","SCRIPTURE","MYTHOLOGY","FOLKLORE","GHOST","KIDS","MORAL_TALE"];
+const profiles=["DEFAULT","SCRIPTURE","MYTHOLOGY","FOLKLORE","GHOST","KIDS","MORAL_TALE","MYSTERY","THRILLER"];
 
 export default function AdminPage(){
   const [user,setUser]=useState<AdminUser|null>(null);

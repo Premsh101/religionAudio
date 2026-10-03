@@ -12,6 +12,8 @@ const profiles=[
   {id:"ghost",name:"Ghost story",description:"Slow, tense, atmospheric",engine:"Chatterbox → Kokoro"},
   {id:"kids",name:"Kids",description:"Warm, clear, playful",engine:"Kokoro"},
   {id:"moral-tale",name:"Moral tale",description:"Bright, easy-to-follow",engine:"Kokoro"},
+  {id:"mystery",name:"Mystery / crime",description:"Composed, clue-by-clue",engine:"Kokoro"},
+  {id:"thriller",name:"Thriller",description:"Taut, urgent, momentum",engine:"Kokoro"},
 ];
 
 export default function TTSStudio(){
@@ -36,7 +38,7 @@ export default function TTSStudio(){
      setPlaying(true);
    }catch{
      const voice=new SpeechSynthesisUtterance(text);
-     voice.rate=profile==="ghost"?0.82:profile==="scripture"?0.88:1;
+     voice.rate=profile==="ghost"?0.82:profile==="scripture"?0.88:profile==="kids"?0.95:profile==="thriller"?1.05:1;
      window.speechSynthesis.cancel();
      window.speechSynthesis.speak(voice);
      voice.onend=()=>setPlaying(false);

@@ -40,41 +40,62 @@ class TTSRequest(BaseModel):
     instructions: str | None = None
 
 
-def narration_segments(text: str, limit: int = 1800) -> list[str]:
+def narration_segments(text: str, limit: int = 1800) -> list[tuple[str, bool]]:
+    """Split into sentence-sized parts. The flag marks the last part of a paragraph (a scene break)."""
     paragraphs = [part.strip() for part in re.split(r"\n\s*\n", text) if part.strip()]
-    segments: list[str] = []
+    segments: list[tuple[str, bool]] = []
     for paragraph in paragraphs:
-        sentences = [part.strip() for part in re.split(r"(?<=[.!?।؟])\s+", paragraph) if part.strip()]
+        parts: list[str] = []
+        sentences = [part.strip() for part in re.split(r"(?<=[.!?।؟…])\s+|(?<=[.!?।؟…][\"'”’)])\s+", paragraph) if part.strip()]
         for sentence in sentences:
             if len(sentence) <= limit:
-                segments.append(sentence)
+                parts.append(sentence)
                 continue
             words = sentence.split()
             current, size = [], 0
             for word in words:
                 if current and size + len(word) + 1 > limit:
-                    segments.append(" ".join(current))
+                    parts.append(" ".join(current))
                     current, size = [], 0
                 current.append(word)
                 size += len(word) + 1
             if current:
-                segments.append(" ".join(current))
+                parts.append(" ".join(current))
+        segments.extend((part, index == len(parts) - 1) for index, part in enumerate(parts))
     return segments
 
 
-def pause_after(text: str, profile: dict) -> int:
+def pause_after(text: str, profile: dict, paragraph_end: bool = False) -> int:
     base = int(profile["pause_ms"])
-    if text.rstrip().endswith(("!", "?", "।", "؟")):
+    if paragraph_end:
+        return int(profile.get("paragraph_pause_ms", base * 2))
+    end = text.rstrip().rstrip("\"'”’)")
+    if end.endswith(("…", "...", "—", "--")):
+        # Trailing off / cut-off lines carry the suspense in ghost, mystery and thriller profiles.
+        return int(base * float(profile.get("suspense_factor", 1.3)))
+    if end.endswith(("!", "?", "।", "؟")):
         return int(base * 1.35)
-    if text.rstrip().endswith((".", "…")):
+    if end.endswith("."):
         return base
-    if text.rstrip().endswith(","):
+    if end.endswith((",", ";", ":")):
         return int(base * 0.45)
     return int(base * 0.75)
 
 
+def profile_key(name: str) -> str:
+    return (name or "default").strip().lower().replace("_", "-")
+
+
+def resolve_voice(req: "TTSRequest", profile: dict) -> str | None:
+    if req.voice:
+        return req.voice
+    language = req.language.lower()
+    voices = profile.get("voices") or {}
+    return voices.get(language) or voices.get(language.split("-")[0])
+
+
 def resolve_profile(req: TTSRequest) -> dict:
-    profile = dict(PROFILES.get(req.profile, PROFILES["default"]))
+    profile = dict(PROFILES.get(profile_key(req.profile), PROFILES["default"]))
     if req.engine:
         profile["engine"] = req.engine
     if req.speed is not None:
@@ -173,11 +194,12 @@ def health():
     return {"ok": True, "engines": ["kokoro","piper","chatterbox"], "profiles": list(PROFILES)}
 
 
-def cache_key(req: TTSRequest, profile: dict, resolved_engine: str) -> str:
+def cache_key(req: TTSRequest, profile: dict, resolved_engine: str, voice: str | None) -> str:
     raw = "\n".join([
-        req.text, req.language, req.profile, req.voice or "", req.reference_audio or "",
+        req.text, req.language, profile_key(req.profile), voice or "", req.reference_audio or "",
         resolved_engine, str(profile.get("speed")), str(profile.get("exaggeration")),
-        str(profile.get("cfg_weight")), str(profile.get("pause_ms"))
+        str(profile.get("cfg_weight")), str(profile.get("pause_ms")),
+        str(profile.get("paragraph_pause_ms")), str(profile.get("suspense_factor"))
     ])
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
@@ -186,7 +208,8 @@ def cache_key(req: TTSRequest, profile: dict, resolved_engine: str) -> str:
 def synthesize(req: TTSRequest):
     profile = resolve_profile(req)
     preferred_engine = profile["engine"]
-    key = cache_key(req, profile, preferred_engine)
+    voice = resolve_voice(req, profile)
+    key = cache_key(req, profile, preferred_engine, voice)
     destination = AUDIO_DIR / f"{key}.wav"
     if destination.exists():
         return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":preferred_engine,"parts":1,"pause_profile_ms":profile["pause_ms"],"cached":True}
@@ -196,7 +219,7 @@ def synthesize(req: TTSRequest):
     used_engines: set[str] = set()
     try:
         segments = narration_segments(req.text)
-        for index, part in enumerate(segments):
+        for index, (part, paragraph_end) in enumerate(segments):
             output = work / f"{index:04d}.wav"
             engine = preferred_engine
 
@@ -206,14 +229,14 @@ def synthesize(req: TTSRequest):
                     used_engines.add("chatterbox")
                 except Exception:
                     try:
-                        kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                        kokoro_generate(part, req.language, voice, profile["speed"], output)
                         used_engines.add("kokoro")
                     except Exception:
                         piper_generate(part, req.language, req.voice, profile["speed"], output)
                         used_engines.add("piper")
             elif engine in ("auto","kokoro"):
                 try:
-                    kokoro_generate(part, req.language, req.voice, profile["speed"], output)
+                    kokoro_generate(part, req.language, voice, profile["speed"], output)
                     used_engines.add("kokoro")
                 except Exception:
                     piper_generate(part, req.language, req.voice, profile["speed"], output)
@@ -222,11 +245,11 @@ def synthesize(req: TTSRequest):
                 piper_generate(part, req.language, req.voice, profile["speed"], output)
                 used_engines.add("piper")
 
-            generated.append((output, pause_after(part, profile)))
+            generated.append((output, pause_after(part, profile, paragraph_end)))
 
         add_silence(generated, destination)
         actual_engine = "+".join(sorted(used_engines)) or preferred_engine
-        return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":actual_engine,"parts":len(generated),"pause_profile_ms":profile["pause_ms"],"cached":False}
+        return {"audio_url":f"/audio/{destination.name}","profile":req.profile,"engine":actual_engine,"parts":len(generated),"pause_profile_ms":profile["pause_ms"],"voice":voice,"cached":False}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
     finally:

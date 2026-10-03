@@ -4,6 +4,7 @@ import { PrismaClient } from "../../../../generated/prisma/client";
 import { buildSegmentRequests } from "../../../../lib/audio-pipeline";
 import { getCurrentSessionUser } from "../../../../lib/server/session";
 import { resolveAudioSource } from "../../../../lib/audio-source";
+import { normalizeProfile } from "../../../../lib/narration";
 
 export const dynamic="force-dynamic";
 const url=process.env.DATABASE_URL;
@@ -17,7 +18,7 @@ export async function POST(request:NextRequest){
  const prisma=new PrismaClient({adapter:new PrismaPg({connectionString:url})});
  try{
   const body=await request.json();
-  const {workId,storyId,contentId,language="en",narrationProfile="DEFAULT",title}=body;
+  const {workId,storyId,contentId,language="en",narrationProfile,title}=body;
   if(!workId&&!storyId&&!contentId)return NextResponse.json({error:"workId, storyId or contentId is required"},{status:400});
   const targetWhere=workId?{workId}:storyId?{storyId}:{contentId};
   const existing=await prisma.audioAsset.findFirst({
@@ -35,7 +36,8 @@ export async function POST(request:NextRequest){
   }
 
   const source=await resolveAudioSource(prisma,{workId,storyId,contentId,language});
-  const profile=typeof narrationProfile==="string"?narrationProfile:source.profile;
+  const requested=normalizeProfile(typeof narrationProfile==="string"?narrationProfile:"");
+  const profile=requested!=="default"?requested:source.profile;
   const segments=buildSegmentRequests(source.text,profile,language);
   if(!segments.length)return NextResponse.json({error:"No source text available."},{status:400});
   const asset=await prisma.audioAsset.create({data:{
