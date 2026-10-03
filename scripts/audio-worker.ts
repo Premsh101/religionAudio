@@ -8,7 +8,7 @@ import { storeAudio } from "../lib/audio-storage";
 const dbUrl=process.env.DATABASE_URL;
 if(!dbUrl) throw new Error("DATABASE_URL is required");
 const prisma=new PrismaClient({adapter:new PrismaPg({connectionString:dbUrl})});
-const TTS=process.env.TTS_SERVICE_URL||"http://tts-service:8010";
+const TTS=process.env.TTS_SERVICE_URL||"http://tts:8010";
 const sleep=(ms:number)=>new Promise(r=>setTimeout(r,ms));
 
 async function claimJob(){
