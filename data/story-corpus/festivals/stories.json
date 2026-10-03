@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "category": "FESTIVALS",
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "editorialRule": "Every record contains actual usable text in all four languages. Festival stories distinguish scriptural narratives, historical events, traditional legends, rabbinic/devotional layers, and modern living observance. They do not present supernatural or theological claims as scientific facts.",
+  "records": [
+    {
+      "id": "festival-diwali-rama-return",
+      "title": "The Lamps of Ayodhya: Rama Returns",
+      "tradition": "Ramayana / North Indian Diwali tradition",
+      "origin": "India",
+      "tags": [
+        "DIWALI",
+        "HINDUISM",
+        "RAMAYANA",
+        "HOMECOMING",
+        "LIGHT"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "TRADITIONAL_FESTIVAL_ASSOCIATION",
+      "evidenceNote": "Many North Indian Diwali traditions associate the festival with Rama, Sita and Lakshmana returning to Ayodhya after exile. Diwali also has other regional and religious associations.",
+      "sourceBasis": [
+        "https://indianexpress.com/article/express-sunday-eye/devdutt-pattanaik-on-how-rama-return-to-ayodhya-is-one-of-the-many-stories-around-diwali-10313936/"
+      ],
+      "en": "After many years away from home, Rama, Sita, and Lakshmana finally began their return to Ayodhya. The people of the city had waited through the long years of exile, carrying memories of the family they hoped to see again.\n\nWhen word spread that Rama was coming home, the city prepared to welcome him. Lamps were lit, homes were cleaned, and the streets became places of joyful expectation. The darkness of night made every small flame visible, so a single lamp joined another until the city seemed to glow.\n\nThe story became one of the beloved narratives associated with Diwali in many parts of North India. The lamps can be understood not only as festival decorations but also as symbols of welcome, hope, and the return of a loved one. Different regions connect Diwali with different stories, so this is one important tradition rather than the only meaning of the festival.",
+      "hi": "लंबे वनवास के बाद राम, सीता और लक्ष्मण अयोध्या लौटने के लिए चले। नगर के लोगों ने कई वर्षों तक उनके लौटने की प्रतीक्षा की थी और अपने प्रियजनों की स्मृतियों को सँजोए रखा था।\n\nजब यह समाचार पहुँचा कि राम घर लौट रहे हैं, तो नगर ने स्वागत की तैयारी शुरू कर दी। घरों की सफाई हुई, दीप जलाए गए और गलियाँ खुशी की प्रतीक्षा से भर गईं। रात के अँधेरे में एक दीपक दूसरे दीपक से जुड़ता गया और पूरा नगर प्रकाश से भरता हुआ लगा।\n\nयह कथा उत्तर भारत के कई क्षेत्रों में दीपावली से जुड़ी प्रिय परंपराओं में से एक बन गई। दीप केवल सजावट नहीं, बल्कि स्वागत, आशा और प्रिय व्यक्ति की घर-वापसी के प्रतीक भी माने जा सकते हैं। अलग-अलग क्षेत्रों में दीपावली की अन्य कथाएँ भी हैं, इसलिए इसे पर्व के एक महत्वपूर्ण पारंपरिक अर्थ के रूप में समझना चाहिए, अकेला अर्थ नहीं।",
+      "ar": "بعد سنوات طويلة من الابتعاد عن الوطن بدأ راما وسيتا ولاكشمانا طريق العودة إلى أيودهيا. كان أهل المدينة قد انتظروا سنوات المنفى وهم يحملون ذكرى الأسرة التي تمنوا أن يروها من جديد.\n\nوعندما انتشر خبر عودة راما، استعدت المدينة لاستقباله. أضيئت المصابيح ونُظفت البيوت وتحولت الشوارع إلى أماكن للفرح والانتظار. وفي ظلام الليل ظهر كل ضوء صغير بوضوح، ثم انضم مصباح إلى آخر حتى بدت المدينة وكأنها تتوهج.\n\nوأصبحت القصة من الروايات المحبوبة المرتبطة بديوالي في مناطق كثيرة من شمال الهند. ويمكن فهم المصابيح ليس بوصفها زينة فقط، بل رموزًا للترحيب والأمل وعودة الحبيب. ولأن لديوالي ارتباطات دينية وإقليمية متعددة، فهذه القصة تمثل تقليدًا مهمًا واحدًا من بين تقاليد أخرى.",
+      "ur": "کئی برس کی دوری کے بعد رام، سیتا اور لکشمن ایودھیا واپس جانے لگے۔ شہر کے لوگوں نے طویل بن باس کے دوران ان کی واپسی کا انتظار کیا تھا اور اپنے پیاروں کی یادیں دل میں سنبھال کر رکھی تھیں۔\n\nجب خبر پھیلی کہ رام گھر واپس آرہے ہیں تو شہر نے استقبال کی تیاری شروع کردی۔ گھروں کی صفائی ہوئی، چراغ جلائے گئے اور گلیاں خوشی بھری انتظار کی کیفیت سے بھر گئیں۔ رات کے اندھیرے میں ہر چھوٹی روشنی نمایاں ہوئی، پھر ایک چراغ دوسرے سے جڑتا گیا اور پورا شہر روشن دکھائی دینے لگا۔\n\nیہ کہانی شمالی ہندوستان کے کئی علاقوں میں دیوالی سے وابستہ معروف روایات میں شامل ہوگئی۔ چراغ صرف سجاوٹ نہیں بلکہ خیرمقدم، امید اور کسی عزیز کی گھر واپسی کی علامت بھی سمجھے جاسکتے ہیں۔ مختلف علاقوں میں دیوالی کی دوسری مذہبی روایات بھی ہیں، اس لیے اسے تہوار کے ایک اہم روایتی مفہوم کے طور پر سمجھنا چاہیے، واحد مفہوم کے طور پر نہیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of one widely observed Diwali tradition associated with Rama's return to Ayodhya."
+    },
+    {
+      "id": "festival-holi-prahlada-holika",
+      "title": "Prahlada, Holika, and the Fire of Holi",
+      "tradition": "Hindu Purana and Holi tradition",
+      "origin": "India",
+      "tags": [
+        "HOLI",
+        "HINDUISM",
+        "PRAHLADA",
+        "HOLIKA_DAHAN"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "HINDU_TRADITIONAL_LEGEND",
+      "evidenceNote": "The Prahlada-Hiranyakashipu-Holika story is a major traditional explanation for Holika Dahan. Holi has multiple regional stories and meanings.",
+      "sourceBasis": [
+        "https://www.indiatoday.in/amp/information/story/holi-2026-the-story-of-prahlad-and-holika-and-the-meaning-behind-the-festival-of-colors-2876504-2026-03-02",
+        "https://www.drikpanchang.com/festivals/holi/festivals-holi-legends.html"
+      ],
+      "en": "Prahlada was the young son of Hiranyakashipu, a powerful king who wanted everyone to honor him. Prahlada, however, remained devoted to Vishnu and refused to let his father's demands change his faith. The king tried repeatedly to frighten or harm the boy, but Prahlada continued to pray.\n\nAt last Hiranyakashipu asked his sister Holika to carry Prahlada into a fire. Holika was believed to have protection from flames, so the plan was meant to destroy the child while she survived. The traditional story says the plan failed: Prahlada came through the fire unharmed, while Holika was consumed by it.\n\nThe event is remembered in Holika Dahan, the fire observed before the main days of Holi in many communities. The story is told as a lesson about steadfast devotion and the danger of arrogant power. Regional Holi traditions also include other stories, so the festival's meaning is broader than this one legend.",
+      "hi": "प्रह्लाद हिरण्यकशिपु नामक शक्तिशाली राजा का पुत्र था। राजा चाहता था कि सभी लोग उसकी पूजा करें, लेकिन प्रह्लाद विष्णु के प्रति अपनी भक्ति पर अडिग रहा। राजा ने कई बार उसे डराने और नुकसान पहुँचाने का प्रयास किया, फिर भी प्रह्लाद अपनी प्रार्थना में स्थिर रहा।\n\nअंत में हिरण्यकशिपु ने अपनी बहन होलिका से प्रह्लाद को अग्नि में ले जाने को कहा। माना जाता था कि होलिका अग्नि से सुरक्षित रह सकती है, इसलिए योजना थी कि बालक जल जाए और होलिका बच जाए। परंपरागत कथा में योजना उलट जाती है: प्रह्लाद अग्नि से सुरक्षित निकल आता है और होलिका जल जाती है।\n\nकई समुदायों में मुख्य होली से पहले मनाई जाने वाली होलिका दहन की अग्नि इसी कथा से जुड़ी मानी जाती है। कहानी अडिग भक्ति और अहंकारी शक्ति के खतरे का संदेश देती है। होली की क्षेत्रीय परंपराओं में अन्य कथाएँ भी हैं, इसलिए पर्व का अर्थ केवल इसी एक कथा तक सीमित नहीं है।",
+      "ar": "كان برهلادا ابن هيرانياكاشيبو، الملك القوي الذي أراد أن يكرمه الجميع. لكن برهلادا ظل مخلصًا لفيشنو ورفض أن يغير مطالب أبيه معتقده. وحاول الملك مرارًا تخويف الصبي أو إيذاءه، لكن برهلادا استمر في دعائه.\n\nوأخيرًا طلب هيرانياكاشيبو من أخته هوليكا أن تحمل برهلادا إلى النار. وكان يُعتقد أن لديها حماية من النار، فكان الهدف أن يهلك الطفل وتنجو هي. لكن القصة التقليدية تروي أن الخطة فشلت: خرج برهلادا من النار دون أذى، بينما احترقت هوليكا.\n\nويرتبط هذا الحدث باحتفال هوليكا دهان، وهو إشعال النار الذي يسبق أيام هولي الرئيسية في مجتمعات كثيرة. وتقدم القصة درسًا في الثبات على الإيمان وخطر القوة المتغطرسة. كما أن لتقاليد هولي الإقليمية قصصًا أخرى، ولذلك فمعنى المهرجان أوسع من هذه الأسطورة وحدها.",
+      "ur": "پراِہلاد ہِرنیاکشِپُو نامی طاقتور بادشاہ کا بیٹا تھا۔ بادشاہ چاہتا تھا کہ سب لوگ اس کی عبادت کریں، لیکن پرہلاد وشنو کی بھکتی پر قائم رہا۔ بادشاہ نے اسے بار بار ڈرانے یا نقصان پہنچانے کی کوشش کی، مگر پرہلاد دعا اور اپنے یقین پر قائم رہا۔\n\nآخرکار ہِرنیاکشِپُو نے اپنی بہن ہولیکا سے کہا کہ وہ پرہلاد کو آگ میں لے جائے۔ روایت میں ہولیکا کو آگ سے محفوظ رہنے والی سمجھا جاتا تھا، اس لیے منصوبہ یہ تھا کہ بچہ جل جائے اور ہولیکا بچ جائے۔ روایتی کہانی میں منصوبہ الٹ گیا: پرہلاد آگ سے محفوظ نکل آیا جبکہ ہولیکا جل گئی۔\n\nبہت سے علاقوں میں ہولی کے مرکزی دنوں سے پہلے جلائی جانے والی ہولیکا دہن کی آگ اسی روایت سے جوڑی جاتی ہے۔ یہ کہانی ثابت قدم بھکتی اور متکبر طاقت کے خطرے کا سبق دیتی ہے۔ ہولی کی علاقائی روایات میں دوسری کہانیاں بھی ہیں، اس لیے تہوار کا مفہوم صرف اسی ایک داستان تک محدود نہیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the Prahlada-Holika tradition. Supernatural events are presented as religious/traditional narrative, not scientific fact."
+    },
+    {
+      "id": "festival-janmashtami-krishna-birth",
+      "title": "Krishna's Birth in the Night",
+      "tradition": "Bhagavata / Krishna devotional tradition",
+      "origin": "India",
+      "tags": [
+        "JANMASHTAMI",
+        "HINDUISM",
+        "KRISHNA",
+        "BIRTH_STORY"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "SCRIPTURAL_TRADITION",
+      "evidenceNote": "The birth narrative of Krishna is preserved in major Hindu texts and devotional traditions. The festival's observance varies regionally.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Janmashtami"
+      ],
+      "en": "Krishna's birth story begins in Mathura, where the ruler Kamsa had imprisoned his sister Devaki and her husband Vasudeva because a prophecy warned him about a child in their family. As the story unfolds, the newborn Krishna arrives under dangerous circumstances.\n\nThe traditional narrative says that divine protection made it possible for Vasudeva to carry the infant across the Yamuna to the village of Gokul. There Krishna was placed under the care of Yashoda and Nanda while danger remained behind in Mathura.\n\nJanmashtami remembers Krishna's birth and the beginning of the life that would become central to later Hindu devotional traditions. Many communities observe the festival with fasting, prayer, music, dramatic retellings, and celebrations at night. The story focuses on hope arriving in a moment of danger and on the care given to a vulnerable child.",
+      "hi": "कृष्ण की जन्मकथा मथुरा से शुरू होती है, जहाँ राजा कंस ने अपनी बहन देवकी और उनके पति वसुदेव को बंदी बना रखा था। उसे एक भविष्यवाणी से भय था कि उनके परिवार में जन्म लेने वाला एक बच्चा उसके लिए खतरा बनेगा। इसी परिस्थिति में कृष्ण का जन्म हुआ।\n\nपरंपरागत कथा के अनुसार दैवी संरक्षण के कारण वसुदेव नवजात कृष्ण को यमुना पार करके गोकुल ले जा सके। वहाँ कृष्ण को यशोदा और नंद की देखरेख में रखा गया, जबकि मथुरा में कंस का भय बना रहा।\n\nजन्माष्टमी कृष्ण के जन्म और उस जीवन की शुरुआत को स्मरण करती है जो आगे चलकर हिंदू भक्ति परंपराओं का केंद्रीय भाग बना। कई समुदाय उपवास, पूजा, संगीत, रात्रि-उत्सव और नाट्य-कथाओं के माध्यम से इसे मनाते हैं। कहानी खतरे के बीच आशा के जन्म और एक असहाय बालक की रक्षा पर केंद्रित है।",
+      "ar": "تبدأ قصة ميلاد كريشنا في ماثورا، حيث كان الحاكم كانسا قد سجن أخته ديفاكي وزوجها فاسوديفا، لأنه كان يخشى نبوءة تتحدث عن طفل من أسرته. وفي هذه الظروف وُلد كريشنا.\n\nوتقول الرواية التقليدية إن الحماية الإلهية جعلت من الممكن لفاسوديفا أن يحمل الطفل عبر نهر يامونا إلى قرية غوكل. وهناك وُضع كريشنا تحت رعاية ياشودا وناندا، بينما بقي الخطر في ماثورا.\n\nيتذكر جانماشتامي ولادة كريشنا وبداية الحياة التي أصبحت لاحقًا جزءًا أساسيًا من التقاليد التعبدية الهندوسية. وتحتفل مجتمعات كثيرة بالصوم والصلاة والموسيقى والاحتفال الليلي وإعادة سرد القصة. وتركز الحكاية على ولادة الأمل في لحظة خطر وعلى حماية طفل ضعيف.",
+      "ur": "کرشن کی پیدائش کی کہانی متھرا سے شروع ہوتی ہے جہاں حاکم کَنس نے اپنی بہن دیوکی اور اس کے شوہر واسو دیو کو قید کررکھا تھا، کیونکہ اسے پیش گوئی سے خوف تھا کہ ان کے خاندان میں پیدا ہونے والا بچہ اس کے لیے خطرہ بنے گا۔ انہی حالات میں کرشن پیدا ہوئے۔\n\nروایتی داستان کے مطابق خدائی حفاظت کی وجہ سے واسو دیو نومولود کرشن کو جمنا پار کرکے گوکل لے گئے۔ وہاں کرشن کو یشودا اور نند کی نگرانی میں رکھا گیا جبکہ متھرا میں خطرہ باقی رہا۔\n\nجنم اشٹمی کرشن کی پیدائش اور اس زندگی کے آغاز کی یاد دلاتی ہے جو بعد میں ہندو بھگتی روایت کا مرکزی حصہ بنی۔ بہت سی برادریاں روزہ، عبادت، موسیقی، رات کی تقریبات اور ڈرامائی انداز میں کہانی سنانے کے ذریعے یہ تہوار مناتی ہیں۔ اس قصے کا مرکز خطرے کے درمیان امید کی پیدائش اور ایک کمزور بچے کی حفاظت ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of a Krishna birth tradition; divine protection is presented as religious tradition."
+    },
+    {
+      "id": "festival-ganesh-chaturthi-birth",
+      "title": "Ganesha: The Child at the Door",
+      "tradition": "Shaiva / Ganesha Puranic tradition and Ganesh Chaturthi",
+      "origin": "India",
+      "tags": [
+        "GANESH_CHATURTHI",
+        "HINDUISM",
+        "GANESHA",
+        "NEW_BEGINNINGS"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "PURAṇIC_TRADITION_AND_MODERN_FESTIVAL_HISTORY",
+      "evidenceNote": "The elephant-headed Ganesha birth narrative comes in different Hindu textual traditions. Modern public Ganesh Chaturthi celebrations in Maharashtra were strongly developed by Bal Gangadhar Tilak in the late nineteenth century.",
+      "sourceBasis": [
+        "https://www.incredibleindia.gov.in/en/festivals-and-events/maharashtra/ganesh-chaturthi",
+        "https://en.wikipedia.org/wiki/Ganesh_Chaturthi"
+      ],
+      "en": "Parvati wanted someone she could trust to guard the entrance while she bathed. In one well-known Hindu story, she shaped a child from the material of her own body and asked him not to let anyone enter without her permission. The child took his duty seriously.\n\nWhen Shiva returned, the young guardian did not recognize him as someone who should pass. A conflict followed, and the child lost his life. Parvati's grief and anger transformed the situation. Shiva then restored the child with the head of an elephant, and Ganesha became a beloved figure associated with wisdom, beginnings, and the removal of obstacles.\n\nGanesh Chaturthi celebrates Ganesha and is observed in different forms across India. In Maharashtra, the festival developed into a major public celebration in the late nineteenth century, especially through Bal Gangadhar Tilak's organization of public festivities. The religious story and the later public history are distinct layers of the festival.",
+      "hi": "पार्वती चाहती थीं कि स्नान करते समय घर के द्वार की रक्षा के लिए कोई विश्वसनीय व्यक्ति हो। एक प्रसिद्ध हिंदू कथा में उन्होंने अपने शरीर के पदार्थ से एक बालक बनाया और उसे कहा कि उनकी अनुमति के बिना किसी को भीतर न आने दे। उस बालक ने अपना दायित्व गंभीरता से निभाया।\n\nजब शिव लौटे तो बालक उन्हें ऐसा व्यक्ति नहीं मानता था जिसे भीतर जाने दिया जाना चाहिए। संघर्ष हुआ और बालक की मृत्यु हो गई। पार्वती के शोक और क्रोध ने परिस्थिति बदल दी। शिव ने बाद में हाथी का सिर लगाकर बालक को जीवन दिया और गणेश बुद्धि, शुभारंभ तथा विघ्नों को दूर करने से जुड़े प्रिय देवता बने।\n\nगणेश चतुर्थी भारत में विभिन्न रूपों में मनाई जाती है। महाराष्ट्र में उन्नीसवीं शताब्दी के अंत में, विशेषकर बाल गंगाधर तिलक के प्रयासों से, यह बड़े सार्वजनिक उत्सव के रूप में विकसित हुई। इसलिए पर्व की धार्मिक कथा और उसके आधुनिक सार्वजनिक इतिहास को अलग-अलग परतों के रूप में समझना चाहिए।",
+      "ar": "أرادت بارفاتي أن يكون هناك من يحرس المدخل أثناء استحمامها. وفي إحدى القصص الهندوسية المعروفة شكّلت طفلًا من مادة جسدها وطلبت منه ألا يسمح لأحد بالدخول دون إذنها. فأخذ الطفل مهمته بجدية.\n\nوعندما عاد شيفا لم يتعرف إليه الحارس الصغير ولم يسمح له بالمرور. وقع صراع ومات الطفل. ثم غيّر حزن بارفاتي وغضبها الموقف. فأعاد شيفا الحياة إلى الطفل برأس فيل، وأصبح غانيشا شخصية محبوبة ترتبط بالحكمة والبدايات وإزالة العوائق.\n\nويُحتفل بغانش تشاتورثي بأشكال مختلفة في أنحاء الهند. وفي ماهاراشترا تطور المهرجان إلى احتفال عام كبير في أواخر القرن التاسع عشر، ولا سيما من خلال جهود بال غانغادهار تيلاك. ولذلك ينبغي التمييز بين القصة الدينية والتاريخ الحديث للاحتفال العام.",
+      "ur": "پاروتی چاہتی تھیں کہ غسل کے وقت دروازے کی حفاظت کے لیے کوئی قابلِ اعتماد شخص موجود ہو۔ ایک معروف ہندو روایت میں انہوں نے اپنے جسم کے مادّے سے ایک بچہ بنایا اور اسے حکم دیا کہ ان کی اجازت کے بغیر کسی کو اندر نہ آنے دے۔ بچے نے اپنی ذمہ داری پوری سنجیدگی سے نبھائی۔\n\nجب شِو واپس آئے تو بچے نے انہیں ایسا شخص نہیں سمجھا جسے اندر جانے دیا جائے۔ تصادم ہوا اور بچہ مر گیا۔ پاروتی کے غم اور غصے نے صورتحال بدل دی۔ پھر شِو نے ہاتھی کا سر لگا کر بچے کو زندہ کیا اور گنیش کو حکمت، نئے آغاز اور رکاوٹیں دور کرنے سے وابستہ محبوب دیوتا کے طور پر یاد کیا جانے لگا۔\n\nگنیش چترتھی ہندوستان کے مختلف علاقوں میں مختلف انداز سے منائی جاتی ہے۔ مہاراشٹر میں انیسویں صدی کے آخر میں، خاص طور پر بال گنگادھر تلک کی کوششوں کے ذریعے، یہ ایک بڑے عوامی تہوار میں تبدیل ہوئی۔ اس لیے تہوار کی مذہبی داستان اور جدید عوامی تاریخ کو الگ الگ سطحوں کے طور پر دیکھنا چاہیے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Religious narrative and documented modern festival history are kept as separate layers."
+    },
+    {
+      "id": "festival-onam-mahabali-return",
+      "title": "Onam: Mahabali Comes Home Again",
+      "tradition": "Kerala Onam / Mahabali-Vamana tradition",
+      "origin": "Kerala, India",
+      "tags": [
+        "ONAM",
+        "KERALA",
+        "MAHABALI",
+        "HARVEST",
+        "WELCOME"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "KERALA_TRADITIONAL_LEGEND",
+      "evidenceNote": "Kerala Tourism identifies the Mahabali-Vamana story as the most prevalent traditional story associated with Onam while noting other traditions also exist.",
+      "sourceBasis": [
+        "https://www.keralatourism.org/onam/history/mahabali-legend"
+      ],
+      "en": "Mahabali was remembered in Kerala tradition as a generous king whose people loved him. His reputation became so great that the gods feared the power of his kingdom. Vishnu came to Mahabali in the form of Vamana, a young Brahmin, and asked for as much land as could be covered in three steps.\n\nMahabali agreed. Vamana then grew into a cosmic form and covered the worlds in two steps. With no ground left for the third, Mahabali offered his own head. Vishnu accepted the sacrifice and sent him to the netherworld, while granting him permission to visit his people once each year.\n\nOnam celebrates that annual welcome in Kerala tradition. Homes are decorated, meals are shared, flowers are arranged, and communities remember a king whose return is associated with affection and abundance. The Mahabali story is the most widely told Onam narrative, but Kerala preserves other festival traditions as well.",
+      "hi": "केरल की परंपरा में महाबली को एक उदार राजा के रूप में याद किया जाता है जिसे उसकी प्रजा बहुत प्रेम करती थी। उसका यश इतना बढ़ गया कि देवताओं को उसके राज्य की शक्ति की चिंता होने लगी। विष्णु वामन नामक एक छोटे ब्राह्मण के रूप में महाबली के पास आए और तीन पगों में घिर सकने जितनी भूमि माँगी।\n\nमहाबली ने सहमति दे दी। वामन ने फिर विराट रूप धारण किया और दो पगों में लोकों को नाप लिया। तीसरे पग के लिए कोई भूमि न बची तो महाबली ने अपना सिर अर्पित किया। विष्णु ने उस समर्पण को स्वीकार किया और महाबली को पाताल भेजते हुए उसे वर्ष में एक बार अपनी प्रजा से मिलने की अनुमति दी।\n\nकेरल की परंपरा में ओणम उस वार्षिक स्वागत का पर्व है। घर सजाए जाते हैं, भोजन साझा किया जाता है, फूलों की रचनाएँ बनाई जाती हैं और उस राजा की वापसी को स्नेह और समृद्धि से जोड़ा जाता है। महाबली की कथा ओणम से जुड़ी सबसे प्रचलित कथाओं में है, लेकिन केरल में अन्य उत्सवी परंपराएँ भी मौजूद हैं।",
+      "ar": "تتذكر تقاليد كيرالا الملك ماهابالي بوصفه ملكًا كريمًا أحبه شعبه. وازدادت شهرته حتى خافت الآلهة من قوة مملكته. فجاء فيشنو إلى ماهابالي في صورة فامانا، وهو براهماني شاب، وطلب منه أرضًا بقدر ما تغطيه ثلاث خطوات.\n\nوافق ماهابالي. ثم كبر فامانا إلى صورة كونية وغطى العوالم بخطوتين. ولما لم تبقَ أرض للخطوة الثالثة قدم ماهابالي رأسه. وقبل فيشنو هذا العطاء وأرسله إلى العالم السفلي، مع السماح له بزيارة شعبه مرة كل عام.\n\nيحتفل أونام في تقاليد كيرالا بهذا الاستقبال السنوي. تُزين البيوت وتُشارك الوجبات وتُرتب الزهور ويتذكر الناس ملكًا ترتبط عودته بالمحبة والوفرة. وقصة ماهابالي هي الرواية الأكثر شيوعًا المرتبطة بأونام، لكن كيرالا تحتفظ أيضًا بتقاليد أخرى للمهرجان.",
+      "ur": "کیرالا کی روایت میں مہابلی کو ایک فیاض بادشاہ کے طور پر یاد کیا جاتا ہے جسے اس کی رعایا بہت چاہتی تھی۔ اس کی شہرت اتنی بڑھی کہ دیوتاؤں کو اس کی سلطنت کی طاقت کا خوف محسوس ہوا۔ وشنو وامن نامی ایک نوجوان برہمن کی صورت میں مہابلی کے پاس آئے اور تین قدموں میں سما جانے والی زمین مانگی۔\n\nمہابلی نے اجازت دے دی۔ وامن نے پھر ایک وسیع روپ اختیار کیا اور دو قدموں میں دنیاوں کو ڈھانپ لیا۔ تیسرے قدم کے لیے زمین باقی نہ رہی تو مہابلی نے اپنا سر پیش کردیا۔ وشنو نے اس نذرانے کو قبول کیا اور اسے پاتال بھیجتے ہوئے ہر سال ایک بار اپنی رعایا سے ملنے کی اجازت دی۔\n\nکیرالا کی روایت میں اونم اسی سالانہ آمد اور استقبال کی یاد ہے۔ گھروں کو سجایا جاتا ہے، کھانا بانٹا جاتا ہے، پھولوں کی ترتیب بنائی جاتی ہے اور ایسے بادشاہ کی واپسی کو محبت اور خوش حالی سے جوڑا جاتا ہے۔ مہابلی کی کہانی اونم سے وابستہ سب سے مشہور روایات میں ہے، لیکن کیرالا میں تہوار کی دوسری روایات بھی ہیں۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the Mahabali-Vamana tradition associated with Onam."
+    },
+    {
+      "id": "festival-vaisakhi-khalsa-1699",
+      "title": "Vaisakhi at Anandpur: The Khalsa Is Formed",
+      "tradition": "Sikh history / Khalsa tradition",
+      "origin": "Anandpur Sahib, Punjab",
+      "tags": [
+        "VAISAKHI",
+        "SIKHISM",
+        "KHALSA",
+        "1699",
+        "COMMUNITY"
+      ],
+      "ageBand": "10-17",
+      "evidenceType": "DOCUMENTED_SIKH_HISTORY_AND_TRADITION",
+      "evidenceNote": "SGPC records the formation of the Khalsa at Anandpur on the Vaisakhi gathering of 1699. Traditional narratives describe the five beloved ones and the Khalsa initiation.",
+      "sourceBasis": [
+        "https://new.sgpc.net/ten-guru-sahibs/guru-gobind-singh-sahib/",
+        "https://sgpc.net/gazette/2018/January/January-English.pdf"
+      ],
+      "en": "On Vaisakhi in 1699, large numbers of Sikhs gathered at Anandpur Sahib. Guru Gobind Singh appeared before the assembly and made a dramatic call for someone willing to offer their life for the cause of righteousness. The crowd fell silent, but Daya Ram stepped forward.\n\nFour more men followed: Dharam Das, Himmat, Mohkam Chand, and Sahib Chand. Tradition remembers them as the Panj Pyare, the Five Beloved Ones. The gathering became the setting in which Guru Gobind Singh formally established the Khalsa, giving the Sikh community a new institutional identity and discipline.\n\nVaisakhi therefore carries both seasonal and historical significance in Sikh tradition. The harvest season remained important in Punjab, while the 1699 gathering at Anandpur became a defining moment in Sikh history. The festival is remembered through worship, community gatherings, procession, service, and remembrance of the Khalsa's formation.",
+      "hi": "1699 की बैसाखी पर आनंदपुर साहिब में बड़ी संख्या में सिख एकत्र हुए। गुरु गोबिंद सिंह सभा के सामने आए और धर्म की रक्षा के लिए अपना जीवन अर्पित करने वाले व्यक्ति की माँग की। सभा में सन्नाटा छा गया, लेकिन दया राम आगे आए।\n\nइसके बाद चार और व्यक्ति आगे आए—धरम दास, हिम्मत, मोहम चंद और साहिब चंद। परंपरा उन्हें पंज प्यारे, अर्थात पाँच प्रियजन, के रूप में स्मरण करती है। इसी सभा में गुरु गोबिंद सिंह ने खालसा की स्थापना की, जिसने सिख समुदाय को नई संस्थागत पहचान और अनुशासन दिया।\n\nइसलिए बैसाखी सिख परंपरा में ऋतु और इतिहास दोनों का पर्व है। पंजाब के लिए फसल का मौसम महत्वपूर्ण रहा, जबकि 1699 का आनंदपुर का जमावड़ा सिख इतिहास की निर्णायक घटनाओं में से एक बना। आज यह पर्व उपासना, सामुदायिक मिलन, नगर कीर्तन, सेवा और खालसा की स्थापना की स्मृति के साथ मनाया जाता है।",
+      "ar": "في بايساخي سنة 1699 اجتمع عدد كبير من السيخ في أناندبور صاحب. وظهر غورو غوبيند سينغ أمام الجماعة ووجه نداءً دراميًا إلى من يكون مستعدًا لتقديم حياته من أجل قضية الحق. ساد الصمت، لكن دايا رام تقدم.\n\nثم تقدم أربعة آخرون: دهارام داس وهِمّت ومحكم تشاند وصاحب تشاند. وتذكرهم التقاليد باسم البانج بياري، أي الأحباء الخمسة. وأصبحت الجماعة في أناندبور المكان الذي أعلن فيه غورو غوبيند سينغ تأسيس الخالصة ومنح المجتمع السيخي هوية مؤسسية وانضباطًا جديدين.\n\nولهذا تحمل بايساخي أهمية موسمية وتاريخية في التقليد السيخي. وظل موسم الحصاد مهمًا في البنجاب، بينما أصبحت جماعة أناندبور سنة 1699 لحظة محورية في تاريخ السيخ. ويُحتفل بالمناسبة بالصلاة والاجتماعات الجماعية والمواكب والخدمة وتذكر تأسيس الخالصة.",
+      "ur": "1699 کی بیساکھی پر آنندپور صاحب میں بڑی تعداد میں سکھ جمع ہوئے۔ گرو گووند سنگھ نے مجمع کے سامنے آکر ایک شخص سے مطالبہ کیا جو دھرم کی خاطر اپنی جان پیش کرنے کو تیار ہو۔ سب خاموش ہوگئے، مگر دیا رام آگے بڑھے۔\n\nاس کے بعد چار اور افراد سامنے آئے: دھرم داس، ہمت، موہکم چند اور صاحب چند۔ روایت انہیں پنج پیارے یعنی پانچ محبوب افراد کے نام سے یاد کرتی ہے۔ اسی اجتماع میں گرو گووند سنگھ نے خالصہ قائم کیا، جس سے سکھ برادری کو نئی ادارہ جاتی شناخت اور نظم و ضبط ملا۔\n\nاس طرح بیساکھی سکھ روایت میں موسمی اور تاریخی دونوں اہمیت رکھتی ہے۔ پنجاب میں فصل کا موسم اہم رہا، جبکہ 1699 کا آنندپور اجتماع سکھ تاریخ کے اہم موڑوں میں شامل ہوا۔ آج یہ تہوار عبادت، اجتماعی اجتماع، جلوس، سیوا اور خالصہ کی تشکیل کی یاد کے ساتھ منایا جاتا ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the 1699 Khalsa formation at Anandpur, based on SGPC historical material."
+    },
+    {
+      "id": "festival-vesak-buddha-life",
+      "title": "Vesak: Remembering the Buddha's Life",
+      "tradition": "Buddhist Vesak / Buddha Purnima",
+      "origin": "South and Southeast Asia",
+      "tags": [
+        "VESAK",
+        "BUDDHISM",
+        "BUDDHA",
+        "COMPASSION"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "BUDDHIST_FESTIVAL_TRADITION",
+      "evidenceNote": "In many traditions Vesak/Buddha Purnima commemorates major events in the Buddha's life, often including birth, awakening, and final passing. Observance varies by country and school.",
+      "sourceBasis": [
+        "https://www.incredibleindia.gov.in/en/festivals-and-events/bihar/buddha-purnima"
+      ],
+      "en": "As the full moon rises, Buddhist communities gather to remember the life and teaching of the Buddha. In many South Asian traditions, Buddha Purnima remembers three great moments: his birth, his awakening, and his final passing away. Other Buddhist communities emphasize different parts of this memory.\n\nThe story of Siddhartha begins with a life of privilege, followed by a growing awareness of aging, sickness, and death. He leaves his former life, searches for a way beyond suffering, and eventually attains awakening beneath the Bodhi tree according to Buddhist tradition. Afterward he spends decades teaching a path of ethical conduct, meditation, and wisdom.\n\nVesak turns biography into practice. People visit monasteries, make offerings, listen to teachings, meditate, and perform acts of generosity. The festival's central memory is not merely that a great teacher once lived; it is that his teaching is meant to be lived through compassion, discipline, and attention to suffering.",
+      "hi": "जब पूर्णिमा का चंद्रमा उगता है, बौद्ध समुदाय बुद्ध के जीवन और शिक्षाओं को स्मरण करने के लिए एकत्र होते हैं। दक्षिण एशिया की कई परंपराओं में बुद्ध पूर्णिमा उनके जीवन की तीन महान घटनाओं—जन्म, ज्ञान प्राप्ति और महापरिनिर्वाण—को याद करती है। अलग-अलग बौद्ध समुदायों में जोर अलग हो सकता है।\n\nसिद्धार्थ की कथा राजसी सुख-सुविधा से शुरू होती है, लेकिन वे वृद्धावस्था, बीमारी और मृत्यु को देखकर जीवन के दुःख से गंभीर प्रश्न करते हैं। वे अपना पुराना जीवन छोड़ते हैं, दुःख से मुक्ति का मार्ग खोजते हैं और बौद्ध परंपरा के अनुसार बोधि वृक्ष के नीचे जागरण प्राप्त करते हैं। इसके बाद वे कई दशकों तक नैतिक आचरण, ध्यान और प्रज्ञा का मार्ग सिखाते हैं।\n\nवेसाक जीवनी को अभ्यास में बदल देता है। लोग विहार जाते हैं, अर्पण करते हैं, शिक्षाएँ सुनते हैं, ध्यान करते हैं और दान या सेवा के कार्य करते हैं। इस पर्व की केंद्रीय स्मृति केवल यह नहीं कि एक महान शिक्षक कभी जीवित थे, बल्कि यह भी है कि उनकी शिक्षा करुणा, अनुशासन और दुःख के प्रति सजगता के द्वारा जीवन में उतारी जाए।",
+      "ar": "مع طلوع البدر تجتمع المجتمعات البوذية لتتذكر حياة بوذا وتعاليمه. وفي كثير من التقاليد في جنوب آسيا يتذكر بوذا بورنيما ثلاثة أحداث كبرى: الميلاد والاستنارة والوفاة النهائية. وقد تركز مجتمعات بوذية أخرى على جوانب مختلفة من هذه الذكرى.\n\nتبدأ قصة سيدهارتا بحياة من الرفاه، ثم بوعي متزايد بالشيخوخة والمرض والموت. فترك حياته السابقة، وبحث عن طريق يتجاوز المعاناة، ثم بلغ الاستنارة تحت شجرة البودي بحسب التقاليد البوذية. وبعد ذلك أمضى عقودًا في تعليم طريق يجمع بين السلوك الأخلاقي والتأمل والحكمة.\n\nويحوّل فيساك السيرة إلى ممارسة. يزور الناس الأديرة ويقدمون القرابين ويستمعون إلى التعاليم ويتأملون ويقومون بأعمال العطاء. والذكرى المركزية للمهرجان ليست مجرد أن معلمًا عظيمًا عاش يومًا، بل أن تعاليمه ينبغي أن تُعاش من خلال الرحمة والانضباط والانتباه إلى المعاناة.",
+      "ur": "جب پورا چاند طلوع ہوتا ہے تو بدھ مت کے ماننے والے بدھا کی زندگی اور تعلیمات کو یاد کرنے کے لیے جمع ہوتے ہیں۔ جنوبی ایشیا کی بہت سی روایات میں بدھ پورنیما ان کی تین بڑی زندگی کی یادوں—پیدائش، بیداری اور مہاپرینروان—سے وابستہ ہے۔ مختلف بدھ برادریوں میں اس یاد کا زور مختلف ہوسکتا ہے۔\n\nسدھارتھ کی کہانی آسائش کی زندگی سے شروع ہوتی ہے، مگر بڑھاپے، بیماری اور موت کو دیکھ کر وہ دکھ کے مسئلے پر سنجیدگی سے غور کرتے ہیں۔ وہ اپنی سابق زندگی چھوڑ دیتے ہیں، دکھ سے نجات کا راستہ تلاش کرتے ہیں اور بدھ روایت کے مطابق بودھی درخت کے نیچے بیداری حاصل کرتے ہیں۔ اس کے بعد کئی دہائیوں تک وہ اخلاق، مراقبہ اور دانائی پر مبنی راستہ سکھاتے ہیں۔\n\nویساک سوانح کو عمل میں بدل دیتا ہے۔ لوگ خانقاہوں یا وہاروں میں جاتے ہیں، نذرانے پیش کرتے ہیں، تعلیمات سنتے ہیں، مراقبہ کرتے ہیں اور سخاوت یا خدمت کے کام انجام دیتے ہیں۔ تہوار کی مرکزی یاد صرف یہ نہیں کہ ایک عظیم استاد کبھی زندہ تھے بلکہ یہ بھی ہے کہ ان کی تعلیم کو رحم، ضبط اور دکھ کے ادراک کے ساتھ زندگی میں اپنایا جائے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of Vesak/Buddha Purnima festival tradition."
+    },
+    {
+      "id": "festival-eid-fitr-day-of-return",
+      "title": "Eid al-Fitr: The Morning After Ramadan",
+      "tradition": "Islamic festival tradition",
+      "origin": "Muslim communities worldwide",
+      "tags": [
+        "EID_AL_FITR",
+        "ISLAM",
+        "RAMADAN",
+        "COMMUNITY",
+        "CHARITY"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "RELIGIOUS_OBSERVANCE_AND_LIVING_TRADITION",
+      "evidenceNote": "Eid al-Fitr marks the end of Ramadan and begins with communal prayer in many Muslim communities. The festival has no single founding tale analogous to a mythic origin story; this entry is a lived-practice narrative.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Eid_al-Fitr"
+      ],
+      "en": "For a month, a Muslim family has organized its day around Ramadan: the pre-dawn meal, fasting during daylight, prayer, work, study, and the evening meal that breaks the fast. As the month comes to an end, the family prepares for a different kind of morning.\n\nOn Eid al-Fitr, people put on clean or special clothes, gather for prayer, greet one another, and share food. Giving charity is also an important part of the period, with many communities emphasizing support for people who may have less than they need. The celebration is communal rather than private: neighbors, relatives, friends, and congregations become part of the morning.\n\nThe story of Eid is therefore not a tale about one historical hero. It is a yearly rhythm of worship, gratitude, charity, and reunion. Its meaning is carried through ordinary actions repeated across generations: finishing a month of discipline, remembering God, feeding others, and making room for joy.",
+      "hi": "एक मुस्लिम परिवार पूरे रमज़ान के दौरान अपनी दिनचर्या को सहरी, दिन के रोज़े, नमाज़, काम, अध्ययन और इफ्तार के आसपास व्यवस्थित करता है। जैसे-जैसे महीना समाप्त होता है, परिवार एक अलग प्रकार की सुबह की तैयारी करता है।\n\nईद-उल-फ़ित्र के दिन लोग साफ या नए कपड़े पहनते हैं, सामूहिक नमाज़ के लिए जाते हैं, एक-दूसरे को शुभकामनाएँ देते हैं और भोजन साझा करते हैं। इस समय सदक़ा या दान भी महत्वपूर्ण माना जाता है और कई समुदाय जरूरतमंद लोगों की मदद पर विशेष ध्यान देते हैं। उत्सव केवल निजी नहीं होता; पड़ोसी, रिश्तेदार, मित्र और पूरी जमात इसमें शामिल होती है।\n\nइसलिए ईद की कहानी किसी एक ऐतिहासिक नायक की कथा नहीं है। यह हर वर्ष लौटने वाली इबादत, कृतज्ञता, दान और मिलन की जीवन-लय है। इसका अर्थ पीढ़ियों से दोहराए जाने वाले साधारण कार्यों में जीवित रहता है—एक महीने का संयम पूरा करना, अल्लाह को याद करना, दूसरों को खिलाना और खुशी के लिए जगह बनाना।",
+      "ar": "على مدى شهر كامل ينظم أفراد أسرة مسلمة يومهم حول السحور والصيام نهارًا والصلاة والعمل والدراسة ووجبة الإفطار مساءً. ومع اقتراب نهاية الشهر تبدأ الأسرة الاستعداد لصباح مختلف.\n\nفي عيد الفطر يرتدي الناس ملابس نظيفة أو خاصة، ويجتمعون للصلاة ويتبادلون التهاني ويتشاركون الطعام. وتعد الصدقة والعطاء جزءًا مهمًا من هذه الفترة، إذ تؤكد مجتمعات كثيرة مساعدة من قد لا يملكون ما يكفيهم. والاحتفال جماعي لا فردي فقط: الجيران والأقارب والأصدقاء والجماعة كلها تصبح جزءًا من الصباح.\n\nولذلك فحكاية العيد ليست قصة بطل تاريخي واحد. إنها إيقاع سنوي من العبادة والشكر والصدقة واللقاء. ويحمل معناها تكرار أفعال بسيطة عبر الأجيال: إكمال شهر من الانضباط، وذكر الله، وإطعام الآخرين، وإفساح المجال للفرح.",
+      "ur": "ایک مسلمان خاندان پورے رمضان میں اپنے دن کو سحری، دن کے روزے، نماز، کام، مطالعے اور شام کے افطار کے مطابق ترتیب دیتا ہے۔ جب مہینہ ختم ہونے لگتا ہے تو خاندان ایک مختلف صبح کی تیاری کرتا ہے۔\n\nعیدالفطر کے دن لوگ صاف یا نئے کپڑے پہنتے ہیں، عید کی نماز کے لیے جمع ہوتے ہیں، ایک دوسرے کو مبارک باد دیتے ہیں اور کھانا بانٹتے ہیں۔ صدقہ اور خیرات بھی اس موقع کا اہم حصہ ہیں اور بہت سی برادریاں ان لوگوں کی مدد پر زور دیتی ہیں جن کے پاس ضرورت کے مطابق وسائل نہیں۔ یہ جشن صرف نجی نہیں بلکہ اجتماعی ہوتا ہے: پڑوسی، رشتہ دار، دوست اور جماعت سب اس صبح کا حصہ بنتے ہیں۔\n\nاس لیے عید کی کہانی کسی ایک تاریخی ہیرو کی داستان نہیں بلکہ عبادت، شکر، سخاوت اور دوبارہ ملنے کی سالانہ زندگی ہے۔ اس کا مفہوم نسل در نسل دہرائے جانے والے سادہ اعمال میں قائم رہتا ہے—ایک مہینے کا ضبط مکمل کرنا، اللہ کو یاد کرنا، دوسروں کو کھانا کھلانا اور خوشی کے لیے جگہ پیدا کرنا۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of Eid al-Fitr as a living religious observance; no claim of a single mythic origin story."
+    },
+    {
+      "id": "festival-christmas-nativity",
+      "title": "The Nativity: A Child in Bethlehem",
+      "tradition": "Christian Gospel tradition",
+      "origin": "Christianity / Judea",
+      "tags": [
+        "CHRISTMAS",
+        "CHRISTIANITY",
+        "NATIVITY",
+        "BETHLEHEM"
+      ],
+      "ageBand": "6-15",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "evidenceNote": "The Nativity narrative is drawn from the birth accounts in Matthew and Luke. Details differ between Gospel accounts and later Christian tradition adds customs such as the expanded manger scene.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Nativity_of_Jesus"
+      ],
+      "en": "Mary and Joseph traveled to Bethlehem in the Gospel birth narratives. There the child Jesus was born. Luke's account says that he was laid in a manger because there was no suitable guest place available to them.\n\nIn Luke, shepherds hear the news and visit the child. In Matthew, visitors from the East follow a star and bring gifts. These are distinct Gospel traditions, later brought together in the familiar Christmas scene. The Gospels therefore provide the core story, while centuries of Christian art and celebration have added further imagery.\n\nChristmas remembers the birth of Jesus. Families and communities mark it with worship, music, gifts, meals, charity, and many cultural customs. The festival story is thus both a scriptural narrative and a living tradition shaped by generations of Christian practice.",
+      "hi": "सुसमाचारों की जन्म-कथाओं में मरियम और यूसुफ़ बैतलहम पहुँचे, जहाँ बालक यीशु का जन्म हुआ। लूका के विवरण के अनुसार उन्हें चरनी में रखा गया क्योंकि उनके लिए उपयुक्त ठहरने की जगह उपलब्ध नहीं थी।\n\nलूका में चरवाहों को जन्म का समाचार मिलता है और वे बालक से मिलने आते हैं। मत्ती में पूर्व से आए लोग एक तारे का अनुसरण करके उपहार लेकर आते हैं। ये अलग-अलग सुसमाचार परंपराएँ हैं जिन्हें बाद की ईसाई परंपरा ने परिचित क्रिसमस दृश्य में एक साथ प्रस्तुत किया। इसलिए सुसमाचार मूल कथा देते हैं, जबकि सदियों की कला और उत्सवों ने अतिरिक्त दृश्य-चित्र जोड़े।\n\nक्रिसमस यीशु के जन्म का स्मरण करता है। परिवार और समुदाय इसे उपासना, संगीत, उपहार, भोजन, दान और अनेक सांस्कृतिक परंपराओं के साथ मनाते हैं। इसलिए यह पर्व एक शास्त्रीय कथा और पीढ़ियों से विकसित होती जीवित परंपरा दोनों है।",
+      "ar": "في روايات الميلاد في الأناجيل سافر مريم ويوسف إلى بيت لحم، وهناك وُلد الطفل يسوع. ويذكر لوقا أنه وُضع في مذود لأن مكان الضيافة المناسب لم يكن متاحًا لهما.\n\nوفي رواية لوقا يسمع الرعاة الخبر ويزورون الطفل. أما متى فيذكر زوارًا من الشرق يتبعون نجمًا ويحملون هدايا. وهذه تقاليد إنجيلية مميزة جمعتها التقاليد المسيحية اللاحقة في مشهد الميلاد المعروف. ولذلك تقدم الأناجيل جوهر القصة، بينما أضاف الفن والاحتفال المسيحي عبر القرون صورًا أخرى.\n\nويذكر عيد الميلاد ميلاد يسوع. وتحتفل به الأسر والجماعات بالصلاة والموسيقى والهدايا والطعام والعطاء وخير كثير من العادات الثقافية. وهكذا يجمع المهرجان بين قصة إنجيلية وتراث حي تشكل عبر أجيال من الممارسة المسيحية.",
+      "ur": "اناجیل کی پیدائش کی روایات میں مریم اور یوسف بیت لحم پہنچے جہاں بچے یسوع کی پیدائش ہوئی۔ لوقا کی روایت کے مطابق بچے کو چرنی میں رکھا گیا کیونکہ ان کے لیے مناسب ٹھہرنے کی جگہ موجود نہ تھی۔\n\nلوقا میں چرواہوں کو خبر ملتی ہے اور وہ بچے کو دیکھنے آتے ہیں۔ متی میں مشرق سے آنے والے لوگ ایک ستارے کی پیروی کرتے ہوئے تحائف لاتے ہیں۔ یہ الگ الگ انجیل روایات ہیں جنہیں بعد کی مسیحی روایت نے معروف کرسمس منظر میں یکجا کردیا۔ اس لیے انجیلیں بنیادی کہانی پیش کرتی ہیں جبکہ صدیوں کی مسیحی مصوری اور تقریبات نے مزید تصویری عناصر شامل کیے۔\n\nکرسمس یسوع کی پیدائش کی یاد مناتا ہے۔ خاندان اور برادریاں عبادت، موسیقی، تحائف، کھانے، خیرات اور مختلف ثقافتی رسموں کے ساتھ اسے مناتی ہیں۔ اس طرح یہ تہوار ایک انجیل کی کہانی اور نسلوں سے تشکیل پانے والی زندہ روایت دونوں ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the Gospel Nativity traditions; no modern Bible translation reproduced."
+    },
+    {
+      "id": "festival-easter-resurrection",
+      "title": "Easter Morning: The Empty Tomb",
+      "tradition": "Christian Gospel tradition",
+      "origin": "Christianity / Jerusalem",
+      "tags": [
+        "EASTER",
+        "CHRISTIANITY",
+        "RESURRECTION",
+        "HOPE"
+      ],
+      "ageBand": "7-16",
+      "evidenceType": "SCRIPTURAL_NARRATIVE_AND_CHRISTIAN_BELIEF",
+      "evidenceNote": "The empty-tomb and resurrection accounts are central to the four canonical Gospels. The resurrection is presented as a Christian belief rather than as a scientifically verified claim.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Easter"
+      ],
+      "en": "In the Gospel accounts, women came to Jesus' tomb after the Sabbath. They discovered that the stone at the entrance had been moved and that the body was not there. Different Gospel accounts vary in the details of who arrived and what they saw, but the central claim is the empty tomb and the announcement that Jesus had risen.\n\nThe news was difficult for the first followers to understand. They had witnessed the execution and expected death to be final. The resurrection appearances described in Christian tradition transformed their fear into a message they carried to others.\n\nEaster therefore combines a narrative of loss, astonishment, and hope with the central Christian belief in Jesus' resurrection. Churches mark the festival through worship, readings, music, communal meals, and symbols of new life. The story is theological at its core: Christians celebrate what they believe God did, not a claim that can be reduced to ordinary historical observation alone.",
+      "hi": "सुसमाचारों के अनुसार सब्त के बाद कुछ महिलाएँ यीशु की कब्र पर पहुँचीं। उन्होंने देखा कि कब्र के प्रवेश पर रखा पत्थर हट चुका था और शरीर वहाँ नहीं था। अलग-अलग सुसमाचारों में कौन पहुँचा और क्या देखा, इसके विवरण अलग हैं, लेकिन केंद्रीय दावा खाली कब्र और यह घोषणा है कि यीशु जी उठे।\n\nपहले अनुयायियों के लिए यह समाचार समझना कठिन था। उन्होंने यीशु की मृत्यु देखी थी और मृत्यु को अंतिम माना था। ईसाई परंपरा में वर्णित पुनरुत्थान के दर्शन ने उनके भय को दूसरों तक संदेश पहुँचाने के साहस में बदल दिया।\n\nइसलिए ईस्टर हानि, आश्चर्य और आशा की कथा को यीशु के पुनरुत्थान में ईसाई विश्वास के साथ जोड़ता है। चर्च इसे उपासना, पाठ, संगीत, सामुदायिक भोजन और नए जीवन के प्रतीकों के साथ मनाते हैं। इसका मूल स्वर धार्मिक है: ईसाई उस कार्य का उत्सव मनाते हैं जिसे वे ईश्वर का कार्य मानते हैं, न कि ऐसी घटना का दावा जिसे केवल सामान्य ऐतिहासिक निरीक्षण से सिद्ध किया जा सके।",
+      "ar": "في روايات الأناجيل جاءت نساء إلى قبر يسوع بعد السبت. فوجدن الحجر الذي يغلق المدخل قد أزيح، ولم يكن الجسد هناك. وتختلف الأناجيل في تفاصيل من وصل وماذا رأى، لكن الدعوى المركزية هي القبر الفارغ وإعلان أن يسوع قام.\n\nكان الخبر صعب الفهم على أتباعه الأوائل. فقد شهدوا إعدامه وتوقعوا أن يكون الموت نهاية الأمر. وتذكر التقاليد المسيحية ظهور يسوع لأتباعه بعد ذلك، وقد غيّر هذا الخوف إلى رسالة حملوها إلى الآخرين.\n\nولهذا يجمع عيد الفصح المسيحي بين قصة الفقد والدهشة والأمل وبين الاعتقاد المسيحي المركزي بقيامة يسوع. وتحتفل الكنائس بالعبادة والقراءات والموسيقى والوجبات الجماعية ورموز الحياة الجديدة. وجوهر القصة لاهوتي: يحتفل المسيحيون بما يؤمنون أن الله فعله، وليس بادعاء يمكن اختزاله في الملاحظة التاريخية العادية وحدها.",
+      "ur": "اناجیل کی روایات کے مطابق سبت کے بعد کچھ خواتین یسوع کی قبر پر پہنچیں۔ انہوں نے دیکھا کہ قبر کے منہ پر رکھا پتھر ہٹ چکا تھا اور لاش وہاں موجود نہیں تھی۔ مختلف اناجیل میں آنے والوں اور دیکھے گئے واقعات کی تفصیلات مختلف ہیں، مگر بنیادی دعویٰ خالی قبر اور یہ اعلان ہے کہ یسوع جی اٹھے۔\n\nابتدائی پیروکاروں کے لیے یہ خبر سمجھنا آسان نہ تھا۔ انہوں نے یسوع کی موت دیکھی تھی اور موت کو آخری انجام سمجھا تھا۔ مسیحی روایت میں بیان ہونے والی بعد کی ظہور کی روایات نے ان کے خوف کو دوسروں تک پیغام پہنچانے میں بدل دیا۔\n\nاس طرح ایسٹر نقصان، حیرت اور امید کی داستان کو یسوع کے جی اٹھنے کے مسیحی عقیدے سے جوڑتا ہے۔ گرجا گھر عبادت، تلاوت، موسیقی، اجتماعی کھانوں اور نئی زندگی کی علامتوں کے ذریعے یہ تہوار مناتے ہیں۔ اس کہانی کا بنیادی پہلو مذہبی ہے: مسیحی اس کام کا جشن مناتے ہیں جسے وہ خدا کا عمل مانتے ہیں، نہ کہ ایسے دعوے کا جسے صرف عام تاریخی مشاہدے سے ثابت کیا جاسکے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of Gospel resurrection traditions. Resurrection is labeled as Christian belief, not scientific fact."
+    },
+    {
+      "id": "festival-hanukkah-rededication",
+      "title": "Hanukkah: The Temple Is Rededicated",
+      "tradition": "Second Temple / Maccabean and rabbinic tradition",
+      "origin": "Judea",
+      "tags": [
+        "HANUKKAH",
+        "JUDAISM",
+        "MACCABEES",
+        "REDedication"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "HISTORICAL_TRADITION_AND_RABBINIC_MEMORY",
+      "evidenceNote": "Hanukkah commemorates the rededication of the Jerusalem Temple after the Maccabean revolt. The later rabbinic oil story is an additional traditional explanation for the eight-day lamp observance.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Hanukkah"
+      ],
+      "en": "Judea experienced conflict under Seleucid rule in the second century BCE. A revolt led by the Maccabean family eventually resulted in the recapture of Jerusalem and the rededication of the Temple. The event became the historical foundation of Hanukkah.\n\nJewish tradition later preserved a story about a small amount of consecrated oil that should have lasted only one day but burned for eight days. This story explains the enduring importance of the festival's lights in rabbinic tradition, while the historical rededication is the older event connected with the festival.\n\nFamilies light a hanukkiah over eight nights, add one light each evening, and tell stories of perseverance and communal memory. Hanukkah therefore joins a historical struggle with a later religious tradition about light lasting beyond expectation.",
+      "hi": "दूसरी शताब्दी ईसा पूर्व में यहूदिया में सेल्यूसिड शासन के अधीन संघर्ष हुआ। मैक्काबी परिवार के नेतृत्व में विद्रोह के बाद यरूशलेम पर फिर नियंत्रण स्थापित हुआ और मंदिर का पुनः समर्पण किया गया। यही घटना हनुक्का की ऐतिहासिक नींव बनी।\n\nबाद की यहूदी परंपरा में थोड़े से पवित्र तेल की कथा भी मिलती है, जो केवल एक दिन के लिए पर्याप्त माना जाता था लेकिन आठ दिनों तक जलता रहा। यह कथा रब्बी परंपरा में त्योहार की आठ रातों की रोशनी के महत्व को समझाती है, जबकि मंदिर का पुनर्समर्पण उससे जुड़ी पुरानी ऐतिहासिक घटना है।\n\nपरिवार आठ रातों तक हनुक्किया में दीप जलाते हैं और हर रात एक अतिरिक्त प्रकाश जोड़ते हैं। वे धैर्य और सामुदायिक स्मृति की कथाएँ भी सुनाते हैं। इस प्रकार हनुक्का एक ऐतिहासिक संघर्ष को बाद की धार्मिक प्रकाश-परंपरा के साथ जोड़ता है।",
+      "ar": "شهدت يهودا صراعًا في ظل الحكم السلوقي في القرن الثاني قبل الميلاد. وأدى تمرد قاده بيت المكابيين في النهاية إلى استعادة القدس وإعادة تكريس الهيكل. وأصبح هذا الحدث الأساس التاريخي لعيد حانوكا.\n\nوحفظ التقليد اليهودي لاحقًا قصة كمية صغيرة من الزيت المقدس كان يفترض أن تكفي يومًا واحدًا لكنها استمرت في الاشتعال ثمانية أيام. وتشرح هذه الرواية أهمية أضواء العيد في الذاكرة الربانية، بينما تبقى إعادة تكريس الهيكل الحدث التاريخي الأقدم المرتبط بالمناسبة.\n\nوتشعل الأسر شمعدان الحانوكيا خلال ثماني ليالٍ، وتضيف نورًا جديدًا كل ليلة، وتحكي قصص الصمود والذاكرة الجماعية. وهكذا يجمع حانوكا بين صراع تاريخي وتقليد ديني لاحق حول نور استمر أطول من المتوقع.",
+      "ur": "دوسری صدی قبل مسیح میں یہودیہ سلوکی حکومت کے تحت تنازع سے گزرا۔ مکابی خاندان کی قیادت میں بغاوت کے نتیجے میں یروشلم دوبارہ حاصل ہوا اور ہیکل کو دوبارہ مقدس کیا گیا۔ یہی واقعہ حنوکا کی تاریخی بنیاد بنا۔\n\nبعد کی یہودی روایت میں تھوڑے سے مقدس تیل کی کہانی بھی بیان ہوتی ہے جو صرف ایک دن کے لیے کافی ہونا چاہیے تھا مگر آٹھ دن تک جلتا رہا۔ یہ روایت ربانی یادداشت میں تہوار کی آٹھ راتوں کی روشنی کی اہمیت کی وضاحت کرتی ہے، جبکہ ہیکل کی دوبارہ تقدیس اس سے متعلق قدیم تاریخی واقعہ ہے۔\n\nخاندان آٹھ راتوں تک حنوکا کی شمع دان میں روشنی کرتے ہیں اور ہر رات ایک نئی روشنی شامل کرتے ہیں۔ وہ ثابت قدمی اور اجتماعی یادداشت کی کہانیاں بھی سناتے ہیں۔ یوں حنوکا ایک تاریخی جدوجہد کو بعد کی مذہبی روشنی کی روایت کے ساتھ جوڑتا ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING. Historical rededication and later rabbinic oil tradition are explicitly separated."
+    },
+    {
+      "id": "festival-passover-exodus",
+      "title": "Passover: The Night of Leaving Egypt",
+      "tradition": "Torah / Jewish Passover tradition",
+      "origin": "Ancient Israel / Egypt narrative",
+      "tags": [
+        "PASSOVER",
+        "JUDAISM",
+        "EXODUS",
+        "FREEDOM"
+      ],
+      "ageBand": "8-16",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "evidenceNote": "The Exodus narrative in the Torah is the central religious story behind Passover. Archaeological and historical debates about the Exodus are separate from the religious narrative and are not resolved in this entry.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Passover"
+      ],
+      "en": "In the Exodus narrative, the Israelites had lived under harsh oppression in Egypt. Moses became the leader through whom the people were instructed to prepare to leave. On the night before their departure, families prepared a special meal and marked the doorway according to the command they had received.\n\nThe story describes a night of judgment in Egypt followed by the Israelites' urgent departure. They were told to remember the event so that future generations would know the story of leaving slavery and beginning a journey toward freedom. The journey itself continued with danger, uncertainty, and the crossing of the sea.\n\nPassover preserves this story through a meal, prayers, readings, and questions asked by children. Its central act is remembering: a family does not only read about ancestors who left Egypt; it tells the story as an inherited memory that asks what freedom, responsibility, and gratitude should mean.",
+      "hi": "निर्गमन की कथा के अनुसार इस्राएली मिस्र में कठोर दासत्व के अधीन रहते थे। मूसा उस नेतृत्व के केंद्र में आए जिसके माध्यम से लोगों को प्रस्थान के लिए तैयार होने का निर्देश मिला। प्रस्थान की रात परिवारों ने विशेष भोजन तैयार किया और आदेश के अनुसार अपने घरों के द्वार को चिह्नित किया।\n\nकथा में मिस्र पर आने वाले न्याय की एक रात और उसके बाद इस्राएलियों का तत्काल प्रस्थान आता है। उन्हें कहा गया कि इस घटना को याद रखें ताकि आने वाली पीढ़ियाँ दासत्व से निकलने और स्वतंत्रता की ओर यात्रा की कहानी जानें। यात्रा स्वयं भी खतरे, अनिश्चितता और समुद्र पार करने जैसी घटनाओं से भरी थी।\n\nपासओवर इस कथा को भोजन, प्रार्थना, पाठ और बच्चों के प्रश्नों के माध्यम से जीवित रखता है। इसका मुख्य कार्य स्मरण है: परिवार केवल उन पूर्वजों के बारे में नहीं पढ़ता जो मिस्र से निकले थे, बल्कि उस विरासत में मिली कथा को सुनाता है जो स्वतंत्रता, जिम्मेदारी और कृतज्ञता के अर्थ पर विचार करने को कहती है।",
+      "ar": "في رواية الخروج عاش بنو إسرائيل تحت اضطهاد قاسٍ في مصر. وأصبح موسى القائد الذي تلقى الناس على يده تعليمات الاستعداد للرحيل. وفي ليلة الخروج أعدت الأسر وجبة خاصة ووضعت العلامة المطلوبة على الأبواب.\n\nوتصف القصة ليلة حكم في مصر ثم الرحيل العاجل لبني إسرائيل. وطُلب منهم أن يتذكروا الحدث كي تعرف الأجيال القادمة قصة الخروج من العبودية وبدء طريق نحو الحرية. واستمرت الرحلة في وسط الخطر وعدم اليقين وعبور البحر.\n\nويحفظ عيد الفصح هذه القصة من خلال الطعام والصلاة والقراءات والأسئلة التي يطرحها الأطفال. وأهم ما فيه هو التذكر: فالأسرة لا تقرأ فقط عن أجداد خرجوا من مصر، بل تحكي القصة بوصفها ذاكرة موروثة تدعو إلى التفكير في معنى الحرية والمسؤولية والامتنان.",
+      "ur": "خروج کی روایت کے مطابق بنی اسرائیل مصر میں سخت غلامی میں زندگی گزار رہے تھے۔ موسیٰ اس قیادت کا مرکز بنے جس کے ذریعے لوگوں کو روانگی کے لیے تیار ہونے کا حکم ملا۔ روانگی کی رات خاندانوں نے ایک خاص کھانا تیار کیا اور حکم کے مطابق دروازے پر نشانی قائم کی۔\n\nکہانی مصر میں فیصلے کی ایک رات اور اس کے بعد بنی اسرائیل کی فوری روانگی بیان کرتی ہے۔ انہیں کہا گیا کہ اس واقعے کو یاد رکھیں تاکہ آنے والی نسلیں غلامی سے نکلنے اور آزادی کی طرف سفر کی داستان جانیں۔ یہ سفر بھی خطرے، بے یقینی اور سمندر عبور کرنے جیسے مرحلوں سے گزرا۔\n\nپیس اوور اس کہانی کو کھانے، دعاؤں، تلاوت اور بچوں کے سوالات کے ذریعے زندہ رکھتا ہے۔ اس کا مرکزی عمل یاد رکھنا ہے: خاندان صرف ان بزرگوں کے بارے میں نہیں پڑھتا جو مصر سے نکلے بلکہ اس وراثتی داستان کو بیان کرتا ہے جو آزادی، ذمہ داری اور شکرگزاری کے مفہوم پر غور کرنے کی دعوت دیتی ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of the Torah's Exodus narrative as remembered through Passover."
+    },
+    {
+      "id": "festival-nowruz-spring-renewal",
+      "title": "Nowruz: The New Day of Spring",
+      "tradition": "Persian / Iranian New Year tradition",
+      "origin": "Iran and wider Persianate world",
+      "tags": [
+        "NOWRUZ",
+        "PERSIAN_CULTURE",
+        "SPRING",
+        "RENEWAL"
+      ],
+      "ageBand": "7-15",
+      "evidenceType": "CULTURAL_TRADITION_WITH_LEGENDARY_ORIGINS",
+      "evidenceNote": "Nowruz is an ancient spring new year tradition with multiple historical and legendary origin stories. The Jamshid origin story is legendary and is not presented as literal history.",
+      "sourceBasis": [
+        "https://en.wikipedia.org/wiki/Nowruz"
+      ],
+      "en": "As winter gives way to spring, families prepare for Nowruz by cleaning their homes, visiting relatives, arranging symbolic displays, and sharing meals. The festival marks a new year and is associated with renewal, freshness, and the return of spring.\n\nPersian literary tradition also tells a legendary story linking Nowruz with Jamshid, a king whose rise and arrival are connected with a brilliant new day. The story belongs to the cultural world of Persian epic and legend, not to a simple historical record.\n\nAcross communities, the exact customs differ, but the central rhythm is recognizable: old things are cleared away, families reunite, and a new cycle begins. Nowruz survives because a calendar date becomes a lived story of renewal repeated every year.",
+      "hi": "जब सर्दी समाप्त होकर वसंत आता है, तो परिवार नवरोज़ की तैयारी में घर साफ करते हैं, रिश्तेदारों से मिलते हैं, प्रतीकात्मक सजावट करते हैं और भोजन साझा करते हैं। यह नया वर्ष और वसंत के लौटने से जुड़ा उत्सव है तथा नवीनीकरण और नई शुरुआत का भाव रखता है।\n\nफ़ारसी साहित्यिक परंपरा में नवरोज़ को जमशेद नामक राजा से जोड़ने वाली एक प्रसिद्ध किंवदंती भी मिलती है, जिसमें उसका आगमन एक उज्ज्वल नए दिन से जुड़ा है। यह कथा फ़ारसी महाकाव्य और लोक-स्मृति के सांस्कृतिक संसार का हिस्सा है, सरल ऐतिहासिक अभिलेख नहीं।\n\nअलग-अलग समुदायों में रीति-रिवाज बदलते हैं, लेकिन मूल लय समान रहती है: पुरानी चीज़ें हटाना, परिवार के साथ मिलना और नए चक्र की शुरुआत करना। नवरोज़ इसलिए जीवित रहा है क्योंकि कैलेंडर की एक तारीख हर वर्ष नवीनीकरण की जीवित कहानी बन जाती है।",
+      "ar": "مع انتهاء الشتاء وبداية الربيع تستعد الأسر لنوروز بتنظيف البيوت وزيارة الأقارب وترتيب رموز خاصة وتقاسم الطعام. ويمثل المهرجان بداية سنة جديدة ويرتبط بالتجدد وانتعاش الحياة وعودة الربيع.\n\nوتروي التقاليد الأدبية الفارسية أيضًا قصة أسطورية تربط نوروز بجَمْشيد، وهو ملك يرتبط ظهوره في القصة بيوم جديد مشرق. وتنتمي هذه الحكاية إلى عالم الأدب الفارسي والأسطورة، وليست سجلًا تاريخيًا بسيطًا.\n\nوتختلف العادات الدقيقة بين المجتمعات، لكن الإيقاع الأساسي واحد: التخلص من القديم، والاجتماع مع الأسرة، وبدء دورة جديدة. ويستمر نوروز لأن تاريخًا في التقويم يتحول كل عام إلى قصة معيشة عن التجدد.",
+      "ur": "سردی کے ختم ہونے اور بہار کے آنے کے ساتھ خاندان نوروز کی تیاری کرتے ہیں، گھروں کی صفائی کرتے ہیں، رشتہ داروں سے ملتے ہیں، علامتی سجاوٹ کرتے ہیں اور کھانا بانٹتے ہیں۔ یہ نیا سال اور بہار کی واپسی کا تہوار ہے اور تازگی، تجدید اور نئی ابتدا سے وابستہ ہے۔\n\nفارسی ادبی روایت میں نوروز کو جمشید نامی بادشاہ سے جوڑنے والی ایک مشہور داستان بھی ہے جس میں اس کا ظہور ایک روشن نئے دن سے وابستہ ہے۔ یہ کہانی فارسی رزمیہ اور اساطیری ثقافت کا حصہ ہے، سادہ تاریخی ریکارڈ نہیں۔\n\nمختلف برادریوں میں رسوم مختلف ہوسکتی ہیں، مگر بنیادی انداز ایک جیسا ہے: پرانی چیزیں صاف کرنا، خاندان کا دوبارہ ملنا اور نئے دور کا آغاز کرنا۔ نوروز اس لیے زندہ ہے کہ تقویم کی ایک تاریخ ہر سال تجدید کی ایک زندہ داستان بن جاتی ہے۔",
+      "sourceNote": "ORIGINAL_FAITHFUL_RETELLING of Nowruz as a living cultural tradition; Jamshid material is labeled legendary."
+    }
+  ]
+}
