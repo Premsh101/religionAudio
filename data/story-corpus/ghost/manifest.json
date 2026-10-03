@@ -17,12 +17,16 @@
       "year": 1887,
       "origin": "Ireland / British setting",
       "category": "GHOST_STORY",
-      "rights": "PUBLIC_DOMAIN_CANDIDATE",
-      "fullText": "SOURCE_ONLY",
+      "rights": "PD_WORK",
+      "fullText": "PG_EXTRACT",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/14522",
-        "format": "plain-text"
+        "rawUrl": "https://www.gutenberg.org/cache/epub/14522/pg14522.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "I"
+        }
       },
       "ingest": "project-gutenberg",
       "translations": {
@@ -37,7 +41,9 @@
         "ar": "data/story-corpus/ghost/translations/ghost-en-canterville/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-en-canterville/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "10+",
+      "contentNotes": []
     },
     {
       "id": "ghost-en-monkeys-paw",
@@ -47,12 +53,17 @@
       "year": 1902,
       "origin": "United Kingdom",
       "category": "GHOST_STORY",
-      "rights": "PUBLIC_DOMAIN_CANDIDATE",
-      "fullText": "SOURCE_ONLY",
+      "rights": "PD_WORK",
+      "fullText": "PG_EXTRACT",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/12122",
-        "format": "plain-text"
+        "rawUrl": "https://www.gutenberg.org/cache/epub/12122/pg12122.txt",
+        "format": "plain-text",
+        "note": "PG 12122 is the story as printed in The Lady of the Barge (1902).",
+        "extract": {
+          "start": "THE MONKEY’S PAW"
+        }
       },
       "ingest": "project-gutenberg",
       "translations": {
@@ -67,7 +78,11 @@
         "ar": "data/story-corpus/ghost/translations/ghost-en-monkeys-paw/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-en-monkeys-paw/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "13+",
+      "contentNotes": [
+        "Death of a son in machinery and implied return of a mutilated corpse."
+      ]
     },
     {
       "id": "ghost-en-red-room",
@@ -77,12 +92,16 @@
       "year": 1896,
       "origin": "England",
       "category": "GHOST_STORY",
-      "rights": "PUBLIC_DOMAIN_CANDIDATE",
-      "fullText": "SOURCE_ONLY",
+      "rights": "PD_WORK",
+      "fullText": "PG_EXTRACT",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/23218",
-        "format": "plain-text"
+        "rawUrl": "https://www.gutenberg.org/cache/epub/23218/pg23218.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "THE RED ROOM"
+        }
       },
       "ingest": "project-gutenberg",
       "translations": {
@@ -97,7 +116,9 @@
         "ar": "data/story-corpus/ghost/translations/ghost-en-red-room/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-en-red-room/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
       "id": "ghost-en-signal-man",
@@ -107,12 +128,18 @@
       "year": 1866,
       "origin": "England",
       "category": "GHOST_STORY",
-      "rights": "PUBLIC_DOMAIN_CANDIDATE",
-      "fullText": "SOURCE_ONLY",
+      "rights": "PD_WORK",
+      "fullText": "PG_EXTRACT",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/27924",
-        "format": "plain-text"
+        "rawUrl": "https://www.gutenberg.org/cache/epub/27924/pg27924.txt",
+        "format": "plain-text anthology",
+        "collection": "Mugby Junction (1866), No. 1 Branch Line",
+        "extract": {
+          "start": "THE SIGNAL-MAN",
+          "end": "NO. 2 BRANCH LINE"
+        }
       },
       "ingest": "project-gutenberg",
       "translations": {
@@ -127,27 +154,34 @@
         "ar": "data/story-corpus/ghost/translations/ghost-en-signal-man/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-en-signal-man/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
       "id": "ghost-en-banshee",
       "language": "en",
       "title": "The Banshee",
       "author": "Traditional / anonymous",
-      "year": null,
+      "year": 1896,
       "origin": "Ireland",
       "category": "FOLKLORE",
-      "rights": "TRADITIONAL_SOURCE_REVIEW",
-      "fullText": "SOURCE_ONLY",
+      "rights": "TRADITIONAL_REVIEW",
+      "fullText": "PG_EXTRACT",
       "source": {
         "name": "Project Gutenberg anthology",
         "url": "https://www.gutenberg.org/ebooks/6040",
-        "format": "anthology"
+        "rawUrl": "https://www.gutenberg.org/cache/epub/6040/pg6040.txt",
+        "format": "plain-text",
+        "collection": "Stories by English Authors: Ireland (1896)",
+        "extract": {
+          "start": "THE BANSHEE"
+        }
       },
-      "ingest": "project-gutenberg-review",
+      "ingest": "project-gutenberg",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
       },
@@ -157,7 +191,90 @@
         "ar": "data/story-corpus/ghost/translations/ghost-en-banshee/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-en-banshee/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "12+",
+      "contentNotes": []
+    },
+    {
+      "id": "ghost-en-phantom-rickshaw",
+      "language": "en",
+      "title": "The Phantom 'Rickshaw",
+      "author": "Rudyard Kipling",
+      "year": 1885,
+      "origin": "British India (Simla setting)",
+      "category": "GHOST_STORY",
+      "rights": "PD_WORK",
+      "fullText": "PG_EXTRACT",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2806",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2806/pg2806.txt",
+        "format": "plain-text anthology",
+        "collection": "The Phantom 'Rickshaw, and Other Ghost Stories",
+        "extract": {
+          "start": "THE PHANTOM ‘RICKSHAW",
+          "end": "MY OWN TRUE GHOST STORY"
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/ur.txt"
+      },
+      "translationType": "faithful-translation",
+      "ageBand": "13+",
+      "contentNotes": [
+        "Haunting tied to a jilted lover's death; Anglo-Indian colonial setting and attitudes."
+      ]
+    },
+    {
+      "id": "ghost-en-hungry-stones",
+      "language": "en",
+      "title": "The Hungry Stones",
+      "author": "Rabindranath Tagore",
+      "year": 1916,
+      "origin": "Bengal / Hyderabad State setting",
+      "category": "GHOST_STORY",
+      "rights": "PD_WORK",
+      "fullText": "PG_EXTRACT",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2518/pg2518.txt",
+        "format": "plain-text anthology",
+        "collection": "The Hungry Stones, and Other Stories (1916)",
+        "note": "English translation published 1916; the Bengali original 'Kshudhita Pashan' dates from 1895.",
+        "extract": {
+          "start": "THE HUNGRY STONES",
+          "end": "THE VICTORY"
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "translationFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/ur.txt"
+      },
+      "translationType": "faithful-translation",
+      "ageBand": "13+",
+      "contentNotes": [
+        "Sensual haunting by the spirits of a palace harem; references to past cruelty to enslaved women."
+      ]
     },
     {
       "id": "ghost-hi-bhoot-premchand",
@@ -167,15 +284,16 @@
       "year": 1929,
       "origin": "India",
       "category": "GHOST_STORY",
-      "rights": "PUBLIC_DOMAIN_WORK",
-      "fullText": "SOURCE_ONLY",
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "fullText": "TEXT_PRESENT",
       "source": {
         "name": "Hindi Wikisource / open corpus",
         "url": "https://hi.wikisource.org/wiki/विषयसूची:मानसरोवर_भाग_4.djvu",
         "alternateUrl": "https://github.com/lastmansleeping/hindi-toolkit/blob/master/hindi_toolkit/data/stories/12.txt",
-        "format": "text"
+        "format": "text (committed)",
+        "localPath": "data/story-corpus/ghost/text/hi/ghost-hi-bhoot-premchand.txt"
       },
-      "ingest": "github-open-source-text",
+      "ingest": "committed-source-text",
       "translations": {
         "hi": "SOURCE_LANGUAGE",
         "en": "PENDING_SOURCE_TRANSLATION",
@@ -188,7 +306,11 @@
         "ar": "data/story-corpus/ghost/translations/ghost-hi-bhoot-premchand/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-hi-bhoot-premchand/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "18+",
+      "contentNotes": [
+        "Adult themes (an elderly widower's remarriage, jealousy, a wife's death and haunting); adult audience only."
+      ]
     },
     {
       "id": "ghost-hi-vetal-pachisi",
@@ -198,7 +320,7 @@
       "year": null,
       "origin": "India",
       "category": "SUPERNATURAL_FOLKLORE",
-      "rights": "TRADITIONAL_SOURCE_REVIEW",
+      "rights": "TRADITIONAL_REVIEW",
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Hindi Wikisource",
@@ -207,7 +329,7 @@
       },
       "ingest": "wikisource-review",
       "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
+        "hi": "SOURCE_LANGUAGE",
         "en": "PENDING_SOURCE_TRANSLATION",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
@@ -218,129 +340,9 @@
         "ar": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/ur.txt"
       },
-      "translationType": "faithful-translation"
-    },
-    {
-      "id": "ghost-hi-singhasan-battisi",
-      "language": "hi",
-      "title": "सिंहासन बत्तीसी",
-      "author": "Traditional; Hindi retellings",
-      "year": null,
-      "origin": "India",
-      "category": "SUPERNATURAL_FOLKLORE",
-      "rights": "TRADITIONAL_SOURCE_REVIEW",
-      "fullText": "SOURCE_ONLY",
-      "source": {
-        "name": "Hindi Wikisource",
-        "url": "https://hi.wikisource.org/",
-        "format": "source-discovery"
-      },
-      "ingest": "wikisource-review",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "PENDING_SOURCE_TRANSLATION"
-      },
-      "translationFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/ur.txt"
-      },
-      "translationType": "faithful-translation"
-    },
-    {
-      "id": "ghost-ur-fasana-e-ajaib",
-      "language": "ur",
-      "title": "فسانۂ عجائب",
-      "author": "رجب علی بیگ سرور",
-      "year": 1824,
-      "origin": "Lucknow, India",
-      "category": "SUPERNATURAL_FOLKLORE",
-      "rights": "PUBLIC_DOMAIN_CANDIDATE",
-      "fullText": "SOURCE_ONLY",
-      "source": {
-        "name": "Urdu Wikisource / UrduZaban",
-        "url": "https://ur.wikisource.org/wiki/%D9%81%D8%B3%D8%A7%D9%86%DB%82_%D8%B9%D8%AC%D8%A7%D8%A6%D8%A8/%D9%81%D8%B3%D8%A7%D9%86%DB%82_%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%90_%DB%8C%D9%85%D9%86",
-        "alternateUrl": "https://github.com/FarooqStars/urduzaban/blob/master/uz-data/uz-adab-matn.json",
-        "format": "Wikisource text",
-        "pageTitle": "فسانۂ عجائب/فسانۂ سلطانِ یمن"
-      },
-      "ingest": "wikisource-api",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "SOURCE_LANGUAGE"
-      },
-      "translationFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/ur.txt"
-      },
-      "translationType": "faithful-translation"
-    },
-    {
-      "id": "ghost-ur-bagh-o-bahar",
-      "language": "ur",
-      "title": "باغ و بہار / قصۂ چار درویش",
-      "author": "میر امن دہلوی",
-      "year": 1801,
-      "origin": "Delhi / North India",
-      "category": "SUPERNATURAL_FOLKLORE",
-      "rights": "PUBLIC_DOMAIN_CANDIDATE",
-      "fullText": "SOURCE_ONLY",
-      "source": {
-        "name": "Urdu Wikisource",
-        "url": "https://ur.wikisource.org/wiki/باغ_و_بہار/سیر_پہلے_درویش_کی",
-        "format": "Wikisource text"
-      },
-      "ingest": "wikisource-api",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "SOURCE_LANGUAGE"
-      },
-      "translationFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/ur.txt"
-      },
-      "translationType": "faithful-translation"
-    },
-    {
-      "id": "ghost-ur-dastan-amir-hamza",
-      "language": "ur",
-      "title": "داستان امیر حمزہ / طلسم ہوش ربا",
-      "author": "Traditional Urdu dastan; multiple historical narrators/editors",
-      "year": null,
-      "origin": "North India / Indo-Persian storytelling tradition",
-      "category": "SUPERNATURAL_FANTASY",
-      "rights": "EDITION_REVIEW_REQUIRED",
-      "fullText": "SOURCE_ONLY",
-      "source": {
-        "name": "Urdu Wikisource / Urdu literary sources",
-        "url": "https://ur.wikisource.org/",
-        "format": "source-discovery"
-      },
-      "ingest": "wikisource-review",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "PENDING_SOURCE_TRANSLATION"
-      },
-      "translationFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/ur.txt"
-      },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
       "id": "ghost-ar-merchant-ifrit",
@@ -350,11 +352,11 @@
       "year": null,
       "origin": "Arab world / composite Thousand Nights tradition",
       "category": "JINN_GHOST_FOLKLORE",
-      "rights": "PUBLIC_DOMAIN_TRADITION",
+      "rights": "TRADITIONAL_REVIEW",
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Arabic Wikisource — ألف ليلة وليلة",
-        "url": "https://ar.wikisource.org/wiki/%D8%B5%D9%81%D8%AD%D8%A9:%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9.djvu/12",
+        "url": "https://ar.wikisource.org/wiki/%D9%81%D9%87%D8%B1%D8%B3:%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9.djvu",
         "format": "Wikisource text",
         "pageTitles": [
           "صفحة:ألف ليلة وليلة.djvu/12",
@@ -362,8 +364,14 @@
           "صفحة:ألف ليلة وليلة.djvu/14",
           "صفحة:ألف ليلة وليلة.djvu/15",
           "صفحة:ألف ليلة وليلة.djvu/16",
-          "صفحة:ألف ليلة وليلة.djvu/17"
-        ]
+          "صفحة:ألف ليلة وليلة.djvu/17",
+          "صفحة:ألف ليلة وليلة.djvu/18"
+        ],
+        "extract": {
+          "startText": "حكاية التاجر مع العفريت",
+          "endText": "(حكاية الصياد مع العفريت)"
+        },
+        "note": "Bulaq 1935 printing, vol. 1 (ar.wikisource Page: namespace, proofread levels vary). Tale runs from scan page 12 to the fisherman heading on page 18."
       },
       "ingest": "wikisource-api",
       "translations": {
@@ -378,7 +386,11 @@
         "ar": "data/story-corpus/ghost/translations/ghost-ar-merchant-ifrit/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-ar-merchant-ifrit/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "13+",
+      "contentNotes": [
+        "Embedded tales include adultery and transformation as punishment; review before younger audiences."
+      ]
     },
     {
       "id": "ghost-ar-fisherman-ifrit",
@@ -388,11 +400,11 @@
       "year": null,
       "origin": "Arab world / composite Thousand Nights tradition",
       "category": "JINN_GHOST_FOLKLORE",
-      "rights": "PUBLIC_DOMAIN_TRADITION",
+      "rights": "TRADITIONAL_REVIEW",
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Arabic Wikisource — ألف ليلة وليلة",
-        "url": "https://ar.wikisource.org/wiki/%D8%B5%D9%81%D8%AD%D8%A9:%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9.djvu/18",
+        "url": "https://ar.wikisource.org/wiki/%D9%81%D9%87%D8%B1%D8%B3:%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9.djvu",
         "format": "Wikisource text",
         "pageTitles": [
           "صفحة:ألف ليلة وليلة.djvu/18",
@@ -404,8 +416,21 @@
           "صفحة:ألف ليلة وليلة.djvu/24",
           "صفحة:ألف ليلة وليلة.djvu/25",
           "صفحة:ألف ليلة وليلة.djvu/26",
-          "صفحة:ألف ليلة وليلة.djvu/27"
-        ]
+          "صفحة:ألف ليلة وليلة.djvu/27",
+          "صفحة:ألف ليلة وليلة.djvu/28",
+          "صفحة:ألف ليلة وليلة.djvu/29",
+          "صفحة:ألف ليلة وليلة.djvu/30",
+          "صفحة:ألف ليلة وليلة.djvu/31",
+          "صفحة:ألف ليلة وليلة.djvu/32",
+          "صفحة:ألف ليلة وليلة.djvu/33",
+          "صفحة:ألف ليلة وليلة.djvu/34",
+          "صفحة:ألف ليلة وليلة.djvu/35"
+        ],
+        "extract": {
+          "startText": "(حكاية الصياد مع العفريت)",
+          "endText": "(حكاية الحال مع البنات)"
+        },
+        "note": "Bulaq 1935 printing, vol. 1 (ar.wikisource Page: namespace). Verified 2026-10-03: the tale (with the embedded King Yunan and Ensorcelled Prince tales) runs from the heading on scan page 18 to the porter heading on page 35 (printed in the source as '(حكاية الحال مع البنات)'). The previous range 18-27 stopped mid-tale."
       },
       "ingest": "wikisource-api",
       "translations": {
@@ -420,28 +445,34 @@
         "ar": "data/story-corpus/ghost/translations/ghost-ar-fisherman-ifrit/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-ar-fisherman-ifrit/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "ageBand": "18+",
+      "contentNotes": [
+        "Includes the Ensorcelled Prince (Black Islands) frame: adultery, mutilation and killing; adult audience only."
+      ]
     },
     {
       "id": "ghost-ar-hasan-badr-al-din",
       "language": "ar",
-      "title": "حسن بدر الدين والجنية",
+      "title": "حكاية الوزير نور الدين مع شمس الدين أخيه",
       "author": "Traditional / anonymous",
       "year": null,
       "origin": "Arab world / composite Thousand Nights tradition",
       "category": "JINN_FOLKLORE",
-      "rights": "EDITION_REVIEW_REQUIRED",
+      "rights": "TRADITIONAL_REVIEW",
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Arabic Wikisource — ألف ليلة وليلة",
         "url": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A",
-        "format": "Wikisource text"
+        "format": "Wikisource text",
+        "sectionHeading": "حكاية الوزير نور الدين مع شمس الدين أخيه",
+        "note": "Verified 2026-10-03: on ar.wikisource the tale begins under this heading in 'ألف ليلة وليلة/الجزء الثاني' (night 20 onward, told by Ja'far after the Three Apples) and runs until 'حكاية الخياط والأحدب'. Not story-level extractable yet (the page holds several tales)."
       },
       "ingest": "wikisource-review",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
         "ur": "PENDING_SOURCE_TRANSLATION"
       },
       "translationFiles": {
@@ -450,7 +481,15 @@
         "ar": "data/story-corpus/ghost/translations/ghost-ar-hasan-badr-al-din/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-ar-hasan-badr-al-din/ur.txt"
       },
-      "translationType": "faithful-translation"
+      "translationType": "faithful-translation",
+      "alternateTitles": [
+        "حكاية نور الدين علي وابنه بدر الدين حسن",
+        "The Tale of Nur al-Din Ali and his Son Badr al-Din Hasan"
+      ],
+      "ageBand": "18+",
+      "contentNotes": [
+        "Sexual content (wedding-night substitution by jinn) and threatened violence; adult audience only."
+      ]
     }
   ],
   "translationPolicy": {

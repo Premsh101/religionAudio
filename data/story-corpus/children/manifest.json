@@ -41,13 +41,17 @@
         "IMAGINATION"
       ],
       "ageBand": "8-12",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/928",
         "rawUrl": "https://www.gutenberg.org/cache/epub/928/pg928.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "CHAPTER I"
+        }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-en-wizard-oz",
@@ -63,13 +67,18 @@
         "COURAGE"
       ],
       "ageBand": "7-12",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/43936",
         "rawUrl": "https://www.gutenberg.org/cache/epub/43936/pg43936.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "INTRODUCTION.",
+          "end": "Transcriber's Notes:"
+        }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-en-jungle-book",
@@ -85,13 +94,18 @@
         "INDIA"
       ],
       "ageBand": "8-12",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/236",
         "rawUrl": "https://www.gutenberg.org/cache/epub/236/pg236.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "Mowgli’s Brothers",
+          "startOccurrence": 2
+        }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-en-just-so",
@@ -107,13 +121,27 @@
         "BEDTIME"
       ],
       "ageBand": "6-10",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/2781",
         "rawUrl": "https://www.gutenberg.org/cache/epub/2781/pg2781.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "HOW THE WHALE GOT HIS THROAT",
+          "startOccurrence": 2,
+          "exclude": [
+            {
+              "start": "HOW THE LEOPARD GOT HIS SPOTS",
+              "end": "THE ELEPHANT’S CHILD",
+              "reason": "Contains a racial slur; excluded from the children's edition (see contentNotes)."
+            }
+          ]
+        }
+      },
+      "contentNotes": [
+        "'How the Leopard Got His Spots' contains a racial slur: that tale is excluded for children (source.extract.exclude)."
+      ]
     },
     {
       "id": "children-en-wind-willows",
@@ -129,13 +157,17 @@
         "ADVENTURE"
       ],
       "ageBand": "8-12",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/27805",
         "rawUrl": "https://www.gutenberg.org/cache/epub/27805/pg27805.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "THE RIVER BANK"
+        }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-en-peter-pan",
@@ -151,14 +183,21 @@
         "PIRATES"
       ],
       "ageBand": "8-12",
-      "rights": "PUBLIC_DOMAIN_SOURCE_EDITION_REVIEW",
+      "rights": "PD_WORK_EDITION_REVIEW",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/16",
         "rawUrl": "https://www.gutenberg.org/cache/epub/16/pg16.txt",
         "format": "plain-text",
-        "note": "Project Gutenberg describes this as matching the 1911 original and public domain in the USA; Peter Pan rights have historical jurisdiction-specific complications, so perform target-market legal review."
-      }
+        "extract": {
+          "start": "Chapter I."
+        }
+      },
+      "rightsNote": "Public domain in the USA (1911). In the UK, the Copyright, Designs and Patents Act 1988 grants Great Ormond Street Hospital a perpetual right to royalties for public performance, commercial publication, broadcast or adaptation of Peter Pan; clear UK use with GOSH before distribution there.",
+      "contentNotes": [
+        "Stereotyped depiction of Native Americans ('redskins', Tiger Lily's tribe); needs an editorial framing note or adaptation decision.",
+        "UK rights: GOSH royalty right (see rightsNote)."
+      ]
     },
     {
       "id": "children-en-secret-garden",
@@ -174,13 +213,19 @@
         "FAMILY"
       ],
       "ageBand": "7-12",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/113",
         "rawUrl": "https://www.gutenberg.org/cache/epub/113/pg113.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "THERE IS NO ONE LEFT"
+        }
+      },
+      "contentNotes": [
+        "Chapter IV: Mary's anti-Indian outburst ('They are not people—they're servants who must salaam to you'); colonial attitudes throughout."
+      ]
     },
     {
       "id": "children-en-little-princess",
@@ -196,20 +241,25 @@
         "RESILIENCE"
       ],
       "ageBand": "8-12",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/146",
         "rawUrl": "https://www.gutenberg.org/cache/epub/146/pg146.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "A Little Princess",
+          "startOccurrence": 2
+        }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-en-aesop",
       "language": "en",
       "title": "The Aesop for Children",
       "author": "Aesop / traditional fables",
-      "year": null,
+      "year": 1919,
       "origin": "Greek / Mediterranean tradition",
       "category": "FABLE",
       "subcategories": [
@@ -218,20 +268,24 @@
         "SHORT_STORY"
       ],
       "ageBand": "6-10",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/19994",
         "rawUrl": "https://www.gutenberg.org/cache/epub/19994/pg19994.txt",
-        "format": "plain-text"
-      }
+        "format": "plain-text",
+        "extract": {
+          "start": "THE WOLF AND THE KID"
+        }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-en-grimm",
       "language": "en",
       "title": "Household Tales by Brothers Grimm",
-      "author": "Jacob Grimm and Wilhelm Grimm",
-      "year": 1812,
+      "author": "Jacob and Wilhelm Grimm / Margaret Hunt (translator)",
+      "year": 1884,
       "origin": "Germany / German folklore",
       "category": "FAIRY_TALE",
       "subcategories": [
@@ -240,14 +294,28 @@
         "MORAL_TALE"
       ],
       "ageBand": "8-14",
-      "rights": "PUBLIC_DOMAIN_WORK",
+      "rights": "PD_WORK",
       "source": {
         "name": "Project Gutenberg",
         "url": "https://www.gutenberg.org/ebooks/5314",
         "rawUrl": "https://www.gutenberg.org/cache/epub/5314/pg5314.txt",
         "format": "plain-text",
-        "note": "The collection includes some darker traditional tales; use story-level audience screening rather than assuming every tale is suitable for every child."
-      }
+        "extract": {
+          "start": "1 The Frog-King, or Iron Henry",
+          "exclude": [
+            {
+              "start": "110 The Jew Among Thorns",
+              "end": "111 The Skilful Huntsman",
+              "reason": "Antisemitic tale (KHM 110); excluded from the corpus."
+            }
+          ]
+        },
+        "note": "Margaret Hunt translation (1884); the original KHM editions date from 1812-1857."
+      },
+      "contentNotes": [
+        "KHM 110 'The Jew Among Thorns' is excluded (antisemitic).",
+        "Violent tales to flag individually for younger listeners: KHM 31 The Girl without Hands, 40 The Robber Bridegroom, 46 Fitcher's Bird, 47 The Juniper-Tree."
+      ]
     },
     {
       "id": "children-hi-eidgah",
@@ -264,13 +332,14 @@
         "MORAL_TALE"
       ],
       "ageBand": "7-12",
-      "rights": "PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
+      "rights": "PD_WORK_EDITION_REVIEW",
       "source": {
         "name": "Hindi Wikisource",
         "url": "https://hi.wikisource.org/wiki/प्रेमचंद_की_सर्वश्रेष्ठ_कहानियां/ईदगाह",
         "format": "Wikisource text",
         "note": "Underlying work is associated with a public-domain author, but verify the exact transcription/edition rights before commercial redistribution."
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-hi-do-bailon-ki-katha",
@@ -287,20 +356,21 @@
         "MORAL_TALE"
       ],
       "ageBand": "7-12",
-      "rights": "PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
+      "rights": "PD_WORK_EDITION_REVIEW",
       "source": {
         "name": "Hindi Wikisource",
-        "url": "https://hi.wikisource.org/wiki/मानसरोवर_२/१२_दो_बैलोँ_की_कथा",
+        "url": "https://hi.wikisource.org/wiki/मानसरोवर_२/१२_दो_बैलों_की_कथा",
         "format": "Wikisource text",
-        "note": "Verify the exact scan/transcription edition before commercial redistribution."
-      }
+        "note": "Verified 2026-10-03: page exists (transcluded from मानसरोवर २.pdf, pp. १४३-१५५). The previous URL used 'बैलोँ' (chandrabindu) and returned 404."
+      },
+      "contentNotes": []
     },
     {
       "id": "children-hi-bade-bhai-sahab",
       "language": "hi",
       "title": "बड़े भाई साहब",
       "author": "मुंशी प्रेमचंद",
-      "year": 1910,
+      "year": 1934,
       "origin": "India",
       "category": "CHILDREN_STORY",
       "subcategories": [
@@ -310,13 +380,44 @@
         "MORAL_TALE"
       ],
       "ageBand": "8-13",
-      "rights": "PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
+      "rights": "PD_WORK_EDITION_REVIEW",
       "source": {
         "name": "Hindi Wikisource",
-        "url": "https://hi.wikisource.org/wiki/प्रेमचंद",
-        "format": "author/source discovery",
-        "note": "Select an exact open scan/transcription before materialization."
-      }
+        "url": "https://hi.wikisource.org/wiki/मानसरोवर_१/बड़े_भाई_साहब",
+        "format": "Wikisource text (scan-backed)",
+        "note": "Verified 2026-10-03: page exists in मानसरोवर १ (transcluded from मानसरोवर १.pdf, pp. ७८-८७; the volume carries a PD-India tag). Verify transcription rights before commercial redistribution."
+      },
+      "contentNotes": []
+    },
+    {
+      "id": "children-en-cabuliwallah",
+      "language": "en",
+      "title": "The Cabuliwallah",
+      "author": "Rabindranath Tagore",
+      "year": 1916,
+      "origin": "Bengal, India",
+      "category": "CHILDREN_STORY",
+      "subcategories": [
+        "FAMILY",
+        "FRIENDSHIP",
+        "PARENT_AND_CHILD"
+      ],
+      "ageBand": "10+",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2518",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2518/pg2518.txt",
+        "format": "plain-text anthology",
+        "collection": "The Hungry Stones, and Other Stories (1916)",
+        "note": "Last story in the volume (\"The Cabuliwallah [The Fruitseller from Cabul]\"); Bengali original 'Kabuliwala' 1892.",
+        "extract": {
+          "start": "THE CABULIWALLAH"
+        }
+      },
+      "contentNotes": [
+        "The fruit-seller stabs a man in a quarrel over a debt and is imprisoned (reported, not graphic)."
+      ]
     },
     {
       "id": "children-ar-sindbad",
@@ -333,13 +434,14 @@
         "TRAVEL"
       ],
       "ageBand": "8-13",
-      "rights": "TRADITIONAL_SOURCE_REVIEW",
+      "rights": "TRADITIONAL_REVIEW",
       "source": {
         "name": "Arabic Wikisource",
         "url": "https://ar.wikisource.org/wiki/ألف_ليلة_وليلة/السندباد_البحري",
         "format": "Wikisource text",
         "note": "Use the identified historical/publicly posted Arabic text; verify edition/transcription licence before commercial redistribution."
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "children-ar-kalila-dimna",
@@ -356,13 +458,72 @@
         "FRAME_TALE"
       ],
       "ageBand": "8-13",
-      "rights": "PUBLIC_DOMAIN_SOURCE_EDITION_REVIEW",
+      "rights": "PD_WORK_EDITION_REVIEW",
       "source": {
         "name": "Arabic Wikisource",
         "url": "https://ar.wikisource.org/wiki/كليلة_ودمنة_(1816)",
         "format": "historical edition",
         "note": "The page identifies an 1816 Paris edition; verify the exact Wikisource transcription/scan licence and any editorial additions."
-      }
+      },
+      "contentNotes": []
+    },
+    {
+      "id": "children-en-jataka-monkey-crocodile",
+      "language": "en",
+      "title": "The Monkey and the Crocodile",
+      "author": "Ellen C. Babbitt (retelling of the Jataka tradition)",
+      "year": 1912,
+      "origin": "India / Buddhist Jataka tradition",
+      "category": "FABLE",
+      "subcategories": [
+        "BUDDHA",
+        "ANIMALS",
+        "WISDOM"
+      ],
+      "ageBand": "5-9",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/62514",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62514/pg62514.txt",
+        "format": "plain-text",
+        "collection": "Jataka Tales (1912)",
+        "extract": {
+          "start": "THE MONKEY AND THE CROCODILE",
+          "end": "II"
+        }
+      },
+      "movedFrom": "mythology manifest (myth-en-jataka-monkey-crocodile)",
+      "contentNotes": []
+    },
+    {
+      "id": "children-en-jataka-banyan-deer",
+      "language": "en",
+      "title": "The Banyan Deer",
+      "author": "Ellen C. Babbitt (retelling of the Jataka tradition)",
+      "year": 1912,
+      "origin": "India / Buddhist Jataka tradition",
+      "category": "FABLE",
+      "subcategories": [
+        "BUDDHA",
+        "ANIMALS",
+        "SELF_SACRIFICE"
+      ],
+      "ageBand": "5-9",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/62514",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/62514/pg62514.txt",
+        "format": "plain-text",
+        "collection": "Jataka Tales (1912)",
+        "extract": {
+          "start": "THE BANYAN DEER",
+          "end": "XIII"
+        }
+      },
+      "movedFrom": "mythology manifest (myth-en-jataka-banyan-deer)",
+      "contentNotes": []
     }
   ]
 }

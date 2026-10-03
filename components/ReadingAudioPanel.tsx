@@ -46,6 +46,8 @@ export default function ReadingAudioPanel({
   const [preparing,setPreparing]=useState<{done:number;total:number}|null>(null);
   const waitingRef=useRef(false);
   const segmentCountRef=useRef(0);
+  const pendingResumeRef=useRef<{sequence:number;positionMs:number}|null>(null);
+  const [resumeWaiting,setResumeWaiting]=useState<number|null>(null);
   const current=segments[index];
 
   const lastSaveRef=useRef(0);
@@ -98,6 +100,7 @@ export default function ReadingAudioPanel({
     let first=true;
     segmentCountRef.current=0;
     waitingRef.current=false;
+    pendingResumeRef.current=null;
     async function load(){
       if(first){setLoading(true);setError("");}
       try{
@@ -130,12 +133,16 @@ export default function ReadingAudioPanel({
         if(first&&nextSegments.length){
           const server=progressRes&&progressRes.ok?((await progressRes.json()).progress as Progress|null):null;
           const p=server||getLocalAudioProgress(assetId)||(target?getLocalTargetProgress(target.kind,target.id):null);
-          if(p&&!(server?.completedAt)){
-            const nextIndex=Math.min(nextSegments.length-1,Math.max(0,(p.currentSequence||1)-1));
-            setIndex(nextIndex);
-            resumePositionRef.current=Math.max(0,p.positionMs||0);
-          }
+          if(p&&!(server?.completedAt))pendingResumeRef.current={sequence:Math.max(1,p.currentSequence||1),positionMs:Math.max(0,p.positionMs||0)};
         }
+        const pending=pendingResumeRef.current;
+        if(pending&&nextSegments.length>=pending.sequence){
+          // The saved part exists (possibly only now, after switching to a voice still being generated).
+          pendingResumeRef.current=null;
+          resumePositionRef.current=pending.positionMs;
+          setIndex(pending.sequence-1);
+        }
+        setResumeWaiting(pendingResumeRef.current?pendingResumeRef.current.sequence:null);
         if(!ready)timer=setTimeout(load,5000);
       }catch(e){
         if(!cancelled)setError(e instanceof Error?e.message:"Narration unavailable.");
@@ -250,6 +257,7 @@ export default function ReadingAudioPanel({
     </div>
 
     {error ? <div className="border-b border-amber-300/10 bg-amber-300/[0.03] px-5 py-4 text-sm text-amber-100">{error}</div> : null}
+    {!error&&resumeWaiting ? <div className="border-b border-white/10 bg-amber-300/[0.04] px-5 py-3 text-xs text-amber-100">Your place is part {resumeWaiting}. It will jump there as soon as that part is ready in this voice.</div> : null}
     {!error&&preparing ? <div className="border-b border-white/10 bg-white/[0.02] px-5 py-3 text-xs text-zinc-400">
       Preparing narration for the first time: {preparing.done} of {preparing.total||"…"} parts ready. {preparing.done?"You can start listening now.":"The first part is usually ready within a minute or two."} After this it is saved and plays instantly for everyone.
     </div> : null}

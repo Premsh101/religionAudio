@@ -57,9 +57,10 @@ Academic/literary sources confirm that early Hindi and Urdu detective fiction fo
 
 Use:
 
+    python scripts/ingest/crime_corpus.py --cache-dir /tmp/pgcache --dry-run   # per-story word counts
     python scripts/ingest/crime_corpus.py
 
-The ingestion script is deliberately rights-aware. It will not copy a source just because a URL works; the record must permit ingestion.
+The ingestion script is deliberately rights-aware. It will not copy a source just because a URL works; the record must permit ingestion. Each Project Gutenberg record carries explicit `source.extract` start/end markers so only that story is materialized (see `../README.md`). Every record also has an `ageBand` and `contentNotes`; the Arabic Nights tales are adult-only.
 
 ## Translation
 

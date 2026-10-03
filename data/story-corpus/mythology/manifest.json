@@ -41,15 +41,26 @@
         "HUMANITY"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "PROMETHEUS AND PANDORA",
+          "end": "CHAPTER III"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-apollo-daphne",
@@ -65,15 +76,26 @@
         "LOVE"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "APOLLO AND DAPHNE",
+          "end": "PYRAMUS AND THISBE"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-midas",
@@ -89,15 +111,26 @@
         "TRANSFORMATION"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "MIDAS--BAUCIS AND PHILEMON",
+          "end": "BAUCIS AND PHILEMON"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-cupid-psyche",
@@ -113,15 +146,26 @@
         "TRANSFORMATION"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "CUPID AND PSYCHE",
+          "end": "CHAPTER XII"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-perseus-medusa",
@@ -137,15 +181,26 @@
         "MONSTERS"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "PERSEUS AND MEDUSA",
+          "end": "CHAPTER XVI"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-golden-fleece",
@@ -161,15 +216,26 @@
         "ARGONAUTS"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "THE GOLDEN FLEECE",
+          "end": "MEDEA AND AESON"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-hercules",
@@ -185,15 +251,26 @@
         "GODS"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "HERCULES",
+          "end": "HEBE AND GANYMEDE"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-orpheus-eurydice",
@@ -209,15 +286,26 @@
         "MUSIC"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "ORPHEUS AND EURYDICE",
+          "end": "ARISTAEUS, THE BEE-KEEPER"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-ulysses-cyclopes",
@@ -233,15 +321,27 @@
         "ADVENTURE"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/4928",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/4928/pg4928.txt",
+        "format": "plain-text",
+        "collection": "Bulfinch's Mythology",
+        "extract": {
+          "start": "They next arrived at the country of the Cyclopes. The Cyclopes",
+          "end": "Ulysses next arrived at the island of Aeolus. To this monarch"
+        },
+        "sourceSection": "Chapter XXIX, the Cyclopes episode of 'Return of Ulysses'"
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-odin-creation",
@@ -257,15 +357,26 @@
         "COSMOLOGY"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/28497",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/28497/pg28497.txt",
+        "format": "plain-text",
+        "collection": "Myths of the Norsemen: From the Eddas and Sagas",
+        "extract": {
+          "start": "CHAPTER I: THE BEGINNING",
+          "end": "CHAPTER II: ODIN"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-thor",
@@ -281,15 +392,27 @@
         "ADVENTURE"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/28497",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/28497/pg28497.txt",
+        "format": "plain-text",
+        "collection": "Myths of the Norsemen: From the Eddas and Sagas",
+        "extract": {
+          "start": "Thor's Journey to Joetun-heim",
+          "end": "The Worship of Thor"
+        },
+        "sourceSection": "Chapter IV sections 'Thor's Journey to Joetun-heim' through 'Thor and Geirrod'"
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-baldur",
@@ -305,15 +428,26 @@
         "GODS"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/28497",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/28497/pg28497.txt",
+        "format": "plain-text",
+        "collection": "Myths of the Norsemen: From the Eddas and Sagas",
+        "extract": {
+          "start": "CHAPTER XXI: BALDER",
+          "end": "CHAPTER XXII: LOKI"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-loki",
@@ -329,15 +463,26 @@
         "GODS"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/28497",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/28497/pg28497.txt",
+        "format": "plain-text",
+        "collection": "Myths of the Norsemen: From the Eddas and Sagas",
+        "extract": {
+          "start": "CHAPTER XXII: LOKI",
+          "end": "CHAPTER XXIII: THE GIANTS"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-ragnarok",
@@ -353,22 +498,35 @@
         "COSMOLOGY"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/28497",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/28497/pg28497.txt",
+        "format": "plain-text",
+        "collection": "Myths of the Norsemen: From the Eddas and Sagas",
+        "extract": {
+          "start": "CHAPTER XXVIII: THE TWILIGHT OF THE GODS",
+          "end": "CHAPTER XXIX: GREEK AND NORTHERN MYTHOLOGIES"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": [
+        "Apocalyptic violence."
+      ]
     },
     {
       "id": "myth-en-ra-creation",
       "language": "en",
       "title": "The Legend of the Creation",
       "author": "E. A. Wallis Budge",
-      "year": 1911,
+      "year": 1912,
       "origin": "Ancient Egyptian tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -377,22 +535,33 @@
         "COSMOLOGY"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/9411",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/9411/pg9411.txt",
+        "format": "plain-text",
+        "collection": "Legends of the Gods",
+        "extract": {
+          "start": "THE HISTORY OF CREATION--A.",
+          "end": "THE LEGEND OF THE DESTRUCTION OF MANKIND."
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-destruction-mankind",
       "language": "en",
       "title": "The Destruction of Mankind",
       "author": "E. A. Wallis Budge",
-      "year": 1911,
+      "year": 1912,
       "origin": "Ancient Egyptian tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -401,22 +570,34 @@
         "HUMANITY"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/9411",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/9411/pg9411.txt",
+        "format": "plain-text",
+        "collection": "Legends of the Gods",
+        "extract": {
+          "start": "THE LEGEND OF THE DESTRUCTION OF MANKIND.",
+          "startOccurrence": 2,
+          "end": "THE LEGEND OF RA AND ISIS."
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-ra-snakebite",
       "language": "en",
       "title": "Ra and the Snake-Bite",
       "author": "E. A. Wallis Budge",
-      "year": 1911,
+      "year": 1912,
       "origin": "Ancient Egyptian tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -425,22 +606,35 @@
         "MAGIC"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/9411",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/9411/pg9411.txt",
+        "format": "plain-text",
+        "collection": "Legends of the Gods",
+        "extract": {
+          "start": "THE LEGEND OF RA AND ISIS.",
+          "startOccurrence": 2,
+          "end": "THE LEGEND OF HORUS OF BEHUTET AND THE WINGED DISK."
+        },
+        "sourceStoryTitle": "The Legend of Ra and Isis (contents: The Legend of Ra and the Snake-bite)"
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-horus-winged-disk",
       "language": "en",
       "title": "Horus of Edfu and the Winged Disk",
       "author": "E. A. Wallis Budge",
-      "year": 1911,
+      "year": 1912,
       "origin": "Ancient Egyptian tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -449,22 +643,33 @@
         "DIVINE_POWER"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/9411",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/9411/pg9411.txt",
+        "format": "plain-text",
+        "collection": "Legends of the Gods",
+        "extract": {
+          "start": "THE LEGEND OF HORUS OF BEHUTET AND THE WINGED DISK.",
+          "end": "A HYMN TO OSIRIS AND A LEGEND OF THE ORIGIN OF HORUS."
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-origin-horus",
       "language": "en",
       "title": "The Origin of Horus",
       "author": "E. A. Wallis Budge",
-      "year": 1911,
+      "year": 1912,
       "origin": "Ancient Egyptian tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -473,22 +678,33 @@
         "OSIRIS"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/9411",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/9411/pg9411.txt",
+        "format": "plain-text",
+        "collection": "Legends of the Gods",
+        "extract": {
+          "start": "A HYMN TO OSIRIS AND A LEGEND OF THE ORIGIN OF HORUS.",
+          "end": "A LEGEND OF PTAH NEFER-HETEP AND THE PRINCESS OF BEKHTEN."
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-isis-osiris",
       "language": "en",
       "title": "Isis and Osiris",
       "author": "E. A. Wallis Budge",
-      "year": 1911,
+      "year": 1912,
       "origin": "Ancient Egyptian tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -497,24 +713,35 @@
         "AFTERLIFE"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/9411",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/9411/pg9411.txt",
+        "format": "plain-text",
+        "collection": "Legends of the Gods",
+        "extract": {
+          "start": "THE HISTORY OF ISIS AND OSIRIS,"
+        },
+        "note": "Runs to the end of the book: Budge's translation/summary of Plutarch's De Iside et Osiride."
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-gita-krishna-arjuna",
       "language": "en",
-      "title": "Krishna and Arjuna — The Bhagavad-Gita",
+      "title": "The Bhagavad-Gita (The Song Celestial)",
       "author": "Sir Edwin Arnold",
       "year": 1885,
       "origin": "India / Hindu tradition",
-      "category": "MYTHOLOGY",
+      "category": "SCRIPTURE",
       "subcategories": [
         "KRISHNA",
         "ARJUNA",
@@ -522,15 +749,30 @@
         "WISDOM"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2388",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt",
+        "format": "plain-text",
+        "collection": "The Song Celestial; or, Bhagavad-Gita",
+        "extract": {
+          "start": "CHAPTER I",
+          "end": "[FN#1]  Some repetitionary lines are here omitted."
+        },
+        "note": "Edwin Arnold's 1885 verse translation omits some lines/shlokas (see his footnotes)."
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "scriptureNote": "Living Hindu scripture, not mythology: kept in this manifest only because the corpus has no scripture manifest yet. Present as sacred text (devotional/teaching register), never as myth or fiction; move to a dedicated scripture collection when one exists.",
+      "contentNotes": [
+        "Sacred scripture; battlefield setting and discussion of killing in war (dharma)."
+      ]
     },
     {
       "id": "myth-en-savitri-satyavan",
@@ -546,15 +788,27 @@
         "DEATH"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/12333",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/12333/pg12333.txt",
+        "format": "plain-text",
+        "collection": "The Mahabharata, Book 3: Vana Parva (part 2), tr. K. M. Ganguli",
+        "extract": {
+          "start": "SECTION CCLXLI",
+          "end": "SECTION CCLXLVIII"
+        },
+        "sourceSection": "Pativrata-mahatmya Parva, Sections CCXCI-CCXCVII (printed in this file as CCLXLI-CCLXLVII)"
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-nala-damayanti",
@@ -570,15 +824,27 @@
         "FATE"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/11894",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/11894/pg11894.txt",
+        "format": "plain-text",
+        "collection": "The Mahabharata, Book 3: Vana Parva (part 1), tr. K. M. Ganguli",
+        "extract": {
+          "start": "SECTION LII",
+          "end": "SECTION LXXX"
+        },
+        "sourceSection": "Nalopakhyana Parva, Sections LII-LXXIX"
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-draupadi-swayamvara",
@@ -594,67 +860,27 @@
         "ROYALTY"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "SOURCE_LANGUAGE",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "PENDING_SOURCE_TRANSLATION"
-      }
-    },
-    {
-      "id": "myth-en-jataka-monkey-crocodile",
-      "language": "en",
-      "title": "The Monkey and the Crocodile",
-      "author": "Ellen C. Babbitt",
-      "year": 1918,
-      "origin": "Buddhist Jataka tradition",
-      "category": "MYTHOLOGY",
-      "subcategories": [
-        "BUDDHA",
-        "ANIMALS",
-        "WISDOM"
-      ],
-      "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
+      "rights": "PD_WORK",
       "source": {
-        "sourceSection": "6-10"
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/7864",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/7864/pg7864.txt",
+        "format": "plain-text",
+        "collection": "The Mahabharata, Book 1: Adi Parva, tr. K. M. Ganguli",
+        "extract": {
+          "start": "SECTION CLXXXVI",
+          "end": "SECTION CLXLV"
+        },
+        "sourceSection": "Swayamvara Parva, Sections CLXXXVI-CXCIV (printed as CLXXXVI-CLXLIV)"
       },
-      "ingest": "project-gutenberg-source-edition",
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
-    },
-    {
-      "id": "myth-en-jataka-banyan-deer",
-      "language": "en",
-      "title": "The Banyan Deer",
-      "author": "Ellen C. Babbitt",
-      "year": 1918,
-      "origin": "Buddhist Jataka tradition",
-      "category": "MYTHOLOGY",
-      "subcategories": [
-        "BUDDHA",
-        "ANIMALS",
-        "SELF_SACRIFICE"
-      ],
-      "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {
-        "sourceSection": "6-10"
       },
-      "ingest": "project-gutenberg-source-edition",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "SOURCE_LANGUAGE",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      "contentNotes": []
     },
     {
       "id": "myth-en-lady-fountain",
@@ -670,15 +896,26 @@
         "QUEST"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/5160",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/5160/pg5160.txt",
+        "format": "plain-text",
+        "collection": "The Mabinogion, tr. Lady Charlotte Guest",
+        "extract": {
+          "start": "THE LADY OF THE FOUNTAIN",
+          "end": "PEREDUR THE SON OF EVRAWC"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-branwen",
@@ -694,22 +931,33 @@
         "TRAGEDY"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/5160",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/5160/pg5160.txt",
+        "format": "plain-text",
+        "collection": "The Mabinogion, tr. Lady Charlotte Guest",
+        "extract": {
+          "start": "BRANWEN THE DAUGHTER OF LLYR",
+          "end": "MANAWYDDAN THE SON OF LLYR"
+        }
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-kalevala-sampo",
       "language": "en",
       "title": "The Sampo Quest",
-      "author": "Elias Lönnrot",
-      "year": 1849,
+      "author": "Elias Lönnrot (compiler) / John Martin Crawford (translator)",
+      "year": 1888,
       "origin": "Finland / Karelian-Finnish tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -718,22 +966,34 @@
         "MAGIC"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/5186",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/5186/pg5186.txt",
+        "format": "plain-text",
+        "collection": "Kalevala: the Epic Poem of Finland, tr. John Martin Crawford",
+        "extract": {
+          "start": "RUNE XXXIX.",
+          "end": "RUNE XLIV."
+        },
+        "sourceSection": "Runes XXXIX-XLIII (Wainamoinen's sailing to the capture and loss of the Sampo)"
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     },
     {
       "id": "myth-en-kalevala-creation",
       "language": "en",
       "title": "The Creation of the World — Kalevala",
-      "author": "Elias Lönnrot",
-      "year": 1849,
+      "author": "Elias Lönnrot (compiler) / John Martin Crawford (translator)",
+      "year": 1888,
       "origin": "Finland / Karelian-Finnish tradition",
       "category": "MYTHOLOGY",
       "subcategories": [
@@ -742,15 +1002,27 @@
         "KALEVALA"
       ],
       "ageBand": "12+",
-      "rights": "SOURCE_REVIEW",
-      "source": {},
-      "ingest": "project-gutenberg-source-edition",
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/5186",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/5186/pg5186.txt",
+        "format": "plain-text",
+        "collection": "Kalevala: the Epic Poem of Finland, tr. John Martin Crawford",
+        "extract": {
+          "start": "RUNE I.",
+          "end": "RUNE II."
+        },
+        "sourceSection": "Rune I (Birth of Wainamoinen; creation from the duck's eggs)"
+      },
+      "ingest": "project-gutenberg-extract",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
-      }
+      },
+      "contentNotes": []
     }
   ]
 }

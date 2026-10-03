@@ -2,10 +2,10 @@
 
 | Language | Region / tradition | Initial material |
 |---|---|---|
-| Hindi | India | Premchand's भूत; later Hindi retellings of वेताल पच्चीसी and सिंहासन बत्तीसी |
-| English | England / Ireland / British literary tradition | The Canterville Ghost, The Monkey's Paw, The Red Room, The Signal-Man, Irish Banshee tradition |
+| Hindi | India | Premchand's भूत; later Hindi retellings of वेताल पच्चीसी (सिंहासन बत्तीसी now lives in the folklore corpus) |
+| English | England / Ireland / British India / Bengal | The Canterville Ghost, The Monkey's Paw, The Red Room, The Signal-Man, Irish Banshee tradition, The Phantom 'Rickshaw, The Hungry Stones |
 | Arabic | Arab world / Thousand Nights tradition | حكاية التاجر مع العفريت, حكاية الصياد مع العفريت; later edition-reviewed jinn tales |
-| Urdu | Delhi/Lucknow / Indo-Persian storytelling | فسانۂ عجائب, باغ و بہار / قصۂ چار درویش, later داستان امیر حمزہ / طلسم ہوش ربا |
+| Urdu | Delhi/Lucknow / Indo-Persian storytelling | none at present: the Urdu dastan records moved to the folklore corpus; Dastan-e Amir Hamza removed until a specific open edition is cited |
 
 ## Product taxonomy
 

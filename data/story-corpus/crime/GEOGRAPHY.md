@@ -3,8 +3,8 @@
 | Region / tradition | Initial stories | Role in the corpus |
 |---|---|---|
 | United States | Poe: Rue Morgue, Marie Rogêt, Purloined Letter, Gold-Bug | Early detective, puzzle, coded-clue and crime fiction |
-| United Kingdom | Sherlock Holmes: Red-Headed League, Boscombe Valley Mystery, Five Orange Pips, Speckled Band, Blue Carbuncle | Canonical Victorian detective and theft/murder mysteries |
-| France | Arsène Lupin: The Arrest of Arsène Lupin | Gentleman-thief / heist tradition |
+| United Kingdom | Sherlock Holmes: A Scandal in Bohemia, Red-Headed League, Boscombe Valley Mystery, Five Orange Pips, Speckled Band, Blue Carbuncle; Chesterton: The Blue Cross | Canonical Victorian/Edwardian detective and theft/murder mysteries |
+| France | Arsène Lupin: The Arrest of Arsène Lupin (Morehead translation, PG 6133) | Gentleman-thief / heist tradition |
 | India / Hindi | Gopal Ram Gahmari: Gerua Baba, Bhojpur ki Thagi | Early Hindi jasoosi and deception fiction |
 | India / Urdu | Mirza Hadi Ruswa: Khooni Shahzada, Khooni Bhed | Early Urdu suspense and detective-related fiction |
 | Arabic literary tradition | The Three Apples, The Hunchback | Early murder mystery, mistaken accusation and chain-of-confession structures |

@@ -11,7 +11,7 @@
       "storyId": "ghost-en-canterville",
       "title": "The Canterville Ghost",
       "sourceLanguage": "en",
-      "sourceStatus": "SOURCE_ONLY",
+      "sourceStatus": "PG_EXTRACT",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
@@ -29,7 +29,7 @@
       "storyId": "ghost-en-monkeys-paw",
       "title": "The Monkey's Paw",
       "sourceLanguage": "en",
-      "sourceStatus": "SOURCE_ONLY",
+      "sourceStatus": "PG_EXTRACT",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
@@ -47,7 +47,7 @@
       "storyId": "ghost-en-red-room",
       "title": "The Red Room",
       "sourceLanguage": "en",
-      "sourceStatus": "SOURCE_ONLY",
+      "sourceStatus": "PG_EXTRACT",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
@@ -65,7 +65,7 @@
       "storyId": "ghost-en-signal-man",
       "title": "The Signal-Man",
       "sourceLanguage": "en",
-      "sourceStatus": "SOURCE_ONLY",
+      "sourceStatus": "PG_EXTRACT",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "SOURCE_LANGUAGE",
@@ -83,10 +83,10 @@
       "storyId": "ghost-en-banshee",
       "title": "The Banshee",
       "sourceLanguage": "en",
-      "sourceStatus": "SOURCE_ONLY",
+      "sourceStatus": "PG_EXTRACT",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
       },
@@ -98,10 +98,46 @@
       }
     },
     {
+      "storyId": "ghost-en-phantom-rickshaw",
+      "title": "The Phantom 'Rickshaw",
+      "sourceLanguage": "en",
+      "sourceStatus": "PG_EXTRACT",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "expectedFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-phantom-rickshaw/ur.txt"
+      }
+    },
+    {
+      "storyId": "ghost-en-hungry-stones",
+      "title": "The Hungry Stones",
+      "sourceLanguage": "en",
+      "sourceStatus": "PG_EXTRACT",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "expectedFiles": {
+        "hi": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/hi.txt",
+        "en": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/en.txt",
+        "ar": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/ar.txt",
+        "ur": "data/story-corpus/ghost/translations/ghost-en-hungry-stones/ur.txt"
+      }
+    },
+    {
       "storyId": "ghost-hi-bhoot-premchand",
       "title": "भूत",
       "sourceLanguage": "hi",
-      "sourceStatus": "SOURCE_ONLY",
+      "sourceStatus": "TEXT_PRESENT",
       "translations": {
         "hi": "SOURCE_LANGUAGE",
         "en": "PENDING_SOURCE_TRANSLATION",
@@ -121,7 +157,7 @@
       "sourceLanguage": "hi",
       "sourceStatus": "SOURCE_ONLY",
       "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
+        "hi": "SOURCE_LANGUAGE",
         "en": "PENDING_SOURCE_TRANSLATION",
         "ar": "PENDING_SOURCE_TRANSLATION",
         "ur": "PENDING_SOURCE_TRANSLATION"
@@ -131,78 +167,6 @@
         "en": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/en.txt",
         "ar": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/ar.txt",
         "ur": "data/story-corpus/ghost/translations/ghost-hi-vetal-pachisi/ur.txt"
-      }
-    },
-    {
-      "storyId": "ghost-hi-singhasan-battisi",
-      "title": "सिंहासन बत्तीसी",
-      "sourceLanguage": "hi",
-      "sourceStatus": "SOURCE_ONLY",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "PENDING_SOURCE_TRANSLATION"
-      },
-      "expectedFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-hi-singhasan-battisi/ur.txt"
-      }
-    },
-    {
-      "storyId": "ghost-ur-fasana-e-ajaib",
-      "title": "فسانۂ عجائب",
-      "sourceLanguage": "ur",
-      "sourceStatus": "SOURCE_ONLY",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "SOURCE_LANGUAGE"
-      },
-      "expectedFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-ur-fasana-e-ajaib/ur.txt"
-      }
-    },
-    {
-      "storyId": "ghost-ur-bagh-o-bahar",
-      "title": "باغ و بہار / قصۂ چار درویش",
-      "sourceLanguage": "ur",
-      "sourceStatus": "SOURCE_ONLY",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "SOURCE_LANGUAGE"
-      },
-      "expectedFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-ur-bagh-o-bahar/ur.txt"
-      }
-    },
-    {
-      "storyId": "ghost-ur-dastan-amir-hamza",
-      "title": "داستان امیر حمزہ / طلسم ہوش ربا",
-      "sourceLanguage": "ur",
-      "sourceStatus": "SOURCE_ONLY",
-      "translations": {
-        "hi": "PENDING_SOURCE_TRANSLATION",
-        "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
-        "ur": "PENDING_SOURCE_TRANSLATION"
-      },
-      "expectedFiles": {
-        "hi": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/hi.txt",
-        "en": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/en.txt",
-        "ar": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/ar.txt",
-        "ur": "data/story-corpus/ghost/translations/ghost-ur-dastan-amir-hamza/ur.txt"
       }
     },
     {
@@ -243,13 +207,13 @@
     },
     {
       "storyId": "ghost-ar-hasan-badr-al-din",
-      "title": "حسن بدر الدين والجنية",
+      "title": "حكاية الوزير نور الدين مع شمس الدين أخيه",
       "sourceLanguage": "ar",
       "sourceStatus": "SOURCE_ONLY",
       "translations": {
         "hi": "PENDING_SOURCE_TRANSLATION",
         "en": "PENDING_SOURCE_TRANSLATION",
-        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
         "ur": "PENDING_SOURCE_TRANSLATION"
       },
       "expectedFiles": {

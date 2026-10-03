@@ -1,12 +1,31 @@
 {
   "version": 1,
-  "targetLanguages": ["hi","en","ar","ur"],
+  "targetLanguages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
   "policy": "Every story has a four-language target slot. A target is COMPLETE only after source-locked translation plus semantic QA; source-only records remain pending until the canonical source text is materialized.",
   "records": [
-    "crime-en-rue-morgue","crime-en-marie-roget","crime-en-purloined-letter","crime-en-gold-bug",
-    "crime-en-red-headed-league","crime-en-boscombe-valley","crime-en-five-orange-pips","crime-en-speckled-band",
-    "crime-en-blue-carbuncle","crime-en-arsene-lupin-arrest","crime-hi-gerua-baba","crime-hi-bhojpur-ki-thagi",
-    "crime-ur-khooni-shahzada","crime-ur-khooni-bhed","crime-ar-three-apples","crime-ar-hunchback"
+    "crime-en-rue-morgue",
+    "crime-en-marie-roget",
+    "crime-en-purloined-letter",
+    "crime-en-gold-bug",
+    "crime-en-red-headed-league",
+    "crime-en-boscombe-valley",
+    "crime-en-five-orange-pips",
+    "crime-en-speckled-band",
+    "crime-en-blue-carbuncle",
+    "crime-en-arsene-lupin-arrest",
+    "crime-hi-gerua-baba",
+    "crime-hi-bhojpur-ki-thagi",
+    "crime-ur-khooni-shahzada",
+    "crime-ur-khooni-bhed",
+    "crime-ar-three-apples",
+    "crime-ar-hunchback",
+    "crime-en-scandal-bohemia",
+    "crime-en-blue-cross"
   ],
   "expectedLayout": "data/story-corpus/crime/translations/<storyId>/<lang>.txt",
   "qaLayout": "data/story-corpus/crime/translations/<storyId>/<lang>.qa.json"

@@ -2,10 +2,20 @@
   "theme": "thriller-suspense-adventure",
   "version": 1,
   "policy": "Rights-first. Full text is stored only after the exact source edition is verified as public domain or otherwise openly licensed.",
-  "languages": ["hi","en","ar","ur"],
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
   "translationPolicy": {
     "mode": "SOURCE_LOCKED_FAITHFUL_TRANSLATION",
-    "targetLanguages": ["hi","en","ar","ur"],
+    "targetLanguages": [
+      "hi",
+      "en",
+      "ar",
+      "ur"
+    ],
     "rules": [
       "Translate the complete source passage; never summarize.",
       "Preserve every event, clue, threat, escape, revelation, relationship, location, number, date and outcome.",
@@ -18,200 +28,477 @@
   },
   "records": [
     {
-      "id":"thriller-en-jekyll-hyde",
-      "language":"en",
-      "title":"Strange Case of Dr Jekyll and Mr Hyde",
-      "author":"Robert Louis Stevenson",
-      "year":1886,
-      "origin":"Scotland / London setting",
-      "category":"THRILLER",
-      "subcategories":["PSYCHOLOGICAL","GOTHIC","MYSTERY"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/43","rawUrl":"https://www.gutenberg.org/cache/epub/43/pg43.txt","format":"plain-text"},
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-jekyll-hyde",
+      "language": "en",
+      "title": "Strange Case of Dr Jekyll and Mr Hyde",
+      "author": "Robert Louis Stevenson",
+      "year": 1886,
+      "origin": "Scotland / London setting",
+      "category": "THRILLER",
+      "subcategories": [
+        "PSYCHOLOGICAL",
+        "GOTHIC",
+        "MYSTERY"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/43",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/43/pg43.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "STORY OF THE DOOR",
+          "startOccurrence": 2
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-en-dracula",
-      "language":"en",
-      "title":"Dracula",
-      "author":"Bram Stoker",
-      "year":1897,
-      "origin":"Ireland / England / Transylvania setting",
-      "category":"THRILLER",
-      "subcategories":["GOTHIC","HORROR","SURVIVAL","MYSTERY"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/345","rawUrl":"https://www.gutenberg.org/cache/epub/345/pg345.txt","format":"plain-text"},
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-dracula",
+      "language": "en",
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "year": 1897,
+      "origin": "Ireland / England / Transylvania setting",
+      "category": "THRILLER",
+      "subcategories": [
+        "GOTHIC",
+        "HORROR",
+        "SURVIVAL",
+        "MYSTERY"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/345",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/345/pg345.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "How these papers have been placed in sequence will be made manifest in",
+          "end": "THE END"
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "16+",
+      "contentNotes": [
+        "Gothic horror violence, predatory and sexualised vampire scenes; 16+."
+      ]
     },
     {
-      "id":"thriller-en-frankenstein",
-      "language":"en",
-      "title":"Frankenstein; or, The Modern Prometheus",
-      "author":"Mary Shelley",
-      "year":1818,
-      "origin":"United Kingdom / Europe",
-      "category":"THRILLER",
-      "subcategories":["GOTHIC","SCIENCE_FICTION","SURVIVAL","MYSTERY"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/84","rawUrl":"https://www.gutenberg.org/cache/epub/84/pg84.txt","format":"plain-text"},
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-frankenstein",
+      "language": "en",
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "year": 1818,
+      "origin": "United Kingdom / Europe",
+      "category": "THRILLER",
+      "subcategories": [
+        "GOTHIC",
+        "SCIENCE_FICTION",
+        "SURVIVAL",
+        "MYSTERY"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/84",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/84/pg84.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "Letter 1",
+          "startOccurrence": 2
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-en-woman-in-white",
-      "language":"en",
-      "title":"The Woman in White",
-      "author":"Wilkie Collins",
-      "year":1860,
-      "origin":"United Kingdom / England",
-      "category":"THRILLER",
-      "subcategories":["MYSTERY","CONSPIRACY","GOTHIC","IDENTITY"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/583","rawUrl":"https://www.gutenberg.org/cache/epub/583/pg583.txt","format":"plain-text"},
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-woman-in-white",
+      "language": "en",
+      "title": "The Woman in White",
+      "author": "Wilkie Collins",
+      "year": 1860,
+      "origin": "United Kingdom / England",
+      "category": "THRILLER",
+      "subcategories": [
+        "MYSTERY",
+        "CONSPIRACY",
+        "GOTHIC",
+        "IDENTITY"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/583",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/583/pg583.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "THE STORY BEGUN BY WALTER HARTRIGHT",
+          "startOccurrence": 2
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-en-moonstone",
-      "language":"en",
-      "title":"The Moonstone",
-      "author":"Wilkie Collins",
-      "year":1868,
-      "origin":"United Kingdom / India and England",
-      "category":"THRILLER",
-      "subcategories":["MYSTERY","THEFT","CONSPIRACY","DETECTIVE"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/155","rawUrl":"https://www.gutenberg.org/cache/epub/155/pg155.txt","format":"plain-text"},
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-moonstone",
+      "language": "en",
+      "title": "The Moonstone",
+      "author": "Wilkie Collins",
+      "year": 1868,
+      "origin": "United Kingdom / India and England",
+      "category": "THRILLER",
+      "subcategories": [
+        "MYSTERY",
+        "THEFT",
+        "CONSPIRACY",
+        "DETECTIVE"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/155",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/155/pg155.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "PROLOGUE",
+          "startOccurrence": 2
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": [
+        "Colonial portrayal of India and of the three Brahmin guardians; opens with the 1799 storming of Seringapatam."
+      ]
     },
     {
-      "id":"thriller-en-thirty-nine-steps",
-      "language":"en",
-      "title":"The Thirty-Nine Steps",
-      "author":"John Buchan",
-      "year":1915,
-      "origin":"United Kingdom / London and Scotland",
-      "category":"THRILLER",
-      "subcategories":["ESPIONAGE","CONSPIRACY","CHASE","ADVENTURE"],
-      "rights":"PUBLIC_DOMAIN_SOURCE_RIGHTS_REVIEW",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/558","rawUrl":"https://www.gutenberg.org/cache/epub/558/pg558.txt","format":"plain-text","note":"Project Gutenberg marks this edition public domain in the USA; confirm broader jurisdiction status before commercial redistribution."},
-      "ingest":"project-gutenberg-jurisdiction-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-thirty-nine-steps",
+      "language": "en",
+      "title": "The Thirty-Nine Steps",
+      "author": "John Buchan",
+      "year": 1915,
+      "origin": "United Kingdom / London and Scotland",
+      "category": "THRILLER",
+      "subcategories": [
+        "ESPIONAGE",
+        "CONSPIRACY",
+        "CHASE",
+        "ADVENTURE"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/558",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/558/pg558.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "Chapter I."
+        }
+      },
+      "ingest": "project-gutenberg-jurisdiction-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": [
+        "Antisemitic conspiracy passages (Scudder's account in chapter 1); needs an editorial framing note."
+      ]
     },
     {
-      "id":"thriller-en-lodger",
-      "language":"en",
-      "title":"The Lodger",
-      "author":"Marie Belloc Lowndes",
-      "year":1913,
-      "origin":"United Kingdom / London",
-      "category":"THRILLER",
-      "subcategories":["PSYCHOLOGICAL","SERIAL_MURDER","SUSPENSE"],
-      "rights":"PUBLIC_DOMAIN_SOURCE_RIGHTS_REVIEW",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/2014","rawUrl":"https://www.gutenberg.org/cache/epub/2014/pg2014.txt","format":"plain-text","note":"Project Gutenberg marks the work public domain in the USA; verify intended distribution jurisdictions."},
-      "ingest":"project-gutenberg-jurisdiction-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-lodger",
+      "language": "en",
+      "title": "The Lodger",
+      "author": "Marie Belloc Lowndes",
+      "year": 1913,
+      "origin": "United Kingdom / London",
+      "category": "THRILLER",
+      "subcategories": [
+        "PSYCHOLOGICAL",
+        "SERIAL_MURDER",
+        "SUSPENSE"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2014",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2014/pg2014.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "CHAPTER I.",
+          "startOccurrence": 2
+        }
+      },
+      "ingest": "project-gutenberg-jurisdiction-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "16+",
+      "contentNotes": [
+        "Serial murders of women (Jack the Ripper analogue); 16+."
+      ]
     },
     {
-      "id":"thriller-en-moreau",
-      "language":"en",
-      "title":"The Island of Doctor Moreau",
-      "author":"H. G. Wells",
-      "year":1896,
-      "origin":"England / fictional island",
-      "category":"THRILLER",
-      "subcategories":["SCIENCE_FICTION","SURVIVAL","HORROR","MYSTERY"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Project Gutenberg","url":"https://www.gutenberg.org/ebooks/159","rawUrl":"https://www.gutenberg.org/cache/epub/159/pg159.txt","format":"plain-text"},
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-en-moreau",
+      "language": "en",
+      "title": "The Island of Doctor Moreau",
+      "author": "H. G. Wells",
+      "year": 1896,
+      "origin": "England / fictional island",
+      "category": "THRILLER",
+      "subcategories": [
+        "SCIENCE_FICTION",
+        "SURVIVAL",
+        "HORROR",
+        "MYSTERY"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/159",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/159/pg159.txt",
+        "format": "plain-text",
+        "extract": {
+          "start": "INTRODUCTION.",
+          "end": "NOTE."
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "16+",
+      "contentNotes": [
+        "Vivisection and animal cruelty, graphic violence; 16+."
+      ]
     },
     {
-      "id":"thriller-hi-chandrakanta",
-      "language":"hi",
-      "title":"चन्द्रकान्ता",
-      "author":"देवकीनन्दन खत्री",
-      "year":1888,
-      "origin":"India",
-      "category":"THRILLER",
-      "subcategories":["FANTASY","ADVENTURE","SECRET_PASSAGES","AYYARI"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Hindi Wikisource","url":"https://hi.wikisource.org/wiki/चित्र:Chandrakanta_Upanyas_Vol_2_-_Devaki_Nandan_Khatri.djvu","format":"public-domain scan","note":"Wikisource identifies the 1888 source work as public domain; use the exact source scan, not later commercial editions."},
-      "ingest":"wikisource-review",
-      "translations":{"hi":"SOURCE_LANGUAGE","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-hi-chandrakanta",
+      "language": "hi",
+      "title": "चन्द्रकान्ता",
+      "author": "देवकीनन्दन खत्री",
+      "year": 1888,
+      "origin": "India",
+      "category": "THRILLER",
+      "subcategories": [
+        "FANTASY",
+        "ADVENTURE",
+        "SECRET_PASSAGES",
+        "AYYARI"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Hindi Wikisource",
+        "url": "https://hi.wikisource.org/wiki/चित्र:Chandrakanta_Upanyas_Vol_2_-_Devaki_Nandan_Khatri.djvu",
+        "format": "public-domain scan",
+        "note": "Wikisource identifies the 1888 source work as public domain; use the exact source scan, not later commercial editions."
+      },
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "SOURCE_LANGUAGE",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-hi-chandrakanta-santati",
-      "language":"hi",
-      "title":"चन्द्रकान्ता सन्तति",
-      "author":"देवकीनन्दन खत्री",
-      "year":1893,
-      "origin":"India",
-      "category":"THRILLER",
-      "subcategories":["FANTASY","ADVENTURE","SECRET_PLOTS","AYYARI"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{"name":"Hindi Wikisource","url":"https://hi.wikisource.org/wiki/चित्र:चन्द्रकांता_सन्तति_-_देवकीनन्दन_खत्री.pdf","format":"public-domain scan","note":"Wikisource identifies the 1893 work as public domain; later publisher formatting/editions are not automatically cleared."},
-      "ingest":"wikisource-review",
-      "translations":{"hi":"SOURCE_LANGUAGE","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-hi-chandrakanta-santati",
+      "language": "hi",
+      "title": "चन्द्रकान्ता सन्तति",
+      "author": "देवकीनन्दन खत्री",
+      "year": 1893,
+      "origin": "India",
+      "category": "THRILLER",
+      "subcategories": [
+        "FANTASY",
+        "ADVENTURE",
+        "SECRET_PLOTS",
+        "AYYARI"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Hindi Wikisource",
+        "url": "https://hi.wikisource.org/wiki/चित्र:चन्द्रकांता_सन्तति_-_देवकीनन्दन_खत्री.pdf",
+        "format": "public-domain scan",
+        "note": "Wikisource identifies the 1893 work as public domain; later publisher formatting/editions are not automatically cleared."
+      },
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "SOURCE_LANGUAGE",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-ur-firdous-bareen",
-      "language":"ur",
-      "title":"فردوس بریں",
-      "author":"عبد الحلیم شرر",
-      "year":1899,
-      "origin":"Lucknow / Central Asia historical setting",
-      "category":"THRILLER",
-      "subcategories":["HISTORICAL","ADVENTURE","CONSPIRACY","DANGER"],
-      "rights":"PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
-      "source":{"name":"Urdu Wikisource","url":"https://ur.wikisource.org/wiki/فردوس_بریں/فردوس_بریں","format":"Wikisource text","note":"Wikisource hosts the text; verify the exact transcription/edition rights and publication year before commercial redistribution."},
-      "ingest":"wikisource-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"SOURCE_LANGUAGE"}
+      "id": "thriller-ur-firdous-bareen",
+      "language": "ur",
+      "title": "فردوس بریں",
+      "author": "عبد الحلیم شرر",
+      "year": 1899,
+      "origin": "Lucknow / Central Asia historical setting",
+      "category": "THRILLER",
+      "subcategories": [
+        "HISTORICAL",
+        "ADVENTURE",
+        "CONSPIRACY",
+        "DANGER"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Urdu Wikisource",
+        "url": "https://ur.wikisource.org/wiki/فردوس_بریں/فردوس_بریں",
+        "format": "Wikisource text",
+        "note": "Wikisource hosts the text; verify the exact transcription/edition rights and publication year before commercial redistribution."
+      },
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "SOURCE_LANGUAGE"
+      },
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-ur-fasana-azad",
-      "language":"ur",
-      "title":"فسانہ آزاد",
-      "author":"رتن ناتھ سرشار",
-      "year":1878,
-      "origin":"Lucknow / North India",
-      "category":"THRILLER",
-      "subcategories":["ADVENTURE","SOCIAL_SATIRE","MYSTERY","TRAVEL"],
-      "rights":"PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
-      "source":{"name":"Urdu literary historical source discovery","url":"https://ur.wikisource.org/","format":"source-discovery","note":"Exact open transcription/scan still requires edition verification before ingestion."},
-      "ingest":"wikisource-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"SOURCE_LANGUAGE"}
+      "id": "thriller-ur-fasana-azad",
+      "language": "ur",
+      "title": "فسانہ آزاد",
+      "author": "رتن ناتھ سرشار",
+      "year": 1878,
+      "origin": "Lucknow / North India",
+      "category": "ADVENTURE",
+      "subcategories": [
+        "ADVENTURE",
+        "SOCIAL_SATIRE",
+        "MYSTERY",
+        "TRAVEL"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Urdu literary historical source discovery",
+        "url": "https://ur.wikisource.org/",
+        "format": "source-discovery",
+        "note": "Exact open transcription/scan still requires edition verification before ingestion."
+      },
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "SOURCE_LANGUAGE"
+      },
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-ar-city-of-brass",
-      "language":"ar",
-      "title":"مدينة النحاس",
-      "author":"Traditional / anonymous",
-      "year":null,
-      "origin":"Arabic literary tradition / One Thousand and One Nights",
-      "category":"THRILLER",
-      "subcategories":["ADVENTURE","MYSTERY","SUPERNATURAL","QUEST"],
-      "rights":"TRADITIONAL_SOURCE_REVIEW",
-      "source":{"name":"Arabic Wikisource / One Thousand and One Nights","url":"https://ar.wikisource.org/wiki/ألف_ليلة_وليلة/","format":"Wikisource transcription/scan","note":"Traditional narrative core is public-domain material; verify the exact Arabic edition and transcription provenance."},
-      "ingest":"wikisource-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"SOURCE_LANGUAGE","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-ar-city-of-brass",
+      "language": "ar",
+      "title": "مدينة النحاس",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arabic literary tradition / One Thousand and One Nights",
+      "category": "ADVENTURE",
+      "subcategories": [
+        "ADVENTURE",
+        "MYSTERY",
+        "SUPERNATURAL",
+        "QUEST"
+      ],
+      "rights": "RIGHTS_REVIEW",
+      "source": {
+        "name": "Arabic Wikisource / One Thousand and One Nights",
+        "url": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9",
+        "format": "source-discovery",
+        "note": "Checked 2026-10-03: ar.wikisource transcribes only parts 1-4 of this edition (nights 1-~102 and the closing Ma'ruf tale) and the Bulaq 1935 scan index covers volume 1 only, so this tale has no verified open Arabic source yet. Catalog-only until an identified historical edition is found."
+      },
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"thriller-ar-ebony-horse",
-      "language":"ar",
-      "title":"الحصان المسحور",
-      "author":"Traditional / anonymous",
-      "year":null,
-      "origin":"Arabic literary tradition / One Thousand and One Nights",
-      "category":"THRILLER",
-      "subcategories":["ADVENTURE","FANTASY","ESCAPE","MYSTERY"],
-      "rights":"TRADITIONAL_SOURCE_REVIEW",
-      "source":{"name":"Arabic Wikisource / One Thousand and One Nights","url":"https://ar.wikisource.org/wiki/ألف_ليلة_وليلة/","format":"Wikisource transcription/scan","note":"Use only an identified historical/open edition; do not substitute a modern copyrighted translation."},
-      "ingest":"wikisource-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"SOURCE_LANGUAGE","ur":"PENDING_SOURCE_TRANSLATION"}
+      "id": "thriller-ar-ebony-horse",
+      "language": "ar",
+      "title": "حكاية الفرس الأبنوس",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arabic literary tradition / One Thousand and One Nights",
+      "category": "THRILLER",
+      "subcategories": [
+        "ADVENTURE",
+        "FANTASY",
+        "ESCAPE",
+        "MYSTERY"
+      ],
+      "rights": "RIGHTS_REVIEW",
+      "source": {
+        "name": "Arabic Wikisource / One Thousand and One Nights",
+        "url": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9",
+        "format": "source-discovery",
+        "note": "Checked 2026-10-03: ar.wikisource transcribes only parts 1-4 of this edition (nights 1-~102 and the closing Ma'ruf tale) and the Bulaq 1935 scan index covers volume 1 only, so this tale has no verified open Arabic source yet. Catalog-only until an identified historical edition is found."
+      },
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     }
   ]
 }

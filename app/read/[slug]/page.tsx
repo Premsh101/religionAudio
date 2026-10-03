@@ -15,7 +15,7 @@ function prefixForChapter(workTitle:string,chapter:number){
   return workTitle==="Dhammapada" ? "dhp"+chapter+":" : workTitle+" "+chapter+":";
 }
 
-export default async function WorkReaderPage({params,searchParams}:{params:Promise<{slug:string}>;searchParams:Promise<{chapter?:string}>}){
+export default async function WorkReaderPage({params,searchParams}:{params:Promise<{slug:string}>;searchParams:Promise<{chapter?:string;at?:string}>}){
   const {slug}=await params;
   const query=await searchParams;
   const prisma=getPrisma();
@@ -34,7 +34,9 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
   if(!work) return <main className="min-h-screen bg-zinc-950"><AppHeader/><EmptyState title="Book not found." /></main>;
 
   const chapters=[...new Set(work.passages.map(p=>chapterFromReference(p.reference)).filter((value):value is number=>value!==null))];
-  const requested=Number(query.chapter);
+  const at=Number(query.at);
+  const atPassage=Number.isInteger(at)?work.passages.find(p=>p.sequence===at):undefined;
+  const requested=atPassage?chapterFromReference(atPassage.reference)??Number(query.chapter):Number(query.chapter);
   const chapter=chapters.includes(requested)?requested:(chapters[0]||1);
   const prefix=prefixForChapter(work.title,chapter);
   const passages=await prisma.passage.findMany({
@@ -45,7 +47,7 @@ export default async function WorkReaderPage({params,searchParams}:{params:Promi
 
   return <WorkReader work={{
     id:work.id,title:work.title,slug,language:work.language,translator:work.translator,edition:work.edition,
-    rightsStatus:work.rightsStatus,source:work.source,passages,chapters,currentChapter:chapter,audio:{female:work.audioAssets.find(a=>a.voiceId==="female")?.id||null,male:work.audioAssets.find(a=>a.voiceId==="male")?.id||null}
+    rightsStatus:work.rightsStatus,source:work.source,passages,chapters,currentChapter:chapter,totalPassages:work.passages.length,initialSequence:atPassage?.sequence??null,audio:{female:work.audioAssets.find(a=>a.voiceId==="female")?.id||null,male:work.audioAssets.find(a=>a.voiceId==="male")?.id||null}
   }}/>;
 }
 

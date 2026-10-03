@@ -8,16 +8,17 @@ import NarrationPlayer, { useVoicePreference, type NarrationAssets } from "../..
 import { recordHistory } from "../../../lib/client/history";
 
 type Passage={id:string;reference:string;sequence:number;text:string};
-type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audio:NarrationAssets};
+type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audio:NarrationAssets;totalPassages:number;initialSequence:number|null};
 
 export default function WorkReader({work}:{work:Work}){
-  const [active,setActive]=useState(work.passages[0]?.sequence||1);
+  const [active,setActive]=useState(work.initialSequence&&work.passages.some(p=>p.sequence===work.initialSequence)?work.initialSequence:(work.passages[0]?.sequence||1));
   const [voice,setVoice]=useVoicePreference();
   const [playing,setPlaying]=useState(false);
   const [busy,setBusy]=useState(false);
   const [bookmarked,setBookmarked]=useState(false);
   const current=work.passages.find(p=>p.sequence===active)||work.passages[0];
-  const total=work.passages.length;
+  // Progress is measured against the whole book, not just the chapter on screen.
+  const total=work.totalPassages||work.passages.length;
   const currentChapterIndex=work.chapters.indexOf(work.currentChapter);
   const previousChapter=currentChapterIndex>0?work.chapters[currentChapterIndex-1]:null;
   const nextChapter=currentChapterIndex>=0&&currentChapterIndex<work.chapters.length-1?work.chapters[currentChapterIndex+1]:null;
@@ -34,7 +35,8 @@ export default function WorkReader({work}:{work:Work}){
       if(progressRes.ok){
         const data=await progressRes.json();
         const item=data.works?.find((row:any)=>row.work?.slug===work.slug);
-        if(item?.currentSequence) setActive(Math.min(total,Math.max(1,item.currentSequence)));
+        // An explicit resume link (?at=) wins; otherwise jump to the saved passage if it is in this chapter.
+        if(!work.initialSequence&&item?.currentSequence&&work.passages.some((p:{sequence:number})=>p.sequence===item.currentSequence)) setActive(item.currentSequence);
       }
       if(bookmarkRes.ok){
         const data=await bookmarkRes.json();
@@ -45,7 +47,7 @@ export default function WorkReader({work}:{work:Work}){
   },[work.slug,total]);
 
   async function saveProgress(sequence:number){
-    recordHistory({...historyTarget,progressPercent:total?(sequence/total)*100:0,completed:sequence>=total});
+    recordHistory({...historyTarget,progressPercent:total?(sequence/total)*100:0,completed:sequence>=total,passageSequence:sequence});
     try{
       await fetch("/api/user/progress",{
         method:"POST",headers:{"Content-Type":"application/json"},

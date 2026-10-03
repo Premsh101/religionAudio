@@ -2,10 +2,20 @@
   "theme": "crime-detective-mystery",
   "version": 1,
   "policy": "Rights-first. Full text is stored only after the exact source edition is verified as public domain or otherwise openly licensed.",
-  "languages": ["hi","en","ar","ur"],
+  "languages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
   "translationPolicy": {
     "mode": "SOURCE_LOCKED_FAITHFUL_TRANSLATION",
-    "targetLanguages": ["hi","en","ar","ur"],
+    "targetLanguages": [
+      "hi",
+      "en",
+      "ar",
+      "ur"
+    ],
     "rules": [
       "Translate the complete source passage; never summarize.",
       "Preserve every event, clue, inference, motive, relationship, location, number, date, object, and outcome.",
@@ -18,320 +28,615 @@
   },
   "records": [
     {
-      "id":"crime-en-rue-morgue",
-      "language":"en",
-      "title":"The Murders in the Rue Morgue",
-      "author":"Edgar Allan Poe",
-      "year":1841,
-      "origin":"United States / Paris setting",
-      "category":"CRIME_STORY",
-      "subcategories":["MURDER_MYSTERY","DETECTIVE"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/2147",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/2147/pg2147.txt",
-        "format":"plain-text anthology",
-        "extractTitle":"THE MURDERS IN THE RUE MORGUE"
+      "id": "crime-en-rue-morgue",
+      "language": "en",
+      "title": "The Murders in the Rue Morgue",
+      "author": "Edgar Allan Poe",
+      "year": 1841,
+      "origin": "United States / Paris setting",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MURDER_MYSTERY",
+        "DETECTIVE"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2147",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2147/pg2147.txt",
+        "format": "plain-text anthology",
+        "extract": {
+          "start": "THE MURDERS IN THE RUE MORGUE",
+          "startOccurrence": 2,
+          "end": "THE MYSTERY OF MARIE ROGET.(*1)"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": [
+        "Graphic description of two brutal murders (mutilated bodies)."
+      ]
     },
     {
-      "id":"crime-en-marie-roget",
-      "language":"en",
-      "title":"The Mystery of Marie Rogêt",
-      "author":"Edgar Allan Poe",
-      "year":1842,
-      "origin":"United States / Paris setting",
-      "category":"CRIME_STORY",
-      "subcategories":["MURDER_MYSTERY","DETECTIVE","ARMCHAIR_DETECTIVE"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/2147",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/2147/pg2147.txt",
-        "format":"plain-text anthology",
-        "extractTitle":"THE MYSTERY OF MARIE ROGET"
+      "id": "crime-en-marie-roget",
+      "language": "en",
+      "title": "The Mystery of Marie Rogêt",
+      "author": "Edgar Allan Poe",
+      "year": 1842,
+      "origin": "United States / Paris setting",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MURDER_MYSTERY",
+        "DETECTIVE",
+        "ARMCHAIR_DETECTIVE"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2147",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2147/pg2147.txt",
+        "format": "plain-text anthology",
+        "extract": {
+          "start": "THE MYSTERY OF MARIE ROGET.(*1)",
+          "startOccurrence": 2,
+          "end": "THE BALLOON-HOAX"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": [
+        "Murder of a young woman; discussion of the condition of her body; implied sexual assault."
+      ]
     },
     {
-      "id":"crime-en-purloined-letter",
-      "language":"en",
-      "title":"The Purloined Letter",
-      "author":"Edgar Allan Poe",
-      "year":1844,
-      "origin":"United States / Paris setting",
-      "category":"CRIME_STORY",
-      "subcategories":["THEFT","DETECTIVE","DUPIN"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/2148",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/2148/pg2148.txt",
-        "format":"plain-text anthology",
-        "extractTitle":"THE PURLOINED LETTER"
+      "id": "crime-en-purloined-letter",
+      "language": "en",
+      "title": "The Purloined Letter",
+      "author": "Edgar Allan Poe",
+      "year": 1844,
+      "origin": "United States / Paris setting",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "THEFT",
+        "DETECTIVE",
+        "DUPIN"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2148",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2148/pg2148.txt",
+        "format": "plain-text anthology",
+        "extract": {
+          "start": "THE PURLOINED LETTER",
+          "startOccurrence": 2,
+          "end": "THE THOUSAND-AND-SECOND TALE OF SCHEHERAZADE"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"crime-en-gold-bug",
-      "language":"en",
-      "title":"The Gold-Bug",
-      "author":"Edgar Allan Poe",
-      "year":1843,
-      "origin":"United States / South Carolina setting",
-      "category":"CRIME_STORY",
-      "subcategories":["TREASURE_MYSTERY","CODE","ADVENTURE"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/2147",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/2147/pg2147.txt",
-        "format":"plain-text anthology",
-        "extractTitle":"THE GOLD-BUG"
+      "id": "crime-en-gold-bug",
+      "language": "en",
+      "title": "The Gold-Bug",
+      "author": "Edgar Allan Poe",
+      "year": 1843,
+      "origin": "United States / South Carolina setting",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "TREASURE_MYSTERY",
+        "CODE",
+        "ADVENTURE"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/2147",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/2147/pg2147.txt",
+        "format": "plain-text anthology",
+        "extract": {
+          "start": "THE GOLD-BUG",
+          "startOccurrence": 2,
+          "end": "FOUR BEASTS IN ONE—THE HOMO-CAMELEOPARD"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "13+",
+      "contentNotes": [
+        "Racial slur and minstrel-style dialect in the depiction of Jupiter (a formerly enslaved Black servant); 13+ and needs an editorial framing note."
+      ]
     },
     {
-      "id":"crime-en-red-headed-league",
-      "language":"en",
-      "title":"The Red-Headed League",
-      "author":"Arthur Conan Doyle",
-      "year":1891,
-      "origin":"United Kingdom / London",
-      "category":"CRIME_STORY",
-      "subcategories":["HEIST","DETECTIVE","SHERLOCK_HOLMES"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/1661",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
-        "format":"plain-text collection",
-        "extractTitle":"THE RED-HEADED LEAGUE"
+      "id": "crime-en-red-headed-league",
+      "language": "en",
+      "title": "The Red-Headed League",
+      "author": "Arthur Conan Doyle",
+      "year": 1891,
+      "origin": "United Kingdom / London",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "HEIST",
+        "DETECTIVE",
+        "SHERLOCK_HOLMES"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/1661",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+        "format": "plain-text collection",
+        "extract": {
+          "start": "II. THE RED-HEADED LEAGUE",
+          "end": "III. A CASE OF IDENTITY"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "10+",
+      "contentNotes": []
     },
     {
-      "id":"crime-en-boscombe-valley",
-      "language":"en",
-      "title":"The Boscombe Valley Mystery",
-      "author":"Arthur Conan Doyle",
-      "year":1891,
-      "origin":"United Kingdom / Herefordshire",
-      "category":"CRIME_STORY",
-      "subcategories":["MURDER_MYSTERY","DETECTIVE","SHERLOCK_HOLMES"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/1661",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
-        "format":"plain-text collection",
-        "extractTitle":"THE BOSCOMBE VALLEY MYSTERY"
+      "id": "crime-en-boscombe-valley",
+      "language": "en",
+      "title": "The Boscombe Valley Mystery",
+      "author": "Arthur Conan Doyle",
+      "year": 1891,
+      "origin": "United Kingdom / Herefordshire",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MURDER_MYSTERY",
+        "DETECTIVE",
+        "SHERLOCK_HOLMES"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/1661",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+        "format": "plain-text collection",
+        "extract": {
+          "start": "IV. THE BOSCOMBE VALLEY MYSTERY",
+          "end": "V. THE FIVE ORANGE PIPS"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"crime-en-five-orange-pips",
-      "language":"en",
-      "title":"The Five Orange Pips",
-      "author":"Arthur Conan Doyle",
-      "year":1891,
-      "origin":"United Kingdom / England",
-      "category":"CRIME_STORY",
-      "subcategories":["THREAT","MYSTERY","SHERLOCK_HOLMES"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/1661",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
-        "format":"plain-text collection",
-        "extractTitle":"THE FIVE ORANGE PIPS"
+      "id": "crime-en-five-orange-pips",
+      "language": "en",
+      "title": "The Five Orange Pips",
+      "author": "Arthur Conan Doyle",
+      "year": 1891,
+      "origin": "United Kingdom / England",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "THREAT",
+        "MYSTERY",
+        "SHERLOCK_HOLMES"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/1661",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+        "format": "plain-text collection",
+        "extract": {
+          "start": "V. THE FIVE ORANGE PIPS",
+          "end": "VI. THE MAN WITH THE TWISTED LIP"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": [
+        "Ku Klux Klan as the antagonist; references to post-Civil-War racial violence."
+      ]
     },
     {
-      "id":"crime-en-speckled-band",
-      "language":"en",
-      "title":"The Adventure of the Speckled Band",
-      "author":"Arthur Conan Doyle",
-      "year":1892,
-      "origin":"United Kingdom / Surrey",
-      "category":"CRIME_STORY",
-      "subcategories":["MURDER_MYSTERY","DETECTIVE","SHERLOCK_HOLMES"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/1661",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
-        "format":"plain-text collection",
-        "extractTitle":"THE ADVENTURE OF THE SPECKLED BAND"
+      "id": "crime-en-speckled-band",
+      "language": "en",
+      "title": "The Adventure of the Speckled Band",
+      "author": "Arthur Conan Doyle",
+      "year": 1892,
+      "origin": "United Kingdom / Surrey",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MURDER_MYSTERY",
+        "DETECTIVE",
+        "SHERLOCK_HOLMES"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/1661",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+        "format": "plain-text collection",
+        "extract": {
+          "start": "VIII. THE ADVENTURE OF THE SPECKLED BAND",
+          "end": "IX. THE ADVENTURE OF THE ENGINEER’S THUMB"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"crime-en-blue-carbuncle",
-      "language":"en",
-      "title":"The Adventure of the Blue Carbuncle",
-      "author":"Arthur Conan Doyle",
-      "year":1892,
-      "origin":"United Kingdom / London",
-      "category":"CRIME_STORY",
-      "subcategories":["THEFT","DETECTIVE","SHERLOCK_HOLMES"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/1661",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
-        "format":"plain-text collection",
-        "extractTitle":"THE ADVENTURE OF THE BLUE CARBUNCLE"
+      "id": "crime-en-blue-carbuncle",
+      "language": "en",
+      "title": "The Adventure of the Blue Carbuncle",
+      "author": "Arthur Conan Doyle",
+      "year": 1892,
+      "origin": "United Kingdom / London",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "THEFT",
+        "DETECTIVE",
+        "SHERLOCK_HOLMES"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/1661",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+        "format": "plain-text collection",
+        "extract": {
+          "start": "VII. THE ADVENTURE OF THE BLUE CARBUNCLE",
+          "end": "VIII. THE ADVENTURE OF THE SPECKLED BAND"
+        }
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "10+",
+      "contentNotes": []
     },
     {
-      "id":"crime-en-arsene-lupin-arrest",
-      "language":"en",
-      "title":"The Arrest of Arsène Lupin",
-      "author":"Maurice Leblanc",
-      "year":1907,
-      "origin":"France / English translation source",
-      "category":"CRIME_STORY",
-      "subcategories":["BURGLARY","HEIST","THIEF"],
-      "rights":"PUBLIC_DOMAIN_WORK",
-      "source":{
-        "name":"Project Gutenberg",
-        "url":"https://www.gutenberg.org/ebooks/4014",
-        "rawUrl":"https://www.gutenberg.org/cache/epub/4014/pg4014.txt",
-        "format":"plain-text translation",
-        "extractTitle":"THE ARREST OF ARSÈNE LUPIN",
-        "originalLanguage":"fr",
-        "note":"The Project Gutenberg text is an older English translation; verify the exact translation edition before commercial redistribution outside the USA."
+      "id": "crime-en-arsene-lupin-arrest",
+      "language": "en",
+      "title": "The Arrest of Arsène Lupin",
+      "author": "Maurice Leblanc",
+      "year": 1905,
+      "origin": "France / English translation source",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "BURGLARY",
+        "HEIST",
+        "THIEF"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/6133",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/6133/pg6133.txt",
+        "format": "plain-text anthology",
+        "extract": {
+          "start": "I. The Arrest of Arsène Lupin",
+          "startOccurrence": 2,
+          "end": "II. Arsène Lupin in Prison"
+        },
+        "edition": "The Extraordinary Adventures of Arsène Lupin, Gentleman-Burglar, tr. George Morehead (1910), from Arsène Lupin, gentleman-cambrioleur (1907); story first published in Je sais tout, 1905."
       },
-      "ingest":"project-gutenberg",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"SOURCE_LANGUAGE","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "10+",
+      "contentNotes": []
     },
     {
-      "id":"crime-hi-gerua-baba",
-      "language":"hi",
-      "title":"गेरुआ बाबा",
-      "author":"गोपाल राम गहमरी",
-      "year":1929,
-      "origin":"India",
-      "category":"CRIME_STORY",
-      "subcategories":["DETECTIVE","THEFT","INDIAN_JASOOSI"],
-      "rights":"PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
-      "source":{
-        "name":"Hindi Kahani / open literary index",
-        "url":"https://hindikahani.hindi-kavita.com/HK-Gopalram-Gahmari.php",
-        "format":"web text / edition review",
-        "edition":"Gerua Baba"
+      "id": "crime-hi-gerua-baba",
+      "language": "hi",
+      "title": "गेरुआ बाबा",
+      "author": "गोपाल राम गहमरी",
+      "year": 1929,
+      "origin": "India",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "DETECTIVE",
+        "THEFT",
+        "INDIAN_JASOOSI"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Hindi Kahani / open literary index",
+        "url": "https://hindikahani.hindi-kavita.com/HK-Gopalram-Gahmari.php",
+        "format": "web text / edition review",
+        "edition": "Gerua Baba"
       },
-      "ingest":"rights-reviewed-web-source",
-      "translations":{"hi":"SOURCE_LANGUAGE","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "rights-reviewed-web-source",
+      "translations": {
+        "hi": "SOURCE_LANGUAGE",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"crime-hi-bhojpur-ki-thagi",
-      "language":"hi",
-      "title":"भोजपुर की ठगी",
-      "author":"गोपाल राम गहमरी",
-      "year":1911,
-      "origin":"India / Bhojpur",
-      "category":"CRIME_STORY",
-      "subcategories":["CON","DECEPTION","INDIAN_JASOOSI"],
-      "rights":"PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
-      "source":{
-        "name":"Hindi literary index / historical editions",
-        "url":"https://hindikahani.hindi-kavita.com/HK-Gopalram-Gahmari.php",
-        "format":"source-discovery",
-        "edition":"Bhojpur ki Thagi"
+      "id": "crime-hi-bhojpur-ki-thagi",
+      "language": "hi",
+      "title": "भोजपुर की ठगी",
+      "author": "गोपाल राम गहमरी",
+      "year": 1911,
+      "origin": "India / Bhojpur",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "CON",
+        "DECEPTION",
+        "INDIAN_JASOOSI"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Hindi literary index / historical editions",
+        "url": "https://hindikahani.hindi-kavita.com/HK-Gopalram-Gahmari.php",
+        "format": "source-discovery",
+        "edition": "Bhojpur ki Thagi"
       },
-      "ingest":"rights-reviewed-web-source",
-      "translations":{"hi":"SOURCE_LANGUAGE","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "rights-reviewed-web-source",
+      "translations": {
+        "hi": "SOURCE_LANGUAGE",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "12+",
+      "contentNotes": []
     },
     {
-      "id":"crime-ur-khooni-shahzada",
-      "language":"ur",
-      "title":"خونی شہزادہ",
-      "author":"مرزا ہادی رسوا",
-      "year":1921,
-      "origin":"Lucknow, India",
-      "category":"CRIME_STORY",
-      "subcategories":["MYSTERY","THRILLER","URDU_DETECTIVE_FICTION"],
-      "rights":"PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
-      "source":{
-        "name":"Rekhta",
-        "url":"https://rekhta.org/ebooks/detail/khooni-shahzada-mirza-hadi-ruswa-ebooks",
-        "format":"scanned ebook",
-        "note":"Underlying work is old and author died in 1931; verify the rights of the specific scan/edition before redistribution."
+      "id": "crime-ur-khooni-shahzada",
+      "language": "ur",
+      "title": "خونی شہزادہ",
+      "author": "مرزا ہادی رسوا",
+      "year": 1921,
+      "origin": "Lucknow, India",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MYSTERY",
+        "THRILLER",
+        "URDU_DETECTIVE_FICTION"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Rekhta",
+        "url": "https://www.rekhta.org/ebooks/detail/khoni-shahzada-mirza-hadi-ruswa-ebooks",
+        "format": "scanned ebook",
+        "note": "Verified 2026-10-03: Rekhta lists 'Khoni Shahzada' by Mirza Hadi Ruswa, Educational Trust, Lucknow, 1921, 227 pp. (contributor: Khuda Bakhsh Library). The previous URL slug redirected to the generic ebooks page. Ruswa died in 1931; verify scan rights and whether the novel is an original or an adaptation.",
+        "edition": "Educational Trust, Lucknow, 1921"
       },
-      "ingest":"edition-rights-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"SOURCE_LANGUAGE"}
+      "ingest": "edition-rights-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "SOURCE_LANGUAGE"
+      },
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
-      "id":"crime-ur-khooni-bhed",
-      "language":"ur",
-      "title":"خونی بھید",
-      "author":"مرزا ہادی رسوا",
-      "year":1924,
-      "origin":"Lucknow, India",
-      "category":"CRIME_STORY",
-      "subcategories":["MYSTERY","URDU_DETECTIVE_FICTION"],
-      "rights":"PUBLIC_DOMAIN_WORK_SOURCE_EDITION_REVIEW",
-      "source":{
-        "name":"Rekhta",
-        "url":"https://rekhta.org/ebooks/detail/khooni-bhed-mirza-hadi-ruswa-ebooks",
-        "format":"scanned ebook",
-        "note":"Underlying work is old and author died in 1931; verify the rights of the specific scan/edition before redistribution."
+      "id": "crime-ur-khooni-bhed",
+      "language": "ur",
+      "title": "خونی بھید",
+      "author": "مرزا ہادی رسوا",
+      "year": 1924,
+      "origin": "Lucknow, India",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MYSTERY",
+        "URDU_DETECTIVE_FICTION"
+      ],
+      "rights": "PD_WORK_EDITION_REVIEW",
+      "source": {
+        "name": "Rekhta",
+        "url": "https://www.rekhta.org/ebooks/detail/khooni-bhed-mirza-hadi-ruswa-ebooks",
+        "format": "scanned ebook",
+        "note": "Underlying work is old and author died in 1931; verify the rights of the specific scan/edition before redistribution."
       },
-      "ingest":"edition-rights-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"PENDING_SOURCE_TRANSLATION","ur":"SOURCE_LANGUAGE"}
+      "ingest": "edition-rights-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "SOURCE_LANGUAGE"
+      },
+      "ageBand": "13+",
+      "contentNotes": []
     },
     {
-      "id":"crime-ar-three-apples",
-      "language":"ar",
-      "title":"قصة التفاحات الثلاث",
-      "author":"Traditional / anonymous",
-      "year":null,
-      "origin":"Arabic literary tradition / Abbasid Baghdad frame",
-      "category":"CRIME_STORY",
-      "subcategories":["MURDER_MYSTERY","DETECTIVE","FOLK_TALE"],
-      "rights":"TRADITIONAL_SOURCE_REVIEW",
-      "source":{
-        "name":"Arabic Wikisource / One Thousand and One Nights",
-        "url":"https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A",
-        "format":"Wikisource scan/transcription",
-        "sourceStoryTitle":"The Tale of the Three Apples / Tale of the Murdered Young Woman"
+      "id": "crime-ar-three-apples",
+      "language": "ar",
+      "title": "قصة التفاحات الثلاث",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arabic literary tradition / Abbasid Baghdad frame",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MURDER_MYSTERY",
+        "DETECTIVE",
+        "FOLK_TALE"
+      ],
+      "rights": "TRADITIONAL_REVIEW",
+      "source": {
+        "name": "Arabic Wikisource / One Thousand and One Nights",
+        "url": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%A3%D9%88%D9%84",
+        "format": "Wikisource scan/transcription",
+        "sourceStoryTitle": "The Tale of the Three Apples / Tale of the Murdered Young Woman",
+        "continuesAt": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A",
+        "note": "Verified 2026-10-03: the tale begins in night 19 at the end of 'ألف ليلة وليلة/الجزء الأول' (Harun al-Rashid and the old fisherman) and concludes in night 20 at the start of 'الجزء الثاني', before 'حكاية الوزير نور الدين مع شمس الدين أخيه'."
       },
-      "ingest":"wikisource-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"SOURCE_LANGUAGE","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "18+",
+      "contentNotes": [
+        "Murder and dismemberment of a wife over suspected adultery; adult audience only."
+      ]
     },
     {
-      "id":"crime-ar-hunchback",
-      "language":"ar",
-      "title":"حكاية الأحدب",
-      "author":"Traditional / anonymous",
-      "year":null,
-      "origin":"Arabic literary tradition / One Thousand and One Nights",
-      "category":"CRIME_STORY",
-      "subcategories":["MURDER_MYSTERY","MISDIRECTED_ACCUSES","FOLK_TALE"],
-      "rights":"TRADITIONAL_SOURCE_REVIEW",
-      "source":{
-        "name":"Arabic Wikisource / One Thousand and One Nights",
-        "url":"https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A",
-        "format":"Wikisource scan/transcription",
-        "sourceStoryTitle":"The Hunchback"
+      "id": "crime-ar-hunchback",
+      "language": "ar",
+      "title": "حكاية الأحدب",
+      "author": "Traditional / anonymous",
+      "year": null,
+      "origin": "Arabic literary tradition / One Thousand and One Nights",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "MURDER_MYSTERY",
+        "MISDIRECTED_ACCUSATION",
+        "FOLK_TALE"
+      ],
+      "rights": "TRADITIONAL_REVIEW",
+      "source": {
+        "name": "Arabic Wikisource / One Thousand and One Nights",
+        "url": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A",
+        "format": "Wikisource scan/transcription",
+        "sourceStoryTitle": "The Hunchback",
+        "sectionHeading": "حكاية الخياط والأحدب واليهودي والمباشر والنصراني فيما وقع لهم",
+        "note": "Verified 2026-10-03: section present in 'ألف ليلة وليلة/الجزء الثاني' on ar.wikisource."
       },
-      "ingest":"wikisource-review",
-      "translations":{"hi":"PENDING_SOURCE_TRANSLATION","en":"PENDING_SOURCE_TRANSLATION","ar":"SOURCE_LANGUAGE","ur":"PENDING_SOURCE_TRANSLATION"}
+      "ingest": "wikisource-review",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "PENDING_SOURCE_TRANSLATION",
+        "ar": "SOURCE_LANGUAGE",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "18+",
+      "contentNotes": [
+        "Embedded tales include sexual content, mutilation (severed hands) and death; adult audience only."
+      ]
+    },
+    {
+      "id": "crime-en-scandal-bohemia",
+      "language": "en",
+      "title": "A Scandal in Bohemia",
+      "author": "Arthur Conan Doyle",
+      "year": 1891,
+      "origin": "United Kingdom / London setting",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "DETECTIVE",
+        "BLACKMAIL",
+        "DISGUISE"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/1661",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+        "format": "plain-text anthology",
+        "extract": {
+          "start": "I. A SCANDAL IN BOHEMIA",
+          "end": "II. THE RED-HEADED LEAGUE"
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "10+",
+      "contentNotes": []
+    },
+    {
+      "id": "crime-en-blue-cross",
+      "language": "en",
+      "title": "The Blue Cross",
+      "author": "G. K. Chesterton",
+      "year": 1910,
+      "origin": "United Kingdom / London setting",
+      "category": "CRIME_STORY",
+      "subcategories": [
+        "DETECTIVE",
+        "THEFT",
+        "CHASE"
+      ],
+      "rights": "PD_WORK",
+      "source": {
+        "name": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/204",
+        "rawUrl": "https://www.gutenberg.org/cache/epub/204/pg204.txt",
+        "format": "plain-text anthology",
+        "collection": "The Innocence of Father Brown (1911)",
+        "extract": {
+          "start": "The Blue Cross",
+          "startOccurrence": 2,
+          "end": "The Secret Garden"
+        }
+      },
+      "ingest": "project-gutenberg",
+      "translations": {
+        "hi": "PENDING_SOURCE_TRANSLATION",
+        "en": "SOURCE_LANGUAGE",
+        "ar": "PENDING_SOURCE_TRANSLATION",
+        "ur": "PENDING_SOURCE_TRANSLATION"
+      },
+      "ageBand": "10+",
+      "contentNotes": []
     }
   ]
 }
