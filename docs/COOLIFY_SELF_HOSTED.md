@@ -56,7 +56,8 @@ Only administrators/editors can use `/admin`; normal users remain USER accounts.
 Keep these volumes persistent:
 
 - `religion_postgres` — all application data
-- `religion_audio` — generated narration cache/audio
+- `religion_tts_audio` — TTS cache/audio
+- `religion_generated_audio` — generated application audio — generated narration cache/audio
 - `religion_tts_models` — downloaded TTS model files
 
 Do not delete these volumes during normal app redeployments.
