@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "theme": "inspirational-resilience-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual story text is stored in stories.json. Every record must contain usable text in all four languages. Documented biography and later legend are distinguished in evidence metadata; popular myths are checked rather than repeated.",
+  "records": [
+    {
+      "id": "inspire-bruce-and-the-spider",
+      "title": "Robert the Bruce and the Spider",
+      "tradition": "Scottish tradition / Walter Scott, Tales of a Grandfather (1828)",
+      "origin": "Scotland",
+      "tags": [
+        "LEGEND",
+        "PERSEVERANCE",
+        "SCOTTISH_HISTORY",
+        "HISTORY_VS_LEGEND"
+      ],
+      "ageBand": "7-13",
+      "evidenceType": "TRADITIONAL_LEGEND",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-helen-keller-water",
+      "title": "Helen Keller and the Word Water",
+      "tradition": "Helen Keller, The Story of My Life (1903)",
+      "origin": "Tuscumbia, Alabama, United States",
+      "tags": [
+        "BIOGRAPHY",
+        "DISABILITY",
+        "EDUCATION",
+        "TEACHERS",
+        "RESILIENCE"
+      ],
+      "ageBand": "8-15",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-vivekananda-chicago-1893",
+      "title": "Swami Vivekananda at Chicago, 1893",
+      "tradition": "World's Parliament of Religions, Chicago",
+      "origin": "India and the United States",
+      "tags": [
+        "BIOGRAPHY",
+        "HINDUISM",
+        "INTERFAITH",
+        "PUBLIC_SPEAKING",
+        "TOLERANCE"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-frederick-douglass-reading",
+      "title": "Frederick Douglass Learns to Read",
+      "tradition": "Narrative of the Life of Frederick Douglass (1845)",
+      "origin": "Maryland, United States",
+      "tags": [
+        "BIOGRAPHY",
+        "EDUCATION",
+        "FREEDOM",
+        "LITERACY",
+        "RESILIENCE"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-booker-washington-hampton",
+      "title": "Booker T. Washington and the Swept Room",
+      "tradition": "Booker T. Washington, Up from Slavery (1901)",
+      "origin": "Virginia and West Virginia, United States",
+      "tags": [
+        "BIOGRAPHY",
+        "EDUCATION",
+        "PERSEVERANCE",
+        "HARD_WORK"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-wilma-rudolph",
+      "title": "Wilma Rudolph: From Leg Brace to Olympic Gold",
+      "tradition": "Wilma Rudolph / Rome Olympics, 1960",
+      "origin": "Tennessee, United States",
+      "tags": [
+        "BIOGRAPHY",
+        "SPORT",
+        "DISABILITY",
+        "WOMEN_IN_HISTORY",
+        "CIVIL_RIGHTS"
+      ],
+      "ageBand": "8-15",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-edison-persistence",
+      "title": "Edison and the Thousand Experiments: Fact and Myth",
+      "tradition": "Thomas Edison / Menlo Park laboratory",
+      "origin": "United States",
+      "tags": [
+        "BIOGRAPHY",
+        "SCIENCE",
+        "INVENTION",
+        "PERSEVERANCE",
+        "MYTH_CHECK"
+      ],
+      "ageBand": "9-15",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-savitribai-phule-schools",
+      "title": "Savitribai Phule Opens a School for Girls",
+      "tradition": "Social reform in nineteenth-century Maharashtra",
+      "origin": "Pune, Maharashtra, India",
+      "tags": [
+        "BIOGRAPHY",
+        "EDUCATION",
+        "WOMEN_IN_HISTORY",
+        "SOCIAL_REFORM",
+        "INDIA"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "DOCUMENTED_BIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "inspire-sant-ravidas",
+      "title": "Sant Ravidas: The Cobbler Saint of Varanasi",
+      "tradition": "Bhakti movement / Guru Granth Sahib / Ravidassia tradition",
+      "origin": "Varanasi, India",
+      "tags": [
+        "BIOGRAPHY",
+        "BHAKTI",
+        "SIKHISM",
+        "EQUALITY",
+        "POETRY"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "HISTORY_WITH_LEGENDARY_ELEMENTS",
+      "multilingualTextPath": "data/story-corpus/inspirational/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

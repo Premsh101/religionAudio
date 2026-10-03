@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "theme": "survival-disaster-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual story text is stored in stories.json. Every record must contain usable text in all four languages. Scriptural narrative, ancient literature and documented modern events are distinguished in evidence metadata.",
+  "records": [
+    {
+      "id": "survival-nuh-noah-flood",
+      "title": "Noah and the Ark: A Story Shared by Bible and Quran",
+      "tradition": "Hebrew Bible, Genesis 6-9 / Quran, Surah Hud 11:25-48 and Surah Nuh",
+      "origin": "Ancient Near East",
+      "tags": [
+        "SCRIPTURE",
+        "JUDAISM",
+        "CHRISTIANITY",
+        "ISLAM",
+        "FLOOD",
+        "FAITH"
+      ],
+      "ageBand": "9-15",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-manu-matsya",
+      "title": "Manu and the Fish: The Flood in Indian Scripture",
+      "tradition": "Shatapatha Brahmana 1.8.1 / Matsya avatar in the Puranas",
+      "origin": "India",
+      "tags": [
+        "HINDUISM",
+        "SCRIPTURE",
+        "FLOOD",
+        "VISHNU",
+        "KINDNESS"
+      ],
+      "ageBand": "7-14",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-jonah-yunus-whale",
+      "title": "Jonah and the Great Fish",
+      "tradition": "Hebrew Bible, Book of Jonah / Quran 21:87-88, 37:139-148",
+      "origin": "Ancient Near East (Joppa to Nineveh)",
+      "tags": [
+        "SCRIPTURE",
+        "JUDAISM",
+        "CHRISTIANITY",
+        "ISLAM",
+        "SEA",
+        "REPENTANCE",
+        "MERCY"
+      ],
+      "ageBand": "8-14",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-utnapishtim-flood-tablet",
+      "title": "Utnapishtim and the Flood Tablet",
+      "tradition": "Epic of Gilgamesh, Tablet XI / Mesopotamian literature",
+      "origin": "Ancient Mesopotamia (Iraq)",
+      "tags": [
+        "ANCIENT_LITERATURE",
+        "MESOPOTAMIA",
+        "FLOOD",
+        "ARCHAEOLOGY"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "TRADITIONAL_LEGEND",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-yusuf-famine-planning",
+      "title": "Yusuf and the Seven Years: Planning for Famine",
+      "tradition": "Hebrew Bible, Genesis 41 / Quran, Surah Yusuf 12:43-56",
+      "origin": "Ancient Egypt",
+      "tags": [
+        "SCRIPTURE",
+        "JUDAISM",
+        "CHRISTIANITY",
+        "ISLAM",
+        "FAMINE",
+        "WISDOM",
+        "PLANNING"
+      ],
+      "ageBand": "8-14",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-shackleton-endurance",
+      "title": "Shackleton and the Endurance",
+      "tradition": "Imperial Trans-Antarctic Expedition, 1914-1917",
+      "origin": "Antarctica, Weddell Sea and South Georgia",
+      "tags": [
+        "MODERN_HISTORY",
+        "EXPLORATION",
+        "ANTARCTICA",
+        "LEADERSHIP",
+        "ENDURANCE"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "HISTORICAL_EVENT",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-apollo-13",
+      "title": "Apollo 13: The Lifeboat in Space",
+      "tradition": "NASA Apollo programme, April 1970",
+      "origin": "United States / space between Earth and the Moon",
+      "tags": [
+        "MODERN_HISTORY",
+        "SPACE",
+        "SCIENCE",
+        "TEAMWORK",
+        "PROBLEM_SOLVING"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "HISTORICAL_EVENT",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-chilean-miners-2010",
+      "title": "The Thirty-Three: The Chilean Miners, 2010",
+      "tradition": "San Jose mine collapse and rescue, Atacama, Chile",
+      "origin": "Chile",
+      "tags": [
+        "MODERN_HISTORY",
+        "RESCUE",
+        "TEAMWORK",
+        "HOPE",
+        "ENGINEERING"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "HISTORICAL_EVENT",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "survival-dunkirk-little-ships",
+      "title": "The Little Ships of Dunkirk",
+      "tradition": "Operation Dynamo, Second World War, May-June 1940",
+      "origin": "Dunkirk (France) and the English Channel",
+      "tags": [
+        "MODERN_HISTORY",
+        "WORLD_WAR_II",
+        "RESCUE",
+        "CIVILIAN_COURAGE",
+        "SEA"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "HISTORICAL_EVENT",
+      "multilingualTextPath": "data/story-corpus/survival/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

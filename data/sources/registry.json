@@ -1756,5 +1756,500 @@
     "status": "reference-only",
     "license": "site-specific",
     "ingest_policy": "Use for Udyoga Parva context of Karna's refusal and promise to Kunti; repository text is original."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-battle-of-jaffa-1192",
+    "tradition": "Crusades / Ayyubid history",
+    "source": "Wikipedia: Battle of Jaffa (1192)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Jaffa_(1192)",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-saladin-richard-jaffa)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-treaty-of-jaffa-1192",
+    "tradition": "Crusades / Ayyubid history",
+    "source": "Wikipedia: Treaty of Jaffa (1192)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Jaffa_(1192)",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-saladin-richard-jaffa)."
+  },
+  {
+    "id": "corpus-en-wikisource-org-wiki-history-of-herodotus-book-7",
+    "tradition": "Ancient Greek history",
+    "source": "Wikisource: The History of Herodotus (Rawlinson)/Book 7",
+    "url": "https://en.wikisource.org/wiki/History_of_Herodotus/Book_7",
+    "status": "reference-only",
+    "license": "Public-domain work; Wikisource transcription terms apply",
+    "ingest_policy": "Use the public-domain text to verify events and wording; the corpus stores an original retelling, not the transcription. Cited by: data/story-corpus/war-courage (courage-thermopylae-history-legend)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-battle-of-thermopylae",
+    "tradition": "Ancient Greek history",
+    "source": "Wikipedia: Battle of Thermopylae",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-thermopylae-history-legend)."
+  },
+  {
+    "id": "corpus-en-wikisource-org-wiki-bible-king-james-1-samuel",
+    "tradition": "Judaism / Christianity",
+    "source": "Wikisource: Bible (King James)/1 Samuel",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Samuel",
+    "status": "reference-only",
+    "license": "Public-domain work; Wikisource transcription terms apply",
+    "ingest_policy": "Use the public-domain text to verify events and wording; the corpus stores an original retelling, not the transcription. Cited by: data/story-corpus/war-courage (courage-david-goliath)."
+  },
+  {
+    "id": "corpus-quran-com-2-251",
+    "tradition": "Islam",
+    "source": "Quran.com: Surah Al-Baqarah Ayah 251",
+    "url": "https://quran.com/2/251",
+    "status": "reference-only",
+    "license": "site-specific; translations are separately copyrighted",
+    "ingest_policy": "Use to verify the Quranic passages referenced by the retelling; do not ingest translations without a licence check. Cited by: data/story-corpus/war-courage (courage-david-goliath)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-guru-tegh-bahadur",
+    "tradition": "Sikhism / Mughal-era history",
+    "source": "Wikipedia: Guru Tegh Bahadur",
+    "url": "https://en.wikipedia.org/wiki/Guru_Tegh_Bahadur",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-guru-tegh-bahadur)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-gurdwara-sis-ganj-sahib",
+    "tradition": "Sikhism / Mughal-era history",
+    "source": "Wikipedia: Gurdwara Sis Ganj Sahib",
+    "url": "https://en.wikipedia.org/wiki/Gurdwara_Sis_Ganj_Sahib",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-guru-tegh-bahadur)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-bilal-ibn-rabah",
+    "tradition": "Islam / early Islamic history",
+    "source": "Wikipedia: Bilal ibn Rabah",
+    "url": "https://en.wikipedia.org/wiki/Bilal_ibn_Rabah",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-bilal-steadfast)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-noor-inayat-khan",
+    "tradition": "Second World War history",
+    "source": "Wikipedia: Noor Inayat Khan",
+    "url": "https://en.wikipedia.org/wiki/Noor_Inayat_Khan",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-noor-inayat-khan)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-siege-of-chittorgarh-1303",
+    "tradition": "Medieval Rajasthan / Awadhi literature",
+    "source": "Wikipedia: Siege of Chittorgarh (1303)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Chittorgarh_(1303)",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-chittorgarh-padmini)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-padmavat",
+    "tradition": "Medieval Rajasthan / Awadhi literature",
+    "source": "Wikipedia: Padmavat",
+    "url": "https://en.wikipedia.org/wiki/Padmavat",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-chittorgarh-padmini)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-malik-muhammad-jayasi",
+    "tradition": "Medieval Rajasthan / Awadhi literature",
+    "source": "Wikipedia: Malik Muhammad Jayasi",
+    "url": "https://en.wikipedia.org/wiki/Malik_Muhammad_Jayasi",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-chittorgarh-padmini)."
+  },
+  {
+    "id": "corpus-en-wikisource-org-wiki-the-bhagavad-gita-arnold-translation",
+    "tradition": "Hinduism",
+    "source": "Wikisource: The Bhagavad Gita (Arnold translation)",
+    "url": "https://en.wikisource.org/wiki/The_Bhagavad_Gita_(Arnold_translation)",
+    "status": "reference-only",
+    "license": "Public-domain work; Wikisource transcription terms apply",
+    "ingest_policy": "Use the public-domain text to verify events and wording; the corpus stores an original retelling, not the transcription. Cited by: data/story-corpus/war-courage (courage-arjuna-dilemma)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-bhagavad-gita",
+    "tradition": "Hinduism",
+    "source": "Wikipedia: Bhagavad Gita",
+    "url": "https://en.wikipedia.org/wiki/Bhagavad_Gita",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-arjuna-dilemma)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-abdul-ghaffar-khan",
+    "tradition": "Indian independence movement / Islam",
+    "source": "Wikipedia: Abdul Ghaffar Khan",
+    "url": "https://en.wikipedia.org/wiki/Abdul_Ghaffar_Khan",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-ghaffar-khan-nonviolence)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-khudai-khidmatgar",
+    "tradition": "Indian independence movement / Islam",
+    "source": "Wikipedia: Khudai Khidmatgar",
+    "url": "https://en.wikipedia.org/wiki/Khudai_Khidmatgar",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/war-courage (courage-ghaffar-khan-nonviolence)."
+  },
+  {
+    "id": "corpus-en-wikisource-org-wiki-bible-king-james-genesis",
+    "tradition": "Judaism / Christianity",
+    "source": "Wikisource: Bible (King James)/Genesis",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
+    "status": "reference-only",
+    "license": "Public-domain work; Wikisource transcription terms apply",
+    "ingest_policy": "Use the public-domain text to verify events and wording; the corpus stores an original retelling, not the transcription. Cited by: data/story-corpus/survival (survival-nuh-noah-flood, survival-yusuf-famine-planning)."
+  },
+  {
+    "id": "corpus-quran-com-11-25-48",
+    "tradition": "Islam",
+    "source": "Quran.com: Surah Hud Ayahs 25-48",
+    "url": "https://quran.com/11/25-48",
+    "status": "reference-only",
+    "license": "site-specific; translations are separately copyrighted",
+    "ingest_policy": "Use to verify the Quranic passages referenced by the retelling; do not ingest translations without a licence check. Cited by: data/story-corpus/survival (survival-nuh-noah-flood)."
+  },
+  {
+    "id": "corpus-quran-com-71",
+    "tradition": "Islam",
+    "source": "Quran.com: Surah Nuh (71)",
+    "url": "https://quran.com/71",
+    "status": "reference-only",
+    "license": "site-specific; translations are separately copyrighted",
+    "ingest_policy": "Use to verify the Quranic passages referenced by the retelling; do not ingest translations without a licence check. Cited by: data/story-corpus/survival (survival-nuh-noah-flood)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-matsya",
+    "tradition": "Hinduism",
+    "source": "Wikipedia: Matsya",
+    "url": "https://en.wikipedia.org/wiki/Matsya",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/survival (survival-manu-matsya)."
+  },
+  {
+    "id": "corpus-en-wikisource-org-wiki-bible-king-james-jonah",
+    "tradition": "Judaism / Christianity",
+    "source": "Wikisource: Bible (King James)/Jonah",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Jonah",
+    "status": "reference-only",
+    "license": "Public-domain work; Wikisource transcription terms apply",
+    "ingest_policy": "Use the public-domain text to verify events and wording; the corpus stores an original retelling, not the transcription. Cited by: data/story-corpus/survival (survival-jonah-yunus-whale)."
+  },
+  {
+    "id": "corpus-quran-com-37-139-148",
+    "tradition": "Islam",
+    "source": "Quran.com: Surah As-Saffat Ayahs 139-148",
+    "url": "https://quran.com/37/139-148",
+    "status": "reference-only",
+    "license": "site-specific; translations are separately copyrighted",
+    "ingest_policy": "Use to verify the Quranic passages referenced by the retelling; do not ingest translations without a licence check. Cited by: data/story-corpus/survival (survival-jonah-yunus-whale)."
+  },
+  {
+    "id": "corpus-quran-com-21-87-88",
+    "tradition": "Islam",
+    "source": "Quran.com: Surah Al-Anbiya Ayahs 87-88",
+    "url": "https://quran.com/21/87-88",
+    "status": "reference-only",
+    "license": "site-specific; translations are separately copyrighted",
+    "ingest_policy": "Use to verify the Quranic passages referenced by the retelling; do not ingest translations without a licence check. Cited by: data/story-corpus/survival (survival-jonah-yunus-whale)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-gilgamesh-flood-myth",
+    "tradition": "Ancient Mesopotamian literature",
+    "source": "Wikipedia: Gilgamesh flood myth",
+    "url": "https://en.wikipedia.org/wiki/Gilgamesh_flood_myth",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/survival (survival-utnapishtim-flood-tablet)."
+  },
+  {
+    "id": "corpus-en-wikisource-org-wiki-the-epic-of-gilgamish",
+    "tradition": "Ancient Mesopotamian literature",
+    "source": "Wikisource: The Epic of Gilgamish",
+    "url": "https://en.wikisource.org/wiki/The_Epic_of_Gilgamish",
+    "status": "reference-only",
+    "license": "Public-domain work; Wikisource transcription terms apply",
+    "ingest_policy": "Use the public-domain text to verify events and wording; the corpus stores an original retelling, not the transcription. Cited by: data/story-corpus/survival (survival-utnapishtim-flood-tablet)."
+  },
+  {
+    "id": "corpus-quran-com-12-43-49",
+    "tradition": "Islam",
+    "source": "Quran.com: Surah Yusuf Ayahs 43-49",
+    "url": "https://quran.com/12/43-49",
+    "status": "reference-only",
+    "license": "site-specific; translations are separately copyrighted",
+    "ingest_policy": "Use to verify the Quranic passages referenced by the retelling; do not ingest translations without a licence check. Cited by: data/story-corpus/survival (survival-yusuf-famine-planning)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-joseph-in-islam",
+    "tradition": "Judaism / Christianity / Islam",
+    "source": "Wikipedia: Joseph in Islam",
+    "url": "https://en.wikipedia.org/wiki/Joseph_in_Islam",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/survival (survival-yusuf-famine-planning)."
+  },
+  {
+    "id": "corpus-gutenberg-org-ebooks-5199",
+    "tradition": "Polar exploration history",
+    "source": "Project Gutenberg: South: The Story of Shackleton's Last Expedition, 1914-1917 by Shackleton",
+    "url": "https://www.gutenberg.org/ebooks/5199",
+    "status": "reference-only",
+    "license": "Public Domain in USA; jurisdiction review before global commercial launch",
+    "ingest_policy": "Use the public-domain autobiography/account to verify events; the corpus stores an original retelling. Re-check jurisdiction before any direct ingestion. Cited by: data/story-corpus/survival (survival-shackleton-endurance)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-imperial-trans-antarctic-expedition",
+    "tradition": "Polar exploration history",
+    "source": "Wikipedia: Imperial Trans-Antarctic Expedition",
+    "url": "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/survival (survival-shackleton-endurance)."
+  },
+  {
+    "id": "corpus-spri-cam-ac-uk-museum-shackleton",
+    "tradition": "Polar exploration history",
+    "source": "Scott Polar Research Institute, Cambridge: Shackleton Online",
+    "url": "https://www.spri.cam.ac.uk/museum/shackleton/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual cross-checking only; repository text is an original retelling and source text is not ingested. Cited by: data/story-corpus/survival (survival-shackleton-endurance)."
+  },
+  {
+    "id": "corpus-nasa-gov-missions-apollo-apollo-13-mission-details",
+    "tradition": "Space exploration history",
+    "source": "NASA: Apollo 13: Mission Details",
+    "url": "https://www.nasa.gov/missions/apollo/apollo-13-mission-details/",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use NASA mission records to verify chronology and the single quoted transmission; repository text is an original retelling. Cited by: data/story-corpus/survival (survival-apollo-13)."
+  },
+  {
+    "id": "corpus-history-nasa-gov-sp-350-ch-13-1-html",
+    "tradition": "Space exploration history",
+    "source": "NASA SP-350, Apollo Expeditions to the Moon, chapter 13",
+    "url": "https://history.nasa.gov/SP-350/ch-13-1.html",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use NASA mission records to verify chronology and the single quoted transmission; repository text is an original retelling. Cited by: data/story-corpus/survival (survival-apollo-13)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-2010-copiap-c3-b3-mining-accident",
+    "tradition": "Modern rescue history",
+    "source": "Wikipedia: 2010 Copiapó mining accident",
+    "url": "https://en.wikipedia.org/wiki/2010_Copiap%C3%B3_mining_accident",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/survival (survival-chilean-miners-2010)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-dunkirk-evacuation",
+    "tradition": "Second World War history",
+    "source": "Wikipedia: Dunkirk evacuation",
+    "url": "https://en.wikipedia.org/wiki/Dunkirk_evacuation",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/survival (survival-dunkirk-little-ships)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-little-ships-of-dunkirk",
+    "tradition": "Second World War history",
+    "source": "Wikipedia: Little Ships of Dunkirk",
+    "url": "https://en.wikipedia.org/wiki/Little_Ships_of_Dunkirk",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/survival (survival-dunkirk-little-ships)."
+  },
+  {
+    "id": "corpus-adls-org-uk",
+    "tradition": "Second World War history",
+    "source": "The Association of Dunkirk Little Ships",
+    "url": "https://www.adls.org.uk/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual cross-checking only; repository text is an original retelling and source text is not ingested. Cited by: data/story-corpus/survival (survival-dunkirk-little-ships)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-robert-the-bruce",
+    "tradition": "Scottish history and legend",
+    "source": "Wikipedia: Robert the Bruce",
+    "url": "https://en.wikipedia.org/wiki/Robert_the_Bruce",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-bruce-and-the-spider)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-battle-of-bannockburn",
+    "tradition": "Scottish history and legend",
+    "source": "Wikipedia: Battle of Bannockburn",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Bannockburn",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-bruce-and-the-spider)."
+  },
+  {
+    "id": "corpus-gutenberg-org-ebooks-2397",
+    "tradition": "Modern biography",
+    "source": "Project Gutenberg: The Story of My Life by Helen Keller",
+    "url": "https://www.gutenberg.org/ebooks/2397",
+    "status": "reference-only",
+    "license": "Public Domain in USA; jurisdiction review before global commercial launch",
+    "ingest_policy": "Use the public-domain autobiography/account to verify events; the corpus stores an original retelling. Re-check jurisdiction before any direct ingestion. Cited by: data/story-corpus/inspirational (inspire-helen-keller-water)."
+  },
+  {
+    "id": "corpus-afb-org-about-afb-history-helen-keller",
+    "tradition": "Modern biography",
+    "source": "Helen Keller | American Foundation for the Blind",
+    "url": "https://www.afb.org/about-afb/history/helen-keller",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual cross-checking only; repository text is an original retelling and source text is not ingested. Cited by: data/story-corpus/inspirational (inspire-helen-keller-water)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-anne-sullivan",
+    "tradition": "Modern biography",
+    "source": "Wikipedia: Anne Sullivan",
+    "url": "https://en.wikipedia.org/wiki/Anne_Sullivan",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-helen-keller-water)."
+  },
+  {
+    "id": "corpus-en-wikisource-org-wiki-the-complete-works-of-swami-vivekananda-volume-",
+    "tradition": "Hinduism / modern biography",
+    "source": "Wikisource: The Complete Works of Swami Vivekananda/Volume 1/Addresses at The Parliament of Religions/Response to Welcome",
+    "url": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_1/Addresses_at_The_Parliament_of_Religions/Response_to_Welcome",
+    "status": "reference-only",
+    "license": "Public-domain work; Wikisource transcription terms apply",
+    "ingest_policy": "Use the public-domain text to verify events and wording; the corpus stores an original retelling, not the transcription. Cited by: data/story-corpus/inspirational (inspire-vivekananda-chicago-1893)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-swami-vivekananda",
+    "tradition": "Hinduism / modern biography",
+    "source": "Wikipedia: Swami Vivekananda",
+    "url": "https://en.wikipedia.org/wiki/Swami_Vivekananda",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-vivekananda-chicago-1893)."
+  },
+  {
+    "id": "corpus-gutenberg-org-ebooks-23",
+    "tradition": "American history / autobiography",
+    "source": "Project Gutenberg: Narrative of the Life of Frederick Douglass, an American Slave by Douglass",
+    "url": "https://www.gutenberg.org/ebooks/23",
+    "status": "reference-only",
+    "license": "Public Domain in USA; jurisdiction review before global commercial launch",
+    "ingest_policy": "Use the public-domain autobiography/account to verify events; the corpus stores an original retelling. Re-check jurisdiction before any direct ingestion. Cited by: data/story-corpus/inspirational (inspire-frederick-douglass-reading)."
+  },
+  {
+    "id": "corpus-nps-gov-frdo-learn-historyculture-frederickdouglass-htm",
+    "tradition": "American history / autobiography",
+    "source": "U.S. National Park Service: Frederick Douglass - Frederick Douglass National Historic Site",
+    "url": "https://www.nps.gov/frdo/learn/historyculture/frederickdouglass.htm",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use National Park Service material for biographical cross-checking; repository text is an original retelling. Cited by: data/story-corpus/inspirational (inspire-frederick-douglass-reading)."
+  },
+  {
+    "id": "corpus-gutenberg-org-ebooks-2376",
+    "tradition": "American history / autobiography",
+    "source": "Project Gutenberg: Up from Slavery: An Autobiography by Booker T. Washington",
+    "url": "https://www.gutenberg.org/ebooks/2376",
+    "status": "reference-only",
+    "license": "Public Domain in USA; jurisdiction review before global commercial launch",
+    "ingest_policy": "Use the public-domain autobiography/account to verify events; the corpus stores an original retelling. Re-check jurisdiction before any direct ingestion. Cited by: data/story-corpus/inspirational (inspire-booker-washington-hampton)."
+  },
+  {
+    "id": "corpus-nps-gov-tuin-learn-historyculture-booker-t-washington-htm",
+    "tradition": "American history / autobiography",
+    "source": "U.S. National Park Service: Booker T. Washington - Tuskegee Institute National Historic Site",
+    "url": "https://www.nps.gov/tuin/learn/historyculture/booker-t-washington.htm",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use National Park Service material for biographical cross-checking; repository text is an original retelling. Cited by: data/story-corpus/inspirational (inspire-booker-washington-hampton)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-wilma-rudolph",
+    "tradition": "Modern biography / sport",
+    "source": "Wikipedia: Wilma Rudolph",
+    "url": "https://en.wikipedia.org/wiki/Wilma_Rudolph",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-wilma-rudolph)."
+  },
+  {
+    "id": "corpus-nps-gov-edis-learn-historyculture-edison-biography-htm",
+    "tradition": "History of science and invention",
+    "source": "U.S. National Park Service: Edison Biography - Thomas Edison National Historical Park",
+    "url": "https://www.nps.gov/edis/learn/historyculture/edison-biography.htm",
+    "status": "reference-only",
+    "license": "government site terms",
+    "ingest_policy": "Use National Park Service material for biographical cross-checking; repository text is an original retelling. Cited by: data/story-corpus/inspirational (inspire-edison-persistence)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-incandescent-light-bulb",
+    "tradition": "History of science and invention",
+    "source": "Wikipedia: Incandescent light bulb",
+    "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-edison-persistence)."
+  },
+  {
+    "id": "corpus-quoteinvestigator-com-2012-07-31-edison-lot-results",
+    "tradition": "History of science and invention",
+    "source": "Quote Investigator: \"I Have Gotten a Lot of Results! I Know Several Thousand Things That Won’t Work\"",
+    "url": "https://quoteinvestigator.com/2012/07/31/edison-lot-results/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual cross-checking only; repository text is an original retelling and source text is not ingested. Cited by: data/story-corpus/inspirational (inspire-edison-persistence)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-savitribai-phule",
+    "tradition": "Indian social reform history",
+    "source": "Wikipedia: Savitribai Phule",
+    "url": "https://en.wikipedia.org/wiki/Savitribai_Phule",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-savitribai-phule-schools)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-fatima-sheikh",
+    "tradition": "Indian social reform history",
+    "source": "Wikipedia: Fatima Sheikh",
+    "url": "https://en.wikipedia.org/wiki/Fatima_Sheikh",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-savitribai-phule-schools)."
+  },
+  {
+    "id": "corpus-en-wikipedia-org-wiki-ravidas",
+    "tradition": "Bhakti / Sikh scripture tradition",
+    "source": "Wikipedia: Ravidas",
+    "url": "https://en.wikipedia.org/wiki/Ravidas",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for factual and historical cross-checking only; repository text is an original retelling and Wikipedia text is not ingested. Cited by: data/story-corpus/inspirational (inspire-sant-ravidas)."
   }
 ]
