@@ -22,17 +22,13 @@ The text is marked ORIGINAL_FAITHFUL_RETELLING. These are repository-authored re
 - Around the World in Eighty Days
 - The Rescue at Zenda — The Prisoner of Zenda
 - The Family Survives the Shipwreck — The Swiss Family Robinson
-- The Search for King Solomon's Mines
-- Journey to the Center of the Earth
 - Tom Sawyer and the Cave
 - Robin Hood and the Forest
-- The Three Musketeers and the New Companion
-- The Journey Through the Wilderness
 - Arthur and the Sword in the Stone
 - Sindbad's First Voyage
 - The Secret Passage of Chandrakanta
 
-The current first wave contains eight entries; the longer list above documents related expansions.
+The current first wave contains eight entries.
 
 ## Meaning preservation
 
