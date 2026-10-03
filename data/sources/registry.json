@@ -1474,5 +1474,287 @@
     "status": "reference-only",
     "license": "CC BY-SA 4.0 (reference only)",
     "ingest_policy": "Use for verification of sacred-places-udvada-atash-behram; repository text is an original retelling and does not copy source prose."
+  },
+  {
+    "id": "layla-majnun-reference",
+    "tradition": "Persian / Arabic literature",
+    "source": "Layla and Majnun reference",
+    "url": "https://en.wikipedia.org/wiki/Layla_and_Majnun",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to verify the plot of Nizami's poem and its Arabic antecedents; repository text is an original retelling."
+  },
+  {
+    "id": "heer-ranjha-reference",
+    "tradition": "Punjabi literature",
+    "source": "Heer Ranjha reference",
+    "url": "https://en.wikipedia.org/wiki/Heer_Ranjha",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to verify episodes of Waris Shah's qissa and earlier versions; repository retelling is original."
+  },
+  {
+    "id": "khosrow-shirin-reference",
+    "tradition": "Persian literature",
+    "source": "Khosrow and Shirin reference",
+    "url": "https://en.wikipedia.org/wiki/Khosrow_and_Shirin",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to verify Nizami's Farhad episode; repository retelling is original."
+  },
+  {
+    "id": "shirin-farhad-reference",
+    "tradition": "Persian and South Asian folk literature",
+    "source": "Shirin and Farhad reference",
+    "url": "https://en.wikipedia.org/wiki/Shirin_and_Farhad",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to distinguish Nizami's ending from South Asian folk endings; repository retelling is original."
+  },
+  {
+    "id": "sohni-mahiwal-reference",
+    "tradition": "Punjabi / Sindhi folk romance",
+    "source": "Sohni Mahiwal reference",
+    "url": "https://en.wikipedia.org/wiki/Sohni_Mahiwal",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the folk outline and Shah Abdul Latif's Sufi reading; repository retelling is original."
+  },
+  {
+    "id": "sassui-punnhun-reference",
+    "tradition": "Sindhi / Baloch folk romance",
+    "source": "Sassui Punnhun reference",
+    "url": "https://en.wikipedia.org/wiki/Sassui_Punnhun",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the folk outline and Risalo context; legendary ending is labelled as legend in the repository text."
+  },
+  {
+    "id": "dhola-maru-reference",
+    "tradition": "Rajasthani folk literature",
+    "source": "Dhola Maru reference",
+    "url": "https://en.wikipedia.org/wiki/Dhola_Maru",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the Rajasthani recension outline and manuscript history; repository retelling is original."
+  },
+  {
+    "id": "mirabai-reference",
+    "tradition": "Hindu bhakti / Rajasthani history",
+    "source": "Mirabai reference",
+    "url": "https://en.wikipedia.org/wiki/Mirabai",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to separate historical outline from hagiography; repository text labels both layers."
+  },
+  {
+    "id": "yusuf-zulaikha-reference",
+    "tradition": "Persian Sufi literature / Islam",
+    "source": "Yusuf and Zulaikha reference",
+    "url": "https://en.wikipedia.org/wiki/Yusuf_and_Zulaikha",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to separate Jami's literary additions from the Qur'anic narrative; repository text is original."
+  },
+  {
+    "id": "quran-com-surah-yusuf",
+    "tradition": "Islam",
+    "source": "Quran.com - Surah Yusuf (12)",
+    "url": "https://quran.com/12",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to verify Qur'anic narrative details; short Arabic phrases are quoted verbatim in the Arabic retelling and paraphrased elsewhere. Do not ingest site translations."
+  },
+  {
+    "id": "quran-com-9-40",
+    "tradition": "Islam",
+    "source": "Quran.com - Surah al-Tawbah 9:40",
+    "url": "https://quran.com/9/40",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to verify the Qur'anic reference to the cave during the Hijra; the Arabic phrase is quoted verbatim, translations are repository-authored."
+  },
+  {
+    "id": "gutenberg-kalidasa-ryder",
+    "tradition": "Sanskrit literature",
+    "source": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/ebooks/16659",
+    "status": "approved-with-jurisdiction-review",
+    "license": "Public Domain in USA; verify target jurisdictions",
+    "work": "Translations of Shakuntala and Other Works by Kalidasa (Arthur W. Ryder)",
+    "ingest_policy": "Consulted for plot verification; repository text is an original retelling."
+  },
+  {
+    "id": "shakuntala-play-reference",
+    "tradition": "Sanskrit literature",
+    "source": "Shakuntala (play) reference",
+    "url": "https://en.wikipedia.org/wiki/Shakuntala_(play)",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to distinguish Kalidasa's additions from the Mahabharata episode; repository retelling is original."
+  },
+  {
+    "id": "wikisource-kjv-genesis",
+    "tradition": "Judaism / Christianity",
+    "source": "English Wikisource - King James Bible, Genesis",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
+    "status": "approved-open",
+    "license": "Public Domain (KJV text; Crown patent applies in the UK)",
+    "ingest_policy": "Short KJV quotations used in English retellings; verify UK Crown-patent considerations before commercial distribution there."
+  },
+  {
+    "id": "wikisource-kjv-1-samuel",
+    "tradition": "Judaism / Christianity",
+    "source": "English Wikisource - King James Bible, 1 Samuel",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Samuel",
+    "status": "approved-open",
+    "license": "Public Domain (KJV text; Crown patent applies in the UK)",
+    "ingest_policy": "Short KJV quotations used in the David and Jonathan retelling; verify UK Crown-patent considerations before commercial distribution there."
+  },
+  {
+    "id": "wikisource-kjv-ruth",
+    "tradition": "Judaism / Christianity",
+    "source": "English Wikisource - King James Bible, Ruth",
+    "url": "https://en.wikisource.org/wiki/Bible_(King_James)/Ruth",
+    "status": "approved-open",
+    "license": "Public Domain (KJV text; Crown patent applies in the UK)",
+    "ingest_policy": "Short KJV quotations used in the Ruth and Naomi retelling; verify UK Crown-patent considerations before commercial distribution there."
+  },
+  {
+    "id": "rachel-reference",
+    "tradition": "Judaism / Christianity",
+    "source": "Rachel reference",
+    "url": "https://en.wikipedia.org/wiki/Rachel",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for Genesis context and Jewish tradition about Rachel; repository text is original."
+  },
+  {
+    "id": "book-of-ruth-reference",
+    "tradition": "Judaism / Christianity",
+    "source": "Book of Ruth reference",
+    "url": "https://en.wikipedia.org/wiki/Book_of_Ruth",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for Shavuot reading custom and narrative context; repository text is original."
+  },
+  {
+    "id": "david-jonathan-reference",
+    "tradition": "Judaism / Christianity",
+    "source": "David and Jonathan reference",
+    "url": "https://en.wikipedia.org/wiki/David_and_Jonathan",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for narrative context; repository text follows 1-2 Samuel."
+  },
+  {
+    "id": "joseph-genesis-reference",
+    "tradition": "Judaism / Christianity / Islam",
+    "source": "Joseph (Genesis) reference",
+    "url": "https://en.wikipedia.org/wiki/Joseph_(Genesis)",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to compare Genesis and Qur'anic accounts; repository text labels differences."
+  },
+  {
+    "id": "vedabase-bhagavatam-10-80",
+    "tradition": "Hinduism",
+    "source": "Vedabase - Srimad Bhagavatam 10.80",
+    "url": "https://vedabase.io/en/library/sb/10/80/",
+    "status": "reference-only",
+    "license": "copyrighted translation and commentary",
+    "ingest_policy": "Use only to verify episode details of Krishna and his brahmin friend; do not copy translation or purport text."
+  },
+  {
+    "id": "sudama-reference",
+    "tradition": "Hinduism",
+    "source": "Sudama reference",
+    "url": "https://en.wikipedia.org/wiki/Sudama",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to note that the name Sudama comes from later devotional retellings."
+  },
+  {
+    "id": "damon-pythias-reference",
+    "tradition": "Greek / Roman tradition",
+    "source": "Damon and Pythias reference",
+    "url": "https://en.wikipedia.org/wiki/Damon_and_Pythias",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to identify classical sources (Aristoxenus, Cicero, Diodorus, Valerius Maximus, Iamblichus); repository text is original."
+  },
+  {
+    "id": "gutenberg-ramayan-griffith",
+    "tradition": "Hinduism",
+    "source": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/ebooks/24869",
+    "status": "approved-with-jurisdiction-review",
+    "license": "Public Domain in USA; verify target jurisdictions",
+    "work": "The Ramayan of Valmiki, translated into English verse by Ralph T. H. Griffith",
+    "ingest_policy": "Consulted for the Bharata and Shravan episodes; repository text is an original retelling."
+  },
+  {
+    "id": "bharata-ramayana-reference",
+    "tradition": "Hinduism",
+    "source": "Bharata (Ramayana) reference",
+    "url": "https://en.wikipedia.org/wiki/Bharata_(Ramayana)",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for Ayodhya Kanda context; repository retelling is original."
+  },
+  {
+    "id": "shravana-kumara-reference",
+    "tradition": "Hinduism / Indian folk tradition",
+    "source": "Shravana Kumara reference",
+    "url": "https://en.wikipedia.org/wiki/Shravana_Kumara",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to separate Valmiki's account from later folk additions; repository text labels both layers."
+  },
+  {
+    "id": "hijrah-reference",
+    "tradition": "Islam",
+    "source": "Hijrah reference",
+    "url": "https://en.wikipedia.org/wiki/Hijrah",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for documented historical context of the 622 CE migration; repository text keeps Qur'an, hadith and later traditions separate."
+  },
+  {
+    "id": "abu-bakr-reference",
+    "tradition": "Islam",
+    "source": "Abu Bakr reference",
+    "url": "https://en.wikipedia.org/wiki/Abu_Bakr",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for biographical context of Abu Bakr; the Prophet is not physically described and no words are invented for him."
+  },
+  {
+    "id": "guru-angad-reference",
+    "tradition": "Sikhism",
+    "source": "Guru Angad reference",
+    "url": "https://en.wikipedia.org/wiki/Guru_Angad",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for the historical outline of Guru Angad's life; sakhi episodes are labelled as tradition in the repository text."
+  },
+  {
+    "id": "gutenberg-mahabharata-ganguli-vol1",
+    "tradition": "Hinduism",
+    "source": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/ebooks/15474",
+    "status": "approved-with-jurisdiction-review",
+    "license": "Public Domain in USA; verify target jurisdictions",
+    "work": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 1 (Kisari Mohan Ganguli)",
+    "ingest_policy": "Consulted for the Adi Parva tournament; repository text is an original retelling."
+  },
+  {
+    "id": "karna-reference",
+    "tradition": "Hinduism",
+    "source": "Karna reference",
+    "url": "https://en.wikipedia.org/wiki/Karna",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for Udyoga Parva context of Karna's refusal and promise to Kunti; repository text is original."
   }
 ]

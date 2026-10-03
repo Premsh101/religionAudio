@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "theme": "romance-love-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual romance and love story text is stored in stories.json. Each record identifies whether the narrative is scriptural, classical literature, folk romance, devotional hagiography or history.",
+  "records": [
+    {
+      "id": "romance-layla-majnun-nizami",
+      "title": "Layla and Majnun: The Poet Who Loved Too Much",
+      "tradition": "Persian classical poetry (Nizami Ganjavi) drawing on earlier Arabic tradition",
+      "origin": "Arabia / Persia",
+      "tags": [
+        "ROMANCE",
+        "LAYLA_MAJNUN",
+        "PERSIAN_LITERATURE",
+        "SUFI_LOVE",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "12+",
+      "evidenceType": "CLASSICAL_LITERATURE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-heer-ranjha-waris-shah",
+      "title": "Heer and Ranjha: The Flute by the Chenab",
+      "tradition": "Punjabi qissa poetry (Waris Shah, 1766)",
+      "origin": "Punjab (India and Pakistan)",
+      "tags": [
+        "ROMANCE",
+        "HEER_RANJHA",
+        "PUNJABI_LITERATURE",
+        "QISSA",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "12+",
+      "evidenceType": "FOLK_ROMANCE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-shirin-farhad-nizami",
+      "title": "Shirin and Farhad: The Mountain of Bisotun",
+      "tradition": "Persian classical poetry (Nizami's Khosrow and Shirin) and South Asian folk retellings",
+      "origin": "Persia (Iran) / Armenia; retold across South Asia",
+      "tags": [
+        "ROMANCE",
+        "SHIRIN_FARHAD",
+        "PERSIAN_LITERATURE",
+        "DEVOTION",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "12+",
+      "evidenceType": "CLASSICAL_LITERATURE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-sohni-mahiwal",
+      "title": "Sohni and Mahiwal: The Clay Pot on the River",
+      "tradition": "Punjabi and Sindhi folk romance; Sufi poetry of Shah Abdul Latif",
+      "origin": "Punjab and Sindh (Pakistan and India)",
+      "tags": [
+        "ROMANCE",
+        "SOHNI_MAHIWAL",
+        "PUNJABI_FOLK",
+        "SINDHI_SUFI_POETRY",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "12+",
+      "evidenceType": "FOLK_ROMANCE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-sassi-punnu",
+      "title": "Sassi and Punnu: Footprints in the Desert",
+      "tradition": "Sindhi and Baloch folk romance; Sufi poetry of Shah Abdul Latif",
+      "origin": "Sindh and Balochistan (Pakistan)",
+      "tags": [
+        "ROMANCE",
+        "SASSI_PUNNU",
+        "SINDHI_FOLK",
+        "SINDHI_SUFI_POETRY",
+        "TRAGIC_LOVE"
+      ],
+      "ageBand": "12+",
+      "evidenceType": "FOLK_ROMANCE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-jacob-rachel-genesis",
+      "title": "Jacob and Rachel: Fourteen Years of Love",
+      "tradition": "Hebrew Bible (Genesis 29-35); Jewish and Christian scripture",
+      "origin": "Ancient Near East (Haran and Canaan)",
+      "tags": [
+        "ROMANCE",
+        "JACOB",
+        "RACHEL",
+        "GENESIS",
+        "JUDAISM",
+        "CHRISTIANITY",
+        "FAITHFUL_LOVE"
+      ],
+      "ageBand": "10+",
+      "evidenceType": "SCRIPTURAL_NARRATIVE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-yusuf-zulaikha-jami",
+      "title": "Yusuf and Zulaikha: From Scripture to Sufi Poem",
+      "tradition": "Qur'an (Surah Yusuf) and Persian Sufi poetry (Jami's Yusuf and Zulaikha, 1483)",
+      "origin": "Egypt (narrative setting); Persia (poem)",
+      "tags": [
+        "ROMANCE",
+        "YUSUF",
+        "ZULAIKHA",
+        "ISLAM",
+        "QURAN",
+        "PERSIAN_LITERATURE",
+        "SUFI_LOVE"
+      ],
+      "ageBand": "13+",
+      "evidenceType": "SCRIPTURAL_NARRATIVE_AND_CLASSICAL_LITERATURE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-shakuntala-dushyanta-kalidasa",
+      "title": "Shakuntala and the Lost Ring",
+      "tradition": "Sanskrit classical drama (Kalidasa's Abhijnanashakuntalam), based on a Mahabharata episode",
+      "origin": "India",
+      "tags": [
+        "ROMANCE",
+        "SHAKUNTALA",
+        "DUSHYANTA",
+        "KALIDASA",
+        "SANSKRIT_LITERATURE",
+        "HINDUISM"
+      ],
+      "ageBand": "10+",
+      "evidenceType": "CLASSICAL_LITERATURE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-mirabai-krishna-devotion",
+      "title": "Mirabai: The Princess Who Loved Krishna",
+      "tradition": "Hindu bhakti (Krishna devotion); Rajasthani history and hagiography",
+      "origin": "Rajasthan and Gujarat, India",
+      "tags": [
+        "ROMANCE",
+        "DEVOTIONAL_LOVE",
+        "MIRABAI",
+        "KRISHNA",
+        "BHAKTI",
+        "HINDUISM",
+        "POETRY"
+      ],
+      "ageBand": "10+",
+      "evidenceType": "HISTORY_AND_DEVOTIONAL_HAGIOGRAPHY",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "romance-dhola-maru-rajasthan",
+      "title": "Dhola and Maru: The Song That Crossed the Desert",
+      "tradition": "Rajasthani folk ballad (Dhola Maru ra Duha)",
+      "origin": "Rajasthan, India",
+      "tags": [
+        "ROMANCE",
+        "DHOLA_MARU",
+        "RAJASTHANI_FOLK",
+        "BALLAD",
+        "DESERT"
+      ],
+      "ageBand": "10+",
+      "evidenceType": "FOLK_ROMANCE",
+      "multilingualTextPath": "data/story-corpus/romance/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}

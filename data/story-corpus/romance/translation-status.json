@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "category": "ROMANCE",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "records": [
+    {
+      "id": "romance-layla-majnun-nizami",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-heer-ranjha-waris-shah",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-shirin-farhad-nizami",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-sohni-mahiwal",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-sassi-punnu",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-jacob-rachel-genesis",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-yusuf-zulaikha-jami",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-shakuntala-dushyanta-kalidasa",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-mirabai-krishna-devotion",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    },
+    {
+      "id": "romance-dhola-maru-rajasthan",
+      "languageStatus": {
+        "en": "READY_FOR_REVIEW",
+        "hi": "READY_FOR_REVIEW",
+        "ar": "READY_FOR_REVIEW",
+        "ur": "READY_FOR_REVIEW"
+      },
+      "semanticAlignment": "AUTHOR_RETELLING_ALIGNED",
+      "rightsStatus": "ORIGINAL_REPOSITORY_AUTHORED"
+    }
+  ]
+}

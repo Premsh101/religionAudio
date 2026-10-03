@@ -17,6 +17,8 @@ documented in `data/story-corpus/README.md`):
 | Epics & heroic sagas | data/story-corpus/epics | Started (materialized multilingual episodes in stories.json) |
 | Rituals & customs | data/story-corpus/rituals | Started (12 records; en/hi/ar/ur text present; NEEDS_HUMAN_REVIEW) |
 | Sacred places & pilgrimage | data/story-corpus/sacred-places | Started (12 records; en/hi/ar/ur text present; NEEDS_HUMAN_REVIEW) |
+| Romance & love stories | data/story-corpus/romance | Started (10 records: scriptural, classical, folk and devotional love; category ROMANCE) |
+| Friendship, family & relationships | data/story-corpus/friendship-family | Started (10 records; category FRIENDSHIP_FAMILY) |
 
 All collections target Hindi (hi), English (en), Arabic (ar) and Urdu (ur).
 
@@ -190,7 +192,8 @@ shared Jewish/Muslim/Christian site 1, Sikhism 1, Jainism 1, Christianity 1, Zor
 Gaps: rivers, caves, mountains and pilgrimage routes; Africa, East Asia and the Americas.
 
 ### 8. Romance & Love Stories
-A major general-story genre currently missing.
+Status: STARTED (10 records in data/story-corpus/romance: Layla-Majnun, Heer-Ranjha, Shirin-Farhad,
+Sohni-Mahiwal, Sassi-Punnu, Jacob-Rachel, Yusuf-Zulaikha, Shakuntala, Mirabai, Dhola-Maru).
 
 Coverage:
 - legendary couples
@@ -246,6 +249,10 @@ Priority: MEDIUM
 
 ### 11. Friendship, Family & Relationships
 Stories designed for family listening.
+
+Status: STARTED (10 records in data/story-corpus/friendship-family: Krishna-Sudama, David-Jonathan,
+Ruth-Naomi, Damon-Pythias, Rama-Bharata, Joseph and his brothers, Shravan Kumar, the Hijra companionship,
+Guru Angad, Karna-Duryodhana).
 
 Subcategories:
 - parent and child
