@@ -19,6 +19,21 @@ export async function POST(request:NextRequest){
   const body=await request.json();
   const {workId,storyId,contentId,language="en",narrationProfile="DEFAULT",title}=body;
   if(!workId&&!storyId&&!contentId)return NextResponse.json({error:"workId, storyId or contentId is required"},{status:400});
+  const targetWhere=workId?{workId}:storyId?{storyId}:{contentId};
+  const existing=await prisma.audioAsset.findFirst({
+    where:{...targetWhere,status:{in:["QUEUED","PROCESSING","READY"]}},
+    orderBy:{createdAt:"desc"},
+    select:{id:true,status:true,totalSegments:true}
+  });
+  if(existing){
+    return NextResponse.json({
+      assetId:existing.id,
+      totalSegments:existing.totalSegments,
+      status:existing.status,
+      reused:true
+    },{status:existing.status==="READY"?200:202});
+  }
+
   const source=await resolveAudioSource(prisma,{workId,storyId,contentId,language});
   const profile=typeof narrationProfile==="string"?narrationProfile:source.profile;
   const segments=buildSegmentRequests(source.text,profile,language);
@@ -34,7 +49,7 @@ export async function POST(request:NextRequest){
  finally{await prisma.$disconnect()}
 }
 
-export async function GET(){
+export async function GET(request:NextRequest){
  const user=await getCurrentSessionUser();
  if(!user||!canGenerate(user.role))return NextResponse.json({error:"Editor access required."},{status:403});
  if(!url)return NextResponse.json({items:[]});
