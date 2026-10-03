@@ -204,5 +204,30 @@
       "حكاية الأحدب"
     ],
     "ingest_policy": "Use only the exact source edition recorded in data/story-corpus/crime/manifest.json. Project Gutenberg public-domain status is explicitly US-facing; verify target-jurisdiction status. For Rekhta/Hindi web material and Arabic Wikisource scans, verify scan/transcription rights separately. Do not substitute modern copyrighted translations."
+  },
+  {
+    "id": "thriller-literature-sources",
+    "tradition": "Cross-cultural thriller, suspense and adventure literature",
+    "source": "Project Gutenberg; Hindi Wikisource; Urdu Wikisource; Arabic Wikisource",
+    "url": "https://www.gutenberg.org/",
+    "status": "mixed-rights-edition-by-edition",
+    "license": "work/edition specific",
+    "works": [
+      "Strange Case of Dr Jekyll and Mr Hyde",
+      "Dracula",
+      "Frankenstein; or, The Modern Prometheus",
+      "The Woman in White",
+      "The Moonstone",
+      "The Thirty-Nine Steps",
+      "The Lodger",
+      "The Island of Doctor Moreau",
+      "चन्द्रकान्ता",
+      "चन्द्रकान्ता सन्तति",
+      "فردوس بریں",
+      "فسانہ آزاد",
+      "مدينة النحاس",
+      "الحصان المسحور"
+    ],
+    "ingest_policy": "Use only the exact source edition recorded in data/story-corpus/thriller/manifest.json. Project Gutenberg public-domain status is USA-facing and must be checked against intended distribution jurisdictions. Wikisource scans/transcriptions and any later editions/translations require separate edition-level rights verification. Never substitute a modern copyrighted translation."
   }
 ]
