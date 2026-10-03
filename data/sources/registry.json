@@ -539,5 +539,95 @@
     "status": "reference-only",
     "license": "site-specific",
     "ingest_policy": "Use for source criticism and biographical uncertainty; do not copy modern commentary."
+  },
+  {
+    "id": "biblegateway-jesus-parables",
+    "tradition": "Christianity",
+    "source": "Bible Gateway — Jesus Parables reference",
+    "url": "https://www.biblegateway.com/learn/topics-themes/explainers/jesus-parables/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for scripture references and parable locations; repository text is an original retelling and does not reproduce a modern translation."
+  },
+  {
+    "id": "biblegateway-sower",
+    "tradition": "Christianity",
+    "source": "Bible Gateway — Matthew 13 / Mark 4 / Luke 8",
+    "url": "https://www.biblegateway.com/passage/?search=Matthew%2013%3A1-52%2CMark%204%3A1-34%2CLuke%208%3A4-17&version=NIV",
+    "status": "reference-only",
+    "license": "NIV copyrighted",
+    "ingest_policy": "Reference only; never ingest NIV prose into the commercial corpus without appropriate rights."
+  },
+  {
+    "id": "suttacentral-arrow-reference",
+    "tradition": "Buddhism",
+    "source": "Cūḷamālukya Sutta / poisoned arrow teaching",
+    "url": "https://en.wikipedia.org/wiki/Parable_of_the_Poisoned_Arrow",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for locating the canonical teaching; repository story is an original retelling."
+  },
+  {
+    "id": "dhammatalks-kisa-gotami",
+    "tradition": "Buddhism",
+    "source": "DhammaTalks — Kīsā Gotamī",
+    "url": "https://www.dhammatalks.org/suttas/KN/Thig/thig10.html",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use to distinguish the canonical verses from the later mustard-seed commentary story."
+  },
+  {
+    "id": "ancient-buddhist-texts-kisa",
+    "tradition": "Buddhism",
+    "source": "Ancient Buddhist Texts — Kisa Gotami story",
+    "url": "https://ancient-buddhist-texts.net/English-Texts/Dhamma-Verses-Comm/08-13.htm",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for traditional story structure and attribution; repository text is original."
+  },
+  {
+    "id": "jainworld-elephant",
+    "tradition": "Jainism",
+    "source": "Jainworld — Elephant and the Blind Men",
+    "url": "https://jainworld.com/education/jain-education-material/jain-stories/elephant-and-the-blind-men/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for Jain anekantavada framing; do not claim the motif is exclusive to Jainism."
+  },
+  {
+    "id": "masnavi-elephant",
+    "tradition": "Persian Sufi tradition",
+    "source": "Masnavi.net — Rumi, elephant in dark room",
+    "url": "https://www.masnavi.net/1/25/eng/3/1259/",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use the classical Persian text for identification and line location; repository stores an original retelling rather than a modern translation."
+  },
+  {
+    "id": "sefaria-honi-carob",
+    "tradition": "Judaism",
+    "source": "Sefaria — Ta'anit 23a, Honi and the carob tree",
+    "url": "https://voices.sefaria.org/sheets/152534",
+    "status": "reference-only",
+    "license": "Sefaria version-specific",
+    "ingest_policy": "Use for traditional source identification; verify exact edition/license before any direct text reuse."
+  },
+  {
+    "id": "sgpc-equality-bhai-lalo",
+    "tradition": "Sikhism",
+    "source": "SGPC Gurdwara Gazette — equality and Bhai Lalo anecdote",
+    "url": "https://sgpc.net/gazette/2019/January/January-English.pdf",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for Sikh traditional framing; miraculous food imagery is labeled as tradition in the repository."
+  },
+  {
+    "id": "katha-upanishad-reference",
+    "tradition": "Hindu / Upanishadic tradition",
+    "source": "Katha Upanishad reference",
+    "url": "https://upanishads.org.in/upanishads/2/3",
+    "status": "reference-only",
+    "license": "site-specific",
+    "ingest_policy": "Use for narrative structure and philosophical context; verify edition-specific rights before direct reuse."
   }
 ]
