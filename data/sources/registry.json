@@ -229,5 +229,31 @@
       "الحصان المسحور"
     ],
     "ingest_policy": "Use only the exact source edition recorded in data/story-corpus/thriller/manifest.json. Project Gutenberg public-domain status is USA-facing and must be checked against intended distribution jurisdictions. Wikisource scans/transcriptions and any later editions/translations require separate edition-level rights verification. Never substitute a modern copyrighted translation."
+  },
+  {
+    "id": "children-literature-sources",
+    "tradition": "Cross-cultural children's literature, fables and family stories",
+    "source": "Project Gutenberg; Hindi Wikisource; Arabic Wikisource",
+    "url": "https://www.gutenberg.org/",
+    "status": "mixed-rights-edition-by-edition",
+    "license": "work/edition specific",
+    "works": [
+      "Alice's Adventures in Wonderland",
+      "The Wonderful Wizard of Oz",
+      "The Jungle Book",
+      "Just So Stories",
+      "The Wind in the Willows",
+      "Peter Pan",
+      "The Secret Garden",
+      "A Little Princess",
+      "The Aesop for Children",
+      "Household Tales by Brothers Grimm",
+      "ईदगाह",
+      "दो बैलों की कथा",
+      "बड़े भाई साहब",
+      "السندباد البحري",
+      "كليلة ودمنة"
+    ],
+    "ingest_policy": "Use only the exact edition recorded in data/story-corpus/children/manifest.json. Project Gutenberg public-domain status is jurisdiction-specific; Peter Pan receives additional legal review. Hindi and Arabic Wikisource sources require edition/transcription rights verification. Do not replace a canonical source with a modern copyrighted translation."
   }
 ]
