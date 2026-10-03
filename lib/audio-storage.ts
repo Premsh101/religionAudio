@@ -4,16 +4,40 @@ import { GetObjectCommand, HeadObjectCommand, PutObjectCommand, S3Client } from 
 
 export type StoredAudio={storageKey:string;url:string;bytes:number};
 
-const provider=process.env.AUDIO_STORAGE_PROVIDER||"local";
-const root=process.env.AUDIO_STORAGE_DIR||path.join(process.cwd(),".audio");
-const publicBase=(process.env.AUDIO_PUBLIC_BASE_URL||"").replace(/\/$/,"");
-const bucket=process.env.R2_BUCKET||"";
-const r2PublicBase=(process.env.R2_PUBLIC_BASE_URL||"").replace(/\/$/,"");
+/** Env values pasted from dashboards sometimes carry quotes or stray spaces. */
+function env(name:string){return (process.env[name]||"").trim().replace(/^(["'])(.*)\1$/,"$2").trim()}
 
-const r2=provider==="r2" ? new S3Client({
- endpoint:process.env.R2_ENDPOINT,
+const bucket=env("R2_BUCKET");
+const r2AccessKeyId=env("R2_ACCESS_KEY_ID");
+const r2SecretAccessKey=env("R2_SECRET_ACCESS_KEY");
+
+/**
+ * R2 endpoint from R2_ACCOUNT_ID, or from R2_ENDPOINT exactly as Cloudflare shows it
+ * (a trailing "/<bucket>" path is dropped, since the bucket is passed separately).
+ */
+function r2Endpoint(){
+ const accountId=env("R2_ACCOUNT_ID");
+ if(accountId)return `https://${accountId}.r2.cloudflarestorage.com`;
+ const raw=env("R2_ENDPOINT");
+ if(!raw)return "";
+ try{return new URL(raw.includes("://")?raw:`https://${raw}`).origin}catch{return ""}
+}
+const endpoint=r2Endpoint();
+const r2Ready=Boolean(endpoint&&bucket&&r2AccessKeyId&&r2SecretAccessKey);
+
+/** R2 is used as soon as its four values are set; otherwise audio stays on the server's disk. */
+const provider=r2Ready?"r2":"local";
+const r2Partial=Boolean(endpoint||bucket||r2AccessKeyId||r2SecretAccessKey);
+if(!r2Ready&&r2Partial)console.warn("R2 is partly configured, so audio is stored on the server's disk. Set R2_ACCOUNT_ID (or R2_ENDPOINT), R2_BUCKET, R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY.");
+const root=process.env.AUDIO_STORAGE_DIR||path.join(process.cwd(),".audio");
+const publicBase=env("AUDIO_PUBLIC_BASE_URL").replace(/\/$/,"");
+const r2PublicBase=withScheme(env("R2_PUBLIC_BASE_URL")).replace(/\/$/,"");
+function withScheme(url:string){return url&&!url.includes("://")?`https://${url}`:url}
+
+const r2=r2Ready ? new S3Client({
+ endpoint,
  region:"auto",
- credentials:{accessKeyId:process.env.R2_ACCESS_KEY_ID||"",secretAccessKey:process.env.R2_SECRET_ACCESS_KEY||""}
+ credentials:{accessKeyId:r2AccessKeyId,secretAccessKey:r2SecretAccessKey}
 }) : null;
 
 function keyFor(extension:string){return `${new Date().toISOString().slice(0,10)}/${crypto.randomUUID()}.${extension}`}
