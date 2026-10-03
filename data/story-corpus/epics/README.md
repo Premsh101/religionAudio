@@ -41,4 +41,4 @@ Human review is still required before publication, especially for sensitive reli
 
 ## Sources and narrative lineage
 
-The repository was checked against public-domain historical editions and traditional narrative descriptions. For example, Project Gutenberg hosts public-domain-in-the-USA English editions of Beowulf and the Ganguli Mahabharata; Wikisource hosts a public-domain historical Collins Iliad edition; Project Gutenberg hosts historical English Persian literature containing the Shahnameh. [31mThe repository texts themselves remain original retellings, not those editions copied into the corpus.[0m
+The repository was checked against public-domain historical editions and traditional narrative descriptions. For example, Project Gutenberg hosts public-domain-in-the-USA English editions of Beowulf and the Ganguli Mahabharata; Wikisource hosts a public-domain historical Collins Iliad edition; Project Gutenberg hosts historical English Persian literature containing the Shahnameh. The repository texts themselves remain original retellings, not those editions copied into the corpus.
