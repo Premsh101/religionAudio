@@ -158,9 +158,10 @@
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Urdu Wikisource / UrduZaban",
-        "url": "https://ur.wikisource.org/wiki/فسانۂ_عجائب",
+        "url": "https://ur.wikisource.org/wiki/%D9%81%D8%B3%D8%A7%D9%86%DB%82_%D8%B9%D8%AC%D8%A7%D8%A6%D8%A8/%D9%81%D8%B3%D8%A7%D9%86%DB%82_%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%90_%DB%8C%D9%85%D9%86",
         "alternateUrl": "https://github.com/FarooqStars/urduzaban/blob/master/uz-data/uz-adab-matn.json",
-        "format": "Wikisource text"
+        "format": "Wikisource text",
+        "pageTitle": "فسانۂ عجائب/فسانۂ سلطانِ یمن"
       },
       "ingest": "wikisource-api"
     },
@@ -210,8 +211,16 @@
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Arabic Wikisource — ألف ليلة وليلة",
-        "url": "https://ar.wikisource.org/wiki/ألف_ليلة_ولي_لة",
-        "format": "Wikisource text"
+        "url": "https://ar.wikisource.org/wiki/%D8%B5%D9%81%D8%AD%D8%A9:%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9.djvu/12",
+        "format": "Wikisource text",
+        "pageTitles": [
+          "صفحة:ألف ليلة وليلة.djvu/12",
+          "صفحة:ألف ليلة وليلة.djvu/13",
+          "صفحة:ألف ليلة وليلة.djvu/14",
+          "صفحة:ألف ليلة وليلة.djvu/15",
+          "صفحة:ألف ليلة وليلة.djvu/16",
+          "صفحة:ألف ليلة وليلة.djvu/17"
+        ]
       },
       "ingest": "wikisource-api"
     },
@@ -227,8 +236,11 @@
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Arabic Wikisource — ألف ليلة وليلة",
-        "url": "https://ar.wikisource.org/wiki/ألف_ليلة_ولي_لة",
-        "format": "Wikisource text"
+        "url": "https://ar.wikisource.org/wiki/%D8%B5%D9%81%D8%AD%D8%A9:%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9.djvu/18",
+        "format": "Wikisource text",
+        "pageTitles": [
+          "صفحة:ألف ليلة وليلة.djvu/18"
+        ]
       },
       "ingest": "wikisource-api"
     },
@@ -240,14 +252,14 @@
       "year": null,
       "origin": "Arab world / composite Thousand Nights tradition",
       "category": "JINN_FOLKLORE",
-      "rights": "PUBLIC_DOMAIN_TRADITION",
+      "rights": "EDITION_REVIEW_REQUIRED",
       "fullText": "SOURCE_ONLY",
       "source": {
         "name": "Arabic Wikisource — ألف ليلة وليلة",
-        "url": "https://ar.wikisource.org/wiki/ألف_ليلة_ولي_لة/الجزء_الثاني",
+        "url": "https://ar.wikisource.org/wiki/%D8%A3%D9%84%D9%81_%D9%84%D9%8A%D9%84%D8%A9_%D9%88%D9%84%D9%8A%D9%84%D8%A9/%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A",
         "format": "Wikisource text"
       },
-      "ingest": "wikisource-api"
+      "ingest": "wikisource-review"
     }
   ]
 }
