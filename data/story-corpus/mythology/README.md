@@ -27,10 +27,16 @@ The first wave covers:
 - Greek / Roman mythology
 - Norse mythology
 - Ancient Egyptian mythology
-- Hindu / Indian epic tradition
-- Buddhist Jataka tradition
+- Hindu / Indian epic tradition (Ganguli's Mahabharata: Adi Parva PG 7864; Vana Parva PG 11894 for Nala and Damayanti, PG 12333 for Savitri)
 - Welsh mythology
-- Finnish / Karelian mythology
+- Finnish / Karelian mythology (John Martin Crawford's 1888 English Kalevala, PG 5186; PG 7000 is the Finnish original)
+
+The two Jataka records moved to the children manifest as fables (Babbitt's Jataka Tales, 1912, ages 5-9).
+The Bhagavad-Gita record stays here for now but is tagged `category: "SCRIPTURE"` with a `scriptureNote`:
+it is living scripture and must be presented as such, not as mythology.
+
+Every record has `source.extract` markers, so `mythology_corpus.py` materializes each story rather than
+the whole book. See `../README.md`.
 
 The corpus can later expand into Persian/Zoroastrian, Mesopotamian, Japanese, Chinese, African, Mesoamerican, Slavic and other traditions after exact open sources are verified.
 

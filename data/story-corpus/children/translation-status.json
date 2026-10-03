@@ -20,8 +20,11 @@
     "children-hi-eidgah",
     "children-hi-do-bailon-ki-katha",
     "children-hi-bade-bhai-sahab",
+    "children-en-cabuliwallah",
     "children-ar-sindbad",
-    "children-ar-kalila-dimna"
+    "children-ar-kalila-dimna",
+    "children-en-jataka-monkey-crocodile",
+    "children-en-jataka-banyan-deer"
   ],
   "expectedLayout": "data/story-corpus/children/translations/<storyId>/<lang>.txt",
   "qaLayout": "data/story-corpus/children/translations/<storyId>/<lang>.qa.json",

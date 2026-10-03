@@ -2,110 +2,39 @@
 
 ## Current status
 
-Dedicated corpus collections already created:
+Dedicated corpus collections already created (conventions, rights labels and extraction markers are
+documented in `data/story-corpus/README.md`):
 
 | Category | Corpus | Status |
 |---|---|---|
-| Ghost / supernatural | data/story-corpus/ghost | Started |
-| Crime / detective | data/story-corpus/crime | Started |
-| Thriller / suspense | data/story-corpus/thriller | Started |
-| Children / family | data/story-corpus/children | Started |
+| Ghost / supernatural | data/story-corpus/ghost | Started (12 records) |
+| Crime / detective | data/story-corpus/crime | Started (18 records) |
+| Thriller / suspense | data/story-corpus/thriller | Started (14 records; 2 tagged ADVENTURE) |
+| Children / family | data/story-corpus/children | Started (18 records) |
+| Mythology | data/story-corpus/mythology | Started (28 records; Bhagavad-Gita tagged SCRIPTURE) |
+| Folklore & legends | data/story-corpus/folklore | Started (36 records) |
+| Moral tales & fables | data/story-corpus/moral-tales | Started (40 records: Hitopadesha, Jataka, Oriental Tales, Thousand and One Days) |
+| Epics & heroic sagas | data/story-corpus/epics | Started (materialized multilingual episodes in stories.json) |
 
-All four collections target Hindi (hi), English (en), Arabic (ar) and Urdu (ur).
+All collections target Hindi (hi), English (en), Arabic (ar) and Urdu (ur).
+
+## Gaps in the started collections
+
+- Mythology: Persian/Zoroastrian, Mesopotamian, Chinese, Japanese, African and Indigenous traditions;
+  Jain narratives. A scripture collection would let the Bhagavad-Gita leave the mythology manifest.
+- Folklore: Arab, Persian, Central Asian, Southeast Asian and Latin American folklore; more Hindi and
+  Arabic source-language tales (Singhasan Battisi still needs a verified open edition).
+- Moral tales: Panchatantra (Ryder's 1925 translation is not on Project Gutenberg; no verified open
+  English edition yet), Jain and Sufi teaching tales, African and Asian animal fables.
+- Epics: Iliad, Odyssey, Beowulf, Norse sagas, Shahnameh and regional heroic traditions. R. C. Dutt's
+  condensed Mahabharata in verse is on Project Gutenberg (#19630, not yet catalogued); his Ramayana
+  volume was not found there.
+- Arabic: only nights 1-~102 and the closing Ma'ruf tale of One Thousand and One Nights are
+  transcribed on ar.wikisource; The City of Brass and The Ebony Horse need another open edition.
 
 ## Remaining high-priority story categories
 
-### 1. Mythology
-Core religious and mythological narratives.
-
-Coverage:
-- Hindu
-- Buddhist
-- Jain
-- Greek
-- Roman
-- Norse
-- Egyptian
-- Mesopotamian
-- Celtic
-- Persian / Zoroastrian
-- Chinese
-- Japanese
-- African traditions
-- Indigenous traditions where open or permission-cleared sources exist
-
-Story types:
-- creation stories
-- gods and goddesses
-- heroes
-- divine encounters
-- origin narratives
-- cosmological stories
-- sacred quests
-
-Priority: VERY HIGH
-
-### 2. Folklore & Legends
-Traditional stories that are not necessarily mythology.
-
-Coverage:
-- Indian regional folklore
-- Arab folklore
-- Persian folklore
-- Central Asian folklore
-- European folklore
-- African folklore
-- East Asian folklore
-- Southeast Asian folklore
-- Latin American folklore
-
-Subcategories:
-- legends
-- trickster tales
-- supernatural folklore
-- origin legends
-- village tales
-- wisdom folklore
-
-Priority: VERY HIGH
-
-### 3. Moral Tales & Fables
-Short stories with a clear lesson.
-
-Coverage:
-- Panchatantra
-- Hitopadesha
-- Jataka tales
-- Aesop
-- Kalila wa Dimna
-- Jain moral stories
-- Buddhist moral stories
-- Sufi teaching tales
-- regional Indian moral tales
-- African and Asian animal fables
-
-Priority: VERY HIGH
-
-### 4. Epics & Heroic Sagas
-Long-form narrative material.
-
-Coverage:
-- Ramayana
-- Mahabharata
-- Puranic heroic narratives
-- Iliad
-- Odyssey
-- Beowulf
-- Norse sagas
-- Shahnameh
-- regional heroic traditions
-
-Recommended implementation:
-Store the full canonical or openly licensed work separately, then create story-level episodes from chapters or books.
-
-Priority: VERY HIGH
-
-### 5. Adventure & Quest
+### 1. Adventure & Quest
 Story-first adventure independent of thriller/crime.
 
 Subcategories:
@@ -121,7 +50,7 @@ Subcategories:
 
 Priority: HIGH
 
-### 6. Historical Stories
+### 2. Historical Stories
 Narratives connected to documented historical people or events.
 
 Subcategories:
@@ -139,7 +68,7 @@ Keep historical fact, legend and later tradition explicitly separated with evide
 
 Priority: HIGH
 
-### 7. Biographies & Life Stories
+### 3. Biographies & Life Stories
 Lives of important religious, cultural and historical figures.
 
 Coverage:
@@ -162,7 +91,7 @@ Story format:
 
 Priority: HIGH
 
-### 8. Parables & Wisdom Stories
+### 4. Parables & Wisdom Stories
 Short narrative teachings.
 
 Coverage:
@@ -178,7 +107,7 @@ Coverage:
 
 Priority: HIGH
 
-### 9. Festival Stories
+### 5. Festival Stories
 Stories explaining the origin, significance or cultural memory of festivals.
 
 Coverage examples:
@@ -205,7 +134,7 @@ Each narrative should be marked as scriptural, traditional, historical, folklori
 
 Priority: HIGH
 
-### 10. Rituals & Customs
+### 6. Rituals & Customs
 Story-driven explanations of religious and cultural practices.
 
 Examples:
@@ -223,7 +152,7 @@ A short factual explanation plus an optional traditional story.
 
 Priority: MEDIUM-HIGH
 
-### 11. Sacred Places & Pilgrimage Stories
+### 7. Sacred Places & Pilgrimage Stories
 Place-based storytelling.
 
 Coverage:
@@ -250,7 +179,7 @@ The current Place model already supports this category directly.
 
 Priority: MEDIUM-HIGH
 
-### 12. Romance & Love Stories
+### 8. Romance & Love Stories
 A major general-story genre currently missing.
 
 Coverage:
@@ -274,7 +203,7 @@ Use audience metadata carefully.
 
 Priority: MEDIUM-HIGH
 
-### 13. War & Courage Stories
+### 9. War & Courage Stories
 Stories centered on conflict, sacrifice, strategy and courage.
 
 Coverage:
@@ -289,7 +218,7 @@ Separate documented history from later heroic tradition.
 
 Priority: MEDIUM
 
-### 14. Survival & Disaster Stories
+### 10. Survival & Disaster Stories
 High-engagement narrative category.
 
 Subcategories:
@@ -305,7 +234,7 @@ For real events, distinguish eyewitness or documented history from later retelli
 
 Priority: MEDIUM
 
-### 15. Friendship, Family & Relationships
+### 11. Friendship, Family & Relationships
 Stories designed for family listening.
 
 Subcategories:
@@ -320,7 +249,7 @@ Subcategories:
 
 Priority: MEDIUM
 
-### 16. Inspirational / Resilience Stories
+### 12. Inspirational / Resilience Stories
 Character-driven stories about overcoming adversity.
 
 Subcategories:
@@ -363,9 +292,9 @@ The ContentType should remain focused on the semantic kind of content; genre and
 
 ## Recommended build order
 
-After the four collections already started:
+After the eight collections already started:
 
-Mythology -> Folklore & Legends -> Moral Tales & Fables -> Epics & Heroic Sagas -> Adventure -> Historical Stories -> Biographies -> Parables/Wisdom -> Festival Stories -> Sacred Places -> Rituals -> Romance -> War/Courage -> Survival -> Family/Relationships -> Inspirational
+Adventure -> Historical Stories -> Biographies -> Parables/Wisdom -> Festival Stories -> Sacred Places -> Rituals -> Romance -> War/Courage -> Survival -> Family/Relationships -> Inspirational
 
 ## Multilingual rule
 

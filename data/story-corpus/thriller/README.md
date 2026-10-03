@@ -28,6 +28,12 @@ Project Gutenberg lists the referenced older works as public domain in the USA, 
 - Urdu / Lucknow: Abdul Halim Sharar, Ratan Nath Sarshar
 - Arabic literary tradition: One Thousand and One Nights adventure tales
 
+`thriller-ur-fasana-azad` and `thriller-ar-city-of-brass` are adventure narratives rather than thrillers.
+They stay on this shelf with `category: "ADVENTURE"` until an Adventure collection exists (see
+CONTENT_ROADMAP.md). The Ebony Horse is catalogued under its canonical title حكاية الفرس الأبنوس. Neither
+Arabic tale is transcribed on ar.wikisource yet, so both are `RIGHTS_REVIEW` (catalog-only).
+Every record carries `ageBand` and `contentNotes`.
+
 ## Commands
 
     python scripts/ingest/thriller_corpus.py

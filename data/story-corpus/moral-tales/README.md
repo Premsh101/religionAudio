@@ -4,11 +4,11 @@ This collection provides short, repeatable wisdom stories distinct from the broa
 
 The first wave contains 40 story-level records:
 - 12 Hitopadesha / Book of Good Counsels stories
-- 12 Jataka stories
+- 12 Jataka stories (Ellen C. Babbitt, Jataka Tales, 1912 — PG 62514; corrected from PG 7518 More Jataka Tales, which does not contain them)
 - 8 Oriental moral tales
 - 8 stories from The Thousand and One Days
 
-The sources cover Indian/Buddhist, South Asian, Arabic/Persian-influenced and broader Eastern storytelling traditions. Project Gutenberg lists the cited source editions as public domain in the USA. The Hindu literature source includes the Book of Good Counsels and explicitly identifies it as selected from the Sanskrit Hitopadesha; its Gutenberg text also warns non-US users to check local law. citeturn863348view1turn202287search0turn407385search0turn311879view0
+The sources cover Indian/Buddhist, South Asian, Arabic/Persian-influenced and broader Eastern storytelling traditions. Project Gutenberg lists the cited source editions as public domain in the USA. The Hindu literature source includes the Book of Good Counsels and explicitly identifies it as selected from the Sanskrit Hitopadesha; its Gutenberg text also warns non-US users to check local law.
 
 ## Four-language rule
 
@@ -35,6 +35,7 @@ Do not summarize or modernize the lesson into a different ethical message.
 
 ## Commands
 
+    python scripts/ingest/moral_tales_corpus.py --cache-dir /tmp/pgcache --dry-run
     python scripts/ingest/moral_tales_corpus.py
     python scripts/ingest/translate_moral_tales_corpus.py moral-en-merchant-seri
     python scripts/ingest/verify_moral_tales_translations.py moral-en-merchant-seri hi ar ur

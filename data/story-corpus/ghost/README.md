@@ -11,12 +11,21 @@ Languages: Hindi (hi), English (en), Arabic (ar), Urdu (ur).
 4. Keep Project Gutenberg notices/licence material with any imported Project Gutenberg electronic work where applicable.
 5. For Wikisource, verify the exact edition/page before moving a record into the production database.
 
-## First collection
-English: The Canterville Ghost, The Monkey's Paw, The Red Room, The Signal-Man, The Banshee.
- Hindi: भूत, वेताल पच्चीसी, सिंहासन बत्तीसी.
- Urdu: فسانۂ عجائب, باغ و بہار / قصۂ چار درویش, داستان امیر حمزہ / طلسم ہوش ربا.
- Arabic: حكاية التاجر مع العفريت, حكاية الصياد والعفريت, حسن بدر الدين والجنية.
+## Collection
+English: The Canterville Ghost, The Monkey's Paw, The Red Room, The Signal-Man (extracted from Mugby Junction, PG 27924),
+The Banshee (extracted from Stories by English Authors: Ireland, PG 6040), The Phantom 'Rickshaw (Kipling, PG 2806),
+The Hungry Stones (Tagore, PG 2518).
+Hindi: भूत (Premchand; text committed at `text/hi/ghost-hi-bhoot-premchand.txt`), वेताल पच्चीसी.
+Arabic: حكاية التاجر مع العفريت, حكاية الصياد مع العفريت (Bulaq 1935 scan pages on ar.wikisource),
+حكاية الوزير نور الدين مع شمس الدين أخيه (the Nur al-Din Ali / Badr al-Din Hasan tale; ألف ليلة وليلة/الجزء الثاني).
 
-`SOURCE_ONLY` means the story is catalogued but the text is deliberately not copied until the source/edition is verified.
+Changes in 2026-10: सिंहासन बत्तीसी, فسانۂ عجائب and باغ و بہار moved to the folklore manifest (they are
+frame-tale/dastan collections, not ghost stories). داستان امیر حمزہ / طلسم ہوش ربا was removed: it merged two
+very large works and cited no specific open edition.
+
+`fullText`: `SOURCE_ONLY` = catalogued, no text yet; `PG_EXTRACT` = materialized from Project Gutenberg by the
+manifest's `source.extract` markers; `TEXT_PRESENT` = source text committed (see `source.localPath`).
+Every record carries `ageBand` and `contentNotes`; the Fisherman and Nur al-Din Nights tales and Premchand's भूत are adult-only (18+).
+See `../README.md` for rights labels and marker conventions.
 
 These records are intended to feed the existing Story/ContentItem pipeline and later multilingual TTS generation.
