@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Bookmark, Pause, Play, Sparkles, Volume2 } from "lucide-react";
 import AppHeader from "../../../components/AppHeader";
+import ReadingAudioPanel from "../../../components/ReadingAudioPanel";
 
 type Passage={id:string;reference:string;sequence:number;text:string};
-type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number};
+type Work={id:string;title:string;slug:string;language:string;translator:string|null;edition:string|null;rightsStatus:string;source:{name:string;url:string;license:string|null}|null;passages:Passage[];chapters:number[];currentChapter:number;audioAssetId:string|null};
 
 export default function WorkReader({work}:{work:Work}){
   const [active,setActive]=useState(work.passages[0]?.sequence||1);
@@ -104,6 +105,7 @@ export default function WorkReader({work}:{work:Work}){
           <button onClick={toggleBookmark} aria-label={bookmarked?"Remove bookmark":"Save book"} className={bookmarked?"rounded-xl border border-violet-300/20 bg-violet-300/[0.08] p-3 text-violet-200":"rounded-xl border border-white/10 p-3 text-zinc-500 hover:text-white"}><Bookmark className="h-5 w-5" fill={bookmarked?"currentColor":"none"}/></button>
         </div>
 
+        {work.audioAssetId&&<div className="mt-8"><ReadingAudioPanel title={work.title+" · full narration"} assetId={work.audioAssetId}/></div>}
         <div className="mt-8 flex items-center justify-between gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-4">
           <Link href={previousChapter?"/read/"+work.slug+"?chapter="+previousChapter:"#"} className={"rounded-xl border border-white/10 px-3 py-2 text-xs "+(previousChapter?"text-zinc-300 hover:bg-white/5":"pointer-events-none text-zinc-700")}>← Previous</Link>
           <div className="flex max-w-[60%] gap-1 overflow-x-auto">{work.chapters.map(ch=><Link key={ch} href={"/read/"+work.slug+"?chapter="+ch} className={"min-w-9 rounded-lg px-2.5 py-2 text-center text-xs "+(ch===work.currentChapter?"bg-white text-black":"border border-white/10 text-zinc-500 hover:text-white")}>{ch}</Link>)}</div>
