@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "targetLanguages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "recordCount": 40,
+  "expectedLayout": "data/story-corpus/moral-tales/translations/<storyId>/<lang>.txt",
+  "qaLayout": "data/story-corpus/moral-tales/translations/<storyId>/<lang>.qa.json",
+  "completionRule": "Four-language output plus semantic QA PASS is required before publication."
+}
