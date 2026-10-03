@@ -35,6 +35,8 @@ export async function POST(request:NextRequest){
 }
 
 export async function GET(){
+ const user=await getCurrentSessionUser();
+ if(!user||!canGenerate(user.role))return NextResponse.json({error:"Editor access required."},{status:403});
  if(!url)return NextResponse.json({items:[]});
  const prisma=new PrismaClient({adapter:new PrismaPg({connectionString:url})});
  try{
