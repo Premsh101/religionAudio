@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Headphones, Search, Sparkles } from "lucide-react";
 import type { FeedItem } from "../../lib/server/recommendations";
 import { accentFor, iconFor } from "./ItemCard";
+import CoverArt from "../CoverArt";
 
 /** Featured carousel of the newest books and stories, like the hero on streaming and audiobook apps. */
 export default function NewArrivalsHero({items}:{items:FeedItem[]}){
@@ -22,7 +23,8 @@ export default function NewArrivalsHero({items}:{items:FeedItem[]}){
   return <section className="mx-auto max-w-7xl px-5 pb-12 pt-5 md:px-8 md:pt-7" onMouseEnter={()=>setPaused(true)} onMouseLeave={()=>setPaused(false)} onFocusCapture={()=>setPaused(true)}>
     <div className={`relative overflow-hidden rounded-[36px] border border-white/10 bg-gradient-to-br ${accentFor(item)} to-zinc-950 p-7 transition-colors duration-700 md:p-12`}>
       <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/5 blur-3xl"/>
-      <div className="relative grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+      <div className="relative grid gap-8 md:grid-cols-[auto_1fr_auto] md:items-end">
+        <Link href={item.href} className="hidden w-44 md:block lg:w-52" aria-hidden tabIndex={-1}><CoverArt title={item.title} tag={item.tag} kind={item.kind} coverUrl={item.coverUrl} size="md"/></Link>
         <div className="min-w-0 max-w-3xl" aria-live="polite">
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-300 px-3 py-1 font-semibold text-black"><Sparkles className="h-3.5 w-3.5"/>{item.isNew?"Newly added":"Featured"}</span>

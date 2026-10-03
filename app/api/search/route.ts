@@ -19,12 +19,12 @@ export async function GET(request:NextRequest){
 
   const [works,passages,stories]=await Promise.all([
     prisma.work.findMany({
-      where:{OR:contains.map(term=>({title:{contains:term,mode:"insensitive"}}))},
+      where:{status:"PUBLISHED",OR:contains.map(term=>({title:{contains:term,mode:"insensitive"}}))},
       take:12,
       select:{id:true,title:true,slug:true,language:true,translator:true,edition:true,rightsStatus:true,source:{select:{name:true,license:true}}}
     }),
     prisma.passage.findMany({
-      where:{OR:contains.map(term=>({text:{contains:term,mode:"insensitive"}}))},
+      where:{work:{status:"PUBLISHED"},OR:contains.map(term=>({text:{contains:term,mode:"insensitive"}}))},
       take:30,
       orderBy:{sequence:"asc"},
       select:{id:true,reference:true,text:true,sequence:true,work:{select:{title:true,slug:true,source:{select:{name:true}}}}}

@@ -3,6 +3,7 @@ import { ArrowLeft, ShieldCheck } from "lucide-react";
 import StoryClient from "./StoryClient";
 import stories from "../../../data/stories.seed.json";
 import { getPrisma } from "../../../lib/server/prisma";
+import { audioPublicUrl } from "../../../lib/audio-storage";
 import AppHeader from "../../../components/AppHeader";
 
 type StorySeed={title:string;slug:string;content_type:string;audience:string;age_min:number;age_max:number;tag:string;narration_profile:string;style_notes:string;status:string;body?:string};
@@ -19,7 +20,7 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
     select:{
       title:true,slug:true,type:true,audience:true,ageMin:true,ageMax:true,language:true,summary:true,body:true,status:true,narrationProfile:true,
       source:{select:{name:true,url:true,license:true,rightsStatus:true}},
-      id:true,
+      id:true,coverImageKey:true,
       audioAssets:{where:{status:{in:["QUEUED","PROCESSING","READY"]},voiceId:{in:["female","male"]}},orderBy:{createdAt:"desc"},select:{id:true,voiceId:true}}
     }
   }).catch(()=>null) : null;
@@ -42,6 +43,7 @@ export default async function StoryPage({params}:{params:Promise<{slug:string}>}
       status:dbStory.status,
       source:dbStory.source,
       storyId:dbStory.id,
+      coverUrl:dbStory.coverImageKey?audioPublicUrl(dbStory.coverImageKey):null,
       audio:{female:dbStory.audioAssets.find(a=>a.voiceId==="female")?.id||null,male:dbStory.audioAssets.find(a=>a.voiceId==="male")?.id||null}
     }}/>;
   }

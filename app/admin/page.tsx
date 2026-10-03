@@ -75,7 +75,7 @@ export default function AdminPage(){
     <section className="mx-auto max-w-7xl px-5 py-10">
       <div className="flex flex-wrap items-end justify-between gap-5">
         <div><p className="text-xs uppercase tracking-[0.2em] text-amber-300">Editorial studio</p><h1 className="mt-2 font-display text-4xl">Shape the story library.</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-zinc-500">Draft source-aware stories, review the language, then publish them into the reader experience.</p></div>
-        <button onClick={newStory} className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><FilePlus2 className="h-4 w-4"/>New story</button>
+        <div className="flex gap-2"><Link href="/admin/review" className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-3 text-sm text-zinc-300">Review &amp; covers</Link><button onClick={newStory} className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-black"><FilePlus2 className="h-4 w-4"/>New story</button></div>
       </div>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">

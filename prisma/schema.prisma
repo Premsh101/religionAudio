@@ -173,6 +173,13 @@ model Work {
   bookmarks        Bookmark[]
   audioAssets      AudioAsset[]
   contentItems     ContentItem[]
+  /// Books are public once PUBLISHED; existing books default to published.
+  status           StoryStatus   @default(PUBLISHED)
+  publishedAt      DateTime?
+  summary          String?
+  coverImageKey    String?
+  coverPrompt      String?
+  coverUpdatedAt   DateTime?
   createdAt        DateTime      @default(now())
   updatedAt        DateTime      @updatedAt
 }
@@ -247,6 +254,9 @@ model Story {
   narrationProfile NarrationProfile   @default(DEFAULT)
   contentWarnings  String[]
   status           StoryStatus        @default(DRAFT)
+  coverImageKey    String?
+  coverPrompt      String?
+  coverUpdatedAt   DateTime?
   publishedAt      DateTime?
   places           PlaceOnStory[]
   progress         StoryProgress[]

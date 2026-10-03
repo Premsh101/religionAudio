@@ -10,10 +10,10 @@ export async function GET(_request:Request,{params}:{params:Promise<{id:string}>
  const {id}=await params;
  const asset=await prisma.audioAsset.findUnique({
    where:{id},
-   select:{id:true,title:true,status:true,totalSegments:true,durationMs:true,language:true,voiceId:true,narrationProfile:true,engine:true,story:{select:{title:true,slug:true,status:true}},work:{select:{title:true,slug:true}},content:{select:{title:true,slug:true}},segments:{orderBy:{sequence:"asc"},select:{id:true,sequence:true,startMs:true,endMs:true,storageKey:true,transcript:true}}}
+   select:{id:true,title:true,status:true,totalSegments:true,durationMs:true,language:true,voiceId:true,narrationProfile:true,engine:true,story:{select:{title:true,slug:true,status:true}},work:{select:{title:true,slug:true,status:true}},content:{select:{title:true,slug:true}},segments:{orderBy:{sequence:"asc"},select:{id:true,sequence:true,startMs:true,endMs:true,storageKey:true,transcript:true}}}
  });
  if(!asset)return NextResponse.json({error:"Audio asset not found."},{status:404});
- const isPublic=asset.story?.status==="PUBLISHED" || Boolean(asset.work) || Boolean(asset.content);
+ const isPublic=asset.story?.status==="PUBLISHED" || asset.work?.status==="PUBLISHED" || Boolean(asset.content);
  if(!isPublic)return NextResponse.json({error:"Audio asset is not public."},{status:403});
  if(asset.status==="FAILED")return NextResponse.json({error:"Narration could not be generated.",status:asset.status},{status:409});
  // While generating, return the parts that are already stored so playback can start immediately.

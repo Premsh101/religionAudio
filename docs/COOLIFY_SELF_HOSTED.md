@@ -73,15 +73,32 @@ The seed is intentionally not part of every application startup. This prevents a
 
 ## Create the first administrator
 
-Create a normal account through the simple signup page first. Then, from the Coolify terminal for the web service, promote that existing account:
+Set these in Coolify → Environment Variables and redeploy. On startup the app creates the account (or promotes it if it already exists):
+
+- `ADMIN_EMAIL` (e.g. `admin@yourdomain.com`)
+- `ADMIN_PASSWORD` (use a long, unique password; the admin can approve and publish content)
+
+On later deploys the password is **not** overwritten, so changing it is safe. To force a reset, set `ADMIN_PASSWORD_RESET=true` for one deploy, then set it back to `false`.
+
+From the Coolify terminal (web service) you can also run:
 
 ```bash
-npm run db:make-admin -- your-email@example.com
+npm run db:create-admin -- someone@example.com 'their-password'   # create, or promote + reset password
+npm run db:make-admin -- someone@example.com                      # promote an existing account
 ```
 
-For a phone-based account, pass the normalized phone number instead.
+Admins and editors get **Studio** in the menu: `/admin/review` (approve stories and books; generate titles and covers) and `/admin` (story editor).
 
-Only administrators/editors can use `/admin`; normal users remain USER accounts.
+## Cover and title generation (Gemini on Vertex AI)
+
+1. In Google Cloud, pick a project and enable the **Vertex AI API**.
+2. IAM & Admin → Service Accounts → create one (e.g. `religionaudio-covers`) with the role **Vertex AI User**.
+3. Open it → Keys → Add key → JSON. A `.json` file downloads.
+4. In Coolify, set `GOOGLE_VERTEX_CREDENTIALS_JSON` to the **entire contents** of that file. If Coolify garbles multi-line values, paste the base64 of the file instead (`base64 -w0 key.json`); both are accepted.
+5. Optional: `GOOGLE_CLOUD_LOCATION` (default `global`), `GEMINI_TEXT_MODEL` (default `gemini-2.5-flash`), `GEMINI_IMAGE_MODEL` (default `gemini-2.5-flash-image`; an `imagen-*` model also works). The project is read from the JSON unless `GOOGLE_CLOUD_PROJECT` is set.
+6. Redeploy. The Review & covers page shows a warning while generation is not configured.
+
+How it works: Gemini reads the story or book text, writes an art brief (genre style, region- and era-accurate setting, respectful religious iconography, no gore for ghost stories, no depiction where a tradition forbids it), then the image model paints a portrait cover with space at the top. The title is set in type over the art by the site, so it stays sharp in every script and updates instantly when the title changes. Covers are stored with the audio (R2 in production); regenerating creates a new file. Treat the JSON key like a password; never commit it.
 
 ## Data persistence
 
