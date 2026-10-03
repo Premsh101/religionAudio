@@ -18,6 +18,10 @@ const r2=provider==="r2" ? new S3Client({
 
 function keyFor(extension:string){return `${new Date().toISOString().slice(0,10)}/${crypto.randomUUID()}.${extension}`}
 
+export async function storeJson(value:unknown):Promise<StoredAudio>{
+ return storeAudio(Buffer.from(JSON.stringify(value,null,2),"utf-8"),"json");
+}
+
 export async function storeAudio(buffer:Buffer,extension="wav"):Promise<StoredAudio>{
  const key=keyFor(extension);
  if(provider==="r2"){
