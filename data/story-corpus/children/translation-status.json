@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "targetLanguages": [
+    "hi",
+    "en",
+    "ar",
+    "ur"
+  ],
+  "records": [
+    "children-en-alice",
+    "children-en-wizard-oz",
+    "children-en-jungle-book",
+    "children-en-just-so",
+    "children-en-wind-willows",
+    "children-en-peter-pan",
+    "children-en-secret-garden",
+    "children-en-little-princess",
+    "children-en-aesop",
+    "children-en-grimm",
+    "children-hi-eidgah",
+    "children-hi-do-bailon-ki-katha",
+    "children-hi-bade-bhai-sahab",
+    "children-ar-sindbad",
+    "children-ar-kalila-dimna"
+  ],
+  "expectedLayout": "data/story-corpus/children/translations/<storyId>/<lang>.txt",
+  "qaLayout": "data/story-corpus/children/translations/<storyId>/<lang>.qa.json",
+  "completionRule": "A story is multilingual-ready only after all four language versions exist and semantic QA passes for every target."
+}
