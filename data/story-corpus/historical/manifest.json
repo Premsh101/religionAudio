@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "theme": "historical-stories",
+  "languages": [
+    "en",
+    "hi",
+    "ar",
+    "ur"
+  ],
+  "textType": "ORIGINAL_FAITHFUL_RETELLING",
+  "rule": "Actual story text is stored in stories.json. Every record must contain usable text in all four languages. Historical fact, legend/tradition, and uncertainty are separated in evidence metadata.",
+  "records": [
+    {
+      "id": "historical-ashoka-after-kalinga",
+      "title": "Ashoka After Kalinga",
+      "tradition": "Mauryan India / Edict XIII tradition",
+      "origin": "Ancient India",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "LEADERSHIP",
+        "WAR",
+        "DHAMMA"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-rani-lakshmibai-jhansi",
+      "title": "Lakshmibai and the Defence of Jhansi",
+      "tradition": "Rani Lakshmibai / Indian Rebellion of 1857",
+      "origin": "India",
+      "tags": [
+        "MODERN_HISTORY",
+        "RESISTANCE",
+        "COURAGE",
+        "WOMEN_IN_HISTORY"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-mansa-musa-hajj",
+      "title": "Mansa Musa's Journey to Mecca",
+      "tradition": "Mansa Musa of Mali / Hajj of 1324-25",
+      "origin": "Mali and the Islamic world",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "HAJJ",
+        "ISLAMIC_HISTORY",
+        "CULTURAL_EXCHANGE"
+      ],
+      "ageBand": "10-16",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-zheng-he-calicut",
+      "title": "Zheng He Reaches the Indian Ocean",
+      "tradition": "Zheng He / Ming treasure voyages",
+      "origin": "China and Indian Ocean world",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "EXPLORATION",
+        "MARITIME_HISTORY",
+        "CULTURAL_EXCHANGE"
+      ],
+      "ageBand": "9-16",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-ibn-battuta-delhi",
+      "title": "Ibn Battuta Arrives in Delhi",
+      "tradition": "Ibn Battuta / Rihla",
+      "origin": "Morocco, India and the wider Islamic world",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "TRAVEL",
+        "PILGRIMAGE",
+        "CULTURAL_EXCHANGE"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_TRAVEL_ACCOUNT",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-joan-orleans",
+      "title": "Joan of Arc and the Relief of Orléans",
+      "tradition": "Joan of Arc / Hundred Years' War",
+      "origin": "France",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "WAR",
+        "COURAGE",
+        "FAITH_AND_HISTORY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_HAGIOGRAPHIC_TRADITION",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-caesar-rubicon",
+      "title": "Caesar Crosses the Rubicon",
+      "tradition": "Julius Caesar / Roman Republic",
+      "origin": "Ancient Rome",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "POLITICS",
+        "WAR",
+        "TURNING_POINT"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_ANCIENT_ACCOUNTS",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-hannibal-alps",
+      "title": "Hannibal Crosses the Alps",
+      "tradition": "Hannibal / Second Punic War",
+      "origin": "Carthage, Iberia, Gaul and Italy",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "WAR",
+        "STRATEGY",
+        "ENDURANCE"
+      ],
+      "ageBand": "11-17",
+      "evidenceType": "DOCUMENTED_HISTORY_WITH_ROUTE_UNCERTAINTY",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-saladin-jerusalem",
+      "title": "Saladin and Jerusalem, 1187",
+      "tradition": "Saladin / Ayyubid reconquest of Jerusalem",
+      "origin": "Middle East",
+      "tags": [
+        "MEDIEVAL_HISTORY",
+        "JERUSALEM",
+        "WAR",
+        "ISLAMIC_HISTORY"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "historical-socrates-final-day",
+      "title": "Socrates' Final Day in Athens",
+      "tradition": "Socrates / Athenian trial tradition",
+      "origin": "Ancient Greece",
+      "tags": [
+        "ANCIENT_HISTORY",
+        "PHILOSOPHY",
+        "TRIAL",
+        "ETHICS"
+      ],
+      "ageBand": "12-17",
+      "evidenceType": "DOCUMENTED_HISTORY_THROUGH_SECONDARY_ACCOUNTS",
+      "multilingualTextPath": "data/story-corpus/historical/stories.json",
+      "languageStatus": {
+        "en": "TEXT_PRESENT",
+        "hi": "TEXT_PRESENT",
+        "ar": "TEXT_PRESENT",
+        "ur": "TEXT_PRESENT"
+      },
+      "editorialStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ]
+}
